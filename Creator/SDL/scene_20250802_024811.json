@@ -1,0 +1,77 @@
+{
+  "objects": [
+    {
+      "id": "mountain_1",
+      "element_name": "雪山",
+      "tripo_prompt": "snow-covered mountain peak, rugged and majestic, with steep slopes and patches of exposed dark rock, towering over the landscape",
+      "scale_hint": "vast",
+      "category": "terrain"
+    },
+    {
+      "id": "village_center",
+      "element_name": "村庄中心",
+      "tripo_prompt": "a cluster of traditional nordic wooden houses with steep pitched roofs to shed snow, painted in red and white, smoke rising from chimneys, cozy and picturesque",
+      "scale_hint": "large",
+      "category": "building"
+    },
+    {
+      "id": "frozen_lake",
+      "element_name": "冰冻湖泊",
+      "tripo_prompt": "a large frozen lake with smooth ice surface reflecting the mountain, surrounded by snow-covered rocks and sparse pine trees",
+      "scale_hint": "large",
+      "category": "water"
+    },
+    {
+      "id": "pine_forest",
+      "element_name": "松树林",
+      "tripo_prompt": "dense forest of tall pine trees with snow-laden branches, dark green needles contrasting with white snow, creating a serene winter atmosphere",
+      "scale_hint": "large",
+      "category": "flora"
+    },
+    {
+      "id": "wooden_bridge",
+      "element_name": "木桥",
+      "tripo_prompt": "a sturdy wooden bridge with railings, crossing a small frozen stream, covered in a thin layer of snow, connecting village paths",
+      "scale_hint": "medium",
+      "category": "building"
+    },
+    {
+      "id": "snowman",
+      "element_name": "雪人",
+      "tripo_prompt": "a cheerful snowman with coal eyes and a carrot nose, wearing a red scarf and a black top hat, standing in a village square",
+      "scale_hint": "human-scale",
+      "category": "prop"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "village_center",
+      "verb": "is_in_front_of",
+      "object": "mountain_1",
+      "distance_hint": "far"
+    },
+    {
+      "subject": "frozen_lake",
+      "verb": "is_next_to",
+      "object": "village_center",
+      "distance_hint": "medium"
+    },
+    {
+      "subject": "pine_forest",
+      "verb": "is_behind",
+      "object": "village_center",
+      "distance_hint": "close"
+    },
+    {
+      "subject": "wooden_bridge",
+      "verb": "connects",
+      "object": "village_center",
+      "target": "pine_forest"
+    },
+    {
+      "subject": "snowman",
+      "verb": "is_in_area",
+      "object": "village_center"
+    }
+  ]
+}

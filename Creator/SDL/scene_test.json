@@ -1,0 +1,19 @@
+{
+  "objects": [
+    {
+      "id": "stone_lantern_1",
+      "element_name": "石灯笼",
+      "tripo_prompt": "a classic japanese stone lantern (toro), kasuga-style, light moss, granite, garden prop",
+      "category": "prop",
+      "dimensions": { "type": "height", "value": 1.6 }
+    },
+    {
+      "id": "bamboo_1",
+      "element_name": "竹子",
+      "tripo_prompt": "a tall single bamboo stalk, segmented, green leaves, realistic plant asset",
+      "category": "flora",
+      "dimensions": { "type": "height", "value": 8.0 }
+    }
+  ],
+  "relations": []
+}

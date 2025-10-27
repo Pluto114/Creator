@@ -1,0 +1,185 @@
+{
+  "units": "meters",
+  "y_up": true,
+  "ground_size": [
+    80.0,
+    80.0
+  ],
+  "models": [
+    {
+      "id": "stone_path_1_inst_1",
+      "src_object": "stone_path_1",
+      "position": [
+        4.467177845957999,
+        0.0,
+        7.5842532703134165
+      ],
+      "rotation_euler_deg": [
+        0.0,
+        0.8390512384363831,
+        0.0
+      ],
+      "scale": 1.0
+    },
+    {
+      "id": "stone_lantern_1",
+      "src_object": "stone_lantern_1",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0
+    },
+    {
+      "id": "pond_1",
+      "src_object": "pond_1",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0
+    },
+    {
+      "id": "maple_tree_1",
+      "src_object": "maple_tree_1",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0
+    },
+    {
+      "id": "moss_garden_1",
+      "src_object": "moss_garden_1",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation_euler_deg": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": 1.0
+    }
+  ],
+  "procedural": {
+    "polylines": [
+      {
+        "id": "path_stone_lantern_1_to_pond_1",
+        "width": 1.0,
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "discs": [
+      {
+        "id": "pond_1",
+        "radius": 2.0,
+        "pos2": [
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  }
+}

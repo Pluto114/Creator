@@ -1,0 +1,96 @@
+{
+  "objects": [
+    {
+      "id": "main_pavilion_1",
+      "element_name": "中式亭子",
+      "tripo_prompt": "traditional Chinese hexagonal pavilion with curved roof, red wooden pillars, intricate carvings, green glazed roof tiles, elegant and symmetrical design",
+      "category": "building",
+      "dimensions": {
+        "type": "height",
+        "value": 6.0
+      }
+    },
+    {
+      "id": "cobblestone_path_1",
+      "element_name": "鹅卵石小径",
+      "tripo_prompt": "winding garden path made of smooth grey cobblestones arranged in traditional Chinese patterns, with moss growing between stones",
+      "category": "terrain",
+      "dimensions": {
+        "type": "height",
+        "value": 0.15
+      }
+    },
+    {
+      "id": "moon_gate_1",
+      "element_name": "月亮门",
+      "tripo_prompt": "classic Chinese moon gate, circular opening in a whitewashed wall, grey brick construction, traditional architectural element",
+      "category": "building",
+      "dimensions": {
+        "type": "height",
+        "value": 3.0
+      }
+    },
+    {
+      "id": "stone_lion_1",
+      "element_name": "石狮子",
+      "tripo_prompt": "traditional Chinese guardian lion statue, carved from grey granite, fierce expression, detailed mane, sitting on pedestal",
+      "category": "prop",
+      "dimensions": {
+        "type": "height",
+        "value": 1.5
+      }
+    },
+    {
+      "id": "bamboo_grove_1",
+      "element_name": "竹林",
+      "tripo_prompt": "cluster of tall bamboo plants, green segmented stalks, delicate leaves, gently swaying in breeze, traditional Chinese garden element",
+      "category": "flora",
+      "dimensions": {
+        "type": "height",
+        "value": 8.0
+      }
+    },
+    {
+      "id": "koi_pond_1",
+      "element_name": "锦鲤池",
+      "tripo_prompt": "serene oval pond with clear water, colorful koi fish swimming, water lilies floating, surrounded by smooth river stones",
+      "category": "water",
+      "dimensions": {
+        "type": "diameter",
+        "value": 12.0
+      }
+    }
+  ],
+  "relations": [
+    {
+      "subject": "cobblestone_path_1",
+      "verb": "connects",
+      "object": "moon_gate_1",
+      "target": "main_pavilion_1"
+    },
+    {
+      "subject": "stone_lion_1",
+      "verb": "flanks",
+      "object": "moon_gate_1",
+      "distance_hint": "immediate"
+    },
+    {
+      "subject": "bamboo_grove_1",
+      "verb": "surrounds",
+      "object": "main_pavilion_1",
+      "distance_hint": "near"
+    },
+    {
+      "subject": "koi_pond_1",
+      "verb": "is_in_front_of",
+      "object": "main_pavilion_1",
+      "distance_hint": "close"
+    },
+    {
+      "subject": "moon_gate_1",
+      "verb": "leads_to",
+      "object": "main_pavilion_1",
+      "distance_hint": "medium"
+    }
+  ]
+}

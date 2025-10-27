@@ -1,0 +1,12 @@
+{
+  "skyboxFolder": "D:/Creator/Creator/assets/sky/clear_day",
+  "skyboxColor": [0.05, 0.08, 0.12],
+  "ambientColor": [0.18, 0.18, 0.2],
+  "sunDirection": [-0.3, -1.0, -0.2],
+  "sunColor": [1.0, 1.0, 0.95],
+  "sunIntensity": 1.2,
+  "fogEnabled": false,
+  "fogColor": [0.6, 0.7, 0.8],
+  "fogDensity": 0.02,
+  "terrainPreset": ""
+}

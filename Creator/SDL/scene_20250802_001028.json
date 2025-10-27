@@ -1,0 +1,65 @@
+{
+  "objects": [
+    {
+      "id": "mountain_1",
+      "element_name": "雪山",
+      "tripo_prompt": "snow-covered mountain with steep slopes, jagged peaks, and patches of exposed dark rock, towering over the landscape",
+      "scale_hint": "vast",
+      "category": "terrain"
+    },
+    {
+      "id": "village_1",
+      "element_name": "北欧村庄",
+      "tripo_prompt": "a small nordic village with wooden houses painted in red and white, steep roofs to shed snow, smoke rising from chimneys, cozy and rustic",
+      "scale_hint": "large",
+      "category": "building"
+    },
+    {
+      "id": "frozen_lake_1",
+      "element_name": "结冰的湖泊",
+      "tripo_prompt": "a frozen lake with smooth ice surface, surrounded by snow-covered banks, with a few small fishing huts nearby",
+      "scale_hint": "medium",
+      "category": "water"
+    },
+    {
+      "id": "pine_forest_1",
+      "element_name": "松树林",
+      "tripo_prompt": "a dense forest of tall pine trees covered in snow, dark green needles contrasting with the white snow, creating a serene atmosphere",
+      "scale_hint": "large",
+      "category": "flora"
+    },
+    {
+      "id": "wooden_bridge_1",
+      "element_name": "木桥",
+      "tripo_prompt": "a sturdy wooden bridge with railings, spanning a small frozen stream, covered in a light dusting of snow",
+      "scale_hint": "human-scale",
+      "category": "prop"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "village_1",
+      "verb": "is_in_front_of",
+      "object": "mountain_1",
+      "distance_hint": "far"
+    },
+    {
+      "subject": "frozen_lake_1",
+      "verb": "is_next_to",
+      "object": "village_1",
+      "distance_hint": "medium"
+    },
+    {
+      "subject": "pine_forest_1",
+      "verb": "is_behind",
+      "object": "village_1",
+      "distance_hint": "close"
+    },
+    {
+      "subject": "wooden_bridge_1",
+      "verb": "connects",
+      "object": "village_1",
+      "target": "frozen_lake_1"
+    }
+  ]
+}

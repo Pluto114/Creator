@@ -1,0 +1,84 @@
+{
+  "objects": [
+    {
+      "id": "stone_lantern_1",
+      "element_name": "石灯笼",
+      "tripo_prompt": "traditional japanese stone lantern (toro), granite texture, aged appearance with light moss growth, classic pagoda-style roof, serene garden ornament",
+      "category": "prop",
+      "dimensions": {
+        "type": "height",
+        "value": 1.8
+      }
+    },
+    {
+      "id": "pond_1",
+      "element_name": "小池塘",
+      "tripo_prompt": "small serene pond with clear water, smooth rounded stones along the edges, water lilies floating on the surface, calm reflective water, japanese garden style",
+      "category": "water",
+      "dimensions": {
+        "type": "diameter",
+        "value": 8.0
+      }
+    },
+    {
+      "id": "stone_path_1",
+      "element_name": "石板小径",
+      "tripo_prompt": "winding stone path made of irregular flat stones (ishidatami), moss growing between the cracks, leading through a japanese garden",
+      "category": "terrain",
+      "dimensions": {
+        "type": "height",
+        "value": 0.1
+      }
+    },
+    {
+      "id": "maple_tree_1",
+      "element_name": "枫树",
+      "tripo_prompt": "graceful japanese maple tree with delicate red leaves, twisted trunk, bonsai-like shape, perfect for a serene garden setting",
+      "category": "flora",
+      "dimensions": {
+        "type": "height",
+        "value": 4.5
+      }
+    },
+    {
+      "id": "moss_garden_1",
+      "element_name": "苔藓花园",
+      "tripo_prompt": "lush green moss covering the ground, soft and velvety texture, interspersed with small stones, typical of japanese zen gardens",
+      "category": "terrain",
+      "dimensions": {
+        "type": "height",
+        "value": 0.05
+      }
+    }
+  ],
+  "relations": [
+    {
+      "subject": "stone_lantern_1",
+      "verb": "is_next_to",
+      "object": "pond_1",
+      "distance_hint": "close"
+    },
+    {
+      "subject": "stone_path_1",
+      "verb": "surrounds",
+      "object": "pond_1"
+    },
+    {
+      "subject": "maple_tree_1",
+      "verb": "is_behind",
+      "object": "stone_lantern_1",
+      "distance_hint": "medium"
+    },
+    {
+      "subject": "moss_garden_1",
+      "verb": "covers_area",
+      "object": "stone_path_1"
+    },
+    {
+      "subject": "stone_path_1",
+      "verb": "connects",
+      "object": "stone_lantern_1",
+      "target": "pond_1"
+    }
+  ]
+}

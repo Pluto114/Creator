@@ -1,0 +1,78 @@
+{
+  "objects": [
+    {
+      "id": "main_house",
+      "element_name": "日式传统木屋",
+      "tripo_prompt": "traditional japanese wooden house, sliding doors (shoji), dark wood beams, gently sloping roof, engawa porch, peaceful and simple",
+      "scale_hint": "large",
+      "category": "building"
+    },
+    {
+      "id": "stone_lantern",
+      "element_name": "石灯笼",
+      "tripo_prompt": "japanese stone lantern (toro), weathered granite surface, soft moss growing on base, warm light glow from inside",
+      "scale_hint": "human-scale",
+      "category": "prop"
+    },
+    {
+      "id": "gravel_path",
+      "element_name": "碎石小径",
+      "tripo_prompt": "winding garden path made of small grey gravel stones, raked in traditional patterns, bordered by dark wooden edging",
+      "scale_hint": "medium",
+      "category": "terrain"
+    },
+    {
+      "id": "maple_tree",
+      "element_name": "枫树",
+      "tripo_prompt": "mature japanese maple tree (momiji), delicate red-orange leaves, gnarled trunk, spreading branches creating dappled shade",
+      "scale_hint": "medium",
+      "category": "flora"
+    },
+    {
+      "id": "small_pond",
+      "element_name": "小池塘",
+      "tripo_prompt": "circular koi pond with clear water, smooth stone border, a few orange and white koi fish swimming slowly",
+      "scale_hint": "small",
+      "category": "water"
+    },
+    {
+      "id": "bamboo_fence",
+      "element_name": "竹篱笆",
+      "tripo_prompt": "traditional japanese bamboo fence, vertical bamboo poles tied together with natural fiber, about waist height",
+      "scale_hint": "human-scale",
+      "category": "prop"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "gravel_path",
+      "verb": "connects",
+      "object": "main_house",
+      "target": "small_pond"
+    },
+    {
+      "subject": "stone_lantern",
+      "verb": "is_next_to",
+      "object": "gravel_path",
+      "distance_hint": "close"
+    },
+    {
+      "subject": "maple_tree",
+      "verb": "is_behind",
+      "object": "main_house",
+      "distance_hint": "medium"
+    },
+    {
+      "subject": "small_pond",
+      "verb": "is_in_front_of",
+      "object": "bamboo_fence",
+      "distance_hint": "close"
+    },
+    {
+      "subject": "bamboo_fence",
+      "verb": "surrounds",
+      "object": "main_house",
+      "distance_hint": "medium"
+    }
+  ]
+}

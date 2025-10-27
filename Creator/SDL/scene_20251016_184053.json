@@ -1,0 +1,113 @@
+{
+  "objects": [
+    {
+      "id": "tatami_floor_1",
+      "element_name": "榻榻米地板",
+      "tripo_prompt": "traditional japanese tatami mat flooring, rectangular straw mats with green fabric edging, clean and well-maintained, arranged in a grid pattern",
+      "category": "terrain",
+      "dimensions": {
+        "type": "height",
+        "value": 0.05
+      }
+    },
+    {
+      "id": "shoji_screen_1",
+      "element_name": "障子屏风",
+      "tripo_prompt": "traditional japanese shoji screen, wooden frame with translucent paper panels, sliding door style, minimalist design",
+      "category": "building",
+      "dimensions": {
+        "type": "height",
+        "value": 2.0
+      }
+    },
+    {
+      "id": "tokonoma_1",
+      "element_name": "床之间",
+      "tripo_prompt": "japanese tokonoma alcove, recessed space in wall with wooden frame, used for displaying art and flowers, simple wooden platform",
+      "category": "building",
+      "dimensions": {
+        "type": "height",
+        "value": 1.2
+      }
+    },
+    {
+      "id": "scroll_1",
+      "element_name": "挂轴",
+      "tripo_prompt": "japanese hanging scroll (kakejiku), vertical format with calligraphy or ink painting, mounted on silk with wooden rollers, elegant and minimalist",
+      "category": "prop",
+      "dimensions": {
+        "type": "height",
+        "value": 1.5
+      }
+    },
+    {
+      "id": "ikebana_1",
+      "element_name": "插花",
+      "tripo_prompt": "simple japanese ikebana flower arrangement in ceramic vase, asymmetrical composition with few stems and leaves, serene and minimalist",
+      "category": "flora",
+      "dimensions": {
+        "type": "height",
+        "value": 0.6
+      }
+    },
+    {
+      "id": "zabuton_1",
+      "element_name": "座布团",
+      "tripo_prompt": "japanese floor cushion (zabuton), square shape with cotton filling, dark blue fabric cover, used for sitting on tatami",
+      "category": "prop",
+      "dimensions": {
+        "type": "height",
+        "value": 0.15
+      }
+    },
+    {
+      "id": "chabudai_1",
+      "element_name": "茶桌",
+      "tripo_prompt": "low japanese table (chabudai), dark wood finish, simple rectangular design, short legs for use with floor seating",
+      "category": "prop",
+      "dimensions": {
+        "type": "height",
+        "value": 0.4
+      }
+    }
+  ],
+  "relations": [
+    {
+      "subject": "shoji_screen_1",
+      "verb": "forms_wall_of",
+      "object": "tatami_floor_1"
+    },
+    {
+      "subject": "tokonoma_1",
+      "verb": "is_embedded_in",
+      "object": "shoji_screen_1"
+    },
+    {
+      "subject": "scroll_1",
+      "verb": "hangs_in",
+      "object": "tokonoma_1"
+    },
+    {
+      "subject": "ikebana_1",
+      "verb": "sits_on",
+      "object": "tokonoma_1"
+    },
+    {
+      "subject": "zabuton_1",
+      "verb": "is_placed_on",
+      "object": "tatami_floor_1",
+      "distance_hint": "center"
+    },
+    {
+      "subject": "chabudai_1",
+      "verb": "is_placed_on",
+      "object": "tatami_floor_1",
+      "distance_hint": "close"
+    },
+    {
+      "subject": "chabudai_1",
+      "verb": "is_in_front_of",
+      "object": "zabuton_1"
+    }
+  ]
+}
