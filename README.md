@@ -2,7 +2,7 @@
 
 **Multi-view thin-structure reconstruction research, with a Blender interface.**
 
-利用同一静态物体的多张照片，研究如何改善基础重建中细杆的遗漏、断裂和错误连接。基础深度与相机估计计划采用 DA3；自研部分是局部多视图几何恢复及其独立评测。
+利用同一静态物体的多张照片，研究如何改善基础重建中细杆的遗漏、断裂和错误连接。基础深度与相机估计采用独立的 DA3 后端；自研部分是局部多视图几何恢复及其独立评测。
 
 ## 当前进度
 
@@ -10,10 +10,12 @@
 
 | 已可用 | 尚未实现 |
 | --- | --- |
-| 核心、DA3 后端和评测包的独立 Python 项目 | DA3 权重加载与真实推理 |
+| 三个独立环境、两档 DA3 的真实 GPU 冒烟 | Creator 正式 DA3 任务适配器 |
 | 命令行帮助、版本、能力状态 | 完整文件协议及不可变快照 |
 | Blender 配置侧栏与注册/卸载 | 细杆匹配、拟合、补丁和预览导入 |
 | 骨架检查、插件打包、持续集成配置 | 真实数据集、几何指标与性能结论 |
+
+安装与实测记录见 [环境验证](docs/environment-verification.md)。上游模型已可独立运行，项目的正式任务链路仍待实现。
 
 未实现的计算入口会明确返回非零，不生成空的“成功结果”。运行现成模型、提供插件界面本身不作为研究贡献。
 
@@ -22,6 +24,7 @@
 需要 Python 3.11 和 uv。以下从仓库根目录执行：
 
 ```powershell
+. .\scripts\Enter-CreatorEnvironment.ps1
 uv sync --project reconstruction --locked
 uv run --project reconstruction --locked creator --help
 uv run --project reconstruction --locked creator status
@@ -30,13 +33,13 @@ uv run --project reconstruction --locked creator status
 三个项目分别管理环境，DA3 不加入核心的环境：
 
 ```powershell
-uv sync --project backends/da3 --locked
-uv run --project backends/da3 --locked creator-da3 status
+uv sync --project backends/da3 --locked --extra inference
+uv run --project backends/da3 --locked --extra inference creator-da3 status
 uv sync --project experiments --locked
 uv run --project experiments --locked creator-eval status
 ```
 
-DA3 当前锁文件仅覆盖适配器骨架依赖；尚未安装或验证完整上游模型运行栈。详见 [开发说明](docs/development.md)。
+DA3 的 `inference` extra 包含固定版本的上游模型运行栈；模型与下载缓存存放在项目目录。完整安装、健康检查和 Blender 启动见 [环境说明](docs/environment.md)，实现进度见 [开发说明](docs/development.md)。
 
 ## Blender 插件
 

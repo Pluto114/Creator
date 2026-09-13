@@ -10,8 +10,34 @@ readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = []
 
+[project.optional-dependencies]
+inference = [
+    "depth-anything-3",
+    "torch==2.10.0",
+    "torchvision==0.25.0",
+    "xformers==0.0.34",
+    "numpy==1.26.4",
+    "opencv-python==4.11.0.86",
+    # Open3D Windows wheel has an extra requirement absent from its Linux metadata.
+    "ipywidgets>=8.0.4,<9; sys_platform == 'win32'",
+]
+
 [project.scripts]
 creator-da3 = "creator_da3.runner:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/creator_da3"]
+
+[tool.uv]
+environments = ["sys_platform == 'win32' and platform_machine == 'AMD64'", "sys_platform == 'linux' and platform_machine == 'x86_64'"]
+
+[tool.uv.sources]
+depth-anything-3 = { git = "https://github.com/ByteDance-Seed/Depth-Anything-3.git", rev = "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4" }
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+xformers = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

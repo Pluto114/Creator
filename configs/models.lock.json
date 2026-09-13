@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "name": "base",
+      "repo_id": "depth-anything/DA3-BASE",
+      "revision": "f4a6c9b3c95e41c82048423d3493a81ec3fa810e",
+      "files": [
+        {
+          "name": "README.md",
+          "bytes": 5682,
+          "sha256": "5388563071b4361b11d6d811b354d454f26aed2adba634fcf4ee3775c8eda480"
+        },
+        {
+          "name": "config.json",
+          "bytes": 1205,
+          "sha256": "5e34115ebc17bd2d8d43033c5f72e9446ac8833fd61d3fa160b7e67e0bb5b7b5"
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 541518028,
+          "sha256": "e01067dc1659613083d9145a9a2547ccdbe6ccbbf83c4fe7b3e8a4e2bdae78b5"
+        }
+      ],
+      "huggingface_license_metadata": "apache-2.0"
+    },
+    {
+      "name": "large",
+      "repo_id": "depth-anything/DA3-LARGE-1.1",
+      "revision": "0e109ae307c5982f319a67cf6f9f99ccdc0ec97c",
+      "files": [
+        {
+          "name": "README.md",
+          "bytes": 4684,
+          "sha256": "2d323de54b5e27e73762486d1b6e509ab8ac32b6fcd6fbf87c17661671a6a1f0"
+        },
+        {
+          "name": "config.json",
+          "bytes": 1213,
+          "sha256": "744dcaf53859490ed92fc6cb98d68d3daf624b8c54533aaf604bdb53f06321f5"
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 1643843860,
+          "sha256": "739905c423cf0d6ccaf9e61a8401d82ba1ac32d7f4d3ee6dca8f92b377633f64"
+        }
+      ],
+      "huggingface_license_metadata": "apache-2.0",
+      "upstream_readme_license": "CC-BY-NC-4.0",
+      "license_note": "Upstream README table conflicts with the pinned Hugging Face model card. Preserve both; do not infer permissive redistribution rights."
+    }
+  ],
+  "upstream_commit": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4"
+}
