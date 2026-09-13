@@ -1,60 +1,41 @@
-#-------------------------------------------------------------------
-# CLion / JetBrains IDE specific
-#-------------------------------------------------------------------
-.idea/
-cmake-build-debug/
-cmake-build-release/
-*.iws
+# Local data and machine configuration
+/data/
+/runs/
+/cache/
+/models/
+/.local/
+/.runtime/
+.env
+.env.*
+!.env.example
 
-#-------------------------------------------------------------------
-# General Build & CMake output
-#-------------------------------------------------------------------
+# Python environments and generated files
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
 build/
-[Bb]uild/
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
+dist/
 
-#-------------------------------------------------------------------
-# User-specified directories from your project
-#-------------------------------------------------------------------
-siyuan/
-external/
-assets/
-libs/
-ProjectTest/
+# Host and editor files
+*.blend
+*.blend1
+*.blend2
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
 
-#-------------------------------------------------------------------
-# vcpkg - If vcpkg is inside the project, it should be ignored
-# If it's installed globally, these rules won't hurt.
-#-------------------------------------------------------------------
-vcpkg/
-vcpkg_installed/
+# Model weights and large generated arrays
+*.ckpt
+*.safetensors
+*.pt
+*.pth
 
-#-------------------------------------------------------------------
-# Common C++ compiled object files and libraries
-#-------------------------------------------------------------------
-*.obj
-*.o
-*.a
-*.lib
-*.so
-*.dylib
-*.dll
-*.exe
-*.pdb
-*.ilk
-*.pch
-*.gch
-*.tlog
-
-#-------------------------------------------------------------------
-# Other temporary files
-#-------------------------------------------------------------------
-*.log
-*.tmp
-*.bak
-*.swo
-*.swp
+# Lock files are source-controlled; do not ignore uv.lock.

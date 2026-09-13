@@ -1,0 +1,1 @@
+"""Reserved CameraGeometry operations: project, unproject and rays. Use explicit world-to-camera matrices, camera-Z depth and oriented/processed pixel spaces; independent projection tests precede implementation acceptance."""

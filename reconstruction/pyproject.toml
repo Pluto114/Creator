@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "creator-reconstruction"
+version = "0.1.0.dev0"
+description = "Research scaffold for evidence-driven thin-structure reconstruction."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "numpy>=2,<3",
+  "pydantic>=2,<3",
+  "scipy>=1.14,<2",
+  "opencv-python-headless>=4.10,<5",
+  "Pillow>=10,<13",
+  "trimesh>=4.5,<5",
+]
+
+[project.scripts]
+creator = "creator_recon.cli.main:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/creator_recon"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.uv]
+package = true

@@ -1,0 +1,1 @@
+"""Reserved ArtifactRef, provenance and array metadata contracts. Implement safe reference resolution, precise shapes, byte integrity and canonical content IDs with fixtures before enabling serialization."""

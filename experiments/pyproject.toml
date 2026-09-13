@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "creator-evaluation"
+version = "0.1.0.dev0"
+description = "Independent evaluation scaffold for Creator thin-structure reconstruction"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = ["creator-reconstruction==0.1.0.dev0"]
+
+[project.scripts]
+creator-eval = "creator_eval.runner:main"
+
+[tool.uv.sources]
+creator-reconstruction = { path = "../reconstruction", editable = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/creator_eval"]

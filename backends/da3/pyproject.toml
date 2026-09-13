@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "creator-da3-backend"
+version = "0.1.0.dev0"
+description = "Isolated DA3 adapter scaffold for Creator Newage"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = []
+
+[project.scripts]
+creator-da3 = "creator_da3.runner:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/creator_da3"]

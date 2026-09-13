@@ -1,1 +1,14 @@
-*.zip filter=lfs diff=lfs merge=lfs -text
+* text=auto eol=lf
+*.py text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.npy binary
+*.npz binary
+*.bin binary
+*.zip binary
