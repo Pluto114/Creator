@@ -1,0 +1,55 @@
+{
+  "protocol_version": "2.0.0",
+  "scope": "G0 follow-up after off-center crop results: centered crop and fixed robust-fit control; prior v1 preserved",
+  "input_selection_config": "configs/thin_pack_controls_v1.json",
+  "cases": [
+    "black-white-thinner",
+    "brick-texture-thinner",
+    "brick-texture-origin"
+  ],
+  "baseline_run": "thin-pack-baseline-v1-20260914",
+  "crop_run": "thin-controls-v1-20260914",
+  "oracle_run": "thin-oracle-controls-v1-20260914",
+  "support": {
+    "bin_width_camera_span_fraction": 0.002,
+    "minimum_views": 3,
+    "dilation_bins": 1,
+    "minimum_run_bins": 3,
+    "scope": "Along-line RGB response occupancy voting only; ray-line separation not gated. This is not validated correspondence."
+  },
+  "variants": [
+    "depth_tls_unfiltered",
+    "depth_tls_default_p40",
+    "depth_tls_fixed_1_05",
+    "rgb_multiview_planes",
+    "depth_ransac_unfiltered"
+  ],
+  "endpoint_modes": [
+    "single_span",
+    "multiview_supported"
+  ],
+  "image_line_fit": "all RGB-selected ridge points, ordinary least squares x=a*y+b; manually corresponding strips, no GT",
+  "metric_scope": "native curve diagnostics for the two manually selected targets only; not full candidate/common readout",
+  "tolerances_m": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "sample_spacing_m": 0.005,
+  "target_truth_mapping_evaluation_only": {
+    "whole": 5,
+    "gap": 6
+  },
+  "fail_policy": "keep all target/variant entries, empty/degenerate explicit; include failed methods in recovery",
+  "additional_crop_runs": [
+    "thin-centered-controls-v1-20260914"
+  ],
+  "ransac": {
+    "distance_camera_span_fraction": 0.005,
+    "minimum_pair_extent_camera_span_fraction": 0.03,
+    "minimum_inliers": 12,
+    "minimum_views": 3,
+    "trials": 256,
+    "seed": 0
+  }
+}

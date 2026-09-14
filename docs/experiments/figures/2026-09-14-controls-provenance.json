@@ -1,0 +1,14 @@
+{
+  "evaluation_summary_sha256": "daf569e9e4debc60306871ba80b6601debcd4242f04cbf8b37569cef930265ad",
+  "plot_script_sha256": "cc376660569c10154a1611fe8c9746a5efcc17e77728e08edbe1643a584893e8",
+  "figures": {
+    "2026-09-14-rgb-selection-audit.png": {
+      "source": "data/evaluation/thin-line-controls-v2-20260914/rgb-selection-audit.png",
+      "sha256": "1687d6116e50eaf0c89af855be77ae76d9d6a9a959b18c577e934192be017d94"
+    },
+    "2026-09-14-numeric-controls-5cm.png": {
+      "source": "data/evaluation/thin-line-controls-v2-20260914/numeric-controls-5cm.png",
+      "sha256": "4b045176432e342ed6271e24c72af8f66876f37974a7de6cc564f46d03be75f2"
+    }
+  }
+}

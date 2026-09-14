@@ -11,6 +11,12 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 from thin_pack_gt import read_json, sha256, write_json
+from thin_pack_infer_worker import (
+    input_bundle_path,
+    rgb_input_path,
+    safe_component,
+    validate_frame_order,
+)
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "experiments/src"))
 from creator_eval.native_diagnostics import (
@@ -25,11 +31,11 @@ from creator_eval.native_diagnostics import (
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def infer(run_id):
+def infer(run_id, protocol_path=None):
     from environment_paths import require_project_environment
 
     require_project_environment(ROOT)
-    protocol = read_json(ROOT / "configs/thin_pack_baseline_v1.json")
+    protocol = read_json(protocol_path or ROOT / "configs/thin_pack_baseline_v1.json")
     if (
         protocol["camera_mode"] != "estimated"
         or protocol["use_ray_pose"]
@@ -37,10 +43,28 @@ def infer(run_id):
         or protocol["ref_view_strategy"] != "saddle_balanced"
     ):
         raise ValueError("This runner only supports the frozen estimated-camera smoke settings")
-    bundle = ROOT / "data/inputs" / protocol["input_bundle"]
+    bundle = input_bundle_path(ROOT, protocol["input_bundle"])
     manifest = read_json(bundle / "manifest.json")
     if manifest["known_cameras"]:
         raise ValueError("The ordinary baseline must not receive true cameras")
+    if manifest["bundle_id"] != protocol["input_bundle"]:
+        raise ValueError("Input bundle identity mismatch")
+    group_ids = [safe_component(g["case_id"], "case ID") for g in manifest["groups"]]
+    if len(group_ids) != len(set(group_ids)):
+        raise ValueError("Duplicate input groups")
+    if not protocol["jobs"]:
+        raise ValueError("Empty inference jobs")
+    selected_jobs = set()
+    for job in protocol["jobs"]:
+        safe_component(job["case_id"], "case ID")
+        job_key = (job["case_id"], job["process_res"])
+        if job["case_id"] not in group_ids or job_key in selected_jobs:
+            raise ValueError("Missing or duplicate inference group")
+        selected_jobs.add(job_key)
+        group = manifest["groups"][group_ids.index(job["case_id"])]
+        validate_frame_order(group)
+        for frame in group["frames"]:
+            rgb_input_path(bundle, frame["rgb"])
     target = ROOT / ".runtime/experiments" / run_id
     target.mkdir(parents=True, exist_ok=False)
     frozen = target / "producer_sources"
@@ -365,6 +389,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("stage", choices=["infer", "evaluate"])
     parser.add_argument("--run-id", required=True)
+    parser.add_argument("--protocol", type=Path, help="Frozen input-only inference protocol")
     parser.add_argument(
         "--evaluation-id", help="New immutable output ID when re-evaluating saved predictions"
     )
@@ -378,6 +403,8 @@ if __name__ == "__main__":
     if args.stage == "infer":
         if args.evaluation_id:
             parser.error("--evaluation-id only applies to evaluation")
-        infer(args.run_id)
+        infer(args.run_id, args.protocol)
     else:
+        if args.protocol:
+            parser.error("--protocol only applies to inference")
         evaluate(args.run_id, args.evaluation_id)

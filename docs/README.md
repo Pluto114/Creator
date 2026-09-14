@@ -1,5 +1,5 @@
 # 文档索引
-最新工作状态：[首轮定量基线](experiments/2026-09-14-native-baseline.md)。第一阶段30张严格配对数据已验收，第二阶段七次LARGE原生诊断也已完成；下一步做局部裁剪和简单拟合对照。[基线运行说明](thin-pack-baseline.md)、[数据包说明](thin-pack-dataset.md)、[数据包验收](experiments/2026-09-14-paired-thin-pack-v2.md)。此前状态保留于 [2026-09-14 新聊天交接](HANDOFF-2026-09-14.md)。
+最新工作状态：[裁剪/真实相机/直线对照](experiments/2026-09-14-crop-oracle-line-controls.md)。9次新增模型推理完成，并在13份预测上比较了普通/鲁棒拟合与RGB多视图交会。[下一版算法设计](decisions/0004-evidence-guided-line-recovery.md)已由结果确定；独立对象改善、可靠拒绝和完整补丁仍待实现。重现见[对照说明](thin-pack-controls.md)，此前基线和数据包说明继续保留。
 
 日期：2026-09-13。适用根目录：`D:/Creator-newage`。
 
@@ -20,6 +20,7 @@
 | 5 | [实验与交付](architecture/05-evaluation-and-delivery.md) | 评测模块、指标、对照、公平条件、关键测试与三个月验收 |
 | 决策 | [ADR 0002](decisions/0002-reconstruction-stack.md) | 当前技术栈与本机事实 |
 | 决策 | [ADR 0003](decisions/0003-newage-architecture.md) | 详细架构的固定边界和可替换部分 |
+| 决策 | [ADR 0004](decisions/0004-evidence-guided-line-recovery.md) | 由裁剪、相机与直线对照选择下一版恢复方案 |
 | 历史 | [ADR 0001，已废止](decisions/0001-technology-stack.md) | 旧场景生成路线，仅保留决策历史 |
 
 ## 如何解释“确定”

@@ -1,0 +1,148 @@
+{
+  "protocol_version": "1.0.0",
+  "scope": "G0 crop diagnostics, RGB-only manually selected regions; single development asset",
+  "input_bundle": "thin-controls-v1-20260914",
+  "model": "large",
+  "camera_mode": "estimated",
+  "use_ray_pose": false,
+  "seed": 0,
+  "ref_view_strategy": "saddle_balanced",
+  "crops": {
+    "wide": [
+      350,
+      0,
+      1502,
+      900
+    ],
+    "tight": [
+      780,
+      150,
+      1452,
+      822
+    ]
+  },
+  "roi_provenance": "Assistant visually inspected all five original brick-texture-thinner RGB images; rectangles and two approximate rod guides chosen without GT projection. Shared unchanged across background/diameter variants. Tight crop truncates rods; no whole-object recovery claim.",
+  "jobs": [
+    {
+      "case_id": "black-white-thinner--wide",
+      "source_case": "black-white-thinner",
+      "crop": "wide",
+      "process_res": 504
+    },
+    {
+      "case_id": "brick-texture-thinner--wide",
+      "source_case": "brick-texture-thinner",
+      "crop": "wide",
+      "process_res": 504
+    },
+    {
+      "case_id": "brick-texture-origin--wide",
+      "source_case": "brick-texture-origin",
+      "crop": "wide",
+      "process_res": 504
+    },
+    {
+      "case_id": "brick-texture-thinner--tight",
+      "source_case": "brick-texture-thinner",
+      "crop": "tight",
+      "process_res": 504
+    }
+  ],
+  "oracle_cases": [
+    "black-white-thinner",
+    "brick-texture-thinner",
+    "brick-texture-origin"
+  ],
+  "filters": {
+    "fixed_confidence": 1.05,
+    "default_percentile": 40,
+    "default_upper_percentile": 90,
+    "comparison": "greater_than_or_equal",
+    "sky_policy": "native_all_pixels_no_depth_or_confidence_rewrite"
+  },
+  "alignment": {
+    "type": "positive_scale_Sim3",
+    "fit_on": "all_five_camera_centers_only",
+    "minimum_second_to_first_singular_ratio": 0.001,
+    "poor_fit_rmse_over_camera_span": 0.1,
+    "leave_one_camera_out_diagnostic": true
+  },
+  "line_control": {
+    "guide_coordinate": "original RGB integer pixel index",
+    "guide_y": [
+      60,
+      850
+    ],
+    "half_width": 20,
+    "row_stride": 4,
+    "ridge_offsets": [
+      3,
+      6,
+      12,
+      18
+    ],
+    "minimum_contrast_255": 6,
+    "minimum_rows": 12,
+    "metric_tolerances_m": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "metric_spacing_m": 0.005,
+    "guides": {
+      "view_-30": {
+        "whole": [
+          1322,
+          1306
+        ],
+        "gap": [
+          1435,
+          1414
+        ]
+      },
+      "view_-15": {
+        "whole": [
+          1280,
+          1266
+        ],
+        "gap": [
+          1420,
+          1397
+        ]
+      },
+      "view_+00": {
+        "whole": [
+          1217,
+          1206
+        ],
+        "gap": [
+          1370,
+          1351
+        ]
+      },
+      "view_+15": {
+        "whole": [
+          1136,
+          1128
+        ],
+        "gap": [
+          1295,
+          1276
+        ]
+      },
+      "view_+30": {
+        "whole": [
+          1045,
+          1044
+        ],
+        "gap": [
+          1190,
+          1177
+        ]
+      }
+    },
+    "selection": "RGB symmetric ridge contrast in manually corresponding strips, all qualifying rows; no depth or GT-based inlier selection",
+    "fit": "unweighted TLS; single straight segment is a deliberately simple baseline, real gap not manually supplied",
+    "diagnostics_only": "Native curve outputs with manual cross-view identity; not common CurveReadout or final recovery benchmark"
+  }
+}

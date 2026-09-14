@@ -7,6 +7,7 @@ import importlib.metadata
 import json
 import os
 import time
+from contextlib import nullcontext
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -16,7 +17,10 @@ def sha256(path: Path) -> str:
         return hashlib.file_digest(stream, 'sha256').hexdigest()
 
 
-def run(args: argparse.Namespace, root: Path, destination: Path) -> dict:
+def run(
+    args: argparse.Namespace, root: Path, destination: Path, *,
+    inference_options: dict | None = None, inference_context=None,
+) -> dict:
     from environment_paths import require_project_environment
 
     require_project_environment(root)
@@ -56,12 +60,16 @@ def run(args: argparse.Namespace, root: Path, destination: Path) -> dict:
     torch.cuda.synchronize()
     load_seconds = time.perf_counter() - started
     started = time.perf_counter()
-    prediction = model.inference(
-        [str(path.resolve()) for path in args.images], process_res=args.process_res,
-        infer_gs=False, use_ray_pose=getattr(args, 'use_ray_pose', False),
-        ref_view_strategy='saddle_balanced',
-        export_dir=None,
-    )
+    # Ordinary RGB runs keep exactly the old call. The separate oracle worker supplies
+    # known cameras and a read-only observer so API pose replacement cannot hide in the report.
+    with inference_context(model) if inference_context is not None else nullcontext():
+        prediction = model.inference(
+            [str(path.resolve()) for path in args.images], process_res=args.process_res,
+            infer_gs=False, use_ray_pose=getattr(args, 'use_ray_pose', False),
+            ref_view_strategy='saddle_balanced',
+            export_dir=None,
+            **(inference_options or {}),
+        )
     torch.cuda.synchronize()
     inference_seconds = time.perf_counter() - started
     arrays = {name: getattr(prediction, name) for name in

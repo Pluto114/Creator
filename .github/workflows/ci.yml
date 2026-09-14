@@ -31,6 +31,8 @@ jobs:
         run: python -m pytest reconstruction/tests
       - name: Camera and sampling diagnostics
         run: python -m unittest discover -s tests -p test_native_diagnostics.py -v
+      - name: Straight-line geometry controls
+        run: python -m unittest discover -s tests -p test_line_controls.py -v
       - name: Build Python distributions
         run: |
           python -m build reconstruction
