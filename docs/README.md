@@ -1,5 +1,5 @@
 # 文档索引
-最新工作状态：[严格配对数据包v2验收](experiments/2026-09-14-paired-thin-pack-v2.md)。交接第7节第一阶段已完成：30张同步RGB、真实深度、杆ID/可见掩码、相机和几何均已导出并核验；下一步是量化基线。[数据包字段与复现命令](thin-pack-dataset.md)。此前状态保留于 [2026-09-14 新聊天交接](HANDOFF-2026-09-14.md)。
+最新工作状态：[首轮定量基线](experiments/2026-09-14-native-baseline.md)。第一阶段30张严格配对数据已验收，第二阶段七次LARGE原生诊断也已完成；下一步做局部裁剪和简单拟合对照。[基线运行说明](thin-pack-baseline.md)、[数据包说明](thin-pack-dataset.md)、[数据包验收](experiments/2026-09-14-paired-thin-pack-v2.md)。此前状态保留于 [2026-09-14 新聊天交接](HANDOFF-2026-09-14.md)。
 
 日期：2026-09-13。适用根目录：`D:/Creator-newage`。
 

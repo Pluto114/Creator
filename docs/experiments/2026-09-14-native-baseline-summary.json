@@ -1,0 +1,2263 @@
+{
+  "run_id": "thin-pack-baseline-v1-20260914",
+  "scope": "G0 native prediction diagnostics; not a curve recovery benchmark",
+  "state": "complete",
+  "gt_artifact_hashes_sha256": "919bc2b4252ade9ff3582e0977cdad36e388e964de797df698b052fe8fdf8a94",
+  "inference_manifest_sha256": "a1570fc951fb897953962fe1e5d28675fb92f86f1d9a409dd74320724f291cf7",
+  "evaluation_sources": {
+    "scripts\\run_thin_pack_baseline.py": "9bc13c1858009a54a56203694f17ddfddef4ac4a507e09086b64b94f53312478",
+    "experiments\\src\\creator_eval\\native_diagnostics.py": "fcc7b782016c2227a54999f9a3a8bcaac7bfcf04ed53a13f38f048739518ce59"
+  },
+  "input_bundle": "thin-pack-v2-20260914r1",
+  "protocol_sha256": "41f6d01131e5b1614b4e0c11bb57094cf9cb2a3c469b3b4805e87c73d1f49b1a",
+  "input_manifest_sha256": "0859558eeea3174c0e0669d52d22867de22acdfcf5df5273f2641b8551220f08",
+  "model_revision": "0e109ae307c5982f319a67cf6f9f99ccdc0ec97c",
+  "jobs": [
+    {
+      "job_id": "black-white-thinner-504",
+      "case_id": "black-white-thinner",
+      "process_res": 504,
+      "prediction_sha256": "fe03b4502fc8554bfbd6673034377dfe0d49f86d5ba51610bc4f189517855de0",
+      "report_sha256": "4b232f4108584e29953bbf9439e924b6570637e455b196aa2e1aef0abd7d3b98",
+      "default_confidence_threshold": 2.6342661857605,
+      "alignment": {
+        "source_singular_values": [
+          0.6896024900846743,
+          0.09595891348986856,
+          0.0006475226080068791
+        ],
+        "target_singular_values": [
+          12.699120806581083,
+          1.9938461481221983,
+          4.180505125951581e-07
+        ],
+        "second_to_first_singular_ratios": [
+          0.1391510542226813,
+          0.1570066289226042
+        ],
+        "camera_residuals_m": [
+          0.3233636862758146,
+          0.3105992843352308,
+          0.24091166297789546,
+          0.206213723487533,
+          0.08776291824568395
+        ],
+        "camera_rmse_m": 0.2487170472500055,
+        "camera_span_m": 15.949155943756624,
+        "scale": 18.445540062505902,
+        "prediction_world_to_gt_world": [
+          [
+            -17.80478923195273,
+            -0.9444068037479595,
+            4.726047438640962,
+            -3.9565196824977207
+          ],
+          [
+            -4.8165195570980694,
+            4.121157355585224,
+            -17.322100034467745,
+            25.872908835045266
+          ],
+          [
+            -0.16902058851522014,
+            -17.954445300177053,
+            -4.224603437142663,
+            5.587210224849919
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.015594370518859152,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          4.912295596161477,
+          3.1878608794429697,
+          3.1720077752130873,
+          3.287137672060325,
+          3.65887248288127
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 17.856712726553152,
+            "held_out_camera_error_m": 0.7421476265020939
+          },
+          {
+            "omitted_view": 1,
+            "scale": 18.661572912226777,
+            "held_out_camera_error_m": 0.45703915927084593
+          },
+          {
+            "omitted_view": 2,
+            "scale": 18.436727510096578,
+            "held_out_camera_error_m": 0.30342250549316013
+          },
+          {
+            "omitted_view": 3,
+            "scale": 18.580307292039393,
+            "held_out_camera_error_m": 0.3009524571220968
+          },
+          {
+            "omitted_view": 4,
+            "scale": 18.509664620222317,
+            "held_out_camera_error_m": 0.21794111852533915
+          }
+        ],
+        "state": "fitted"
+      },
+      "filter_policies": {
+        "unfiltered": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 705600,
+            "retained_fraction": 1.0
+          },
+          "rod_center_all": {
+            "available_pixels": 5319,
+            "retained_pixels": 5319,
+            "retained_fraction": 1.0
+          },
+          "strict_rods": {
+            "available_pixels": 0,
+            "retained_pixels": 0,
+            "retained_fraction": null,
+            "reason": "empty_region",
+            "scaled_camera_z_abs_error_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            }
+          },
+          "strict_background": {
+            "available_pixels": 671591,
+            "retained_pixels": 671591,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 671591,
+              "median": 1.7241039276123047,
+              "p95": 12.748311519622803,
+              "mean": 3.6657140254974365
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 671591,
+              "median": 2.539164181871911,
+              "p95": 12.904017363954823,
+              "mean": 4.301682493733726
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 5319,
+            "retained_pixels": 5319,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 5319,
+              "median": 0.7587089538574219,
+              "p95": 9.850311946868894,
+              "mean": 2.5308148860931396
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 5319,
+              "median": 1.1678063901467286,
+              "p95": 9.999559485178807,
+              "mean": 2.8841615686482065
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4262,
+            "retained_pixels": 4262,
+            "retained_fraction": 1.0
+          }
+        },
+        "default_p40": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 423360,
+            "retained_fraction": 0.6
+          },
+          "rod_center_all": {
+            "available_pixels": 5319,
+            "retained_pixels": 3048,
+            "retained_fraction": 0.5730400451212634
+          },
+          "strict_rods": {
+            "available_pixels": 0,
+            "retained_pixels": 0,
+            "retained_fraction": null,
+            "reason": "empty_region",
+            "scaled_camera_z_abs_error_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            }
+          },
+          "strict_background": {
+            "available_pixels": 671591,
+            "retained_pixels": 405079,
+            "retained_fraction": 0.603163234766398,
+            "scaled_camera_z_abs_error_m": {
+              "count": 405079,
+              "median": 0.7325801849365234,
+              "p95": 11.552525615692137,
+              "mean": 1.7701244354248047
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 405079,
+              "median": 1.5627868561710148,
+              "p95": 11.61700077962097,
+              "mean": 2.56474088740073
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 5319,
+            "retained_pixels": 3048,
+            "retained_fraction": 0.5730400451212634,
+            "scaled_camera_z_abs_error_m": {
+              "count": 3048,
+              "median": 0.4881401062011719,
+              "p95": 2.637081098556519,
+              "mean": 0.7566509246826172
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 3048,
+              "median": 0.9171002830621153,
+              "p95": 2.974294136931109,
+              "mean": 1.18121323234963
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4262,
+            "retained_pixels": 2387,
+            "retained_fraction": 0.5600656968559362
+          }
+        },
+        "fixed_1_05": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 523022,
+            "retained_fraction": 0.7412443310657596
+          },
+          "rod_center_all": {
+            "available_pixels": 5319,
+            "retained_pixels": 4889,
+            "retained_fraction": 0.9191577364166197
+          },
+          "strict_rods": {
+            "available_pixels": 0,
+            "retained_pixels": 0,
+            "retained_fraction": null,
+            "reason": "empty_region",
+            "scaled_camera_z_abs_error_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            }
+          },
+          "strict_background": {
+            "available_pixels": 671591,
+            "retained_pixels": 493392,
+            "retained_fraction": 0.7346614233960849,
+            "scaled_camera_z_abs_error_m": {
+              "count": 493392,
+              "median": 1.0744781494140625,
+              "p95": 12.758164834976196,
+              "mean": 3.101104974746704
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 493392,
+              "median": 1.8647538387014468,
+              "p95": 12.921900706475485,
+              "mean": 3.8205088293997296
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 5319,
+            "retained_pixels": 4889,
+            "retained_fraction": 0.9191577364166197,
+            "scaled_camera_z_abs_error_m": {
+              "count": 4889,
+              "median": 0.6644439697265625,
+              "p95": 8.912833786010742,
+              "mean": 2.206062078475952
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 4889,
+              "median": 1.1049958171200018,
+              "p95": 9.123737198908385,
+              "mean": 2.5716614299296725
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4262,
+            "retained_pixels": 3914,
+            "retained_fraction": 0.9183481933364618
+          }
+        }
+      },
+      "cost": {
+        "load_seconds": 5.17,
+        "inference_seconds": 2.356,
+        "peak_allocated_mib": 3590.1,
+        "peak_reserved_mib": 4778.0
+      },
+      "input_sha256": [
+        "c842727ec06c81962dcfdeebb153bf46e7457f7bdb832e4d72e880cbe502ba36",
+        "019ebf8f7d1543f501285ffae60a7da40492ef0b46680a3d94135b53b64a2804",
+        "065b12560aeae0c73f2c0ba7cc60ecf115cef4f0f596584f734f4c1c5bca4d83",
+        "25d0123f213da70ed749eb586dae661a812bb5d4b947ac1af92f6b14596b1735",
+        "efccce967867d35ff8a80020023fe4820f9dbced98e9d137efe382bd3dc7a005"
+      ]
+    },
+    {
+      "job_id": "black-white-origin-504",
+      "case_id": "black-white-origin",
+      "process_res": 504,
+      "prediction_sha256": "8cdab2c1bafcfb548791a5d0f527c00f885fa6d2f318fb3e268be3024fca5d2f",
+      "report_sha256": "a2270d9f86cc14cee927847fb10ec6883185d29a59681c793b2cbc183b7f67fa",
+      "default_confidence_threshold": 2.8390012741088877,
+      "alignment": {
+        "source_singular_values": [
+          0.7647879400865787,
+          0.11934877715978782,
+          0.0010108359591524357
+        ],
+        "target_singular_values": [
+          12.699120806581083,
+          1.9938461481221983,
+          4.180505125951581e-07
+        ],
+        "second_to_first_singular_ratios": [
+          0.15605473217357063,
+          0.1570066289226042
+        ],
+        "camera_residuals_m": [
+          0.23564516719821818,
+          0.18961223971124336,
+          0.20662994571671317,
+          0.09899710454839954,
+          0.07864244519019582
+        ],
+        "camera_rmse_m": 0.1732988411003038,
+        "camera_span_m": 15.949155943756624,
+        "scale": 16.599614285497523,
+        "prediction_world_to_gt_world": [
+          [
+            -16.59894072428876,
+            -0.01384718710914563,
+            -0.14889430563595923,
+            0.5845378826393508
+          ],
+          [
+            0.14445099623164362,
+            2.789111371916461,
+            -16.362982188220688,
+            26.375529266713272
+          ],
+          [
+            0.03866740913658107,
+            -16.363613917400677,
+            -2.7888776991856847,
+            5.594944017066992
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.010865706104537933,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          0.7645047060478768,
+          1.0135125406111858,
+          0.5955974118301333,
+          1.5789119047021274,
+          1.4800676704739646
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 16.173359173432335,
+            "held_out_camera_error_m": 0.5477509860752349
+          },
+          {
+            "omitted_view": 1,
+            "scale": 16.713527150265154,
+            "held_out_camera_error_m": 0.2765004425720208
+          },
+          {
+            "omitted_view": 2,
+            "scale": 16.60596772579953,
+            "held_out_camera_error_m": 0.26129789253212465
+          },
+          {
+            "omitted_view": 3,
+            "scale": 16.66081652507913,
+            "held_out_camera_error_m": 0.14358047701268414
+          },
+          {
+            "omitted_view": 4,
+            "scale": 16.744774144268984,
+            "held_out_camera_error_m": 0.1967563509264388
+          }
+        ],
+        "state": "fitted"
+      },
+      "filter_policies": {
+        "unfiltered": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 705600,
+            "retained_fraction": 1.0
+          },
+          "rod_center_all": {
+            "available_pixels": 26675,
+            "retained_pixels": 26675,
+            "retained_fraction": 1.0
+          },
+          "strict_rods": {
+            "available_pixels": 13780,
+            "retained_pixels": 13780,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 13780,
+              "median": 0.46063947677612305,
+              "p95": 0.7988136291503902,
+              "mean": 0.4849797785282135
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 13780,
+              "median": 0.5140252511918146,
+              "p95": 0.8406232188524776,
+              "mean": 0.5454269654055953
+            }
+          },
+          "strict_background": {
+            "available_pixels": 649870,
+            "retained_pixels": 649870,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 649870,
+              "median": 0.31034421920776367,
+              "p95": 13.236787939071654,
+              "mean": 3.471127986907959
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 649870,
+              "median": 0.5240125204431041,
+              "p95": 13.511320081141905,
+              "mean": 3.6817628227308132
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 12895,
+            "retained_pixels": 12895,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 12895,
+              "median": 0.46683692932128906,
+              "p95": 3.6482062339782715,
+              "mean": 0.8668747544288635
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 12895,
+              "median": 0.5189701405837898,
+              "p95": 3.6713323750543063,
+              "mean": 0.9291154756345619
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4340,
+            "retained_pixels": 4340,
+            "retained_fraction": 1.0
+          }
+        },
+        "default_p40": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 423360,
+            "retained_fraction": 0.6
+          },
+          "rod_center_all": {
+            "available_pixels": 26675,
+            "retained_pixels": 24152,
+            "retained_fraction": 0.9054170571696345
+          },
+          "strict_rods": {
+            "available_pixels": 13780,
+            "retained_pixels": 13496,
+            "retained_fraction": 0.9793904208998548,
+            "scaled_camera_z_abs_error_m": {
+              "count": 13496,
+              "median": 0.4621915817260742,
+              "p95": 0.7968399524688721,
+              "mean": 0.48722705245018005
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 13496,
+              "median": 0.5153003764360298,
+              "p95": 0.8402329318099454,
+              "mean": 0.5466621240980692
+            }
+          },
+          "strict_background": {
+            "available_pixels": 649870,
+            "retained_pixels": 383648,
+            "retained_fraction": 0.5903457614599843,
+            "scaled_camera_z_abs_error_m": {
+              "count": 383648,
+              "median": 0.21787786483764648,
+              "p95": 1.4417599678039514,
+              "mean": 0.8582326173782349
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 383648,
+              "median": 0.35964579541799124,
+              "p95": 1.557294612476266,
+              "mean": 1.0294560255241476
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 12895,
+            "retained_pixels": 10656,
+            "retained_fraction": 0.826366808840636,
+            "scaled_camera_z_abs_error_m": {
+              "count": 10656,
+              "median": 0.45520591735839844,
+              "p95": 0.9140946865081787,
+              "mean": 0.5275359749794006
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 10656,
+              "median": 0.5097552703011148,
+              "p95": 0.9486052124994002,
+              "mean": 0.5899415074566213
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4340,
+            "retained_pixels": 3219,
+            "retained_fraction": 0.7417050691244239
+          }
+        },
+        "fixed_1_05": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 529789,
+            "retained_fraction": 0.7508347505668934
+          },
+          "rod_center_all": {
+            "available_pixels": 26675,
+            "retained_pixels": 26631,
+            "retained_fraction": 0.9983505154639175
+          },
+          "strict_rods": {
+            "available_pixels": 13780,
+            "retained_pixels": 13780,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 13780,
+              "median": 0.46063947677612305,
+              "p95": 0.7988136291503902,
+              "mean": 0.4849797785282135
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 13780,
+              "median": 0.5140252511918146,
+              "p95": 0.8406232188524776,
+              "mean": 0.5454269654055953
+            }
+          },
+          "strict_background": {
+            "available_pixels": 649870,
+            "retained_pixels": 477181,
+            "retained_fraction": 0.7342714696785511,
+            "scaled_camera_z_abs_error_m": {
+              "count": 477181,
+              "median": 0.24741554260253906,
+              "p95": 13.339815139770508,
+              "mean": 2.248586416244507
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 477181,
+              "median": 0.3925943232510375,
+              "p95": 13.584240203700217,
+              "mean": 2.424184077146425
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 12895,
+            "retained_pixels": 12851,
+            "retained_fraction": 0.9965878247382707,
+            "scaled_camera_z_abs_error_m": {
+              "count": 12851,
+              "median": 0.4660148620605469,
+              "p95": 3.4790077209472656,
+              "mean": 0.8338528275489807
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 12851,
+              "median": 0.5181423601531567,
+              "p95": 3.5084500123401687,
+              "mean": 0.89606972970346
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4340,
+            "retained_pixels": 4296,
+            "retained_fraction": 0.9898617511520738
+          }
+        }
+      },
+      "cost": {
+        "load_seconds": 5.039,
+        "inference_seconds": 1.663,
+        "peak_allocated_mib": 3590.1,
+        "peak_reserved_mib": 4778.0
+      },
+      "input_sha256": [
+        "7123927ec66f4c6f06dab53a10bccbfd6418972b18afc194a35c415caeffb009",
+        "0b329b0640bbe5a0d66badf8dd2b5e3229f8154a6c1c5246f8b0888c6322cb0f",
+        "b7bb1700b06a2c5f5ebbe77404e53abff1cdd09291df4563516e35873c133af6",
+        "f70383cdf84c0b014f531406290bec68065b2a64d15b9f3280b8b15e0fc6a300",
+        "58db5ab0f3297c48af77aab56714bc759ea2e038b2c926838acb05da82525b16"
+      ]
+    },
+    {
+      "job_id": "black-wight-thicker-504",
+      "case_id": "black-wight-thicker",
+      "process_res": 504,
+      "prediction_sha256": "93c2e5f879f15fdb22a25188d5c87464f353b30cf5aad11a8a4188ac9080cc36",
+      "report_sha256": "b53543a341511ae809e56427a92b2ac49b33d3aa152e41f596b9f9fe65e6ca4e",
+      "default_confidence_threshold": 5.301524829864505,
+      "alignment": {
+        "source_singular_values": [
+          0.7724547668492826,
+          0.12488840518024202,
+          0.0024144467634123904
+        ],
+        "target_singular_values": [
+          12.699120806581083,
+          1.9938461481221983,
+          4.180505125951581e-07
+        ],
+        "second_to_first_singular_ratios": [
+          0.16167730531282953,
+          0.1570066289226042
+        ],
+        "camera_residuals_m": [
+          0.04733832864238822,
+          0.01938906270418912,
+          0.08386085206763379,
+          0.11954908244197793,
+          0.07959915049522621
+        ],
+        "camera_rmse_m": 0.07781709772664591,
+        "camera_span_m": 15.949155943756624,
+        "scale": 16.426442806209447,
+        "prediction_world_to_gt_world": [
+          [
+            -15.775263764327322,
+            -0.7073290935259763,
+            4.524241592247581,
+            -3.8667494116306953
+          ],
+          [
+            -4.578468251674794,
+            2.726552356832865,
+            -15.538068219039493,
+            25.885070730201104
+          ],
+          [
+            -0.0818834536225628,
+            -16.183127666324907,
+            -2.8156166822069255,
+            5.555557629036048
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.004879073099608622,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          0.4276902701289733,
+          0.19812086450351865,
+          0.3489863359665547,
+          1.2473602688298728,
+          0.9299101326621291
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 16.460661472172262,
+            "held_out_camera_error_m": 0.11669131641081602
+          },
+          {
+            "omitted_view": 1,
+            "scale": 16.421708138399175,
+            "held_out_camera_error_m": 0.028295115545653525
+          },
+          {
+            "omitted_view": 2,
+            "scale": 16.43745283610323,
+            "held_out_camera_error_m": 0.11277796199320511
+          },
+          {
+            "omitted_view": 3,
+            "scale": 16.488712330159814,
+            "held_out_camera_error_m": 0.17430606559353376
+          },
+          {
+            "omitted_view": 4,
+            "scale": 16.277038226087708,
+            "held_out_camera_error_m": 0.2043764709868415
+          }
+        ],
+        "state": "fitted"
+      },
+      "filter_policies": {
+        "unfiltered": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 705600,
+            "retained_fraction": 1.0
+          },
+          "rod_center_all": {
+            "available_pixels": 64488,
+            "retained_pixels": 64488,
+            "retained_fraction": 1.0
+          },
+          "strict_rods": {
+            "available_pixels": 50715,
+            "retained_pixels": 50715,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 50715,
+              "median": 0.3111124038696289,
+              "p95": 0.42236948013305664,
+              "mean": 0.3113712966442108
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 50715,
+              "median": 0.36599780850048363,
+              "p95": 0.45910673298561155,
+              "mean": 0.3668504157598502
+            }
+          },
+          "strict_background": {
+            "available_pixels": 612181,
+            "retained_pixels": 612181,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 612181,
+              "median": 0.40007591247558594,
+              "p95": 13.040167808532715,
+              "mean": 3.2520453929901123
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 612181,
+              "median": 0.4558589229548913,
+              "p95": 13.239656426626851,
+              "mean": 3.3958294709477803
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 13773,
+            "retained_pixels": 13773,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 13773,
+              "median": 0.32904720306396484,
+              "p95": 4.161179924011227,
+              "mean": 0.7786398530006409
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 13773,
+              "median": 0.3860296977535285,
+              "p95": 4.192441594692175,
+              "mean": 0.835083312274739
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4484,
+            "retained_pixels": 4484,
+            "retained_fraction": 1.0
+          }
+        },
+        "default_p40": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 423360,
+            "retained_fraction": 0.6
+          },
+          "rod_center_all": {
+            "available_pixels": 64488,
+            "retained_pixels": 61751,
+            "retained_fraction": 0.9575579952859447
+          },
+          "strict_rods": {
+            "available_pixels": 50715,
+            "retained_pixels": 50290,
+            "retained_fraction": 0.9916198363403332,
+            "scaled_camera_z_abs_error_m": {
+              "count": 50290,
+              "median": 0.3112764358520508,
+              "p95": 0.42112522125244134,
+              "mean": 0.3089207112789154
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 50290,
+              "median": 0.36615222385909285,
+              "p95": 0.4584755450012578,
+              "mean": 0.36416428493038566
+            }
+          },
+          "strict_background": {
+            "available_pixels": 612181,
+            "retained_pixels": 347728,
+            "retained_fraction": 0.568015015167083,
+            "scaled_camera_z_abs_error_m": {
+              "count": 347728,
+              "median": 0.29522037506103516,
+              "p95": 11.926707220077514,
+              "mean": 0.9195969700813293
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 347728,
+              "median": 0.37698339817225257,
+              "p95": 12.214117801789678,
+              "mean": 1.0173817749838898
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 13773,
+            "retained_pixels": 11461,
+            "retained_fraction": 0.8321353372540478,
+            "scaled_camera_z_abs_error_m": {
+              "count": 11461,
+              "median": 0.32518768310546875,
+              "p95": 0.4644193649291992,
+              "mean": 0.3536475598812103
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 11461,
+              "median": 0.38275722334555745,
+              "p95": 0.4907608325588414,
+              "mean": 0.408905603385889
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4484,
+            "retained_pixels": 3299,
+            "retained_fraction": 0.7357270294380018
+          }
+        },
+        "fixed_1_05": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 563838,
+            "retained_fraction": 0.7990901360544218
+          },
+          "rod_center_all": {
+            "available_pixels": 64488,
+            "retained_pixels": 64459,
+            "retained_fraction": 0.9995503039325145
+          },
+          "strict_rods": {
+            "available_pixels": 50715,
+            "retained_pixels": 50715,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 50715,
+              "median": 0.3111124038696289,
+              "p95": 0.42236948013305664,
+              "mean": 0.3113712966442108
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 50715,
+              "median": 0.36599780850048363,
+              "p95": 0.45910673298561155,
+              "mean": 0.3668504157598502
+            }
+          },
+          "strict_background": {
+            "available_pixels": 612181,
+            "retained_pixels": 473024,
+            "retained_fraction": 0.7726865093820292,
+            "scaled_camera_z_abs_error_m": {
+              "count": 473024,
+              "median": 0.34775781631469727,
+              "p95": 13.274876976013182,
+              "mean": 2.629594564437866
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 473024,
+              "median": 0.40549282800274206,
+              "p95": 13.482814147811675,
+              "mean": 2.7428248873098124
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 13773,
+            "retained_pixels": 13744,
+            "retained_fraction": 0.997894431133377,
+            "scaled_camera_z_abs_error_m": {
+              "count": 13744,
+              "median": 0.32892513275146484,
+              "p95": 3.9857060909271063,
+              "mean": 0.7608457803726196
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 13744,
+              "median": 0.3858825909598407,
+              "p95": 4.022507662716475,
+              "mean": 0.8172418741604719
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4484,
+            "retained_pixels": 4460,
+            "retained_fraction": 0.9946476360392507
+          }
+        }
+      },
+      "cost": {
+        "load_seconds": 4.754,
+        "inference_seconds": 1.659,
+        "peak_allocated_mib": 3590.1,
+        "peak_reserved_mib": 4778.0
+      },
+      "input_sha256": [
+        "07b679ad29e7688afd0c1b4fd22f68c2d10a56dd6bac3458e30c38cbae848e2d",
+        "cb58e52606cf4645a29f2551f6eb573f280e538232148b3e5490b5d6e3f28667",
+        "31f2a41aff395eb2a6d4a21b6dcacac7bcc7bbc8e578a4cf968b023a1291694b",
+        "f26f344b78f29d0aeb2aa1d2cf0d3bdc690f22def3eef6f8f94e1dab59df477b",
+        "ee5e560e2de16f62cefa0182a8d8f0d18d00c6218cc7be6b8a974f8eec56edcd"
+      ]
+    },
+    {
+      "job_id": "brick-texture-thinner-504",
+      "case_id": "brick-texture-thinner",
+      "process_res": 504,
+      "prediction_sha256": "f527cf2db24f685358c637417aa8fc60076f253c4b9e45331b877bb2cbe97b48",
+      "report_sha256": "e4cba5316f05597b49a0fac7fe4289b4bf842611c7b17ca02e87db5f5c782e78",
+      "default_confidence_threshold": 12.116548347473145,
+      "alignment": {
+        "source_singular_values": [
+          0.569461955754463,
+          0.08879518988698014,
+          0.00048345217879845623
+        ],
+        "target_singular_values": [
+          12.699120806581083,
+          1.9938461481221983,
+          4.180505125951581e-07
+        ],
+        "second_to_first_singular_ratios": [
+          0.15592822134946321,
+          0.1570066289226042
+        ],
+        "camera_residuals_m": [
+          0.008476211103521676,
+          0.012336213612760646,
+          0.039895253214281355,
+          0.030129787066751682,
+          0.005616155741454152
+        ],
+        "camera_rmse_m": 0.023473409739544947,
+        "camera_span_m": 15.949155943756624,
+        "scale": 22.30368875227931,
+        "prediction_world_to_gt_world": [
+          [
+            -21.571357437175852,
+            -0.9571533592617694,
+            5.587032103272976,
+            -3.7837241596100792
+          ],
+          [
+            -5.668184626080862,
+            3.845815923926725,
+            -21.22583131192941,
+            25.943551616228955
+          ],
+          [
+            -0.05247209553175604,
+            -21.948760540966237,
+            -3.96278807824302,
+            5.589772147409766
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.0014717650151720868,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          0.692143551515886,
+          0.495165983563238,
+          0.1831212026305428,
+          0.3845441056587869,
+          0.3429767737715844
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 22.30451794464249,
+            "held_out_camera_error_m": 0.020944666199509365
+          },
+          {
+            "omitted_view": 1,
+            "scale": 22.294313723113348,
+            "held_out_camera_error_m": 0.017875088288334024
+          },
+          {
+            "omitted_view": 2,
+            "scale": 22.299426798967964,
+            "held_out_camera_error_m": 0.05149438092134906
+          },
+          {
+            "omitted_view": 3,
+            "scale": 22.325534970492853,
+            "held_out_camera_error_m": 0.04369193807314503
+          },
+          {
+            "omitted_view": 4,
+            "scale": 22.290038046332732,
+            "held_out_camera_error_m": 0.022313996352239036
+          }
+        ],
+        "state": "fitted"
+      },
+      "filter_policies": {
+        "unfiltered": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 705600,
+            "retained_fraction": 1.0
+          },
+          "rod_center_all": {
+            "available_pixels": 5319,
+            "retained_pixels": 5319,
+            "retained_fraction": 1.0
+          },
+          "strict_rods": {
+            "available_pixels": 0,
+            "retained_pixels": 0,
+            "retained_fraction": null,
+            "reason": "empty_region",
+            "scaled_camera_z_abs_error_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            }
+          },
+          "strict_background": {
+            "available_pixels": 671591,
+            "retained_pixels": 671591,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 671591,
+              "median": 0.8010025024414062,
+              "p95": 1.6745128631591797,
+              "mean": 0.8388422131538391
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 671591,
+              "median": 0.9455639673645263,
+              "p95": 1.8361036773447323,
+              "mean": 1.000634752693505
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 5319,
+            "retained_pixels": 5319,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 5319,
+              "median": 4.000853538513184,
+              "p95": 13.0053391456604,
+              "mean": 4.895598888397217
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 5319,
+              "median": 4.059063120685021,
+              "p95": 13.228628240441527,
+              "mean": 4.98357506618569
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4262,
+            "retained_pixels": 4262,
+            "retained_fraction": 1.0
+          }
+        },
+        "default_p40": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 423360,
+            "retained_fraction": 0.6
+          },
+          "rod_center_all": {
+            "available_pixels": 5319,
+            "retained_pixels": 206,
+            "retained_fraction": 0.0387290844143636
+          },
+          "strict_rods": {
+            "available_pixels": 0,
+            "retained_pixels": 0,
+            "retained_fraction": null,
+            "reason": "empty_region",
+            "scaled_camera_z_abs_error_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            }
+          },
+          "strict_background": {
+            "available_pixels": 671591,
+            "retained_pixels": 416303,
+            "retained_fraction": 0.6198757874956633,
+            "scaled_camera_z_abs_error_m": {
+              "count": 416303,
+              "median": 0.34856128692626953,
+              "p95": 1.5074588775634763,
+              "mean": 0.5276502370834351
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 416303,
+              "median": 0.47550209664407317,
+              "p95": 1.6464224222307797,
+              "mean": 0.6690687406421334
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 5319,
+            "retained_pixels": 206,
+            "retained_fraction": 0.0387290844143636,
+            "scaled_camera_z_abs_error_m": {
+              "count": 206,
+              "median": 0.35843420028686523,
+              "p95": 1.4657025337219238,
+              "mean": 0.5452460050582886
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 206,
+              "median": 0.4291457949672708,
+              "p95": 1.492035947023311,
+              "mean": 0.6121210875172323
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4262,
+            "retained_pixels": 284,
+            "retained_fraction": 0.0666353824495542
+          }
+        },
+        "fixed_1_05": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 705149,
+            "retained_fraction": 0.999360827664399
+          },
+          "rod_center_all": {
+            "available_pixels": 5319,
+            "retained_pixels": 5021,
+            "retained_fraction": 0.943974431284076
+          },
+          "strict_rods": {
+            "available_pixels": 0,
+            "retained_pixels": 0,
+            "retained_fraction": null,
+            "reason": "empty_region",
+            "scaled_camera_z_abs_error_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            }
+          },
+          "strict_background": {
+            "available_pixels": 671591,
+            "retained_pixels": 671591,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 671591,
+              "median": 0.8010025024414062,
+              "p95": 1.6745128631591797,
+              "mean": 0.8388422131538391
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 671591,
+              "median": 0.9455639673645263,
+              "p95": 1.8361036773447323,
+              "mean": 1.000634752693505
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 5319,
+            "retained_pixels": 5021,
+            "retained_fraction": 0.943974431284076,
+            "scaled_camera_z_abs_error_m": {
+              "count": 5021,
+              "median": 4.0997161865234375,
+              "p95": 13.020403861999512,
+              "mean": 4.962909698486328
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 5021,
+              "median": 4.171948636007708,
+              "p95": 13.282935982392308,
+              "mean": 5.051017138175253
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4262,
+            "retained_pixels": 4144,
+            "retained_fraction": 0.9723134678554669
+          }
+        }
+      },
+      "cost": {
+        "load_seconds": 4.782,
+        "inference_seconds": 1.656,
+        "peak_allocated_mib": 3590.1,
+        "peak_reserved_mib": 4778.0
+      },
+      "input_sha256": [
+        "e1442216d5e6628e003c7574ca83097fc725091e1c6c5442666366cd627504c1",
+        "554ef964fdaf56829fdefe43da0d3c0b46eb7fe238b27904d27edf7c1e847e54",
+        "b3c24cc5ebc6b70e496559494d1aa507a8e17e1077c7ced2526b9bd2ef4c9062",
+        "0b729c4466d24f0ceaed202203756240aea6af14a6ee0ba5f6872b978ab326ec",
+        "75211e8263e2f7fb1e05beccf084682b9cf2f2bfcc9ee7c5793f2bf65713b680"
+      ]
+    },
+    {
+      "job_id": "brick-texture-origin-504",
+      "case_id": "brick-texture-origin",
+      "process_res": 504,
+      "prediction_sha256": "49aaf65cecdada55958f04bbeb5246df24556a3bd25153448416cf566350c9ae",
+      "report_sha256": "b1f09e200a1593a7539e3c3e498d9b35a81935ac45200e17bf3736eb6b5ce33c",
+      "default_confidence_threshold": 10.489508628845215,
+      "alignment": {
+        "source_singular_values": [
+          0.5787785411822127,
+          0.09170743762000699,
+          0.000976435224280791
+        ],
+        "target_singular_values": [
+          12.699120806581083,
+          1.9938461481221983,
+          4.180505125951581e-07
+        ],
+        "second_to_first_singular_ratios": [
+          0.15844996159098337,
+          0.1570066289226042
+        ],
+        "camera_residuals_m": [
+          0.007581666556643431,
+          0.04394275944097301,
+          0.07275793395117737,
+          0.030350538859149272,
+          0.026990121871953415
+        ],
+        "camera_rmse_m": 0.04226532057280736,
+        "camera_span_m": 15.949155943756624,
+        "scale": 21.935746787535678,
+        "prediction_world_to_gt_world": [
+          [
+            -21.205709497681962,
+            -0.9080740408277486,
+            5.538074878798367,
+            -3.767626040402674
+          ],
+          [
+            -5.611795220011615,
+            3.6287898793619826,
+            -20.89298029355738,
+            25.956570411810684
+          ],
+          [
+            -0.05124680924316354,
+            -21.61444592569278,
+            -3.7403326345029124,
+            5.588802111547527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.002650003594036732,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          0.9270224612100767,
+          0.8131148556116387,
+          0.3700245901229796,
+          0.2760337318484795,
+          0.3635297837933827
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 21.924732204074996,
+            "held_out_camera_error_m": 0.04135062531402971
+          },
+          {
+            "omitted_view": 1,
+            "scale": 21.90510377517708,
+            "held_out_camera_error_m": 0.06378348573010134
+          },
+          {
+            "omitted_view": 2,
+            "scale": 21.934579871089024,
+            "held_out_camera_error_m": 0.09421231803842987
+          },
+          {
+            "omitted_view": 3,
+            "scale": 21.94645000054779,
+            "held_out_camera_error_m": 0.043876462540106964
+          },
+          {
+            "omitted_view": 4,
+            "scale": 21.983507757743617,
+            "held_out_camera_error_m": 0.06643830067695818
+          }
+        ],
+        "state": "fitted"
+      },
+      "filter_policies": {
+        "unfiltered": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 705600,
+            "retained_fraction": 1.0
+          },
+          "rod_center_all": {
+            "available_pixels": 26675,
+            "retained_pixels": 26675,
+            "retained_fraction": 1.0
+          },
+          "strict_rods": {
+            "available_pixels": 13780,
+            "retained_pixels": 13780,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 13780,
+              "median": 0.1923971176147461,
+              "p95": 1.2105415344238264,
+              "mean": 0.38577282428741455
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 13780,
+              "median": 0.27003267365308325,
+              "p95": 1.2711716074285082,
+              "mean": 0.46521445413365287
+            }
+          },
+          "strict_background": {
+            "available_pixels": 649870,
+            "retained_pixels": 649870,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 649870,
+              "median": 0.6335105895996094,
+              "p95": 1.4055455207824703,
+              "mean": 0.7059065103530884
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 649870,
+              "median": 0.7709851511864962,
+              "p95": 1.5647706464159297,
+              "mean": 0.8487140560371329
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 12895,
+            "retained_pixels": 12895,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 12895,
+              "median": 0.46034812927246094,
+              "p95": 12.882627868652342,
+              "mean": 2.399364948272705
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 12895,
+              "median": 0.5095398192138777,
+              "p95": 13.184283074662526,
+              "mean": 2.482461359914911
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4340,
+            "retained_pixels": 4340,
+            "retained_fraction": 1.0
+          }
+        },
+        "default_p40": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 423360,
+            "retained_fraction": 0.6
+          },
+          "rod_center_all": {
+            "available_pixels": 26675,
+            "retained_pixels": 7955,
+            "retained_fraction": 0.2982193064667292
+          },
+          "strict_rods": {
+            "available_pixels": 13780,
+            "retained_pixels": 5555,
+            "retained_fraction": 0.4031204644412192,
+            "scaled_camera_z_abs_error_m": {
+              "count": 5555,
+              "median": 0.1349477767944336,
+              "p95": 0.33794603347778324,
+              "mean": 0.14998166263103485
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 5555,
+              "median": 0.2260997332584206,
+              "p95": 0.40680168579329146,
+              "mean": 0.2365678337031079
+            }
+          },
+          "strict_background": {
+            "available_pixels": 649870,
+            "retained_pixels": 408191,
+            "retained_fraction": 0.6281117762013941,
+            "scaled_camera_z_abs_error_m": {
+              "count": 408191,
+              "median": 0.3257770538330078,
+              "p95": 1.2500839233398438,
+              "mean": 0.45911797881126404
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 408191,
+              "median": 0.43446973192795446,
+              "p95": 1.3848737082659741,
+              "mean": 0.5725657334499894
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 12895,
+            "retained_pixels": 2400,
+            "retained_fraction": 0.18611865063978286,
+            "scaled_camera_z_abs_error_m": {
+              "count": 2400,
+              "median": 0.20458269119262695,
+              "p95": 1.05011429786682,
+              "mean": 0.31780534982681274
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 2400,
+              "median": 0.2727130591301651,
+              "p95": 1.0842597717932727,
+              "mean": 0.38270797392930167
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4340,
+            "retained_pixels": 660,
+            "retained_fraction": 0.15207373271889402
+          }
+        },
+        "fixed_1_05": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 705150,
+            "retained_fraction": 0.9993622448979592
+          },
+          "rod_center_all": {
+            "available_pixels": 26675,
+            "retained_pixels": 26531,
+            "retained_fraction": 0.994601686972821
+          },
+          "strict_rods": {
+            "available_pixels": 13780,
+            "retained_pixels": 13753,
+            "retained_fraction": 0.9980406386066764,
+            "scaled_camera_z_abs_error_m": {
+              "count": 13753,
+              "median": 0.19195079803466797,
+              "p95": 1.1775049209594717,
+              "mean": 0.37639573216438293
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 13753,
+              "median": 0.26988096922166344,
+              "p95": 1.229142598124251,
+              "mean": 0.4556338533680819
+            }
+          },
+          "strict_background": {
+            "available_pixels": 649870,
+            "retained_pixels": 649863,
+            "retained_fraction": 0.9999892286149538,
+            "scaled_camera_z_abs_error_m": {
+              "count": 649863,
+              "median": 0.6335124969482422,
+              "p95": 1.4055475234985353,
+              "mean": 0.7059078216552734
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 649863,
+              "median": 0.770985037087266,
+              "p95": 1.5647721293848604,
+              "mean": 0.8487148435134378
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 12895,
+            "retained_pixels": 12778,
+            "retained_fraction": 0.9909267157813106,
+            "scaled_camera_z_abs_error_m": {
+              "count": 12778,
+              "median": 0.45247888565063477,
+              "p95": 12.851045560836791,
+              "mean": 2.3488190174102783
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 12778,
+              "median": 0.5038627253526977,
+              "p95": 13.153915780763544,
+              "mean": 2.430479738223616
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4340,
+            "retained_pixels": 4211,
+            "retained_fraction": 0.9702764976958526
+          }
+        }
+      },
+      "cost": {
+        "load_seconds": 4.733,
+        "inference_seconds": 1.705,
+        "peak_allocated_mib": 3590.1,
+        "peak_reserved_mib": 4778.0
+      },
+      "input_sha256": [
+        "5aefec0e718689478fe2c8381dff34952f7011b5af63b5dd9344a0e1924a9810",
+        "c695152b962ac66a4b2ee97632f0cf4fe73e82e848ce146ba6f6ec94765e671b",
+        "87c62864755b089bb23726b727864dc47182c8ea5a5af521b09d2d16deb1ece5",
+        "13882417a4dcb36fe452cfc42d379f7dc5bf19b081420a216397274c2834fb9f",
+        "962f0df79333509eaa436243e20516dfc2023ab5199aad2eab511caef08cec5f"
+      ]
+    },
+    {
+      "job_id": "brick-texture-thicker-504",
+      "case_id": "brick-texture-thicker",
+      "process_res": 504,
+      "prediction_sha256": "10a7f316fe25f9135a85b4d4a8e7350fcfac6f673fa37cfbf6ce8f2d8a486fc4",
+      "report_sha256": "f2c4d95613fde4166ff1e215d855fe12652134273e6db223919c25f4b2cb4eeb",
+      "default_confidence_threshold": 6.687663459777832,
+      "alignment": {
+        "source_singular_values": [
+          0.5920442025832378,
+          0.09159772051376068,
+          0.0010947434125117706
+        ],
+        "target_singular_values": [
+          12.699120806581083,
+          1.9938461481221983,
+          4.180505125951581e-07
+        ],
+        "second_to_first_singular_ratios": [
+          0.15471432726491838,
+          0.1570066289226042
+        ],
+        "camera_residuals_m": [
+          0.04714314856777336,
+          0.04140945118361168,
+          0.08786708336871572,
+          0.030370266650595248,
+          0.047015826080179034
+        ],
+        "camera_rmse_m": 0.0543887570043034,
+        "camera_span_m": 15.949155943756624,
+        "scale": 21.456102915513924,
+        "prediction_world_to_gt_world": [
+          [
+            -20.78682358426539,
+            0.9137972335518316,
+            -5.238061875704258,
+            4.487781198198421
+          ],
+          [
+            5.316951852475231,
+            3.379909458090856,
+            -20.51025566331861,
+            25.768524313164175
+          ],
+          [
+            -0.04837970869690524,
+            -21.168503466050353,
+            -3.5009245539893334,
+            5.56758748079534
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.0034101338776861196,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          1.2049787766627897,
+          0.9067946105975494,
+          0.8055297217614525,
+          0.6742383260593025,
+          1.0751751619824506
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 21.57550421030009,
+            "held_out_camera_error_m": 0.13388984425597947
+          },
+          {
+            "omitted_view": 1,
+            "scale": 21.45440221326388,
+            "held_out_camera_error_m": 0.060624893893911534
+          },
+          {
+            "omitted_view": 2,
+            "scale": 21.45063160159983,
+            "held_out_camera_error_m": 0.11075574127965644
+          },
+          {
+            "omitted_view": 3,
+            "scale": 21.442852541685482,
+            "held_out_camera_error_m": 0.0446836614375765
+          },
+          {
+            "omitted_view": 4,
+            "scale": 21.37511260307632,
+            "held_out_camera_error_m": 0.1279689814292479
+          }
+        ],
+        "state": "fitted"
+      },
+      "filter_policies": {
+        "unfiltered": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 705600,
+            "retained_fraction": 1.0
+          },
+          "rod_center_all": {
+            "available_pixels": 64488,
+            "retained_pixels": 64488,
+            "retained_fraction": 1.0
+          },
+          "strict_rods": {
+            "available_pixels": 50715,
+            "retained_pixels": 50715,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 50715,
+              "median": 0.2505502700805664,
+              "p95": 0.44392499923706014,
+              "mean": 0.278055876493454
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 50715,
+              "median": 0.38611842550103875,
+              "p95": 0.5521109144070966,
+              "mean": 0.42060226006420554
+            }
+          },
+          "strict_background": {
+            "available_pixels": 612181,
+            "retained_pixels": 612181,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 612181,
+              "median": 0.8283004760742188,
+              "p95": 1.710683822631836,
+              "mean": 0.8769261837005615
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 612181,
+              "median": 1.019049297259612,
+              "p95": 1.967537819471757,
+              "mean": 1.0845734209571805
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 13773,
+            "retained_pixels": 13773,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 13773,
+              "median": 0.3665151596069336,
+              "p95": 13.692811584472656,
+              "mean": 2.547229528427124
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 13773,
+              "median": 0.4734527524946522,
+              "p95": 13.94600803203917,
+              "mean": 2.6793802849699335
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4484,
+            "retained_pixels": 4484,
+            "retained_fraction": 1.0
+          }
+        },
+        "default_p40": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 423360,
+            "retained_fraction": 0.6
+          },
+          "rod_center_all": {
+            "available_pixels": 64488,
+            "retained_pixels": 51289,
+            "retained_fraction": 0.7953262622503412
+          },
+          "strict_rods": {
+            "available_pixels": 50715,
+            "retained_pixels": 45852,
+            "retained_fraction": 0.9041112097012718,
+            "scaled_camera_z_abs_error_m": {
+              "count": 45852,
+              "median": 0.2458362579345703,
+              "p95": 0.40720691680908194,
+              "mean": 0.24144893884658813
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 45852,
+              "median": 0.38106566922166446,
+              "p95": 0.50522550857899,
+              "mean": 0.3831855285428002
+            }
+          },
+          "strict_background": {
+            "available_pixels": 612181,
+            "retained_pixels": 364752,
+            "retained_fraction": 0.5958237841422717,
+            "scaled_camera_z_abs_error_m": {
+              "count": 364752,
+              "median": 0.3749122619628906,
+              "p95": 1.3902592658996582,
+              "mean": 0.5129072070121765
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 364752,
+              "median": 0.527185666734197,
+              "p95": 1.6353551672329418,
+              "mean": 0.6705762569036213
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 13773,
+            "retained_pixels": 5437,
+            "retained_fraction": 0.3947578595803383,
+            "scaled_camera_z_abs_error_m": {
+              "count": 5437,
+              "median": 0.2678718566894531,
+              "p95": 1.2581214904785156,
+              "mean": 0.3910689949989319
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 5437,
+              "median": 0.37880279755962504,
+              "p95": 1.3051564719600792,
+              "mean": 0.5058391747340804
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4484,
+            "retained_pixels": 908,
+            "retained_fraction": 0.2024977698483497
+          }
+        },
+        "fixed_1_05": {
+          "all_pixels": {
+            "available_pixels": 705600,
+            "retained_pixels": 705069,
+            "retained_fraction": 0.9992474489795918
+          },
+          "rod_center_all": {
+            "available_pixels": 64488,
+            "retained_pixels": 64172,
+            "retained_fraction": 0.9950998635405036
+          },
+          "strict_rods": {
+            "available_pixels": 50715,
+            "retained_pixels": 50652,
+            "retained_fraction": 0.9987577639751553,
+            "scaled_camera_z_abs_error_m": {
+              "count": 50652,
+              "median": 0.2503995895385742,
+              "p95": 0.4420300960540771,
+              "mean": 0.2715994417667389
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 50652,
+              "median": 0.3859941151483354,
+              "p95": 0.5499550174042088,
+              "mean": 0.41414834451057525
+            }
+          },
+          "strict_background": {
+            "available_pixels": 612181,
+            "retained_pixels": 612165,
+            "retained_fraction": 0.9999738639389331,
+            "scaled_camera_z_abs_error_m": {
+              "count": 612165,
+              "median": 0.8282585144042969,
+              "p95": 1.7106132507324219,
+              "mean": 0.8768815398216248
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 612165,
+              "median": 1.0189950000471766,
+              "p95": 1.967463657127368,
+              "mean": 1.0845312578675899
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 13773,
+            "retained_pixels": 13520,
+            "retained_fraction": 0.9816307267842881,
+            "scaled_camera_z_abs_error_m": {
+              "count": 13520,
+              "median": 0.35845088958740234,
+              "p95": 13.645005941390986,
+              "mean": 2.4424307346343994
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 13520,
+              "median": 0.46698853001159013,
+              "p95": 13.899664913225113,
+              "mean": 2.5727031727747556
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 4484,
+            "retained_pixels": 4426,
+            "retained_fraction": 0.9870651204281892
+          }
+        }
+      },
+      "cost": {
+        "load_seconds": 5.011,
+        "inference_seconds": 1.616,
+        "peak_allocated_mib": 3590.1,
+        "peak_reserved_mib": 4778.0
+      },
+      "input_sha256": [
+        "730c197e1674923ecee822da01ec8e4fa4f6949c64d7da92a6b6c296e4083724",
+        "f7757d59bb025caa7c79b37bd1de227f1f9d58c0da29c868ba9a5d8588e31632",
+        "3825773ef4dc755d3c19e70d66682f5d5f16031c6935e4295fc3fef85dc5b7ca",
+        "1199d3c8cd0f7e5c957491294d69b194a0517fed93c74002456ec93fb78fb999",
+        "0e9e0d15c0612f4f8d302c009491b012ef0617fa7ab1d2c6947df4dca7c5f9c3"
+      ]
+    },
+    {
+      "job_id": "brick-texture-thinner-756",
+      "case_id": "brick-texture-thinner",
+      "process_res": 756,
+      "prediction_sha256": "912c2fa9d3bb16564c7ee390c3a55374455e792ab2a918ee63bc222b24041851",
+      "report_sha256": "290e9b44fb1c186af1c875c31b4b2fdb99412a7d443cbfd0be75eb27d1d82485",
+      "default_confidence_threshold": 8.312559509277344,
+      "alignment": {
+        "source_singular_values": [
+          0.5872322092289454,
+          0.0889565924239455,
+          0.0011890360169589534
+        ],
+        "target_singular_values": [
+          12.699120806581083,
+          1.9938461481221983,
+          4.180505125951581e-07
+        ],
+        "second_to_first_singular_ratios": [
+          0.1514845252455555,
+          0.1570066289226042
+        ],
+        "camera_residuals_m": [
+          0.02492446601984089,
+          0.026543310687524177,
+          0.04719454448083824,
+          0.053314644314360345,
+          0.05623384734256808
+        ],
+        "camera_rmse_m": 0.043721386672191595,
+        "camera_span_m": 15.949155943756624,
+        "scale": 21.642711557915643,
+        "prediction_world_to_gt_world": [
+          [
+            -18.760752833104736,
+            -1.8809629404625496,
+            10.625586813484427,
+            -7.656955167724315
+          ],
+          [
+            -10.79052205625698,
+            3.419906704445457,
+            -18.446567037404424,
+            24.480242443878414
+          ],
+          [
+            -0.0758318384272249,
+            -21.28786462115517,
+            -3.9023112360222174,
+            5.578875506447245
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.002741297835846075,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          0.41073766803345435,
+          0.35866532811260665,
+          0.4033875182005686,
+          0.31659177015318235,
+          0.4388454700380614
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 21.67885149153685,
+            "held_out_camera_error_m": 0.06367524515327581
+          },
+          {
+            "omitted_view": 1,
+            "scale": 21.63301049937383,
+            "held_out_camera_error_m": 0.03885314039844501
+          },
+          {
+            "omitted_view": 2,
+            "scale": 21.635410688709644,
+            "held_out_camera_error_m": 0.0656175808893185
+          },
+          {
+            "omitted_view": 3,
+            "scale": 21.623920113597194,
+            "held_out_camera_error_m": 0.07722907735293483
+          },
+          {
+            "omitted_view": 4,
+            "scale": 21.67019698951986,
+            "held_out_camera_error_m": 0.14188143204423426
+          }
+        ],
+        "state": "fitted"
+      },
+      "filter_policies": {
+        "unfiltered": {
+          "all_pixels": {
+            "available_pixels": 1587600,
+            "retained_pixels": 1587600,
+            "retained_fraction": 1.0
+          },
+          "rod_center_all": {
+            "available_pixels": 12159,
+            "retained_pixels": 12159,
+            "retained_fraction": 1.0
+          },
+          "strict_rods": {
+            "available_pixels": 0,
+            "retained_pixels": 0,
+            "retained_fraction": null,
+            "reason": "empty_region",
+            "scaled_camera_z_abs_error_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            }
+          },
+          "strict_background": {
+            "available_pixels": 1524458,
+            "retained_pixels": 1524458,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 1524458,
+              "median": 0.3269662857055664,
+              "p95": 1.0084498405456541,
+              "mean": 0.4246637225151062
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 1524458,
+              "median": 0.39981488939708854,
+              "p95": 1.0947570415284518,
+              "mean": 0.5216707051699221
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 12159,
+            "retained_pixels": 12159,
+            "retained_fraction": 1.0,
+            "scaled_camera_z_abs_error_m": {
+              "count": 12159,
+              "median": 1.556593894958496,
+              "p95": 8.233039951324464,
+              "mean": 2.6109631061553955
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 12159,
+              "median": 1.5874077622712248,
+              "p95": 8.324701818628375,
+              "mean": 2.6615839970737447
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 6144,
+            "retained_pixels": 6144,
+            "retained_fraction": 1.0
+          }
+        },
+        "default_p40": {
+          "all_pixels": {
+            "available_pixels": 1587600,
+            "retained_pixels": 952560,
+            "retained_fraction": 0.6
+          },
+          "rod_center_all": {
+            "available_pixels": 12159,
+            "retained_pixels": 705,
+            "retained_fraction": 0.05798174191956575
+          },
+          "strict_rods": {
+            "available_pixels": 0,
+            "retained_pixels": 0,
+            "retained_fraction": null,
+            "reason": "empty_region",
+            "scaled_camera_z_abs_error_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            }
+          },
+          "strict_background": {
+            "available_pixels": 1524458,
+            "retained_pixels": 937719,
+            "retained_fraction": 0.6151163233096615,
+            "scaled_camera_z_abs_error_m": {
+              "count": 937719,
+              "median": 0.18089675903320312,
+              "p95": 0.7261829376220703,
+              "mean": 0.23882600665092468
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 937719,
+              "median": 0.27048029730287915,
+              "p95": 0.7803411930449594,
+              "mean": 0.3377153492994656
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 12159,
+            "retained_pixels": 705,
+            "retained_fraction": 0.05798174191956575,
+            "scaled_camera_z_abs_error_m": {
+              "count": 705,
+              "median": 0.26374340057373047,
+              "p95": 1.6244543075561524,
+              "mean": 0.4995722770690918
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 705,
+              "median": 0.3282936931751105,
+              "p95": 1.658528223198275,
+              "mean": 0.5587433585397409
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 6144,
+            "retained_pixels": 643,
+            "retained_fraction": 0.10465494791666667
+          }
+        },
+        "fixed_1_05": {
+          "all_pixels": {
+            "available_pixels": 1587600,
+            "retained_pixels": 1585831,
+            "retained_fraction": 0.9988857394809776
+          },
+          "rod_center_all": {
+            "available_pixels": 12159,
+            "retained_pixels": 11058,
+            "retained_fraction": 0.9094497902788058
+          },
+          "strict_rods": {
+            "available_pixels": 0,
+            "retained_pixels": 0,
+            "retained_fraction": null,
+            "reason": "empty_region",
+            "scaled_camera_z_abs_error_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 0,
+              "median": null,
+              "p95": null,
+              "mean": null,
+              "reason": "no_finite_samples"
+            }
+          },
+          "strict_background": {
+            "available_pixels": 1524458,
+            "retained_pixels": 1524261,
+            "retained_fraction": 0.9998707737438486,
+            "scaled_camera_z_abs_error_m": {
+              "count": 1524261,
+              "median": 0.32689666748046875,
+              "p95": 1.0080909729003906,
+              "mean": 0.42426079511642456
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 1524261,
+              "median": 0.3997070195563339,
+              "p95": 1.0943978730080035,
+              "mean": 0.5212659050610121
+            }
+          },
+          "mixed_rod_center_diagnostic": {
+            "available_pixels": 12159,
+            "retained_pixels": 11058,
+            "retained_fraction": 0.9094497902788058,
+            "scaled_camera_z_abs_error_m": {
+              "count": 11058,
+              "median": 1.4915833473205566,
+              "p95": 8.275903367996216,
+              "mean": 2.563607931137085
+            },
+            "paired_pixel_world_point_displacement_m": {
+              "count": 11058,
+              "median": 1.527377635495387,
+              "p95": 8.366200362640594,
+              "mean": 2.6136015508824766
+            }
+          },
+          "subpixel_coverage_without_rod_center": {
+            "available_pixels": 6144,
+            "retained_pixels": 5806,
+            "retained_fraction": 0.9449869791666666
+          }
+        }
+      },
+      "cost": {
+        "load_seconds": 4.82,
+        "inference_seconds": 5.376,
+        "peak_allocated_mib": 5371.8,
+        "peak_reserved_mib": 7804.0
+      },
+      "input_sha256": [
+        "e1442216d5e6628e003c7574ca83097fc725091e1c6c5442666366cd627504c1",
+        "554ef964fdaf56829fdefe43da0d3c0b46eb7fe238b27904d27edf7c1e847e54",
+        "b3c24cc5ebc6b70e496559494d1aa507a8e17e1077c7ced2526b9bd2ef4c9062",
+        "0b729c4466d24f0ceaed202203756240aea6af14a6ee0ba5f6872b978ab326ec",
+        "75211e8263e2f7fb1e05beccf084682b9cf2f2bfcc9ee7c5793f2bf65713b680"
+      ]
+    }
+  ]
+}

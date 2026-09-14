@@ -1,0 +1,41 @@
+{
+  "protocol_version": "1.0.0",
+  "scope": "G0 native prediction diagnostics; not a curve recovery benchmark",
+  "input_bundle": "thin-pack-v2-20260914r1",
+  "model": "large",
+  "camera_mode": "estimated",
+  "use_ray_pose": false,
+  "seed": 0,
+  "ref_view_strategy": "saddle_balanced",
+  "jobs": [
+    {"case_id": "black-white-thinner", "process_res": 504},
+    {"case_id": "black-white-origin", "process_res": 504},
+    {"case_id": "black-wight-thicker", "process_res": 504},
+    {"case_id": "brick-texture-thinner", "process_res": 504},
+    {"case_id": "brick-texture-origin", "process_res": 504},
+    {"case_id": "brick-texture-thicker", "process_res": 504},
+    {"case_id": "brick-texture-thinner", "process_res": 756}
+  ],
+  "filters": {
+    "fixed_confidence": 1.05,
+    "default_percentile": 40.0,
+    "default_upper_percentile": 90.0,
+    "comparison": "greater_than_or_equal",
+    "sky_policy": "native_all_pixels_no_depth_or_confidence_rewrite"
+  },
+  "alignment": {
+    "type": "positive_scale_Sim3",
+    "fit_on": "all_five_camera_centers_only",
+    "minimum_second_to_first_singular_ratio": 0.001,
+    "poor_fit_rmse_over_camera_span": 0.1,
+    "leave_one_camera_out_diagnostic": true
+  },
+  "pixel_policy": {
+    "prediction": "native_upstream_integer_grid_with_native_K",
+    "ground_truth": "target_grid_K_index",
+    "primary_depth_regions": ["strict_rods", "strict_background"],
+    "mixed_rod_center_pixels": "separate_diagnostic_not_single_surface_accuracy",
+    "no_center_rod_but_sample_coverage": "visibility_only_no_rod_depth_score"
+  },
+  "deferred": ["curve_readout", "curve_recovery_rate", "wrong_connection_rate", "crop_control", "simple_line_fit", "oracle_camera", "repair_method"]
+}

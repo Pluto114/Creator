@@ -11,11 +11,12 @@
 | 已可用 | 尚未实现 |
 | --- | --- |
 | 固定模型推理、NPZ结果、点云及GLB演示 | Creator正式DA3任务适配器与完整文件协议 |
-| 六条件、30张同步RGB与独立深度/ID/相机/几何GT | 公平的几何评测、独立物体与真实照片验证 |
+| 六条件、30张同步RGB与独立深度/ID/相机/几何GT | 独立物体与真实照片验证 |
+| 七次新版LARGE基线、相机对齐与过滤/点位诊断 | 正式曲线评分、局部裁剪与简单拟合对照 |
 | 坐标、像素采样、数据哈希和输入/GT隔离检查 | 细杆多视图恢复、补丁与可靠拒绝策略 |
 | Blender配置侧栏、骨架检查、插件打包和CI | 完整导入、增强、比较与撤回流程 |
 
-最新结果见 [配对数据包验收](docs/experiments/2026-09-14-paired-thin-pack-v2.md)，过程与踩坑记录见 [开发日志](docs/journal/2026-09-14.md)。安装与实测记录见 [环境验证](docs/environment-verification.md)。
+最新结果见 [首轮定量基线](docs/experiments/2026-09-14-native-baseline.md) 和 [配对数据包验收](docs/experiments/2026-09-14-paired-thin-pack-v2.md)，过程与踩坑记录见 [开发日志](docs/journal/2026-09-14.md)。安装与实测记录见 [环境验证](docs/environment-verification.md)。
 
 未实现的计算入口会明确返回非零，不生成空的“成功结果”。运行现成模型、提供插件界面本身不作为研究贡献。
 
