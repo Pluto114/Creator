@@ -58,7 +58,8 @@ def run(args: argparse.Namespace, root: Path, destination: Path) -> dict:
     started = time.perf_counter()
     prediction = model.inference(
         [str(path.resolve()) for path in args.images], process_res=args.process_res,
-        infer_gs=False, use_ray_pose=False, ref_view_strategy='saddle_balanced',
+        infer_gs=False, use_ray_pose=getattr(args, 'use_ray_pose', False),
+        ref_view_strategy='saddle_balanced',
         export_dir=None,
     )
     torch.cuda.synchronize()
@@ -80,6 +81,11 @@ def run(args: argparse.Namespace, root: Path, destination: Path) -> dict:
             raise RuntimeError(f'Non-finite {name}')
     if not (arrays['depth'] > 0).all():
         raise RuntimeError('Non-positive depth')
+    sky = getattr(prediction, 'sky', None)
+    if sky is not None:
+        if not isinstance(sky, np.ndarray) or sky.shape != shape or sky.dtype != np.bool_:
+            raise RuntimeError('Unexpected upstream sky mask')
+        arrays['sky'] = sky
     destination.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(destination / 'prediction.npz', **arrays)
     report = {
@@ -91,7 +97,11 @@ def run(args: argparse.Namespace, root: Path, destination: Path) -> dict:
         'versions': {p: importlib.metadata.version(p) for p in
                      ('torch', 'torchvision', 'numpy', 'depth-anything-3')},
         'process_res': args.process_res, 'process_res_method': 'upper_bound_resize',
-        'infer_gs': False, 'use_ray_pose': False, 'ref_view_strategy': 'saddle_balanced',
+        'infer_gs': False, 'use_ray_pose': getattr(args, 'use_ray_pose', False),
+        'ref_view_strategy': 'saddle_balanced',
+        'sky_available': sky is not None,
+        'is_metric': (int(prediction.is_metric)
+                      if isinstance(prediction.is_metric, (bool, int, np.integer)) else None),
         'gpu': torch.cuda.get_device_name(0), 'cuda_runtime': torch.version.cuda,
         'load_seconds': round(load_seconds, 3),
         'inference_seconds': round(inference_seconds, 3),
@@ -110,6 +120,7 @@ def main() -> None:
     parser.add_argument('--model', choices=('base', 'large'), default='base')
     parser.add_argument('--images', type=Path, nargs='+', required=True)
     parser.add_argument('--process-res', type=int, default=504)
+    parser.add_argument('--use-ray-pose', action='store_true')
     args = parser.parse_args()
     if len(args.images) < 2 or args.process_res < 28:
         parser.error('Use at least two images and a processing resolution >= 28.')

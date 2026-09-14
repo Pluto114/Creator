@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "source_scene": "data/source_scenes/thin-rod-pilot/43760_autosave-9e64f2feac75.blend",
+  "source_sha256": "9e64f2feac7548d0e6269b1a2e60b2cb2ac1882c2da1bfefa061423c72b1acb4",
+  "verified_geometry": "data/eval_gt/thin-pack-v1/geometry_cameras.json",
+  "angles": [-30, -15, 0, 15, 30],
+  "cases": [
+    {"id": "black-white-thinner", "xy_scale": 0.01, "brick": false},
+    {"id": "black-white-origin", "xy_scale": 0.05, "brick": false},
+    {"id": "black-wight-thicker", "xy_scale": 0.12, "brick": false},
+    {"id": "brick-texture-thinner", "xy_scale": 0.01, "brick": true},
+    {"id": "brick-texture-origin", "xy_scale": 0.05, "brick": true},
+    {"id": "brick-texture-thicker", "xy_scale": 0.12, "brick": true}
+  ],
+  "coverage_samples_per_axis": 4,
+  "process_resolutions": [504, 756],
+  "process_res_method": "upper_bound_resize",
+  "native_edge_guard_pixels": 2,
+  "blender_depth_tolerance_m": 0.005,
+  "blender_depth_footprint_tolerance_m": 0.001,
+  "blender_ray_tolerance_m": 0.0001
+}
