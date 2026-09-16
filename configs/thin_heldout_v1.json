@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "bundle_id": "thin-heldout-v1-20260916",
+  "scope": "G0 same-asset held-out camera views, evaluation only; fixed after initial design diagnostics, not new-object generalization or a parameter-tuning set",
+  "source_scene": "data/source_scenes/thin-rod-pilot/43760_autosave-9e64f2feac75.blend",
+  "source_sha256": "9e64f2feac7548d0e6269b1a2e60b2cb2ac1882c2da1bfefa061423c72b1acb4",
+  "verified_geometry": "data/eval_gt/thin-pack-v1/geometry_cameras.json",
+  "paired_render_manifest": "data/eval_gt/thin-pack-v2-20260914r1/render_manifest.json",
+  "source_input_manifest": "data/inputs/thin-pack-v2-20260914r1/manifest.json",
+  "fit_angles_degrees": [
+    -30,
+    -15,
+    0,
+    15,
+    30
+  ],
+  "heldout_angles_degrees": [
+    -22.5,
+    22.5
+  ],
+  "cases": [
+    {
+      "id": "black-white-thinner",
+      "xy_scale": 0.01,
+      "brick": false
+    },
+    {
+      "id": "brick-texture-thinner",
+      "xy_scale": 0.01,
+      "brick": true
+    },
+    {
+      "id": "brick-texture-origin",
+      "xy_scale": 0.05,
+      "brick": true
+    }
+  ],
+  "sample_spacing_m": 0.01,
+  "projection_tolerance_px": 0.01,
+  "ray_tolerance_m": 0.0001,
+  "method_boundary": "All RGB, cameras, geometry and visibility remain in eval_gt. No method request lists these held-out frames; do not use them for ROI, fitting or parameter selection.",
+  "render_scope": "Six native RGB images only; no full-frame depth/masks or model inference.",
+  "verified_geometry_sha256": "ca33e99f073cd3e224643ea71498c654fa443de4cd90b6072cb38132af0503ea",
+  "paired_render_manifest_sha256": "b0bde588ecf83467c3372f7d003e303556c9a7b36f8155d5e0a881e8d90008ff",
+  "source_input_manifest_sha256": "0859558eeea3174c0e0669d52d22867de22acdfcf5df5273f2641b8551220f08"
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "read_only_evaluation_figure_not_method_input_or_parameter_selection",
+  "run_id": "rod-evidence-dense-v1-20260916",
+  "camera_mode": "oracle_camera",
+  "heldout_bundle": "thin-heldout-v1-20260916",
+  "heldout_frame": "view_+22p5",
+  "variants": [
+    "legacy_occupancy",
+    "paired_full"
+  ],
+  "target": "gap",
+  "rod_id": 6,
+  "cases": [
+    "brick-texture-thinner",
+    "brick-texture-origin"
+  ],
+  "crop_rule": "union_of_all_physical_rod_GT_samples_and_both_candidates_endpoints_plus_180px_horizontal_42px_vertical_margin_clipped_to_image",
+  "crops": [
+    {
+      "case_id": "brick-texture-thinner",
+      "box_xyxy": [
+        1048,
+        13,
+        1423,
+        907
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "box_xyxy": [
+        1042,
+        9,
+        1423,
+        920
+      ]
+    }
+  ],
+  "source_sha256": {
+    ".runtime/experiments/rod-evidence-dense-v1-20260916/manifest.json": "94ad56c9eaba179fc4cd2367fbbb9bda0eb733b84504cb2849275f1b41127212",
+    "data/evaluation/rod-evidence-dense-v1-20260916/summary.json": "39eb8ad68d4bec34e39afb3eb1de07320b3b1f3138f06cefafc873fbcc565838",
+    "data/eval_gt/thin-heldout-v1-20260916/manifest.json": "716731b7d7ea7c40702bba099a2b6621fc95b39bd1e525bd604b92becca3ab5c",
+    "data/eval_gt/thin-heldout-v1-20260916/artifact_hashes.json": "98d0e3f3cc3c869f5041492bb80cc285022806cbaed3fdca1477b8439b54f548",
+    ".runtime/experiments/rod-evidence-dense-v1-20260916/oracle_camera--brick-texture-thinner-504/candidates.json": "83526c0170719b14e1177ce6bf60522e0ef8d2fe17c69a5ffdf7c0cfa0062514",
+    "data/eval_gt/thin-heldout-v1-20260916/brick-texture-thinner/view_+22p5/rgb.png": "2ae0813e071bafa4c4adfb429a909eb109f6c329e91823cd427ca0e7cc7b35fe",
+    "data/eval_gt/thin-heldout-v1-20260916/brick-texture-thinner/view_+22p5/camera.json": "828d756deb3cfb9afdc8d10417b867fcb3e885992dce414a4beebce251da68b7",
+    "data/eval_gt/thin-heldout-v1-20260916/brick-texture-thinner/view_+22p5/curve_visibility.npz": "90d4c2441b8d6199674567f9ae603ad95d46c3ee4395eaa7067ff493dd06bdeb",
+    ".runtime/experiments/rod-evidence-dense-v1-20260916/oracle_camera--brick-texture-origin-504/candidates.json": "242c5a3a22f068dae02f4f862bc08c948d94c7b582e32606351d005ed17c708c",
+    "data/eval_gt/thin-heldout-v1-20260916/brick-texture-origin/view_+22p5/rgb.png": "965971edd74193cd6ce371d4a0fb6d5586fd9f7d75264e37b800c5bb33c763c1",
+    "data/eval_gt/thin-heldout-v1-20260916/brick-texture-origin/view_+22p5/camera.json": "828d756deb3cfb9afdc8d10417b867fcb3e885992dce414a4beebce251da68b7",
+    "data/eval_gt/thin-heldout-v1-20260916/brick-texture-origin/view_+22p5/curve_visibility.npz": "8cdf9b2fa7823114f23caa117cb170ba5dba8a7929c61556a16a69b8a6f555cc"
+  },
+  "plot_script_sha256": "fe3b8c125eff0922267bde7bb6622b46e580b263366352bc337439a62a4a3a2b",
+  "image_sha256": "42527cdd89f3ea8a22295fd99f2a44d9044de7607e28cc78d0b25a4c00ae4768"
+}

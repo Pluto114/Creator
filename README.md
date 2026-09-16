@@ -13,12 +13,13 @@
 | 固定模型推理、NPZ结果、点云及GLB演示 | Creator正式DA3任务适配器与完整文件协议 |
 | 六条件、30张同步RGB与独立深度/ID/相机/几何GT | 独立物体与真实照片验证 |
 | 原生基线、6组裁剪、3组oracle、TLS/RANSAC与RGB交会对照 | 完整候选的共同曲线评分与跨对象验证 |
-| 坐标、像素采样、数据哈希和输入/GT隔离检查 | 细杆多视图恢复、补丁与可靠拒绝策略 |
+| 原图双边缘、逐段证据与拒绝原型，6张评测专用新视角 | 普通估计相机下有效恢复、正式补丁及可靠接受/拒绝策略 |
+| 坐标、像素采样、数据哈希和输入/GT隔离检查 | 遮挡与光照反例、完整几何布局验证 |
 | Blender配置侧栏、骨架检查、插件打包和CI | 完整导入、增强、比较与撤回流程 |
 
-下一版选择共享全局相机、原图中心线观测和可拒绝的局部证据检查，见 [算法设计决定](docs/decisions/0004-evidence-guided-line-recovery.md)。已有经典几何对照不作为新算法贡献。
+第一版离线证据原型已跑通：真实相机下最细杆的缺口改善，估计相机下全部目标被拒绝，中杆在新视角失败。仍不能宣称普通照片修复有效。设计背景见 [算法决定](docs/decisions/0004-evidence-guided-line-recovery.md)；经典几何组件本身不作为新算法贡献。
 
-最新结果见 [裁剪/真实相机/直线对照](docs/experiments/2026-09-14-crop-oracle-line-controls.md)、[首轮定量基线](docs/experiments/2026-09-14-native-baseline.md) 和 [配对数据包验收](docs/experiments/2026-09-14-paired-thin-pack-v2.md)，过程与踩坑记录见 [开发日志](docs/journal/2026-09-14.md)。安装与实测记录见 [环境验证](docs/environment-verification.md)。
+最新结果见 [原图证据与新视角验收](docs/experiments/2026-09-16-rod-evidence.md)、[运行说明](docs/rod-evidence-controls.md)和[开发日志](docs/journal/2026-09-16.md)。此前[裁剪/真实相机/直线对照](docs/experiments/2026-09-14-crop-oracle-line-controls.md)、[首轮基线](docs/experiments/2026-09-14-native-baseline.md)、[配对数据包](docs/experiments/2026-09-14-paired-thin-pack-v2.md)均保留。安装与实测记录见 [环境验证](docs/environment-verification.md)。
 
 未实现的计算入口会明确返回非零，不生成空的“成功结果”。运行现成模型、提供插件界面本身不作为研究贡献。
 

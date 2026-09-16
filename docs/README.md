@@ -1,5 +1,5 @@
 # 文档索引
-最新工作状态：[裁剪/真实相机/直线对照](experiments/2026-09-14-crop-oracle-line-controls.md)。9次新增模型推理完成，并在13份预测上比较了普通/鲁棒拟合与RGB多视图交会。[下一版算法设计](decisions/0004-evidence-guided-line-recovery.md)已由结果确定；独立对象改善、可靠拒绝和完整补丁仍待实现。重现见[对照说明](thin-pack-controls.md)，此前基线和数据包说明继续保留。
+最新工作状态：[原图证据原型与保留视角验收](experiments/2026-09-16-rod-evidence.md)。双边缘、逐段投影支持和拒绝检查已实现；最细杆在真实相机下改善，但估计相机全拒绝，中杆新视角失败，尚未达到普通照片可用。见[9月16日日志](journal/2026-09-16.md)与[复现说明](rod-evidence-controls.md)。此前[裁剪/真实相机/直线对照](experiments/2026-09-14-crop-oracle-line-controls.md)继续保留；独立对象收益、可靠接受/拒绝、共同读取器和正式补丁仍待完成。
 
 日期：2026-09-13。适用根目录：`D:/Creator-newage`。
 
