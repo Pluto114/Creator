@@ -1,0 +1,14 @@
+{
+  "run_id": "rod-edge-audit-v1-20260917",
+  "scope": "Evaluation-only audit of immutable yesterday observations; GT never returns to detector",
+  "observation_run": "rod-evidence-dense-v1-20260916",
+  "input_bundle": "thin-pack-v2-20260914r1",
+  "gt_bundle": "thin-pack-v2-20260914r1",
+  "cases": ["black-white-thinner", "brick-texture-thinner", "brick-texture-origin"],
+  "target_rod_ids": {"whole": 5, "gap": 6},
+  "boundary_tolerance_px": 1.5,
+  "fixed_profile_rows": [300, 500, 700],
+  "profile_margin_px": 28,
+  "mask_convention": "Integer-center first-hit rod_id; mask interval boundaries approximated at +/-0.5 pixel, exact mesh audit reported separately",
+  "classification": "all selected rows retained; single contiguous visible GT interval only for boundary attribution; gap/hidden/ambiguous truth rows remain separate"
+}

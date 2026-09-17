@@ -1,0 +1,236 @@
+{
+  "state": "complete",
+  "scope": "Causal appearance diagnostic on one known asset; uniform emission is a privileged rendering intervention, not a reconstruction method",
+  "rows": [
+    {
+      "condition": "original_replica",
+      "frame_id": "view_-30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 644,
+      "finite_truth_rows": 644,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 3.384635543184004,
+      "p95_horizontal_error_px": 5.085538937109494,
+      "fraction_within_1px": 0.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "original_replica",
+      "frame_id": "view_-30",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 548,
+      "finite_truth_rows": 548,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 3.0394001262427537,
+      "p95_horizontal_error_px": 4.1773656472132865,
+      "fraction_within_1px": 0.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "original_replica",
+      "frame_id": "view_+00",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 649,
+      "finite_truth_rows": 649,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 5.841138252065775,
+      "p95_horizontal_error_px": 7.220660635373454,
+      "fraction_within_1px": 0.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "original_replica",
+      "frame_id": "view_+00",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 575,
+      "finite_truth_rows": 575,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 5.844143500372866,
+      "p95_horizontal_error_px": 7.01956296333601,
+      "fraction_within_1px": 0.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "original_replica",
+      "frame_id": "view_+30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 516,
+      "finite_truth_rows": 516,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 8.105900013162454,
+      "p95_horizontal_error_px": 8.63256155702146,
+      "fraction_within_1px": 0.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "original_replica",
+      "frame_id": "view_+30",
+      "target": "gap",
+      "line_state": "ambiguous",
+      "selected_rows": 0,
+      "finite_truth_rows": 0,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": null,
+      "p95_horizontal_error_px": null,
+      "fraction_within_1px": null,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "uniform_emission",
+      "frame_id": "view_-30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 484,
+      "finite_truth_rows": 484,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 0.12327629062042433,
+      "p95_horizontal_error_px": 0.32428673296410576,
+      "fraction_within_1px": 1.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "uniform_emission",
+      "frame_id": "view_-30",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 402,
+      "finite_truth_rows": 402,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 0.16393870547653933,
+      "p95_horizontal_error_px": 0.4191636402675044,
+      "fraction_within_1px": 1.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "uniform_emission",
+      "frame_id": "view_+00",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 562,
+      "finite_truth_rows": 562,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 0.15492292124565665,
+      "p95_horizontal_error_px": 0.4124198412500504,
+      "fraction_within_1px": 1.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "uniform_emission",
+      "frame_id": "view_+00",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 462,
+      "finite_truth_rows": 462,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 0.1337045270111048,
+      "p95_horizontal_error_px": 0.36371914536694017,
+      "fraction_within_1px": 1.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "uniform_emission",
+      "frame_id": "view_+30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 564,
+      "finite_truth_rows": 564,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 0.1209795949104091,
+      "p95_horizontal_error_px": 0.3353954392930291,
+      "fraction_within_1px": 1.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    },
+    {
+      "condition": "uniform_emission",
+      "frame_id": "view_+30",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 444,
+      "finite_truth_rows": 444,
+      "rows_outside_finite_rod_including_gap": 0,
+      "median_horizontal_error_px": 0.15858861136177893,
+      "p95_horizontal_error_px": 0.4172981435771475,
+      "fraction_within_1px": 1.0,
+      "scope": "2D center-only conditional on selected row overlapping a finite physical rod; not detection recall or occlusion-aware"
+    }
+  ],
+  "replica_check": [
+    {
+      "frame_id": "view_-30",
+      "original_sha256": "5aefec0e718689478fe2c8381dff34952f7011b5af63b5dd9344a0e1924a9810",
+      "decoded_exact": true,
+      "max_channel_difference": 0,
+      "mean_absolute_channel_difference": 0.0
+    },
+    {
+      "frame_id": "view_+00",
+      "original_sha256": "87c62864755b089bb23726b727864dc47182c8ea5a5af521b09d2d16deb1ece5",
+      "decoded_exact": true,
+      "max_channel_difference": 0,
+      "mean_absolute_channel_difference": 0.0
+    },
+    {
+      "frame_id": "view_+30",
+      "original_sha256": "962f0df79333509eaa436243e20516dfc2023ab5199aad2eab511caef08cec5f",
+      "decoded_exact": true,
+      "max_channel_difference": 0,
+      "mean_absolute_channel_difference": 0.0
+    }
+  ],
+  "status_sha256": "c8a77367c5d872ee10f2847e868e57bf83888bfee211670e376568b86bc5dda3",
+  "protocol": {
+    "run_id": "rod-appearance-control-v1-20260917",
+    "scope": "Causal appearance diagnostic on one known asset; uniform emission is a privileged rendering intervention, not a reconstruction method",
+    "source_scene": "data/source_scenes/thin-rod-pilot/43760_autosave-9e64f2feac75.blend",
+    "source_sha256": "9e64f2feac7548d0e6269b1a2e60b2cb2ac1882c2da1bfefa061423c72b1acb4",
+    "reference_case": "brick-texture-origin",
+    "reference_bundle": "thin-pack-v2-20260914r1",
+    "frozen_method_run": "rod-evidence-dense-v1-20260916",
+    "angles_degrees": [
+      -30,
+      0,
+      30
+    ],
+    "conditions": [
+      "original_replica",
+      "uniform_emission"
+    ],
+    "target_aliases": [
+      "whole",
+      "gap"
+    ],
+    "target_rod_ids_evaluation_only": {
+      "whole": 5,
+      "gap": 6
+    },
+    "intervention_objects_generation_only": [
+      "Cylinder.005",
+      "Cylinder.006",
+      "Cylinder.008"
+    ],
+    "emission_linear_rgb": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "emission_strength": 1.0,
+    "intervention_limit": "Changes target material response, including light/background contrast; no claim that a unique illumination component is isolated. Original-replica render and geometry/camera identity must be checked.",
+    "decision": "No parameter or detector change after evaluating these renders; compare all 6 frame-target outcomes per condition, including refusal."
+  },
+  "identities": {
+    "state": "inferred",
+    "protocol_sha256": "b7a1356ff004ec5dfedb1d4b9c33d8f458c8640e38bcc84e2b124bf279a29ef5",
+    "input_manifest_sha256": "4c6614b0599eed636d7aea7702f29ad5b6eec58923574a88b5fe29ef6e99b509",
+    "gt_index_sha256": "d731cb1834585a6958e4c901c3588dcff9aa45552d231cf6ddafc204b35a4f7d",
+    "reference_input_manifest_sha256": "0859558eeea3174c0e0669d52d22867de22acdfcf5df5273f2641b8551220f08",
+    "gt_read_in_infer": false,
+    "observations_sha256": "b2b01551e2e5eb5bb6655b75b58be38f343abd73967cba43c40ee1a23cf14080",
+    "detector_sha256": "ee7e4856e02e791e70fb066863efaf87e8360ff1938e75bf1a4b5c3ef3ce384b",
+    "reference_method_manifest_sha256": "94ad56c9eaba179fc4cd2367fbbb9bda0eb733b84504cb2849275f1b41127212"
+  }
+}

@@ -1,5 +1,7 @@
 # 文档索引
-最新工作状态：[原图证据原型与保留视角验收](experiments/2026-09-16-rod-evidence.md)。双边缘、逐段投影支持和拒绝检查已实现；最细杆在真实相机下改善，但估计相机全拒绝，中杆新视角失败，尚未达到普通照片可用。见[9月16日日志](journal/2026-09-16.md)与[复现说明](rod-evidence-controls.md)。此前[裁剪/真实相机/直线对照](experiments/2026-09-14-crop-oracle-line-controls.md)继续保留；独立对象收益、可靠接受/拒绝、共同读取器和正式补丁仍待完成。
+最新工作状态：[9月17日中心偏差与背景对应审计](experiments/2026-09-17-center-and-correspondence-audit.md)。独立网格检查、6张材质干预、22种解析反例和36组背景匹配已完成；发现内部亮条假中心与物理错匹配，新拒绝规则未提高准确覆盖。项目仍在G0，尚未达到普通照片可用。见[9月17日日志](journal/2026-09-17.md)、[完整解析病例](experiments/2026-09-17-profile-controls.md)及[算法决定0005](decisions/0005-observed-bands-and-correspondence-validation.md)。
+
+此前[原图证据原型与保留视角验收](experiments/2026-09-16-rod-evidence.md)、[复现说明](rod-evidence-controls.md)和[裁剪/真实相机/直线对照](experiments/2026-09-14-crop-oracle-line-controls.md)继续保留；独立对象收益、可靠接受/拒绝、共同读取器和正式补丁仍待完成。
 
 日期：2026-09-13。适用根目录：`D:/Creator-newage`。
 
@@ -21,6 +23,7 @@
 | 决策 | [ADR 0002](decisions/0002-reconstruction-stack.md) | 当前技术栈与本机事实 |
 | 决策 | [ADR 0003](decisions/0003-newage-architecture.md) | 详细架构的固定边界和可替换部分 |
 | 决策 | [ADR 0004](decisions/0004-evidence-guided-line-recovery.md) | 由裁剪、相机与直线对照选择下一版恢复方案 |
+| 决策 | [ADR 0005](decisions/0005-observed-bands-and-correspondence-validation.md) | 由亮度反例与物理对应检查修订观测及相机约束 |
 | 历史 | [ADR 0001，已废止](decisions/0001-technology-stack.md) | 旧场景生成路线，仅保留决策历史 |
 
 ## 如何解释“确定”

@@ -1,0 +1,830 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-profile-controls-v1-20260917",
+  "scope": "Pre-registered analytic profile mechanism controls, not new real-data or held-out performance tuning.",
+  "generator": {
+    "width": 128,
+    "height": 160,
+    "horizontal_area_samples": 16,
+    "seed": 17092026,
+    "noise_seed_policy": "generator.seed + case ordinal (0-based)",
+    "blur": "normalized discrete Gaussian along x after horizontal pixel-area integration, radius ceil(4*sigma)",
+    "quantization": "clip to 0..255 then numpy rint uint8; identical RGB channels"
+  },
+  "guide_xyxy": [
+    [
+      64,
+      12
+    ],
+    [
+      64,
+      148
+    ]
+  ],
+  "method": {
+    "observation": {
+      "scan_half_width": 20,
+      "row_stride": 1,
+      "y_window_radius": 2,
+      "edge_min_contrast": 8,
+      "center_min_contrast": 8,
+      "min_width": 2,
+      "max_width": 24,
+      "background_samples": 2,
+      "edge_min_horizontal_fraction": 0.8,
+      "edge_min_row_support": 0.6,
+      "edge_match_tolerance": 1.5,
+      "min_resolved_center_pixels": 2,
+      "flat_max_std": 3,
+      "flat_max_gradient": 6
+    },
+    "line_fit": {
+      "minimum_rows": 12,
+      "minimum_y_span": 50,
+      "minimum_pair_y_span": 16,
+      "inlier_distance_px": 1.5,
+      "trials": 256,
+      "seed": 0,
+      "ambiguity_support_fraction": 0.9,
+      "ambiguity_separation_px": 3
+    },
+    "variants": [
+      "paired_robust",
+      "pair_center_consensus_reject"
+    ],
+    "maximum_center_spread_px": 1
+  },
+  "evaluation": {
+    "center_tolerances_px": [
+      0.5,
+      1,
+      2
+    ],
+    "primary_center_tolerance_px": 1,
+    "ambiguity": "No unique GT identity; an accepted line is an unsupported identity choice, not assigned to the nearest GT object.",
+    "absence": "Count absent hypotheses on physical rod rows as false absences, including invisible/weak-boundary cases.",
+    "all_cases_retained": true
+  },
+  "hypotheses": [
+    "Opposite photometric edges need not be silhouette edges; report center and boundary error separately.",
+    "Rejecting disagreeing reliable pair centers may reduce unsafe acceptance but costs coverage.",
+    "A unique narrow highlight may remain confidently wrong under both methods; the conservative control is not required to win.",
+    "Static texture can imitate a rod or fill a true gap; no single-view intensity proof of 3D identity is claimed."
+  ],
+  "cases": [
+    {
+      "case_id": "p01",
+      "label": "flat_bright_width12",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p02",
+      "label": "flat_dark_width12",
+      "target_identity": "unique",
+      "background": {
+        "value": 220,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 32
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p03",
+      "label": "flat_bright_width4",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 62.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 4,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p04",
+      "label": "symmetric_triangle_width12",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "linear_knots",
+            "positions": [
+              0,
+              0.5,
+              1
+            ],
+            "values": [
+              40,
+              220,
+              40
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p05",
+      "label": "linear_bright_left_to_right",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "linear_knots",
+            "positions": [
+              0,
+              1
+            ],
+            "values": [
+              220,
+              60
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p06",
+      "label": "linear_bright_right_to_left",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "linear_knots",
+            "positions": [
+              0,
+              1
+            ],
+            "values": [
+              60,
+              220
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p07",
+      "label": "asymmetric_bright_step",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "bands",
+            "base": 80,
+            "bands": [
+              {
+                "interval": [
+                  0,
+                  0.65
+                ],
+                "value": 220
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p08",
+      "label": "asymmetric_dark_step",
+      "target_identity": "unique",
+      "background": {
+        "value": 220,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "bands",
+            "base": 150,
+            "bands": [
+              {
+                "interval": [
+                  0,
+                  0.65
+                ],
+                "value": 32
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p09",
+      "label": "narrow_highlight_weak_silhouette",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 16,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "bands",
+            "base": 34,
+            "bands": [
+              {
+                "interval": [
+                  0.125,
+                  0.375
+                ],
+                "value": 230
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p10",
+      "label": "narrow_dark_band_weak_silhouette",
+      "target_identity": "unique",
+      "background": {
+        "value": 220,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 16,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "bands",
+            "base": 218,
+            "bands": [
+              {
+                "interval": [
+                  0.625,
+                  0.875
+                ],
+                "value": 30
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p11",
+      "label": "background_vertical_stripe_with_target",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": [
+          {
+            "center_x": 74.5,
+            "width": 4,
+            "value": 220
+          }
+        ]
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 60.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 6,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p12",
+      "label": "background_vertical_stripe_without_target",
+      "target_identity": "none",
+      "background": {
+        "value": 32,
+        "stripes": [
+          {
+            "center_x": 64.5,
+            "width": 4,
+            "value": 220
+          }
+        ]
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": []
+    },
+    {
+      "case_id": "p13",
+      "label": "single_weak_silhouette_edge",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "linear_knots",
+            "positions": [
+              0,
+              1
+            ],
+            "values": [
+              220,
+              34
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p14",
+      "label": "low_contrast_physical_rod",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 35
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p15",
+      "label": "subpixel_width_0_75",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.25,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 0.75,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p16",
+      "label": "blurred_width4",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 1.25,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.25,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 4,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p17",
+      "label": "blurred_highlight_weak_silhouette",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 1,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 16,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "bands",
+            "base": 34,
+            "bands": [
+              {
+                "interval": [
+                  0.15625,
+                  0.34375
+                ],
+                "value": 230
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p18",
+      "label": "flat_bright_true_gap",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              64
+            ],
+            [
+              96,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        }
+      ],
+      "gap_intervals": [
+        [
+          64,
+          96
+        ]
+      ]
+    },
+    {
+      "case_id": "p19",
+      "label": "background_texture_crosses_true_gap",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": [
+          {
+            "center_x": 64.5,
+            "width": 4,
+            "value": 220
+          }
+        ]
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 12,
+          "y_intervals": [
+            [
+              0,
+              64
+            ],
+            [
+              96,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        }
+      ],
+      "gap_intervals": [
+        [
+          64,
+          96
+        ]
+      ]
+    },
+    {
+      "case_id": "p20",
+      "label": "two_equal_objects_ambiguous_identity",
+      "target_identity": "ambiguous",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "object_a",
+          "center_x_at_reference_y": 58.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 5,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        },
+        {
+          "object_id": "object_b",
+          "center_x_at_reference_y": 70.5,
+          "reference_y": 80,
+          "slope": 0,
+          "width": 5,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p21",
+      "label": "sloped_bright_width6",
+      "target_identity": "unique",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 0,
+      "rods": [
+        {
+          "object_id": "target",
+          "center_x_at_reference_y": 64.5,
+          "reference_y": 80,
+          "slope": 0.08,
+          "width": 6,
+          "y_intervals": [
+            [
+              0,
+              160
+            ]
+          ],
+          "profile": {
+            "kind": "flat",
+            "value": 220
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "p22",
+      "label": "noise_without_physical_rod",
+      "target_identity": "none",
+      "background": {
+        "value": 32,
+        "stripes": []
+      },
+      "blur_sigma_px": 0,
+      "noise_sigma": 4,
+      "rods": []
+    }
+  ]
+}

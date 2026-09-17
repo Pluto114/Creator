@@ -14,12 +14,15 @@
 | 六条件、30张同步RGB与独立深度/ID/相机/几何GT | 独立物体与真实照片验证 |
 | 原生基线、6组裁剪、3组oracle、TLS/RANSAC与RGB交会对照 | 完整候选的共同曲线评分与跨对象验证 |
 | 原图双边缘、逐段证据与拒绝原型，6张评测专用新视角 | 普通估计相机下有效恢复、正式补丁及可靠接受/拒绝策略 |
-| 坐标、像素采样、数据哈希和输入/GT隔离检查 | 遮挡与光照反例、完整几何布局验证 |
+| 中心偏差的材质干预、22种亮度反例及背景物理对应审计 | 新几何布局、遮挡反例与可用的多候选观测方法 |
+| 坐标、像素采样、数据哈希和输入/GT隔离检查 | 完整跨物体几何验证 |
 | Blender配置侧栏、骨架检查、插件打包和CI | 完整导入、增强、比较与撤回流程 |
 
 第一版离线证据原型已跑通：真实相机下最细杆的缺口改善，估计相机下全部目标被拒绝，中杆在新视角失败。仍不能宣称普通照片修复有效。设计背景见 [算法决定](docs/decisions/0004-evidence-guided-line-recovery.md)；经典几何组件本身不作为新算法贡献。
 
-最新结果见 [原图证据与新视角验收](docs/experiments/2026-09-16-rod-evidence.md)、[运行说明](docs/rod-evidence-controls.md)和[开发日志](docs/journal/2026-09-16.md)。此前[裁剪/真实相机/直线对照](docs/experiments/2026-09-14-crop-oracle-line-controls.md)、[首轮基线](docs/experiments/2026-09-14-native-baseline.md)、[配对数据包](docs/experiments/2026-09-14-paired-thin-pack-v2.md)均保留。安装与实测记录见 [环境验证](docs/environment-verification.md)。
+9月17日已确认：中杆检测会选中内部亮条，砖块背景又能产生极线自洽但物理错误的对应。材质干预支持外观导致偏差；新增拒绝对照仅减少部分错判，未提高准确覆盖。最新见 [中心偏差与背景对应审计](docs/experiments/2026-09-17-center-and-correspondence-audit.md)、[22种解析反例](docs/experiments/2026-09-17-profile-controls.md)、[后续算法决定](docs/decisions/0005-observed-bands-and-correspondence-validation.md)及[今日日志](docs/journal/2026-09-17.md)。
+
+此前[原图证据与新视角验收](docs/experiments/2026-09-16-rod-evidence.md)、[运行说明](docs/rod-evidence-controls.md)、[裁剪/真实相机/直线对照](docs/experiments/2026-09-14-crop-oracle-line-controls.md)、[首轮基线](docs/experiments/2026-09-14-native-baseline.md)、[配对数据包](docs/experiments/2026-09-14-paired-thin-pack-v2.md)均保留。安装与实测记录见 [环境验证](docs/environment-verification.md)。
 
 未实现的计算入口会明确返回非零，不生成空的“成功结果”。运行现成模型、提供插件界面本身不作为研究贡献。
 

@@ -1,0 +1,4953 @@
+{
+  "state": "complete",
+  "created_at": "2026-09-17T06:37:09.303862+00:00",
+  "scope": "evaluation_only_geometry_and_RGB_appearance_audit; no_detector_or_candidate_results_read",
+  "source_bundle": "thin-pack-v2-20260914r1",
+  "source_scene_sha256": "9e64f2feac7548d0e6269b1a2e60b2cb2ac1882c2da1bfefa061423c72b1acb4",
+  "fixed_rows": [
+    300,
+    500,
+    700
+  ],
+  "rod_ids": [
+    5,
+    6
+  ],
+  "cases": [
+    "brick-texture-thinner",
+    "brick-texture-origin",
+    "brick-texture-thicker"
+  ],
+  "shape_checks": [
+    {
+      "case_id": "brick-texture-thinner",
+      "object": "Cylinder.005",
+      "surface_id": 5,
+      "vertices": 64,
+      "triangles": 124,
+      "cap_vertex_counts": [
+        32,
+        32
+      ],
+      "cap_center_to_axis_endpoint_m": [
+        3.725290298461914e-09,
+        3.725290298461914e-09
+      ],
+      "radial_centroid_offset_m": 3.725290298461914e-09,
+      "opposite_vertex_symmetry_max_residual_m": 5.960464477539063e-08,
+      "radial_principal_rms_ratio": 1.0000316616212075,
+      "radius_min_m": 0.00999974218085167,
+      "radius_max_m": 0.010000379424209827,
+      "scope": "actual_exported_mesh_caps_and_radial_symmetry; no_appearance_assumption"
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "object": "Cylinder.006",
+      "surface_id": 6,
+      "vertices": 64,
+      "triangles": 124,
+      "cap_vertex_counts": [
+        32,
+        32
+      ],
+      "cap_center_to_axis_endpoint_m": [
+        0.0,
+        0.0
+      ],
+      "radial_centroid_offset_m": 0.0,
+      "opposite_vertex_symmetry_max_residual_m": 0.0,
+      "radial_principal_rms_ratio": 1.0000302507526282,
+      "radius_min_m": 0.009999730552335596,
+      "radius_max_m": 0.010000379424209827,
+      "scope": "actual_exported_mesh_caps_and_radial_symmetry; no_appearance_assumption"
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "object": "Cylinder.008",
+      "surface_id": 7,
+      "vertices": 64,
+      "triangles": 124,
+      "cap_vertex_counts": [
+        32,
+        32
+      ],
+      "cap_center_to_axis_endpoint_m": [
+        0.0,
+        0.0
+      ],
+      "radial_centroid_offset_m": 0.0,
+      "opposite_vertex_symmetry_max_residual_m": 0.0,
+      "radial_principal_rms_ratio": 1.0000302507526282,
+      "radius_min_m": 0.009999730552335596,
+      "radius_max_m": 0.010000379424209827,
+      "scope": "actual_exported_mesh_caps_and_radial_symmetry; no_appearance_assumption"
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "object": "Cylinder.005",
+      "surface_id": 5,
+      "vertices": 64,
+      "triangles": 124,
+      "cap_vertex_counts": [
+        32,
+        32
+      ],
+      "cap_center_to_axis_endpoint_m": [
+        1.862645149230957e-09,
+        1.862645149230957e-09
+      ],
+      "radial_centroid_offset_m": 1.862645149230957e-09,
+      "opposite_vertex_symmetry_max_residual_m": 5.960464477539063e-08,
+      "radial_principal_rms_ratio": 1.0000009518823014,
+      "radius_min_m": 0.049999634624635664,
+      "radius_max_m": 0.05000019073486328,
+      "scope": "actual_exported_mesh_caps_and_radial_symmetry; no_appearance_assumption"
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "object": "Cylinder.006",
+      "surface_id": 6,
+      "vertices": 64,
+      "triangles": 124,
+      "cap_vertex_counts": [
+        32,
+        32
+      ],
+      "cap_center_to_axis_endpoint_m": [
+        0.0,
+        0.0
+      ],
+      "radial_centroid_offset_m": 0.0,
+      "opposite_vertex_symmetry_max_residual_m": 0.0,
+      "radial_principal_rms_ratio": 1.0000009024893473,
+      "radius_min_m": 0.049999634624635664,
+      "radius_max_m": 0.05000019073486328,
+      "scope": "actual_exported_mesh_caps_and_radial_symmetry; no_appearance_assumption"
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "object": "Cylinder.008",
+      "surface_id": 7,
+      "vertices": 64,
+      "triangles": 124,
+      "cap_vertex_counts": [
+        32,
+        32
+      ],
+      "cap_center_to_axis_endpoint_m": [
+        0.0,
+        0.0
+      ],
+      "radial_centroid_offset_m": 0.0,
+      "opposite_vertex_symmetry_max_residual_m": 0.0,
+      "radial_principal_rms_ratio": 1.0000009024893473,
+      "radius_min_m": 0.049999634624635664,
+      "radius_max_m": 0.05000019073486328,
+      "scope": "actual_exported_mesh_caps_and_radial_symmetry; no_appearance_assumption"
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "object": "Cylinder.005",
+      "surface_id": 5,
+      "vertices": 64,
+      "triangles": 124,
+      "cap_vertex_counts": [
+        32,
+        32
+      ],
+      "cap_center_to_axis_endpoint_m": [
+        0.0,
+        0.0
+      ],
+      "radial_centroid_offset_m": 0.0,
+      "opposite_vertex_symmetry_max_residual_m": 5.960464477539063e-08,
+      "radial_principal_rms_ratio": 1.0000001441400075,
+      "radius_min_m": 0.11999966570348505,
+      "radius_max_m": 0.12000025419939288,
+      "scope": "actual_exported_mesh_caps_and_radial_symmetry; no_appearance_assumption"
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "object": "Cylinder.006",
+      "surface_id": 6,
+      "vertices": 64,
+      "triangles": 124,
+      "cap_vertex_counts": [
+        32,
+        32
+      ],
+      "cap_center_to_axis_endpoint_m": [
+        0.0,
+        0.0
+      ],
+      "radial_centroid_offset_m": 0.0,
+      "opposite_vertex_symmetry_max_residual_m": 0.0,
+      "radial_principal_rms_ratio": 1.0000002065192999,
+      "radius_min_m": 0.11999966570348505,
+      "radius_max_m": 0.12000025419939288,
+      "scope": "actual_exported_mesh_caps_and_radial_symmetry; no_appearance_assumption"
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "object": "Cylinder.008",
+      "surface_id": 7,
+      "vertices": 64,
+      "triangles": 124,
+      "cap_vertex_counts": [
+        32,
+        32
+      ],
+      "cap_center_to_axis_endpoint_m": [
+        0.0,
+        0.0
+      ],
+      "radial_centroid_offset_m": 0.0,
+      "opposite_vertex_symmetry_max_residual_m": 0.0,
+      "radial_principal_rms_ratio": 1.0000002065192999,
+      "radius_min_m": 0.11999966570348505,
+      "radius_max_m": 0.12000025419939288,
+      "scope": "actual_exported_mesh_caps_and_radial_symmetry; no_appearance_assumption"
+    }
+  ],
+  "axis_vs_mesh_silhouette": {
+    "brick-texture-thinner": {
+      "valid_axis_silhouette_rows": 27,
+      "signed_min_px": -8.468945657114091e-05,
+      "signed_max_px": 0.0002912404199832963,
+      "max_abs_px": 0.0002912404199832963
+    },
+    "brick-texture-origin": {
+      "valid_axis_silhouette_rows": 27,
+      "signed_min_px": 0.00020590601252479246,
+      "signed_max_px": 0.007279866681983549,
+      "max_abs_px": 0.007279866681983549
+    },
+    "brick-texture-thicker": {
+      "valid_axis_silhouette_rows": 27,
+      "signed_min_px": 0.004640804175323865,
+      "signed_max_px": 0.04193189577949852,
+      "max_abs_px": 0.04193189577949852
+    }
+  },
+  "native_ray_samples": 86400,
+  "native_ray_disagreements": 0,
+  "producer_sha256": "c1af9545004869b0518e257c2873baf48708b589971996eefae0c21424990d91",
+  "frozen_producer_sha256": {
+    "audit_rod_geometry.py": "c1af9545004869b0518e257c2873baf48708b589971996eefae0c21424990d91",
+    "thin_pack_gt.py": "349934533b6402a81cbbdf8d0865f78649c2ff20d6b608ef0adace8388eee7ca",
+    "blender_export_thin_pack.py": "199c8107c673b4e1a2bf1d77dd640d243335788548acb8fa8d0fe12e58467b4d"
+  },
+  "original_target_materials": [
+    {
+      "material": "Material.007",
+      "principled_inputs": {
+        "Base Color": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.5,
+        "IOR": 1.5,
+        "Specular IOR Level": 0.5,
+        "Alpha": 1.0,
+        "Transmission Weight": 0.0
+      }
+    },
+    {
+      "material": "Material.008",
+      "principled_inputs": {
+        "Base Color": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.5,
+        "IOR": 1.5,
+        "Specular IOR Level": 0.5,
+        "Alpha": 1.0,
+        "Transmission Weight": 0.0
+      }
+    },
+    {
+      "material": "Material.009",
+      "principled_inputs": {
+        "Base Color": [
+          0.800000011920929,
+          0.800000011920929,
+          0.800000011920929,
+          1.0
+        ],
+        "Metallic": 0.0,
+        "Roughness": 0.5,
+        "IOR": 1.5,
+        "Specular IOR Level": 0.5,
+        "Alpha": 1.0,
+        "Transmission Weight": 0.0
+      }
+    }
+  ],
+  "original_scene_object_transforms_before_variant_scale": [
+    {
+      "name": "Cylinder.005",
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        2.0
+      ],
+      "rotation_euler_degrees": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parent": null,
+      "modifiers": [],
+      "materials": [
+        "Material.007"
+      ]
+    },
+    {
+      "name": "Cylinder.006",
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.8999999761581421
+      ],
+      "rotation_euler_degrees": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parent": null,
+      "modifiers": [],
+      "materials": [
+        "Material.009"
+      ]
+    },
+    {
+      "name": "Cylinder.008",
+      "scale": [
+        0.009999999776482582,
+        0.009999999776482582,
+        0.8999999761581421
+      ],
+      "rotation_euler_degrees": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parent": null,
+      "modifiers": [],
+      "materials": [
+        "Material.008"
+      ]
+    }
+  ],
+  "interpretation": "Mesh silhouette includes actual finite triangles, independent of shading. Native center-hit pixel bounds are quantized. RGB gradients/highlights are appearance evidence and need not be silhouette edges. Never feed this audit to a detector.",
+  "full_local_report": "data/evaluation/rod-geometry-audit-20260917r1/summary.json",
+  "full_report_sha256": "369da3a33700cf236b474727af38e07c5f25967cbdcc0a021ef53cf6fa2cc5d1",
+  "rows": [
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-30",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1316,
+          "u_max_index": 1318,
+          "center_midpoint_index": 1317.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1315.5,
+            1318.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1317.0850675764095,
+            "y_index": 300.0000000000001,
+            "world_fraction": 0.680789760065201,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.299303735542786
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1315.304396790457,
+              "u_right_index": 1318.8658929069184,
+              "width_px": 3.561496116461285,
+              "midpoint_index": 1317.0851448486878,
+              "midpoint_minus_physical_axis_px": 7.727227830400807e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1315.3042393202527,
+              1318.8657712393529
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.0850675764095286
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-30",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1428,
+          "u_max_index": 1430,
+          "center_midpoint_index": 1429.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1427.5,
+            1430.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1428.8526866872987,
+            "y_index": 300.0,
+            "world_fraction": 0.24315449687442453,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.264724535100148
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1427.1105841790613,
+              "u_right_index": 1430.5953716763759,
+              "width_px": 3.484787497314528,
+              "midpoint_index": 1428.8529779277187,
+              "midpoint_minus_physical_axis_px": 0.0002912404199832963
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1427.1106436801615,
+              1430.5954117963538
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.8526866872987284
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-30",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1311,
+          "u_max_index": 1314,
+          "center_midpoint_index": 1312.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1310.5,
+            1314.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1312.4298937098997,
+            "y_index": 500.0,
+            "world_fraction": 0.3945295479461922,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.1542628870667513
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1310.6724043434388,
+              "u_right_index": 1314.1875356090002,
+              "width_px": 3.515131265561422,
+              "midpoint_index": 1312.4299699762196,
+              "midpoint_minus_physical_axis_px": 7.6266319865681e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1310.6723690632177,
+              1314.187425705304
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.4298937098997158
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-30",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1422,
+          "u_max_index": 1424,
+          "center_midpoint_index": 1423.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1421.5,
+            1424.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1422.742481332327,
+            "y_index": 500.0,
+            "world_fraction": 0.9335998923484079,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              3.088855255426803
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1421.023058147724,
+              "u_right_index": 1424.4624794148226,
+              "width_px": 3.4394212670986235,
+              "midpoint_index": 1422.7427687812733,
+              "midpoint_minus_physical_axis_px": 0.0002874489462101337
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1421.023200277311,
+              1424.4626000757075
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.7424813323270882
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-30",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1307,
+          "u_max_index": 1309,
+          "center_midpoint_index": 1308.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1306.5,
+            1309.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1307.7747198433901,
+            "y_index": 700.0,
+            "world_fraction": 0.10061681013545541,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              1.9786119358238041
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1306.0404118964202,
+              "u_right_index": 1309.509178311082,
+              "width_px": 3.4687664146617863,
+              "midpoint_index": 1307.774795103751,
+              "midpoint_minus_physical_axis_px": 7.526036097260658e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1306.0403953496138,
+              1309.5091213962164
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.7747198433901303
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-30",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1415,
+          "u_max_index": 1418,
+          "center_midpoint_index": 1416.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1414.5,
+            1418.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1416.6322759773557,
+            "y_index": 700.0,
+            "world_fraction": 0.2628757459405371,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              1.8815517439187062
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1414.935532116386,
+              "u_right_index": 1418.3295871532698,
+              "width_px": 3.394055036883856,
+              "midpoint_index": 1416.6325596348279,
+              "midpoint_minus_physical_axis_px": 0.00028365747220959747
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1414.9356760229784,
+              1418.3295997722269
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.6322759773556754
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-15",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1275,
+          "u_max_index": 1277,
+          "center_midpoint_index": 1276.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1274.5,
+            1277.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1275.9261947014322,
+            "y_index": 299.9999999999999,
+            "world_fraction": 0.6892178144678808,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.333015953153506
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1274.0970868984182,
+              "u_right_index": 1277.755637884896,
+              "width_px": 3.6585509864778487,
+              "midpoint_index": 1275.9263623916572,
+              "midpoint_minus_physical_axis_px": 0.0001676902249982959
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1274.0972113705302,
+              1277.7556297255915
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.9261947014322232
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-15",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1411,
+          "u_max_index": 1413,
+          "center_midpoint_index": 1412.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1410.5,
+            1413.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1411.9457707503036,
+            "y_index": 299.99999999999994,
+            "world_fraction": 0.27114999825866665,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.315116442931503
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1410.130539269173,
+              "u_right_index": 1413.761320459782,
+              "width_px": 3.6307811906090137,
+              "midpoint_index": 1411.9459298644774,
+              "midpoint_minus_physical_axis_px": 0.00015911417381175852
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1410.1307165714813,
+              1413.7612431185232
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.945770750303609
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-15",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1271,
+          "u_max_index": 1273,
+          "center_midpoint_index": 1272.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1270.5,
+            1273.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1271.8068446863456,
+            "y_index": 500.00000000000006,
+            "world_fraction": 0.41047141510864826,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.2180303557165755
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1270.0015488709114,
+              "u_right_index": 1273.6124715161254,
+              "width_px": 3.610922645214032,
+              "midpoint_index": 1271.8070101935184,
+              "midpoint_minus_physical_axis_px": 0.00016550717282370897
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1270.0015694015406,
+              1273.6124319597438
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.8068446863455847
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-15",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1405,
+          "u_max_index": 1407,
+          "center_midpoint_index": 1406.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1404.5,
+            1407.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1406.0556686504246,
+            "y_index": 500.0,
+            "world_fraction": 0.9865541264220555,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              3.1841728805469507
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1404.2640685098916,
+              "u_right_index": 1407.847582876493,
+              "width_px": 3.5835143666015483,
+              "midpoint_index": 1406.0558256931922,
+              "midpoint_minus_physical_axis_px": 0.00015704276756878244
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1404.2642404642113,
+              1407.8477238689147
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.05566865042465
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-15",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1266,
+          "u_max_index": 1269,
+          "center_midpoint_index": 1267.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1265.5,
+            1269.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1267.687494671259,
+            "y_index": 700.0,
+            "world_fraction": 0.1242733558514126,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.073238118687633
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1265.9060108434048,
+              "u_right_index": 1269.469305147355,
+              "width_px": 3.563294303950215,
+              "midpoint_index": 1267.68765799538,
+              "midpoint_minus_physical_axis_px": 0.0001633241211038694
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1265.9059987816736,
+              1269.4692339844446
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.6874946712589463
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-15",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1399,
+          "u_max_index": 1401,
+          "center_midpoint_index": 1400.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1398.5,
+            1401.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1400.1655665505455,
+            "y_index": 700.0,
+            "world_fraction": 0.3414559285094561,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.022996078163253
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1398.3975977506104,
+              "u_right_index": 1401.933845293204,
+              "width_px": 3.536247542593628,
+              "midpoint_index": 1400.1657215219072,
+              "midpoint_minus_physical_axis_px": 0.0001549713617805537
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1398.3975178087744,
+              1401.9339199998808
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.1655665505454635
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+00",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1212,
+          "u_max_index": 1215,
+          "center_midpoint_index": 1213.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1211.5,
+            1215.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1213.6109767011126,
+            "y_index": 300.0,
+            "world_fraction": 0.6958177284624696,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.359415609131861
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1211.7551324963658,
+              "u_right_index": 1215.4668209060846,
+              "width_px": 3.7116884097188176,
+              "midpoint_index": 1213.6109767012254,
+              "midpoint_minus_physical_axis_px": 1.127773430198431e-10
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1211.7551367619176,
+              1215.466837119212
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.6109767011125768
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+00",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1363,
+          "u_max_index": 1366,
+          "center_midpoint_index": 1364.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1362.5,
+            1366.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1364.3138851034973,
+            "y_index": 300.0000000000003,
+            "world_fraction": 0.29576064689881654,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.3594156151778805
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1362.4390094226483,
+              "u_right_index": 1366.1892698401018,
+              "width_px": 3.7502604174535463,
+              "midpoint_index": 1364.314139631375,
+              "midpoint_minus_physical_axis_px": 0.00025452787758695194
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1362.4390406679222,
+              1366.1893251479225
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.3138851034973413
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+00",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1209,
+          "u_max_index": 1212,
+          "center_midpoint_index": 1210.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1208.5,
+            1212.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1210.3028674505579,
+            "y_index": 500.00000000000006,
+            "world_fraction": 0.42295528519222786,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.2679658360508936
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1208.4711833016302,
+              "u_right_index": 1212.1345515997082,
+              "width_px": 3.6633682980780122,
+              "midpoint_index": 1210.302867450669,
+              "midpoint_minus_physical_axis_px": 1.1118572729174048e-10
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1208.4711564998593,
+              1212.1345572140503
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.3028674505578692
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+00",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+00",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1206,
+          "u_max_index": 1208,
+          "center_midpoint_index": 1207.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1205.5,
+            1208.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1206.9947582000032,
+            "y_index": 700.0,
+            "world_fraction": 0.14279847512992772,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.1473385958016933
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1205.1872341068945,
+              "u_right_index": 1208.8022822933317,
+              "width_px": 3.615048186437207,
+              "midpoint_index": 1206.9947582001132,
+              "midpoint_minus_physical_axis_px": 1.1004885891452432e-10
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1205.1872357105335,
+              1208.8022571280121
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.9947582000031616
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+00",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1352,
+          "u_max_index": 1355,
+          "center_midpoint_index": 1353.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1351.5,
+            1355.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1353.7738558969745,
+            "y_index": 700.0,
+            "world_fraction": 0.4105351116583769,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.1473386127722387
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1351.947795845139,
+              "u_right_index": 1355.6004117504185,
+              "width_px": 3.6526159052796174,
+              "midpoint_index": 1353.7741037977787,
+              "midpoint_minus_physical_axis_px": 0.00024790080419734295
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1351.9478227598877,
+              1355.600395319347
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.77385589697451
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+15",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1133,
+          "u_max_index": 1136,
+          "center_midpoint_index": 1134.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1132.5,
+            1136.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1134.4091409648424,
+            "y_index": 299.99999999999994,
+            "world_fraction": 0.7001396639751539,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.376703351182599
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1132.5227509314068,
+              "u_right_index": 1136.295705038192,
+              "width_px": 3.772954106785164,
+              "midpoint_index": 1134.4092279847994,
+              "midpoint_minus_physical_axis_px": 8.701995693627396e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1132.5227397823433,
+              1136.2956457166247
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.409140964842436
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+15",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1285,
+          "u_max_index": 1288,
+          "center_midpoint_index": 1286.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1284.5,
+            1288.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1286.9177809527155,
+            "y_index": 300.0000000000003,
+            "world_fraction": 0.31530911991697796,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.394602870339146
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1284.9958548001503,
+              "u_right_index": 1288.839887093189,
+              "width_px": 3.8440322930387083,
+              "midpoint_index": 1286.9178709466696,
+              "midpoint_minus_physical_axis_px": 8.999395413411548e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1284.9958897389997,
+              1288.8398823542134
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.917780952715475
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+15",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1131,
+          "u_max_index": 1133,
+          "center_midpoint_index": 1132.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1130.5,
+            1133.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1132.1321100599043,
+            "y_index": 500.0000000000002,
+            "world_fraction": 0.4311304821460125,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.3006666238660323
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1130.2702777390116,
+              "u_right_index": 1133.9941141549962,
+              "width_px": 3.7238364159845787,
+              "midpoint_index": 1132.1321959470038,
+              "midpoint_minus_physical_axis_px": 8.588709943069261e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1130.2702610929236,
+              1133.9940889165314
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.1321100599043348
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+15",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+15",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1129,
+          "u_max_index": 1131,
+          "center_midpoint_index": 1130.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1128.5,
+            1131.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1129.8550791549662,
+            "y_index": 700.0000000000001,
+            "world_fraction": 0.1549299418463692,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.1958644626674593
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1128.0178045466162,
+              "u_right_index": 1131.6925232718004,
+              "width_px": 3.6747187251842206,
+              "midpoint_index": 1129.8551639092084,
+              "midpoint_minus_physical_axis_px": 8.475424215248495e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1128.017782088311,
+              1131.6925324086696
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.8550791549662335
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+15",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1277,
+          "u_max_index": 1280,
+          "center_midpoint_index": 1278.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1276.5,
+            1280.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1278.3928930944483,
+            "y_index": 700.0000000000001,
+            "world_fraction": 0.46540617937481693,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.246106538586515
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1276.521007611253,
+              "u_right_index": 1280.2649538792555,
+              "width_px": 3.7439462680024462,
+              "midpoint_index": 1278.3929807452541,
+              "midpoint_minus_physical_axis_px": 8.765080588091223e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1276.521015229387,
+              1280.264918633684
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.3928930944482545
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+30",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1044,
+          "u_max_index": 1046,
+          "center_midpoint_index": 1045.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1043.5,
+            1046.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1044.996317701549,
+            "y_index": 300.0000000000002,
+            "world_fraction": 0.7018893496368658,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.383702093829445
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1043.1108134045949,
+              "u_right_index": 1046.8816526195899,
+              "width_px": 3.7708392149950214,
+              "midpoint_index": 1044.9962330120925,
+              "midpoint_minus_physical_axis_px": -8.468945657114091e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1043.1109254586672,
+              1046.8818292464643
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.9963177015490601
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+30",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1183,
+          "u_max_index": 1186,
+          "center_midpoint_index": 1184.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1182.5,
+            1186.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1184.6382123972921,
+            "y_index": 300.0,
+            "world_fraction": 0.32846380490755467,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.418281305831242
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1182.6839835446278,
+              "u_right_index": 1186.592814050265,
+              "width_px": 3.90883050563707,
+              "midpoint_index": 1184.6383987974464,
+              "midpoint_minus_physical_axis_px": 0.000186400154234434
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1182.684106783119,
+              1186.5927536156312
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.6382123972921363
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+30",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1043,
+          "u_max_index": 1045,
+          "center_midpoint_index": 1044.0,
+          "pixel_count": 3,
+          "pixel_cell_footprint": [
+            1042.5,
+            1045.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1043.8832955910657,
+            "y_index": 500.0,
+            "world_fraction": 0.43444001752137307,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.3139047653674747
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1042.0223374737407,
+              "u_right_index": 1045.7440865345138,
+              "width_px": 3.7217490607731634,
+              "midpoint_index": 1043.8832120041272,
+              "midpoint_minus_physical_axis_px": -8.358693844456866e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1042.0223753246487,
+              1045.7440919802466
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -0.8832955910656892
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+30",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+30",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1041,
+          "u_max_index": 1044,
+          "center_midpoint_index": 1042.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1040.5,
+            1044.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1042.7702734805825,
+            "y_index": 700.0,
+            "world_fraction": 0.15984102664685282,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.215508801869394
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1040.9338615428862,
+              "u_right_index": 1044.6065204494378,
+              "width_px": 3.6726589065515327,
+              "midpoint_index": 1042.770190996162,
+              "midpoint_minus_physical_axis_px": -8.248442054537009e-05
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1040.933916985714,
+              1044.6067215889734
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.7702734805825457
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+30",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1177,
+          "u_max_index": 1180,
+          "center_midpoint_index": 1178.5,
+          "pixel_count": 4,
+          "pixel_cell_footprint": [
+            1176.5,
+            1180.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1178.776350388507,
+            "y_index": 700.0,
+            "world_fraction": 0.5023297810432269,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.312569024230635
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1176.8730032575456,
+              "u_right_index": 1180.6800606132774,
+              "width_px": 3.8070573557317857,
+              "midpoint_index": 1178.7765319354116,
+              "midpoint_minus_physical_axis_px": 0.00018154690474148083
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1176.8730197890625,
+              1180.6799881058578
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -1.7763503885068985
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-30",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1309,
+          "u_max_index": 1325,
+          "center_midpoint_index": 1317.0,
+          "pixel_count": 17,
+          "pixel_cell_footprint": [
+            1308.5,
+            1325.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1317.0850675764095,
+            "y_index": 300.0000000000001,
+            "world_fraction": 0.680789760065201,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.299303735542786
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1308.1834486599078,
+              "u_right_index": 1325.9905564121989,
+              "width_px": 17.80710775229113,
+              "midpoint_index": 1317.0870025360532,
+              "midpoint_minus_physical_axis_px": 0.001934959643676848
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1308.1832762470044,
+              1325.9903636672489
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.0850675764095286
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-30",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1421,
+          "u_max_index": 1437,
+          "center_midpoint_index": 1429.0,
+          "pixel_count": 17,
+          "pixel_cell_footprint": [
+            1420.5,
+            1437.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1428.8526866872987,
+            "y_index": 300.0,
+            "world_fraction": 0.24315449687442453,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.264724535100148
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1420.1481743579475,
+              "u_right_index": 1437.571758750014,
+              "width_px": 17.42358439206646,
+              "midpoint_index": 1428.8599665539807,
+              "midpoint_minus_physical_axis_px": 0.007279866681983549
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1420.1482257197615,
+              1437.5718584373633
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.852686687298728
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-30",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1304,
+          "u_max_index": 1321,
+          "center_midpoint_index": 1312.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1303.5,
+            1321.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1312.4298937098997,
+            "y_index": 500.0,
+            "world_fraction": 0.3945295479461922,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.1542628870667513
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1303.644159303821,
+              "u_right_index": 1321.2194476552504,
+              "width_px": 17.575288351429435,
+              "midpoint_index": 1312.4318034795356,
+              "midpoint_minus_physical_axis_px": 0.001909769635858538
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1303.6442746113212,
+              1321.2193743033404
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.429893709899716
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-30",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1415,
+          "u_max_index": 1431,
+          "center_midpoint_index": 1423.0,
+          "pixel_count": 17,
+          "pixel_cell_footprint": [
+            1414.5,
+            1431.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1422.742481332327,
+            "y_index": 500.0,
+            "world_fraction": 0.9335998923484079,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              3.088855255426803
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1414.1512875082071,
+              "u_right_index": 1431.3480453459101,
+              "width_px": 17.19675783770299,
+              "midpoint_index": 1422.7496664270586,
+              "midpoint_minus_physical_axis_px": 0.007185094731539721
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1414.1513397849453,
+              1431.3480881666433
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -6.742481332327088
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-30",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1300,
+          "u_max_index": 1316,
+          "center_midpoint_index": 1308.0,
+          "pixel_count": 17,
+          "pixel_cell_footprint": [
+            1299.5,
+            1316.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1307.7747198433901,
+            "y_index": 700.0,
+            "world_fraction": 0.10061681013545541,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              1.9786119358238041
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1299.1048699477342,
+              "u_right_index": 1316.448338898302,
+              "width_px": 17.34346895056774,
+              "midpoint_index": 1307.776604423018,
+              "midpoint_minus_physical_axis_px": 0.0018845796278128546
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1299.104906081735,
+              1316.448480621977
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.77471984339013
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-30",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1409,
+          "u_max_index": 1425,
+          "center_midpoint_index": 1417.0,
+          "pixel_count": 17,
+          "pixel_cell_footprint": [
+            1408.5,
+            1425.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1416.6322759773557,
+            "y_index": 700.0,
+            "world_fraction": 0.2628757459405371,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              1.8815517439187062
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1408.1544006584668,
+              "u_right_index": 1425.1243319418063,
+              "width_px": 16.96993128333952,
+              "midpoint_index": 1416.6393663001365,
+              "midpoint_minus_physical_axis_px": 0.007090322780868519
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1408.154435668495,
+              1425.124421529826
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -6.632275977355675
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-15",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1267,
+          "u_max_index": 1285,
+          "center_midpoint_index": 1276.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1266.5,
+            1285.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1275.9261947014322,
+            "y_index": 299.9999999999999,
+            "world_fraction": 0.6892178144678808,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.333015953153506
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1266.78396045487,
+              "u_right_index": 1285.0765591003683,
+              "width_px": 18.292598645498174,
+              "midpoint_index": 1275.930259777619,
+              "midpoint_minus_physical_axis_px": 0.004065076186861916
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1266.7839603630132,
+              1285.0765796919031
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.926194701432223
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-15",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1403,
+          "u_max_index": 1421,
+          "center_midpoint_index": 1412.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1402.5,
+            1421.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1411.9457707503036,
+            "y_index": 299.99999999999994,
+            "world_fraction": 0.27114999825866665,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.315116442931503
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1402.8729049449457,
+              "u_right_index": 1421.026591120527,
+              "width_px": 18.153686175581242,
+              "midpoint_index": 1411.9497480327364,
+              "midpoint_minus_physical_axis_px": 0.003977282432742868
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1402.872800275145,
+              1421.0266566946543
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.945770750303609
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-15",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1263,
+          "u_max_index": 1280,
+          "center_midpoint_index": 1271.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1262.5,
+            1280.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1271.8068446863456,
+            "y_index": 500.00000000000006,
+            "world_fraction": 0.41047141510864826,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.2180303557165755
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1262.7836273550101,
+              "u_right_index": 1280.838086328788,
+              "width_px": 18.054458973777855,
+              "midpoint_index": 1271.810856841899,
+              "midpoint_minus_physical_axis_px": 0.004012155553482444
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1262.783701653138,
+              1280.8381953010635
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.806844686345585
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-15",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1398,
+          "u_max_index": 1415,
+          "center_midpoint_index": 1406.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1397.5,
+            1415.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1406.0556686504246,
+            "y_index": 500.0,
+            "world_fraction": 0.9865541264220555,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              3.1841728805469507
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1397.100916696812,
+              "u_right_index": 1415.0182716134973,
+              "width_px": 17.917354916685326,
+              "midpoint_index": 1406.0595941551546,
+              "midpoint_minus_physical_axis_px": 0.003925504729977547
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1397.100767393995,
+              1415.0183362969221
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.05566865042465
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-15",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1259,
+          "u_max_index": 1276,
+          "center_midpoint_index": 1267.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1258.5,
+            1276.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1267.687494671259,
+            "y_index": 700.0,
+            "world_fraction": 0.1242733558514126,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.073238118687633
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1258.7832942551502,
+              "u_right_index": 1276.599613557208,
+              "width_px": 17.816319302057764,
+              "midpoint_index": 1267.691453906179,
+              "midpoint_minus_physical_axis_px": 0.003959234920102972
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1258.7833456554172,
+              1276.5996322102687
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.687494671258946
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-15",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1392,
+          "u_max_index": 1409,
+          "center_midpoint_index": 1400.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1391.5,
+            1409.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1400.1655665505455,
+            "y_index": 700.0,
+            "world_fraction": 0.3414559285094561,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.022996078163253
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1391.328928448678,
+              "u_right_index": 1409.0099521064676,
+              "width_px": 17.681023657789638,
+              "midpoint_index": 1400.169440277573,
+              "midpoint_minus_physical_axis_px": 0.0038737270274395996
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1391.3289092146379,
+              1409.0100156717754
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.165566550545464
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+00",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1205,
+          "u_max_index": 1222,
+          "center_midpoint_index": 1213.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1204.5,
+            1222.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1213.6109767011126,
+            "y_index": 300.0,
+            "world_fraction": 0.6958177284624696,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.359415609131861
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1204.3317446179335,
+              "u_right_index": 1222.8906316051898,
+              "width_px": 18.5588869872563,
+              "midpoint_index": 1213.6111881115617,
+              "midpoint_minus_physical_axis_px": 0.00021141044908290496
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1204.3317759392594,
+              1222.8906548721247
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.610976701112577
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+00",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1355,
+          "u_max_index": 1373,
+          "center_midpoint_index": 1364.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1354.5,
+            1373.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1364.3138851034973,
+            "y_index": 300.0000000000003,
+            "world_fraction": 0.29576064689881654,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.3594156151778805
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1354.9446234400034,
+              "u_right_index": 1373.6958706355665,
+              "width_px": 18.75124719556311,
+              "midpoint_index": 1364.320247037785,
+              "midpoint_minus_physical_axis_px": 0.00636193428772458
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1354.9446311630543,
+              1373.6958941237242
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.313885103497341
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+00",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1202,
+          "u_max_index": 1219,
+          "center_midpoint_index": 1210.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1201.5,
+            1219.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1210.3028674505579,
+            "y_index": 500.00000000000006,
+            "world_fraction": 0.42295528519222786,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.2679658360508936
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1201.1444357904495,
+              "u_right_index": 1219.4617164271278,
+              "width_px": 18.317280636678333,
+              "midpoint_index": 1210.3030761087887,
+              "midpoint_minus_physical_axis_px": 0.0002086582308038487
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1201.1444345482814,
+              1219.4617160012563
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.30286745055787
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+00",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+00",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1198,
+          "u_max_index": 1216,
+          "center_midpoint_index": 1207.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1197.5,
+            1216.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1206.9947582000032,
+            "y_index": 700.0,
+            "world_fraction": 0.14279847512992772,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.1473385958016933
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1197.9571269629657,
+              "u_right_index": 1216.0328012490659,
+              "width_px": 18.07567428610014,
+              "midpoint_index": 1206.9949641060157,
+              "midpoint_minus_physical_axis_px": 0.00020590601252479246
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1197.957113013692,
+              1216.0328168670667
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.994758200003162
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+00",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1345,
+          "u_max_index": 1362,
+          "center_midpoint_index": 1353.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1344.5,
+            1362.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1353.7738558969745,
+            "y_index": 700.0,
+            "world_fraction": 0.4105351116583769,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.1473386127722387
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1344.6485391553585,
+              "u_right_index": 1362.9115652192543,
+              "width_px": 18.263026063895722,
+              "midpoint_index": 1353.7800521873064,
+              "midpoint_minus_physical_axis_px": 0.006196290331899945
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1344.6485192591358,
+              1362.9115405369203
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -7.77385589697451
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+15",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1125,
+          "u_max_index": 1143,
+          "center_midpoint_index": 1134.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1124.5,
+            1143.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1134.4091409648424,
+            "y_index": 299.99999999999994,
+            "world_fraction": 0.7001396639751539,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.376703351182599
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1124.97898008306,
+              "u_right_index": 1143.8436553159956,
+              "width_px": 18.864675232935724,
+              "midpoint_index": 1134.411317699528,
+              "midpoint_minus_physical_axis_px": 0.0021767346854630887
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1124.9789850807686,
+              1143.8436376883524
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.409140964842436
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+15",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1278,
+          "u_max_index": 1296,
+          "center_midpoint_index": 1287.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1277.5,
+            1296.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1286.9177809527155,
+            "y_index": 300.0000000000003,
+            "world_fraction": 0.31530911991697796,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.394602870339146
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1277.3099792410426,
+              "u_right_index": 1296.5300849277753,
+              "width_px": 19.220105686732722,
+              "midpoint_index": 1286.9200320844088,
+              "midpoint_minus_physical_axis_px": 0.002251131693356001
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1277.310002368613,
+              1296.5300477429614
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.917780952715475
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+15",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1123,
+          "u_max_index": 1141,
+          "center_midpoint_index": 1132.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1122.5,
+            1141.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1132.1321100599043,
+            "y_index": 500.0000000000002,
+            "world_fraction": 0.4311304821460125,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.3006666238660323
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1122.8247144472662,
+              "u_right_index": 1141.4438024668634,
+              "width_px": 18.619088019597257,
+              "midpoint_index": 1132.1342584570648,
+              "midpoint_minus_physical_axis_px": 0.0021483971604538965
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1122.824744215734,
+              1141.4438170315402
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.132110059904335
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+15",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+15",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1121,
+          "u_max_index": 1139,
+          "center_midpoint_index": 1130.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1120.5,
+            1139.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1129.8550791549662,
+            "y_index": 700.0000000000001,
+            "world_fraction": 0.1549299418463692,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.1958644626674593
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1120.6704488114726,
+              "u_right_index": 1139.043949617731,
+              "width_px": 18.373500806258335,
+              "midpoint_index": 1129.8571992146017,
+              "midpoint_minus_physical_axis_px": 0.0021200596354447043
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1120.6704621285894,
+              1139.0439250957656
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.855079154966234
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+15",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1270,
+          "u_max_index": 1287,
+          "center_midpoint_index": 1278.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1269.5,
+            1287.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1278.3928930944483,
+            "y_index": 700.0000000000001,
+            "world_fraction": 0.46540617937481693,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.246106538586515
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1269.0352471071167,
+              "u_right_index": 1287.7549241209574,
+              "width_px": 18.719677013840737,
+              "midpoint_index": 1278.395085614037,
+              "midpoint_minus_physical_axis_px": 0.002192519588788855
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1269.0352242762865,
+              1287.7549471900375
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.392893094448254
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+30",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1036,
+          "u_max_index": 1054,
+          "center_midpoint_index": 1045.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1035.5,
+            1054.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1044.996317701549,
+            "y_index": 300.0000000000002,
+            "world_fraction": 0.7018893496368658,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.383702093829445
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1035.567196181182,
+              "u_right_index": 1054.4263618352911,
+              "width_px": 18.85916565410912,
+              "midpoint_index": 1044.9967790082364,
+              "midpoint_minus_physical_axis_px": 0.0004613066873844218
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1035.5671905558238,
+              1054.4263824808693
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.99631770154906
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+30",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1175,
+          "u_max_index": 1194,
+          "center_midpoint_index": 1184.5,
+          "pixel_count": 20,
+          "pixel_cell_footprint": [
+            1174.5,
+            1194.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1184.6382123972921,
+            "y_index": 300.0,
+            "world_fraction": 0.32846380490755467,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.418281305831242
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1174.8709160417345,
+              "u_right_index": 1194.414829655992,
+              "width_px": 19.543913614257463,
+              "midpoint_index": 1184.6428728488631,
+              "midpoint_minus_physical_axis_px": 0.004660451570998703
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1174.870943207915,
+              1194.414818700047
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.638212397292136
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+30",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1035,
+          "u_max_index": 1053,
+          "center_midpoint_index": 1044.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1034.5,
+            1053.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1043.8832955910657,
+            "y_index": 500.0,
+            "world_fraction": 0.43444001752137307,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.3139047653674747
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1034.5769257986883,
+              "u_right_index": 1053.1905759859026,
+              "width_px": 18.61365018721426,
+              "midpoint_index": 1043.8837508922954,
+              "midpoint_minus_physical_axis_px": 0.0004553012297492387
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1034.5769234465624,
+              1053.190596924444
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.88329559106569
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+30",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+30",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1034,
+          "u_max_index": 1051,
+          "center_midpoint_index": 1042.5,
+          "pixel_count": 18,
+          "pixel_cell_footprint": [
+            1033.5,
+            1051.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1042.7702734805825,
+            "y_index": 700.0,
+            "world_fraction": 0.15984102664685282,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.215508801869394
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1033.5866554161944,
+              "u_right_index": 1051.9547901365138,
+              "width_px": 18.368134720319404,
+              "midpoint_index": 1042.770722776354,
+              "midpoint_minus_physical_axis_px": 0.00044929577143193455
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1033.5866560760762,
+              1051.9548085436913
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.770273480582546
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+30",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1170,
+          "u_max_index": 1188,
+          "center_midpoint_index": 1179.0,
+          "pixel_count": 19,
+          "pixel_cell_footprint": [
+            1169.5,
+            1188.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1178.776350388507,
+            "y_index": 700.0,
+            "world_fraction": 0.5023297810432269,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.312569024230635
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1169.2633624545429,
+              "u_right_index": 1188.2984165398093,
+              "width_px": 19.035054085266438,
+              "midpoint_index": 1178.780889497176,
+              "midpoint_minus_physical_axis_px": 0.004539108669177949
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1169.2633041838872,
+              1188.298405946195
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -8.776350388506899
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-30",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1296,
+          "u_max_index": 1338,
+          "center_midpoint_index": 1317.0,
+          "pixel_count": 43,
+          "pixel_cell_footprint": [
+            1295.5,
+            1338.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1317.0850675764095,
+            "y_index": 300.0000000000001,
+            "world_fraction": 0.680789760065201,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.299303735542786
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1295.7276835835587,
+              "u_right_index": 1338.4647017558607,
+              "width_px": 42.73701817230199,
+              "midpoint_index": 1317.0961926697096,
+              "midpoint_minus_physical_axis_px": 0.011125093300051958
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1295.7277210981206,
+              1338.4647352694242
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -18.08506757640953
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-30",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1408,
+          "u_max_index": 1449,
+          "center_midpoint_index": 1428.5,
+          "pixel_count": 42,
+          "pixel_cell_footprint": [
+            1407.5,
+            1449.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1428.8526866872987,
+            "y_index": 300.0,
+            "world_fraction": 0.24315449687442453,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.264724535100148
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1407.9862660564295,
+              "u_right_index": 1449.8029711097267,
+              "width_px": 41.816705053297255,
+              "midpoint_index": 1428.8946185830782,
+              "midpoint_minus_physical_axis_px": 0.04193189577949852
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1407.986144098645,
+              1449.8028742562847
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -17.85268668729873
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-30",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1292,
+          "u_max_index": 1333,
+          "center_midpoint_index": 1312.5,
+          "pixel_count": 42,
+          "pixel_cell_footprint": [
+            1291.5,
+            1333.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1312.4298937098997,
+            "y_index": 500.0,
+            "world_fraction": 0.3945295479461922,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.1542628870667513
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1291.350547904388,
+              "u_right_index": 1333.531200040996,
+              "width_px": 42.18065213660816,
+              "midpoint_index": 1312.4408739726919,
+              "midpoint_minus_physical_axis_px": 0.010980262792145368
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1291.350569691504,
+              1333.5312492916062
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -18.429893709899716
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-30",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1403,
+          "u_max_index": 1443,
+          "center_midpoint_index": 1423.0,
+          "pixel_count": 41,
+          "pixel_cell_footprint": [
+            1402.5,
+            1443.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1422.742481332327,
+            "y_index": 500.0,
+            "world_fraction": 0.9335998923484079,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              3.088855255426803
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1402.1477073493056,
+              "u_right_index": 1443.4200273375877,
+              "width_px": 41.272319988282106,
+              "midpoint_index": 1422.7838673434467,
+              "midpoint_minus_physical_axis_px": 0.04138601111958451
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1402.1475333231774,
+              1443.4202452236837
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -18.74248133232709
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-30",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1287,
+          "u_max_index": 1328,
+          "center_midpoint_index": 1307.5,
+          "pixel_count": 42,
+          "pixel_cell_footprint": [
+            1286.5,
+            1328.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1307.7747198433901,
+            "y_index": 700.0,
+            "world_fraction": 0.10061681013545541,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              1.9786119358238041
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1286.973412225217,
+              "u_right_index": 1328.5976983261312,
+              "width_px": 41.624286100914105,
+              "midpoint_index": 1307.7855552756741,
+              "midpoint_minus_physical_axis_px": 0.010835432284011404
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1286.9732636598294,
+              1328.597657590265
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -18.77471984339013
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-30",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1397,
+          "u_max_index": 1437,
+          "center_midpoint_index": 1417.0,
+          "pixel_count": 41,
+          "pixel_cell_footprint": [
+            1396.5,
+            1437.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1416.6322759773557,
+            "y_index": 700.0,
+            "world_fraction": 0.2628757459405371,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              1.8815517439187062
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1396.3091486421818,
+              "u_right_index": 1437.037083565449,
+              "width_px": 40.727934923267185,
+              "midpoint_index": 1416.6731161038153,
+              "midpoint_minus_physical_axis_px": 0.0408401264596705
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1396.3091060485629,
+              1437.0369249641114
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -17.632275977355675
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-15",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1254,
+          "u_max_index": 1297,
+          "center_midpoint_index": 1275.5,
+          "pixel_count": 44,
+          "pixel_cell_footprint": [
+            1253.5,
+            1297.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1275.9261947014322,
+            "y_index": 299.9999999999999,
+            "world_fraction": 0.6892178144678808,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.333015953153506
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1253.9985024125306,
+              "u_right_index": 1297.9007250766597,
+              "width_px": 43.90222266412911,
+              "midpoint_index": 1275.9496137445951,
+              "midpoint_minus_physical_axis_px": 0.023419043162903108
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1253.998578819745,
+              1297.9008308052598
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -19.926194701432223
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-15",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1391,
+          "u_max_index": 1433,
+          "center_midpoint_index": 1412.0,
+          "pixel_count": 43,
+          "pixel_cell_footprint": [
+            1390.5,
+            1433.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1411.9457707503036,
+            "y_index": 299.99999999999994,
+            "world_fraction": 0.27114999825866665,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.315116442931503
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1390.1842632912033,
+              "u_right_index": 1433.7530947980151,
+              "width_px": 43.568831506811875,
+              "midpoint_index": 1411.9686790446092,
+              "midpoint_minus_physical_axis_px": 0.022908294305580057
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1390.1842127797854,
+              1433.7530811879124
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -20.94577075030361
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-15",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1251,
+          "u_max_index": 1293,
+          "center_midpoint_index": 1272.0,
+          "pixel_count": 43,
+          "pixel_cell_footprint": [
+            1250.5,
+            1293.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1271.8068446863456,
+            "y_index": 500.00000000000006,
+            "world_fraction": 0.41047141510864826,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.2180303557165755
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1250.1646150342435,
+              "u_right_index": 1293.4953026696087,
+              "width_px": 43.330687635365166,
+              "midpoint_index": 1271.8299588519262,
+              "midpoint_minus_physical_axis_px": 0.023114165580636836
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1250.1646576705227,
+              1293.4953360669467
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -19.806844686345585
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-15",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1385,
+          "u_max_index": 1427,
+          "center_midpoint_index": 1406.0,
+          "pixel_count": 43,
+          "pixel_cell_footprint": [
+            1384.5,
+            1427.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1406.0556686504246,
+            "y_index": 500.0,
+            "world_fraction": 0.9865541264220555,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              3.1841728805469507
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1384.5774603738444,
+              "u_right_index": 1427.579097058678,
+              "width_px": 43.00163668483356,
+              "midpoint_index": 1406.0782787162611,
+              "midpoint_minus_physical_axis_px": 0.022610065836488502
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1384.57748319341,
+              1427.5790561249312
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -20.05566865042465
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-15",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1247,
+          "u_max_index": 1289,
+          "center_midpoint_index": 1268.0,
+          "pixel_count": 43,
+          "pixel_cell_footprint": [
+            1246.5,
+            1289.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1267.687494671259,
+            "y_index": 700.0,
+            "world_fraction": 0.1242733558514126,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.073238118687633
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1246.3307276559565,
+              "u_right_index": 1289.089880262558,
+              "width_px": 42.75915260660145,
+              "midpoint_index": 1267.710303959257,
+              "midpoint_minus_physical_axis_px": 0.02280928799814319
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1246.3307369488916,
+              1289.089841171609
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -19.687494671258946
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_-15",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1379,
+          "u_max_index": 1421,
+          "center_midpoint_index": 1400.0,
+          "pixel_count": 43,
+          "pixel_cell_footprint": [
+            1378.5,
+            1421.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1400.1655665505455,
+            "y_index": 700.0,
+            "world_fraction": 0.3414559285094561,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.022996078163253
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1378.9706574564857,
+              "u_right_index": 1421.4050993193403,
+              "width_px": 42.434441862854555,
+              "midpoint_index": 1400.1878783879129,
+              "midpoint_minus_physical_axis_px": 0.022311837367396947
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1378.9706714824015,
+              1421.4050309377294
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -20.165566550545464
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+00",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1192,
+          "u_max_index": 1235,
+          "center_midpoint_index": 1213.5,
+          "pixel_count": 44,
+          "pixel_cell_footprint": [
+            1191.5,
+            1235.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1213.6109767011126,
+            "y_index": 300.0,
+            "world_fraction": 0.6958177284624696,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.359415609131861
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1191.3408241356453,
+              "u_right_index": 1235.9033682661866,
+              "width_px": 44.562544130541255,
+              "midpoint_index": 1213.622096200916,
+              "midpoint_minus_physical_axis_px": 0.011119499803498911
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1191.3408248487553,
+              1235.9033816150668
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -20.610976701112577
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+00",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1342,
+          "u_max_index": 1386,
+          "center_midpoint_index": 1364.0,
+          "pixel_count": 45,
+          "pixel_cell_footprint": [
+            1341.5,
+            1386.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1364.3138851034973,
+            "y_index": 300.0000000000003,
+            "world_fraction": 0.29576064689881654,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.3594156151778805
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1341.848950460994,
+              "u_right_index": 1386.852111891382,
+              "width_px": 45.00316143038799,
+              "midpoint_index": 1364.350531176188,
+              "midpoint_minus_physical_axis_px": 0.03664607269070075
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1341.8489746110401,
+              1386.8521487603123
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -22.31388510349734
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+00",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1189,
+          "u_max_index": 1232,
+          "center_midpoint_index": 1210.5,
+          "pixel_count": 44,
+          "pixel_cell_footprint": [
+            1188.5,
+            1232.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1210.3028674505579,
+            "y_index": 500.00000000000006,
+            "world_fraction": 0.42295528519222786,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.2679658360508936
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1188.3226358427348,
+              "u_right_index": 1232.3050485425906,
+              "width_px": 43.982412699855786,
+              "midpoint_index": 1210.3138421926628,
+              "midpoint_minus_physical_axis_px": 0.010974742104963298
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1188.3226216593453,
+              1232.3050264879025
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -21.30286745055787
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+00",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+00",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1186,
+          "u_max_index": 1228,
+          "center_midpoint_index": 1207.0,
+          "pixel_count": 43,
+          "pixel_cell_footprint": [
+            1185.5,
+            1228.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1206.9947582000032,
+            "y_index": 700.0,
+            "world_fraction": 0.14279847512992772,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.1473385958016933
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1185.3044475498243,
+              "u_right_index": 1228.7067288189946,
+              "width_px": 43.40228126917032,
+              "midpoint_index": 1207.0055881844096,
+              "midpoint_minus_physical_axis_px": 0.010829984406427684
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1185.3044382201379,
+              1228.7067307583507
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -20.99475820000316
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+00",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1332,
+          "u_max_index": 1375,
+          "center_midpoint_index": 1353.5,
+          "pixel_count": 44,
+          "pixel_cell_footprint": [
+            1331.5,
+            1375.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1353.7738558969745,
+            "y_index": 700.0,
+            "world_fraction": 0.4105351116583769,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.1473386127722387
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1331.89383465781,
+              "u_right_index": 1375.7252609938323,
+              "width_px": 43.83142633602233,
+              "midpoint_index": 1353.809547825821,
+              "midpoint_minus_physical_axis_px": 0.03569192884651784
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1331.8938012140204,
+              1375.7252274600107
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -21.77385589697451
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+15",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1112,
+          "u_max_index": 1157,
+          "center_midpoint_index": 1134.5,
+          "pixel_count": 46,
+          "pixel_cell_footprint": [
+            1111.5,
+            1157.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1134.4091409648424,
+            "y_index": 299.99999999999994,
+            "world_fraction": 0.7001396639751539,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.376703351182599
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1111.7840205086018,
+              "u_right_index": 1157.0593351615698,
+              "width_px": 45.27531465296806,
+              "midpoint_index": 1134.4216778350858,
+              "midpoint_minus_physical_axis_px": 0.012536870243366138
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1111.7839964101863,
+              1157.05936021354
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -22.409140964842436
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+15",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1264,
+          "u_max_index": 1309,
+          "center_midpoint_index": 1286.5,
+          "pixel_count": 46,
+          "pixel_cell_footprint": [
+            1263.5,
+            1309.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1286.9177809527155,
+            "y_index": 300.0000000000003,
+            "world_fraction": 0.31530911991697796,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.394602870339146
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1263.8665793763948,
+              "u_right_index": 1309.9949132375923,
+              "width_px": 46.12833386119746,
+              "midpoint_index": 1286.9307463069936,
+              "midpoint_minus_physical_axis_px": 0.01296535427809431
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1263.8665801743591,
+              1309.9949441412027
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -20.917780952715475
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+15",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1110,
+          "u_max_index": 1154,
+          "center_midpoint_index": 1132.0,
+          "pixel_count": 45,
+          "pixel_cell_footprint": [
+            1109.5,
+            1154.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1132.1321100599043,
+            "y_index": 500.0000000000002,
+            "world_fraction": 0.4311304821460125,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.3006666238660323
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1109.8015316626015,
+              "u_right_index": 1154.4874357786077,
+              "width_px": 44.68590411600621,
+              "midpoint_index": 1132.1444837206045,
+              "midpoint_minus_physical_axis_px": 0.012373660700177425
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1109.801548380974,
+              1154.4874021330947
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -22.132110059904335
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+15",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+15",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1108,
+          "u_max_index": 1151,
+          "center_midpoint_index": 1129.5,
+          "pixel_count": 44,
+          "pixel_cell_footprint": [
+            1107.5,
+            1151.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1129.8550791549662,
+            "y_index": 700.0000000000001,
+            "world_fraction": 0.1549299418463692,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.1958644626674593
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1107.819042816601,
+              "u_right_index": 1151.9155363956456,
+              "width_px": 44.09649357904459,
+              "midpoint_index": 1129.8672896061234,
+              "midpoint_minus_physical_axis_px": 0.012210451157216085
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1107.8189771325096,
+              1151.9155677570534
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -21.855079154966234
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+15",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1256,
+          "u_max_index": 1300,
+          "center_midpoint_index": 1278.0,
+          "pixel_count": 45,
+          "pixel_cell_footprint": [
+            1255.5,
+            1300.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1278.3928930944483,
+            "y_index": 700.0000000000001,
+            "world_fraction": 0.46540617937481693,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.246106538586515
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1255.941869394432,
+              "u_right_index": 1300.8691723522033,
+              "width_px": 44.92730295777142,
+              "midpoint_index": 1278.4055208733175,
+              "midpoint_minus_physical_axis_px": 0.012627778869273243
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1255.9418877727594,
+              1300.8691816244227
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -22.392893094448254
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+30",
+      "y_index": 300,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1023,
+          "u_max_index": 1067,
+          "center_midpoint_index": 1045.0,
+          "pixel_count": 45,
+          "pixel_cell_footprint": [
+            1022.5,
+            1067.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1044.996317701549,
+            "y_index": 300.0000000000002,
+            "world_fraction": 0.7018893496368658,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              4.383702093829445
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1022.3590838251674,
+              "u_right_index": 1067.6430813092882,
+              "width_px": 45.28399748412073,
+              "midpoint_index": 1045.0010825672277,
+              "midpoint_minus_physical_axis_px": 0.004764865678680508
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1022.3591160520648,
+              1067.6431825604432
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -16.99631770154906
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+30",
+      "y_index": 300,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1162,
+          "u_max_index": 1208,
+          "center_midpoint_index": 1185.0,
+          "pixel_count": 47,
+          "pixel_cell_footprint": [
+            1161.5,
+            1208.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": {
+            "u_index": 1184.6382123972921,
+            "y_index": 300.0,
+            "world_fraction": 0.32846380490755467,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              4.418281305831242
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1161.2123665309296,
+              "u_right_index": 1208.1177485156206,
+              "width_px": 46.905381984691076,
+              "midpoint_index": 1184.6650575232752,
+              "midpoint_minus_physical_axis_px": 0.02684512598307265
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1161.2122909668942,
+              1208.1178863058003
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -14.638212397292136
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+30",
+      "y_index": 500,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1022,
+          "u_max_index": 1066,
+          "center_midpoint_index": 1044.0,
+          "pixel_count": 45,
+          "pixel_cell_footprint": [
+            1021.5,
+            1066.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1043.8832955910657,
+            "y_index": 500.0,
+            "world_fraction": 0.43444001752137307,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              3.3139047653674747
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1021.5407614456427,
+              "u_right_index": 1066.235235406343,
+              "width_px": 44.69447396070029,
+              "midpoint_index": 1043.887998425993,
+              "midpoint_minus_physical_axis_px": 0.00470283492722956
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1021.5407291281315,
+              1066.2352820263193
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -17.88329559106569
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+30",
+      "y_index": 500,
+      "rod_id": 6,
+      "native_center_hit_runs": [],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+30",
+      "y_index": 700,
+      "rod_id": 5,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1021,
+          "u_max_index": 1064,
+          "center_midpoint_index": 1042.5,
+          "pixel_count": 44,
+          "pixel_cell_footprint": [
+            1020.5,
+            1064.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 5,
+          "object": "Cylinder.005",
+          "physical_axis": {
+            "u_index": 1042.7702734805825,
+            "y_index": 700.0,
+            "world_fraction": 0.15984102664685282,
+            "world_point": [
+              -0.990986704826355,
+              12.0,
+              2.215508801869394
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1020.722439066118,
+              "u_right_index": 1064.8273895033976,
+              "width_px": 44.104950437279626,
+              "midpoint_index": 1042.7749142847579,
+              "midpoint_minus_physical_axis_px": 0.004640804175323865
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1020.722525600042,
+              1064.8273816400551
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -21.770273480582546
+        }
+      ]
+    },
+    {
+      "case_id": "brick-texture-thicker",
+      "frame_id": "view_+30",
+      "y_index": 700,
+      "rod_id": 6,
+      "native_center_hit_runs": [
+        {
+          "u_min_index": 1156,
+          "u_max_index": 1201,
+          "center_midpoint_index": 1178.5,
+          "pixel_count": 46,
+          "pixel_cell_footprint": [
+            1155.5,
+            1201.5
+          ]
+        }
+      ],
+      "pixel_convention": "RGB integer index y; rays use edge coordinates (x+0.5,y+0.5)",
+      "segments": [
+        {
+          "surface_id": 6,
+          "object": "Cylinder.006",
+          "physical_axis": {
+            "u_index": 1178.776350388507,
+            "y_index": 700.0,
+            "world_fraction": 0.5023297810432269,
+            "world_point": [
+              -1.8030309677124023,
+              12.0,
+              2.312569024230635
+            ]
+          },
+          "unoccluded_mesh_silhouette": [
+            {
+              "u_left_index": 1155.9604368585765,
+              "u_right_index": 1201.6445562520094,
+              "width_px": 45.684119393432866,
+              "midpoint_index": 1178.802496555293,
+              "midpoint_minus_physical_axis_px": 0.02614616678602033
+            }
+          ],
+          "visible_intervals_index": [
+            [
+              1155.960434031423,
+              1201.6446060442934
+            ]
+          ],
+          "brightest_minus_physical_axis_px": -22.7763503885069
+        },
+        {
+          "surface_id": 7,
+          "object": "Cylinder.008",
+          "physical_axis": null,
+          "unoccluded_mesh_silhouette": [],
+          "visible_intervals_index": []
+        }
+      ]
+    }
+  ]
+}

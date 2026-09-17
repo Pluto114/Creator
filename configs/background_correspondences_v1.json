@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "background-correspondences-v1-20260917",
+  "scope": "RGB-only correspondence availability diagnostic; frozen spatial validation; no camera correction or new-object claim",
+  "input_bundle": "thin-pack-v2-20260914r1",
+  "selection_config": "configs/thin_pack_controls_v1.json",
+  "cases": ["black-white-thinner", "brick-texture-thinner", "brick-texture-origin"],
+  "pairs": [[0,1], [1,2], [2,3], [3,4], [0,2], [2,4]],
+  "target_exclusion_half_width": 32,
+  "detectors": {
+    "ORB": {"nfeatures": 2000, "fastThreshold": 12},
+    "SIFT": {"nfeatures": 2000, "nOctaveLayers": 3, "contrastThreshold": 0.04, "edgeThreshold": 10, "sigma": 1.6}
+  },
+  "ratio": 0.75,
+  "split": {"cell_size_px": 128, "seed": 0, "validation_modulus": 3, "validation_residue": 0},
+  "split_scope": "First-image spatial cells are indivisible, including duplicate orientation keypoints. Target-cell overlap is reported. This is a correspondence holdout, not independent images or objects.",
+  "geometry": {"minimum_matches": 30, "minimum_train": 16, "minimum_validation": 8, "ransac_threshold_px": 2.0, "maximum_iterations": 5000, "confidence": 0.99, "seed": 113, "validation_fraction_within_2px": 0.6, "planar_fraction_margin": 0.1},
+  "evaluation": {
+    "gt_bundle": "thin-pack-v2-20260914r1",
+    "visibility_depth_tolerance_m": 0.002,
+    "camera_jobs": [
+      {"case_id":"black-white-thinner","camera_mode":"estimated","basis_run_id":"thin-pack-baseline-v1-20260914","job_id":"black-white-thinner-504","process_res":504},
+      {"case_id":"brick-texture-thinner","camera_mode":"estimated","basis_run_id":"thin-pack-baseline-v1-20260914","job_id":"brick-texture-thinner-504","process_res":504},
+      {"case_id":"brick-texture-origin","camera_mode":"estimated","basis_run_id":"thin-pack-baseline-v1-20260914","job_id":"brick-texture-origin-504","process_res":504},
+      {"case_id":"brick-texture-thinner","camera_mode":"estimated","basis_run_id":"thin-pack-baseline-v1-20260914","job_id":"brick-texture-thinner-756","process_res":756},
+      {"case_id":"black-white-thinner","camera_mode":"oracle_camera","basis_run_id":"thin-oracle-controls-v1-20260914","job_id":"black-white-thinner-504","process_res":504},
+      {"case_id":"brick-texture-thinner","camera_mode":"oracle_camera","basis_run_id":"thin-oracle-controls-v1-20260914","job_id":"brick-texture-thinner-504","process_res":504},
+      {"case_id":"brick-texture-origin","camera_mode":"oracle_camera","basis_run_id":"thin-oracle-controls-v1-20260914","job_id":"brick-texture-origin-504","process_res":504}
+    ]
+  },
+  "limitations": ["Target strips only are excluded, not every rod or foreground object", "Descriptor support can cross mask boundaries", "F/H validation consistency cannot establish physical correspondence or calibrated pose", "Sampson and homography transfer residuals have different meanings", "No DA3, GT, or previous heldout RGB is read by fit", "No thresholds change after pilot scores"]
+}

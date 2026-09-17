@@ -1,0 +1,16 @@
+{
+  "audit_summary_sha256": "3e378a77c6f15b0164aac316671adfd5b3efb10dc1af7e1dbc9697969ed110b5",
+  "figure_sha256": "c1f2d7292cee08b2c0c6ed2b027e444fa2e145f3a71f33a39f8840824745b94d",
+  "display_only": true,
+  "y": 300,
+  "target": "whole",
+  "cases": [
+    "brick-texture-thinner",
+    "brick-texture-origin"
+  ],
+  "frames": [
+    "view_-30",
+    "view_+00",
+    "view_+30"
+  ]
+}

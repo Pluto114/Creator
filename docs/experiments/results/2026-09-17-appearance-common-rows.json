@@ -1,0 +1,85 @@
+{
+  "scope": "Supplementary paired selected-row evaluation; intersection selection is explicit, not full detection recall",
+  "source_summary_sha256": "524b955cfc3a15388ee83b40f2b41e9691a1e7fba4d7ddb150df124246eafb24",
+  "observations_sha256": "b2b01551e2e5eb5bb6655b75b58be38f343abd73967cba43c40ee1a23cf14080",
+  "rows": [
+    {
+      "frame_id": "view_-30",
+      "target": "whole",
+      "common_selected_finite_rows": 484,
+      "original_replica": {
+        "median_abs_error_px": 3.293256828452968,
+        "p95_abs_error_px": 4.253945511758001
+      },
+      "uniform_emission": {
+        "median_abs_error_px": 0.12327629062042433,
+        "p95_abs_error_px": 0.32428673296410576
+      }
+    },
+    {
+      "frame_id": "view_-30",
+      "target": "gap",
+      "common_selected_finite_rows": 399,
+      "original_replica": {
+        "median_abs_error_px": 2.6238310597152577,
+        "p95_abs_error_px": 3.899869723115989
+      },
+      "uniform_emission": {
+        "median_abs_error_px": 0.16338115058579206,
+        "p95_abs_error_px": 0.41949131639346426
+      }
+    },
+    {
+      "frame_id": "view_+00",
+      "target": "whole",
+      "common_selected_finite_rows": 561,
+      "original_replica": {
+        "median_abs_error_px": 5.7371399428866425,
+        "p95_abs_error_px": 6.441352948828126
+      },
+      "uniform_emission": {
+        "median_abs_error_px": 0.15540863086857826,
+        "p95_abs_error_px": 0.4124901460793353
+      }
+    },
+    {
+      "frame_id": "view_+00",
+      "target": "gap",
+      "common_selected_finite_rows": 459,
+      "original_replica": {
+        "median_abs_error_px": 5.7618363447747925,
+        "p95_abs_error_px": 6.772487983623887
+      },
+      "uniform_emission": {
+        "median_abs_error_px": 0.1333429162423272,
+        "p95_abs_error_px": 0.3653119329728038
+      }
+    },
+    {
+      "frame_id": "view_+30",
+      "target": "whole",
+      "common_selected_finite_rows": 500,
+      "original_replica": {
+        "median_abs_error_px": 8.114247678991092,
+        "p95_abs_error_px": 8.635958978928818
+      },
+      "uniform_emission": {
+        "median_abs_error_px": 0.1285904302308154,
+        "p95_abs_error_px": 0.340596919869472
+      }
+    },
+    {
+      "frame_id": "view_+30",
+      "target": "gap",
+      "common_selected_finite_rows": 0,
+      "original_replica": {
+        "median_abs_error_px": null,
+        "p95_abs_error_px": null
+      },
+      "uniform_emission": {
+        "median_abs_error_px": null,
+        "p95_abs_error_px": null
+      }
+    }
+  ]
+}

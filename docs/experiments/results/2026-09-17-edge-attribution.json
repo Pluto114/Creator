@@ -1,0 +1,522 @@
+{
+  "state": "complete",
+  "run_id": "rod-edge-audit-v1-20260917",
+  "scope": "Evaluation-only audit of immutable yesterday observations; GT never returns to detector",
+  "frames": [
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_-30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 697,
+      "finite_axis_rows": 697,
+      "single_interval_rows": 697,
+      "classification_counts": {
+        "both_visible_boundaries": 679,
+        "inside_visible_rod_nonboundary_pair": 18,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -0.7385166803201173,
+      "pair_to_mask_width_median": 0.75
+    },
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_-30",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 584,
+      "finite_axis_rows": 584,
+      "single_interval_rows": 584,
+      "classification_counts": {
+        "both_visible_boundaries": 584,
+        "inside_visible_rod_nonboundary_pair": 0,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -0.6839713765466513,
+      "pair_to_mask_width_median": 1.0
+    },
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_-15",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 715,
+      "finite_axis_rows": 715,
+      "single_interval_rows": 715,
+      "classification_counts": {
+        "both_visible_boundaries": 262,
+        "inside_visible_rod_nonboundary_pair": 453,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -1.0447649335546885,
+      "pair_to_mask_width_median": 0.5
+    },
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_-15",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 606,
+      "finite_axis_rows": 605,
+      "single_interval_rows": 605,
+      "classification_counts": {
+        "both_visible_boundaries": 292,
+        "inside_visible_rod_nonboundary_pair": 312,
+        "pair_extends_beyond_visible_rod": 1,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -0.988863487548997,
+      "pair_to_mask_width_median": 0.75
+    },
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_+00",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 730,
+      "finite_axis_rows": 729,
+      "single_interval_rows": 729,
+      "classification_counts": {
+        "both_visible_boundaries": 13,
+        "inside_visible_rod_nonboundary_pair": 716,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -1.2990838381410867,
+      "pair_to_mask_width_median": 0.5
+    },
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_+00",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 626,
+      "finite_axis_rows": 626,
+      "single_interval_rows": 626,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 626,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -1.2647675876689846,
+      "pair_to_mask_width_median": 0.5
+    },
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_+15",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 729,
+      "finite_axis_rows": 728,
+      "single_interval_rows": 728,
+      "classification_counts": {
+        "both_visible_boundaries": 728,
+        "inside_visible_rod_nonboundary_pair": 0,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -0.1719581007407669,
+      "pair_to_mask_width_median": 1.0
+    },
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_+15",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 646,
+      "finite_axis_rows": 645,
+      "single_interval_rows": 645,
+      "classification_counts": {
+        "both_visible_boundaries": 644,
+        "inside_visible_rod_nonboundary_pair": 0,
+        "pair_extends_beyond_visible_rod": 1,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -0.16370864031364363,
+      "pair_to_mask_width_median": 1.0
+    },
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_+30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 671,
+      "finite_axis_rows": 671,
+      "single_interval_rows": 671,
+      "classification_counts": {
+        "both_visible_boundaries": 626,
+        "inside_visible_rod_nonboundary_pair": 45,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -0.2099172142234238,
+      "pair_to_mask_width_median": 1.0
+    },
+    {
+      "case_id": "black-white-thinner",
+      "frame_id": "view_+30",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 615,
+      "finite_axis_rows": 614,
+      "single_interval_rows": 614,
+      "classification_counts": {
+        "both_visible_boundaries": 614,
+        "inside_visible_rod_nonboundary_pair": 0,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -0.18827241474434686,
+      "pair_to_mask_width_median": 1.25
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 639,
+      "finite_axis_rows": 639,
+      "single_interval_rows": 639,
+      "classification_counts": {
+        "both_visible_boundaries": 523,
+        "inside_visible_rod_nonboundary_pair": 116,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -0.747136280437644,
+      "pair_to_mask_width_median": 0.75
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-30",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 540,
+      "finite_axis_rows": 540,
+      "single_interval_rows": 540,
+      "classification_counts": {
+        "both_visible_boundaries": 489,
+        "inside_visible_rod_nonboundary_pair": 51,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -0.715337583847031,
+      "pair_to_mask_width_median": 0.75
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-15",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 645,
+      "finite_axis_rows": 645,
+      "single_interval_rows": 645,
+      "classification_counts": {
+        "both_visible_boundaries": 235,
+        "inside_visible_rod_nonboundary_pair": 410,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -1.0014561907207735,
+      "pair_to_mask_width_median": 0.5
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_-15",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 530,
+      "finite_axis_rows": 529,
+      "single_interval_rows": 529,
+      "classification_counts": {
+        "both_visible_boundaries": 243,
+        "inside_visible_rod_nonboundary_pair": 286,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -0.9659997619469323,
+      "pair_to_mask_width_median": 0.625
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+00",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 690,
+      "finite_axis_rows": 689,
+      "single_interval_rows": 689,
+      "classification_counts": {
+        "both_visible_boundaries": 133,
+        "inside_visible_rod_nonboundary_pair": 556,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -1.1199500225316115,
+      "pair_to_mask_width_median": 0.5
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+00",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 592,
+      "finite_axis_rows": 592,
+      "single_interval_rows": 592,
+      "classification_counts": {
+        "both_visible_boundaries": 133,
+        "inside_visible_rod_nonboundary_pair": 459,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -1.0397256843938294,
+      "pair_to_mask_width_median": 0.5
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+15",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 610,
+      "finite_axis_rows": 609,
+      "single_interval_rows": 609,
+      "classification_counts": {
+        "both_visible_boundaries": 319,
+        "inside_visible_rod_nonboundary_pair": 290,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -0.217510501583547,
+      "pair_to_mask_width_median": 0.6666666666666666
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+15",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 615,
+      "finite_axis_rows": 614,
+      "single_interval_rows": 614,
+      "classification_counts": {
+        "both_visible_boundaries": 500,
+        "inside_visible_rod_nonboundary_pair": 114,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -0.08504355915226824,
+      "pair_to_mask_width_median": 1.0
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 550,
+      "finite_axis_rows": 550,
+      "single_interval_rows": 550,
+      "classification_counts": {
+        "both_visible_boundaries": 425,
+        "inside_visible_rod_nonboundary_pair": 125,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -0.14827102328797537,
+      "pair_to_mask_width_median": 0.75
+    },
+    {
+      "case_id": "brick-texture-thinner",
+      "frame_id": "view_+30",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 479,
+      "finite_axis_rows": 478,
+      "single_interval_rows": 478,
+      "classification_counts": {
+        "both_visible_boundaries": 318,
+        "inside_visible_rod_nonboundary_pair": 160,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -0.047461506413242205,
+      "pair_to_mask_width_median": 0.75
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 644,
+      "finite_axis_rows": 644,
+      "single_interval_rows": 644,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 644,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -3.384635543184004,
+      "pair_to_mask_width_median": 0.6666666666666666
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-30",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 548,
+      "finite_axis_rows": 548,
+      "single_interval_rows": 548,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 548,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -3.0394001262427537,
+      "pair_to_mask_width_median": 0.7058823529411765
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-15",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 671,
+      "finite_axis_rows": 671,
+      "single_interval_rows": 671,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 671,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -4.751512217273103,
+      "pair_to_mask_width_median": 0.5
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_-15",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 562,
+      "finite_axis_rows": 561,
+      "single_interval_rows": 561,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 561,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -4.215436094226334,
+      "pair_to_mask_width_median": 0.5882352941176471
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+00",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 649,
+      "finite_axis_rows": 649,
+      "single_interval_rows": 649,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 649,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -5.841138252065775,
+      "pair_to_mask_width_median": 0.3888888888888889
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+00",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 575,
+      "finite_axis_rows": 575,
+      "single_interval_rows": 575,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 571,
+        "pair_extends_beyond_visible_rod": 4,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -5.844143500372866,
+      "pair_to_mask_width_median": 0.4444444444444444
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+15",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 521,
+      "finite_axis_rows": 521,
+      "single_interval_rows": 521,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 521,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -6.685248636182223,
+      "pair_to_mask_width_median": 0.3157894736842105
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+15",
+      "target": "gap",
+      "line_state": "fitted",
+      "selected_rows": 468,
+      "finite_axis_rows": 467,
+      "single_interval_rows": 467,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 467,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 1
+      },
+      "signed_center_bias_median_px": -7.214477704408409,
+      "pair_to_mask_width_median": 0.2631578947368421
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+30",
+      "target": "whole",
+      "line_state": "fitted",
+      "selected_rows": 516,
+      "finite_axis_rows": 516,
+      "single_interval_rows": 516,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 516,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": -8.105900013162454,
+      "pair_to_mask_width_median": 0.15789473684210525
+    },
+    {
+      "case_id": "brick-texture-origin",
+      "frame_id": "view_+30",
+      "target": "gap",
+      "line_state": "ambiguous",
+      "selected_rows": 0,
+      "finite_axis_rows": 0,
+      "single_interval_rows": 0,
+      "classification_counts": {
+        "both_visible_boundaries": 0,
+        "inside_visible_rod_nonboundary_pair": 0,
+        "pair_extends_beyond_visible_rod": 0,
+        "no_single_visible_finite_truth_interval": 0
+      },
+      "signed_center_bias_median_px": null,
+      "pair_to_mask_width_median": null
+    }
+  ],
+  "source_manifest_sha256": "94ad56c9eaba179fc4cd2367fbbb9bda0eb733b84504cb2849275f1b41127212",
+  "input_manifest_sha256": "0859558eeea3174c0e0669d52d22867de22acdfcf5df5273f2641b8551220f08",
+  "gt_hash_index_sha256": "919bc2b4252ade9ff3582e0977cdad36e388e964de797df698b052fe8fdf8a94",
+  "protocol_sha256": "6ffde26254da585e1370602c9bb0829a7a32ae239a5420c3c37a74cb70075b4e",
+  "producer_sha256": "90064a174944199aab70c090a012fff383d585342a804858e001019b39860d0a"
+}

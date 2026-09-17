@@ -1,0 +1,18 @@
+{
+  "run_id": "rod-appearance-control-v1-20260917",
+  "scope": "Causal appearance diagnostic on one known asset; uniform emission is a privileged rendering intervention, not a reconstruction method",
+  "source_scene": "data/source_scenes/thin-rod-pilot/43760_autosave-9e64f2feac75.blend",
+  "source_sha256": "9e64f2feac7548d0e6269b1a2e60b2cb2ac1882c2da1bfefa061423c72b1acb4",
+  "reference_case": "brick-texture-origin",
+  "reference_bundle": "thin-pack-v2-20260914r1",
+  "frozen_method_run": "rod-evidence-dense-v1-20260916",
+  "angles_degrees": [-30, 0, 30],
+  "conditions": ["original_replica", "uniform_emission"],
+  "target_aliases": ["whole", "gap"],
+  "target_rod_ids_evaluation_only": {"whole": 5, "gap": 6},
+  "intervention_objects_generation_only": ["Cylinder.005", "Cylinder.006", "Cylinder.008"],
+  "emission_linear_rgb": [0.5, 0.5, 0.5],
+  "emission_strength": 1.0,
+  "intervention_limit": "Changes target material response, including light/background contrast; no claim that a unique illumination component is isolated. Original-replica render and geometry/camera identity must be checked.",
+  "decision": "No parameter or detector change after evaluating these renders; compare all 6 frame-target outcomes per condition, including refusal."
+}
