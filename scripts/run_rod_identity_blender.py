@@ -96,9 +96,63 @@ def raster_center_truth(rays, camera):
     }
 
 
+def validate_render_manifest(render, config, inputs, truth):
+    """Require the entire frozen render plan before publishing prepared inputs."""
+    planned_ids = [case["case_id"] for case in config["cases"]]
+    rendered_ids = [case["case_id"] for case in render["cases"]]
+    if not planned_ids or len(planned_ids) != len(set(planned_ids)):
+        raise ValueError("Render protocol needs unique nonempty case IDs")
+    if len(rendered_ids) != len(set(rendered_ids)) or set(rendered_ids) != set(planned_ids):
+        raise ValueError("Rendered cases are missing, duplicate, or unexpected")
+    angles = config["generator"]["angles_degrees"]
+    if not angles or any(isinstance(angle, bool) or not isinstance(angle, int) for angle in angles):
+        raise ValueError("Render protocol needs integer camera angles")
+    expected_frames = {f"view_{angle:+03d}": angle for angle in angles}
+    if len(expected_frames) != len(angles):
+        raise ValueError("Render protocol needs unique camera angles")
+    size = config["generator"]["size_wh"]
+
+    def existing_artifact(root, relative):
+        root = Path(root).resolve()
+        path = (root / relative).resolve()
+        if not path.is_relative_to(root):
+            raise ValueError(f"Rendered artifact leaves its assigned folder: {relative}")
+        if not path.is_file() or not path.stat().st_size:
+            raise FileNotFoundError(f"Missing or empty rendered artifact: {path}")
+        return path
+
+    for case in render["cases"]:
+        case_id = case["case_id"]
+        geometry_path = existing_artifact(truth, f"{case_id}/geometry.json")
+        existing_artifact(truth, f"{case_id}/mesh.npz")
+        if read_json(geometry_path) != case["geometry"]:
+            raise ValueError(f"Rendered geometry record disagrees with its file: {case_id}")
+        frame_ids = [frame["frame_id"] for frame in case["frames"]]
+        if len(frame_ids) != len(set(frame_ids)) or set(frame_ids) != set(expected_frames):
+            raise ValueError(f"Rendered frames are missing, duplicate, or unexpected: {case_id}")
+        for frame in case["frames"]:
+            frame_id = frame["frame_id"]
+            if frame["angle_degrees"] != expected_frames[frame_id]:
+                raise ValueError(f"Rendered frame angle disagrees with protocol: {case_id}/{frame_id}")
+            # A surviving fourth view is enough for the algorithm, but not enough
+            # for a five-view experiment. Also forbid reusing another frame's PNG.
+            rgb_relative = f"{case_id}/{frame_id}.png"
+            if frame["rgb"] != rgb_relative:
+                raise ValueError(f"Rendered RGB does not belong to its case/frame: {case_id}/{frame_id}")
+            rgb = existing_artifact(inputs, rgb_relative)
+            with Image.open(rgb) as image:
+                if list(image.size) != size:
+                    raise ValueError(f"Rendered RGB dimensions disagree with protocol: {rgb_relative}")
+                image.verify()
+            camera_path = existing_artifact(truth, f"{case_id}/{frame_id}-camera.json")
+            camera = read_json(camera_path)
+            if camera != frame["camera"] or camera["size_wh"] != size:
+                raise ValueError(f"Rendered camera record disagrees with its file/protocol: {case_id}/{frame_id}")
+
+
 def prepare(config_path=CONFIG):
     # Keep Open3D and OpenCV out of scoring-only imports and lightweight CI.
-    from thin_pack_gt import MeshRays
+    from thin_pack_gt import MeshRays, check_blender_rays
 
     config = read_json(config_path)
     run, inputs, truth, evaluation = locations(config["run_id"])
@@ -111,7 +165,7 @@ def prepare(config_path=CONFIG):
     (run / "source_snapshot").mkdir()
     shutil.copy2(config_path, run / "protocol.json")
     source_hashes = {}
-    for relative in SOURCES:
+    for relative in dict.fromkeys(SOURCES + config.get("additional_sources", [])):
         source_hashes[relative] = digest(ROOT / relative)
         shutil.copy2(ROOT / relative, run / "source_snapshot" / Path(relative).name)
     write_json(run / "method_config.json", config["method"])
@@ -128,20 +182,42 @@ def prepare(config_path=CONFIG):
         profile = ROOT / ".local/blender-profile" / setting.lower()
         profile.mkdir(parents=True, exist_ok=True)
         environment["BLENDER_USER_" + setting] = str(profile)
-    command = [
-        str(blender), "--background", "--factory-startup", "--disable-autoexec",
-        "--python-exit-code", "1", "--python",
-        str(ROOT / "scripts/blender_rod_identity_pack.py"), "--",
-        str(run / "render_request.json"),
-    ]
-    with (run / "blender.log").open("x", encoding="utf-8") as log:
-        completed = subprocess.run(
-            command, cwd=ROOT, env=environment, stdout=log,
-            stderr=subprocess.STDOUT, check=False,
-        )
-    if completed.returncode:
-        raise RuntimeError("Blender identity render failed; see preserved blender.log")
+    # Long EEVEE batches exited inside Blender on this machine. Isolate each
+    # case so the renderer releases its state between scenes; keep every log.
+    requests = [(run / "render_request.json", "blender.log")]
+    if config["generator"].get("render_case_isolation", False):
+        requests = []
+        for index, case in enumerate(config["cases"]):
+            case_request = {
+                **request, "config": {**config, "cases": [case]},
+                "render_manifest_name": f"render_manifest-{index:03d}.json",
+            }
+            request_path = run / f"case-{index:03d}-render_request.json"
+            write_json(request_path, case_request)
+            requests.append((request_path, f"blender-{index:03d}.log"))
+    for request_path, log_name in requests:
+        command = [
+            str(blender), "--background", "--factory-startup", "--disable-autoexec",
+            "--python-exit-code", "1", "--python",
+            str(ROOT / "scripts/blender_rod_identity_pack.py"), "--", str(request_path),
+        ]
+        with (run / log_name).open("x", encoding="utf-8") as log:
+            completed = subprocess.run(
+                command, cwd=ROOT, env=environment, stdout=log,
+                stderr=subprocess.STDOUT, check=False,
+            )
+        if completed.returncode:
+            raise RuntimeError(f"Blender identity render failed (exit {completed.returncode}); see preserved {log_name}")
+        print("RENDER_BATCH", request_path.name, "complete", flush=True)
+    if config["generator"].get("render_case_isolation", False):
+        batches = [read_json(truth / f"render_manifest-{index:03d}.json")
+                   for index in range(len(config["cases"]))]
+        write_json(truth / "render_manifest.json", {
+            **batches[0], "cases": [case for batch in batches for case in batch["cases"]],
+            "render_case_isolation": True,
+        })
     render = read_json(truth / "render_manifest.json")
+    validate_render_manifest(render, config, inputs, truth)
     config_cases = {case["case_id"]: case for case in config["cases"]}
     input_cases, truth_cases = [], []
     for case in render["cases"]:
@@ -161,6 +237,9 @@ def prepare(config_path=CONFIG):
             native = truth / case_id / frame["frame_id"] / "native"
             native.mkdir(parents=True)
             arrays = raster_center_truth(rays, frame["camera"])
+            ray_check = None
+            if frame.get("blender_ray_probes") is not None:
+                ray_check = check_blender_rays(rays, frame["camera"], frame["blender_ray_probes"], 0.0001)
             array_records = {}
             for name, array in arrays.items():
                 path = native / f"{name}.npy"
@@ -179,19 +258,26 @@ def prepare(config_path=CONFIG):
                     "K_index": frame["camera"]["K_index"],
                     "world_to_camera_cv": frame["camera"]["world_to_camera_cv"],
                     "guide_xyxy": frame["guide_xyxy"],
+                    "guide_source": frame.get("guide_source", "synthetic_world_guide_projection"),
+                    "camera_source": "oracle_camera",
                     "size_wh": frame["camera"]["size_wh"],
                 }
             )
             truth_frames.append(
                 {"view_id": frame["frame_id"], "camera_path": f"{frame['frame_id']}-camera.json",
-                 "arrays": array_records, "target_visible_pixels": int(arrays["target_visible"].sum())}
+                 "arrays": array_records, "target_visible_pixels": int(arrays["target_visible"].sum()),
+                 "blender_ray_check": ray_check,
+                 "blender_projection_error_px": frame.get("projection_check_max_px")}
             )
         input_cases.append({"case_id": case_id, "frames": frames})
         truth_record = {
             "case_id": case_id,
             "split": declared["split"],
             "label": declared["label"],
+            "object_group_id": declared.get("object_group_id", "procedural-cylinder-family-identity-v1"),
             "target": declared["target"],
+            "gap_segment": declared.get("gap_segment"),
+            "occlusion_interval": declared.get("occlusion_interval"),
             "geometry_path": geometry_path.relative_to(truth).as_posix(),
             "geometry_sha256": digest(geometry_path),
             "mesh_path": mesh_path.relative_to(truth).as_posix(),
@@ -233,7 +319,7 @@ def prepare(config_path=CONFIG):
             "split_frozen_before_inference": True,
         },
     )
-    print("PREPARED_IDENTITY", len(input_cases), "cases", len(input_cases) * 5, "views")
+    print("PREPARED_IDENTITY", len(input_cases), "cases", sum(len(c["frames"]) for c in input_cases), "views")
 
 
 def infer(run_id=DEFAULT_RUN_ID):
@@ -246,6 +332,9 @@ def infer(run_id=DEFAULT_RUN_ID):
     method = read_json(run / "method_config.json")
     if digest(run / "method_config.json") != prepared["method_config_sha256"]:
         raise ValueError("Identity method config changed")
+    for relative, expected in prepared["source_sha256"].items():
+        if digest(ROOT / relative) != expected:
+            raise ValueError(f"Frozen source changed; create a new run: {relative}")
     manifest = read_json(inputs / "manifest.json")
     case_results = []
     for case in manifest["cases"]:
@@ -341,6 +430,9 @@ def evaluate(config_path=CONFIG, share_path=SHARE):
     if output.exists() or share_path.exists():
         raise FileExistsError("Keep old identity evaluation/share output")
     prepared = read_json(run / "prepared.json")
+    if digest(config_path) != prepared["protocol_sha256"] or digest(run / "protocol.json") != prepared["protocol_sha256"]:
+        raise ValueError("Evaluation protocol changed after freezing")
+    config = read_json(run / "protocol.json")
     inference_path = run / "inference.json"
     inference = read_json(inference_path)
     if inference["state"] != "inferred" or inference["gt_read_during_inference"]:

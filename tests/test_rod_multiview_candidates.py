@@ -159,6 +159,26 @@ class MultiViewCandidateTests(unittest.TestCase):
         result = associate_multiview_lines(views, self.config(4))
         self.assertEqual(result["state"], "rejected")
 
+    def test_budget_exhaustion_cannot_hide_second_line(self):
+        views = []
+        for index, x in enumerate([-1, -.5, 0, .5, 1]):
+            view = {"view_id": str(index), **camera(x), "y_range": [60, 180]}
+            view["candidates"] = [{"line": projected_line(value, view)} for value in (-.15, .2)]
+            views.append(view)
+        limited = associate_multiview_lines(views, {**self.config(4), "maximum_hypotheses": 1})
+        self.assertEqual(limited["state"], "ambiguous")
+        self.assertEqual(limited["reason"], "search_budget_exhausted")
+        self.assertFalse(limited["search_complete"])
+        complete = associate_multiview_lines(views, self.config(4))
+        self.assertTrue(complete["search_complete"])
+        self.assertGreaterEqual(len(complete["alternatives"]), 1)
+
+    def test_malformed_camera_raises_instead_of_refusing_scene(self):
+        view = {"view_id": "bad", **camera(0), "y_range": [60, 180], "candidates": []}
+        view["world_to_camera_cv"] = np.eye(3)
+        with self.assertRaisesRegex(ValueError, "extrinsics"):
+            associate_multiview_lines([view], self.config(4))
+
     @staticmethod
     def config(minimum):
         return {"fit_view_count": 3, "minimum_support_views": minimum,

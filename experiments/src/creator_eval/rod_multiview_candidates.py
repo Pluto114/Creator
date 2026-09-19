@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import copy
 import itertools
+import math
 
 import numpy as np
 
@@ -160,17 +161,54 @@ def _signature_separation(first, second, views):
     return float(np.median(distances))
 
 
-def associate_multiview_lines(views, config):
-    """Enumerate calibrated 3D line explanations and keep uncertainty explicit."""
+def _validated_views(views):
+    # A malformed camera is a pipeline error, not a scene with no rod. Validate
+    # before candidate enumeration so a catch-all cannot quietly eat it again.
     if len({view["view_id"] for view in views}) != len(views):
         raise ValueError("View IDs must be unique")
+    for view in views:
+        intrinsic = np.asarray(view["K_index"], float)
+        extrinsic = np.asarray(view["world_to_camera_cv"], float)
+        if intrinsic.shape != (3, 3) or not np.isfinite(intrinsic).all():
+            raise ValueError("Expected finite 3x3 intrinsics")
+        if abs(np.linalg.det(intrinsic)) <= 1e-12 or not np.allclose(intrinsic[2], [0, 0, 1]):
+            raise ValueError("Expected invertible pinhole intrinsics")
+        if extrinsic.shape not in ((3, 4), (4, 4)) or not np.isfinite(extrinsic).all():
+            raise ValueError("Expected finite 3x4 or 4x4 extrinsics")
+        if extrinsic.shape == (4, 4) and not np.allclose(extrinsic[3], [0, 0, 0, 1]):
+            raise ValueError("Invalid homogeneous camera row")
+        rotation = extrinsic[:3, :3]
+        if not np.allclose(rotation @ rotation.T, np.eye(3), atol=1e-5) or not np.isclose(np.linalg.det(rotation), 1, atol=1e-5):
+            raise ValueError("Camera rotation must be proper and orthonormal")
+        ys = np.asarray(view["y_range"], float)
+        if ys.shape != (2,) or not np.isfinite(ys).all() or ys[1] <= ys[0]:
+            raise ValueError("Expected increasing finite image y range")
+        for candidate in view["candidates"]:
+            line = np.asarray(candidate["line"], float)
+            if line.shape != (3,) or not np.isfinite(line).all() or abs(line[0]) <= 1e-12:
+                raise ValueError("Expected finite non-horizontal image lines")
+
+
+def associate_multiview_lines(views, config):
+    """Associate lines with explicit search completion; truncation cannot prove uniqueness."""
+    _validated_views(views)
     fit_count = int(config["fit_view_count"])
+    maximum = int(config["maximum_hypotheses"])
+    max_attempts = int(config.get("maximum_fit_attempts", 100000))
+    if fit_count < 3 or maximum < 1 or max_attempts < 1:
+        raise ValueError("Invalid candidate search budget")
+    combinations = list(itertools.combinations(range(len(views)), fit_count))
+    total = sum(math.prod(len(views[i]["candidates"]) for i in indices) for indices in combinations)
     generated = []
-    for selected_views in itertools.combinations(range(len(views)), fit_count):
+    attempted = 0
+    stop = False
+    for selected_views in combinations:
         candidate_ranges = [range(len(views[index]["candidates"])) for index in selected_views]
         for selected_candidates in itertools.product(*candidate_ranges):
-            if len(generated) >= int(config["maximum_hypotheses"]):
+            if len(generated) >= maximum or attempted >= max_attempts:
+                stop = True
                 break
+            attempted += 1
             try:
                 model = fit_multiview_line(
                     [views[v]["candidates"][c]["line"] for v, c in zip(selected_views, selected_candidates)],
@@ -178,7 +216,7 @@ def associate_multiview_lines(views, config):
                     [views[v]["world_to_camera_cv"] for v in selected_views],
                 )
                 matches = [_view_match(model, view) for view in views]
-            except (LineFitDegenerate, ValueError, np.linalg.LinAlgError):
+            except (LineFitDegenerate, np.linalg.LinAlgError):
                 continue
             supporting = [
                 index for index, match in enumerate(matches)
@@ -188,53 +226,57 @@ def associate_multiview_lines(views, config):
             if len(supporting) < int(config["minimum_support_views"]):
                 continue
             residuals = [matches[index]["residual_px"] for index in supporting]
-            generated.append(
-                {
-                    "model": model,
-                    "matches": matches,
-                    "supporting_views": supporting,
-                    "support_view_count": len(supporting),
-                    "residual_median_px": float(np.median(residuals)),
-                    "source_fit_views": list(selected_views),
-                    "source_candidate_indices": list(selected_candidates),
-                }
-            )
+            # These projections were just calculated. Re-projecting every pair
+            # during deduplication cost minutes without adding any information.
+            signature = np.concatenate([
+                _line_x(match["projected_line"], np.linspace(*view["y_range"], 9))
+                for match, view in zip(matches, views)
+            ])
+            generated.append({
+                "model": model, "matches": matches, "supporting_views": supporting,
+                "support_view_count": len(supporting),
+                "residual_median_px": float(np.median(residuals)),
+                "source_fit_views": list(selected_views),
+                "source_candidate_indices": list(selected_candidates),
+                "_signature": signature,
+            })
+        if stop:
+            break
     generated.sort(key=lambda row: (-row["support_view_count"], row["residual_median_px"]))
-    unique = []
+    unique, signatures = [], []
     for hypothesis in generated:
-        if any(
-            _signature_separation(hypothesis["model"], old["model"], views)
-            < config["deduplicate_separation_px"]
-            for old in unique
-        ):
+        signature = hypothesis.pop("_signature")
+        if signatures and np.any(np.median(np.abs(np.asarray(signatures) - signature), axis=1) < config["deduplicate_separation_px"]):
             continue
         unique.append(hypothesis)
+        signatures.append(signature)
+    complete = attempted == total
     result = {
-        "state": "rejected",
-        "reason": "no_3d_line_with_required_view_support",
-        "selected": None,
-        "alternatives": [],
+        "state": "rejected" if complete else "ambiguous",
+        "reason": "no_3d_line_with_required_view_support" if complete else "search_budget_exhausted",
+        "selected": None, "alternatives": [],
         "unique_hypothesis_count": len(unique),
         "generated_hypothesis_count": len(generated),
+        "search_complete": complete,
+        "attempted_combination_count": attempted,
+        "total_combination_count": total,
         "scope": "infinite_3d_line_identity_only_no_extent_gap_or_physical_existence_proof",
     }
     if not unique:
         return result
     best = unique[0]
     alternatives = []
-    for candidate in unique[1:]:
-        if candidate["support_view_count"] < (
-            config["ambiguity_support_fraction"] * best["support_view_count"]
-        ):
+    for index, candidate in enumerate(unique[1:], 1):
+        if candidate["support_view_count"] < config["ambiguity_support_fraction"] * best["support_view_count"]:
             continue
-        separation = _signature_separation(best["model"], candidate["model"], views)
+        separation = float(np.median(np.abs(signatures[0] - signatures[index])))
         if separation >= config["ambiguity_separation_px"]:
             alternatives.append({**candidate, "separation_from_best_px": separation})
     result.update(
-        state="ambiguous" if alternatives else "accepted",
-        reason="competing_multiview_lines" if alternatives else "unique_multiview_line",
-        selected=best,
-        alternatives=alternatives,
+        state="ambiguous" if alternatives or not complete else "accepted",
+        reason=("search_budget_exhausted" if not complete else
+                "competing_multiview_lines" if alternatives else "unique_multiview_line"),
+        selected=best, alternatives=alternatives,
     )
     return result
 

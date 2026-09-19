@@ -1,0 +1,1880 @@
+{
+  "state": "complete",
+  "run_id": "rod-identity-stress-v2-20260919r4",
+  "scope": "New within-family oracle-camera stress diagnostic with fixed screen-space synthetic guides; no independent-object or human-ROI performance claim.",
+  "protocol_sha256": "3b6ec63bf1a68eb2da986705e7b9cccc80021f54fe5724ff54e3316291d1daa0",
+  "inference_sha256": "defaa4cd204e8eb5f2892d32823e46453d20633ce54b6a4f7b7a700d317b4581",
+  "elapsed_seconds": 1204.9745721,
+  "summaries": [
+    {
+      "guide_offset_px": 0,
+      "case_count": 10,
+      "geometry_counts": {
+        "target_refused_ambiguous": 7,
+        "safe_identity_ambiguity": 1,
+        "safe_empty_refusal": 1,
+        "false_accept_empty": 1
+      },
+      "guide_counts": {
+        "target_refused_ambiguous": 7,
+        "safe_identity_ambiguity": 1,
+        "safe_empty_refusal": 1,
+        "false_accept_empty": 1
+      },
+      "finite_state_counts": {
+        "rejected": 9,
+        "accepted": 1
+      }
+    },
+    {
+      "guide_offset_px": 8,
+      "case_count": 10,
+      "geometry_counts": {
+        "correct_accept": 2,
+        "target_refused_ambiguous": 4,
+        "wrong_line_accept": 1,
+        "safe_identity_ambiguity": 1,
+        "safe_empty_refusal": 1,
+        "false_accept_empty": 1
+      },
+      "guide_counts": {
+        "correct_accept": 2,
+        "target_refused_ambiguous": 4,
+        "wrong_line_accept": 1,
+        "safe_identity_ambiguity": 1,
+        "safe_empty_refusal": 1,
+        "false_accept_empty": 1
+      },
+      "finite_state_counts": {
+        "accepted": 3,
+        "rejected": 7
+      }
+    },
+    {
+      "guide_offset_px": 16,
+      "case_count": 10,
+      "geometry_counts": {
+        "correct_accept": 2,
+        "target_refused_ambiguous": 5,
+        "safe_identity_ambiguity": 1,
+        "safe_empty_refusal": 2
+      },
+      "guide_counts": {
+        "target_refused": 2,
+        "target_refused_ambiguous": 5,
+        "safe_identity_ambiguity": 1,
+        "safe_empty_refusal": 2
+      },
+      "finite_state_counts": {
+        "rejected": 10
+      }
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "s01",
+      "label": "matte_new_camera",
+      "guide_offset_px": 0,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 3968,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 34.78277640000306
+    },
+    {
+      "case_id": "s01",
+      "label": "matte_new_camera",
+      "guide_offset_px": 8,
+      "geometry_classification": "correct_accept",
+      "guide_classification": "correct_accept",
+      "geometry_error": {
+        "angle_error_deg": 0.02777381543555066,
+        "target_to_line_distance_median_m": 0.00027975231675184397,
+        "target_to_line_distance_p95_m": 0.0007103541878653797
+      },
+      "search_complete": true,
+      "combinations": 3968,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+35"
+      ],
+      "finite_state": "accepted",
+      "finite_reasons": [],
+      "segment_count": 1,
+      "segments": [
+        [
+          [
+            0.0005886580809997882,
+            0.0004600898937502333,
+            -1.0975816564652823
+          ],
+          [
+            -0.000297426004860223,
+            -0.0004126381892961902,
+            1.090848160924874
+          ]
+        ]
+      ],
+      "curve_metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 2.2,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0003237084306256762,
+          "distance_p95": 0.000690371388914266,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.1884301707940383,
+          "sample_count": 1095,
+          "covered_length": 2.1884301707940383,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0003226811251113509,
+          "distance_p95": 0.0006856682433954106,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 39.135310699999536
+    },
+    {
+      "case_id": "s01",
+      "label": "matte_new_camera",
+      "guide_offset_px": 16,
+      "geometry_classification": "correct_accept",
+      "guide_classification": "target_refused",
+      "geometry_error": {
+        "angle_error_deg": 0.02453779609478234,
+        "target_to_line_distance_median_m": 0.00035146951057690994,
+        "target_to_line_distance_p95_m": 0.0007743281155373998
+      },
+      "search_complete": true,
+      "combinations": 3968,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 40.646250199999486
+    },
+    {
+      "case_id": "s02",
+      "label": "narrow_radius_002",
+      "guide_offset_px": 0,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 41.10644089999914
+    },
+    {
+      "case_id": "s02",
+      "label": "narrow_radius_002",
+      "guide_offset_px": 8,
+      "geometry_classification": "correct_accept",
+      "guide_classification": "correct_accept",
+      "geometry_error": {
+        "angle_error_deg": 0.02575939439368328,
+        "target_to_line_distance_median_m": 0.0003098212811173351,
+        "target_to_line_distance_p95_m": 0.0007549116471338561
+      },
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "accepted",
+      "finite_reasons": [],
+      "segment_count": 1,
+      "segments": [
+        [
+          [
+            0.0010167799920495198,
+            0.00021603253952340448,
+            -1.0975816761499546
+          ],
+          [
+            -0.0001231002699350994,
+            -0.001457846043567392,
+            1.090847557625975
+          ]
+        ]
+      ],
+      "curve_metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 2.2,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0008803198949621884,
+          "distance_p95": 0.0013833026102217576,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.1884301707940383,
+          "sample_count": 1095,
+          "covered_length": 2.1884301707940383,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0008789564890450926,
+          "distance_p95": 0.0013761355294737638,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 41.75512399999934
+    },
+    {
+      "case_id": "s02",
+      "label": "narrow_radius_002",
+      "guide_offset_px": 16,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 41.982634700001654
+    },
+    {
+      "case_id": "s03",
+      "label": "slanted",
+      "guide_offset_px": 0,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.217746604100658,
+          "sample_count": 1109,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 42.83066350000081
+    },
+    {
+      "case_id": "s03",
+      "label": "slanted",
+      "guide_offset_px": 8,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.217746604100658,
+          "sample_count": 1109,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 42.73545990000275
+    },
+    {
+      "case_id": "s03",
+      "label": "slanted",
+      "guide_offset_px": 16,
+      "geometry_classification": "correct_accept",
+      "guide_classification": "target_refused",
+      "geometry_error": {
+        "angle_error_deg": 0.010624998756856829,
+        "target_to_line_distance_median_m": 0.00027604967803798074,
+        "target_to_line_distance_p95_m": 0.00046074528052282397
+      },
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.217746604100658,
+          "sample_count": 1109,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 43.06035450000127
+    },
+    {
+      "case_id": "s04",
+      "label": "real_gap",
+      "guide_offset_px": 0,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 3584,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.840000000000001,
+          "sample_count": 922,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.3600000000000001,
+          "sample_count": 180,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.31000000000000005,
+          "sample_count": 155,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 32.980097900002875
+    },
+    {
+      "case_id": "s04",
+      "label": "real_gap",
+      "guide_offset_px": 8,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.840000000000001,
+          "sample_count": 922,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.3600000000000001,
+          "sample_count": 180,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.31000000000000005,
+          "sample_count": 155,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 37.46959900000002
+    },
+    {
+      "case_id": "s04",
+      "label": "real_gap",
+      "guide_offset_px": 16,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.840000000000001,
+          "sample_count": 922,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.3600000000000001,
+          "sample_count": 180,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.31000000000000005,
+          "sample_count": 155,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 37.98430189999999
+    },
+    {
+      "case_id": "s05",
+      "label": "middle_occlusion",
+      "guide_offset_px": 0,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": {
+        "whole_gap": {
+          "source_length": 0.6400000000000001,
+          "sample_count": 320,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.5900000000000001,
+          "sample_count": 295,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "elapsed_seconds": 32.48641850000058
+    },
+    {
+      "case_id": "s05",
+      "label": "middle_occlusion",
+      "guide_offset_px": 8,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": {
+        "whole_gap": {
+          "source_length": 0.6400000000000001,
+          "sample_count": 320,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.5900000000000001,
+          "sample_count": 295,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "elapsed_seconds": 32.40206079999916
+    },
+    {
+      "case_id": "s05",
+      "label": "middle_occlusion",
+      "guide_offset_px": 16,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": {
+        "whole_gap": {
+          "source_length": 0.6400000000000001,
+          "sample_count": 320,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.5900000000000001,
+          "sample_count": 295,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "elapsed_seconds": 33.08600280000246
+    },
+    {
+      "case_id": "s06",
+      "label": "surface_stripe",
+      "guide_offset_px": 0,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 46.16618429999653
+    },
+    {
+      "case_id": "s06",
+      "label": "surface_stripe",
+      "guide_offset_px": 8,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 46.443879400001606
+    },
+    {
+      "case_id": "s06",
+      "label": "surface_stripe",
+      "guide_offset_px": 16,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 46.87457340000037
+    },
+    {
+      "case_id": "s07",
+      "label": "glossy",
+      "guide_offset_px": 0,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 41.062120999999024
+    },
+    {
+      "case_id": "s07",
+      "label": "glossy",
+      "guide_offset_px": 8,
+      "geometry_classification": "wrong_line_accept",
+      "guide_classification": "wrong_line_accept",
+      "geometry_error": {
+        "angle_error_deg": 0.8118702900979835,
+        "target_to_line_distance_median_m": 0.013593786786851959,
+        "target_to_line_distance_p95_m": 0.02760621670272973
+      },
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "accepted",
+      "finite_reasons": [],
+      "segment_count": 3,
+      "segments": [
+        [
+          [
+            -0.0015116375496085658,
+            0.0037429204451388635,
+            -1.0976598931785528
+          ],
+          [
+            0.00787842630571407,
+            -0.014266475027936064,
+            0.1613653477719068
+          ]
+        ],
+        [
+          [
+            0.008079283286576587,
+            -0.014651702738590074,
+            0.18829636896870808
+          ],
+          [
+            0.009284425171751685,
+            -0.01696306900251413,
+            0.3498824961495157
+          ]
+        ],
+        [
+          [
+            0.009384853662182942,
+            -0.017155682857841133,
+            0.36334800674791634
+          ],
+          [
+            0.01480799214547088,
+            -0.02755683104549938,
+            1.0904855790615509
+          ]
+        ]
+      ],
+      "curve_metrics": {
+        "recovery_fraction": 0.8190909090909093,
+        "precision_fraction": 0.818629646215853,
+        "false_predicted_length": 0.38958866776773027,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 1.8020000000000007,
+          "covered_fraction": 0.8190909090909093,
+          "distance_median": 0.013677163280981126,
+          "distance_p95": 0.029642601167410937,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.1480283830255336,
+          "sample_count": 1075,
+          "covered_length": 1.7584397152578033,
+          "covered_fraction": 0.818629646215853,
+          "distance_median": 0.013316263334496954,
+          "distance_p95": 0.029559551961454544,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 41.269706800001586
+    },
+    {
+      "case_id": "s07",
+      "label": "glossy",
+      "guide_offset_px": 16,
+      "geometry_classification": "target_refused_ambiguous",
+      "guide_classification": "target_refused_ambiguous",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.2,
+          "sample_count": 1100,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 42.90987370000221
+    },
+    {
+      "case_id": "s08",
+      "label": "adjacent_identity_ambiguous",
+      "guide_offset_px": 0,
+      "geometry_classification": "safe_identity_ambiguity",
+      "guide_classification": "safe_identity_ambiguity",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": null,
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 49.46612980000282
+    },
+    {
+      "case_id": "s08",
+      "label": "adjacent_identity_ambiguous",
+      "guide_offset_px": 8,
+      "geometry_classification": "safe_identity_ambiguity",
+      "guide_classification": "safe_identity_ambiguity",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": null,
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 47.61353130000134
+    },
+    {
+      "case_id": "s08",
+      "label": "adjacent_identity_ambiguous",
+      "guide_offset_px": 16,
+      "geometry_classification": "safe_identity_ambiguity",
+      "guide_classification": "safe_identity_ambiguity",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": null,
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 49.1627262999973
+    },
+    {
+      "case_id": "s09",
+      "label": "empty_far_line",
+      "guide_offset_px": 0,
+      "geometry_classification": "safe_empty_refusal",
+      "guide_classification": "safe_empty_refusal",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 3584,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 30.48295549999966
+    },
+    {
+      "case_id": "s09",
+      "label": "empty_far_line",
+      "guide_offset_px": 8,
+      "geometry_classification": "safe_empty_refusal",
+      "guide_classification": "safe_empty_refusal",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 3200,
+      "candidate_limit_reached_views": [
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 29.169719800000166
+    },
+    {
+      "case_id": "s09",
+      "label": "empty_far_line",
+      "guide_offset_px": 16,
+      "geometry_classification": "safe_empty_refusal",
+      "guide_classification": "safe_empty_refusal",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 3584,
+      "candidate_limit_reached_views": [
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 30.434979900001053
+    },
+    {
+      "case_id": "s10",
+      "label": "empty_near_line",
+      "guide_offset_px": 0,
+      "geometry_classification": "false_accept_empty",
+      "guide_classification": "false_accept_empty",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "accepted",
+      "finite_reasons": [],
+      "segment_count": 1,
+      "segments": [
+        [
+          [
+            0.012095369984665875,
+            0.10415570023001343,
+            -1.0923674755501327
+          ],
+          [
+            -0.008108345227619072,
+            0.13514296528447364,
+            1.0957500285473258
+          ]
+        ]
+      ],
+      "curve_metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.1884301707940383,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 2.1884301707940383,
+          "sample_count": 1095,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 42.59327530000155
+    },
+    {
+      "case_id": "s10",
+      "label": "empty_near_line",
+      "guide_offset_px": 8,
+      "geometry_classification": "false_accept_empty",
+      "guide_classification": "false_accept_empty",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "leave_one_out_reprojection:view_+19"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 43.50584750000053
+    },
+    {
+      "case_id": "s10",
+      "label": "empty_near_line",
+      "guide_offset_px": 16,
+      "geometry_classification": "safe_empty_refusal",
+      "guide_classification": "safe_empty_refusal",
+      "geometry_error": null,
+      "search_complete": true,
+      "combinations": 5120,
+      "candidate_limit_reached_views": [
+        "view_-32",
+        "view_-16",
+        "view_+02",
+        "view_+19",
+        "view_+35"
+      ],
+      "finite_state": "rejected",
+      "finite_reasons": [
+        "association_not_accepted"
+      ],
+      "segment_count": 0,
+      "segments": [],
+      "curve_metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "occluded_interval_prediction": null,
+      "elapsed_seconds": 42.74459449999995
+    }
+  ],
+  "independent_blender_checks": {
+    "frames": 50,
+    "ray_count": 51200,
+    "surface_id_mismatches": 0,
+    "max_z_error_m": 3.1741485120306834e-06,
+    "projection_max_px": 2.6744421717239675e-05
+  },
+  "limitations": [
+    "Exact oracle cameras; fixed synthetic screen guides are not measured human annotations.",
+    "New configurations in the same procedural cylinder family are not independent object generalization.",
+    "Search completeness covers retained image hypotheses; RANSAC and the image candidate cap still limit recall.",
+    "Finite segments are conditional RGB evidence diagnostics, not a formal patch or a comparison against DA3.",
+    "Center rays validate geometry conventions, not subpixel RGB antialias coverage."
+  ]
+}

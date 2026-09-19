@@ -11,7 +11,7 @@ import numpy as np
 from mathutils import Vector
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from blender_export_thin_pack import camera_record, save_json
+from blender_export_thin_pack import camera_record, probes, save_json
 
 
 def reset_scene():
@@ -126,6 +126,7 @@ def configure_scene(generator):
     # Blender 5.2 exposes only the neutral look for Standard. Keep the render
     # boring and explicit; surprise colour management is a lousy experiment.
     scene.view_settings.look = "None"
+    scene.view_settings.exposure = generator.get("exposure", 0.0)
     scene.unit_settings.system = "METRIC"
     scene.unit_settings.scale_length = 1.0
     scene.world.color = (0.025, 0.025, 0.025)
@@ -146,6 +147,18 @@ def setup_static_scene(generator):
         "BrickWall", (0, 1.35, 0), (3.2, 0.06, 2.4),
         brick_material("IdentityBrick"), 100, "background_wall",
     )
+    if generator.get("brick_axes") == "XZ":
+        # The wall faces XZ. Feeding its constant thickness coordinate into
+        # Brick.Y paints one mortar row over the whole wall. Oops.
+        tree = wall.data.materials[0].node_tree
+        brick = next(node for node in tree.nodes if node.type == "TEX_BRICK")
+        tex = next(node for node in tree.nodes if node.type == "TEX_COORD")
+        separate = tree.nodes.new("ShaderNodeSeparateXYZ")
+        combine = tree.nodes.new("ShaderNodeCombineXYZ")
+        tree.links.new(tex.outputs["Generated"], separate.inputs["Vector"])
+        tree.links.new(separate.outputs["X"], combine.inputs["X"])
+        tree.links.new(separate.outputs["Z"], combine.inputs["Y"])
+        tree.links.new(combine.outputs["Vector"], brick.inputs["Vector"])
     floor = add_cube(
         "Floor", (0, 0.1, -1.5), (3.2, 2.0, 0.06),
         principled_material("IdentityFloor", (0.12, 0.13, 0.14), 0.8),
@@ -170,18 +183,22 @@ def setup_static_scene(generator):
 
 def setup_case(case, materials):
     if case["target"]["present"]:
-        add_cylinder(
-            "TargetRod", case["target"]["endpoints"], 0.055,
-            materials[case["target"]["material"]], 1, "target",
-        )
+        target = case["target"]
+        for index, segment in enumerate(target.get("segments", [target["endpoints"]])):
+            add_cylinder(
+                f"TargetRod_{index}", segment, target.get("radius", 0.055),
+                materials[target["material"]], 1, "target",
+            )
     for index, distractor in enumerate(case["distractors"]):
         add_cylinder(
             f"Distractor_{index}", distractor["endpoints"], distractor["radius"],
             materials["distractor"], 2 + index, distractor["role"],
         )
     if case["occluder"]:
+        occluder = case["occluder"] if isinstance(case["occluder"], dict) else {}
         add_cube(
-            "Occluder", (0.0, -0.28, 0.0), (0.24, 0.16, 0.38),
+            "Occluder", occluder.get("location", (0.0, -0.28, 0.0)),
+            occluder.get("scale", (0.24, 0.16, 0.38)),
             materials["occluder"], 50, "occluder",
         )
 
@@ -294,7 +311,18 @@ def main():
         for angle in config["generator"]["angles_degrees"]:
             position_camera(camera, config["generator"], angle)
             bpy.context.view_layer.update()
-            camera_data, guide = project_guide(camera, case["guide_endpoints"])
+            if "guide_xyxy" in config["generator"]:
+                camera_data = camera_record(scene)
+                guide = config["generator"]["guide_xyxy"]
+                guide_source = "fixed_screen_coordinates_independent_of_target_geometry"
+            else:
+                camera_data, guide = project_guide(camera, case["guide_endpoints"])
+                guide_source = "synthetic_world_guide_projection"
+            checks, projection_error = (None, None)
+            if config["generator"].get("independent_probes", False):
+                checks, projection_error = probes(scene, camera_data, geometry)
+                if projection_error > 0.01:
+                    raise RuntimeError(f"Independent Blender projection error: {projection_error}")
             frame_id = f"view_{angle:+03d}"
             rgb = inputs / case["case_id"] / f"{frame_id}.png"
             rgb.parent.mkdir(parents=True, exist_ok=True)
@@ -303,13 +331,15 @@ def main():
             save_json(case_truth / f"{frame_id}-camera.json", camera_data)
             frames.append(
                 {"frame_id": frame_id, "angle_degrees": angle, "camera": camera_data,
-                 "guide_xyxy": guide, "rgb": rgb.relative_to(inputs).as_posix()}
+                 "guide_xyxy": guide, "guide_source": guide_source,
+                 "blender_ray_probes": checks, "projection_check_max_px": projection_error,
+                 "rgb": rgb.relative_to(inputs).as_posix()}
             )
             print("IDENTITY_RENDER", case["case_id"], frame_id, flush=True)
         result["cases"].append(
             {"case_id": case["case_id"], "geometry": geometry, "frames": frames}
         )
-    save_json(truth / "render_manifest.json", result)
+    save_json(truth / request.get("render_manifest_name", "render_manifest.json"), result)
 
 
 if __name__ == "__main__":

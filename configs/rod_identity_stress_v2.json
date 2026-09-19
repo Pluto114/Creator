@@ -1,0 +1,491 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-identity-stress-v2-20260919r4",
+  "scope": "New within-family oracle-camera stress diagnostic with fixed screen-space synthetic guides; no independent-object or human-ROI performance claim.",
+  "generator": {
+    "size_wh": [
+      640,
+      480
+    ],
+    "angles_degrees": [
+      -32,
+      -16,
+      2,
+      19,
+      35
+    ],
+    "camera_radius_m": 6.1,
+    "camera_height_m": 0.2,
+    "camera_lens_mm": 50,
+    "render_samples": 48,
+    "brick_axes": "XZ",
+    "exposure": -2.0,
+    "independent_probes": true,
+    "guide_xyxy": [
+      [
+        319.5,
+        20
+      ],
+      [
+        319.5,
+        459
+      ]
+    ],
+    "guide_source": "fixed_screen_coordinates_independent_of_target_geometry",
+    "render_case_isolation": true
+  },
+  "method": {
+    "observation": {
+      "scan_half_width": 48,
+      "row_stride": 1,
+      "y_window_radius": 2,
+      "edge_min_contrast": 8.0,
+      "center_min_contrast": 8.0,
+      "min_width": 2.0,
+      "max_width": 42.0,
+      "background_samples": 2,
+      "edge_min_horizontal_fraction": 0.7,
+      "edge_min_row_support": 0.6,
+      "edge_match_tolerance": 1.5,
+      "min_resolved_center_pixels": 2,
+      "flat_max_std": 3.0,
+      "flat_max_gradient": 6.0
+    },
+    "image_hypotheses": {
+      "minimum_rows": 52,
+      "minimum_y_span": 150.0,
+      "inlier_distance_px": 1.2,
+      "trials": 1024,
+      "seed": 19092027,
+      "deduplicate_separation_px": 1.0,
+      "maximum_models": 8
+    },
+    "association_common": {
+      "fit_view_count": 3,
+      "reprojection_threshold_px": 1.5,
+      "deduplicate_separation_px": 0.8,
+      "ambiguity_support_fraction": 0.9,
+      "ambiguity_separation_px": 3.0,
+      "maximum_hypotheses": 6000,
+      "maximum_fit_attempts": 6000
+    },
+    "nested_guard": {
+      "minimum_nested_views": 2,
+      "minimum_nested_row_fraction": 0.25,
+      "semantics": "warning only; never replace with widest pair"
+    },
+    "variants": [
+      {
+        "name": "geometry_4",
+        "minimum_support_views": 4,
+        "nested_guard": false
+      }
+    ],
+    "guide_guard": {
+      "maximum_median_residual_px": 12.0,
+      "minimum_views": 3,
+      "minimum_fraction": 0.75
+    },
+    "guide_offsets_px": [
+      0,
+      8,
+      16
+    ],
+    "extent": {
+      "minimum_fit_views": 4,
+      "minimum_positive_views": 3,
+      "minimum_absent_views": 2,
+      "row_tolerance_px": 1.0,
+      "match_base_px": 2.0,
+      "maximum_half_width_px": 4.0,
+      "step_camera_span_fraction": 0.001,
+      "minimum_run_samples": 3,
+      "maximum_reprojection_error_px": 2.0,
+      "maximum_leave_one_out_angle_degrees": 1.0,
+      "maximum_leave_one_out_offset_camera_span_fraction": 0.002,
+      "minimum_second_to_first_plane_ratio": 1e-05,
+      "minimum_direction_gap_ratio": 1e-08,
+      "maximum_sample_count": 100000
+    }
+  },
+  "evaluation": {
+    "line_distance_tolerance_world_m": 0.025,
+    "angle_tolerance_deg": 2.0,
+    "curve_tolerance_m": 0.025,
+    "curve_spacing_m": 0.002,
+    "primary_split": "evaluation"
+  },
+  "cases": [
+    {
+      "case_id": "s01",
+      "split": "evaluation",
+      "label": "matte_new_camera",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            0,
+            0,
+            -1.1
+          ],
+          [
+            0,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.035,
+        "material": "matte"
+      },
+      "distractors": [],
+      "occluder": false
+    },
+    {
+      "case_id": "s02",
+      "split": "evaluation",
+      "label": "narrow_radius_002",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            0,
+            0,
+            -1.1
+          ],
+          [
+            0,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.02,
+        "material": "matte"
+      },
+      "distractors": [],
+      "occluder": false
+    },
+    {
+      "case_id": "s03",
+      "split": "evaluation",
+      "label": "slanted",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            -0.14,
+            0,
+            -1.1
+          ],
+          [
+            0.14,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.035,
+        "material": "matte"
+      },
+      "distractors": [],
+      "occluder": false
+    },
+    {
+      "case_id": "s04",
+      "split": "evaluation",
+      "label": "real_gap",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            0,
+            0,
+            -1.1
+          ],
+          [
+            0,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.035,
+        "material": "matte",
+        "segments": [
+          [
+            [
+              0,
+              0,
+              -1.1
+            ],
+            [
+              0,
+              0,
+              -0.18
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0.18
+            ],
+            [
+              0,
+              0,
+              1.1
+            ]
+          ]
+        ]
+      },
+      "distractors": [],
+      "occluder": false,
+      "gap_segment": [
+        [
+          0,
+          0,
+          -0.18
+        ],
+        [
+          0,
+          0,
+          0.18
+        ]
+      ]
+    },
+    {
+      "case_id": "s05",
+      "split": "evaluation",
+      "label": "middle_occlusion",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            0,
+            0,
+            -1.1
+          ],
+          [
+            0,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.035,
+        "material": "matte"
+      },
+      "distractors": [],
+      "occluder": {
+        "location": [
+          0,
+          -0.28,
+          0
+        ],
+        "scale": [
+          0.24,
+          0.16,
+          0.34
+        ]
+      },
+      "occlusion_interval": [
+        [
+          0,
+          0,
+          -0.32
+        ],
+        [
+          0,
+          0,
+          0.32
+        ]
+      ]
+    },
+    {
+      "case_id": "s06",
+      "split": "evaluation",
+      "label": "surface_stripe",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            0,
+            0,
+            -1.1
+          ],
+          [
+            0,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.055,
+        "material": "stripe"
+      },
+      "distractors": [],
+      "occluder": false
+    },
+    {
+      "case_id": "s07",
+      "split": "evaluation",
+      "label": "glossy",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            0,
+            0,
+            -1.1
+          ],
+          [
+            0,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.035,
+        "material": "glossy"
+      },
+      "distractors": [],
+      "occluder": false
+    },
+    {
+      "case_id": "s08",
+      "split": "evaluation",
+      "label": "adjacent_identity_ambiguous",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            -0.08,
+            0,
+            -1.1
+          ],
+          [
+            -0.08,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.035,
+        "material": "matte",
+        "identity_ambiguous": true
+      },
+      "distractors": [
+        {
+          "role": "adjacent_rod",
+          "endpoints": [
+            [
+              0.13,
+              0,
+              -1.1
+            ],
+            [
+              0.13,
+              0,
+              1.1
+            ]
+          ],
+          "radius": 0.035
+        }
+      ],
+      "occluder": false
+    },
+    {
+      "case_id": "s09",
+      "split": "evaluation",
+      "label": "empty_far_line",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": false,
+        "endpoints": [
+          [
+            0,
+            0,
+            -1.1
+          ],
+          [
+            0,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.035,
+        "material": null
+      },
+      "distractors": [
+        {
+          "role": "background_line",
+          "endpoints": [
+            [
+              0,
+              0.65,
+              -1.1
+            ],
+            [
+              0,
+              0.65,
+              1.1
+            ]
+          ],
+          "radius": 0.028
+        }
+      ],
+      "occluder": false
+    },
+    {
+      "case_id": "s10",
+      "split": "evaluation",
+      "label": "empty_near_line",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": false,
+        "endpoints": [
+          [
+            0,
+            0,
+            -1.1
+          ],
+          [
+            0,
+            0,
+            1.1
+          ]
+        ],
+        "radius": 0.035,
+        "material": null
+      },
+      "distractors": [
+        {
+          "role": "background_line",
+          "endpoints": [
+            [
+              0,
+              0.12,
+              -1.1
+            ],
+            [
+              0,
+              0.12,
+              1.1
+            ]
+          ],
+          "radius": 0.028
+        }
+      ],
+      "occluder": false
+    }
+  ],
+  "additional_sources": [
+    "scripts/run_rod_identity_stress.py",
+    "scripts/thin_pack_gt.py",
+    "experiments/src/creator_eval/rod_candidate_extent.py",
+    "experiments/src/creator_eval/rod_evidence.py",
+    "experiments/src/creator_eval/native_diagnostics.py"
+  ],
+  "freeze_note": "All 10 cases and guide offsets fixed before rendering or inference. Same generator family as prior work; varying radius/material is not cross-object generalization. Scene and guide parameters are separate; guides are literal pixel coordinates."
+}

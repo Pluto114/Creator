@@ -1,5 +1,5 @@
 # 文档索引
-最新工作状态：[9月19日新Blender身份场景与粗引导门](experiments/2026-09-19-blender-identity-and-guide-guard.md)。8种新布局、40帧配对RGB/深度/ID/相机/网格已经冻结并通过像素对应复核；多视图候选能处理斜杆、遮挡和相邻双杆歧义，但空目标ROI中的另一根真实杆仍会被几何接受。粗guide门在开发回放中减少明显错目标，贴近guide的表面错误轴仍未解决。G0现在收口，下一步进入新保留集、有限端点/缺口和可撤回补丁。见[9月19日日志](journal/2026-09-19.md)、[ADR 0006](decisions/0006-multiview-consistency-is-not-identity.md)与[ADR 0007](decisions/0007-guide-is-target-identity-input.md)。
+最新工作状态：[9月19日提示偏差与有限杆段](experiments/2026-09-19-identity-stress-and-finite-segments.md)。新增10场景/50帧与30次冻结推理，51,200次独立射线核验通过。有限段已接通，但最终仅2次正确输出、1次高光偏轴、1次错收近邻杆，真实缺口与遮挡均拒绝。全部运行触及2D候选上限；提前guide过滤也不能清除已有的带内歧义。G1开发中，未通过。接下来固定观测池检查guide/窗口混杂和候选截断，再测试物理边缘约束。见[今日日志](journal/2026-09-19.md)。
 
 此前[原图证据原型与保留视角验收](experiments/2026-09-16-rod-evidence.md)、[复现说明](rod-evidence-controls.md)和[裁剪/真实相机/直线对照](experiments/2026-09-14-crop-oracle-line-controls.md)继续保留；独立对象收益、可靠接受/拒绝、共同读取器和正式补丁仍待完成。
 

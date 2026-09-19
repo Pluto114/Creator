@@ -26,6 +26,8 @@ CONFIG = ROOT / "configs/rod_guide_identity_replay_v1.json"
 SHARE = ROOT / "docs/experiments/results/2026-09-19-guide-identity-replay.json"
 SOURCES = [
     "scripts/run_rod_guide_identity_replay.py",
+    "scripts/run_rod_identity_blender.py",
+    "scripts/run_rod_multiview_candidates.py",
     "experiments/src/creator_eval/rod_multiview_candidates.py",
 ]
 
@@ -146,6 +148,9 @@ def infer(run_id="rod-guide-identity-replay-v1-20260919"):
     prepared = read_json(run / "prepared.json")
     method = read_json(run / "method_config.json")
     index = read_json(run / "source_index.json")
+    for relative, expected in prepared["source_sha256"].items():
+        if digest(ROOT / relative) != expected:
+            raise ValueError(f"Frozen source changed: {relative}")
     if digest(run / "method_config.json") != prepared["method_config_sha256"]:
         raise ValueError("Guide replay method changed")
     if digest(run / "source_index.json") != prepared["source_index_sha256"]:
@@ -226,6 +231,9 @@ def evaluate(config_path=CONFIG, share_path=SHARE):
     if output.exists() or share_path.exists():
         raise FileExistsError("Keep old guide replay evaluation")
     prepared = read_json(run / "prepared.json")
+    if digest(config_path) != prepared["protocol_sha256"] or digest(run / "protocol.json") != prepared["protocol_sha256"]:
+        raise ValueError("Guide replay protocol changed after freezing")
+    config = read_json(run / "protocol.json")
     inference_path = run / "inference.json"
     inference = read_json(inference_path)
     if inference["state"] != "inferred" or not inference["evaluation_reuse"]:

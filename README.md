@@ -6,7 +6,7 @@
 
 ## 当前进度
 
-**G0：题目与实验链路验证已收口，正在进入G1最小修复。** 独立脚本已能运行DA3、导出点云演示和带真值的合成数据；候选关联与目标身份边界已经过新Blender布局验证，有限端点、缺口保护和正式补丁仍在开发。
+**G1：方法可行性开发中，尚未通过。** G0实验链路已收口；多候选关联已经接到有限杆段，但新压力测试仍有大面积拒绝、偏轴与错目标，尚无跨对象重复收益和正式补丁。
 
 | 已可用 | 尚未实现 |
 | --- | --- |
@@ -15,8 +15,10 @@
 | 原生基线、6组裁剪、3组oracle、TLS/RANSAC与RGB交会对照 | 完整候选的共同曲线评分与跨对象验证 |
 | 原图双边缘、逐段证据与拒绝原型，6张评测专用新视角 | 普通估计相机下有效恢复、正式补丁及可靠接受/拒绝策略 |
 | 中心偏差材质干预、22种亮度反例、12种解析关联及8种新Blender身份布局 | 独立对象保留集与稳定的物理轴验收层 |
-| 坐标、像素采样、数据哈希和输入/GT隔离检查 | 完整跨物体几何验证 |
+| 新增10种场景/50帧、30组提示偏移、条件式有限杆段及源码/输入/GT冻结检查 | 稳定的候选保留、目标身份和跨物体几何验证 |
 | Blender配置侧栏、骨架检查、插件打包和CI | 完整导入、增强、比较与撤回流程 |
+
+最新[提示偏差与有限杆段测试](docs/experiments/2026-09-19-identity-stress-and-finite-segments.md)：30次运行仅2次正确输出，另有1次高光偏轴、1次错收近邻杆，26次拒绝；真实缺口与遮挡均未恢复。50帧独立射线核验通过，但所有运行均触及图像候选上限。下一步先拆开搜索窗口与guide变化，检查候选截断及物理边缘约束；不以放宽阈值刷分。
 
 第一版离线证据原型已跑通：真实相机下最细杆的缺口改善，估计相机下全部目标被拒绝，中杆在新视角失败。仍不能宣称普通照片修复有效。设计背景见 [算法决定](docs/decisions/0004-evidence-guided-line-recovery.md)；经典几何组件本身不作为新算法贡献。
 
@@ -24,7 +26,7 @@
 
 9月19日已实现多图像线保留与跨视图候选关联。它能排除不一致杂纹、保留双线歧义，但一致表面亮条和一致背景线仍会被误认；四视图门槛又会误拒只在三视图可见的真杆。因此它定位为候选关联层，尚不是物理身份验收。见[多视图候选实验](docs/experiments/2026-09-19-multiview-candidate-association.md)、[ADR 0006](docs/decisions/0006-multiview-consistency-is-not-identity.md)与[9月19日日志](docs/journal/2026-09-19.md)。
 
-同日追加的新Blender身份包已冻结8种布局、40帧配对RGB/深度/ID/相机/网格并通过投影轴复核。几何层正确处理干净、遮挡、斜杆和目标旁背景杆，对亮条、高光和相邻双杆保持歧义；空目标ROI中的另一根真实杆仍会被接受。粗guide身份门在开发回放中消除了该假物体但挡不住近guide错误轴，下一步必须在新保留集上验证。见[Blender身份实验](docs/experiments/2026-09-19-blender-identity-and-guide-guard.md)与[ADR 0007](docs/decisions/0007-guide-is-target-identity-input.md)。
+同日追加的新Blender身份包已冻结8种布局、40帧配对RGB/深度/ID/相机/网格并通过投影轴复核。几何层正确处理干净、遮挡、斜杆和目标旁背景杆，对亮条、高光和相邻双杆保持歧义；空目标ROI中的另一根真实杆仍会被接受。粗guide身份门在开发回放中消除了该假物体但挡不住近guide错误轴，该旧包使用理想轴投影guide，后续压力测试已暴露其局限。见[Blender身份实验](docs/experiments/2026-09-19-blender-identity-and-guide-guard.md)与[ADR 0007](docs/decisions/0007-guide-is-target-identity-input.md)。
 
 此前[原图证据与新视角验收](docs/experiments/2026-09-16-rod-evidence.md)、[运行说明](docs/rod-evidence-controls.md)、[裁剪/真实相机/直线对照](docs/experiments/2026-09-14-crop-oracle-line-controls.md)、[首轮基线](docs/experiments/2026-09-14-native-baseline.md)、[配对数据包](docs/experiments/2026-09-14-paired-thin-pack-v2.md)均保留。安装与实测记录见 [环境验证](docs/environment-verification.md)。
 
