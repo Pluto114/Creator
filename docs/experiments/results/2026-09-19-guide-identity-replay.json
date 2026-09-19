@@ -1,0 +1,805 @@
+{
+  "state": "complete",
+  "run_id": "rod-guide-identity-replay-v1-20260919",
+  "scope": "Post-evaluation development replay of a coarse-guide identity guard; no held-out improvement claim.",
+  "protocol_sha256": "8eefbf21af85f66c17b1e9f7191bc92de53109efda9e4cd449494e9db94e2c59",
+  "inference_sha256": "2d58f5085de6880ab2543c3fb3801d55f0784094389e0d1049ce65166a36e9bb",
+  "method": {
+    "maximum_residual_fraction_of_scan_half_width": 0.25,
+    "minimum_views": 3,
+    "minimum_fraction": 0.75,
+    "semantics": "A uniquely reconstructed physical line must also remain inside the coarse target guide band. Ambiguous geometry stays ambiguous."
+  },
+  "summaries": [
+    {
+      "source_key": "analytic_controls",
+      "variant": "support_3_views",
+      "case_count": 12,
+      "baseline_classification_counts": {
+        "correct_accept": 6,
+        "false_accept_empty": 3,
+        "safe_identity_ambiguity": 2,
+        "wrong_line_accept": 1
+      },
+      "guarded_classification_counts": {
+        "correct_accept": 6,
+        "false_accept_empty": 1,
+        "safe_empty_refusal": 2,
+        "safe_identity_ambiguity": 2,
+        "wrong_line_accept": 1
+      },
+      "transitions": {
+        "correct_accept -> correct_accept": 6,
+        "false_accept_empty -> false_accept_empty": 1,
+        "false_accept_empty -> safe_empty_refusal": 2,
+        "safe_identity_ambiguity -> safe_identity_ambiguity": 2,
+        "wrong_line_accept -> wrong_line_accept": 1
+      }
+    },
+    {
+      "source_key": "analytic_controls",
+      "variant": "support_4_views",
+      "case_count": 12,
+      "baseline_classification_counts": {
+        "correct_accept": 4,
+        "false_accept_empty": 2,
+        "safe_empty_refusal": 1,
+        "safe_identity_ambiguity": 2,
+        "target_refused": 2,
+        "wrong_line_accept": 1
+      },
+      "guarded_classification_counts": {
+        "correct_accept": 4,
+        "false_accept_empty": 1,
+        "safe_empty_refusal": 2,
+        "safe_identity_ambiguity": 2,
+        "target_refused": 2,
+        "wrong_line_accept": 1
+      },
+      "transitions": {
+        "correct_accept -> correct_accept": 4,
+        "false_accept_empty -> false_accept_empty": 1,
+        "false_accept_empty -> safe_empty_refusal": 1,
+        "safe_empty_refusal -> safe_empty_refusal": 1,
+        "safe_identity_ambiguity -> safe_identity_ambiguity": 2,
+        "target_refused -> target_refused": 2,
+        "wrong_line_accept -> wrong_line_accept": 1
+      }
+    },
+    {
+      "source_key": "blender_identity",
+      "variant": "geometry_3",
+      "case_count": 8,
+      "baseline_classification_counts": {
+        "correct_accept": 4,
+        "false_accept_empty": 1,
+        "safe_identity_ambiguity": 1,
+        "target_refused_ambiguous": 2
+      },
+      "guarded_classification_counts": {
+        "correct_accept": 4,
+        "safe_empty_refusal": 1,
+        "safe_identity_ambiguity": 1,
+        "target_refused_ambiguous": 2
+      },
+      "transitions": {
+        "correct_accept -> correct_accept": 4,
+        "false_accept_empty -> safe_empty_refusal": 1,
+        "safe_identity_ambiguity -> safe_identity_ambiguity": 1,
+        "target_refused_ambiguous -> target_refused_ambiguous": 2
+      }
+    },
+    {
+      "source_key": "blender_identity",
+      "variant": "geometry_4",
+      "case_count": 8,
+      "baseline_classification_counts": {
+        "correct_accept": 4,
+        "false_accept_empty": 1,
+        "safe_identity_ambiguity": 1,
+        "target_refused_ambiguous": 2
+      },
+      "guarded_classification_counts": {
+        "correct_accept": 4,
+        "safe_empty_refusal": 1,
+        "safe_identity_ambiguity": 1,
+        "target_refused_ambiguous": 2
+      },
+      "transitions": {
+        "correct_accept -> correct_accept": 4,
+        "false_accept_empty -> safe_empty_refusal": 1,
+        "safe_identity_ambiguity -> safe_identity_ambiguity": 1,
+        "target_refused_ambiguous -> target_refused_ambiguous": 2
+      }
+    }
+  ],
+  "rows": [
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d01_clean_vertical",
+      "split": "development",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.499999999999858,
+        1.000000000000142,
+        0.4999999999998863,
+        1.5000000000000853,
+        0.999999999999929
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d01_clean_vertical",
+      "split": "development",
+      "variant": "support_4_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.499999999999858,
+        1.000000000000142,
+        0.4999999999998863,
+        1.5000000000000853,
+        0.999999999999929
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d02_inconsistent_background_only",
+      "split": "development",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "rejected",
+      "baseline_classification": "false_accept_empty",
+      "guarded_classification": "safe_empty_refusal",
+      "guard_reason": "selected_line_outside_guide_identity_band",
+      "agreeing_view_count": 2,
+      "residual_px_per_view": [
+        13.828794152351321,
+        9.333191228527085,
+        8.837588304702848,
+        4.8419853808786115,
+        5.346382457054332
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d02_inconsistent_background_only",
+      "split": "development",
+      "variant": "support_4_views",
+      "baseline_state": "rejected",
+      "guarded_state": "rejected",
+      "baseline_classification": "safe_empty_refusal",
+      "guarded_classification": "safe_empty_refusal",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d03_target_plus_inconsistent_clutter",
+      "split": "development",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.499999999999858,
+        1.000000000000142,
+        0.4999999999998863,
+        1.5000000000000853,
+        0.999999999999929
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d03_target_plus_inconsistent_clutter",
+      "split": "development",
+      "variant": "support_4_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.499999999999858,
+        1.000000000000142,
+        0.4999999999998863,
+        1.5000000000000853,
+        0.999999999999929
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d04_consistent_background_only",
+      "split": "development",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "rejected",
+      "baseline_classification": "false_accept_empty",
+      "guarded_classification": "safe_empty_refusal",
+      "guard_reason": "selected_line_outside_guide_identity_band",
+      "agreeing_view_count": 0,
+      "residual_px_per_view": [
+        9.000000000000142,
+        11.500000000000142,
+        10.000000000000114,
+        12.000000000000085,
+        9.500000000000071
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d04_consistent_background_only",
+      "split": "development",
+      "variant": "support_4_views",
+      "baseline_state": "accepted",
+      "guarded_state": "rejected",
+      "baseline_classification": "false_accept_empty",
+      "guarded_classification": "safe_empty_refusal",
+      "guard_reason": "selected_line_outside_guide_identity_band",
+      "agreeing_view_count": 0,
+      "residual_px_per_view": [
+        9.000000000000142,
+        11.500000000000142,
+        10.000000000000114,
+        12.000000000000085,
+        9.500000000000071
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d05_two_consistent_lines",
+      "split": "development",
+      "variant": "support_3_views",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "safe_identity_ambiguity",
+      "guarded_classification": "safe_identity_ambiguity",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d05_two_consistent_lines",
+      "split": "development",
+      "variant": "support_4_views",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "safe_identity_ambiguity",
+      "guarded_classification": "safe_identity_ambiguity",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d06_three_view_visibility",
+      "split": "development",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.499999999999801,
+        1.0000000000001705,
+        0.4999999999998579,
+        1.5000000000001137,
+        0.9999999999999147
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "d06_three_view_visibility",
+      "split": "development",
+      "variant": "support_4_views",
+      "baseline_state": "rejected",
+      "guarded_state": "rejected",
+      "baseline_classification": "target_refused",
+      "guarded_classification": "target_refused",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e01_clean_sloped",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.5521840037228287,
+        0.9478159962772281,
+        0.5521840037227435,
+        1.4478159962773418,
+        1.0521840037226298
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e01_clean_sloped",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.5521840037228287,
+        0.9478159962772281,
+        0.5521840037227435,
+        1.4478159962773418,
+        1.0521840037226298
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e02_target_plus_new_clutter",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.518106515363769,
+        0.9818934846363163,
+        0.5181065153637121,
+        1.4818934846362595,
+        1.0181065153637547
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e02_target_plus_new_clutter",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.518106515363769,
+        0.9818934846363163,
+        0.5181065153637121,
+        1.4818934846362595,
+        1.0181065153637547
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e03_consistent_surface_stripe",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "wrong_line_accept",
+      "guarded_classification": "wrong_line_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        3.000000000000199,
+        5.500000000000199,
+        4.000000000000114,
+        6.000000000000085,
+        3.500000000000057
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e03_consistent_surface_stripe",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "wrong_line_accept",
+      "guarded_classification": "wrong_line_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        3.000000000000199,
+        5.500000000000199,
+        4.000000000000114,
+        6.000000000000085,
+        3.500000000000057
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e04_two_new_consistent_lines",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "safe_identity_ambiguity",
+      "guarded_classification": "safe_identity_ambiguity",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e04_two_new_consistent_lines",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "safe_identity_ambiguity",
+      "guarded_classification": "safe_identity_ambiguity",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e05_three_new_views",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        1.4515125560912736,
+        1.0484874439087548,
+        0.45151255609121677,
+        1.5484874439087548,
+        0.9515125560912452
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e05_three_new_views",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "baseline_state": "rejected",
+      "guarded_state": "rejected",
+      "baseline_classification": "target_refused",
+      "guarded_classification": "target_refused",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e06_consistent_new_background_only",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "false_accept_empty",
+      "guarded_classification": "false_accept_empty",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        4.7936747836921825,
+        4.325819933830502,
+        4.334905816860925,
+        4.302760666722605,
+        4.293674783692225
+      ]
+    },
+    {
+      "source_key": "analytic_controls",
+      "case_id": "e06_consistent_new_background_only",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "false_accept_empty",
+      "guarded_classification": "false_accept_empty",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        4.7936747836921825,
+        4.325819933830502,
+        4.334905816860925,
+        4.302760666722605,
+        4.293674783692225
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b01",
+      "split": "development",
+      "variant": "geometry_3",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        0.021209093056995698,
+        0.02564607366986138,
+        0.028335345754442187,
+        0.029093628189116316,
+        0.027869227505732397
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b01",
+      "split": "development",
+      "variant": "geometry_4",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        0.021209093056995698,
+        0.02564607366986138,
+        0.028335345754442187,
+        0.029093628189116316,
+        0.027869227505732397
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b02",
+      "split": "development",
+      "variant": "geometry_3",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "target_refused_ambiguous",
+      "guarded_classification": "target_refused_ambiguous",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b02",
+      "split": "development",
+      "variant": "geometry_4",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "target_refused_ambiguous",
+      "guarded_classification": "target_refused_ambiguous",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b03",
+      "split": "development",
+      "variant": "geometry_3",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "safe_identity_ambiguity",
+      "guarded_classification": "safe_identity_ambiguity",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b03",
+      "split": "development",
+      "variant": "geometry_4",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "safe_identity_ambiguity",
+      "guarded_classification": "safe_identity_ambiguity",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b04",
+      "split": "development",
+      "variant": "geometry_3",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        0.019401915323101093,
+        0.005945477601528637,
+        0.01837723715266293,
+        0.03414841455276019,
+        0.04892520981860571
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b04",
+      "split": "development",
+      "variant": "geometry_4",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        0.019401915323101093,
+        0.005945477601528637,
+        0.01837723715266293,
+        0.03414841455276019,
+        0.04892520981860571
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b05",
+      "split": "evaluation",
+      "variant": "geometry_3",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        0.4376362514865946,
+        0.42753189282746007,
+        0.3785401896859639,
+        0.30528511005331893,
+        0.23307245433392154
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b05",
+      "split": "evaluation",
+      "variant": "geometry_4",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        0.4376362514865946,
+        0.42753189282746007,
+        0.3785401896859639,
+        0.30528511005331893,
+        0.23307245433392154
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b06",
+      "split": "evaluation",
+      "variant": "geometry_3",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "target_refused_ambiguous",
+      "guarded_classification": "target_refused_ambiguous",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b06",
+      "split": "evaluation",
+      "variant": "geometry_4",
+      "baseline_state": "ambiguous",
+      "guarded_state": "ambiguous",
+      "baseline_classification": "target_refused_ambiguous",
+      "guarded_classification": "target_refused_ambiguous",
+      "guard_reason": "geometric_result_not_uniquely_accepted",
+      "agreeing_view_count": null,
+      "residual_px_per_view": null
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b07",
+      "split": "evaluation",
+      "variant": "geometry_3",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        9.721106900165694,
+        10.842493466060773,
+        11.222018770137709,
+        10.836775369711916,
+        9.715943363794054
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b07",
+      "split": "evaluation",
+      "variant": "geometry_4",
+      "baseline_state": "accepted",
+      "guarded_state": "accepted",
+      "baseline_classification": "correct_accept",
+      "guarded_classification": "correct_accept",
+      "guard_reason": "guide_identity_supported",
+      "agreeing_view_count": 5,
+      "residual_px_per_view": [
+        9.721106900165694,
+        10.842493466060773,
+        11.222018770137709,
+        10.836775369711916,
+        9.715943363794054
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b08",
+      "split": "evaluation",
+      "variant": "geometry_3",
+      "baseline_state": "accepted",
+      "guarded_state": "rejected",
+      "baseline_classification": "false_accept_empty",
+      "guarded_classification": "safe_empty_refusal",
+      "guard_reason": "selected_line_outside_guide_identity_band",
+      "agreeing_view_count": 1,
+      "residual_px_per_view": [
+        40.14070663786089,
+        20.546409388633492,
+        0.16763440817794617,
+        20.74644168228201,
+        40.32551380084141
+      ]
+    },
+    {
+      "source_key": "blender_identity",
+      "case_id": "b08",
+      "split": "evaluation",
+      "variant": "geometry_4",
+      "baseline_state": "accepted",
+      "guarded_state": "rejected",
+      "baseline_classification": "false_accept_empty",
+      "guarded_classification": "safe_empty_refusal",
+      "guard_reason": "selected_line_outside_guide_identity_band",
+      "agreeing_view_count": 1,
+      "residual_px_per_view": [
+        40.14070663786089,
+        20.546409388633492,
+        0.16763440817794617,
+        20.74644168228201,
+        40.32551380084141
+      ]
+    }
+  ],
+  "decision_boundary": [
+    "All cases were inspected before this guard was designed; this is regression evidence only.",
+    "The guide is an allowed user input and a target-identity prior, not geometric ground truth.",
+    "A nearby surface stripe can remain inside the guide band and still be the wrong physical axis."
+  ]
+}

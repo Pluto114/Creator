@@ -1,5 +1,5 @@
 # 文档索引
-最新工作状态：[9月19日多视图候选关联](experiments/2026-09-19-multiview-candidate-association.md)。多图像线保留、三维候选枚举和显式歧义已实现；冻结评价显示它能排不一致杂纹，但不能识别一致的错误表面条纹或背景线。四视图门槛还会误拒仅三视图可见的真杆。项目仍在G0，下一步做新Blender布局和物理身份验收层。见[9月19日日志](journal/2026-09-19.md)与[算法决定0006](decisions/0006-multiview-consistency-is-not-identity.md)。
+最新工作状态：[9月19日新Blender身份场景与粗引导门](experiments/2026-09-19-blender-identity-and-guide-guard.md)。8种新布局、40帧配对RGB/深度/ID/相机/网格已经冻结并通过像素对应复核；多视图候选能处理斜杆、遮挡和相邻双杆歧义，但空目标ROI中的另一根真实杆仍会被几何接受。粗guide门在开发回放中减少明显错目标，贴近guide的表面错误轴仍未解决。G0现在收口，下一步进入新保留集、有限端点/缺口和可撤回补丁。见[9月19日日志](journal/2026-09-19.md)、[ADR 0006](decisions/0006-multiview-consistency-is-not-identity.md)与[ADR 0007](decisions/0007-guide-is-target-identity-input.md)。
 
 此前[原图证据原型与保留视角验收](experiments/2026-09-16-rod-evidence.md)、[复现说明](rod-evidence-controls.md)和[裁剪/真实相机/直线对照](experiments/2026-09-14-crop-oracle-line-controls.md)继续保留；独立对象收益、可靠接受/拒绝、共同读取器和正式补丁仍待完成。
 
@@ -25,6 +25,7 @@
 | 决策 | [ADR 0004](decisions/0004-evidence-guided-line-recovery.md) | 由裁剪、相机与直线对照选择下一版恢复方案 |
 | 决策 | [ADR 0005](decisions/0005-observed-bands-and-correspondence-validation.md) | 由亮度反例与物理对应检查修订观测及相机约束 |
 | 决策 | [ADR 0006](decisions/0006-multiview-consistency-is-not-identity.md) | 将多视图一致限定为候选关联证据，不冒充物理身份 |
+| 决策 | [ADR 0007](decisions/0007-guide-is-target-identity-input.md) | 将粗guide限定为用户目标身份先验，并保留物理轴验收边界 |
 | 历史 | [ADR 0001，已废止](decisions/0001-technology-stack.md) | 旧场景生成路线，仅保留决策历史 |
 
 ## 如何解释“确定”

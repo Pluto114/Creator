@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import copy
 import itertools
 
 import numpy as np
@@ -12,6 +13,18 @@ from creator_eval.line_controls import LineFitDegenerate, fit_multiview_line
 def _as_line(slope, intercept):
     line = np.array([1.0, -float(slope), -float(intercept)])
     return line / np.linalg.norm(line[:2])
+
+
+def image_line_from_endpoints(points):
+    """Return one normalized homogeneous image line from two finite pixel points."""
+    points = np.asarray(points, float)
+    if points.shape != (2, 2) or not np.isfinite(points).all():
+        raise ValueError("Expected two finite image points")
+    line = np.cross(np.c_[points, np.ones(2)][0], np.c_[points, np.ones(2)][1])
+    length = np.linalg.norm(line[:2])
+    if length <= 1e-12 or abs(line[0]) <= 1e-12:
+        raise ValueError("Coincident or near-horizontal guide is outside this pilot")
+    return line / length
 
 
 def _line_x(line, y):
@@ -63,6 +76,20 @@ def enumerate_image_lines(observations, config):
         )[0]
         matches = _support(rows, float(slope), float(intercept), config["inlier_distance_px"])
         residuals = np.array([value for _, _, value in matches])
+        widths, enclosed = [], []
+        for row_index, candidate_index, _ in matches:
+            candidates = observations["rows"][row_index]["candidates"]
+            chosen = candidates[candidate_index]
+            widths.append(chosen["width"])
+            enclosed.append(
+                any(
+                    other["width"] > chosen["width"] + 1
+                    and other["left_edge"]["x"] <= chosen["left_edge"]["x"]
+                    and other["right_edge"]["x"] >= chosen["right_edge"]["x"]
+                    for other_index, other in enumerate(candidates)
+                    if other_index != candidate_index
+                )
+            )
         hypotheses.append(
             {
                 "line": _as_line(slope, intercept),
@@ -70,6 +97,10 @@ def enumerate_image_lines(observations, config):
                 "intercept": float(intercept),
                 "support_rows": len(matches),
                 "residual_median_px": float(np.median(residuals)),
+                "width_median_px": float(np.median(widths)),
+                "width_p10_px": float(np.quantile(widths, 0.1)),
+                "width_p90_px": float(np.quantile(widths, 0.9)),
+                "enclosing_wider_row_fraction": float(np.mean(enclosed)),
                 "row_matches": matches,
             }
         )
@@ -92,7 +123,12 @@ def enumerate_image_lines(observations, config):
 def _project_world_line(model, view):
     anchor, direction = np.asarray(model["anchor"]), np.asarray(model["direction"])
     points = np.c_[np.stack((anchor - direction, anchor + direction)), np.ones(2)]
-    projection = np.asarray(view["K_index"]) @ np.asarray(view["world_to_camera_cv"])
+    extrinsic = np.asarray(view["world_to_camera_cv"])
+    if extrinsic.shape == (4, 4):
+        extrinsic = extrinsic[:3, :]
+    if extrinsic.shape != (3, 4):
+        raise ValueError("Expected a 3x4 or homogeneous 4x4 world-to-camera transform")
+    projection = np.asarray(view["K_index"]) @ extrinsic
     pixels = points @ projection.T
     if np.any(pixels[:, 2] <= 1e-9):
         raise LineFitDegenerate("line_projection_behind_camera")
@@ -201,3 +237,81 @@ def associate_multiview_lines(views, config):
         alternatives=alternatives,
     )
     return result
+
+
+def apply_nested_band_guard(result, views, config):
+    """Turn a unique geometric result into ambiguity when wider bands enclose it.
+
+    This guard never replaces the selected line with the widest candidate. A wider
+    pair may be a silhouette, another object, or background texture; it is only
+    evidence that the physical-axis identity is unresolved.
+    """
+    output = copy.deepcopy(result)
+    if output["state"] != "accepted":
+        output["identity_guard"] = {
+            "applied": False,
+            "reason": "geometric_result_not_uniquely_accepted",
+            "nested_view_count": 0,
+        }
+        return output
+    nested = []
+    for view_index in output["selected"]["supporting_views"]:
+        match = output["selected"]["matches"][view_index]
+        candidate = views[view_index]["candidates"][match["candidate_index"]]
+        if candidate["enclosing_wider_row_fraction"] >= config["minimum_nested_row_fraction"]:
+            nested.append(view_index)
+    passed = len(nested) >= int(config["minimum_nested_views"])
+    output["identity_guard"] = {
+        "applied": True,
+        "reason": "nested_supported_band_identity_unresolved" if passed else "no_repeated_nested_band_warning",
+        "nested_view_count": len(nested),
+        "nested_views": nested,
+        "minimum_nested_views": int(config["minimum_nested_views"]),
+        "minimum_nested_row_fraction": config["minimum_nested_row_fraction"],
+    }
+    if passed:
+        output["state"] = "ambiguous"
+        output["reason"] = "nested_supported_band_identity_unresolved"
+    return output
+
+
+def apply_guide_identity_guard(result, views, config):
+    """Reject a physical line that does not stay near the supplied target guide.
+
+    Geometry can prove that a line exists, but not that it is the line requested by
+    the user. This check treats the coarse per-view guide as part of target identity.
+    The tolerance is intentionally wider than the geometric reprojection threshold.
+    """
+    output = copy.deepcopy(result)
+    if output["state"] != "accepted":
+        output["guide_identity_guard"] = {
+            "applied": False,
+            "reason": "geometric_result_not_uniquely_accepted",
+        }
+        return output
+    residuals = []
+    for view in views:
+        projected = _project_world_line(output["selected"]["model"], view)
+        guide = np.asarray(view["guide_line"], float)
+        ys = np.linspace(view["y_range"][0], view["y_range"][1], 9)
+        residuals.append(float(np.median(np.abs(_line_x(projected, ys) - _line_x(guide, ys)))))
+    threshold = float(config["maximum_median_residual_px"])
+    agreeing = [index for index, value in enumerate(residuals) if value <= threshold]
+    minimum_views = int(config["minimum_views"])
+    minimum_fraction = float(config["minimum_fraction"])
+    passed = len(agreeing) >= minimum_views and len(agreeing) / len(views) >= minimum_fraction
+    output["guide_identity_guard"] = {
+        "applied": True,
+        "reason": "guide_identity_supported" if passed else "selected_line_outside_guide_identity_band",
+        "residual_px_per_view": residuals,
+        "agreeing_views": agreeing,
+        "agreeing_view_count": len(agreeing),
+        "view_count": len(views),
+        "maximum_median_residual_px": threshold,
+        "minimum_views": minimum_views,
+        "minimum_fraction": minimum_fraction,
+    }
+    if not passed:
+        output["state"] = "rejected"
+        output["reason"] = "selected_line_outside_guide_identity_band"
+    return output

@@ -6,7 +6,7 @@
 
 ## 当前进度
 
-当前处于 **G0：题目与实验链路验证**。独立脚本已能运行DA3、导出点云演示和带真值的合成数据；正式任务链路与自研修复算法仍在开发。
+**G0：题目与实验链路验证已收口，正在进入G1最小修复。** 独立脚本已能运行DA3、导出点云演示和带真值的合成数据；候选关联与目标身份边界已经过新Blender布局验证，有限端点、缺口保护和正式补丁仍在开发。
 
 | 已可用 | 尚未实现 |
 | --- | --- |
@@ -14,7 +14,7 @@
 | 六条件、30张同步RGB与独立深度/ID/相机/几何GT | 独立物体与真实照片验证 |
 | 原生基线、6组裁剪、3组oracle、TLS/RANSAC与RGB交会对照 | 完整候选的共同曲线评分与跨对象验证 |
 | 原图双边缘、逐段证据与拒绝原型，6张评测专用新视角 | 普通估计相机下有效恢复、正式补丁及可靠接受/拒绝策略 |
-| 中心偏差材质干预、22种亮度反例、背景物理对应及12种多视图候选关联 | 新Blender布局、遮挡反例与物理身份验收层 |
+| 中心偏差材质干预、22种亮度反例、12种解析关联及8种新Blender身份布局 | 独立对象保留集与稳定的物理轴验收层 |
 | 坐标、像素采样、数据哈希和输入/GT隔离检查 | 完整跨物体几何验证 |
 | Blender配置侧栏、骨架检查、插件打包和CI | 完整导入、增强、比较与撤回流程 |
 
@@ -23,6 +23,8 @@
 9月17日已确认：中杆检测会选中内部亮条，砖块背景又能产生极线自洽但物理错误的对应。材质干预支持外观导致偏差；新增拒绝对照仅减少部分错判，未提高准确覆盖。最新见 [中心偏差与背景对应审计](docs/experiments/2026-09-17-center-and-correspondence-audit.md)、[22种解析反例](docs/experiments/2026-09-17-profile-controls.md)、[后续算法决定](docs/decisions/0005-observed-bands-and-correspondence-validation.md)及[今日日志](docs/journal/2026-09-17.md)。
 
 9月19日已实现多图像线保留与跨视图候选关联。它能排除不一致杂纹、保留双线歧义，但一致表面亮条和一致背景线仍会被误认；四视图门槛又会误拒只在三视图可见的真杆。因此它定位为候选关联层，尚不是物理身份验收。见[多视图候选实验](docs/experiments/2026-09-19-multiview-candidate-association.md)、[ADR 0006](docs/decisions/0006-multiview-consistency-is-not-identity.md)与[9月19日日志](docs/journal/2026-09-19.md)。
+
+同日追加的新Blender身份包已冻结8种布局、40帧配对RGB/深度/ID/相机/网格并通过投影轴复核。几何层正确处理干净、遮挡、斜杆和目标旁背景杆，对亮条、高光和相邻双杆保持歧义；空目标ROI中的另一根真实杆仍会被接受。粗guide身份门在开发回放中消除了该假物体但挡不住近guide错误轴，下一步必须在新保留集上验证。见[Blender身份实验](docs/experiments/2026-09-19-blender-identity-and-guide-guard.md)与[ADR 0007](docs/decisions/0007-guide-is-target-identity-input.md)。
 
 此前[原图证据与新视角验收](docs/experiments/2026-09-16-rod-evidence.md)、[运行说明](docs/rod-evidence-controls.md)、[裁剪/真实相机/直线对照](docs/experiments/2026-09-14-crop-oracle-line-controls.md)、[首轮基线](docs/experiments/2026-09-14-native-baseline.md)、[配对数据包](docs/experiments/2026-09-14-paired-thin-pack-v2.md)均保留。安装与实测记录见 [环境验证](docs/environment-verification.md)。
 

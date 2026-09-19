@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-guide-identity-replay-v1-20260919",
+  "scope": "Post-evaluation development replay of a coarse-guide identity guard; no held-out improvement claim.",
+  "method": {
+    "maximum_residual_fraction_of_scan_half_width": 0.25,
+    "minimum_views": 3,
+    "minimum_fraction": 0.75,
+    "semantics": "A uniquely reconstructed physical line must also remain inside the coarse target guide band. Ambiguous geometry stays ambiguous."
+  },
+  "sources": [
+    {
+      "source_key": "analytic_controls",
+      "kind": "analytic",
+      "run_id": "rod-multiview-candidates-v1-20260919r1",
+      "scan_half_width_px": 30,
+      "variants": ["support_3_views", "support_4_views"]
+    },
+    {
+      "source_key": "blender_identity",
+      "kind": "blender",
+      "run_id": "rod-identity-blender-v1-20260919r3",
+      "scan_half_width_px": 48,
+      "variants": ["geometry_3", "geometry_4"]
+    }
+  ],
+  "hypotheses": [
+    "A tolerance equal to one quarter of the observation search half-width rejects grossly displaced real lines without pretending the guide is exact geometry.",
+    "The guard will not resolve a surface stripe that still lies inside the coarse guide band.",
+    "Because these source cases were already inspected, every result is a development regression and not a blind evaluation."
+  ]
+}

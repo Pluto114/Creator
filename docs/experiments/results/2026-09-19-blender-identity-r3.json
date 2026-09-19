@@ -1,0 +1,774 @@
+{
+  "state": "complete",
+  "run_id": "rod-identity-blender-v1-20260919r3",
+  "scope": "New procedural Blender layouts for multi-view line identity; paired RGB, exact camera, mesh, center depth and surface ID; no DA3 inference or formal patch claim.",
+  "protocol_sha256": "13798ea4466447e15982f59516ab7681f4d5cbbd562fc3d0a281364a5c2a716b",
+  "inference_sha256": "81ea14105bb5b917f7d892681c635299fc32ef645a776603b06adf33ba8f1751",
+  "evaluation_policy": {
+    "line_distance_tolerance_world_m": 0.025,
+    "angle_tolerance_deg": 2.0,
+    "primary_split": "evaluation",
+    "empty_or_ambiguous_truth_is_not_assigned_to_nearest_line": true
+  },
+  "summaries": [
+    {
+      "split": "development",
+      "variant": "geometry_3",
+      "case_count": 4,
+      "classification_counts": {
+        "correct_accept": 2,
+        "safe_identity_ambiguity": 1,
+        "target_refused_ambiguous": 1
+      }
+    },
+    {
+      "split": "development",
+      "variant": "geometry_4",
+      "case_count": 4,
+      "classification_counts": {
+        "correct_accept": 2,
+        "safe_identity_ambiguity": 1,
+        "target_refused_ambiguous": 1
+      }
+    },
+    {
+      "split": "development",
+      "variant": "geometry_3_nested",
+      "case_count": 4,
+      "classification_counts": {
+        "correct_accept": 2,
+        "safe_identity_ambiguity": 1,
+        "target_refused_ambiguous": 1
+      }
+    },
+    {
+      "split": "development",
+      "variant": "geometry_4_nested",
+      "case_count": 4,
+      "classification_counts": {
+        "correct_accept": 2,
+        "safe_identity_ambiguity": 1,
+        "target_refused_ambiguous": 1
+      }
+    },
+    {
+      "split": "evaluation",
+      "variant": "geometry_3",
+      "case_count": 4,
+      "classification_counts": {
+        "correct_accept": 2,
+        "false_accept_empty": 1,
+        "target_refused_ambiguous": 1
+      }
+    },
+    {
+      "split": "evaluation",
+      "variant": "geometry_4",
+      "case_count": 4,
+      "classification_counts": {
+        "correct_accept": 2,
+        "false_accept_empty": 1,
+        "target_refused_ambiguous": 1
+      }
+    },
+    {
+      "split": "evaluation",
+      "variant": "geometry_3_nested",
+      "case_count": 4,
+      "classification_counts": {
+        "correct_accept": 2,
+        "false_accept_empty": 1,
+        "target_refused_ambiguous": 1
+      }
+    },
+    {
+      "split": "evaluation",
+      "variant": "geometry_4_nested",
+      "case_count": 4,
+      "classification_counts": {
+        "correct_accept": 2,
+        "false_accept_empty": 1,
+        "target_refused_ambiguous": 1
+      }
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "b01",
+      "label": "clean_matte_vertical",
+      "split": "development",
+      "variant": "geometry_3",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 17,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": {
+        "angle_error_deg": 0.01423680917017907,
+        "target_to_line_distance_median_m": 0.00015165588256974143,
+        "target_to_line_distance_p95_m": 0.00037228805825761257
+      }
+    },
+    {
+      "case_id": "b01",
+      "label": "clean_matte_vertical",
+      "split": "development",
+      "variant": "geometry_4",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 11,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": {
+        "angle_error_deg": 0.01423680917017907,
+        "target_to_line_distance_median_m": 0.00015165588256974143,
+        "target_to_line_distance_p95_m": 0.00037228805825761257
+      }
+    },
+    {
+      "case_id": "b01",
+      "label": "clean_matte_vertical",
+      "split": "development",
+      "variant": "geometry_3_nested",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 17,
+      "nested_view_count": 1,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": {
+        "angle_error_deg": 0.01423680917017907,
+        "target_to_line_distance_median_m": 0.00015165588256974143,
+        "target_to_line_distance_p95_m": 0.00037228805825761257
+      }
+    },
+    {
+      "case_id": "b01",
+      "label": "clean_matte_vertical",
+      "split": "development",
+      "variant": "geometry_4_nested",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 11,
+      "nested_view_count": 1,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": {
+        "angle_error_deg": 0.01423680917017907,
+        "target_to_line_distance_median_m": 0.00015165588256974143,
+        "target_to_line_distance_p95_m": 0.00037228805825761257
+      }
+    },
+    {
+      "case_id": "b02",
+      "label": "painted_surface_stripe",
+      "split": "development",
+      "variant": "geometry_3",
+      "state": "ambiguous",
+      "classification": "target_refused_ambiguous",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 106,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b02",
+      "label": "painted_surface_stripe",
+      "split": "development",
+      "variant": "geometry_4",
+      "state": "ambiguous",
+      "classification": "target_refused_ambiguous",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 77,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b02",
+      "label": "painted_surface_stripe",
+      "split": "development",
+      "variant": "geometry_3_nested",
+      "state": "ambiguous",
+      "classification": "target_refused_ambiguous",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 106,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b02",
+      "label": "painted_surface_stripe",
+      "split": "development",
+      "variant": "geometry_4_nested",
+      "state": "ambiguous",
+      "classification": "target_refused_ambiguous",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 77,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b03",
+      "label": "two_adjacent_rods",
+      "split": "development",
+      "variant": "geometry_3",
+      "state": "ambiguous",
+      "classification": "safe_identity_ambiguity",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 30,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6982,
+        6571,
+        6760,
+        6523,
+        6884
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b03",
+      "label": "two_adjacent_rods",
+      "split": "development",
+      "variant": "geometry_4",
+      "state": "ambiguous",
+      "classification": "safe_identity_ambiguity",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 10,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6982,
+        6571,
+        6760,
+        6523,
+        6884
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b03",
+      "label": "two_adjacent_rods",
+      "split": "development",
+      "variant": "geometry_3_nested",
+      "state": "ambiguous",
+      "classification": "safe_identity_ambiguity",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 30,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        6982,
+        6571,
+        6760,
+        6523,
+        6884
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b03",
+      "label": "two_adjacent_rods",
+      "split": "development",
+      "variant": "geometry_4_nested",
+      "state": "ambiguous",
+      "classification": "safe_identity_ambiguity",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 10,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        6982,
+        6571,
+        6760,
+        6523,
+        6884
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b04",
+      "label": "middle_occlusion",
+      "split": "development",
+      "variant": "geometry_3",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 13,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        4567,
+        4563,
+        4576,
+        4563,
+        4567
+      ],
+      "metrics": {
+        "angle_error_deg": 0.028232590821584472,
+        "target_to_line_distance_median_m": 0.0004456679620520001,
+        "target_to_line_distance_p95_m": 0.000976370611870213
+      }
+    },
+    {
+      "case_id": "b04",
+      "label": "middle_occlusion",
+      "split": "development",
+      "variant": "geometry_4",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 11,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        4567,
+        4563,
+        4576,
+        4563,
+        4567
+      ],
+      "metrics": {
+        "angle_error_deg": 0.028232590821584472,
+        "target_to_line_distance_median_m": 0.0004456679620520001,
+        "target_to_line_distance_p95_m": 0.000976370611870213
+      }
+    },
+    {
+      "case_id": "b04",
+      "label": "middle_occlusion",
+      "split": "development",
+      "variant": "geometry_3_nested",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 13,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        4567,
+        4563,
+        4576,
+        4563,
+        4567
+      ],
+      "metrics": {
+        "angle_error_deg": 0.028232590821584472,
+        "target_to_line_distance_median_m": 0.0004456679620520001,
+        "target_to_line_distance_p95_m": 0.000976370611870213
+      }
+    },
+    {
+      "case_id": "b04",
+      "label": "middle_occlusion",
+      "split": "development",
+      "variant": "geometry_4_nested",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 11,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        4567,
+        4563,
+        4576,
+        4563,
+        4567
+      ],
+      "metrics": {
+        "angle_error_deg": 0.028232590821584472,
+        "target_to_line_distance_median_m": 0.0004456679620520001,
+        "target_to_line_distance_p95_m": 0.000976370611870213
+      }
+    },
+    {
+      "case_id": "b05",
+      "label": "slanted_matte_target",
+      "split": "evaluation",
+      "variant": "geometry_3",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6822,
+        6827,
+        6833,
+        6803,
+        6770
+      ],
+      "metrics": {
+        "angle_error_deg": 0.07124360679255477,
+        "target_to_line_distance_median_m": 0.0008266491280448451,
+        "target_to_line_distance_p95_m": 0.0019112807817976516
+      }
+    },
+    {
+      "case_id": "b05",
+      "label": "slanted_matte_target",
+      "split": "evaluation",
+      "variant": "geometry_4",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6822,
+        6827,
+        6833,
+        6803,
+        6770
+      ],
+      "metrics": {
+        "angle_error_deg": 0.07124360679255477,
+        "target_to_line_distance_median_m": 0.0008266491280448451,
+        "target_to_line_distance_p95_m": 0.0019112807817976516
+      }
+    },
+    {
+      "case_id": "b05",
+      "label": "slanted_matte_target",
+      "split": "evaluation",
+      "variant": "geometry_3_nested",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        6822,
+        6827,
+        6833,
+        6803,
+        6770
+      ],
+      "metrics": {
+        "angle_error_deg": 0.07124360679255477,
+        "target_to_line_distance_median_m": 0.0008266491280448451,
+        "target_to_line_distance_p95_m": 0.0019112807817976516
+      }
+    },
+    {
+      "case_id": "b05",
+      "label": "slanted_matte_target",
+      "split": "evaluation",
+      "variant": "geometry_4_nested",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        6822,
+        6827,
+        6833,
+        6803,
+        6770
+      ],
+      "metrics": {
+        "angle_error_deg": 0.07124360679255477,
+        "target_to_line_distance_median_m": 0.0008266491280448451,
+        "target_to_line_distance_p95_m": 0.0019112807817976516
+      }
+    },
+    {
+      "case_id": "b06",
+      "label": "glossy_target_view_response",
+      "split": "evaluation",
+      "variant": "geometry_3",
+      "state": "ambiguous",
+      "classification": "target_refused_ambiguous",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 57,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b06",
+      "label": "glossy_target_view_response",
+      "split": "evaluation",
+      "variant": "geometry_4",
+      "state": "ambiguous",
+      "classification": "target_refused_ambiguous",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 48,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b06",
+      "label": "glossy_target_view_response",
+      "split": "evaluation",
+      "variant": "geometry_3_nested",
+      "state": "ambiguous",
+      "classification": "target_refused_ambiguous",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 57,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b06",
+      "label": "glossy_target_view_response",
+      "split": "evaluation",
+      "variant": "geometry_4_nested",
+      "state": "ambiguous",
+      "classification": "target_refused_ambiguous",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 48,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        6934,
+        6934,
+        6934,
+        6934,
+        6934
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b07",
+      "label": "target_plus_background_line",
+      "split": "evaluation",
+      "variant": "geometry_3",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 33,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6959,
+        6728,
+        6934,
+        6533,
+        6902
+      ],
+      "metrics": {
+        "angle_error_deg": 0.019303939763452547,
+        "target_to_line_distance_median_m": 0.0005129519157072991,
+        "target_to_line_distance_p95_m": 0.0007463961306725834
+      }
+    },
+    {
+      "case_id": "b07",
+      "label": "target_plus_background_line",
+      "split": "evaluation",
+      "variant": "geometry_4",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 7,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        6959,
+        6728,
+        6934,
+        6533,
+        6902
+      ],
+      "metrics": {
+        "angle_error_deg": 0.019303939763452547,
+        "target_to_line_distance_median_m": 0.0005129519157072991,
+        "target_to_line_distance_p95_m": 0.0007463961306725834
+      }
+    },
+    {
+      "case_id": "b07",
+      "label": "target_plus_background_line",
+      "split": "evaluation",
+      "variant": "geometry_3_nested",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 33,
+      "nested_view_count": 1,
+      "target_visible_pixels_per_view": [
+        6959,
+        6728,
+        6934,
+        6533,
+        6902
+      ],
+      "metrics": {
+        "angle_error_deg": 0.019303939763452547,
+        "target_to_line_distance_median_m": 0.0005129519157072991,
+        "target_to_line_distance_p95_m": 0.0007463961306725834
+      }
+    },
+    {
+      "case_id": "b07",
+      "label": "target_plus_background_line",
+      "split": "evaluation",
+      "variant": "geometry_4_nested",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 7,
+      "nested_view_count": 1,
+      "target_visible_pixels_per_view": [
+        6959,
+        6728,
+        6934,
+        6533,
+        6902
+      ],
+      "metrics": {
+        "angle_error_deg": 0.019303939763452547,
+        "target_to_line_distance_median_m": 0.0005129519157072991,
+        "target_to_line_distance_p95_m": 0.0007463961306725834
+      }
+    },
+    {
+      "case_id": "b08",
+      "label": "empty_roi_consistent_background_line",
+      "split": "evaluation",
+      "variant": "geometry_3",
+      "state": "accepted",
+      "classification": "false_accept_empty",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 2,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b08",
+      "label": "empty_roi_consistent_background_line",
+      "split": "evaluation",
+      "variant": "geometry_4",
+      "state": "accepted",
+      "classification": "false_accept_empty",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 2,
+      "nested_view_count": null,
+      "target_visible_pixels_per_view": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b08",
+      "label": "empty_roi_consistent_background_line",
+      "split": "evaluation",
+      "variant": "geometry_3_nested",
+      "state": "accepted",
+      "classification": "false_accept_empty",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 2,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": null
+    },
+    {
+      "case_id": "b08",
+      "label": "empty_roi_consistent_background_line",
+      "split": "evaluation",
+      "variant": "geometry_4_nested",
+      "state": "accepted",
+      "classification": "false_accept_empty",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 2,
+      "nested_view_count": 0,
+      "target_visible_pixels_per_view": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "metrics": null
+    }
+  ],
+  "limitations": [
+    "One procedural Blender family with exact cameras is not cross-object or estimated-camera performance.",
+    "The nested guard returns ambiguity only; it does not certify the widest pair as a silhouette.",
+    "Infinite-line identity is scored here; endpoints, gaps, and patch composition remain unimplemented."
+  ]
+}

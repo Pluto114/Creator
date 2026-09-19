@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-identity-blender-v1-20260919r3",
+  "scope": "New procedural Blender layouts for multi-view line identity; paired RGB, exact camera, mesh, center depth and surface ID; no DA3 inference or formal patch claim.",
+  "generator": {
+    "size_wh": [640, 480],
+    "angles_degrees": [-30, -15, 0, 15, 30],
+    "camera_radius_m": 5.8,
+    "camera_height_m": 0.15,
+    "camera_lens_mm": 52.0,
+    "world_y_range": [-1.3, 1.3],
+    "render_samples": 48,
+    "background": "procedural brick wall plus fixed area/key lighting",
+    "seed": 19092026
+  },
+  "method": {
+    "observation": {
+      "scan_half_width": 48,
+      "row_stride": 2,
+      "y_window_radius": 2,
+      "edge_min_contrast": 8.0,
+      "center_min_contrast": 8.0,
+      "min_width": 2.0,
+      "max_width": 42.0,
+      "background_samples": 2,
+      "edge_min_horizontal_fraction": 0.7,
+      "edge_min_row_support": 0.6,
+      "edge_match_tolerance": 1.5,
+      "min_resolved_center_pixels": 2,
+      "flat_max_std": 3.0,
+      "flat_max_gradient": 6.0
+    },
+    "image_hypotheses": {
+      "minimum_rows": 52,
+      "minimum_y_span": 150.0,
+      "inlier_distance_px": 1.2,
+      "trials": 1024,
+      "seed": 19092027,
+      "deduplicate_separation_px": 1.0,
+      "maximum_models": 8
+    },
+    "association_common": {
+      "fit_view_count": 3,
+      "reprojection_threshold_px": 1.5,
+      "deduplicate_separation_px": 0.8,
+      "ambiguity_support_fraction": 0.9,
+      "ambiguity_separation_px": 3.0,
+      "maximum_hypotheses": 320
+    },
+    "nested_guard": {
+      "minimum_nested_views": 2,
+      "minimum_nested_row_fraction": 0.25,
+      "semantics": "warning only; never replace with widest pair"
+    },
+    "variants": [
+      {"name": "geometry_3", "minimum_support_views": 3, "nested_guard": false},
+      {"name": "geometry_4", "minimum_support_views": 4, "nested_guard": false},
+      {"name": "geometry_3_nested", "minimum_support_views": 3, "nested_guard": true},
+      {"name": "geometry_4_nested", "minimum_support_views": 4, "nested_guard": true}
+    ]
+  },
+  "evaluation": {
+    "line_distance_tolerance_world_m": 0.025,
+    "angle_tolerance_deg": 2.0,
+    "primary_split": "evaluation",
+    "empty_or_ambiguous_truth_is_not_assigned_to_nearest_line": true
+  },
+  "cases": [
+    {
+      "case_id": "b01",
+      "split": "development",
+      "label": "clean_matte_vertical",
+      "target": {"present": true, "endpoints": [[0.0, 0.0, -1.2], [0.0, 0.0, 1.2]], "material": "matte"},
+      "distractors": [],
+      "occluder": false,
+      "guide_endpoints": [[0.0, 0.0, -1.3], [0.0, 0.0, 1.3]]
+    },
+    {
+      "case_id": "b02",
+      "split": "development",
+      "label": "painted_surface_stripe",
+      "target": {"present": true, "endpoints": [[0.0, 0.0, -1.2], [0.0, 0.0, 1.2]], "material": "stripe"},
+      "distractors": [],
+      "occluder": false,
+      "guide_endpoints": [[0.0, 0.0, -1.3], [0.0, 0.0, 1.3]]
+    },
+    {
+      "case_id": "b03",
+      "split": "development",
+      "label": "two_adjacent_rods",
+      "target": {"present": true, "identity_ambiguous": true, "endpoints": [[-0.08, 0.0, -1.2], [-0.08, 0.0, 1.2]], "material": "matte"},
+      "distractors": [{"role": "adjacent_rod", "endpoints": [[0.13, 0.02, -1.2], [0.13, 0.02, 1.2]], "radius": 0.045}],
+      "occluder": false,
+      "guide_endpoints": [[0.02, 0.0, -1.3], [0.02, 0.0, 1.3]]
+    },
+    {
+      "case_id": "b04",
+      "split": "development",
+      "label": "middle_occlusion",
+      "target": {"present": true, "endpoints": [[0.0, 0.0, -1.2], [0.0, 0.0, 1.2]], "material": "matte"},
+      "distractors": [],
+      "occluder": true,
+      "guide_endpoints": [[0.0, 0.0, -1.3], [0.0, 0.0, 1.3]]
+    },
+    {
+      "case_id": "b05",
+      "split": "evaluation",
+      "label": "slanted_matte_target",
+      "target": {"present": true, "endpoints": [[-0.2, 0.0, -1.2], [0.18, 0.0, 1.2]], "material": "matte"},
+      "distractors": [],
+      "occluder": false,
+      "guide_endpoints": [[-0.22, 0.0, -1.3], [0.20, 0.0, 1.3]]
+    },
+    {
+      "case_id": "b06",
+      "split": "evaluation",
+      "label": "glossy_target_view_response",
+      "target": {"present": true, "endpoints": [[0.0, 0.0, -1.2], [0.0, 0.0, 1.2]], "material": "glossy"},
+      "distractors": [],
+      "occluder": false,
+      "guide_endpoints": [[0.0, 0.0, -1.3], [0.0, 0.0, 1.3]]
+    },
+    {
+      "case_id": "b07",
+      "split": "evaluation",
+      "label": "target_plus_background_line",
+      "target": {"present": true, "endpoints": [[-0.05, 0.0, -1.2], [-0.05, 0.0, 1.2]], "material": "matte"},
+      "distractors": [{"role": "background_line", "endpoints": [[0.13, 0.55, -1.2], [0.13, 0.55, 1.2]], "radius": 0.035}],
+      "occluder": false,
+      "guide_endpoints": [[0.02, 0.0, -1.3], [0.02, 0.0, 1.3]]
+    },
+    {
+      "case_id": "b08",
+      "split": "evaluation",
+      "label": "empty_roi_consistent_background_line",
+      "target": {"present": false, "endpoints": [[0.0, 0.0, -1.2], [0.0, 0.0, 1.2]], "material": null},
+      "distractors": [{"role": "background_line", "endpoints": [[0.0, 0.55, -1.2], [0.0, 0.55, 1.2]], "radius": 0.035}],
+      "occluder": false,
+      "guide_endpoints": [[0.0, 0.0, -1.3], [0.0, 0.0, 1.3]]
+    }
+  ],
+  "hypotheses": [
+    "Nested wider bands may expose an internal surface stripe, but selecting the widest pair is not justified.",
+    "Exact-camera multi-view association should preserve two-line ambiguity and reject some view-dependent highlights.",
+    "A physically real background line inside a coarse ROI may remain indistinguishable from the requested target without stronger identity input."
+  ]
+}
