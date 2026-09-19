@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-multiview-candidates-v1-20260919r1",
+  "scope": "Frozen analytic multi-view candidate association study; RGB and declared coarse guides only during inference; infinite centerline identity, not endpoint or topology recovery.",
+  "generator": {
+    "size_wh": [320, 240],
+    "focal_px": 360.0,
+    "principal_xy": [159.5, 119.5],
+    "camera_x": [-0.9, -0.45, 0.0, 0.45, 0.9],
+    "background_value": 32,
+    "guide_jitter_px": [1.5, -1.0, 0.5, -1.5, 1.0],
+    "world_y_range": [-1.35, 1.35],
+    "target_z": 6.0
+  },
+  "method": {
+    "observation": {
+      "scan_half_width": 30,
+      "row_stride": 2,
+      "y_window_radius": 2,
+      "edge_min_contrast": 8.0,
+      "center_min_contrast": 8.0,
+      "min_width": 2.0,
+      "max_width": 20.0,
+      "background_samples": 2,
+      "edge_min_horizontal_fraction": 0.75,
+      "edge_min_row_support": 0.6,
+      "edge_match_tolerance": 1.5,
+      "min_resolved_center_pixels": 2,
+      "flat_max_std": 3.0,
+      "flat_max_gradient": 6.0
+    },
+    "image_hypotheses": {
+      "minimum_rows": 36,
+      "minimum_y_span": 100.0,
+      "inlier_distance_px": 0.8,
+      "trials": 768,
+      "seed": 19092026,
+      "deduplicate_separation_px": 0.75,
+      "maximum_models": 8
+    },
+    "association_common": {
+      "fit_view_count": 3,
+      "reprojection_threshold_px": 1.0,
+      "deduplicate_separation_px": 0.6,
+      "ambiguity_support_fraction": 0.9,
+      "ambiguity_separation_px": 2.5,
+      "maximum_hypotheses": 256
+    },
+    "variants": [
+      {"name": "support_3_views", "minimum_support_views": 3},
+      {"name": "support_4_views", "minimum_support_views": 4}
+    ]
+  },
+  "evaluation": {
+    "line_distance_tolerance_world": 0.03,
+    "angle_tolerance_deg": 2.0,
+    "no_truth_nearest_assignment_when_identity_ambiguous": true,
+    "primary_split": "evaluation",
+    "development_split_is_not_a_second_test_set": true
+  },
+  "cases": [
+    {
+      "case_id": "d01_clean_vertical",
+      "split": "development",
+      "target": {"x_bottom": 0.0, "x_top": 0.0, "present": true},
+      "layers": [{"kind": "world_line", "x_bottom": 0.0, "x_top": 0.0, "width_px": 8.0, "value": 220, "views": "all"}]
+    },
+    {
+      "case_id": "d02_inconsistent_background_only",
+      "split": "development",
+      "target": {"x_bottom": 0.0, "x_top": 0.0, "present": false},
+      "layers": [{"kind": "image_offset", "offset_px_by_view": [-12.0, 7.0, -9.0, 13.0, -4.0], "width_px": 5.0, "value": 220, "views": "all"}]
+    },
+    {
+      "case_id": "d03_target_plus_inconsistent_clutter",
+      "split": "development",
+      "target": {"x_bottom": 0.0, "x_top": 0.0, "present": true},
+      "layers": [
+        {"kind": "world_line", "x_bottom": 0.0, "x_top": 0.0, "width_px": 6.0, "value": 210, "views": "all"},
+        {"kind": "image_offset", "offset_px_by_view": [-14.0, 11.0, -10.0, 15.0, -13.0], "width_px": 4.0, "value": 235, "views": "all"}
+      ]
+    },
+    {
+      "case_id": "d04_consistent_background_only",
+      "split": "development",
+      "target": {"x_bottom": 0.0, "x_top": 0.0, "present": false},
+      "layers": [{"kind": "world_line", "x_bottom": 0.18, "x_top": 0.18, "width_px": 5.0, "value": 220, "views": "all"}]
+    },
+    {
+      "case_id": "d05_two_consistent_lines",
+      "split": "development",
+      "target": {"x_bottom": -0.10, "x_top": -0.10, "present": true, "identity_ambiguous": true},
+      "layers": [
+        {"kind": "world_line", "x_bottom": -0.10, "x_top": -0.10, "width_px": 5.0, "value": 220, "views": "all"},
+        {"kind": "world_line", "x_bottom": 0.16, "x_top": 0.16, "width_px": 5.0, "value": 220, "views": "all"}
+      ]
+    },
+    {
+      "case_id": "d06_three_view_visibility",
+      "split": "development",
+      "target": {"x_bottom": 0.0, "x_top": 0.0, "present": true},
+      "layers": [{"kind": "world_line", "x_bottom": 0.0, "x_top": 0.0, "width_px": 7.0, "value": 220, "views": [0, 1, 2]}]
+    },
+    {
+      "case_id": "e01_clean_sloped",
+      "split": "evaluation",
+      "target": {"x_bottom": -0.10, "x_top": 0.14, "present": true},
+      "layers": [{"kind": "world_line", "x_bottom": -0.10, "x_top": 0.14, "width_px": 7.0, "value": 220, "views": "all"}]
+    },
+    {
+      "case_id": "e02_target_plus_new_clutter",
+      "split": "evaluation",
+      "target": {"x_bottom": 0.06, "x_top": -0.08, "present": true},
+      "layers": [
+        {"kind": "world_line", "x_bottom": 0.06, "x_top": -0.08, "width_px": 6.0, "value": 205, "views": "all"},
+        {"kind": "image_offset", "offset_px_by_view": [13.0, -12.0, 15.0, -9.0, 11.0], "width_px": 4.0, "value": 235, "views": "all"}
+      ]
+    },
+    {
+      "case_id": "e03_consistent_surface_stripe",
+      "split": "evaluation",
+      "target": {"x_bottom": 0.0, "x_top": 0.0, "present": true},
+      "layers": [{"kind": "world_line", "x_bottom": 0.075, "x_top": 0.075, "width_px": 4.0, "value": 225, "views": "all"}]
+    },
+    {
+      "case_id": "e04_two_new_consistent_lines",
+      "split": "evaluation",
+      "target": {"x_bottom": -0.13, "x_top": -0.13, "present": true, "identity_ambiguous": true},
+      "layers": [
+        {"kind": "world_line", "x_bottom": -0.13, "x_top": -0.13, "width_px": 5.0, "value": 220, "views": "all"},
+        {"kind": "world_line", "x_bottom": 0.14, "x_top": 0.14, "width_px": 5.0, "value": 220, "views": "all"}
+      ]
+    },
+    {
+      "case_id": "e05_three_new_views",
+      "split": "evaluation",
+      "target": {"x_bottom": -0.08, "x_top": 0.09, "present": true},
+      "layers": [{"kind": "world_line", "x_bottom": -0.08, "x_top": 0.09, "width_px": 7.0, "value": 220, "views": [0, 2, 4]}]
+    },
+    {
+      "case_id": "e06_consistent_new_background_only",
+      "split": "evaluation",
+      "target": {"x_bottom": 0.0, "x_top": 0.0, "present": false},
+      "layers": [{"kind": "world_line", "x_bottom": -0.16, "x_top": 0.12, "width_px": 5.0, "value": 220, "views": "all"}]
+    }
+  ],
+  "hypotheses": [
+    "Cross-view association should reject view-specific image clutter that cannot form one 3D line.",
+    "Geometry alone cannot identify the physical axis when a surface stripe or another real line is itself multi-view consistent.",
+    "Requiring four rather than three supporting views should trade false acceptance resistance for visibility coverage; neither setting is expected to dominate every case."
+  ]
+}

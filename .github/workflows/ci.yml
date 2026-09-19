@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install validation tools
-        run: python -m pip install "pytest>=8,<10" "ruff>=0.11,<1" "build>=1,<2" "numpy>=2,<3"
+        run: python -m pip install "pytest>=8,<10" "ruff>=0.11,<1" "build>=1,<2" "numpy>=2,<3" "pillow>=10,<13"
       - name: Lint
         run: python -m ruff check .
       - name: Isolated entry points
@@ -45,6 +45,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p test_rod_geometry_audit.py -v
           python -m unittest discover -s tests -p test_rod_profile_controls.py -v
+          python -m unittest discover -s tests -p test_rod_multiview*.py -v
           python -m unittest discover -s tests -p test_background_correspondences.py -v
       - name: Build Python distributions
         run: |

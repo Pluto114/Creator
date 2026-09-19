@@ -1,0 +1,356 @@
+{
+  "state": "complete",
+  "run_id": "rod-multiview-candidates-v1-20260919r1",
+  "scope": "Frozen analytic multi-view candidate association study; RGB and declared coarse guides only during inference; infinite centerline identity, not endpoint or topology recovery.",
+  "protocol_sha256": "4145dcefb400ac1266ff4b48efcb46956831b493ad0fd762edd0d735138d6e77",
+  "inference_sha256": "269acb7ed411de8d949798eed5f71a3ea7a446f4c21c15408d1ebec012dd9688",
+  "evaluation_policy": {
+    "line_distance_tolerance_world": 0.03,
+    "angle_tolerance_deg": 2.0,
+    "no_truth_nearest_assignment_when_identity_ambiguous": true,
+    "primary_split": "evaluation",
+    "development_split_is_not_a_second_test_set": true
+  },
+  "summaries": [
+    {
+      "split": "development",
+      "variant": "support_3_views",
+      "case_count": 6,
+      "classification_counts": {
+        "correct_accept": 3,
+        "false_accept_empty": 2,
+        "safe_identity_ambiguity": 1
+      }
+    },
+    {
+      "split": "development",
+      "variant": "support_4_views",
+      "case_count": 6,
+      "classification_counts": {
+        "correct_accept": 2,
+        "false_accept_empty": 1,
+        "safe_empty_refusal": 1,
+        "safe_identity_ambiguity": 1,
+        "target_refused": 1
+      }
+    },
+    {
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "case_count": 6,
+      "classification_counts": {
+        "correct_accept": 3,
+        "false_accept_empty": 1,
+        "safe_identity_ambiguity": 1,
+        "wrong_line_accept": 1
+      }
+    },
+    {
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "case_count": 6,
+      "classification_counts": {
+        "correct_accept": 2,
+        "false_accept_empty": 1,
+        "safe_identity_ambiguity": 1,
+        "target_refused": 1,
+        "wrong_line_accept": 1
+      }
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "d01_clean_vertical",
+      "split": "development",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": {
+        "angle_error_deg": 0.0,
+        "target_to_line_distance_median": 7.461037401901136e-15,
+        "target_to_line_distance_p95": 1.1692799627979544e-14
+      }
+    },
+    {
+      "case_id": "d01_clean_vertical",
+      "split": "development",
+      "variant": "support_4_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": {
+        "angle_error_deg": 0.0,
+        "target_to_line_distance_median": 7.461037401901136e-15,
+        "target_to_line_distance_p95": 1.1692799627979544e-14
+      }
+    },
+    {
+      "case_id": "d02_inconsistent_background_only",
+      "split": "development",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "false_accept_empty",
+      "support_view_count": 3,
+      "unique_hypothesis_count": 1,
+      "metrics": null
+    },
+    {
+      "case_id": "d02_inconsistent_background_only",
+      "split": "development",
+      "variant": "support_4_views",
+      "state": "rejected",
+      "classification": "safe_empty_refusal",
+      "support_view_count": 0,
+      "unique_hypothesis_count": 0,
+      "metrics": null
+    },
+    {
+      "case_id": "d03_target_plus_inconsistent_clutter",
+      "split": "development",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 26,
+      "metrics": {
+        "angle_error_deg": 0.0,
+        "target_to_line_distance_median": 7.461037401901136e-15,
+        "target_to_line_distance_p95": 1.1692799627979544e-14
+      }
+    },
+    {
+      "case_id": "d03_target_plus_inconsistent_clutter",
+      "split": "development",
+      "variant": "support_4_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 4,
+      "metrics": {
+        "angle_error_deg": 0.0,
+        "target_to_line_distance_median": 7.461037401901136e-15,
+        "target_to_line_distance_p95": 1.1692799627979544e-14
+      }
+    },
+    {
+      "case_id": "d04_consistent_background_only",
+      "split": "development",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "false_accept_empty",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": null
+    },
+    {
+      "case_id": "d04_consistent_background_only",
+      "split": "development",
+      "variant": "support_4_views",
+      "state": "accepted",
+      "classification": "false_accept_empty",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": null
+    },
+    {
+      "case_id": "d05_two_consistent_lines",
+      "split": "development",
+      "variant": "support_3_views",
+      "state": "ambiguous",
+      "classification": "safe_identity_ambiguity",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 13,
+      "metrics": null
+    },
+    {
+      "case_id": "d05_two_consistent_lines",
+      "split": "development",
+      "variant": "support_4_views",
+      "state": "ambiguous",
+      "classification": "safe_identity_ambiguity",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 3,
+      "metrics": null
+    },
+    {
+      "case_id": "d06_three_view_visibility",
+      "split": "development",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 3,
+      "unique_hypothesis_count": 1,
+      "metrics": {
+        "angle_error_deg": 0.0,
+        "target_to_line_distance_median": 8.074287518755883e-15,
+        "target_to_line_distance_p95": 1.9460727452335088e-14
+      }
+    },
+    {
+      "case_id": "d06_three_view_visibility",
+      "split": "development",
+      "variant": "support_4_views",
+      "state": "rejected",
+      "classification": "target_refused",
+      "support_view_count": 0,
+      "unique_hypothesis_count": 0,
+      "metrics": null
+    },
+    {
+      "case_id": "e01_clean_sloped",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": {
+        "angle_error_deg": 0.15302655885362143,
+        "target_to_line_distance_median": 0.0018121431604073562,
+        "target_to_line_distance_p95": 0.004124354058251636
+      }
+    },
+    {
+      "case_id": "e01_clean_sloped",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": {
+        "angle_error_deg": 0.15302655885362143,
+        "target_to_line_distance_median": 0.0018121431604073562,
+        "target_to_line_distance_p95": 0.004124354058251636
+      }
+    },
+    {
+      "case_id": "e02_target_plus_new_clutter",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 25,
+      "metrics": {
+        "angle_error_deg": 0.09534389734562664,
+        "target_to_line_distance_median": 0.0011382869386804967,
+        "target_to_line_distance_p95": 0.002325950084444549
+      }
+    },
+    {
+      "case_id": "e02_target_plus_new_clutter",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 4,
+      "metrics": {
+        "angle_error_deg": 0.09534389734562664,
+        "target_to_line_distance_median": 0.0011382869386804967,
+        "target_to_line_distance_p95": 0.002325950084444549
+      }
+    },
+    {
+      "case_id": "e03_consistent_surface_stripe",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "wrong_line_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": {
+        "angle_error_deg": 0.0,
+        "target_to_line_distance_median": 0.07500000000000186,
+        "target_to_line_distance_p95": 0.07500000000000218
+      }
+    },
+    {
+      "case_id": "e03_consistent_surface_stripe",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "state": "accepted",
+      "classification": "wrong_line_accept",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": {
+        "angle_error_deg": 0.0,
+        "target_to_line_distance_median": 0.07500000000000186,
+        "target_to_line_distance_p95": 0.07500000000000218
+      }
+    },
+    {
+      "case_id": "e04_two_new_consistent_lines",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "state": "ambiguous",
+      "classification": "safe_identity_ambiguity",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 13,
+      "metrics": null
+    },
+    {
+      "case_id": "e04_two_new_consistent_lines",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "state": "ambiguous",
+      "classification": "safe_identity_ambiguity",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 3,
+      "metrics": null
+    },
+    {
+      "case_id": "e05_three_new_views",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "correct_accept",
+      "support_view_count": 3,
+      "unique_hypothesis_count": 1,
+      "metrics": {
+        "angle_error_deg": 0.0231889712343354,
+        "target_to_line_distance_median": 0.0008065474613536263,
+        "target_to_line_distance_p95": 0.001299260730476412
+      }
+    },
+    {
+      "case_id": "e05_three_new_views",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "state": "rejected",
+      "classification": "target_refused",
+      "support_view_count": 0,
+      "unique_hypothesis_count": 0,
+      "metrics": null
+    },
+    {
+      "case_id": "e06_consistent_new_background_only",
+      "split": "evaluation",
+      "variant": "support_3_views",
+      "state": "accepted",
+      "classification": "false_accept_empty",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": null
+    },
+    {
+      "case_id": "e06_consistent_new_background_only",
+      "split": "evaluation",
+      "variant": "support_4_views",
+      "state": "accepted",
+      "classification": "false_accept_empty",
+      "support_view_count": 5,
+      "unique_hypothesis_count": 1,
+      "metrics": null
+    }
+  ],
+  "limitations": [
+    "Analytic images and exact supplied cameras are mechanism controls, not real-scene performance.",
+    "The method estimates infinite line identity only; endpoint, gap, occlusion cause, and physical existence are not recovered.",
+    "A multi-view-consistent surface stripe or separate line can satisfy geometry while remaining the wrong target."
+  ]
+}
