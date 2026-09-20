@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-candidate-ablation-v1-20260920r1",
+  "source_run_id": "rod-identity-stress-v2-20260919r4",
+  "scope": "development_regression on five already-seen procedural scenes; exact cameras and synthetic guides; no generalization claim",
+  "case_ids": [
+    "s01",
+    "s04",
+    "s05",
+    "s07",
+    "s10"
+  ],
+  "search_offsets_px": [
+    0,
+    8
+  ],
+  "identity_offsets_px": [
+    0,
+    8,
+    16
+  ],
+  "candidate_caps": [
+    8,
+    16
+  ],
+  "association_budget": 50000,
+  "evaluation": {
+    "line_distance_tolerance_world_m": 0.025,
+    "angle_tolerance_deg": 2.0,
+    "curve_tolerance_m": 0.025,
+    "curve_spacing_m": 0.002,
+    "primary_split": "development_regression"
+  },
+  "legacy_pool_checks": [
+    {
+      "case_id": "s01",
+      "search_offset_px": 0,
+      "view_id": "view_-32"
+    },
+    {
+      "case_id": "s07",
+      "search_offset_px": 8,
+      "view_id": "view_+02"
+    }
+  ],
+  "edge_probe_offset_px": 1.0,
+  "freeze_note": "Both search windows fixed before this run. Generate one full deduplicated pool per view from the existing fixed RANSAC seed/trials; caps are nested prefixes. Compute association once per search/cap, then change only identity guide. Both association budgets cover all 40960 triples. No old inference or truth is read during new inference; reference comparisons and edge ID probes are evaluation only.",
+  "implementation_note": "Original partial 20260920 run retained as performance preflight. Cache fixed candidate projections and batch the same median residual operation; unchanged legacy association remains the reference. Require complete canonical output equality before this new source freeze, plus old cap8 regression at evaluation."
+}

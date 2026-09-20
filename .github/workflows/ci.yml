@@ -47,7 +47,7 @@ jobs:
           python -m unittest discover -s tests -p test_rod_profile_controls.py -v
           python -m unittest discover -s tests -p test_rod_multiview*.py -v
           python -m unittest discover -s tests -p test_rod_identity*.py -v
-          python -m unittest discover -s tests -p test_rod_candidate_extent.py -v
+          python -m unittest discover -s tests -p test_rod_candidate*.py -v
           python -m unittest discover -s tests -p test_background_correspondences.py -v
       - name: Build Python distributions
         run: |
