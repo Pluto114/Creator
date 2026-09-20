@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-cylinder-support-v1-20260920",
+  "baseline_run_id": "rod-refit-support-v1-20260920",
+  "source_run_id": "rod-identity-stress-v2-20260919r4",
+  "scope": "development_regression: same five known scenes, frozen RGB-derived candidates and exact cameras; stored best plus competing alternatives only",
+  "cylinder_screen": {
+    "edge_tolerance_px": 1.0,
+    "minimum_side_fraction": 0.9,
+    "minimum_views": 4
+  },
+  "analytic_controls": "docs/experiments/results/2026-09-20-cylinder-support-controls.json",
+  "evaluation": {
+    "line_distance_tolerance_world_m": 0.025,
+    "angle_tolerance_deg": 2.0,
+    "curve_tolerance_m": 0.025,
+    "curve_spacing_m": 0.002,
+    "primary_split": "development_regression"
+  },
+  "freeze_note": "Development variant motivated by strict-screen regression, not a held-out result. Pixel tolerance 1 and side fraction .9 unchanged. Screen all originally supporting views once, retain at least four individually consistent views, remove failing views from both axis fit and finite support, then refit and strictly screen all retained views once. No iterative subset search, no negative votes from excluded views. Preserve strict-screen results separately."
+}

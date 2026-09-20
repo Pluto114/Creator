@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-cylinder-screen-v1-20260920",
+  "baseline_run_id": "rod-refit-support-v1-20260920",
+  "source_run_id": "rod-identity-stress-v2-20260919r4",
+  "scope": "development_regression: same five known scenes, frozen RGB-derived candidates and exact cameras; stored best plus competing alternatives only",
+  "cylinder_screen": {
+    "edge_tolerance_px": 1.0,
+    "minimum_side_fraction": 0.9,
+    "minimum_views": 4
+  },
+  "analytic_controls": "docs/experiments/results/2026-09-20-cylinder-controls.json",
+  "evaluation": {
+    "line_distance_tolerance_world_m": 0.025,
+    "angle_tolerance_deg": 2.0,
+    "curve_tolerance_m": 0.025,
+    "curve_spacing_m": 0.002,
+    "primary_split": "development_regression"
+  },
+  "freeze_note": "One shared radius from balanced per-view/per-side medians. Refit each distinct retained assignment with all its supporting image lines, project exact circular-cylinder silhouettes, require at least 90% of each side within 1 original-image pixel in every supporting view (at least four). Unique survivor remains conditional on the stored competitor set; keep existing guide and finite checks; recheck final finite axis. No threshold search on RGB outcomes. This is a model assumption, not calibrated detector uncertainty or target identity proof."
+}

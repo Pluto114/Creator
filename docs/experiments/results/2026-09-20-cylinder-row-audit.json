@@ -1,0 +1,717 @@
+{
+  "state": "complete",
+  "truth_read": true,
+  "predictions_changed": false,
+  "scope": "post-hoc explanation only; all five default-window cap8 best assignments, never a selection feature",
+  "source_sha256": "6c715e77c26fa67c43f7c86e4122613189ae20c5fadc98bf013c96817b22c238",
+  "inference_sha256": "8a93c8782d1167dfdcfe673d4fbecda1a0571de9ea4f0ae25ace74c374a86c39",
+  "truth_artifacts_sha256": "d51003cd713580ac407373f3658e8c8566b96a52342d0da733836f47c33af212",
+  "rows": [
+    {
+      "case_id": "s01",
+      "view_id": "view_-32",
+      "matched_rows": 321,
+      "bad_rows": 2,
+      "bad_row_intervals": [
+        [
+          139,
+          139
+        ],
+        [
+          148,
+          148
+        ]
+      ],
+      "bad_center_ids": {
+        "1": 2
+      },
+      "good_center_ids": {
+        "1": 319
+      }
+    },
+    {
+      "case_id": "s01",
+      "view_id": "view_-16",
+      "matched_rows": 321,
+      "bad_rows": 0,
+      "bad_row_intervals": [],
+      "bad_center_ids": {},
+      "good_center_ids": {
+        "1": 321
+      }
+    },
+    {
+      "case_id": "s01",
+      "view_id": "view_+02",
+      "matched_rows": 321,
+      "bad_rows": 0,
+      "bad_row_intervals": [],
+      "bad_center_ids": {},
+      "good_center_ids": {
+        "1": 321
+      }
+    },
+    {
+      "case_id": "s01",
+      "view_id": "view_+19",
+      "matched_rows": 328,
+      "bad_rows": 8,
+      "bad_row_intervals": [
+        [
+          36,
+          42
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "bad_center_ids": {
+        "100": 8
+      },
+      "good_center_ids": {
+        "1": 320
+      }
+    },
+    {
+      "case_id": "s01",
+      "view_id": "view_+35",
+      "matched_rows": 344,
+      "bad_rows": 23,
+      "bad_row_intervals": [
+        [
+          20,
+          28
+        ],
+        [
+          41,
+          43
+        ],
+        [
+          59,
+          69
+        ]
+      ],
+      "bad_center_ids": {
+        "100": 23
+      },
+      "good_center_ids": {
+        "1": 321
+      }
+    },
+    {
+      "case_id": "s04",
+      "view_id": "view_-32",
+      "matched_rows": 269,
+      "bad_rows": 0,
+      "bad_row_intervals": [],
+      "bad_center_ids": {},
+      "good_center_ids": {
+        "1": 269
+      }
+    },
+    {
+      "case_id": "s04",
+      "view_id": "view_-16",
+      "matched_rows": 269,
+      "bad_rows": 0,
+      "bad_row_intervals": [],
+      "bad_center_ids": {},
+      "good_center_ids": {
+        "1": 269
+      }
+    },
+    {
+      "case_id": "s04",
+      "view_id": "view_+02",
+      "matched_rows": 269,
+      "bad_rows": 0,
+      "bad_row_intervals": [],
+      "bad_center_ids": {},
+      "good_center_ids": {
+        "1": 269
+      }
+    },
+    {
+      "case_id": "s04",
+      "view_id": "view_+19",
+      "matched_rows": 276,
+      "bad_rows": 8,
+      "bad_row_intervals": [
+        [
+          36,
+          42
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "bad_center_ids": {
+        "100": 8
+      },
+      "good_center_ids": {
+        "1": 268
+      }
+    },
+    {
+      "case_id": "s04",
+      "view_id": "view_+35",
+      "matched_rows": 301,
+      "bad_rows": 33,
+      "bad_row_intervals": [
+        [
+          20,
+          28
+        ],
+        [
+          41,
+          43
+        ],
+        [
+          59,
+          69
+        ],
+        [
+          257,
+          265
+        ],
+        [
+          399,
+          399
+        ]
+      ],
+      "bad_center_ids": {
+        "100": 32,
+        "1": 1
+      },
+      "good_center_ids": {
+        "1": 268
+      }
+    },
+    {
+      "case_id": "s05",
+      "view_id": "view_-32",
+      "matched_rows": 127,
+      "bad_rows": 127,
+      "bad_row_intervals": [
+        [
+          79,
+          95
+        ],
+        [
+          117,
+          131
+        ],
+        [
+          139,
+          139
+        ],
+        [
+          148,
+          148
+        ],
+        [
+          150,
+          150
+        ],
+        [
+          307,
+          398
+        ]
+      ],
+      "bad_center_ids": {
+        "1": 127
+      },
+      "good_center_ids": {}
+    },
+    {
+      "case_id": "s05",
+      "view_id": "view_-16",
+      "matched_rows": 135,
+      "bad_rows": 120,
+      "bad_row_intervals": [
+        [
+          79,
+          124
+        ],
+        [
+          127,
+          127
+        ],
+        [
+          129,
+          132
+        ],
+        [
+          135,
+          138
+        ],
+        [
+          141,
+          142
+        ],
+        [
+          144,
+          151
+        ],
+        [
+          153,
+          162
+        ],
+        [
+          164,
+          178
+        ],
+        [
+          180,
+          181
+        ],
+        [
+          297,
+          297
+        ],
+        [
+          299,
+          314
+        ],
+        [
+          316,
+          317
+        ],
+        [
+          319,
+          319
+        ],
+        [
+          325,
+          326
+        ],
+        [
+          335,
+          335
+        ],
+        [
+          337,
+          337
+        ],
+        [
+          345,
+          347
+        ],
+        [
+          358,
+          358
+        ]
+      ],
+      "bad_center_ids": {
+        "1": 120
+      },
+      "good_center_ids": {
+        "1": 15
+      }
+    },
+    {
+      "case_id": "s05",
+      "view_id": "view_+02",
+      "matched_rows": 128,
+      "bad_rows": 98,
+      "bad_row_intervals": [
+        [
+          79,
+          147
+        ],
+        [
+          320,
+          334
+        ],
+        [
+          361,
+          374
+        ]
+      ],
+      "bad_center_ids": {
+        "1": 69,
+        "100": 29
+      },
+      "good_center_ids": {
+        "1": 30
+      }
+    },
+    {
+      "case_id": "s05",
+      "view_id": "view_+19",
+      "matched_rows": 83,
+      "bad_rows": 83,
+      "bad_row_intervals": [
+        [
+          36,
+          42
+        ],
+        [
+          44,
+          44
+        ],
+        [
+          79,
+          148
+        ],
+        [
+          297,
+          298
+        ],
+        [
+          301,
+          302
+        ],
+        [
+          394,
+          394
+        ]
+      ],
+      "bad_center_ids": {
+        "100": 9,
+        "1": 74
+      },
+      "good_center_ids": {}
+    },
+    {
+      "case_id": "s05",
+      "view_id": "view_+35",
+      "matched_rows": 81,
+      "bad_rows": 81,
+      "bad_row_intervals": [
+        [
+          100,
+          109
+        ],
+        [
+          133,
+          188
+        ],
+        [
+          295,
+          307
+        ],
+        [
+          349,
+          350
+        ]
+      ],
+      "bad_center_ids": {
+        "1": 79,
+        "100": 2
+      },
+      "good_center_ids": {}
+    },
+    {
+      "case_id": "s07",
+      "view_id": "view_-32",
+      "matched_rows": 256,
+      "bad_rows": 76,
+      "bad_row_intervals": [
+        [
+          79,
+          96
+        ],
+        [
+          100,
+          101
+        ],
+        [
+          105,
+          105
+        ],
+        [
+          107,
+          107
+        ],
+        [
+          111,
+          116
+        ],
+        [
+          131,
+          136
+        ],
+        [
+          151,
+          176
+        ],
+        [
+          191,
+          198
+        ],
+        [
+          200,
+          201
+        ],
+        [
+          211,
+          216
+        ]
+      ],
+      "bad_center_ids": {
+        "1": 76
+      },
+      "good_center_ids": {
+        "1": 180
+      }
+    },
+    {
+      "case_id": "s07",
+      "view_id": "view_-16",
+      "matched_rows": 321,
+      "bad_rows": 104,
+      "bad_row_intervals": [
+        [
+          79,
+          182
+        ]
+      ],
+      "bad_center_ids": {
+        "1": 104
+      },
+      "good_center_ids": {
+        "1": 217
+      }
+    },
+    {
+      "case_id": "s07",
+      "view_id": "view_+02",
+      "matched_rows": 321,
+      "bad_rows": 0,
+      "bad_row_intervals": [],
+      "bad_center_ids": {},
+      "good_center_ids": {
+        "1": 321
+      }
+    },
+    {
+      "case_id": "s07",
+      "view_id": "view_+19",
+      "matched_rows": 328,
+      "bad_rows": 8,
+      "bad_row_intervals": [
+        [
+          36,
+          42
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "bad_center_ids": {
+        "100": 8
+      },
+      "good_center_ids": {
+        "1": 320
+      }
+    },
+    {
+      "case_id": "s07",
+      "view_id": "view_+35",
+      "matched_rows": 344,
+      "bad_rows": 23,
+      "bad_row_intervals": [
+        [
+          20,
+          28
+        ],
+        [
+          41,
+          43
+        ],
+        [
+          59,
+          69
+        ]
+      ],
+      "bad_center_ids": {
+        "100": 23
+      },
+      "good_center_ids": {
+        "1": 321
+      }
+    },
+    {
+      "case_id": "s10",
+      "view_id": "view_-32",
+      "matched_rows": 262,
+      "bad_rows": 182,
+      "bad_row_intervals": [
+        [
+          36,
+          46
+        ],
+        [
+          117,
+          118
+        ],
+        [
+          162,
+          199
+        ],
+        [
+          258,
+          336
+        ],
+        [
+          338,
+          338
+        ],
+        [
+          345,
+          395
+        ]
+      ],
+      "bad_center_ids": {
+        "100": 11,
+        "2": 171
+      },
+      "good_center_ids": {
+        "100": 22,
+        "2": 58
+      }
+    },
+    {
+      "case_id": "s10",
+      "view_id": "view_-16",
+      "matched_rows": 255,
+      "bad_rows": 134,
+      "bad_row_intervals": [
+        [
+          140,
+          160
+        ],
+        [
+          282,
+          394
+        ]
+      ],
+      "bad_center_ids": {
+        "2": 134
+      },
+      "good_center_ids": {
+        "2": 121
+      }
+    },
+    {
+      "case_id": "s10",
+      "view_id": "view_+02",
+      "matched_rows": 189,
+      "bad_rows": 24,
+      "bad_row_intervals": [
+        [
+          81,
+          85
+        ],
+        [
+          207,
+          208
+        ],
+        [
+          218,
+          218
+        ],
+        [
+          220,
+          220
+        ],
+        [
+          226,
+          226
+        ],
+        [
+          238,
+          238
+        ],
+        [
+          247,
+          247
+        ],
+        [
+          251,
+          251
+        ],
+        [
+          258,
+          258
+        ],
+        [
+          261,
+          261
+        ],
+        [
+          268,
+          269
+        ],
+        [
+          280,
+          280
+        ],
+        [
+          287,
+          287
+        ],
+        [
+          289,
+          289
+        ],
+        [
+          301,
+          301
+        ],
+        [
+          327,
+          327
+        ],
+        [
+          333,
+          333
+        ],
+        [
+          336,
+          336
+        ]
+      ],
+      "bad_center_ids": {
+        "2": 24
+      },
+      "good_center_ids": {
+        "2": 165
+      }
+    },
+    {
+      "case_id": "s10",
+      "view_id": "view_+19",
+      "matched_rows": 315,
+      "bad_rows": 8,
+      "bad_row_intervals": [
+        [
+          388,
+          395
+        ]
+      ],
+      "bad_center_ids": {
+        "2": 8
+      },
+      "good_center_ids": {
+        "2": 307
+      }
+    },
+    {
+      "case_id": "s10",
+      "view_id": "view_+35",
+      "matched_rows": 316,
+      "bad_rows": 0,
+      "bad_row_intervals": [],
+      "bad_center_ids": {},
+      "good_center_ids": {
+        "2": 316
+      }
+    }
+  ],
+  "limitations": "Rounded center ID is not proof that paired edges are silhouettes; antialias sampling differs."
+}
