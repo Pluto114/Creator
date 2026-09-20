@@ -1,7 +1,8 @@
 """A complete pool from the existing finite RANSAC sample, before the model cap.
 
-This is a computation control, not a new scoring rule. Candidate prefixes share
-one raw observation package, one random draw sequence, and one stable ranking.
+The default preserves the legacy computation control; corrected experiments
+opt into final support validation. Candidate prefixes share one raw observation
+package, one random draw sequence, and one stable ranking.
 The pool still cannot claim to contain every possible image explanation.
 """
 
@@ -41,7 +42,7 @@ class _PackedRows:
         ]
 
 
-def enumerate_image_line_pool(observations, config):
+def enumerate_image_line_pool(observations, config, *, require_refit_support=False):
     """Return the legacy sorted/deduplicated hypotheses without maximum_models.
 
     For ordinary finite numeric rows from extract_rod_observations/JSON, the
@@ -49,6 +50,10 @@ def enumerate_image_line_pool(observations, config):
     Sampling, least-squares fitting, stable sorting, strict deduplication, and
     row_matches retain the old semantics. ``candidates[:8]`` and ``[:16]`` thus
     share a pool; raising the cap does not trigger new extraction or random draws.
+
+    require_refit_support=True also checks the final matched rows and y span
+    before ranking/deduplication. False intentionally preserves the frozen
+    legacy control; corrected experiments must explicitly request True.
 
     ``sampling`` counts attempts and pre-dedup outcomes; ``deduplication`` counts
     discarded duplicates and retained candidates. Neither is a completeness
@@ -74,6 +79,10 @@ def enumerate_image_line_pool(observations, config):
         "scope": "complete_ranked_pool_from_fixed_legacy_ransac_sample_not_all_image_explanations",
         "maximum_models_applied": False,
     }
+    if require_refit_support:
+        sampling.update(insufficient_refit_support=0, insufficient_refit_y_span=0)
+        result["scope"] = "complete_fixed_sample_pool_with_final_support_validation"
+        result["refit_support_validated"] = True
     if len(rows) < config["minimum_rows"]:
         result["reason"] = "too_few_rows_with_candidates"
         return result
@@ -108,6 +117,16 @@ def enumerate_image_line_pool(observations, config):
             np.c_[ys, np.ones(len(ys))], xs, rcond=None
         )[0]
         matches = packed.support(float(slope), float(intercept), config["inlier_distance_px"])
+        if require_refit_support:
+            # 初筛过了不等于重新拟合后还合格。先挡住缩水的支持集，再排序去重；
+            # 在最终池里删会太晚，不合格项可能已经挤掉旁边的有效解释。
+            if len(matches) < config["minimum_rows"]:
+                sampling["insufficient_refit_support"] += 1
+                continue
+            final_ys = np.array([observations["rows"][i]["y"] for i, _, _ in matches], float)
+            if np.ptp(final_ys) < config["minimum_y_span"]:
+                sampling["insufficient_refit_y_span"] += 1
+                continue
         residuals = np.array([value for _, _, value in matches])
         widths, enclosed = [], []
         for row_index, candidate_index, _ in matches:

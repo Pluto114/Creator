@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-refit-support-v1-20260920",
+  "source_run_id": "rod-identity-stress-v2-20260919r4",
+  "scope": "development_regression on five already-seen procedural scenes; exact cameras and synthetic guides; no generalization claim",
+  "case_ids": [
+    "s01",
+    "s04",
+    "s05",
+    "s07",
+    "s10"
+  ],
+  "search_offsets_px": [
+    0,
+    8
+  ],
+  "identity_offsets_px": [
+    0,
+    8,
+    16
+  ],
+  "candidate_caps": [
+    8,
+    16
+  ],
+  "association_budget": 50000,
+  "evaluation": {
+    "line_distance_tolerance_world_m": 0.025,
+    "angle_tolerance_deg": 2.0,
+    "curve_tolerance_m": 0.025,
+    "curve_spacing_m": 0.002,
+    "primary_split": "development_regression"
+  },
+  "legacy_pool_checks": [
+    {
+      "case_id": "s01",
+      "search_offset_px": 0,
+      "view_id": "view_-32"
+    },
+    {
+      "case_id": "s07",
+      "search_offset_px": 8,
+      "view_id": "view_+02"
+    }
+  ],
+  "edge_probe_offset_px": 1.0,
+  "freeze_note": "Paired development replay from frozen RGB observation rows. The only algorithm change is to recheck final support count and y span after least-squares refit, before sorting and deduplication. Same seeds, trials, cameras, search/identity offsets, caps and thresholds. Three isolated processes compute independent pools; no truth in inference. No new-object claim.",
+  "baseline_run_id": "rod-candidate-ablation-v1-20260920r1",
+  "parallel_workers": 3
+}
