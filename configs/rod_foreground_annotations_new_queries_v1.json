@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0.0",
+  "source_run_id": "rod-foreground-scenes-v1-20260921",
+  "annotation_origin": "assistant inspection of RGB-only pixel grids after method freeze, before anchor inference; not a human-user study",
+  "semantics": "Two visible membership claims on one object, not same-point correspondences. Blank and mixed-object claims are deliberate negative controls.",
+  "rgb_inspection_artifact_sha256": "75e0126481730f4b5be88fd3496548e16d22665b3735d12141552d8ae938612a",
+  "ground_truth_used_for_coordinates": false,
+  "predicted_geometry_used_for_coordinates": false,
+  "queries": [
+    {
+      "query_id": "p01_A",
+      "case_id": "p01",
+      "anchors": [
+        {
+          "view_id": "view_-29",
+          "xy": [
+            308.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "8e901601b154ded0b977c5ff9ebef544d8675e97df3d7a98eb65b968f28798f2"
+        },
+        {
+          "view_id": "view_+23",
+          "xy": [
+            308.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5baccca49dcd5f439a18da257badea151c63e05482404ff3462755e4bebca532"
+        }
+      ]
+    },
+    {
+      "query_id": "p01_B",
+      "case_id": "p01",
+      "anchors": [
+        {
+          "view_id": "view_-29",
+          "xy": [
+            333.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "8e901601b154ded0b977c5ff9ebef544d8675e97df3d7a98eb65b968f28798f2"
+        },
+        {
+          "view_id": "view_+23",
+          "xy": [
+            334.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5baccca49dcd5f439a18da257badea151c63e05482404ff3462755e4bebca532"
+        }
+      ]
+    },
+    {
+      "query_id": "p01_mixed",
+      "case_id": "p01",
+      "anchors": [
+        {
+          "view_id": "view_-29",
+          "xy": [
+            308.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "8e901601b154ded0b977c5ff9ebef544d8675e97df3d7a98eb65b968f28798f2"
+        },
+        {
+          "view_id": "view_+23",
+          "xy": [
+            334.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5baccca49dcd5f439a18da257badea151c63e05482404ff3462755e4bebca532"
+        }
+      ]
+    },
+    {
+      "query_id": "p02_A",
+      "case_id": "p02",
+      "anchors": [
+        {
+          "view_id": "view_-29",
+          "xy": [
+            320.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "ea3d0c93c716ba90a026e5eac2622babe9b5ec653dd10562a8b8f9963a38c2a3"
+        },
+        {
+          "view_id": "view_+23",
+          "xy": [
+            320.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "219420b49c0147a66849778b4c45b9602f14d9a3f4dc57f0c07fff75db560b36"
+        }
+      ]
+    },
+    {
+      "query_id": "p02_B",
+      "case_id": "p02",
+      "anchors": [
+        {
+          "view_id": "view_-29",
+          "xy": [
+            306.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "ea3d0c93c716ba90a026e5eac2622babe9b5ec653dd10562a8b8f9963a38c2a3"
+        },
+        {
+          "view_id": "view_+23",
+          "xy": [
+            331.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "219420b49c0147a66849778b4c45b9602f14d9a3f4dc57f0c07fff75db560b36"
+        }
+      ]
+    },
+    {
+      "query_id": "p03_A",
+      "case_id": "p03",
+      "anchors": [
+        {
+          "view_id": "view_-29",
+          "xy": [
+            314.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "b19f5e0b185a254e20ad4749a7945d0df47cde53aba48927fee2f86ee41b4dfe"
+        },
+        {
+          "view_id": "view_+23",
+          "xy": [
+            314.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "4d94ba9d38217d748fa3a8125d671f3f9564309998ee8e91e9dd3e196b2e99c6"
+        }
+      ]
+    },
+    {
+      "query_id": "p03_B",
+      "case_id": "p03",
+      "anchors": [
+        {
+          "view_id": "view_-29",
+          "xy": [
+            341.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "b19f5e0b185a254e20ad4749a7945d0df47cde53aba48927fee2f86ee41b4dfe"
+        },
+        {
+          "view_id": "view_+23",
+          "xy": [
+            342.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "4d94ba9d38217d748fa3a8125d671f3f9564309998ee8e91e9dd3e196b2e99c6"
+        }
+      ]
+    },
+    {
+      "query_id": "p04_blank",
+      "case_id": "p04",
+      "anchors": [
+        {
+          "view_id": "view_-29",
+          "xy": [
+            319.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "833ef19505af8266af7771c672ee7c3da58af1ec56d07dd88ac1d32a1745b6e4"
+        },
+        {
+          "view_id": "view_+23",
+          "xy": [
+            319.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "26d023ef43a1b417878255a839f1fae93524eeb0df54caff690f54815349d4a0"
+        }
+      ]
+    },
+    {
+      "query_id": "p04_B",
+      "case_id": "p04",
+      "anchors": [
+        {
+          "view_id": "view_-29",
+          "xy": [
+            314.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "833ef19505af8266af7771c672ee7c3da58af1ec56d07dd88ac1d32a1745b6e4"
+        },
+        {
+          "view_id": "view_+23",
+          "xy": [
+            331.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "26d023ef43a1b417878255a839f1fae93524eeb0df54caff690f54815349d4a0"
+        }
+      ]
+    }
+  ]
+}

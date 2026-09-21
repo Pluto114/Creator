@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-foreground-scenes-v1-20260921",
+  "scope": "New foreground-query scenes frozen before rendering; same procedural cylinder family, exact cameras. Multiple identity queries share the same RGB and geometry.",
+  "generator": {
+    "size_wh": [
+      640,
+      480
+    ],
+    "angles_degrees": [
+      -29,
+      -11,
+      7,
+      23,
+      38
+    ],
+    "camera_radius_m": 5.8,
+    "camera_height_m": 0.12,
+    "camera_lens_mm": 49,
+    "render_samples": 48,
+    "brick_axes": "XZ",
+    "exposure": -2.0,
+    "independent_probes": true,
+    "guide_xyxy": [
+      [
+        319.5,
+        20
+      ],
+      [
+        319.5,
+        459
+      ]
+    ],
+    "guide_source": "fixed_screen_coordinates_independent_of_target_geometry",
+    "render_case_isolation": true
+  },
+  "method": {
+    "observation": {
+      "scan_half_width": 48,
+      "row_stride": 1,
+      "y_window_radius": 2,
+      "edge_min_contrast": 8.0,
+      "center_min_contrast": 8.0,
+      "min_width": 2.0,
+      "max_width": 42.0,
+      "background_samples": 2,
+      "edge_min_horizontal_fraction": 0.7,
+      "edge_min_row_support": 0.6,
+      "edge_match_tolerance": 1.5,
+      "min_resolved_center_pixels": 2,
+      "flat_max_std": 3.0,
+      "flat_max_gradient": 6.0
+    },
+    "image_hypotheses": {
+      "minimum_rows": 52,
+      "minimum_y_span": 150.0,
+      "inlier_distance_px": 1.2,
+      "trials": 1024,
+      "seed": 19092027,
+      "deduplicate_separation_px": 1.0,
+      "maximum_models": 8
+    },
+    "association_common": {
+      "fit_view_count": 3,
+      "reprojection_threshold_px": 1.5,
+      "deduplicate_separation_px": 0.8,
+      "ambiguity_support_fraction": 0.9,
+      "ambiguity_separation_px": 3.0,
+      "maximum_hypotheses": 50000,
+      "maximum_fit_attempts": 50000,
+      "minimum_support_views": 4
+    },
+    "guide_guard": {
+      "maximum_median_residual_px": 12.0,
+      "minimum_views": 3,
+      "minimum_fraction": 0.75
+    },
+    "extent": {
+      "minimum_fit_views": 4,
+      "minimum_positive_views": 3,
+      "minimum_absent_views": 2,
+      "row_tolerance_px": 1.0,
+      "match_base_px": 2.0,
+      "maximum_half_width_px": 4.0,
+      "step_camera_span_fraction": 0.001,
+      "minimum_run_samples": 3,
+      "maximum_reprojection_error_px": 2.0,
+      "maximum_leave_one_out_angle_degrees": 1.0,
+      "maximum_leave_one_out_offset_camera_span_fraction": 0.002,
+      "minimum_second_to_first_plane_ratio": 1e-05,
+      "minimum_direction_gap_ratio": 1e-08,
+      "maximum_sample_count": 100000
+    },
+    "case_ids": [
+      "p01",
+      "p02",
+      "p03",
+      "p04"
+    ],
+    "search_offsets_px": [
+      0,
+      8
+    ],
+    "identity_offsets_px": [
+      0,
+      8,
+      16
+    ],
+    "candidate_caps": [
+      8,
+      16
+    ],
+    "legacy_pool_checks": [
+      {
+        "case_id": "s01",
+        "search_offset_px": 0,
+        "view_id": "view_-32"
+      },
+      {
+        "case_id": "s07",
+        "search_offset_px": 8,
+        "view_id": "view_+02"
+      }
+    ],
+    "require_refit_support": true,
+    "cylinder_screen": {
+      "edge_tolerance_px": 1.0,
+      "minimum_side_fraction": 0.9,
+      "minimum_views": 4
+    },
+    "parallel_workers": 3
+  },
+  "evaluation": {
+    "line_distance_tolerance_world_m": 0.025,
+    "angle_tolerance_deg": 2.0,
+    "curve_tolerance_m": 0.025,
+    "curve_spacing_m": 0.002,
+    "primary_split": "frozen_new_layout"
+  },
+  "cases": [
+    {
+      "case_id": "p01",
+      "split": "evaluation",
+      "label": "separated_pair",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            -0.085,
+            0,
+            -1.0
+          ],
+          [
+            -0.085,
+            0,
+            1.0
+          ]
+        ],
+        "radius": 0.025,
+        "material": "matte"
+      },
+      "distractors": [
+        {
+          "role": "other_member",
+          "endpoints": [
+            [
+              0.1,
+              0,
+              -1.0
+            ],
+            [
+              0.1,
+              0,
+              1.0
+            ]
+          ],
+          "radius": 0.025
+        }
+      ],
+      "occluder": false
+    },
+    {
+      "case_id": "p02",
+      "split": "evaluation",
+      "label": "depth_overlap_pair",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "radius": 0.025,
+        "material": "matte"
+      },
+      "distractors": [
+        {
+          "role": "other_member",
+          "endpoints": [
+            [
+              0,
+              0.2,
+              -1
+            ],
+            [
+              0,
+              0.2,
+              1
+            ]
+          ],
+          "radius": 0.025
+        }
+      ],
+      "occluder": false
+    },
+    {
+      "case_id": "p03",
+      "split": "evaluation",
+      "label": "gap_with_neighbor",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            -0.04,
+            0,
+            -1
+          ],
+          [
+            -0.04,
+            0,
+            1
+          ]
+        ],
+        "radius": 0.022,
+        "material": "matte",
+        "segments": [
+          [
+            [
+              -0.04,
+              0,
+              -1
+            ],
+            [
+              -0.04,
+              0,
+              -0.22
+            ]
+          ],
+          [
+            [
+              -0.04,
+              0,
+              0.12
+            ],
+            [
+              -0.04,
+              0,
+              1
+            ]
+          ]
+        ]
+      },
+      "distractors": [
+        {
+          "role": "other_member",
+          "endpoints": [
+            [
+              0.16,
+              0,
+              -1
+            ],
+            [
+              0.16,
+              0,
+              1
+            ]
+          ],
+          "radius": 0.02
+        }
+      ],
+      "occluder": false,
+      "gap_segment": [
+        [
+          -0.04,
+          0,
+          -0.22
+        ],
+        [
+          -0.04,
+          0,
+          0.12
+        ]
+      ]
+    },
+    {
+      "case_id": "p04",
+      "split": "evaluation",
+      "label": "empty_with_neighbor",
+      "object_group_id": "procedural-cylinder-family-identity-v2",
+      "target": {
+        "present": false,
+        "endpoints": [
+          [
+            -0.085,
+            0,
+            -1.0
+          ],
+          [
+            -0.085,
+            0,
+            1.0
+          ]
+        ],
+        "radius": 0.025,
+        "material": null
+      },
+      "distractors": [
+        {
+          "role": "other_member",
+          "endpoints": [
+            [
+              0.03,
+              0.13,
+              -1
+            ],
+            [
+              0.03,
+              0.13,
+              1
+            ]
+          ],
+          "radius": 0.023
+        }
+      ],
+      "occluder": false
+    }
+  ],
+  "additional_sources": [
+    "scripts/run_rod_cylinder_validation.py",
+    "scripts/run_rod_support_recheck.py",
+    "scripts/run_rod_candidate_ablation.py",
+    "scripts/run_rod_identity_stress.py",
+    "scripts/thin_pack_gt.py",
+    "experiments/src/creator_eval/rod_candidate_pool.py",
+    "experiments/src/creator_eval/rod_candidate_association.py",
+    "experiments/src/creator_eval/rod_candidate_audit.py",
+    "experiments/src/creator_eval/rod_candidate_extent.py",
+    "experiments/src/creator_eval/rod_evidence.py",
+    "experiments/src/creator_eval/native_diagnostics.py",
+    "experiments/src/creator_eval/rod_radius_consistency.py",
+    "experiments/src/creator_eval/rod_cylinder_gate.py",
+    "experiments/src/creator_eval/rod_cylinder_support.py",
+    "experiments/src/creator_eval/rod_foreground_identity.py",
+    "scripts/run_rod_foreground_identity.py"
+  ],
+  "freeze_note": "All geometry, camera, candidate, cylinder and foreground algorithm sources fixed before these RGB images exist. Foreground annotations will be separately recorded from RGB-only inspection before anchor inference. Old geometry baselines remain annotation-blind; both identity methods receive the same anchors. Alternate-object query truths are evaluation-only exported surface IDs, never inputs."
+}

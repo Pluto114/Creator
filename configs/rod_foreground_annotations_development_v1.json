@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "source_run_id": "rod-cylinder-new-layout-v1-20260920",
+  "annotation_origin": "assistant inspection of RGB-only magnified pixel grids on already-seen development scenes; not a human-user study",
+  "semantics": "Each anchor asserts a visible point on the same requested object; distinct anchors need not denote the same 3D point. n06 intentionally tests an invalid foreground claim in a blank region.",
+  "rgb_inspection_artifact_sha256": "6df4acd44b0bd43617f5178e1dd88ce98b46e930b95d3187d54fea4398cd5d48",
+  "ground_truth_used_for_coordinates": false,
+  "predicted_geometry_used_for_coordinates": false,
+  "queries": [
+    {
+      "query_id": "n01",
+      "case_id": "n01",
+      "anchors": [
+        {
+          "view_id": "view_-37",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "4d6d724c07e59a65edbd1b816c0f494ae7242a9043cf1c262685361c53b227ab"
+        },
+        {
+          "view_id": "view_+24",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "abc7ad1d42e23705c8561f036eeb611c39c0f67079fd140fac76fcdc4927a6ea"
+        }
+      ]
+    },
+    {
+      "query_id": "n02",
+      "case_id": "n02",
+      "anchors": [
+        {
+          "view_id": "view_-37",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "3e3ed5b9bea4cccd3e9cc5765ad487d9d546b716aadcf5e5f5fe24a3fd9808aa"
+        },
+        {
+          "view_id": "view_+24",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "d9f3fe53290f0234a7a494ffbae38944f09b4ee5b1a048de236f83eb950eae49"
+        }
+      ]
+    },
+    {
+      "query_id": "n03",
+      "case_id": "n03",
+      "anchors": [
+        {
+          "view_id": "view_-37",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "883b9c4dc595f5c5e79bb898b6bbac569cc1f2ebfe0dc5dbe5c64646c6f188ee"
+        },
+        {
+          "view_id": "view_+24",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "0f84fdd35a946cb96e84b878ee185f83bc347357fb53e0fec6627af085ea116d"
+        }
+      ]
+    },
+    {
+      "query_id": "n04",
+      "case_id": "n04",
+      "anchors": [
+        {
+          "view_id": "view_-37",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "ad90b873d268b65d48c9cc78c25e8775b26d3e0c39b033373acfb1b2e06f3cbe"
+        },
+        {
+          "view_id": "view_+24",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "fc28d2d5fdeb23483b441d69c782174e12fdf4c7a2955ee322d9ef45764c71ce"
+        }
+      ]
+    },
+    {
+      "query_id": "n05",
+      "case_id": "n05",
+      "anchors": [
+        {
+          "view_id": "view_-37",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "0c63b6ec8fe819be60885dc63bdca240613f3ba05199ac0e75f8bb22c15190bc"
+        },
+        {
+          "view_id": "view_+24",
+          "xy": [
+            317.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "51182d59d1ae20141b5db66369de42bdd21c0ddd53f00dc93b5ff6d30faa851e"
+        }
+      ]
+    },
+    {
+      "query_id": "n06",
+      "case_id": "n06",
+      "anchors": [
+        {
+          "view_id": "view_-37",
+          "xy": [
+            319.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "3fd664e877b42cc1ef7b3a93c237ec09bca8f93cea1d7204d6b113a7ca97c5f6"
+        },
+        {
+          "view_id": "view_+24",
+          "xy": [
+            319.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "169794003b117e5d77f68daeecb1c015a42d6ec9bf6faea9927ac0fe18695ea7"
+        }
+      ]
+    },
+    {
+      "query_id": "n06_wrong_object_click",
+      "case_id": "n06",
+      "anchors": [
+        {
+          "view_id": "view_-37",
+          "xy": [
+            315.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "3fd664e877b42cc1ef7b3a93c237ec09bca8f93cea1d7204d6b113a7ca97c5f6"
+        },
+        {
+          "view_id": "view_+24",
+          "xy": [
+            329.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "169794003b117e5d77f68daeecb1c015a42d6ec9bf6faea9927ac0fe18695ea7"
+        }
+      ]
+    }
+  ]
+}

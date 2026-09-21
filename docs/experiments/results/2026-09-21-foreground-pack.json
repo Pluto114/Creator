@@ -1,0 +1,378 @@
+{
+  "state": "verified",
+  "verifier_sha256": "1b0c54cd42786669482d5dd6a0009bc531aa6f7e2b9de223c0ff6b13ce760683",
+  "axis_fraction_policy": "report only; exact rounding need not preserve coverage of subpixel geometry",
+  "scope": "array/hash/camera contracts plus rounded finite-axis diagnostic; not RGB antialias validation",
+  "run_id": "rod-foreground-scenes-v1-20260921",
+  "input_manifest_sha256": "243cdacf5e6989d2471e43a09248c455cf88b9e401a6690066a3be5f84dd2236",
+  "truth_manifest_sha256": "d2289f965287a6b40dbccd53523322516fd726ce79fd0ad2b4f8ef7161d34eea",
+  "truth_artifact_index_sha256": "53b2228c1ad97e9873117fd10e63f5fcce9038ba4679a2f94456eedac36d390e",
+  "frame_count": 20,
+  "axis_check_count": 15,
+  "minimum_target_or_occluder_fraction": 0.995049504950495,
+  "checks": [
+    "input folder contains RGB plus manifest only",
+    "all frozen RGB and truth artifact hashes match",
+    "camera matrices match between allowed input and truth records",
+    "surface IDs are declared by exported evaluated meshes",
+    "finite depth/range pixels equal ray hits and range is not shorter than camera-Z",
+    "target-visible mask equals surface_id == 1 exactly",
+    "rounded pixels of actual finite target segments reported; thin rods can miss at pixel centers"
+  ],
+  "frames": [
+    {
+      "case_id": "p01",
+      "view_id": "view_-29",
+      "hit_pixels": 269281,
+      "target_visible_pixels": 2398,
+      "surface_ids": [
+        0,
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p01",
+      "view_id": "view_-11",
+      "hit_pixels": 307200,
+      "target_visible_pixels": 2118,
+      "surface_ids": [
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p01",
+      "view_id": "view_+07",
+      "hit_pixels": 307200,
+      "target_visible_pixels": 2107,
+      "surface_ids": [
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p01",
+      "view_id": "view_+23",
+      "hit_pixels": 282883,
+      "target_visible_pixels": 2093,
+      "surface_ids": [
+        0,
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p01",
+      "view_id": "view_+38",
+      "hit_pixels": 249308,
+      "target_visible_pixels": 2390,
+      "surface_ids": [
+        0,
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_-29",
+      "hit_pixels": 269281,
+      "target_visible_pixels": 2408,
+      "surface_ids": [
+        0,
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_-11",
+      "hit_pixels": 307200,
+      "target_visible_pixels": 2408,
+      "surface_ids": [
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_+07",
+      "hit_pixels": 307200,
+      "target_visible_pixels": 2408,
+      "surface_ids": [
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_+23",
+      "hit_pixels": 282883,
+      "target_visible_pixels": 2408,
+      "surface_ids": [
+        0,
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_+38",
+      "hit_pixels": 249308,
+      "target_visible_pixels": 2408,
+      "surface_ids": [
+        0,
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_-29",
+      "hit_pixels": 269281,
+      "target_visible_pixels": 1760,
+      "surface_ids": [
+        0,
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_-11",
+      "hit_pixels": 307200,
+      "target_visible_pixels": 1500,
+      "surface_ids": [
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_+07",
+      "hit_pixels": 307200,
+      "target_visible_pixels": 1500,
+      "surface_ids": [
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_+23",
+      "hit_pixels": 282883,
+      "target_visible_pixels": 1748,
+      "surface_ids": [
+        0,
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_+38",
+      "hit_pixels": 249308,
+      "target_visible_pixels": 1741,
+      "surface_ids": [
+        0,
+        1,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p04",
+      "view_id": "view_-29",
+      "hit_pixels": 269281,
+      "target_visible_pixels": 0,
+      "surface_ids": [
+        0,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p04",
+      "view_id": "view_-11",
+      "hit_pixels": 307200,
+      "target_visible_pixels": 0,
+      "surface_ids": [
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p04",
+      "view_id": "view_+07",
+      "hit_pixels": 307200,
+      "target_visible_pixels": 0,
+      "surface_ids": [
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p04",
+      "view_id": "view_+23",
+      "hit_pixels": 282883,
+      "target_visible_pixels": 0,
+      "surface_ids": [
+        0,
+        2,
+        100,
+        101
+      ]
+    },
+    {
+      "case_id": "p04",
+      "view_id": "view_+38",
+      "hit_pixels": 249308,
+      "target_visible_pixels": 0,
+      "surface_ids": [
+        0,
+        2,
+        100,
+        101
+      ]
+    }
+  ],
+  "axis_checks": [
+    {
+      "case_id": "p01",
+      "view_id": "view_-29",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p01",
+      "view_id": "view_-11",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p01",
+      "view_id": "view_+07",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p01",
+      "view_id": "view_+23",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p01",
+      "view_id": "view_+38",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_-29",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_-11",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_+07",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_+23",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p02",
+      "view_id": "view_+38",
+      "sample_count": 101,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 1
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_-29",
+      "sample_count": 202,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 2
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_-11",
+      "sample_count": 202,
+      "target_or_occluder_fraction": 1.0,
+      "finite_truth_segments": 2
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_+07",
+      "sample_count": 202,
+      "target_or_occluder_fraction": 0.995049504950495,
+      "finite_truth_segments": 2
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_+23",
+      "sample_count": 202,
+      "target_or_occluder_fraction": 0.995049504950495,
+      "finite_truth_segments": 2
+    },
+    {
+      "case_id": "p03",
+      "view_id": "view_+38",
+      "sample_count": 202,
+      "target_or_occluder_fraction": 0.995049504950495,
+      "finite_truth_segments": 2
+    }
+  ]
+}

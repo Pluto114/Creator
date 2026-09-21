@@ -1,0 +1,858 @@
+{
+  "state": "summarized",
+  "source_sha256": {
+    "2026-09-21-foreground-development.json": "6912f8d9ce09c702cf20ce429f107615e9c96986556202e4637b3e4c86705336",
+    "2026-09-21-foreground-new-queries.json": "752ff81117d6517971b931061c9e37def0f3050f8ed0dfcde32bfa7eea384767"
+  },
+  "runs": [
+    {
+      "run_id": "rod-foreground-development-v1-20260921",
+      "row_count": 560,
+      "incremental_seconds": 76.56335810000019,
+      "groups": [
+        {
+          "method": "baseline",
+          "profile": "two_clicks",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 12,
+            "target_refused": 4,
+            "target_refused_ambiguous": 4,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "two_clicks",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 2,
+            "false_accept_empty": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-1_+1",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused_ambiguous": 8,
+            "target_refused": 4,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-1_+1",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 2,
+            "false_accept_empty": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+1_-1",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 12,
+            "target_refused": 4,
+            "target_refused_ambiguous": 4,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+1_-1",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 2,
+            "false_accept_empty": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-2_+2",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 11,
+            "target_refused": 8,
+            "target_refused_ambiguous": 1,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-2_+2",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 2,
+            "false_accept_empty": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+2_-2",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused_ambiguous": 8,
+            "target_refused": 4,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+2_-2",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 2,
+            "false_accept_empty": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-4_+4",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "target_refused_ambiguous": 12,
+            "target_refused": 8,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-4_+4",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+4_-4",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "target_refused_ambiguous": 12,
+            "target_refused": 8,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+4_-4",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "wide_uncertainty",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused_ambiguous": 8,
+            "target_refused": 4,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "wide_uncertainty",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 2,
+            "false_accept_empty": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "one_click",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "target_refused_ambiguous": 20,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "one_click",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "no_click",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "target_refused_ambiguous": 20,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "no_click",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "two_clicks",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 12,
+            "target_refused": 8,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "two_clicks",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "false_accept_empty": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-1_+1",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused_ambiguous": 4,
+            "target_refused": 8,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-1_+1",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "false_accept_empty": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+1_-1",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 12,
+            "target_refused": 8,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+1_-1",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "false_accept_empty": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-2_+2",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused": 12,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-2_+2",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "false_accept_empty": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+2_-2",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused_ambiguous": 4,
+            "target_refused": 8,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+2_-2",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "false_accept_empty": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-4_+4",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "target_refused_ambiguous": 8,
+            "target_refused": 12,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-4_+4",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+4_-4",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "target_refused_ambiguous": 8,
+            "target_refused": 12,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+4_-4",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "wide_uncertainty",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused_ambiguous": 4,
+            "target_refused": 8,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "wide_uncertainty",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "false_accept_empty": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "one_click",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "target_refused_ambiguous": 20,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "one_click",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "no_click",
+          "role": "primary",
+          "count": 24,
+          "classifications": {
+            "target_refused_ambiguous": 20,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "no_click",
+          "role": "wrong_annotation_control",
+          "count": 4,
+          "classifications": {
+            "safe_empty_refusal": 4
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "rod-foreground-new-queries-v1-20260921",
+      "row_count": 720,
+      "incremental_seconds": 100.07223259999955,
+      "groups": [
+        {
+          "method": "baseline",
+          "profile": "two_clicks",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 13,
+            "target_refused_ambiguous": 14,
+            "target_refused": 1,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "two_clicks",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 2,
+            "target_refused": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-1_+1",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 14,
+            "target_refused_ambiguous": 12,
+            "target_refused": 2,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-1_+1",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 2,
+            "target_refused": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+1_-1",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 14,
+            "target_refused_ambiguous": 13,
+            "target_refused": 1,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+1_-1",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 2,
+            "target_refused": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-2_+2",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 15,
+            "target_refused_ambiguous": 11,
+            "target_refused": 2,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-2_+2",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 2,
+            "target_refused": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+2_-2",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 9,
+            "target_refused_ambiguous": 18,
+            "target_refused": 1,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+2_-2",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 2,
+            "target_refused": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-4_+4",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "target_refused_ambiguous": 13,
+            "target_refused": 15,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_-4_+4",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+4_-4",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "target_refused_ambiguous": 15,
+            "target_refused": 12,
+            "wrong_line_accept": 1,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "jitter_+4_-4",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "wide_uncertainty",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 11,
+            "target_refused_ambiguous": 16,
+            "target_refused": 1,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "wide_uncertainty",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 2,
+            "target_refused": 2
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "one_click",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "target_refused_ambiguous": 28,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "one_click",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "no_click",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "target_refused_ambiguous": 28,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "baseline",
+          "profile": "no_click",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "two_clicks",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused": 10,
+            "target_refused_ambiguous": 10,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "two_clicks",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-1_+1",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused": 10,
+            "target_refused_ambiguous": 10,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-1_+1",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+1_-1",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused": 10,
+            "target_refused_ambiguous": 10,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+1_-1",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-2_+2",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused": 10,
+            "target_refused_ambiguous": 10,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-2_+2",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+2_-2",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused": 10,
+            "target_refused_ambiguous": 10,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+2_-2",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-4_+4",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "target_refused_ambiguous": 10,
+            "target_refused": 18,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_-4_+4",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+4_-4",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "target_refused_ambiguous": 8,
+            "target_refused": 20,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "jitter_+4_-4",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "wide_uncertainty",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "correct_accept": 8,
+            "target_refused": 10,
+            "target_refused_ambiguous": 10,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "wide_uncertainty",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "one_click",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "target_refused_ambiguous": 28,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "one_click",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "no_click",
+          "role": "primary",
+          "count": 32,
+          "classifications": {
+            "target_refused_ambiguous": 28,
+            "safe_empty_refusal": 4
+          }
+        },
+        {
+          "method": "cylinder_support",
+          "profile": "no_click",
+          "role": "mixed_annotation_control",
+          "count": 4,
+          "classifications": {
+            "target_refused_ambiguous": 4
+          }
+        }
+      ]
+    }
+  ],
+  "independent_rays": {
+    "frames": 20,
+    "samples": 20800,
+    "surface_id_mismatches": 0,
+    "max_z_error_m": 2.8249813235348142e-06,
+    "max_projection_error_px": 2.8800524887628853e-05,
+    "scope": "Independent Blender/Open3D pixel-center geometry checks; not RGB antialiasing precision"
+  },
+  "caveat": "Correct axis acceptance is not complete curve recovery or topological success. Counts repeat conditions and queries on shared objects."
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-foreground-development-v1-20260921",
+  "source_run_id": "rod-cylinder-new-layout-v1-20260920",
+  "annotation_file": "configs/rod_foreground_annotations_development_v1.json",
+  "scope": "already-seen development replay with additional RGB-only foreground claims; not a human study or held-out evaluation",
+  "identity_policy": {
+    "minimum_anchor_views": 2
+  },
+  "profiles": [
+    {
+      "name": "two_clicks",
+      "dx_per_anchor": [
+        0,
+        0
+      ],
+      "uncertainty_px": 0.5,
+      "keep_anchors": 2
+    },
+    {
+      "name": "jitter_-1_+1",
+      "dx_per_anchor": [
+        -1,
+        1
+      ],
+      "uncertainty_px": 0.5,
+      "keep_anchors": 2
+    },
+    {
+      "name": "jitter_+1_-1",
+      "dx_per_anchor": [
+        1,
+        -1
+      ],
+      "uncertainty_px": 0.5,
+      "keep_anchors": 2
+    },
+    {
+      "name": "jitter_-2_+2",
+      "dx_per_anchor": [
+        -2,
+        2
+      ],
+      "uncertainty_px": 0.5,
+      "keep_anchors": 2
+    },
+    {
+      "name": "jitter_+2_-2",
+      "dx_per_anchor": [
+        2,
+        -2
+      ],
+      "uncertainty_px": 0.5,
+      "keep_anchors": 2
+    },
+    {
+      "name": "jitter_-4_+4",
+      "dx_per_anchor": [
+        -4,
+        4
+      ],
+      "uncertainty_px": 0.5,
+      "keep_anchors": 2
+    },
+    {
+      "name": "jitter_+4_-4",
+      "dx_per_anchor": [
+        4,
+        -4
+      ],
+      "uncertainty_px": 0.5,
+      "keep_anchors": 2
+    },
+    {
+      "name": "wide_uncertainty",
+      "dx_per_anchor": [
+        0,
+        0
+      ],
+      "uncertainty_px": 1.5,
+      "keep_anchors": 2
+    },
+    {
+      "name": "one_click",
+      "dx_per_anchor": [
+        0,
+        0
+      ],
+      "uncertainty_px": 0.5,
+      "keep_anchors": 1
+    },
+    {
+      "name": "no_click",
+      "dx_per_anchor": [
+        0,
+        0
+      ],
+      "uncertainty_px": 0.5,
+      "keep_anchors": 0
+    }
+  ],
+  "parallel_workers": 3,
+  "evaluation": {
+    "line_distance_tolerance_world_m": 0.025,
+    "angle_tolerance_deg": 2.0,
+    "curve_tolerance_m": 0.025,
+    "curve_spacing_m": 0.002,
+    "primary_split": "frozen_new_layout"
+  },
+  "evaluation_queries": [
+    {
+      "query_id": "n01",
+      "case_id": "n01",
+      "target_selector": "declared",
+      "role": "primary"
+    },
+    {
+      "query_id": "n02",
+      "case_id": "n02",
+      "target_selector": "declared",
+      "role": "primary"
+    },
+    {
+      "query_id": "n03",
+      "case_id": "n03",
+      "target_selector": "declared",
+      "role": "primary"
+    },
+    {
+      "query_id": "n04",
+      "case_id": "n04",
+      "target_selector": "declared",
+      "role": "primary"
+    },
+    {
+      "query_id": "n05",
+      "case_id": "n05",
+      "target_selector": "declared",
+      "role": "primary"
+    },
+    {
+      "query_id": "n06",
+      "case_id": "n06",
+      "target_selector": "declared",
+      "role": "primary"
+    },
+    {
+      "query_id": "n06_wrong_object_click",
+      "case_id": "n06",
+      "target_selector": "declared",
+      "role": "wrong_annotation_control"
+    }
+  ],
+  "freeze_note": "Coordinates recorded from RGB before candidate-anchor output inspection. Foreground claims replace the old coarse identity guard; search guides and existing geometry remain unchanged. Both plain geometry and cylinder support receive exactly the same anchors. Missing or uncertain identity never publishes. Signed jitter profiles and the deliberate wrong-object claim are retained, not tuned away."
+}
