@@ -53,6 +53,8 @@ jobs:
           python -m unittest discover -s tests -p test_rod_identity*.py -v
           python -m unittest discover -s tests -p test_rod_candidate*.py -v
           python -m unittest discover -s tests -p test_background_correspondences.py -v
+          python -m unittest discover -s tests -p "test_correspondence*.py" -v
+          python -m unittest discover -s tests -p test_track_image_controls.py -v
       - name: Build Python distributions
         run: |
           python -m build reconstruction

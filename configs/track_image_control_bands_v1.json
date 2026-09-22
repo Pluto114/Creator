@@ -1,0 +1,72 @@
+{
+  "run_id": "track-image-control-bands-v1-20260922",
+  "track_source_run_id": "foreground-track-bands-v1-20260922",
+  "scope": "Development replay of the same 15 analytic images after dense-cell split failure; same detector/track thresholds, fixed band split. Not new heldout images.",
+  "size_wh": [
+    640,
+    480
+  ],
+  "angles_degrees": [
+    -29,
+    -11,
+    7,
+    23,
+    38
+  ],
+  "texture_seed": 22092026,
+  "cases": [
+    {
+      "case_id": "unique_planar",
+      "repeat": false,
+      "planes": [
+        {
+          "x0": -3.2,
+          "x1": 3.2,
+          "z0": -2.4,
+          "z1": 2.4,
+          "y": 1.35
+        }
+      ]
+    },
+    {
+      "case_id": "unique_two_depths",
+      "repeat": false,
+      "planes": [
+        {
+          "x0": -3.2,
+          "x1": 0,
+          "z0": -2.4,
+          "z1": 2.4,
+          "y": 1.35
+        },
+        {
+          "x0": 0,
+          "x1": 3.2,
+          "z0": -2.4,
+          "z1": 2.4,
+          "y": -0.3
+        }
+      ]
+    },
+    {
+      "case_id": "repeated_two_depths",
+      "repeat": true,
+      "planes": [
+        {
+          "x0": -3.2,
+          "x1": 0,
+          "z0": -2.4,
+          "z1": 2.4,
+          "y": 1.35
+        },
+        {
+          "x0": 0,
+          "x1": 3.2,
+          "z0": -2.4,
+          "z1": 2.4,
+          "y": -0.3
+        }
+      ]
+    }
+  ]
+}

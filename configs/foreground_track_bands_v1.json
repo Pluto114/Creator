@@ -1,0 +1,52 @@
+{
+  "run_id": "foreground-track-bands-v1-20260922",
+  "source_run_id": "foreground-estimated-pilot-v1-20260922",
+  "scope": "Development split replay on identical RGB matches: fixed horizontal bands with an unused cell row; old mesh scores are reused only after exact graph/pixel equality checks. No camera changes.",
+  "detectors": {
+    "ORB": {
+      "nfeatures": 2000,
+      "fastThreshold": 12
+    },
+    "SIFT": {
+      "nfeatures": 2000,
+      "nOctaveLayers": 3,
+      "contrastThreshold": 0.04,
+      "edgeThreshold": 10,
+      "sigma": 1.6
+    }
+  },
+  "ratio": 0.75,
+  "target_exclusion_half_width_px": 64,
+  "split": {
+    "cell_size_px": 64,
+    "validation_max_cell_y": 1,
+    "train_min_cell_y": 3
+  },
+  "geometry": {
+    "minimum_matches": 30,
+    "minimum_train": 16,
+    "minimum_validation": 8,
+    "ransac_threshold_px": 2.0,
+    "maximum_iterations": 5000,
+    "confidence": 0.99,
+    "seed": 113,
+    "validation_fraction_within_2px": 0.6,
+    "planar_fraction_margin": 0.1
+  },
+  "availability": {
+    "minimum_train_tracks_per_view": 16,
+    "minimum_validation_tracks_per_view": 8,
+    "minimum_nonplanar_validated_pairs": 3
+  },
+  "evaluation": {
+    "visibility_depth_tolerance_m": 0.002,
+    "gt_bundle": "rod-foreground-scenes-v1-20260921"
+  },
+  "limitations": [
+    "Complete descriptor cycles do not guarantee physical identity",
+    "Keypoint centers outside guide strip; descriptor support may overlap it",
+    "All views share cell groups across tracks before splitting; no residual-dependent rebalance",
+    "F/H fits only diagnose availability and planar ambiguity; neither updates cameras",
+    "No model predictions, truth, or evaluation outputs are read by track inference"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "run_id": "foreground-ray-pose-v1-20260922",
+  "source_run_id": "rod-foreground-scenes-v1-20260921",
+  "annotation_file": "configs/rod_foreground_annotations_new_queries_v1.json",
+  "evaluation_queries_file": "configs/rod_foreground_new_queries_v1.json",
+  "case_ids": ["p01", "p02", "p03", "p04"],
+  "model": "large",
+  "process_res": 504,
+  "use_ray_pose": true,
+  "search_offset_px": 0,
+  "candidate_cap": 8,
+  "identity_policy": {"minimum_anchor_views": 2},
+  "parallel_workers": 3,
+  "alignment": {"minimum_second_to_first_singular_ratio": 0.001, "poor_fit_rmse_over_camera_span": 0.05, "leave_one_camera_out_diagnostic": true},
+  "curve_tolerance_m": 0.025,
+  "curve_spacing_m": 0.002,
+  "scope": "Predeclared simple RGB-only alternative: DA3 ray pose on the same 20 known images and 9 two-click queries; fresh full predictions and coherent point snapshots; compare all outcomes with decoder, never choose per target using GT; no independent-object or common-reader efficacy claim"
+}
