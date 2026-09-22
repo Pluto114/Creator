@@ -22,7 +22,9 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install validation tools
-        run: python -m pip install "pytest>=8,<10" "ruff>=0.11,<1" "build>=1,<2" "numpy>=2,<3" "pillow>=10,<13"
+        # Historical replay entry points import the OpenCV image/GT helpers.
+        # Match the declared core dependency so fresh-process tests see a real environment.
+        run: python -m pip install "pytest>=8,<10" "ruff>=0.11,<1" "build>=1,<2" "numpy>=2,<3" "pillow>=10,<13" "opencv-python-headless>=4.10,<5"
       - name: Lint
         run: python -m ruff check .
       - name: Isolated entry points
@@ -42,8 +44,8 @@ jobs:
           python -m unittest discover -s tests -p test_camera_background.py -v
           python -m unittest discover -s tests -p test_heldout_metrics.py -v
       - name: Photometric and correspondence controls
-        # The OpenCV-specific correspondence checks also run in the local DA3 environment.
-        # NumPy-only CI still checks split isolation, geometry and missing-data semantics.
+        # Headless OpenCV also enables correspondence checks in the clean CI environment.
+        # The installed DA3 environment separately covers NumPy 1.26 compatibility.
         run: |
           python -m unittest discover -s tests -p test_rod_geometry_audit.py -v
           python -m unittest discover -s tests -p test_rod_profile_controls.py -v
