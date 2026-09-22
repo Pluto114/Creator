@@ -1,0 +1,430 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Creator materialized point / curve patch pilot 0.1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "kind": {
+      "enum": [
+        "point_snapshot",
+        "curve_patch"
+      ]
+    },
+    "content_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "metadata": {
+      "type": "object"
+    },
+    "arrays": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "content_id",
+    "metadata",
+    "arrays"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "point_snapshot"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "frames": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "frame_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "image_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "prediction_size_wh": {
+                      "type": "array",
+                      "prefixItems": [
+                        {
+                          "type": "integer",
+                          "minimum": 1
+                        },
+                        {
+                          "type": "integer",
+                          "minimum": 1
+                        }
+                      ],
+                      "minItems": 2,
+                      "maxItems": 2
+                    }
+                  },
+                  "required": [
+                    "frame_id",
+                    "image_sha256",
+                    "prediction_size_wh"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1
+              },
+              "world_frame_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "length_unit": {
+                "enum": [
+                  "meter",
+                  "reconstruction_unit"
+                ]
+              },
+              "source_prediction_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "point_policy": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "frames",
+              "world_frame_id",
+              "length_unit",
+              "source_prediction_sha256",
+              "point_policy"
+            ],
+            "additionalProperties": false
+          },
+          "arrays": {
+            "type": "object",
+            "properties": {
+              "points": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "dtype": {
+                    "enum": [
+                      "<f8",
+                      "<u4"
+                    ]
+                  },
+                  "shape": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "required": [
+                  "file",
+                  "sha256",
+                  "dtype",
+                  "shape"
+                ],
+                "additionalProperties": false
+              },
+              "point_ids": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "dtype": {
+                    "enum": [
+                      "<f8",
+                      "<u4"
+                    ]
+                  },
+                  "shape": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "required": [
+                  "file",
+                  "sha256",
+                  "dtype",
+                  "shape"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "points",
+              "point_ids"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "curve_patch"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "base_snapshot_id": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "world_frame_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "length_unit": {
+                "enum": [
+                  "meter",
+                  "reconstruction_unit"
+                ]
+              },
+              "selection_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "method": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "version": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "config_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "seed": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "id",
+                  "version",
+                  "config_sha256",
+                  "seed"
+                ],
+                "additionalProperties": false
+              },
+              "outcome": {
+                "enum": [
+                  "accepted_change",
+                  "no_supported_change"
+                ]
+              },
+              "line_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "decision": {
+                      "enum": [
+                        "accept",
+                        "reject",
+                        "unresolved"
+                      ]
+                    },
+                    "line_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "suppression_range": {
+                      "oneOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "array",
+                          "items": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "minItems": 2,
+                          "maxItems": 2
+                        }
+                      ]
+                    },
+                    "view_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "uniqueItems": true
+                    },
+                    "source_sha256": {
+                      "type": "string",
+                      "pattern": "^[0-9a-f]{64}$"
+                    },
+                    "note": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": [
+                    "decision",
+                    "line_ids",
+                    "suppression_range",
+                    "view_ids",
+                    "source_sha256",
+                    "note"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "unresolved": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "base_snapshot_id",
+              "world_frame_id",
+              "length_unit",
+              "selection_sha256",
+              "method",
+              "outcome",
+              "line_ids",
+              "evidence",
+              "unresolved"
+            ],
+            "additionalProperties": false
+          },
+          "arrays": {
+            "type": "object",
+            "properties": {
+              "segments": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "dtype": {
+                    "enum": [
+                      "<f8",
+                      "<u4"
+                    ]
+                  },
+                  "shape": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "required": [
+                  "file",
+                  "sha256",
+                  "dtype",
+                  "shape"
+                ],
+                "additionalProperties": false
+              },
+              "suppressed_ids": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "dtype": {
+                    "enum": [
+                      "<f8",
+                      "<u4"
+                    ]
+                  },
+                  "shape": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "required": [
+                  "file",
+                  "sha256",
+                  "dtype",
+                  "shape"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "segments",
+              "suppressed_ids"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "The Python reader additionally verifies canonical hashes, filenames, array bytes/shapes/dtypes, sorted source IDs, evidence coverage and snapshot/world-frame binding."
+}

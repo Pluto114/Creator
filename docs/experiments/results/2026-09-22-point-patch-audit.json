@@ -1,0 +1,4034 @@
+{
+  "state": "complete",
+  "input_sha256": {
+    "docs/experiments/results/2026-09-22-common-readout-components.json": "edf8bb0f38e43c06841155b6743cdb319bb04e78a6d4c57e312cfc30de3756a4",
+    "docs/experiments/results/2026-09-22-point-patch-r2.json": "2a37c46d50746b6a990c881a305008395e10cc14ad3b200a2207f529efbaf021",
+    "docs/experiments/results/2026-09-22-point-patch-components.json": "c7ee11f45d67e69e280cfddfff2844923ec958a89be07ea69116ed5ba4e32ff2"
+  },
+  "ceiling_summary": [
+    {
+      "split": "development",
+      "method": "local_links",
+      "count": 64,
+      "recovery_at_least_90_count": 21,
+      "mean_recovery": 0.44109011627906985,
+      "nonempty_precision_below_90_count": 0,
+      "maximum_guarded_gap_proximity": 0
+    },
+    {
+      "split": "development",
+      "method": "straight_components",
+      "count": 64,
+      "recovery_at_least_90_count": 48,
+      "mean_recovery": 0.9304492187500001,
+      "nonempty_precision_below_90_count": 1,
+      "maximum_guarded_gap_proximity": 0.06666666666666667
+    },
+    {
+      "split": "fresh_analytic",
+      "method": "local_links",
+      "count": 64,
+      "recovery_at_least_90_count": 19,
+      "mean_recovery": 0.34117840690319035,
+      "nonempty_precision_below_90_count": 0,
+      "maximum_guarded_gap_proximity": 0
+    },
+    {
+      "split": "fresh_analytic",
+      "method": "straight_components",
+      "count": 64,
+      "recovery_at_least_90_count": 56,
+      "mean_recovery": 0.956515625,
+      "nonempty_precision_below_90_count": 1,
+      "maximum_guarded_gap_proximity": 0.175
+    }
+  ],
+  "false_axis_controls": [
+    {
+      "split": "development",
+      "layout": "parallel",
+      "radius_m": 0.05,
+      "noise_sigma_m": 0.0025,
+      "voxel_m": 0.04,
+      "method": "straight_components",
+      "state": "complete",
+      "components": 1,
+      "segments": [
+        [
+          [
+            0.09135996961765042,
+            0.01966763982962403,
+            0.019197355205847477
+          ],
+          [
+            0.0966709097043146,
+            0.019804066382996924,
+            1.0206595128903455
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.0014762493294078,
+        "truth_to_prediction": {
+          "source_length": 1.9999999999999991,
+          "sample_count": 400,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.08004449861217061,
+          "distance_p95": 0.08312173271629023,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.0014762493294078,
+          "sample_count": 201,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.07871533139060817,
+          "distance_p95": 0.07990259284484046,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      }
+    },
+    {
+      "split": "fresh_analytic",
+      "layout": "parallel",
+      "radius_m": 0.042,
+      "noise_sigma_m": 0.004,
+      "voxel_m": 0.036,
+      "method": "straight_components",
+      "state": "complete",
+      "components": 1,
+      "segments": [
+        [
+          [
+            0.11003714844370419,
+            0.03375239526303598,
+            -0.05418127780299342
+          ],
+          [
+            0.10517398031112948,
+            0.034624058042392256,
+            1.242474994858866
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.2966656853767793,
+        "truth_to_prediction": {
+          "source_length": 2.5,
+          "sample_count": 500,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.08000155677828398,
+          "distance_p95": 0.08228833770486065,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.2966656853767793,
+          "sample_count": 260,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.07882185708880396,
+          "distance_p95": 0.07990356348635519,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      }
+    }
+  ],
+  "numerical_bin_audit": {
+    "scope": "read-only numerical diagnosis; rounding is not an adopted reader change",
+    "occupied_voxels": 51,
+    "voxel_m": 0.02,
+    "all_world_grid_steps_are_one": true,
+    "maximum_projected_step_m": 0.020000000000000018,
+    "axial_bin_holes": 9,
+    "diagnostic_rounded_bin_holes": 0
+  },
+  "primary_50mm_rows": [
+    {
+      "reader": "local_links",
+      "job_id": "estimated--black-white-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.19327729052853387,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.21842771159009,
+          "distance_p95": 2.821563713989735,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.19327729052853387,
+          "sample_count": 40,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.7080822348088892,
+          "distance_p95": 0.7126925621946657,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.210747463368149,
+            "distance_p95": 1.4260284463192272,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.21074820914119,
+            "distance_p95": 1.389814891985874,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 5,
+      "occupied_voxels": 4475,
+      "region_point_count": 8537
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-origin-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.3323149879300664,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.0146185011216204,
+          "distance_p95": 2.7331918431293962,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.3323149879300664,
+          "sample_count": 71,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.10096936197722278,
+          "distance_p95": 0.22134121243574095,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.2315353077193922,
+            "distance_p95": 1.4171732829566146,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.2315359271686388,
+            "distance_p95": 1.3851498866156828,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 10,
+      "occupied_voxels": 3636,
+      "region_point_count": 5831
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 740,
+      "region_point_count": 1241
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1174,
+      "region_point_count": 2784
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1986,
+      "region_point_count": 4837
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.16855066967673202,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.1917920823684232,
+          "distance_p95": 2.6840197644598813,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.16855066967673202,
+          "sample_count": 36,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.32809933534877417,
+          "distance_p95": 0.3475984002126606,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.8382263138389509,
+            "distance_p95": 1.1028792093759354,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.8382272723889906,
+            "distance_p95": 1.0597435712476153,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 4,
+      "occupied_voxels": 3444,
+      "region_point_count": 6203
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 654,
+      "region_point_count": 1210
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--black-white-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.19327729052853387,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.21842771159009,
+          "distance_p95": 2.821563713989735,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.19327729052853387,
+          "sample_count": 40,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.7080822348088892,
+          "distance_p95": 0.7126925621946657,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.210747463368149,
+            "distance_p95": 1.4260284463192272,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.21074820914119,
+            "distance_p95": 1.389814891985874,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 5,
+      "occupied_voxels": 4475,
+      "region_point_count": 8537
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-origin-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.3323149879300664,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.0146185011216204,
+          "distance_p95": 2.7331918431293962,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.3323149879300664,
+          "sample_count": 71,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.10096936197722278,
+          "distance_p95": 0.22134121243574095,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.2315353077193922,
+            "distance_p95": 1.4171732829566146,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.2315359271686388,
+            "distance_p95": 1.3851498866156828,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 10,
+      "occupied_voxels": 3636,
+      "region_point_count": 5831
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 740,
+      "region_point_count": 1241
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1174,
+      "region_point_count": 2784
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.6027154003433447,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 4.580637200677824,
+          "covered_fraction": 0.6027154003433447,
+          "distance_median": 0.02704128499833362,
+          "distance_p95": 0.6108092456591943,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 4.150604945690038,
+          "sample_count": 842,
+          "covered_length": 4.150604945690038,
+          "covered_fraction": 1.0,
+          "distance_median": 0.023020678196947905,
+          "distance_p95": 0.030013045052934072,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.004989281777412661,
+            "covered_fraction": 0.00806451612903226,
+            "distance_median": 0.34598149896944763,
+            "distance_p95": 0.6250863607606086,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.34598252760191306,
+            "distance_p95": 0.5801152960002944,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 102,
+      "occupied_voxels": 2161,
+      "region_point_count": 4837
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.16855066967673202,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.1917920823684232,
+          "distance_p95": 2.6840197644598813,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.16855066967673202,
+          "sample_count": 36,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.32809933534877417,
+          "distance_p95": 0.3475984002126606,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.8382263138389509,
+            "distance_p95": 1.1028792093759354,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.8382272723889906,
+            "distance_p95": 1.0597435712476153,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 4,
+      "occupied_voxels": 3551,
+      "region_point_count": 6203
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.5846643172029433,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 4.443448964076689,
+          "covered_fraction": 0.5846643172029433,
+          "distance_median": 0.02302067819694797,
+          "distance_p95": 0.6130909378937643,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 4.113142629674407,
+          "sample_count": 830,
+          "covered_length": 4.113142629674407,
+          "covered_fraction": 1.0,
+          "distance_median": 0.021359588693620764,
+          "distance_p95": 0.02584599472089006,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.36802156327802094,
+            "distance_p95": 0.6471535631595814,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.3680225921390909,
+            "distance_p95": 0.6021805300303654,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 103,
+      "occupied_voxels": 826,
+      "region_point_count": 1210
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--black-white-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1527,
+      "region_point_count": 8537
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-origin-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1460,
+      "region_point_count": 5831
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 385,
+      "region_point_count": 1241
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 526,
+      "region_point_count": 2784
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 701,
+      "region_point_count": 4837
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1336,
+      "region_point_count": 6203
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 327,
+      "region_point_count": 1210
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--black-white-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1527,
+      "region_point_count": 8537
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-origin-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1460,
+      "region_point_count": 5831
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 385,
+      "region_point_count": 1241
+    },
+    {
+      "reader": "local_links",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 526,
+      "region_point_count": 2784
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.2852000968805468,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 2.167520811088858,
+          "covered_fraction": 0.2852000968805468,
+          "distance_median": 0.5859646741389956,
+          "distance_p95": 2.102293802415857,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9896412977266902,
+          "sample_count": 400,
+          "covered_length": 1.9896412977266902,
+          "covered_fraction": 1.0,
+          "distance_median": 0.006089385550775294,
+          "distance_p95": 0.014416073059429468,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.36536694005616405,
+            "distance_p95": 0.6447195035842658,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.3653679703471566,
+            "distance_p95": 0.5997247544987592,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 25,
+      "occupied_voxels": 779,
+      "region_point_count": 4837
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1351,
+      "region_point_count": 6203
+    },
+    {
+      "reader": "local_links",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.43424880585249515,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 3.300291038365245,
+          "covered_fraction": 0.43424880585249515,
+          "distance_median": 0.3729828401221268,
+          "distance_p95": 2.2673131056550084,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 3.1095943563775608,
+          "sample_count": 624,
+          "covered_length": 3.1095943563775608,
+          "covered_fraction": 1.0,
+          "distance_median": 0.00892220496787153,
+          "distance_p95": 0.00892220496787153,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.42730369010237,
+            "distance_p95": 0.7066666376418737,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.4273047204760089,
+            "distance_p95": 0.6616710867416251,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 39,
+      "occupied_voxels": 394,
+      "region_point_count": 1210
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--black-white-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.9151028820280374,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.1791655522459936,
+          "distance_p95": 2.2184111075511095,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.9151028820280374,
+          "sample_count": 185,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.9175111235593727,
+          "distance_p95": 1.8787423662693443,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.8723765441746963,
+            "distance_p95": 0.9873638418014052,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.8723768828515062,
+            "distance_p95": 0.9645643893671667,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 4,
+      "occupied_voxels": 4475,
+      "region_point_count": 8537
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-origin-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.278009130887612,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.1876766821251714,
+          "distance_p95": 2.6999908605671785,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.278009130887612,
+          "sample_count": 56,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.1889755397588468,
+          "distance_p95": 0.2263931373378711,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.215469099569248,
+            "distance_p95": 1.3965503286860035,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.215469698811723,
+            "distance_p95": 1.365147176972595,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 1,
+      "occupied_voxels": 3636,
+      "region_point_count": 5831
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.3917059857068915,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.085888598334736,
+          "distance_p95": 2.9267371405346823,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.3917059857068915,
+          "sample_count": 79,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.13781140535051115,
+          "distance_p95": 0.2115455510746324,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.2349996238563472,
+            "distance_p95": 1.4661734601708443,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.235000439796859,
+            "distance_p95": 1.4277765992735016,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 1,
+      "occupied_voxels": 740,
+      "region_point_count": 1241
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0026242894425142806,
+        "precision_fraction": 0.02786499505909149,
+        "false_predicted_length": 0.6869507239169763,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.019944600451355828,
+          "covered_fraction": 0.0026242894425142806,
+          "distance_median": 1.0485922335947884,
+          "distance_p95": 2.591202282894471,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.7066412796839188,
+          "sample_count": 143,
+          "covered_length": 0.019690555766942484,
+          "covered_fraction": 0.02786499505909149,
+          "distance_median": 0.13586203501776592,
+          "distance_p95": 0.22092425855205763,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.6891189176351297,
+            "distance_p95": 0.9647970948808833,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.6891199289772226,
+            "distance_p95": 0.9202454598507892,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 3,
+      "occupied_voxels": 1174,
+      "region_point_count": 2784
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.025621445912223,
+        "precision_fraction": 0.13201236860096102,
+        "false_predicted_length": 1.3122790123095092,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.1947229956523864,
+          "covered_fraction": 0.025621445912223,
+          "distance_median": 1.941165986646883,
+          "distance_p95": 3.766589013658302,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.5118637234431012,
+          "sample_count": 303,
+          "covered_length": 0.19958471113359208,
+          "covered_fraction": 0.13201236860096102,
+          "distance_median": 0.18808154211401762,
+          "distance_p95": 0.35790318903341667,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.8715213998060578,
+            "distance_p95": 2.1508228884606644,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.8715224300404445,
+            "distance_p95": 2.105839292308717,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 2,
+      "occupied_voxels": 1986,
+      "region_point_count": 4837
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 3444,
+      "region_point_count": 6203
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.6239055375239835,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.7699182907243474,
+          "distance_p95": 1.521170980589346,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.6239055375239835,
+          "sample_count": 127,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.2226348097247275,
+          "distance_p95": 0.3444091134783815,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.789627213526748,
+            "distance_p95": 0.871161322643396,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.8026346964394212,
+            "distance_p95": 0.8731235033859163,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 3,
+      "occupied_voxels": 654,
+      "region_point_count": 1210
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--black-white-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.9151028820280374,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.1791655522459936,
+          "distance_p95": 2.2184111075511095,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.9151028820280374,
+          "sample_count": 185,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.9175111235593727,
+          "distance_p95": 1.8787423662693443,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.8723765441746963,
+            "distance_p95": 0.9873638418014052,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.8723768828515062,
+            "distance_p95": 0.9645643893671667,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 4,
+      "occupied_voxels": 4475,
+      "region_point_count": 8537
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-origin-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.278009130887612,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.1876766821251714,
+          "distance_p95": 2.6999908605671785,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.278009130887612,
+          "sample_count": 56,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.1889755397588468,
+          "distance_p95": 0.2263931373378711,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.215469099569248,
+            "distance_p95": 1.3965503286860035,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.215469698811723,
+            "distance_p95": 1.365147176972595,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 1,
+      "occupied_voxels": 3636,
+      "region_point_count": 5831
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 0.3917059857068915,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.085888598334736,
+          "distance_p95": 2.9267371405346823,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.3917059857068915,
+          "sample_count": 79,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.13781140535051115,
+          "distance_p95": 0.2115455510746324,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.2349996238563472,
+            "distance_p95": 1.4661734601708443,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.235000439796859,
+            "distance_p95": 1.4277765992735016,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 1,
+      "occupied_voxels": 740,
+      "region_point_count": 1241
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "camera_mode": "estimated",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0026242894425142806,
+        "precision_fraction": 0.02786499505909149,
+        "false_predicted_length": 0.6869507239169763,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.019944600451355828,
+          "covered_fraction": 0.0026242894425142806,
+          "distance_median": 1.0485922335947884,
+          "distance_p95": 2.591202282894471,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.7066412796839188,
+          "sample_count": 143,
+          "covered_length": 0.019690555766942484,
+          "covered_fraction": 0.02786499505909149,
+          "distance_median": 0.13586203501776592,
+          "distance_p95": 0.22092425855205763,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.6891189176351297,
+            "distance_p95": 0.9647970948808833,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.6891199289772226,
+            "distance_p95": 0.9202454598507892,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 3,
+      "occupied_voxels": 1174,
+      "region_point_count": 2784
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 2161,
+      "region_point_count": 4837
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 3551,
+      "region_point_count": 6203
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.0025,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.23684212218691375,
+        "precision_fraction": 0.7376688356428055,
+        "false_predicted_length": 0.6239055375239837,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 1.800000190734863,
+          "covered_fraction": 0.23684212218691375,
+          "distance_median": 0.47366894237352086,
+          "distance_p95": 0.896904626658301,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.378312691337212,
+          "sample_count": 478,
+          "covered_length": 1.7544071538132284,
+          "covered_fraction": 0.7376688356428055,
+          "distance_median": 0.021359588693615178,
+          "distance_p95": 0.29488357567348084,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.024946408887063305,
+            "covered_fraction": 0.04032258064516129,
+            "distance_median": 0.3282240446988851,
+            "distance_p95": 0.6073038230727323,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.3282250731126524,
+            "distance_p95": 0.5623345096400283,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 4,
+      "occupied_voxels": 826,
+      "region_point_count": 1210
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--black-white-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 3.023680098078975,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.9007183594659285,
+          "distance_p95": 1.4658779935448663,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 3.023680098078975,
+          "sample_count": 607,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.1801822643299391,
+          "distance_p95": 1.447002614352584,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.597547517460979,
+            "distance_p95": 0.8138083738377794,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.597548218572273,
+            "distance_p95": 0.7762590498995277,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 4,
+      "occupied_voxels": 1527,
+      "region_point_count": 8537
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-origin-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1460,
+      "region_point_count": 5831
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 385,
+      "region_point_count": 1241
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 526,
+      "region_point_count": 2784
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.012465374026393762,
+        "precision_fraction": 0.11656441717791415,
+        "false_predicted_length": 0.7173287677812292,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.09473684586976702,
+          "covered_fraction": 0.012465374026393762,
+          "distance_median": 2.087395289907287,
+          "distance_p95": 3.7931289611796672,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 0.8119763135301414,
+          "sample_count": 163,
+          "covered_length": 0.09464754574891222,
+          "covered_fraction": 0.11656441717791415,
+          "distance_median": 0.203881852687378,
+          "distance_p95": 0.3839194486563049,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.8515017815880688,
+            "distance_p95": 2.1305168605827847,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 1.8515028107632805,
+            "distance_p95": 2.0855793044063544,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 1,
+      "occupied_voxels": 701,
+      "region_point_count": 4837
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1336,
+      "region_point_count": 6203
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "base",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 327,
+      "region_point_count": 1210
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--black-white-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 3.023680098078975,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.9007183594659285,
+          "distance_p95": 1.4658779935448663,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 3.023680098078975,
+          "sample_count": 607,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 1.1801822643299391,
+          "distance_p95": 1.447002614352584,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.597547517460979,
+            "distance_p95": 0.8138083738377794,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.597548218572273,
+            "distance_p95": 0.7762590498995277,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 4,
+      "occupied_voxels": 1527,
+      "region_point_count": 8537
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-origin-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1460,
+      "region_point_count": 5831
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 385,
+      "region_point_count": 1241
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "camera_mode": "estimated",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 526,
+      "region_point_count": 2784
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 779,
+      "region_point_count": 4837
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": "no_supported_curve",
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": null,
+            "distance_p95": null,
+            "reason": "empty_prediction"
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 0,
+      "occupied_voxels": 1351,
+      "region_point_count": 6203
+    },
+    {
+      "reader": "straight_components",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "camera_mode": "oracle_camera",
+      "fraction": 0.005,
+      "variant": "candidate",
+      "state": "complete",
+      "reason": null,
+      "tolerance_m": 0.05,
+      "metrics": {
+        "recovery_fraction": 0.15417700474771395,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 7.600000262260437,
+          "sample_count": 1522,
+          "covered_length": 1.1717452765171548,
+          "covered_fraction": 0.15417700474771395,
+          "distance_median": 1.2266202026872275,
+          "distance_p95": 2.8803774748071085,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.0366951363441794,
+          "sample_count": 208,
+          "covered_length": 1.0366951363441794,
+          "covered_fraction": 1.0,
+          "distance_median": 0.008922204967869274,
+          "distance_p95": 0.008922204967869274,
+          "reason": null
+        },
+        "tolerance": 0.05,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gaps": [
+        {
+          "whole_gap": {
+            "source_length": 0.6186709403991699,
+            "sample_count": 124,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.985471379578734,
+            "distance_p95": 1.2648622371474882,
+            "reason": null
+          },
+          "guarded_interior": {
+            "source_length": 0.5186709403991703,
+            "sample_count": 104,
+            "covered_length": 0.0,
+            "covered_fraction": 0.0,
+            "distance_median": 0.9854724101348192,
+            "distance_p95": 1.2198640163452528,
+            "reason": null
+          },
+          "endpoint_guard": 0.05,
+          "tolerance": 0.05,
+          "sampling_max_spacing": 0.005,
+          "units": "input_coordinate_units",
+          "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+        }
+      ],
+      "readout_segment_count": 2,
+      "occupied_voxels": 394,
+      "region_point_count": 1210
+    }
+  ],
+  "figures": {
+    "docs/experiments/figures/2026-09-22-readout-ceiling.png": "4af6f79609a29db70fdb21eebe75c77e281a33d2d324659a372eb29f1c321ca1",
+    "docs/experiments/figures/2026-09-22-point-patch-paired.png": "60d8699ccde3453956e421c41c3168aeac91d4e3cb152a7cdf3e439938f0ae14"
+  },
+  "conclusion": "Both common readers remain unqualified. This is engineering and failure analysis, not independent-object efficacy."
+}

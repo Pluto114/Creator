@@ -33,6 +33,8 @@ jobs:
         run: python -m unittest discover -s tests -p test_native_diagnostics.py -v
       - name: Straight-line geometry controls
         run: python -m unittest discover -s tests -p test_line_controls.py -v
+      - name: Common point and curve readout controls
+        run: python -m unittest discover -s tests -p "test_common_readout*.py" -v
       - name: RGB observation and local evidence controls
         run: |
           python -m unittest discover -s tests -p test_rod_observations.py -v

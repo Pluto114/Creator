@@ -1,5 +1,9 @@
 # 文档索引
 
+最新状态（9月22日）：7份历史模型预测、5,821,200点已接入可保存、精确撤回并重开的点补丁试行协议。共同读取器做了两版完整配对回放及256行圆柱控制；第一版漏厚/噪声表面，第二版仍有假中间轴、数值分段和污染问题，均未具备主评分资格。G1仍未通过；9月27日为本周验收目标，接下来先修读取器，再接当代身份方法、估计相机与独立对象验证。见[实验报告](experiments/2026-09-22-point-patch-and-common-readout.md)、[日志与排期](journal/2026-09-22.md)、[点补丁复现](point-patch-pilot.md)、[ADR0010](decisions/0010-materialized-point-patch-and-readout-qualification.md)。
+
+以下为历史：
+
 最新状态：两视图显式前景点身份层已实现，完成旧开发560项和冻结新4布局/20帧的720项回放；这些是重复条件，不是独立物体数。相同点击预算下，旧开发普通/圆柱各12次正确，新主条件普通13次、圆柱8次，均未扰动时零误收。新双杆可按点击切换目标；圆柱退出标注视图导致新缺口/邻杆未知，普通版4px错点产生一次假中间杆。一致错点邻杆仍会误收。20,800条独立射线核验通过，GT与推理隔离，旧数据完整保留。G1仍未通过；下一步验证局部身份观测与视角退出、跨杆假边缘带，再做独立对象/估计相机、共同读取器与实际补丁。不扩UI。 见[前景点身份实验](experiments/2026-09-21-foreground-identity.md)、[日志](journal/2026-09-21.md)。
 
 以下为历史：
@@ -44,6 +48,7 @@
 | 决策 | [ADR 0007](decisions/0007-guide-is-target-identity-input.md) | 将粗guide限定为用户目标身份先验，并保留物理轴验收边界 |
 | 决策 | [ADR 0008](decisions/0008-cylinder-consistency-is-conditional-evidence.md) | 限定圆柱约束为几何证据，将目标身份留作独立验收 |
 | 决策 | [ADR 0009](decisions/0009-explicit-foreground-identity-input.md) | 明确前景身份输入及成本，保留同预算几何对照 |
+| 决策 | [ADR 0010](decisions/0010-materialized-point-patch-and-readout-qualification.md) | 实现点补丁试行协议，共同读取器先独立验收 |
 | 历史 | [ADR 0001，已废止](decisions/0001-technology-stack.md) | 旧场景生成路线，仅保留决策历史 |
 
 ## 如何解释“确定”

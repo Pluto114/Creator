@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Creator persisted point candidate view pilot 0.1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "kind": {
+      "const": "point_candidate_view"
+    },
+    "references": {
+      "type": "object",
+      "properties": {
+        "snapshot": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]+$"
+        },
+        "patch": {
+          "oneOf": [
+            {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "snapshot",
+        "patch"
+      ],
+      "additionalProperties": false
+    },
+    "base_snapshot_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "patch_id": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "content_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "references",
+    "base_snapshot_id",
+    "patch_id",
+    "enabled",
+    "content_id"
+  ],
+  "additionalProperties": false
+}

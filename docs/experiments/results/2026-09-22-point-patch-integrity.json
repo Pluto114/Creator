@@ -1,0 +1,149 @@
+{
+  "state": "complete",
+  "schema_document_count": 56,
+  "frozen_source_count": 26,
+  "initial_revision_geometry_and_metrics_unchanged": true,
+  "rows": [
+    {
+      "run_id": "g1-point-patch-v1-20260922r2",
+      "job_id": "estimated--black-white-thinner-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 1.8474111129762605e-13,
+      "maximum_relative_depth_error": 4.430200288269891e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-v1-20260922r2",
+      "job_id": "estimated--brick-texture-origin-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 2.4868995751603507e-13,
+      "maximum_relative_depth_error": 4.40698629570965e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-v1-20260922r2",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 2.8421709430404007e-13,
+      "maximum_relative_depth_error": 4.3228243684113706e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-v1-20260922r2",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "points": 1587600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 3.979039320256561e-13,
+      "maximum_relative_depth_error": 4.4281296841199603e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-v1-20260922r2",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 3.1041835768519377e-13,
+      "maximum_relative_depth_error": 6.685394419130105e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-v1-20260922r2",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 3.090860900556436e-13,
+      "maximum_relative_depth_error": 6.532612069558592e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-v1-20260922r2",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 3.126388037344441e-13,
+      "maximum_relative_depth_error": 4.927796060692022e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-components-v1-20260922",
+      "job_id": "estimated--black-white-thinner-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 1.8474111129762605e-13,
+      "maximum_relative_depth_error": 4.430200288269891e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-components-v1-20260922",
+      "job_id": "estimated--brick-texture-origin-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 2.4868995751603507e-13,
+      "maximum_relative_depth_error": 4.40698629570965e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-components-v1-20260922",
+      "job_id": "estimated--brick-texture-thinner-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 2.8421709430404007e-13,
+      "maximum_relative_depth_error": 4.3228243684113706e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-components-v1-20260922",
+      "job_id": "estimated--brick-texture-thinner-756",
+      "points": 1587600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 3.979039320256561e-13,
+      "maximum_relative_depth_error": 4.4281296841199603e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-components-v1-20260922",
+      "job_id": "oracle_camera--black-white-thinner-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 3.1041835768519377e-13,
+      "maximum_relative_depth_error": 6.685394419130105e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-components-v1-20260922",
+      "job_id": "oracle_camera--brick-texture-origin-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 3.090860900556436e-13,
+      "maximum_relative_depth_error": 6.532612069558592e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    },
+    {
+      "run_id": "g1-point-patch-components-v1-20260922",
+      "job_id": "oracle_camera--brick-texture-thinner-504",
+      "points": 705600,
+      "projection_samples": 5120,
+      "maximum_pixel_error": 3.126388037344441e-13,
+      "maximum_relative_depth_error": 4.927796060692022e-16,
+      "rollback_bytes_equal": true,
+      "schema_documents": 4
+    }
+  ],
+  "scope": "native prediction pixel identity and exact rollback, not estimated-camera physical accuracy"
+}
