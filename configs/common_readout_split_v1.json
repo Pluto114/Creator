@@ -1,0 +1,11 @@
+{
+  "run_id": "common-readout-split-controls-v1-20260922",
+  "scope": "128 prior analytic regression conditions plus 64 fresh full-surface conditions and 6 predeclared challenges; not independent physical objects",
+  "readers": ["straight_components", "transverse_split"],
+  "readout": {},
+  "tolerance_m": 0.025,
+  "spacing_m": 0.005,
+  "qualification": {"positive_minimum_recovery": 0.9, "positive_minimum_precision": 0.9, "negative_maximum_predicted_length_m": 0.0},
+  "fresh": {"origin": [-0.031, 0.049, 0.037], "vector": [0.51, 0.24, 1.17], "radii": [0.0, 0.013, 0.037, 0.06], "noise_sigmas": [0.0, 0.003], "voxels": [0.017, 0.034], "parallel_spacing": 0.19, "seed": 22992026},
+  "freeze_note": "Fresh full-surface controls are diagnostic qualification conditions. Partial surface, contamination and crossing challenges are separately declared before inference, remain reported, and matter for real model applicability. No parameters selected using fresh scores."
+}

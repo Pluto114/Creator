@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "g1-point-patch-split-v1-20260922",
+  "source_run_id": "rod-evidence-dense-v1-20260916",
+  "scope": "Engineering integration on all seven frozen historical DA3 jobs; oracle and estimated separated, not a new method efficacy trial",
+  "variant": "paired_full",
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "region_minimum_views": 3,
+  "parallel_workers": 3,
+  "readout": {
+    "maximum_second_eigen_ratio": 0.2,
+    "maximum_transverse_voxels": 4.0,
+    "minimum_component_voxels": 5,
+    "minimum_run_length_voxels": 4.0,
+    "neighbor_radius_voxels": 1.75,
+    "maximum_voxels": 80000,
+    "maximum_curve_samples": 2000000,
+    "merge_angle_degrees": 3.0,
+    "merge_distance_voxels": 0.75,
+    "origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "split_cross_eigen_ratio": 3.0,
+    "split_minimum_separation_voxels": 3.0,
+    "split_minimum_fraction": 0.15,
+    "split_minimum_axial_overlap": 0.7,
+    "maximum_split_depth": 3,
+    "split_maximum_axis_angle_degrees": 12.0,
+    "maximum_circle_residual_voxels": 0.6
+  },
+  "evaluation": {
+    "gt_bundle": "thin-pack-v2-20260914r1",
+    "target_rod_ids": [
+      5,
+      6
+    ],
+    "tolerances_m": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "spacing_m": 0.005
+  },
+  "freeze_note": "Keep every original valid depth pixel in the materialized base. No confidence pruning, no new fitting, no GT choice of accepted targets. Both complete base and base plus all historically accepted segments use the same pre-existing RGB guide union and fixed readout scales derived from base camera span. Suppression empty in this replay; deletion verified separately with analytic source-ID tests.",
+  "engineering_revision": "Third reader: distance-based axial runs and guarded transverse modes. All earlier analytic conditions are development regression. No change to historical candidate geometry or source points."
+}

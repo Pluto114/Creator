@@ -1,5 +1,7 @@
 # 文档索引
 
+最新追加（9月22日）：第三版读取器旧128条件达标，新64条件58达标，仍未合格；已接4份新DA3估计相机快照、381万点及18个身份补丁。两个正常接受结果偏轴19–24cm，72项特权相机替换支持优先处理位姿，真实相机不回写正常输入。G1未通过，9月27日为冲刺验收日。见[追加报告](experiments/2026-09-22-readout-split-and-estimated-cameras.md)、[日志](journal/2026-09-22.md)、[ADR0011](decisions/0011-estimated-camera-error-before-more-rod-gates.md)。以下保留之前状态。
+
 最新状态（9月22日）：7份历史模型预测、5,821,200点已接入可保存、精确撤回并重开的点补丁试行协议。共同读取器做了两版完整配对回放及256行圆柱控制；第一版漏厚/噪声表面，第二版仍有假中间轴、数值分段和污染问题，均未具备主评分资格。G1仍未通过；9月27日为本周验收目标，接下来先修读取器，再接当代身份方法、估计相机与独立对象验证。见[实验报告](experiments/2026-09-22-point-patch-and-common-readout.md)、[日志与排期](journal/2026-09-22.md)、[点补丁复现](point-patch-pilot.md)、[ADR0010](decisions/0010-materialized-point-patch-and-readout-qualification.md)。
 
 以下为历史：
@@ -49,6 +51,7 @@
 | 决策 | [ADR 0008](decisions/0008-cylinder-consistency-is-conditional-evidence.md) | 限定圆柱约束为几何证据，将目标身份留作独立验收 |
 | 决策 | [ADR 0009](decisions/0009-explicit-foreground-identity-input.md) | 明确前景身份输入及成本，保留同预算几何对照 |
 | 决策 | [ADR 0010](decisions/0010-materialized-point-patch-and-readout-qualification.md) | 实现点补丁试行协议，共同读取器先独立验收 |
+| 决策 | [ADR 0011](decisions/0011-estimated-camera-error-before-more-rod-gates.md) | 根据受控替换，优先验证位姿与内参误差处理 |
 | 历史 | [ADR 0001，已废止](decisions/0001-technology-stack.md) | 旧场景生成路线，仅保留决策历史 |
 
 ## 如何解释“确定”

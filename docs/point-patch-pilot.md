@@ -55,4 +55,4 @@ $runConfig.run_id = 'g1-point-patch-replay-01'
 
 ## 明确未完成
 
-两版共同读取器仍不合格，见[实验报告](experiments/2026-09-22-point-patch-and-common-readout.md)。本轮没有实际点抑制算法、任务取消/恢复、正式DTO迁移、Blender导入/撤回，也没有当代前景身份方法与新DA3快照的端到端效果验证。不要把“补丁能保存”写成“普通照片已经修好了”。
+两版共同读取器仍不合格，见[首轮报告](experiments/2026-09-22-point-patch-and-common-readout.md)。当天[追加工作](experiments/2026-09-22-readout-split-and-estimated-cameras.md)已实现第三版读取器，并把前景身份接入4份新DA3估计相机快照与18个补丁，但读取资格和几何效果仍未通过。本轮没有实际点抑制算法、任务取消/恢复、正式DTO迁移或Blender导入/撤回。不要把“补丁能保存”写成“普通照片已经修好了”。

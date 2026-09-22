@@ -1,0 +1,211 @@
+{
+  "state": "complete",
+  "input_sha256": {
+    "docs/experiments/results/2026-09-22-readout-split-controls.json": "a11ba4f33d38db57c7ff85c6984740631c597f0a797746a3661aa2f104b36513",
+    "docs/experiments/results/2026-09-22-point-patch-split.json": "e76e49dff175d77ed62dd6e9e8ac3234ef71e175a85b66855a2065e51c13cc47",
+    "docs/experiments/results/2026-09-22-foreground-estimated-pilot.json": "f527438a878812fa9bab2eb3b03c71e5f6fa8eba351881067187c740762f0048",
+    "docs/experiments/results/2026-09-22-camera-counterfactual.json": "f2b9228744591254f9f2bec3a295e71b914597e59041444cb16a3bb17440d83b"
+  },
+  "readout_summary": [
+    {
+      "split": "prior_development",
+      "reader": "straight_components",
+      "qualified": 48,
+      "count": 64,
+      "maximum_guarded_gap_proximity": 0.06666666666666667
+    },
+    {
+      "split": "prior_development",
+      "reader": "transverse_split",
+      "qualified": 64,
+      "count": 64,
+      "maximum_guarded_gap_proximity": 0.06666666666666667
+    },
+    {
+      "split": "prior_fresh_now_regression",
+      "reader": "straight_components",
+      "qualified": 56,
+      "count": 64,
+      "maximum_guarded_gap_proximity": 0.175
+    },
+    {
+      "split": "prior_fresh_now_regression",
+      "reader": "transverse_split",
+      "qualified": 64,
+      "count": 64,
+      "maximum_guarded_gap_proximity": 0.175
+    },
+    {
+      "split": "fresh_full_surface",
+      "reader": "straight_components",
+      "qualified": 55,
+      "count": 64,
+      "maximum_guarded_gap_proximity": 0.16216216216216217
+    },
+    {
+      "split": "fresh_full_surface",
+      "reader": "transverse_split",
+      "qualified": 58,
+      "count": 64,
+      "maximum_guarded_gap_proximity": 0.16216216216216217
+    },
+    {
+      "split": "challenge",
+      "reader": "straight_components",
+      "qualified": 2,
+      "count": 6,
+      "maximum_guarded_gap_proximity": 0
+    },
+    {
+      "split": "challenge",
+      "reader": "transverse_split",
+      "qualified": 3,
+      "count": 6,
+      "maximum_guarded_gap_proximity": 0
+    }
+  ],
+  "camera_counts": [
+    {
+      "variant": "estimated",
+      "method": "baseline",
+      "primary_count": 8,
+      "accepted_count": 2,
+      "correct_count": 0,
+      "wrong_count": 2
+    },
+    {
+      "variant": "estimated",
+      "method": "cylinder_support",
+      "primary_count": 8,
+      "accepted_count": 0,
+      "correct_count": 0,
+      "wrong_count": 0
+    },
+    {
+      "variant": "oracle_intrinsics_only",
+      "method": "baseline",
+      "primary_count": 8,
+      "accepted_count": 3,
+      "correct_count": 0,
+      "wrong_count": 3
+    },
+    {
+      "variant": "oracle_intrinsics_only",
+      "method": "cylinder_support",
+      "primary_count": 8,
+      "accepted_count": 0,
+      "correct_count": 0,
+      "wrong_count": 0
+    },
+    {
+      "variant": "oracle_pose_only",
+      "method": "baseline",
+      "primary_count": 8,
+      "accepted_count": 4,
+      "correct_count": 3,
+      "wrong_count": 1
+    },
+    {
+      "variant": "oracle_pose_only",
+      "method": "cylinder_support",
+      "primary_count": 8,
+      "accepted_count": 2,
+      "correct_count": 2,
+      "wrong_count": 0
+    },
+    {
+      "variant": "oracle_intrinsics_and_pose",
+      "method": "baseline",
+      "primary_count": 8,
+      "accepted_count": 4,
+      "correct_count": 4,
+      "wrong_count": 0
+    },
+    {
+      "variant": "oracle_intrinsics_and_pose",
+      "method": "cylinder_support",
+      "primary_count": 8,
+      "accepted_count": 2,
+      "correct_count": 2,
+      "wrong_count": 0
+    }
+  ],
+  "accepted_model_camera_errors": [
+    {
+      "query_id": "p01_A",
+      "truth_to_prediction_median_m": 0.23685236133435983,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.323342821244875,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.23685236133435983,
+          "distance_p95": 0.2648819956785713,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.323342821244875,
+          "sample_count": 1162,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.23812649366824518,
+          "distance_p95": 0.2699106756141455,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      }
+    },
+    {
+      "query_id": "p03_B",
+      "truth_to_prediction_median_m": 0.19320772279586876,
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.2505439507024834,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.19320772279586876,
+          "distance_p95": 0.2518289963310402,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.2505439507024834,
+          "sample_count": 1126,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.19186865309349377,
+          "distance_p95": 0.252924646543849,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      }
+    }
+  ],
+  "figures": {
+    "docs/experiments/figures/2026-09-22-readout-split.png": "4a31de6f22dc6a3ba7a17c497b28bf9dec17af6348f4a5228d3389cb7ff62e6e",
+    "docs/experiments/figures/2026-09-22-camera-transfer.png": "432779be5b4061bd71e4904b46e21ce0c955face461b46feb76fbd4d16e2a62e"
+  },
+  "full_oracle_parity": {
+    "previous_sha256": "752ff81117d6517971b931061c9e37def0f3050f8ed0dfcde32bfa7eea384767",
+    "query_method_count": 18,
+    "states_equal": true,
+    "maximum_core_metric_difference": 0.0
+  }
+}

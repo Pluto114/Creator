@@ -1,0 +1,1669 @@
+{
+  "state": "complete",
+  "run_id": "foreground-estimated-pilot-v1-20260922",
+  "scope": "Camera-transfer development pilot on the same four known procedural scenes; same RGB pools, guides and two clicks; no independent-object claim and no qualified common-reader efficacy claim",
+  "source_sha256": {
+    "configs/models.lock.json": "07e328e7520c775b93bd94976866a28dbb55b50e4b40491aad64ca7eaa48416c",
+    "experiments/src/creator_eval/line_controls.py": "7702c987899685a8647f7cecadabb5a0b854ce86b975e85b5d7e5e5abf9c89b3",
+    "experiments/src/creator_eval/native_diagnostics.py": "fcc7b782016c2227a54999f9a3a8bcaac7bfcf04ed53a13f38f048739518ce59",
+    "experiments/src/creator_eval/rod_candidate_association.py": "433eed9364379284cc9069ef76e63baa2a4d436820a309187a213a662bedf7b7",
+    "experiments/src/creator_eval/rod_candidate_audit.py": "779a2f683bf9afa55f6acfc342a65de269e87c9ff5754f1c1840558995f9e615",
+    "experiments/src/creator_eval/rod_candidate_extent.py": "65927b89a968eea59fcaa46bce29e560b9cc0180eb6db2349a30631bab087ad1",
+    "experiments/src/creator_eval/rod_candidate_pool.py": "403855670196cb2cd3938431759eed6bc80a50bed72305113130d783dad12fa6",
+    "experiments/src/creator_eval/rod_cylinder_gate.py": "026a71ba41a3aee56b3b51f291aee2cc402f7f80bcfc530df2058336adf5566e",
+    "experiments/src/creator_eval/rod_cylinder_support.py": "68834905abf6cb0e4993b0a156373968706936cbe6a2356b6b8505d402400f4f",
+    "experiments/src/creator_eval/rod_evidence.py": "67d9d57fbd5ea20fab518ba8aa43353204fcea0980c022ed9c3fffb8d443016e",
+    "experiments/src/creator_eval/rod_foreground_identity.py": "c99c7bfadff2af9671f9b7eab01cf7e12cc44450734ca8fcd912a55cc884c255",
+    "experiments/src/creator_eval/rod_multiview_candidates.py": "eeb737078405fa98dd11d9061aa0a254369c2c571a9f00225b00ac4c935b9a98",
+    "experiments/src/creator_eval/rod_observations.py": "ee7e4856e02e791e70fb066863efaf87e8360ff1938e75bf1a4b5c3ef3ce384b",
+    "experiments/src/creator_eval/rod_radius_consistency.py": "d2bc78388008a532242b511365b3248df94ea6963f8e6b4c9b3c040cf7cc9147",
+    "reconstruction/src/creator_recon/domain/point_patch.py": "130f07fb8e16ec33fbf9f64b3a9a869432de3ad96e721e3a605e7748397e4bb6",
+    "scripts/blender_export_thin_pack.py": "199c8107c673b4e1a2bf1d77dd640d243335788548acb8fa8d0fe12e58467b4d",
+    "scripts/blender_rod_identity_pack.py": "d16b9cb303ce923b1445205d389bce6811dd8c4763af38682ce9ab190aa15378",
+    "scripts/environment_paths.py": "50049eaee129a4c7de1d1316b4a37242562e5751217d8105dd4eff914da3541f",
+    "scripts/run_foreground_estimated_pilot.py": "d52e2cc16f6d6337413db4fe153bc88726270455048f5220b385666c61de29cb",
+    "scripts/run_rod_candidate_ablation.py": "50fb399e6d0427496335cbb67f7a90f40018bb07dd3a561cdffbec269339ba5a",
+    "scripts/run_rod_cylinder_validation.py": "a9f2f8870926f14f48db8c274b8d3013d7e0fdab166bf20fc1f724ba0d8f996b",
+    "scripts/run_rod_evidence.py": "302b62f3f3e1f8bc24e569c2d9779004e78ffba836af39efa057e9b81e4e5d71",
+    "scripts/run_rod_foreground_identity.py": "b899657b1306408ec8f2cf2c7ee1f2743b4ebcf92d58a0166a2eee01cd478732",
+    "scripts/run_rod_identity_blender.py": "3599170eea58faacc95b5ab3d0f2100494b3256506d6208a6a2f320ad1c816c8",
+    "scripts/run_rod_identity_stress.py": "f3cb734a1a02cf70f66caacf7ad355d0f8734d1f017980b21a623181adf56946",
+    "scripts/run_rod_support_recheck.py": "0f3273f523777d58875286736baf24f4e7f818d40021ee7d17e09188b51e9ed8",
+    "scripts/run_thin_line_controls.py": "75d02972c63a4ec3ee679a347adbd2e2b303eec48f96d4da2e56d4a6fe055a30",
+    "scripts/smoke_da3.py": "487ec7e079558c1f00d87264f291542bd0ac951a2be4ae7f3ce8039889c6fb5a",
+    "scripts/thin_pack_gt.py": "349934533b6402a81cbbdf8d0865f78649c2ff20d6b608ef0adace8388eee7ca"
+  },
+  "input_sha256": "12479220bb280d2ac720ef17eefec99586fc7ceed643cfddfb4f06301ffb1e98",
+  "protocol_sha256": "a67451fa6b17ebbec39a99f7067f7f344fd4b290f7b4801747cd401acf9e91fc",
+  "inference_sha256": "d5dc3583ca3a934db3387e997c7290894d8352d141e78b3c5d010bd816d6920f",
+  "cases": [
+    {
+      "case_id": "p01",
+      "geometry_sha256": "265cd39922ca4331a9f56b150ad138928aae09e6ac94710ec93310750bf9da51",
+      "point_count": 952560,
+      "query_method_count": 6,
+      "accepted_count": 1,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "elapsed_seconds": 39.36918080000032,
+      "alignment": {
+        "source_singular_values": [
+          0.6690212323235425,
+          0.104764717285379,
+          0.0012916114957454625
+        ],
+        "target_singular_values": [
+          5.127398739795883,
+          0.8927828069721556,
+          4.490459481033942e-09
+        ],
+        "second_to_first_singular_ratios": [
+          0.1565940096124097,
+          0.1741200269920292
+        ],
+        "camera_residuals_m": [
+          0.04881767591093436,
+          0.024222757842784576,
+          0.06366719338668497,
+          0.018975348652997548,
+          0.04555728849418399
+        ],
+        "camera_rmse_m": 0.04349471090612713,
+        "camera_span_m": 6.402469275951368,
+        "scale": 7.68432245025682,
+        "prediction_world_to_gt_world": [
+          [
+            7.131420491795997,
+            0.04660240791727714,
+            -2.8617270142851567,
+            2.2485234315093168
+          ],
+          [
+            2.8612866480558417,
+            -0.29996746597487906,
+            7.12543821505281,
+            -5.336356134682184
+          ],
+          [
+            -0.06849822165936532,
+            -7.678323987333037,
+            -0.2957368064624099,
+            0.1264340246811126
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.006793427509211136,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          1.5460249624248286,
+          0.9579354045475721,
+          0.8767228842464891,
+          1.598864459099215,
+          1.9687916186138148
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 7.718598362129168,
+            "held_out_camera_error_m": 0.12719688749754837
+          },
+          {
+            "omitted_view": 1,
+            "scale": 7.677616379606324,
+            "held_out_camera_error_m": 0.034828716106113496
+          },
+          {
+            "omitted_view": 2,
+            "scale": 7.676034366526748,
+            "held_out_camera_error_m": 0.08098761259732089
+          },
+          {
+            "omitted_view": 3,
+            "scale": 7.671822621800345,
+            "held_out_camera_error_m": 0.027768886850607976
+          },
+          {
+            "omitted_view": 4,
+            "scale": 7.701055399692649,
+            "held_out_camera_error_m": 0.10561914524994463
+          }
+        ]
+      },
+      "prediction": {
+        "ok": true,
+        "scope": "upstream inference smoke, not a research benchmark",
+        "checked_at": "2026-09-22T10:07:51.020536+00:00",
+        "upstream_commit": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4",
+        "model": "depth-anything/DA3-LARGE-1.1",
+        "model_revision": "0e109ae307c5982f319a67cf6f9f99ccdc0ec97c",
+        "images": [
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p01\\view_-29.png",
+            "sha256": "8e901601b154ded0b977c5ff9ebef544d8675e97df3d7a98eb65b968f28798f2"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p01\\view_-11.png",
+            "sha256": "5f68bccbd0da479585bda2250a195f86bd90c73e9908de7409f0216523892c46"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p01\\view_+07.png",
+            "sha256": "5518faa60bcd03c47c98bcfdd390096bbd0972d241f7b77ff3ffaf0144448e6c"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p01\\view_+23.png",
+            "sha256": "5baccca49dcd5f439a18da257badea151c63e05482404ff3462755e4bebca532"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p01\\view_+38.png",
+            "sha256": "c1e26f3f39ecf06b7a81382eecbc313231d5a27928ee1d9e98cc8b367086c1a8"
+          }
+        ],
+        "versions": {
+          "torch": "2.10.0+cu128",
+          "torchvision": "0.25.0+cu128",
+          "numpy": "1.26.4",
+          "depth-anything-3": "0.0.0"
+        },
+        "process_res": 504,
+        "process_res_method": "upper_bound_resize",
+        "infer_gs": false,
+        "use_ray_pose": false,
+        "ref_view_strategy": "saddle_balanced",
+        "sky_available": false,
+        "is_metric": null,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "cuda_runtime": "12.8",
+        "load_seconds": 10.197,
+        "inference_seconds": 4.013,
+        "gpu_free_before_mib": 7106.0,
+        "gpu_total_mib": 8187.5,
+        "peak_allocated_mib": 4094.0,
+        "peak_reserved_mib": 5504.0,
+        "outputs": {
+          "depth": {
+            "shape": [
+              5,
+              378,
+              504
+            ],
+            "dtype": "float32"
+          },
+          "conf": {
+            "shape": [
+              5,
+              378,
+              504
+            ],
+            "dtype": "float32"
+          },
+          "intrinsics": {
+            "shape": [
+              5,
+              3,
+              3
+            ],
+            "dtype": "float32"
+          },
+          "extrinsics": {
+            "shape": [
+              5,
+              3,
+              4
+            ],
+            "dtype": "float32"
+          },
+          "processed_images": {
+            "shape": [
+              5,
+              378,
+              504,
+              3
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "state": "succeeded",
+        "camera_source": "estimated",
+        "gt_read_during_inference": false
+      }
+    },
+    {
+      "case_id": "p02",
+      "geometry_sha256": "32d2fef738fbd949f8a50178c3f09c9589a2446a1a3f351a86c509470484fd52",
+      "point_count": 952560,
+      "query_method_count": 4,
+      "accepted_count": 0,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "elapsed_seconds": 40.20305830000052,
+      "alignment": {
+        "source_singular_values": [
+          0.6824138654952536,
+          0.1078251563335414,
+          0.0019974113135793584
+        ],
+        "target_singular_values": [
+          5.127398739795883,
+          0.8927828069721556,
+          4.490459481033942e-09
+        ],
+        "second_to_first_singular_ratios": [
+          0.1580055180374868,
+          0.1741200269920292
+        ],
+        "camera_residuals_m": [
+          0.05265582468697147,
+          0.04514689211397671,
+          0.056126454329531804,
+          0.02420640450001899,
+          0.052243408709374974
+        ],
+        "camera_rmse_m": 0.04748974708084784,
+        "camera_span_m": 6.402469275951368,
+        "scale": 7.531612035808243,
+        "prediction_world_to_gt_world": [
+          [
+            6.669264644274557,
+            -0.06564607773396307,
+            3.498825453639988,
+            -2.814875296874252
+          ],
+          [
+            -3.4992272152381956,
+            -0.20838263850865882,
+            6.666120718231562,
+            -5.124780630807132
+          ],
+          [
+            0.03870217948984739,
+            -7.528442543207581,
+            -0.21502295890536904,
+            0.12455397884314467
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.0074174111634125964,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          1.438358346214249,
+          0.614457183651471,
+          0.685676070239906,
+          1.3631313053591188,
+          1.5318174775661
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 7.534323617042042,
+            "held_out_camera_error_m": 0.14344810399208474
+          },
+          {
+            "omitted_view": 1,
+            "scale": 7.511274042892967,
+            "held_out_camera_error_m": 0.06521339327831721
+          },
+          {
+            "omitted_view": 2,
+            "scale": 7.523732862530638,
+            "held_out_camera_error_m": 0.07098002424963949
+          },
+          {
+            "omitted_view": 3,
+            "scale": 7.516356862980816,
+            "held_out_camera_error_m": 0.035337764709816435
+          },
+          {
+            "omitted_view": 4,
+            "scale": 7.60272324695959,
+            "held_out_camera_error_m": 0.1261233324402011
+          }
+        ]
+      },
+      "prediction": {
+        "ok": true,
+        "scope": "upstream inference smoke, not a research benchmark",
+        "checked_at": "2026-09-22T10:08:04.991974+00:00",
+        "upstream_commit": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4",
+        "model": "depth-anything/DA3-LARGE-1.1",
+        "model_revision": "0e109ae307c5982f319a67cf6f9f99ccdc0ec97c",
+        "images": [
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p02\\view_-29.png",
+            "sha256": "ea3d0c93c716ba90a026e5eac2622babe9b5ec653dd10562a8b8f9963a38c2a3"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p02\\view_-11.png",
+            "sha256": "4af790145f79741e1fdf946c3a20fc228157f30200012deb103539b63dfcaf8f"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p02\\view_+07.png",
+            "sha256": "ec1629666123f3dfd767530d7ab3933478dc2f5d1e2d6a91349a4ed3b48a76dc"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p02\\view_+23.png",
+            "sha256": "219420b49c0147a66849778b4c45b9602f14d9a3f4dc57f0c07fff75db560b36"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p02\\view_+38.png",
+            "sha256": "7197d32dab8674b641c21a2e34b9a1d69eb87a5e21ec5d9e1dcae77b89d788ad"
+          }
+        ],
+        "versions": {
+          "torch": "2.10.0+cu128",
+          "torchvision": "0.25.0+cu128",
+          "numpy": "1.26.4",
+          "depth-anything-3": "0.0.0"
+        },
+        "process_res": 504,
+        "process_res_method": "upper_bound_resize",
+        "infer_gs": false,
+        "use_ray_pose": false,
+        "ref_view_strategy": "saddle_balanced",
+        "sky_available": false,
+        "is_metric": null,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "cuda_runtime": "12.8",
+        "load_seconds": 7.293,
+        "inference_seconds": 1.891,
+        "gpu_free_before_mib": 1306.9,
+        "gpu_total_mib": 8187.5,
+        "peak_allocated_mib": 4092.2,
+        "peak_reserved_mib": 5504.0,
+        "outputs": {
+          "depth": {
+            "shape": [
+              5,
+              378,
+              504
+            ],
+            "dtype": "float32"
+          },
+          "conf": {
+            "shape": [
+              5,
+              378,
+              504
+            ],
+            "dtype": "float32"
+          },
+          "intrinsics": {
+            "shape": [
+              5,
+              3,
+              3
+            ],
+            "dtype": "float32"
+          },
+          "extrinsics": {
+            "shape": [
+              5,
+              3,
+              4
+            ],
+            "dtype": "float32"
+          },
+          "processed_images": {
+            "shape": [
+              5,
+              378,
+              504,
+              3
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "state": "succeeded",
+        "camera_source": "estimated",
+        "gt_read_during_inference": false
+      }
+    },
+    {
+      "case_id": "p03",
+      "geometry_sha256": "3354404c4c3649db87c85ebb915a61e1dff245a2825c8a4f3ff21f7e12715fe2",
+      "point_count": 952560,
+      "query_method_count": 4,
+      "accepted_count": 1,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "elapsed_seconds": 30.894925100000364,
+      "alignment": {
+        "source_singular_values": [
+          0.679544493782037,
+          0.10731078259850793,
+          0.0016223116376927272
+        ],
+        "target_singular_values": [
+          5.127398739795883,
+          0.8927828069721556,
+          4.490459481033942e-09
+        ],
+        "second_to_first_singular_ratios": [
+          0.15791575618730233,
+          0.1741200269920292
+        ],
+        "camera_residuals_m": [
+          0.04659469436518272,
+          0.033220360452180714,
+          0.056220625553165385,
+          0.025066276273544262,
+          0.04818586628877449
+        ],
+        "camera_rmse_m": 0.0433257718808751,
+        "camera_span_m": 6.402469275951368,
+        "scale": 7.563793507125106,
+        "prediction_world_to_gt_world": [
+          [
+            7.513257592064766,
+            0.010887528736666482,
+            -0.8728195892777805,
+            0.6928518391673665
+          ],
+          [
+            0.8720984541576049,
+            -0.4151367032859208,
+            7.501871634616837,
+            -5.70183517001182
+          ],
+          [
+            -0.03710606372200544,
+            -7.552384735812306,
+            -0.41361837571867077,
+            0.11758130350194865
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.006767040967086429,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          2.4332860051307956,
+          1.9224452965517989,
+          2.0054899771042485,
+          2.4431279069108967,
+          2.514238665035046
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 7.601676477323598,
+            "held_out_camera_error_m": 0.1251310000353238
+          },
+          {
+            "omitted_view": 1,
+            "scale": 7.544304627862622,
+            "held_out_camera_error_m": 0.04776236818327723
+          },
+          {
+            "omitted_view": 2,
+            "scale": 7.554988479719446,
+            "held_out_camera_error_m": 0.07101186963095689
+          },
+          {
+            "omitted_view": 3,
+            "scale": 7.548187614893045,
+            "held_out_camera_error_m": 0.03667820288473201
+          },
+          {
+            "omitted_view": 4,
+            "scale": 7.603912765759662,
+            "held_out_camera_error_m": 0.11562644325540168
+          }
+        ]
+      },
+      "prediction": {
+        "ok": true,
+        "scope": "upstream inference smoke, not a research benchmark",
+        "checked_at": "2026-09-22T10:08:19.905943+00:00",
+        "upstream_commit": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4",
+        "model": "depth-anything/DA3-LARGE-1.1",
+        "model_revision": "0e109ae307c5982f319a67cf6f9f99ccdc0ec97c",
+        "images": [
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p03\\view_-29.png",
+            "sha256": "b19f5e0b185a254e20ad4749a7945d0df47cde53aba48927fee2f86ee41b4dfe"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p03\\view_-11.png",
+            "sha256": "2a70218ded543072cc7cd1d69c0892279300712349e8a9fe640ec786c56b0667"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p03\\view_+07.png",
+            "sha256": "5560e9a7e355d967ccfe1b00de54729320b1c8f0274543cb118c61949d122404"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p03\\view_+23.png",
+            "sha256": "4d94ba9d38217d748fa3a8125d671f3f9564309998ee8e91e9dd3e196b2e99c6"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p03\\view_+38.png",
+            "sha256": "bda3544aed04307f76dcdc07e7bdaeebe46530ebe699b237c06b0228b13bc1c5"
+          }
+        ],
+        "versions": {
+          "torch": "2.10.0+cu128",
+          "torchvision": "0.25.0+cu128",
+          "numpy": "1.26.4",
+          "depth-anything-3": "0.0.0"
+        },
+        "process_res": 504,
+        "process_res_method": "upper_bound_resize",
+        "infer_gs": false,
+        "use_ray_pose": false,
+        "ref_view_strategy": "saddle_balanced",
+        "sky_available": false,
+        "is_metric": null,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "cuda_runtime": "12.8",
+        "load_seconds": 7.75,
+        "inference_seconds": 2.188,
+        "gpu_free_before_mib": 1306.9,
+        "gpu_total_mib": 8187.5,
+        "peak_allocated_mib": 4092.2,
+        "peak_reserved_mib": 5504.0,
+        "outputs": {
+          "depth": {
+            "shape": [
+              5,
+              378,
+              504
+            ],
+            "dtype": "float32"
+          },
+          "conf": {
+            "shape": [
+              5,
+              378,
+              504
+            ],
+            "dtype": "float32"
+          },
+          "intrinsics": {
+            "shape": [
+              5,
+              3,
+              3
+            ],
+            "dtype": "float32"
+          },
+          "extrinsics": {
+            "shape": [
+              5,
+              3,
+              4
+            ],
+            "dtype": "float32"
+          },
+          "processed_images": {
+            "shape": [
+              5,
+              378,
+              504,
+              3
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "state": "succeeded",
+        "camera_source": "estimated",
+        "gt_read_during_inference": false
+      }
+    },
+    {
+      "case_id": "p04",
+      "geometry_sha256": "4b26086759b2be3b1016313fd1dccd89f79210f5dffeb5fd0df74c238fbb8350",
+      "point_count": 952560,
+      "query_method_count": 4,
+      "accepted_count": 0,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "elapsed_seconds": 22.968648699999903,
+      "alignment": {
+        "source_singular_values": [
+          0.681548171432816,
+          0.1091218084416706,
+          0.0024281713392988197
+        ],
+        "target_singular_values": [
+          5.127398739795883,
+          0.8927828069721556,
+          4.490459481033942e-09
+        ],
+        "second_to_first_singular_ratios": [
+          0.16010872454145722,
+          0.1741200269920292
+        ],
+        "camera_residuals_m": [
+          0.041201278496758115,
+          0.026841708172558758,
+          0.054344025224854146,
+          0.012919950346025545,
+          0.03894223799592451
+        ],
+        "camera_rmse_m": 0.03756253117696624,
+        "camera_span_m": 6.402469275951368,
+        "scale": 7.539291046726151,
+        "prediction_world_to_gt_world": [
+          [
+            7.410389166129037,
+            -0.023358722098748924,
+            1.3879828038792072,
+            -1.0959894757559452
+          ],
+          [
+            -1.388108953043998,
+            -0.20060054409086897,
+            7.407686713369744,
+            -5.672615796815771
+          ],
+          [
+            0.013979565142336352,
+            -7.536585651278527,
+            -0.20147153631734346,
+            0.10555629078490307
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fit_inputs": "camera_centers_only",
+        "camera_rmse_over_span": 0.005866881910399278,
+        "poor_camera_fit": false,
+        "orientation_errors_degrees": [
+          1.2616250114465708,
+          0.548475373780126,
+          0.8088444890598626,
+          0.9903098568350167,
+          1.3262088156173102
+        ],
+        "leave_one_camera_out": [
+          {
+            "omitted_view": 0,
+            "scale": 7.542918341008954,
+            "held_out_camera_error_m": 0.11993927201630425
+          },
+          {
+            "omitted_view": 1,
+            "scale": 7.5295838540937625,
+            "held_out_camera_error_m": 0.04049007072508473
+          },
+          {
+            "omitted_view": 2,
+            "scale": 7.530837388413594,
+            "held_out_camera_error_m": 0.06976389723858141
+          },
+          {
+            "omitted_view": 3,
+            "scale": 7.530824887437825,
+            "held_out_camera_error_m": 0.018892485659533945
+          },
+          {
+            "omitted_view": 4,
+            "scale": 7.581580295563424,
+            "held_out_camera_error_m": 0.09399251375796872
+          }
+        ]
+      },
+      "prediction": {
+        "ok": true,
+        "scope": "upstream inference smoke, not a research benchmark",
+        "checked_at": "2026-09-22T10:08:35.212272+00:00",
+        "upstream_commit": "3d835ec1a5802d64a8b8b15f817a1ab54809bfe4",
+        "model": "depth-anything/DA3-LARGE-1.1",
+        "model_revision": "0e109ae307c5982f319a67cf6f9f99ccdc0ec97c",
+        "images": [
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p04\\view_-29.png",
+            "sha256": "833ef19505af8266af7771c672ee7c3da58af1ec56d07dd88ac1d32a1745b6e4"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p04\\view_-11.png",
+            "sha256": "64b4cfe72d3382c8ff378d22dc92d41997d45deedd7e834b56e8599d004efefc"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p04\\view_+07.png",
+            "sha256": "4bfeffeab64bf76c75b28fb7a757f3d0166a0f424e29edd2d6973f29f636ed0d"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p04\\view_+23.png",
+            "sha256": "26d023ef43a1b417878255a839f1fae93524eeb0df54caff690f54815349d4a0"
+          },
+          {
+            "path": "D:\\Creator-newage\\data\\inputs\\foreground-estimated-pilot-v1-20260922\\p04\\view_+38.png",
+            "sha256": "62658cd39f2e9ab68a86034e9c99d58847370927db14dcc55979170dc6d358d4"
+          }
+        ],
+        "versions": {
+          "torch": "2.10.0+cu128",
+          "torchvision": "0.25.0+cu128",
+          "numpy": "1.26.4",
+          "depth-anything-3": "0.0.0"
+        },
+        "process_res": 504,
+        "process_res_method": "upper_bound_resize",
+        "infer_gs": false,
+        "use_ray_pose": false,
+        "ref_view_strategy": "saddle_balanced",
+        "sky_available": false,
+        "is_metric": null,
+        "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "cuda_runtime": "12.8",
+        "load_seconds": 7.831,
+        "inference_seconds": 2.964,
+        "gpu_free_before_mib": 1294.4,
+        "gpu_total_mib": 8187.5,
+        "peak_allocated_mib": 4092.2,
+        "peak_reserved_mib": 5504.0,
+        "outputs": {
+          "depth": {
+            "shape": [
+              5,
+              378,
+              504
+            ],
+            "dtype": "float32"
+          },
+          "conf": {
+            "shape": [
+              5,
+              378,
+              504
+            ],
+            "dtype": "float32"
+          },
+          "intrinsics": {
+            "shape": [
+              5,
+              3,
+              3
+            ],
+            "dtype": "float32"
+          },
+          "extrinsics": {
+            "shape": [
+              5,
+              3,
+              4
+            ],
+            "dtype": "float32"
+          },
+          "processed_images": {
+            "shape": [
+              5,
+              378,
+              504,
+              3
+            ],
+            "dtype": "uint8"
+          }
+        },
+        "state": "succeeded",
+        "camera_source": "estimated",
+        "gt_read_during_inference": false
+      }
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "p01",
+      "query_id": "p01_A",
+      "method": "baseline",
+      "role": "primary",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.0925096975733819,
+            0.2704985559975208,
+            1.0784116026878787
+          ],
+          [
+            -0.08565896793182537,
+            0.1982754806434901,
+            -1.2437982844497772
+          ]
+        ]
+      ],
+      "native_segments": [
+        [
+          [
+            -0.012147271340058847,
+            -0.15411934318247783,
+            0.7852682962463517
+          ],
+          [
+            -0.012125733901564685,
+            0.14821804945962863,
+            0.7878515312482626
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.323342821244875,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.23685236133435983,
+          "distance_p95": 0.2648819956785713,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.323342821244875,
+          "sample_count": 1162,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.23812649366824518,
+          "distance_p95": 0.2699106756141455,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p01",
+      "query_id": "p01_B",
+      "method": "baseline",
+      "role": "primary",
+      "state": "unresolved",
+      "reason": "competing_or_partially_supported_identity",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p01",
+      "query_id": "p01_mixed",
+      "method": "baseline",
+      "role": "mixed_annotation_control",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p01",
+      "query_id": "p01_A",
+      "method": "cylinder_support",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p01",
+      "query_id": "p01_B",
+      "method": "cylinder_support",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p01",
+      "query_id": "p01_mixed",
+      "method": "cylinder_support",
+      "role": "mixed_annotation_control",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p02",
+      "query_id": "p02_A",
+      "method": "baseline",
+      "role": "primary",
+      "state": "unresolved",
+      "reason": "competing_or_partially_supported_identity",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p02",
+      "query_id": "p02_B",
+      "method": "baseline",
+      "role": "primary",
+      "state": "unresolved",
+      "reason": "competing_or_partially_supported_identity",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p02",
+      "query_id": "p02_A",
+      "method": "cylinder_support",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p02",
+      "query_id": "p02_B",
+      "method": "cylinder_support",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p03",
+      "query_id": "p03_A",
+      "method": "baseline",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6600000000000006,
+          "sample_count": 830,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete",
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.33999999999999986,
+          "sample_count": 170,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.2900000000000001,
+          "sample_count": 146,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      }
+    },
+    {
+      "case_id": "p03",
+      "query_id": "p03_B",
+      "method": "baseline",
+      "role": "primary",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            0.19134120475720118,
+            0.2528801493840147,
+            0.9364611964192323
+          ],
+          [
+            0.1865916101185766,
+            0.10555196921843457,
+            -1.3092502549305196
+          ]
+        ]
+      ],
+      "native_segments": [
+        [
+          [
+            0.024378785745819122,
+            -0.15140412347486887,
+            0.7825515411727328
+          ],
+          [
+            0.022965768438047013,
+            0.14611898878570206,
+            0.7795412089409276
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.2505439507024834,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.19320772279586876,
+          "distance_p95": 0.2518289963310402,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.2505439507024834,
+          "sample_count": 1126,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.19186865309349377,
+          "distance_p95": 0.252924646543849,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p03",
+      "query_id": "p03_A",
+      "method": "cylinder_support",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6600000000000006,
+          "sample_count": 830,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete",
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.33999999999999986,
+          "sample_count": 170,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.2900000000000001,
+          "sample_count": 146,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      }
+    },
+    {
+      "case_id": "p03",
+      "query_id": "p03_B",
+      "method": "cylinder_support",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p04",
+      "query_id": "p04_blank",
+      "method": "baseline",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": false,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p04",
+      "query_id": "p04_B",
+      "method": "baseline",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p04",
+      "query_id": "p04_blank",
+      "method": "cylinder_support",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": false,
+      "evaluation_state": "complete"
+    },
+    {
+      "case_id": "p04",
+      "query_id": "p04_B",
+      "method": "cylinder_support",
+      "role": "primary",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "native_segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "target_present": true,
+      "evaluation_state": "complete"
+    }
+  ],
+  "geometry_seconds": 56.36926439999934,
+  "metric_scope": "native added curve diagnostics; complete candidate common-readout efficacy remains unqualified"
+}

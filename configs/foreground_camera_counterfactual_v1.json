@@ -1,0 +1,7 @@
+{
+  "audit_id": "camera-counterfactual-v1",
+  "source_run_id": "foreground-estimated-pilot-v1-20260922",
+  "variants": ["oracle_intrinsics_only", "oracle_pose_only", "oracle_intrinsics_and_pose"],
+  "scope": "Evaluation-only privileged camera substitutions for diagnosis. Never a deployable correction, never written into RGB model inputs or saved patches.",
+  "parallel_workers": 3
+}
