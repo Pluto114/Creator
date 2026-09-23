@@ -1,0 +1,51 @@
+{
+  "state": "complete",
+  "frozen_run_count": 5,
+  "source_references": 194,
+  "unique_git_source_files": 66,
+  "new_source_files_byte_exact": 8,
+  "legacy_newline_mappings": {
+    "configs/models.lock.json": {
+      "raw_frozen_sha256": "07e328e7520c775b93bd94976866a28dbb55b50e4b40491aad64ca7eaa48416c",
+      "git_blob_sha256": "0c7189c774337bd2bcd64dca1a5f77b4266429185987ef0277855d626601b25a",
+      "relation": "legacy source CRLF to LF only; original snapshot preserved"
+    },
+    "experiments/src/creator_eval/camera_diagnostics.py": {
+      "raw_frozen_sha256": "17101a6c1dd47eb88c0bb041a536c7976056d13a9546588c5789b1848774d49c",
+      "git_blob_sha256": "5596b6ca9cbc89ff6790c1c4a706d0bb00b2aa60bcf9d9d7d08cf520fc597a37",
+      "relation": "legacy source CRLF to LF only; original snapshot preserved"
+    },
+    "experiments/src/creator_eval/heldout_metrics.py": {
+      "raw_frozen_sha256": "25715bcab74a25fde30f61435ae7f7ba2a123abb25177d0d38633c93e4f6ae7a",
+      "git_blob_sha256": "5bd4ef54ec549a9d16b9fcd6757e5e55fbc808a90063433710983c9029d93883",
+      "relation": "legacy source CRLF to LF only; original snapshot preserved"
+    },
+    "experiments/src/creator_eval/line_controls.py": {
+      "raw_frozen_sha256": "7702c987899685a8647f7cecadabb5a0b854ce86b975e85b5d7e5e5abf9c89b3",
+      "git_blob_sha256": "63fc2963efeb5c6df0acf338130f4debc3b4ef3986c49b6a894bb0ded7defd61",
+      "relation": "legacy source CRLF to LF only; original snapshot preserved"
+    },
+    "experiments/src/creator_eval/rod_candidate_extent.py": {
+      "raw_frozen_sha256": "65927b89a968eea59fcaa46bce29e560b9cc0180eb6db2349a30631bab087ad1",
+      "git_blob_sha256": "0ed9c6e7b9fd897ab7f9d3e6cc97632f802f9a7cb9780a009389ab093cfe3dca",
+      "relation": "legacy source CRLF to LF only; original snapshot preserved"
+    },
+    "experiments/src/creator_eval/rod_evidence.py": {
+      "raw_frozen_sha256": "67d9d57fbd5ea20fab518ba8aa43353204fcea0980c022ed9c3fffb8d443016e",
+      "git_blob_sha256": "df3bcd64b18f4cc9d0ffa1d4c8ee8bea30da3b966bcb3a660936108fa99867f8",
+      "relation": "legacy source CRLF to LF only; original snapshot preserved"
+    },
+    "scripts/run_thin_line_controls.py": {
+      "raw_frozen_sha256": "75d02972c63a4ec3ee679a347adbd2e2b303eec48f96d4da2e56d4a6fe055a30",
+      "git_blob_sha256": "887aae99b8444faf3d49fb3a829876bec6d5e931f9d919fd304aa58dfa65e8b0",
+      "relation": "legacy source CRLF to LF only; original snapshot preserved"
+    },
+    "scripts/smoke_da3.py": {
+      "raw_frozen_sha256": "487ec7e079558c1f00d87264f291542bd0ac951a2be4ae7f3ce8039889c6fb5a",
+      "git_blob_sha256": "6450497121c78a4111a7b1ffbd8222566c5c839becaf5e54734ba4104dedc0b9",
+      "relation": "legacy source CRLF to LF only; original snapshot preserved"
+    }
+  },
+  "checked_doc_links": 194,
+  "scope": "New sources byte-exact in Git; inherited CRLF sources keep original frozen hashes and explicit LF mapping; no semantic edits accepted"
+}

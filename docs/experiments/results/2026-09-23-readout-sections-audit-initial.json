@@ -1,0 +1,18 @@
+{
+  "state": "passed",
+  "counts": {
+    "frozen_runs": 2,
+    "frozen_source_files": 22,
+    "identical_analytic_inputs": 198,
+    "identical_v3_regression_rows": 198,
+    "identical_base_snapshots": 7,
+    "identical_patch_geometry": 7,
+    "saved_views": 14,
+    "correct_reader_outputs": 28
+  },
+  "analytic_run": "common-readout-sections-controls-v1-20260923",
+  "point_run": "g1-point-patch-sections-v1-20260923",
+  "gt_read_during_inference": false,
+  "reader_qualification": "not_established",
+  "audit_source_sha256": "dce1828f48f0d43641cf6644887478b522146e136ccfab1d3a301e5c7a1f6b7b"
+}

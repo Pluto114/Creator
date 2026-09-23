@@ -1,0 +1,14 @@
+{
+  "state": "complete",
+  "source_sha256": "6e73a1befeedde1eed9661cebba17ff135efabe0f8000fa9ee812cded8b9bd9a",
+  "ordinary_run_id": "rod-assignment-refit-v1-20260923r2",
+  "summary_sha256": "23e2e2fbfe0454ecea2ce7839496bc9f07abadcbca95708d838d2eb48026c148",
+  "diagnostic_summary_sha256": "12770a012383af145c9aaef65fbdf5b07c157063a3a456612b1f6d4904c9d394",
+  "verified_camera_tasks": 14,
+  "normal_rows": 112,
+  "legacy_rows_exact": 28,
+  "diagnostic_rows": 48,
+  "diagnostic_legacy_rows_close": 12,
+  "diagnostic_alignment_abs_tolerance": 1e-12,
+  "maximum_abs_metric_difference": 8.998878031629687e-16
+}

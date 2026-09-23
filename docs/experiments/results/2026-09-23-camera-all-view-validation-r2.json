@@ -1,0 +1,5491 @@
+{
+  "state": "complete",
+  "run_id": "camera-all-view-validation-v1-20260923r2",
+  "prepared_sha256": "bab0c04b45e8fd60abbc2b705be4f681f51e3236919a6a91e82604abed81ea9d",
+  "case_count": 7,
+  "camera_condition_count": 28,
+  "plan_sha256": {
+    "rod-reference-bundle-v1-20260923/r01": "6cc316741dae897bd193972e93a901db9c31b64725fa6548a7356c8a9857ad62",
+    "rod-reference-bundle-v1-20260923/r02": "5df4bd4d9c0b5ff2c6d93788de7f4b87748b738b25e98c6290166d58d2b3c669",
+    "rod-reference-bundle-v1-20260923/r03": "5c94f5b074d35d21b9738870b60f5bb3755d61db36e87940e13cabbe5ac42c63",
+    "rod-reference-bundle-v1-20260923/r04": "8e2680f263aa9ae8c29be323dce35f24ad854a5e629007575aedd7ad07fe90c9",
+    "rod-height-bundle-v1-20260923/r01": "1d8e14cccafae85d7db97af330946c467328666b311dc4bc3da8d051ff8308e2",
+    "rod-height-bundle-v1-20260923/r02": "3db963b51aec6e1f1f3616b728861894554933b2828ceb0da345e55d779561ce",
+    "rod-height-bundle-v1-20260923/r03": "f38804cd30bab0c6fe653a02d5453ce9b124c177ca19110fe60b8ff11aa8e67a"
+  },
+  "rows": [
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r01",
+      "variant": "initial",
+      "plan_sha256": "6cc316741dae897bd193972e93a901db9c31b64725fa6548a7356c8a9857ad62",
+      "camera_decision": null,
+      "state": "complete",
+      "summary": {
+        "sample_count": 237,
+        "finite_count": 237,
+        "invalid_count": 0,
+        "median_px": 3.0949632205366018,
+        "p95_px": 7.417086949655976,
+        "fraction_within_2px": 0.21940928270042195,
+        "fraction_within_5px": 0.759493670886076,
+        "signed_mean_uv_px": [
+          0.5381446841513946,
+          0.14893348377641843
+        ],
+        "signed_median_uv_px": [
+          0.6232567458386029,
+          0.13444939856317717
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 5.16849986954544,
+          "p95_px": 10.380141236461869,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.34146341463414637,
+          "signed_mean_uv_px": [
+            6.301161940089373,
+            -0.13977229207561054
+          ],
+          "signed_median_uv_px": [
+            5.154292624887077,
+            -0.13654523418783526
+          ],
+          "observation_bounds_xy": [
+            [
+              28.27628517150879,
+              31.12466049194336
+            ],
+            [
+              518.8988037109375,
+              126.90172576904297
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 44,
+          "finite_count": 44,
+          "invalid_count": 0,
+          "median_px": 2.5536014839250765,
+          "p95_px": 6.2891823056627,
+          "fraction_within_2px": 0.20454545454545456,
+          "fraction_within_5px": 0.7954545454545454,
+          "signed_mean_uv_px": [
+            -2.247031311238429,
+            -0.4753290058454379
+          ],
+          "signed_median_uv_px": [
+            -2.3254767082243006,
+            -0.35738379818932486
+          ],
+          "observation_bounds_xy": [
+            [
+              19.673593521118164,
+              14.777305603027344
+            ],
+            [
+              575.7752075195312,
+              117.46630096435547
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 66,
+          "finite_count": 66,
+          "invalid_count": 0,
+          "median_px": 3.3846417212583955,
+          "p95_px": 7.210681681471744,
+          "fraction_within_2px": 0.13636363636363635,
+          "fraction_within_5px": 0.7727272727272727,
+          "signed_mean_uv_px": [
+            -1.532266835554573,
+            1.1417086282119122
+          ],
+          "signed_median_uv_px": [
+            -1.9415336625409338,
+            1.1078569391808433
+          ],
+          "observation_bounds_xy": [
+            [
+              34.185970306396484,
+              17.988134384155273
+            ],
+            [
+              617.3360595703125,
+              120.63697052001953
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 49,
+          "finite_count": 49,
+          "invalid_count": 0,
+          "median_px": 1.8511895198214599,
+          "p95_px": 7.047006391520684,
+          "fraction_within_2px": 0.5510204081632653,
+          "fraction_within_5px": 0.8979591836734694,
+          "signed_mean_uv_px": [
+            1.4510941552878267,
+            0.4553935629224722
+          ],
+          "signed_median_uv_px": [
+            1.2394613342909224,
+            0.2771093467817849
+          ],
+          "observation_bounds_xy": [
+            [
+              107.1460952758789,
+              15.86877727508545
+            ],
+            [
+              610.6309814453125,
+              124.8206787109375
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 2.8359860521639013,
+          "p95_px": 4.180286779202128,
+          "fraction_within_2px": 0.1891891891891892,
+          "fraction_within_5px": 0.972972972972973,
+          "signed_mean_uv_px": [
+            -0.05167497750796361,
+            -0.9655318421047802
+          ],
+          "signed_median_uv_px": [
+            -1.4505219674880436,
+            -1.0709929780264957
+          ],
+          "observation_bounds_xy": [
+            [
+              182.56617736816406,
+              37.14344024658203
+            ],
+            [
+              605.4737548828125,
+              123.87831115722656
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 101,
+        "finite_count": 101,
+        "invalid_count": 0,
+        "median_px": 2.309656534333695,
+        "p95_px": 6.685702384265981,
+        "fraction_within_2px": 0.32673267326732675,
+        "fraction_within_5px": 0.801980198019802
+      },
+      "original_scoring_counts": [
+        0,
+        32,
+        37,
+        32,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r01-initial.json",
+      "sha256": "c8b25513ac1ab11c3b9a635e6e816c02fb9561a5de461de1200ac378e9a8a3d7"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r01",
+      "variant": "common_K_focal_linear",
+      "plan_sha256": "6cc316741dae897bd193972e93a901db9c31b64725fa6548a7356c8a9857ad62",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 237,
+        "finite_count": 237,
+        "invalid_count": 0,
+        "median_px": 0.3041781295301303,
+        "p95_px": 0.8048183688948477,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          0.004133357450871206,
+          -0.032165318278235315
+        ],
+        "signed_median_uv_px": [
+          -0.021301210767433076,
+          -0.04544358161913209
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 0.40516085186434353,
+          "p95_px": 0.8697311245932128,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.19694862184850853,
+            0.2673768809109714
+          ],
+          "signed_median_uv_px": [
+            0.15516150590786992,
+            0.2913841977653817
+          ],
+          "observation_bounds_xy": [
+            [
+              28.27628517150879,
+              31.12466049194336
+            ],
+            [
+              518.8988037109375,
+              126.90172576904297
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 44,
+          "finite_count": 44,
+          "invalid_count": 0,
+          "median_px": 0.15527641650332075,
+          "p95_px": 0.6599705180063434,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.06061808479540973,
+            -0.06860409957842162
+          ],
+          "signed_median_uv_px": [
+            -0.07018417087721218,
+            -0.02365233997351801
+          ],
+          "observation_bounds_xy": [
+            [
+              19.673593521118164,
+              14.777305603027344
+            ],
+            [
+              575.7752075195312,
+              117.46630096435547
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 66,
+          "finite_count": 66,
+          "invalid_count": 0,
+          "median_px": 0.3304692987345501,
+          "p95_px": 0.7881880045021181,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.05320947947627964,
+            -0.14159659870059793
+          ],
+          "signed_median_uv_px": [
+            -0.08946138923141689,
+            -0.18968717758485631
+          ],
+          "observation_bounds_xy": [
+            [
+              34.185970306396484,
+              17.988134384155273
+            ],
+            [
+              617.3360595703125,
+              120.63697052001953
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 49,
+          "finite_count": 49,
+          "invalid_count": 0,
+          "median_px": 0.18858450569218263,
+          "p95_px": 0.7231331219330016,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.09145614567441443,
+            -0.06885602117358562
+          ],
+          "signed_median_uv_px": [
+            0.09896105118508558,
+            -0.05746427418893063
+          ],
+          "observation_bounds_xy": [
+            [
+              107.1460952758789,
+              15.86877727508545
+            ],
+            [
+              610.6309814453125,
+              124.8206787109375
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.41454924571656326,
+          "p95_px": 0.9719506979134733,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.14588155517692422,
+            -0.07696571935394284
+          ],
+          "signed_median_uv_px": [
+            -0.15487138937157852,
+            0.006301577387489488
+          ],
+          "observation_bounds_xy": [
+            [
+              182.56617736816406,
+              37.14344024658203
+            ],
+            [
+              605.4737548828125,
+              123.87831115722656
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 101,
+        "finite_count": 101,
+        "invalid_count": 0,
+        "median_px": 0.19594127858198876,
+        "p95_px": 0.7396086585728392,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        32,
+        37,
+        32,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r01-common_K_focal_linear.json",
+      "sha256": "800718060a02e82de8891f30228abf9efa74dfc1f9e1e9289afef4e665b93398"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r01",
+      "variant": "common_K_focal_robust",
+      "plan_sha256": "6cc316741dae897bd193972e93a901db9c31b64725fa6548a7356c8a9857ad62",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 237,
+        "finite_count": 237,
+        "invalid_count": 0,
+        "median_px": 0.30873595602879367,
+        "p95_px": 0.7951868197981631,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.002965517794453682,
+          -0.039456449853399
+        ],
+        "signed_median_uv_px": [
+          -0.015814881686225135,
+          -0.05927461446705706
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 0.4416935614290469,
+          "p95_px": 0.9208845909389397,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.11591792195664127,
+            0.35581358832054794
+          ],
+          "signed_median_uv_px": [
+            0.07780679672572433,
+            0.37627840617108177
+          ],
+          "observation_bounds_xy": [
+            [
+              28.27628517150879,
+              31.12466049194336
+            ],
+            [
+              518.8988037109375,
+              126.90172576904297
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 44,
+          "finite_count": 44,
+          "invalid_count": 0,
+          "median_px": 0.14480666725795516,
+          "p95_px": 0.6865635260564432,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.019153387579380506,
+            -0.08253237872712055
+          ],
+          "signed_median_uv_px": [
+            -0.01775487310239754,
+            -0.05872752748074106
+          ],
+          "observation_bounds_xy": [
+            [
+              19.673593521118164,
+              14.777305603027344
+            ],
+            [
+              575.7752075195312,
+              117.46630096435547
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 66,
+          "finite_count": 66,
+          "invalid_count": 0,
+          "median_px": 0.3157982016167175,
+          "p95_px": 0.7787587945760023,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.05393856187981158,
+            -0.17535278849805802
+          ],
+          "signed_median_uv_px": [
+            -0.08453732841441308,
+            -0.21642882701627286
+          ],
+          "observation_bounds_xy": [
+            [
+              34.185970306396484,
+              17.988134384155273
+            ],
+            [
+              617.3360595703125,
+              120.63697052001953
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 49,
+          "finite_count": 49,
+          "invalid_count": 0,
+          "median_px": 0.19226269273742302,
+          "p95_px": 0.7913382767272332,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.062306296521368223,
+            -0.11342993681355992
+          ],
+          "signed_median_uv_px": [
+            0.07655870106177076,
+            -0.07461559947133622
+          ],
+          "observation_bounds_xy": [
+            [
+              107.1460952758789,
+              15.86877727508545
+            ],
+            [
+              610.6309814453125,
+              124.8206787109375
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.3577766434730392,
+          "p95_px": 0.9175404544872475,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.11096694349985274,
+            -0.08585838182887726
+          ],
+          "signed_median_uv_px": [
+            -0.10313009982615995,
+            -0.04513339592369903
+          ],
+          "observation_bounds_xy": [
+            [
+              182.56617736816406,
+              37.14344024658203
+            ],
+            [
+              605.4737548828125,
+              123.87831115722656
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 101,
+        "finite_count": 101,
+        "invalid_count": 0,
+        "median_px": 0.1929986776418488,
+        "p95_px": 0.7847472137564834,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        32,
+        37,
+        32,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r01-common_K_focal_robust.json",
+      "sha256": "e87d3d8dc07911263b142f28cd2beaf3c13067fe06dfe1337f1041ec580e5460"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r01",
+      "variant": "common_K_focal_trimmed",
+      "plan_sha256": "6cc316741dae897bd193972e93a901db9c31b64725fa6548a7356c8a9857ad62",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 237,
+        "finite_count": 237,
+        "invalid_count": 0,
+        "median_px": 0.2709102190483707,
+        "p95_px": 0.7884874895511396,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.0033345993310454386,
+          -0.024679197228994323
+        ],
+        "signed_median_uv_px": [
+          -0.017471937200497223,
+          -0.01966712011814309
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 0.36275523502011614,
+          "p95_px": 0.7736294761201421,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.07932558367793198,
+            0.24672170644036684
+          ],
+          "signed_median_uv_px": [
+            0.02209817257858049,
+            0.25773363188325504
+          ],
+          "observation_bounds_xy": [
+            [
+              28.27628517150879,
+              31.12466049194336
+            ],
+            [
+              518.8988037109375,
+              126.90172576904297
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 44,
+          "finite_count": 44,
+          "invalid_count": 0,
+          "median_px": 0.11075750861815281,
+          "p95_px": 0.6279990829879627,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.00282539898950749,
+            0.02814576933974309
+          ],
+          "signed_median_uv_px": [
+            0.0072369518529455945,
+            0.03426505051815809
+          ],
+          "observation_bounds_xy": [
+            [
+              19.673593521118164,
+              14.777305603027344
+            ],
+            [
+              575.7752075195312,
+              117.46630096435547
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 66,
+          "finite_count": 66,
+          "invalid_count": 0,
+          "median_px": 0.27314166144714813,
+          "p95_px": 0.8925446911382686,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.04985387652762829,
+            -0.08815600776720436
+          ],
+          "signed_median_uv_px": [
+            -0.08891797578409921,
+            -0.11401651538161417
+          ],
+          "observation_bounds_xy": [
+            [
+              34.185970306396484,
+              17.988134384155273
+            ],
+            [
+              617.3360595703125,
+              120.63697052001953
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 49,
+          "finite_count": 49,
+          "invalid_count": 0,
+          "median_px": 0.20637086659141549,
+          "p95_px": 0.7113780136041856,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.054089127711117624,
+            -0.1053239348417239
+          ],
+          "signed_median_uv_px": [
+            0.06425390599366665,
+            -0.09882119755360463
+          ],
+          "observation_bounds_xy": [
+            [
+              107.1460952758789,
+              15.86877727508545
+            ],
+            [
+              610.6309814453125,
+              124.8206787109375
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.34151550052737023,
+          "p95_px": 0.8800997145193651,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.09532372796790828,
+            -0.16821092536203866
+          ],
+          "signed_median_uv_px": [
+            -0.08040747633629053,
+            -0.15080203393279135
+          ],
+          "observation_bounds_xy": [
+            [
+              182.56617736816406,
+              37.14344024658203
+            ],
+            [
+              605.4737548828125,
+              123.87831115722656
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 101,
+        "finite_count": 101,
+        "invalid_count": 0,
+        "median_px": 0.14634371947396857,
+        "p95_px": 0.7113780136041856,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        32,
+        37,
+        32,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r01-common_K_focal_trimmed.json",
+      "sha256": "859cd72c33cb517e0ad16618f24f00101aa5f1bde9c39c5f43c5c7fb7ee86a09"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r02",
+      "variant": "initial",
+      "plan_sha256": "5df4bd4d9c0b5ff2c6d93788de7f4b87748b738b25e98c6290166d58d2b3c669",
+      "camera_decision": null,
+      "state": "complete",
+      "summary": {
+        "sample_count": 182,
+        "finite_count": 182,
+        "invalid_count": 0,
+        "median_px": 5.253607057997524,
+        "p95_px": 9.493582962682133,
+        "fraction_within_2px": 0.17032967032967034,
+        "fraction_within_5px": 0.47802197802197804,
+        "signed_mean_uv_px": [
+          -1.3319117928204858,
+          -0.05650802674907037
+        ],
+        "signed_median_uv_px": [
+          -0.8665555509984983,
+          -0.09482496283095543
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 36,
+          "finite_count": 36,
+          "invalid_count": 0,
+          "median_px": 7.534915039199184,
+          "p95_px": 9.502055573619206,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.05555555555555555,
+          "signed_mean_uv_px": [
+            -7.448405536512321,
+            0.396166186757129
+          ],
+          "signed_median_uv_px": [
+            -7.47224414920754,
+            0.45393097718748265
+          ],
+          "observation_bounds_xy": [
+            [
+              52.43206787109375,
+              27.58258628845215
+            ],
+            [
+              489.8438415527344,
+              127.02153015136719
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 5.280713092762313,
+          "p95_px": 6.306879460642139,
+          "fraction_within_2px": 0.12195121951219512,
+          "fraction_within_5px": 0.43902439024390244,
+          "signed_mean_uv_px": [
+            4.210206053832652,
+            0.22095234362959182
+          ],
+          "signed_median_uv_px": [
+            5.209585375867277,
+            0.322747554310002
+          ],
+          "observation_bounds_xy": [
+            [
+              31.115156173706055,
+              27.075523376464844
+            ],
+            [
+              546.0848388671875,
+              120.76273345947266
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 46,
+          "finite_count": 46,
+          "invalid_count": 0,
+          "median_px": 2.9987955516187634,
+          "p95_px": 10.417233167195704,
+          "fraction_within_2px": 0.3695652173913043,
+          "fraction_within_5px": 0.782608695652174,
+          "signed_mean_uv_px": [
+            -1.4153410816195058,
+            -0.026150461039905683
+          ],
+          "signed_median_uv_px": [
+            0.47001501695730497,
+            -0.06597379146025162
+          ],
+          "observation_bounds_xy": [
+            [
+              43.96010971069336,
+              8.401421546936035
+            ],
+            [
+              570.1314086914062,
+              120.40386962890625
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 34,
+          "finite_count": 34,
+          "invalid_count": 0,
+          "median_px": 2.5196663331256346,
+          "p95_px": 7.218357971466437,
+          "fraction_within_2px": 0.2647058823529412,
+          "fraction_within_5px": 0.6176470588235294,
+          "signed_mean_uv_px": [
+            2.0637153774860155,
+            0.15780254704507718
+          ],
+          "signed_median_uv_px": [
+            1.53977649261725,
+            -0.08703360879760424
+          ],
+          "observation_bounds_xy": [
+            [
+              115.01757049560547,
+              18.603734970092773
+            ],
+            [
+              596.8924560546875,
+              116.88289642333984
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 5.977794103597133,
+          "p95_px": 8.912246423555466,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.4,
+          "signed_mean_uv_px": [
+            -6.077777130642037,
+            -1.5107142028839073
+          ],
+          "signed_median_uv_px": [
+            -5.910528816361079,
+            -1.2915606147348484
+          ],
+          "observation_bounds_xy": [
+            [
+              188.7172393798828,
+              24.87034797668457
+            ],
+            [
+              591.1948852539062,
+              99.7002944946289
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 82,
+        "finite_count": 82,
+        "invalid_count": 0,
+        "median_px": 4.275087224139503,
+        "p95_px": 6.2193760948778385,
+        "fraction_within_2px": 0.23170731707317074,
+        "fraction_within_5px": 0.6341463414634146
+      },
+      "original_scoring_counts": [
+        0,
+        32,
+        31,
+        19,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r02-initial.json",
+      "sha256": "a6b90eb598c667d3c9a3d239b1fac954993f5343e4be0e16d3ce279f7e145325"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r02",
+      "variant": "common_K_focal_linear",
+      "plan_sha256": "5df4bd4d9c0b5ff2c6d93788de7f4b87748b738b25e98c6290166d58d2b3c669",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 182,
+        "finite_count": 182,
+        "invalid_count": 0,
+        "median_px": 0.23915575090590413,
+        "p95_px": 0.814661086315908,
+        "fraction_within_2px": 0.9945054945054945,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.019083117323944774,
+          -0.015959707433971185
+        ],
+        "signed_median_uv_px": [
+          -0.004148232016206066,
+          -0.007370852584129395
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 36,
+          "finite_count": 36,
+          "invalid_count": 0,
+          "median_px": 0.4094569517123555,
+          "p95_px": 0.8550424759754517,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.18058860098515458,
+            0.04277494693538318
+          ],
+          "signed_median_uv_px": [
+            -0.15418644014684446,
+            0.04965297501691879
+          ],
+          "observation_bounds_xy": [
+            [
+              52.43206787109375,
+              27.58258628845215
+            ],
+            [
+              489.8438415527344,
+              127.02153015136719
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 0.20819939632462664,
+          "p95_px": 0.7326212830931955,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.08572848017683499,
+            -0.11966946137749974
+          ],
+          "signed_median_uv_px": [
+            0.10989390414840727,
+            -0.10012668682665549
+          ],
+          "observation_bounds_xy": [
+            [
+              31.115156173706055,
+              27.075523376464844
+            ],
+            [
+              546.0848388671875,
+              120.76273345947266
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 46,
+          "finite_count": 46,
+          "invalid_count": 0,
+          "median_px": 0.24003185872191707,
+          "p95_px": 0.8074034327639557,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.0687349582718751,
+            0.004291161345795117
+          ],
+          "signed_median_uv_px": [
+            -0.016681559948239055,
+            -0.04167649638435034
+          ],
+          "observation_bounds_xy": [
+            [
+              43.96010971069336,
+              8.401421546936035
+            ],
+            [
+              570.1314086914062,
+              120.40386962890625
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 34,
+          "finite_count": 34,
+          "invalid_count": 0,
+          "median_px": 0.13276680305908944,
+          "p95_px": 0.6026259914162795,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.08969182495067099,
+            -0.0190141368852662
+          ],
+          "signed_median_uv_px": [
+            -0.04627102903253899,
+            0.010511410087996609
+          ],
+          "observation_bounds_xy": [
+            [
+              115.01757049560547,
+              18.603734970092773
+            ],
+            [
+              596.8924560546875,
+              116.88289642333984
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 0.26090843822423276,
+          "p95_px": 1.0306246525262661,
+          "fraction_within_2px": 0.96,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.228980988963458,
+            0.03643881224053658
+          ],
+          "signed_median_uv_px": [
+            0.06042651958279066,
+            0.03182472482426135
+          ],
+          "observation_bounds_xy": [
+            [
+              188.7172393798828,
+              24.87034797668457
+            ],
+            [
+              591.1948852539062,
+              99.7002944946289
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 82,
+        "finite_count": 82,
+        "invalid_count": 0,
+        "median_px": 0.1968897258831429,
+        "p95_px": 0.6559394474582972,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        32,
+        31,
+        19,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r02-common_K_focal_linear.json",
+      "sha256": "fc1c4ef4b8693e402bf6973900c82c8e4e18eb0723b8461ccae6c97f11f2b56e"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r02",
+      "variant": "common_K_focal_robust",
+      "plan_sha256": "5df4bd4d9c0b5ff2c6d93788de7f4b87748b738b25e98c6290166d58d2b3c669",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 182,
+        "finite_count": 182,
+        "invalid_count": 0,
+        "median_px": 0.2395277016161302,
+        "p95_px": 0.7833269020736218,
+        "fraction_within_2px": 0.9945054945054945,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.018635522323507257,
+          -0.01707357810255071
+        ],
+        "signed_median_uv_px": [
+          -0.009369145874330798,
+          -0.01678813554917724
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 36,
+          "finite_count": 36,
+          "invalid_count": 0,
+          "median_px": 0.3838318955240193,
+          "p95_px": 0.8580867665050376,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.1631225790673242,
+            0.0888146829854942
+          ],
+          "signed_median_uv_px": [
+            -0.15119771030668971,
+            0.08649442109054917
+          ],
+          "observation_bounds_xy": [
+            [
+              52.43206787109375,
+              27.58258628845215
+            ],
+            [
+              489.8438415527344,
+              127.02153015136719
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 0.20860259482539278,
+          "p95_px": 0.7052515239678941,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.07220480508328742,
+            -0.12341472573465902
+          ],
+          "signed_median_uv_px": [
+            0.1036305076599433,
+            -0.0986105440349263
+          ],
+          "observation_bounds_xy": [
+            [
+              31.115156173706055,
+              27.075523376464844
+            ],
+            [
+              546.0848388671875,
+              120.76273345947266
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 46,
+          "finite_count": 46,
+          "invalid_count": 0,
+          "median_px": 0.2504055572929643,
+          "p95_px": 0.8207281984342427,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.06503739410646425,
+            -0.005428781642221381
+          ],
+          "signed_median_uv_px": [
+            -0.01879915256768072,
+            -0.015674918436176632
+          ],
+          "observation_bounds_xy": [
+            [
+              43.96010971069336,
+              8.401421546936035
+            ],
+            [
+              570.1314086914062,
+              120.40386962890625
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 34,
+          "finite_count": 34,
+          "invalid_count": 0,
+          "median_px": 0.13139682337276926,
+          "p95_px": 0.6045630985065429,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.0900387955513216,
+            -0.034187975994728836
+          ],
+          "signed_median_uv_px": [
+            -0.053689718579036594,
+            -0.005657611665313311
+          ],
+          "observation_bounds_xy": [
+            [
+              115.01757049560547,
+              18.603734970092773
+            ],
+            [
+              596.8924560546875,
+              116.88289642333984
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 0.26093424989168684,
+          "p95_px": 1.028410480995541,
+          "fraction_within_2px": 0.96,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.22293559811091426,
+            0.006695963693678522
+          ],
+          "signed_median_uv_px": [
+            0.06378309297420515,
+            -0.009917713361218716
+          ],
+          "observation_bounds_xy": [
+            [
+              188.7172393798828,
+              24.87034797668457
+            ],
+            [
+              591.1948852539062,
+              99.7002944946289
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 82,
+        "finite_count": 82,
+        "invalid_count": 0,
+        "median_px": 0.1920181212266987,
+        "p95_px": 0.6556249062275591,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        32,
+        31,
+        19,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r02-common_K_focal_robust.json",
+      "sha256": "2dcecad5548b34294382ae3659de196a178ed3f459500258c4c51911aac1e433"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r02",
+      "variant": "common_K_focal_trimmed",
+      "plan_sha256": "5df4bd4d9c0b5ff2c6d93788de7f4b87748b738b25e98c6290166d58d2b3c669",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 182,
+        "finite_count": 182,
+        "invalid_count": 0,
+        "median_px": 0.2417288181094707,
+        "p95_px": 0.7820595081741399,
+        "fraction_within_2px": 0.9945054945054945,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.01876325129964085,
+          -0.017506733949895575
+        ],
+        "signed_median_uv_px": [
+          -0.008485143602086964,
+          -0.017493064977539774
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 36,
+          "finite_count": 36,
+          "invalid_count": 0,
+          "median_px": 0.3855462842140088,
+          "p95_px": 0.8591914069059896,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.1637072089065431,
+            0.09254628620362304
+          ],
+          "signed_median_uv_px": [
+            -0.15183588681048832,
+            0.08890689890770176
+          ],
+          "observation_bounds_xy": [
+            [
+              52.43206787109375,
+              27.58258628845215
+            ],
+            [
+              489.8438415527344,
+              127.02153015136719
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 0.20857931941146168,
+          "p95_px": 0.7055928721738234,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.0724965725627623,
+            -0.1256332141377392
+          ],
+          "signed_median_uv_px": [
+            0.10489874867579374,
+            -0.10157005733890401
+          ],
+          "observation_bounds_xy": [
+            [
+              31.115156173706055,
+              27.075523376464844
+            ],
+            [
+              546.0848388671875,
+              120.76273345947266
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 46,
+          "finite_count": 46,
+          "invalid_count": 0,
+          "median_px": 0.2512404343339897,
+          "p95_px": 0.8191954572219455,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.06504481246766178,
+            -0.007678420674330642
+          ],
+          "signed_median_uv_px": [
+            -0.018682469354502018,
+            -0.01825905395920291
+          ],
+          "observation_bounds_xy": [
+            [
+              43.96010971069336,
+              8.401421546936035
+            ],
+            [
+              570.1314086914062,
+              120.40386962890625
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 34,
+          "finite_count": 34,
+          "invalid_count": 0,
+          "median_px": 0.13234762298811703,
+          "p95_px": 0.6059856756545943,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.08990790369451004,
+            -0.03507120619726411
+          ],
+          "signed_median_uv_px": [
+            -0.053813892652449624,
+            -0.005862731152916467
+          ],
+          "observation_bounds_xy": [
+            [
+              115.01757049560547,
+              18.603734970092773
+            ],
+            [
+              596.8924560546875,
+              116.88289642333984
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 0.26159029551805374,
+          "p95_px": 1.025828214195348,
+          "fraction_within_2px": 0.96,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.22220473632613788,
+            0.007147930366482882
+          ],
+          "signed_median_uv_px": [
+            0.06337714559589358,
+            -0.009230525745792306
+          ],
+          "observation_bounds_xy": [
+            [
+              188.7172393798828,
+              24.87034797668457
+            ],
+            [
+              591.1948852539062,
+              99.7002944946289
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 82,
+        "finite_count": 82,
+        "invalid_count": 0,
+        "median_px": 0.19530999539666732,
+        "p95_px": 0.6583669269715483,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        32,
+        31,
+        19,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r02-common_K_focal_trimmed.json",
+      "sha256": "0f935936224ca36ea12d0e485b5743d5db83918736593313499363852de98817"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r03",
+      "variant": "initial",
+      "plan_sha256": "5c94f5b074d35d21b9738870b60f5bb3755d61db36e87940e13cabbe5ac42c63",
+      "camera_decision": null,
+      "state": "complete",
+      "summary": {
+        "sample_count": 179,
+        "finite_count": 179,
+        "invalid_count": 0,
+        "median_px": 3.7750602894013623,
+        "p95_px": 8.39470612330594,
+        "fraction_within_2px": 0.2737430167597765,
+        "fraction_within_5px": 0.5754189944134078,
+        "signed_mean_uv_px": [
+          -1.0601827728470974,
+          -0.10990796579562621
+        ],
+        "signed_median_uv_px": [
+          -0.49876728832007444,
+          -0.030874006661392173
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 28,
+          "finite_count": 28,
+          "invalid_count": 0,
+          "median_px": 7.405174221755356,
+          "p95_px": 9.614347750601198,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.07142857142857142,
+          "signed_mean_uv_px": [
+            -7.139804361893035,
+            0.7286718023567043
+          ],
+          "signed_median_uv_px": [
+            -7.364157981270161,
+            0.7921719467035331
+          ],
+          "observation_bounds_xy": [
+            [
+              28.40403938293457,
+              12.01606273651123
+            ],
+            [
+              511.6048583984375,
+              121.29054260253906
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 40,
+          "finite_count": 40,
+          "invalid_count": 0,
+          "median_px": 3.67021189609267,
+          "p95_px": 6.658808968821019,
+          "fraction_within_2px": 0.3,
+          "fraction_within_5px": 0.675,
+          "signed_mean_uv_px": [
+            2.7395291253351854,
+            0.12279228131898963
+          ],
+          "signed_median_uv_px": [
+            3.5114429000775402,
+            0.03689462938719856
+          ],
+          "observation_bounds_xy": [
+            [
+              19.795059204101562,
+              23.182119369506836
+            ],
+            [
+              566.5914916992188,
+              117.36711883544922
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 47,
+          "finite_count": 47,
+          "invalid_count": 0,
+          "median_px": 2.1935338286700907,
+          "p95_px": 6.735767423557737,
+          "fraction_within_2px": 0.3617021276595745,
+          "fraction_within_5px": 0.6595744680851063,
+          "signed_mean_uv_px": [
+            -0.31648078340494046,
+            -0.8668311078873757
+          ],
+          "signed_median_uv_px": [
+            0.301279880018825,
+            -0.8587509275452874
+          ],
+          "observation_bounds_xy": [
+            [
+              53.39754867553711,
+              17.7984561920166
+            ],
+            [
+              606.0027465820312,
+              120.84832000732422
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 39,
+          "finite_count": 39,
+          "invalid_count": 0,
+          "median_px": 2.640210859149699,
+          "p95_px": 6.513766733738176,
+          "fraction_within_2px": 0.358974358974359,
+          "fraction_within_5px": 0.8205128205128205,
+          "signed_mean_uv_px": [
+            1.0095943628609017,
+            -0.12723893160207703
+          ],
+          "signed_median_uv_px": [
+            0.9932284225268972,
+            -0.09945339626541738
+          ],
+          "observation_bounds_xy": [
+            [
+              122.63272094726562,
+              17.891132354736328
+            ],
+            [
+              584.76123046875,
+              125.7203369140625
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 5.320307993697625,
+          "p95_px": 8.669919499021407,
+          "fraction_within_2px": 0.24,
+          "fraction_within_5px": 0.44,
+          "signed_mean_uv_px": [
+            -4.957557702063031,
+            0.028614112280930755
+          ],
+          "signed_median_uv_px": [
+            -5.2624602799041895,
+            0.21501206953291785
+          ],
+          "observation_bounds_xy": [
+            [
+              194.75096130371094,
+              23.334318161010742
+            ],
+            [
+              578.208984375,
+              122.913818359375
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 79,
+        "finite_count": 79,
+        "invalid_count": 0,
+        "median_px": 3.1530193131471376,
+        "p95_px": 6.48658925070965,
+        "fraction_within_2px": 0.26582278481012656,
+        "fraction_within_5px": 0.6962025316455697
+      },
+      "original_scoring_counts": [
+        0,
+        26,
+        31,
+        22,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r03-initial.json",
+      "sha256": "e6a65e630cc1ea9e0d652088d46665149de82cf41b3026be0e7baafe98370b7a"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r03",
+      "variant": "common_K_focal_linear",
+      "plan_sha256": "5c94f5b074d35d21b9738870b60f5bb3755d61db36e87940e13cabbe5ac42c63",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 179,
+        "finite_count": 179,
+        "invalid_count": 0,
+        "median_px": 0.24650151272537146,
+        "p95_px": 0.7357654079500949,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.006795223919110353,
+          -0.03526622312444251
+        ],
+        "signed_median_uv_px": [
+          0.005902685256785389,
+          -0.08919327991181092
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 28,
+          "finite_count": 28,
+          "invalid_count": 0,
+          "median_px": 0.3382533964214347,
+          "p95_px": 0.5885985140470821,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.02757757901118144,
+            0.25574001713925926
+          ],
+          "signed_median_uv_px": [
+            0.040844989801740894,
+            0.2668382348790317
+          ],
+          "observation_bounds_xy": [
+            [
+              28.40403938293457,
+              12.01606273651123
+            ],
+            [
+              511.6048583984375,
+              121.29054260253906
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 40,
+          "finite_count": 40,
+          "invalid_count": 0,
+          "median_px": 0.22199295115699202,
+          "p95_px": 0.6916008169591928,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.022345681941607243,
+            -0.1881951462131771
+          ],
+          "signed_median_uv_px": [
+            -0.005706726188645206,
+            -0.15239890755415075
+          ],
+          "observation_bounds_xy": [
+            [
+              19.795059204101562,
+              23.182119369506836
+            ],
+            [
+              566.5914916992188,
+              117.36711883544922
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 47,
+          "finite_count": 47,
+          "invalid_count": 0,
+          "median_px": 0.2382749243599403,
+          "p95_px": 0.5807511311337655,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.01000773403415755,
+            -0.18412174358103647
+          ],
+          "signed_median_uv_px": [
+            -0.01243517007662831,
+            -0.17787378886217908
+          ],
+          "observation_bounds_xy": [
+            [
+              53.39754867553711,
+              17.7984561920166
+            ],
+            [
+              606.0027465820312,
+              120.84832000732422
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 39,
+          "finite_count": 39,
+          "invalid_count": 0,
+          "median_px": 0.16022485674581527,
+          "p95_px": 0.6304449799319898,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.015586253194008201,
+            -0.06391302455337047
+          ],
+          "signed_median_uv_px": [
+            0.04422041836954804,
+            -0.03974237201255448
+          ],
+          "observation_bounds_xy": [
+            [
+              122.63272094726562,
+              17.891132354736328
+            ],
+            [
+              584.76123046875,
+              125.7203369140625
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 0.3045593114489678,
+          "p95_px": 1.2012122923650403,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.08691669561365074,
+            0.2080304534097111
+          ],
+          "signed_median_uv_px": [
+            -0.04962386613274816,
+            0.20949208294055666
+          ],
+          "observation_bounds_xy": [
+            [
+              194.75096130371094,
+              23.334318161010742
+            ],
+            [
+              578.208984375,
+              122.913818359375
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 79,
+        "finite_count": 79,
+        "invalid_count": 0,
+        "median_px": 0.21673369106801937,
+        "p95_px": 0.6465877720758398,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        26,
+        31,
+        22,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r03-common_K_focal_linear.json",
+      "sha256": "987fc37e2f30922581e87dcb5348d3c40af879b002e357aaf68e86b95b786a86"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r03",
+      "variant": "common_K_focal_robust",
+      "plan_sha256": "5c94f5b074d35d21b9738870b60f5bb3755d61db36e87940e13cabbe5ac42c63",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 179,
+        "finite_count": 179,
+        "invalid_count": 0,
+        "median_px": 0.23210428911944547,
+        "p95_px": 0.7070654184097197,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.01287287972296055,
+          -0.03229108762293918
+        ],
+        "signed_median_uv_px": [
+          -0.0015877286904668608,
+          -0.09178030794920744
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 28,
+          "finite_count": 28,
+          "invalid_count": 0,
+          "median_px": 0.3183909723977393,
+          "p95_px": 0.5847725418435527,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.011921034054420052,
+            0.2573788331853858
+          ],
+          "signed_median_uv_px": [
+            0.0033281409742826895,
+            0.2690804733976151
+          ],
+          "observation_bounds_xy": [
+            [
+              28.40403938293457,
+              12.01606273651123
+            ],
+            [
+              511.6048583984375,
+              121.29054260253906
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 40,
+          "finite_count": 40,
+          "invalid_count": 0,
+          "median_px": 0.21720739993137994,
+          "p95_px": 0.6578076461030985,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.030626150707430445,
+            -0.16855773529448942
+          ],
+          "signed_median_uv_px": [
+            -0.025201032170727444,
+            -0.12640225289612772
+          ],
+          "observation_bounds_xy": [
+            [
+              19.795059204101562,
+              23.182119369506836
+            ],
+            [
+              566.5914916992188,
+              117.36711883544922
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 47,
+          "finite_count": 47,
+          "invalid_count": 0,
+          "median_px": 0.2379849828255254,
+          "p95_px": 0.5670995211166174,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.020821282577221482,
+            -0.167152321092909
+          ],
+          "signed_median_uv_px": [
+            -0.0033451534617938705,
+            -0.1626414424094662
+          ],
+          "observation_bounds_xy": [
+            [
+              53.39754867553711,
+              17.7984561920166
+            ],
+            [
+              606.0027465820312,
+              120.84832000732422
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 39,
+          "finite_count": 39,
+          "invalid_count": 0,
+          "median_px": 0.15751408685778892,
+          "p95_px": 0.6115256759441269,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.017923303156009842,
+            -0.06181959313507809
+          ],
+          "signed_median_uv_px": [
+            0.04168303709914767,
+            -0.04137086590299077
+          ],
+          "observation_bounds_xy": [
+            [
+              122.63272094726562,
+              17.891132354736328
+            ],
+            [
+              584.76123046875,
+              125.7203369140625
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 0.2738574627852414,
+          "p95_px": 1.1875259301313852,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.12362389999401102,
+            0.16090882486869718
+          ],
+          "signed_median_uv_px": [
+            -0.07064660943677836,
+            0.16667228048459037
+          ],
+          "observation_bounds_xy": [
+            [
+              194.75096130371094,
+              23.334318161010742
+            ],
+            [
+              578.208984375,
+              122.913818359375
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 79,
+        "finite_count": 79,
+        "invalid_count": 0,
+        "median_px": 0.20296169437313735,
+        "p95_px": 0.6365226606193264,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        26,
+        31,
+        22,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r03-common_K_focal_robust.json",
+      "sha256": "700d833ef5486025059f621b893ce9633d2186ef42b715aff279fa71b1b0a1f8"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r03",
+      "variant": "common_K_focal_trimmed",
+      "plan_sha256": "5c94f5b074d35d21b9738870b60f5bb3755d61db36e87940e13cabbe5ac42c63",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 179,
+        "finite_count": 179,
+        "invalid_count": 0,
+        "median_px": 0.23191675774127765,
+        "p95_px": 0.7071650896823458,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.012843682935918262,
+          -0.032279871308835605
+        ],
+        "signed_median_uv_px": [
+          -0.0013919313255428278,
+          -0.0919475035185684
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 28,
+          "finite_count": 28,
+          "invalid_count": 0,
+          "median_px": 0.31840190402501073,
+          "p95_px": 0.584643499562654,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.01175826622764818,
+            0.25737795379732503
+          ],
+          "signed_median_uv_px": [
+            0.003350636639794402,
+            0.2690885453444807
+          ],
+          "observation_bounds_xy": [
+            [
+              28.40403938293457,
+              12.01606273651123
+            ],
+            [
+              511.6048583984375,
+              121.29054260253906
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 40,
+          "finite_count": 40,
+          "invalid_count": 0,
+          "median_px": 0.21718242620932512,
+          "p95_px": 0.6577623016629858,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.03048263385049399,
+            -0.16836980585323644
+          ],
+          "signed_median_uv_px": [
+            -0.025114812819296617,
+            -0.1262832739287525
+          ],
+          "observation_bounds_xy": [
+            [
+              19.795059204101562,
+              23.182119369506836
+            ],
+            [
+              566.5914916992188,
+              117.36711883544922
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 47,
+          "finite_count": 47,
+          "invalid_count": 0,
+          "median_px": 0.2379357213610566,
+          "p95_px": 0.5670877110132078,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.0208420795487196,
+            -0.16713492616676287
+          ],
+          "signed_median_uv_px": [
+            -0.002933531400060474,
+            -0.1625928829129606
+          ],
+          "observation_bounds_xy": [
+            [
+              53.39754867553711,
+              17.7984561920166
+            ],
+            [
+              606.0027465820312,
+              120.84832000732422
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 39,
+          "finite_count": 39,
+          "invalid_count": 0,
+          "median_px": 0.15768914979716317,
+          "p95_px": 0.6116256752618051,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.017706771549374258,
+            -0.06191588079386561
+          ],
+          "signed_median_uv_px": [
+            0.04166062787939495,
+            -0.04150093741063188
+          ],
+          "observation_bounds_xy": [
+            [
+              122.63272094726562,
+              17.891132354736328
+            ],
+            [
+              584.76123046875,
+              125.7203369140625
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 0.2737845847154046,
+          "p95_px": 1.1872585453509668,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.12316348700396702,
+            0.1608069377728559
+          ],
+          "signed_median_uv_px": [
+            -0.07033610061120044,
+            0.16653716209438585
+          ],
+          "observation_bounds_xy": [
+            [
+              194.75096130371094,
+              23.334318161010742
+            ],
+            [
+              578.208984375,
+              122.913818359375
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 79,
+        "finite_count": 79,
+        "invalid_count": 0,
+        "median_px": 0.2028482417064158,
+        "p95_px": 0.6364155851688506,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        26,
+        31,
+        22,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r03-common_K_focal_trimmed.json",
+      "sha256": "9109c152cbc10df5c02812dbcfb3c97dd78f878ea6ab8bc01534d2584dbd7a07"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r04",
+      "variant": "initial",
+      "plan_sha256": "8e2680f263aa9ae8c29be323dce35f24ad854a5e629007575aedd7ad07fe90c9",
+      "camera_decision": null,
+      "state": "complete",
+      "summary": {
+        "sample_count": 213,
+        "finite_count": 213,
+        "invalid_count": 0,
+        "median_px": 4.729699332594069,
+        "p95_px": 14.057273848500477,
+        "fraction_within_2px": 0.03755868544600939,
+        "fraction_within_5px": 0.5492957746478874,
+        "signed_mean_uv_px": [
+          0.34424488838122813,
+          0.2636230565275975
+        ],
+        "signed_median_uv_px": [
+          0.9181269674302968,
+          0.5152948785157321
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 42,
+          "finite_count": 42,
+          "invalid_count": 0,
+          "median_px": 5.565488477961585,
+          "p95_px": 7.3260444001232345,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.2619047619047619,
+          "signed_mean_uv_px": [
+            4.618274004969769,
+            -2.6597485481051737
+          ],
+          "signed_median_uv_px": [
+            4.864139371742198,
+            -2.646361317602242
+          ],
+          "observation_bounds_xy": [
+            [
+              21.256147384643555,
+              18.159576416015625
+            ],
+            [
+              469.0269775390625,
+              126.18669128417969
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 49,
+          "finite_count": 49,
+          "invalid_count": 0,
+          "median_px": 3.6222301987461965,
+          "p95_px": 6.743977074458318,
+          "fraction_within_2px": 0.08163265306122448,
+          "fraction_within_5px": 0.7346938775510204,
+          "signed_mean_uv_px": [
+            -1.1585098174645339,
+            2.153967323181696
+          ],
+          "signed_median_uv_px": [
+            -2.4719924858169975,
+            2.3009140535670447
+          ],
+          "observation_bounds_xy": [
+            [
+              48.09915542602539,
+              7.398287296295166
+            ],
+            [
+              523.9213256835938,
+              124.14131164550781
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 56,
+          "finite_count": 56,
+          "invalid_count": 0,
+          "median_px": 3.6107209057011573,
+          "p95_px": 15.409051646134724,
+          "fraction_within_2px": 0.07142857142857142,
+          "fraction_within_5px": 0.8214285714285714,
+          "signed_mean_uv_px": [
+            -3.3803896287591493,
+            -0.08508468789600121
+          ],
+          "signed_median_uv_px": [
+            -3.510430308443347,
+            0.42389127386257996
+          ],
+          "observation_bounds_xy": [
+            [
+              41.66200256347656,
+              8.401421546936035
+            ],
+            [
+              570.1314086914062,
+              120.85697174072266
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 46,
+          "finite_count": 46,
+          "invalid_count": 0,
+          "median_px": 5.05114814476482,
+          "p95_px": 9.503165962606916,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.4782608695652174,
+          "signed_mean_uv_px": [
+            5.529813689978999,
+            -0.00271430419298175
+          ],
+          "signed_median_uv_px": [
+            4.868252907387216,
+            0.2294665493202892
+          ],
+          "observation_bounds_xy": [
+            [
+              99.97711944580078,
+              4.822549819946289
+            ],
+            [
+              587.031982421875,
+              121.1156005859375
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 20,
+          "finite_count": 20,
+          "invalid_count": 0,
+          "median_px": 8.559785980051455,
+          "p95_px": 14.966029917158366,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.1,
+          "signed_mean_uv_px": [
+            -6.447298822814406,
+            3.360317586997284
+          ],
+          "signed_median_uv_px": [
+            -7.078991974643969,
+            3.5390868158435183
+          ],
+          "observation_bounds_xy": [
+            [
+              170.38006591796875,
+              12.667141914367676
+            ],
+            [
+              596.2072143554688,
+              119.66561889648438
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 97,
+        "finite_count": 97,
+        "invalid_count": 0,
+        "median_px": 3.6583320137078443,
+        "p95_px": 7.659338326900171,
+        "fraction_within_2px": 0.041237113402061855,
+        "fraction_within_5px": 0.7938144329896907
+      },
+      "original_scoring_counts": [
+        0,
+        38,
+        42,
+        17,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r04-initial.json",
+      "sha256": "a9fa6738c3accd2df9bb001c4fe68ac57f3df7bbd4c9bdf092692c95791a1d01"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r04",
+      "variant": "common_K_focal_linear",
+      "plan_sha256": "8e2680f263aa9ae8c29be323dce35f24ad854a5e629007575aedd7ad07fe90c9",
+      "camera_decision": {
+        "state": "withhold_correction",
+        "reasons": [
+          "heldout_absolute_error_too_large"
+        ],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 213,
+        "finite_count": 213,
+        "invalid_count": 0,
+        "median_px": 2.0015218735181115,
+        "p95_px": 4.047786780916066,
+        "fraction_within_2px": 0.49765258215962443,
+        "fraction_within_5px": 0.9812206572769953,
+        "signed_mean_uv_px": [
+          0.17858662920345064,
+          0.051703369940476966
+        ],
+        "signed_median_uv_px": [
+          -0.010023317423389244,
+          0.17835715535667163
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 42,
+          "finite_count": 42,
+          "invalid_count": 0,
+          "median_px": 2.111634333627216,
+          "p95_px": 3.6918440854746355,
+          "fraction_within_2px": 0.4523809523809524,
+          "fraction_within_5px": 0.9761904761904762,
+          "signed_mean_uv_px": [
+            0.7935293944030194,
+            -1.47717157430062
+          ],
+          "signed_median_uv_px": [
+            0.5577373749763979,
+            -1.4032254074340926
+          ],
+          "observation_bounds_xy": [
+            [
+              21.256147384643555,
+              18.159576416015625
+            ],
+            [
+              469.0269775390625,
+              126.18669128417969
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 49,
+          "finite_count": 49,
+          "invalid_count": 0,
+          "median_px": 1.592287214888981,
+          "p95_px": 4.356489621432271,
+          "fraction_within_2px": 0.6530612244897959,
+          "fraction_within_5px": 0.9795918367346939,
+          "signed_mean_uv_px": [
+            0.4284656535190718,
+            0.9908492970656093
+          ],
+          "signed_median_uv_px": [
+            -0.03794764381518689,
+            1.0128043358174068
+          ],
+          "observation_bounds_xy": [
+            [
+              48.09915542602539,
+              7.398287296295166
+            ],
+            [
+              523.9213256835938,
+              124.14131164550781
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 56,
+          "finite_count": 56,
+          "invalid_count": 0,
+          "median_px": 1.8645316118108772,
+          "p95_px": 3.5537367140624685,
+          "fraction_within_2px": 0.5892857142857143,
+          "fraction_within_5px": 0.9821428571428571,
+          "signed_mean_uv_px": [
+            -1.3903179045324896,
+            -1.024911275004085
+          ],
+          "signed_median_uv_px": [
+            -1.231733091748282,
+            -1.2312632210824148
+          ],
+          "observation_bounds_xy": [
+            [
+              41.66200256347656,
+              8.401421546936035
+            ],
+            [
+              570.1314086914062,
+              120.85697174072266
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 46,
+          "finite_count": 46,
+          "invalid_count": 0,
+          "median_px": 2.5065418663765833,
+          "p95_px": 3.858315559027366,
+          "fraction_within_2px": 0.34782608695652173,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            1.6237685478539858,
+            1.1949025613301878
+          ],
+          "signed_median_uv_px": [
+            1.5234147745911741,
+            1.0171863914022765
+          ],
+          "observation_bounds_xy": [
+            [
+              99.97711944580078,
+              4.822549819946289
+            ],
+            [
+              587.031982421875,
+              121.1156005859375
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 20,
+          "finite_count": 20,
+          "invalid_count": 0,
+          "median_px": 2.732235859189847,
+          "p95_px": 4.332117609709084,
+          "fraction_within_2px": 0.3,
+          "fraction_within_5px": 0.95,
+          "signed_mean_uv_px": [
+            -0.6559825057245134,
+            1.3465960970386437
+          ],
+          "signed_median_uv_px": [
+            -0.8006727939462053,
+            1.7078618246436914
+          ],
+          "observation_bounds_xy": [
+            [
+              170.38006591796875,
+              12.667141914367676
+            ],
+            [
+              596.2072143554688,
+              119.66561889648438
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 97,
+        "finite_count": 97,
+        "invalid_count": 0,
+        "median_px": 1.6864456239714947,
+        "p95_px": 3.1749465237273258,
+        "fraction_within_2px": 0.6597938144329897,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        38,
+        42,
+        17,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r04-common_K_focal_linear.json",
+      "sha256": "df6b435ae7d310cce9c499d1f48b3cf5c79989cb8c6ee234f5baa8d5831c1d57"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r04",
+      "variant": "common_K_focal_robust",
+      "plan_sha256": "8e2680f263aa9ae8c29be323dce35f24ad854a5e629007575aedd7ad07fe90c9",
+      "camera_decision": {
+        "state": "withhold_correction",
+        "reasons": [
+          "optimizer_not_converged"
+        ],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 213,
+        "finite_count": 213,
+        "invalid_count": 0,
+        "median_px": 1.3746365110678724,
+        "p95_px": 2.8139874796657374,
+        "fraction_within_2px": 0.7511737089201878,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.03787296166447866,
+          0.04529674694782558
+        ],
+        "signed_median_uv_px": [
+          0.01056390445131683,
+          0.03333533482860673
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 42,
+          "finite_count": 42,
+          "invalid_count": 0,
+          "median_px": 1.6141438153308143,
+          "p95_px": 2.8705220410511885,
+          "fraction_within_2px": 0.6190476190476191,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.4026541529846884,
+            -1.016768414184886
+          ],
+          "signed_median_uv_px": [
+            -0.3212748383488311,
+            -0.9125245981237313
+          ],
+          "observation_bounds_xy": [
+            [
+              21.256147384643555,
+              18.159576416015625
+            ],
+            [
+              469.0269775390625,
+              126.18669128417969
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 49,
+          "finite_count": 49,
+          "invalid_count": 0,
+          "median_px": 1.480004481645584,
+          "p95_px": 2.3716151897067075,
+          "fraction_within_2px": 0.7142857142857143,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.34742618245374024,
+            1.2328107371647734
+          ],
+          "signed_median_uv_px": [
+            0.3456967285628707,
+            1.2248021178082311
+          ],
+          "observation_bounds_xy": [
+            [
+              48.09915542602539,
+              7.398287296295166
+            ],
+            [
+              523.9213256835938,
+              124.14131164550781
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 56,
+          "finite_count": 56,
+          "invalid_count": 0,
+          "median_px": 1.2614253351232831,
+          "p95_px": 2.6788089850782564,
+          "fraction_within_2px": 0.8928571428571429,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.15573294314078318,
+            -0.6412327454079695
+          ],
+          "signed_median_uv_px": [
+            -0.12419603669576418,
+            -0.8128942277781377
+          ],
+          "observation_bounds_xy": [
+            [
+              41.66200256347656,
+              8.401421546936035
+            ],
+            [
+              570.1314086914062,
+              120.85697174072266
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 46,
+          "finite_count": 46,
+          "invalid_count": 0,
+          "median_px": 0.9798777267582465,
+          "p95_px": 2.073944330650939,
+          "fraction_within_2px": 0.8913043478260869,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.05872278858478097,
+            0.15200469678657227
+          ],
+          "signed_median_uv_px": [
+            0.17287777265528348,
+            0.12332326628474277
+          ],
+          "observation_bounds_xy": [
+            [
+              99.97711944580078,
+              4.822549819946289
+            ],
+            [
+              587.031982421875,
+              121.1156005859375
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 20,
+          "finite_count": 20,
+          "invalid_count": 0,
+          "median_px": 2.2611160091351845,
+          "p95_px": 3.14794555705963,
+          "fraction_within_2px": 0.4,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.10797764042131916,
+            1.0430786032621062
+          ],
+          "signed_median_uv_px": [
+            -0.27829300148206926,
+            0.8921787713076164
+          ],
+          "observation_bounds_xy": [
+            [
+              170.38006591796875,
+              12.667141914367676
+            ],
+            [
+              596.2072143554688,
+              119.66561889648438
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 97,
+        "finite_count": 97,
+        "invalid_count": 0,
+        "median_px": 1.270118057482872,
+        "p95_px": 2.5137104293976615,
+        "fraction_within_2px": 0.8144329896907216,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        38,
+        42,
+        17,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r04-common_K_focal_robust.json",
+      "sha256": "c7998cc19bd3ed3642697b4d23f94e995aca8783b416304c6b62e11f2fd739fd"
+    },
+    {
+      "parent_run_id": "rod-reference-bundle-v1-20260923",
+      "case_id": "r04",
+      "variant": "common_K_focal_trimmed",
+      "plan_sha256": "8e2680f263aa9ae8c29be323dce35f24ad854a5e629007575aedd7ad07fe90c9",
+      "camera_decision": {
+        "state": "withhold_correction",
+        "reasons": [
+          "heldout_absolute_error_too_large"
+        ],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 213,
+        "finite_count": 213,
+        "invalid_count": 0,
+        "median_px": 1.4426227206027635,
+        "p95_px": 2.666918155902959,
+        "fraction_within_2px": 0.7276995305164319,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.08616676110727464,
+          0.11975104024599637
+        ],
+        "signed_median_uv_px": [
+          -0.005816122301894211,
+          -0.018608481184813286
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 42,
+          "finite_count": 42,
+          "invalid_count": 0,
+          "median_px": 1.880762579313111,
+          "p95_px": 3.615331199895705,
+          "fraction_within_2px": 0.5476190476190477,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.6044540660808099,
+            -1.3511048311424905
+          ],
+          "signed_median_uv_px": [
+            -0.6719595507911968,
+            -1.2198866858188637
+          ],
+          "observation_bounds_xy": [
+            [
+              21.256147384643555,
+              18.159576416015625
+            ],
+            [
+              469.0269775390625,
+              126.18669128417969
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 49,
+          "finite_count": 49,
+          "invalid_count": 0,
+          "median_px": 1.7970987385810546,
+          "p95_px": 2.5907003751507394,
+          "fraction_within_2px": 0.5918367346938775,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.2847485748548065,
+            1.5874515060941443
+          ],
+          "signed_median_uv_px": [
+            0.3786811331757747,
+            1.5270731060554397
+          ],
+          "observation_bounds_xy": [
+            [
+              48.09915542602539,
+              7.398287296295166
+            ],
+            [
+              523.9213256835938,
+              124.14131164550781
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 56,
+          "finite_count": 56,
+          "invalid_count": 0,
+          "median_px": 1.259883890291765,
+          "p95_px": 2.2644286246104492,
+          "fraction_within_2px": 0.875,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.14872956202260795,
+            -0.2199609874248388
+          ],
+          "signed_median_uv_px": [
+            0.1643876121553376,
+            -0.45302833129184705
+          ],
+          "observation_bounds_xy": [
+            [
+              41.66200256347656,
+              8.401421546936035
+            ],
+            [
+              570.1314086914062,
+              120.85697174072266
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 46,
+          "finite_count": 46,
+          "invalid_count": 0,
+          "median_px": 1.1269107199551358,
+          "p95_px": 1.9793429685282378,
+          "fraction_within_2px": 0.9565217391304348,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.3027049614828206,
+            -0.03761573633137047
+          ],
+          "signed_median_uv_px": [
+            -0.1814912174767187,
+            -0.018608481184813286
+          ],
+          "observation_bounds_xy": [
+            [
+              99.97711944580078,
+              4.822549819946289
+            ],
+            [
+              587.031982421875,
+              121.1156005859375
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 20,
+          "finite_count": 20,
+          "invalid_count": 0,
+          "median_px": 2.0132007369190297,
+          "p95_px": 3.1045660809736715,
+          "fraction_within_2px": 0.5,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.06617783766986492,
+            0.9258194924401384
+          ],
+          "signed_median_uv_px": [
+            -0.0824090293479145,
+            0.9182566085283064
+          ],
+          "observation_bounds_xy": [
+            [
+              170.38006591796875,
+              12.667141914367676
+            ],
+            [
+              596.2072143554688,
+              119.66561889648438
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 97,
+        "finite_count": 97,
+        "invalid_count": 0,
+        "median_px": 1.3298197301765426,
+        "p95_px": 2.4914931100405817,
+        "fraction_within_2px": 0.7731958762886598,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        38,
+        42,
+        17,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-reference-bundle-v1-20260923-r04-common_K_focal_trimmed.json",
+      "sha256": "e77c7b8c6e7cc4b9b0931afd0ec559981b87eef2e98166e24ad352fb7a44adf4"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r01",
+      "variant": "initial",
+      "plan_sha256": "1d8e14cccafae85d7db97af330946c467328666b311dc4bc3da8d051ff8308e2",
+      "camera_decision": null,
+      "state": "complete",
+      "summary": {
+        "sample_count": 207,
+        "finite_count": 207,
+        "invalid_count": 0,
+        "median_px": 3.625491251355396,
+        "p95_px": 7.992501977335011,
+        "fraction_within_2px": 0.21739130434782608,
+        "fraction_within_5px": 0.714975845410628,
+        "signed_mean_uv_px": [
+          -0.8479591274501184,
+          -0.0446334073651522
+        ],
+        "signed_median_uv_px": [
+          -1.1871275698895545,
+          0.03986496011084739
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 31,
+          "finite_count": 31,
+          "invalid_count": 0,
+          "median_px": 3.6713102137409757,
+          "p95_px": 5.78369653495521,
+          "fraction_within_2px": 0.03225806451612903,
+          "fraction_within_5px": 0.8387096774193549,
+          "signed_mean_uv_px": [
+            -3.347376552282402,
+            -0.056978606498617294
+          ],
+          "signed_median_uv_px": [
+            -3.620918032142008,
+            -0.16511076543993397
+          ],
+          "observation_bounds_xy": [
+            [
+              28.27628517150879,
+              31.12466049194336
+            ],
+            [
+              514.8596801757812,
+              126.90172576904297
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 3.6862400170098173,
+          "p95_px": 6.8828879121857325,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.7560975609756098,
+          "signed_mean_uv_px": [
+            3.4457668922573705,
+            -1.8702808819524015
+          ],
+          "signed_median_uv_px": [
+            3.1975673218549616,
+            -1.6100286464753566
+          ],
+          "observation_bounds_xy": [
+            [
+              36.71720504760742,
+              17.678163528442383
+            ],
+            [
+              572.7735595703125,
+              110.71146392822266
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 59,
+          "finite_count": 59,
+          "invalid_count": 0,
+          "median_px": 3.625491251355396,
+          "p95_px": 8.38195862812934,
+          "fraction_within_2px": 0.3220338983050847,
+          "fraction_within_5px": 0.7288135593220338,
+          "signed_mean_uv_px": [
+            -3.0591197222159874,
+            1.2348340524959383
+          ],
+          "signed_median_uv_px": [
+            -2.799751977098836,
+            1.2445903996490841
+          ],
+          "observation_bounds_xy": [
+            [
+              21.111316680908203,
+              31.971567153930664
+            ],
+            [
+              602.7730102539062,
+              127.86311340332031
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 45,
+          "finite_count": 45,
+          "invalid_count": 0,
+          "median_px": 1.6716045949019978,
+          "p95_px": 6.622499142253228,
+          "fraction_within_2px": 0.5555555555555556,
+          "fraction_within_5px": 0.7333333333333333,
+          "signed_mean_uv_px": [
+            2.253800647184839,
+            -0.10434988094055338
+          ],
+          "signed_median_uv_px": [
+            1.0813968922834079,
+            0.03986496011084739
+          ],
+          "observation_bounds_xy": [
+            [
+              89.36572265625,
+              9.68108081817627
+            ],
+            [
+              613.9843139648438,
+              107.87725067138672
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 31,
+          "finite_count": 31,
+          "invalid_count": 0,
+          "median_px": 5.034798607586057,
+          "p95_px": 10.397228778874693,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.4838709677419355,
+          "signed_mean_uv_px": [
+            -4.321557237307959,
+            0.033847521999471684
+          ],
+          "signed_median_uv_px": [
+            -4.193279330535432,
+            -0.06337777049162696
+          ],
+          "observation_bounds_xy": [
+            [
+              172.24710083007812,
+              41.900028228759766
+            ],
+            [
+              601.7628784179688,
+              127.25151062011719
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 87,
+        "finite_count": 87,
+        "invalid_count": 0,
+        "median_px": 3.155015833704087,
+        "p95_px": 5.802767815073113,
+        "fraction_within_2px": 0.3448275862068966,
+        "fraction_within_5px": 0.8160919540229885
+      },
+      "original_scoring_counts": [
+        0,
+        28,
+        31,
+        28,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r01-initial.json",
+      "sha256": "bcc21f308af77f72eb6e942ca2051704951e77fd959790624537fe0532f76385"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r01",
+      "variant": "common_K_focal_linear",
+      "plan_sha256": "1d8e14cccafae85d7db97af330946c467328666b311dc4bc3da8d051ff8308e2",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 207,
+        "finite_count": 207,
+        "invalid_count": 0,
+        "median_px": 0.297424475976979,
+        "p95_px": 1.1236068181925236,
+        "fraction_within_2px": 0.9951690821256038,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          0.003579017163415584,
+          0.013453025400188735
+        ],
+        "signed_median_uv_px": [
+          0.007985612993834934,
+          0.0007507960227428612
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 31,
+          "finite_count": 31,
+          "invalid_count": 0,
+          "median_px": 0.4582917673296014,
+          "p95_px": 1.2599536132510023,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.013266164546339056,
+            -0.10664431523672685
+          ],
+          "signed_median_uv_px": [
+            -0.00781992348311178,
+            0.03255717272252667
+          ],
+          "observation_bounds_xy": [
+            [
+              28.27628517150879,
+              31.12466049194336
+            ],
+            [
+              514.8596801757812,
+              126.90172576904297
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 0.21079344225140892,
+          "p95_px": 0.5264741122528673,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.03961457826682811,
+            0.06354329932830365
+          ],
+          "signed_median_uv_px": [
+            -0.022060487879741686,
+            0.07399571210812539
+          ],
+          "observation_bounds_xy": [
+            [
+              36.71720504760742,
+              17.678163528442383
+            ],
+            [
+              572.7735595703125,
+              110.71146392822266
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 59,
+          "finite_count": 59,
+          "invalid_count": 0,
+          "median_px": 0.3510894185869028,
+          "p95_px": 1.1671496019746606,
+          "fraction_within_2px": 0.9830508474576272,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.057927883000391416,
+            0.04972519848283133
+          ],
+          "signed_median_uv_px": [
+            0.03529607938261847,
+            -0.035553099035482205
+          ],
+          "observation_bounds_xy": [
+            [
+              21.111316680908203,
+              31.971567153930664
+            ],
+            [
+              602.7730102539062,
+              127.86311340332031
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 45,
+          "finite_count": 45,
+          "invalid_count": 0,
+          "median_px": 0.24727846844492077,
+          "p95_px": 0.818822098771466,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.03554932793307286,
+            -0.0038978287441691763
+          ],
+          "signed_median_uv_px": [
+            0.035636359693569375,
+            -0.06398582489475757
+          ],
+          "observation_bounds_xy": [
+            [
+              89.36572265625,
+              9.68108081817627
+            ],
+            [
+              613.9843139648438,
+              107.87725067138672
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 31,
+          "finite_count": 31,
+          "invalid_count": 0,
+          "median_px": 0.4119096670963815,
+          "p95_px": 1.2626467745976937,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.09882779655422272,
+            0.023454527119926318
+          ],
+          "signed_median_uv_px": [
+            -0.15679334384549293,
+            -0.005902192885358204
+          ],
+          "observation_bounds_xy": [
+            [
+              172.24710083007812,
+              41.900028228759766
+            ],
+            [
+              601.7628784179688,
+              127.25151062011719
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 87,
+        "finite_count": 87,
+        "invalid_count": 0,
+        "median_px": 0.2318341476371179,
+        "p95_px": 0.8003793553102134,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        28,
+        31,
+        28,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r01-common_K_focal_linear.json",
+      "sha256": "348c0c43476ee21ce2a7924ab7bef45f303c821444e342444ff7117fe023214f"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r01",
+      "variant": "common_K_focal_robust",
+      "plan_sha256": "1d8e14cccafae85d7db97af330946c467328666b311dc4bc3da8d051ff8308e2",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 207,
+        "finite_count": 207,
+        "invalid_count": 0,
+        "median_px": 0.3054354234176468,
+        "p95_px": 1.0535065251778217,
+        "fraction_within_2px": 0.9951690821256038,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          0.0017950208731745809,
+          0.007321462891388876
+        ],
+        "signed_median_uv_px": [
+          0.0009091337245763498,
+          -0.0007444015119659753
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 31,
+          "finite_count": 31,
+          "invalid_count": 0,
+          "median_px": 0.3912486821580061,
+          "p95_px": 1.1450270300740923,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.018396694248047487,
+            -0.03920121248028458
+          ],
+          "signed_median_uv_px": [
+            -0.0230230729778782,
+            0.11473564467043218
+          ],
+          "observation_bounds_xy": [
+            [
+              28.27628517150879,
+              31.12466049194336
+            ],
+            [
+              514.8596801757812,
+              126.90172576904297
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 0.2003379152241442,
+          "p95_px": 0.5419508674630928,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.048050979516717766,
+            0.04929147704441366
+          ],
+          "signed_median_uv_px": [
+            -0.027428413515053762,
+            0.0336239278055146
+          ],
+          "observation_bounds_xy": [
+            [
+              36.71720504760742,
+              17.678163528442383
+            ],
+            [
+              572.7735595703125,
+              110.71146392822266
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 59,
+          "finite_count": 59,
+          "invalid_count": 0,
+          "median_px": 0.3521833503946472,
+          "p95_px": 1.152973293079048,
+          "fraction_within_2px": 0.9830508474576272,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.05482217371209589,
+            0.024147229595242077
+          ],
+          "signed_median_uv_px": [
+            0.03657707965169266,
+            -0.048618081119172984
+          ],
+          "observation_bounds_xy": [
+            [
+              21.111316680908203,
+              31.971567153930664
+            ],
+            [
+              602.7730102539062,
+              127.86311340332031
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 45,
+          "finite_count": 45,
+          "invalid_count": 0,
+          "median_px": 0.24746122230128534,
+          "p95_px": 0.8013679602259864,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.0430441576252308,
+            -0.01828754634186455
+          ],
+          "signed_median_uv_px": [
+            0.049916838135033004,
+            -0.07425348012136368
+          ],
+          "observation_bounds_xy": [
+            [
+              89.36572265625,
+              9.68108081817627
+            ],
+            [
+              613.9843139648438,
+              107.87725067138672
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 31,
+          "finite_count": 31,
+          "invalid_count": 0,
+          "median_px": 0.3958940084458246,
+          "p95_px": 1.238577234806431,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.10968172202922416,
+            0.003486544704838109
+          ],
+          "signed_median_uv_px": [
+            -0.15576741722856013,
+            -0.04558119481194467
+          ],
+          "observation_bounds_xy": [
+            [
+              172.24710083007812,
+              41.900028228759766
+            ],
+            [
+              601.7628784179688,
+              127.25151062011719
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 87,
+        "finite_count": 87,
+        "invalid_count": 0,
+        "median_px": 0.21543907982284297,
+        "p95_px": 0.7809059070524424,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        28,
+        31,
+        28,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r01-common_K_focal_robust.json",
+      "sha256": "b89413ddccd594d58313727ec5c0c6bfd5fd3bb9bf5ae39ac7496584ad228156"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r01",
+      "variant": "common_K_focal_trimmed",
+      "plan_sha256": "1d8e14cccafae85d7db97af330946c467328666b311dc4bc3da8d051ff8308e2",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 207,
+        "finite_count": 207,
+        "invalid_count": 0,
+        "median_px": 0.3051741894631783,
+        "p95_px": 1.053616485262315,
+        "fraction_within_2px": 0.9951690821256038,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          0.0017592104430084864,
+          0.0073618632465378316
+        ],
+        "signed_median_uv_px": [
+          0.0008051352668871914,
+          -0.0006064845458837453
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 31,
+          "finite_count": 31,
+          "invalid_count": 0,
+          "median_px": 0.39066328236900083,
+          "p95_px": 1.1452860601728667,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.017872000257165337,
+            -0.03972500843681276
+          ],
+          "signed_median_uv_px": [
+            -0.02361599334429343,
+            0.11438991839159485
+          ],
+          "observation_bounds_xy": [
+            [
+              28.27628517150879,
+              31.12466049194336
+            ],
+            [
+              514.8596801757812,
+              126.90172576904297
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 41,
+          "finite_count": 41,
+          "invalid_count": 0,
+          "median_px": 0.20012061444423815,
+          "p95_px": 0.5417347413507493,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.047591417244017976,
+            0.0496672730977254
+          ],
+          "signed_median_uv_px": [
+            -0.027505049148544458,
+            0.034214363791726043
+          ],
+          "observation_bounds_xy": [
+            [
+              36.71720504760742,
+              17.678163528442383
+            ],
+            [
+              572.7735595703125,
+              110.71146392822266
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 59,
+          "finite_count": 59,
+          "invalid_count": 0,
+          "median_px": 0.3518800757121809,
+          "p95_px": 1.1526740134704767,
+          "fraction_within_2px": 0.9830508474576272,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.0545075350274938,
+            0.024288215259983256
+          ],
+          "signed_median_uv_px": [
+            0.035976516998374564,
+            -0.04856284377835607
+          ],
+          "observation_bounds_xy": [
+            [
+              21.111316680908203,
+              31.971567153930664
+            ],
+            [
+              602.7730102539062,
+              127.86311340332031
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 45,
+          "finite_count": 45,
+          "invalid_count": 0,
+          "median_px": 0.24825860917949208,
+          "p95_px": 0.8013676287224626,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.04325479923374505,
+            -0.01813328797299876
+          ],
+          "signed_median_uv_px": [
+            0.05023100988233864,
+            -0.07444708613785878
+          ],
+          "observation_bounds_xy": [
+            [
+              89.36572265625,
+              9.68108081817627
+            ],
+            [
+              613.9843139648438,
+              107.87725067138672
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 31,
+          "finite_count": 31,
+          "invalid_count": 0,
+          "median_px": 0.3960123659294005,
+          "p95_px": 1.238698707938669,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.1097108990775901,
+            0.0032908391939908796
+          ],
+          "signed_median_uv_px": [
+            -0.15441979732639766,
+            -0.0458779672886962
+          ],
+          "observation_bounds_xy": [
+            [
+              172.24710083007812,
+              41.900028228759766
+            ],
+            [
+              601.7628784179688,
+              127.25151062011719
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 87,
+        "finite_count": 87,
+        "invalid_count": 0,
+        "median_px": 0.21509584116784142,
+        "p95_px": 0.7809757320644809,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        28,
+        31,
+        28,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r01-common_K_focal_trimmed.json",
+      "sha256": "f991c3a4aa8ad7337d0933bb4299d2eee1dce97b4f5fe9ed615d54f0db8aee6a"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r02",
+      "variant": "initial",
+      "plan_sha256": "3db963b51aec6e1f1f3616b728861894554933b2828ceb0da345e55d779561ce",
+      "camera_decision": null,
+      "state": "complete",
+      "summary": {
+        "sample_count": 181,
+        "finite_count": 181,
+        "invalid_count": 0,
+        "median_px": 3.650869000128034,
+        "p95_px": 8.893079442401941,
+        "fraction_within_2px": 0.17679558011049723,
+        "fraction_within_5px": 0.6629834254143646,
+        "signed_mean_uv_px": [
+          -0.6672908715208692,
+          -0.3705288821519334
+        ],
+        "signed_median_uv_px": [
+          -0.7387657059899269,
+          -0.2752434370266741
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 3.5671477482647362,
+          "p95_px": 5.176273166380347,
+          "fraction_within_2px": 0.05405405405405406,
+          "fraction_within_5px": 0.8918918918918919,
+          "signed_mean_uv_px": [
+            -2.199629617868767,
+            1.7592457760490199
+          ],
+          "signed_median_uv_px": [
+            -2.599389912050526,
+            2.190697375897365
+          ],
+          "observation_bounds_xy": [
+            [
+              52.43206787109375,
+              26.57779312133789
+            ],
+            [
+              489.0834655761719,
+              127.02153015136719
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 39,
+          "finite_count": 39,
+          "invalid_count": 0,
+          "median_px": 3.427047454106548,
+          "p95_px": 6.719891694621242,
+          "fraction_within_2px": 0.05128205128205128,
+          "fraction_within_5px": 0.8461538461538461,
+          "signed_mean_uv_px": [
+            2.283009880299484,
+            -2.088718758195608
+          ],
+          "signed_median_uv_px": [
+            2.448773542365416,
+            -2.030224349073279
+          ],
+          "observation_bounds_xy": [
+            [
+              26.954133987426758,
+              13.402324676513672
+            ],
+            [
+              548.4879150390625,
+              112.30015563964844
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 42,
+          "finite_count": 42,
+          "invalid_count": 0,
+          "median_px": 2.803630476697954,
+          "p95_px": 8.780452846786217,
+          "fraction_within_2px": 0.3333333333333333,
+          "fraction_within_5px": 0.7857142857142857,
+          "signed_mean_uv_px": [
+            -2.9615562102345283,
+            0.12120170602722846
+          ],
+          "signed_median_uv_px": [
+            -2.7549294471189114,
+            -0.11905464858189418
+          ],
+          "observation_bounds_xy": [
+            [
+              50.214019775390625,
+              20.301687240600586
+            ],
+            [
+              565.0281982421875,
+              127.92259979248047
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 38,
+          "finite_count": 38,
+          "invalid_count": 0,
+          "median_px": 5.491244125565768,
+          "p95_px": 10.271459399912313,
+          "fraction_within_2px": 0.34210526315789475,
+          "fraction_within_5px": 0.42105263157894735,
+          "signed_mean_uv_px": [
+            3.887079070704741,
+            -1.5434052972465218
+          ],
+          "signed_median_uv_px": [
+            5.1203316360220015,
+            -1.6346251541879706
+          ],
+          "observation_bounds_xy": [
+            [
+              112.02537536621094,
+              24.119876861572266
+            ],
+            [
+              599.748779296875,
+              108.33053588867188
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 7.1722219527943345,
+          "p95_px": 8.556038685746602,
+          "fraction_within_2px": 0.04,
+          "fraction_within_5px": 0.2,
+          "signed_mean_uv_px": [
+            -6.070175242909711,
+            0.11444559314157061
+          ],
+          "signed_median_uv_px": [
+            -7.166447242616471,
+            -0.015188260592580605
+          ],
+          "observation_bounds_xy": [
+            [
+              190.66014099121094,
+              28.769929885864258
+            ],
+            [
+              586.61572265625,
+              119.5526123046875
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 85,
+        "finite_count": 85,
+        "invalid_count": 0,
+        "median_px": 3.427047454106548,
+        "p95_px": 6.710996975457996,
+        "fraction_within_2px": 0.2235294117647059,
+        "fraction_within_5px": 0.7058823529411765
+      },
+      "original_scoring_counts": [
+        0,
+        31,
+        32,
+        22,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r02-initial.json",
+      "sha256": "cb5db94953c6e994f98c740d6e864abb24dcb37fca5302175a8f91af56cdbf6f"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r02",
+      "variant": "common_K_focal_linear",
+      "plan_sha256": "3db963b51aec6e1f1f3616b728861894554933b2828ceb0da345e55d779561ce",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 181,
+        "finite_count": 181,
+        "invalid_count": 0,
+        "median_px": 0.5116183495363321,
+        "p95_px": 1.2252714402224405,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          0.022374898680775863,
+          -0.056990543706399
+        ],
+        "signed_median_uv_px": [
+          -0.015570955088321625,
+          -0.1173927831109296
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.5739298325866461,
+          "p95_px": 1.0713058502367279,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.12903743566221795,
+            0.358083713146896
+          ],
+          "signed_median_uv_px": [
+            0.1434517913579043,
+            0.33788535798294106
+          ],
+          "observation_bounds_xy": [
+            [
+              52.43206787109375,
+              26.57779312133789
+            ],
+            [
+              489.0834655761719,
+              127.02153015136719
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 39,
+          "finite_count": 39,
+          "invalid_count": 0,
+          "median_px": 0.340966571696738,
+          "p95_px": 1.214859166139028,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.029564869412273362,
+            -0.18430405000516695
+          ],
+          "signed_median_uv_px": [
+            -0.036286165021664374,
+            -0.22066508656069317
+          ],
+          "observation_bounds_xy": [
+            [
+              26.954133987426758,
+              13.402324676513672
+            ],
+            [
+              548.4879150390625,
+              112.30015563964844
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 42,
+          "finite_count": 42,
+          "invalid_count": 0,
+          "median_px": 0.5779736351042528,
+          "p95_px": 1.179252696190821,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.28067139317086204,
+            -0.3785157744745987
+          ],
+          "signed_median_uv_px": [
+            -0.2970886869688343,
+            -0.39959282302076105
+          ],
+          "observation_bounds_xy": [
+            [
+              50.214019775390625,
+              20.301687240600586
+            ],
+            [
+              565.0281982421875,
+              127.92259979248047
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 38,
+          "finite_count": 38,
+          "invalid_count": 0,
+          "median_px": 0.44140119267502953,
+          "p95_px": 0.9451098262974565,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.1803093326666288,
+            0.0009351204320883854
+          ],
+          "signed_median_uv_px": [
+            -0.3269329539938042,
+            -0.01894479551603112
+          ],
+          "observation_bounds_xy": [
+            [
+              112.02537536621094,
+              24.119876861572266
+            ],
+            [
+              599.748779296875,
+              108.33053588867188
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 0.6539013520190147,
+          "p95_px": 1.6513719490196779,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.6704957915659122,
+            -0.020575995823122924
+          ],
+          "signed_median_uv_px": [
+            0.5018638527707253,
+            -0.1651460975002692
+          ],
+          "observation_bounds_xy": [
+            [
+              190.66014099121094,
+              28.769929885864258
+            ],
+            [
+              586.61572265625,
+              119.5526123046875
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 85,
+        "finite_count": 85,
+        "invalid_count": 0,
+        "median_px": 0.44236064480138515,
+        "p95_px": 1.0126747522442998,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        31,
+        32,
+        22,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r02-common_K_focal_linear.json",
+      "sha256": "727c27bc0d88610784854aa958c79b5591340c7e9391be84e2b2591c9acf3f6c"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r02",
+      "variant": "common_K_focal_robust",
+      "plan_sha256": "3db963b51aec6e1f1f3616b728861894554933b2828ceb0da345e55d779561ce",
+      "camera_decision": {
+        "state": "withhold_correction",
+        "reasons": [
+          "optimizer_not_converged"
+        ],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 181,
+        "finite_count": 181,
+        "invalid_count": 0,
+        "median_px": 0.4996889905724979,
+        "p95_px": 1.0469437192231787,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          0.016019444595956236,
+          -0.07589820334782627
+        ],
+        "signed_median_uv_px": [
+          0.0070895541135769236,
+          -0.13668844887821763
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.7026746508459912,
+          "p95_px": 1.0038754193357418,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.13846653067059794,
+            0.409488011109087
+          ],
+          "signed_median_uv_px": [
+            0.1393289913260105,
+            0.3448140630182337
+          ],
+          "observation_bounds_xy": [
+            [
+              52.43206787109375,
+              26.57779312133789
+            ],
+            [
+              489.0834655761719,
+              127.02153015136719
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 39,
+          "finite_count": 39,
+          "invalid_count": 0,
+          "median_px": 0.5636743758456647,
+          "p95_px": 1.020338457276012,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.006530068048360996,
+            -0.4691184157845827
+          ],
+          "signed_median_uv_px": [
+            -0.021493250762119942,
+            -0.4913401004560356
+          ],
+          "observation_bounds_xy": [
+            [
+              26.954133987426758,
+              13.402324676513672
+            ],
+            [
+              548.4879150390625,
+              112.30015563964844
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 42,
+          "finite_count": 42,
+          "invalid_count": 0,
+          "median_px": 0.5632664919055484,
+          "p95_px": 1.0439532258422357,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.14036309608464018,
+            -0.3923926251260773
+          ],
+          "signed_median_uv_px": [
+            -0.10348093789033186,
+            -0.45224025260290546
+          ],
+          "observation_bounds_xy": [
+            [
+              50.214019775390625,
+              20.301687240600586
+            ],
+            [
+              565.0281982421875,
+              127.92259979248047
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 38,
+          "finite_count": 38,
+          "invalid_count": 0,
+          "median_px": 0.2845214278107241,
+          "p95_px": 0.7677966701692857,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.06226424105931241,
+            -0.08543785184784737
+          ],
+          "signed_median_uv_px": [
+            -0.005545946549233349,
+            -0.12907729638020626
+          ],
+          "observation_bounds_xy": [
+            [
+              112.02537536621094,
+              24.119876861572266
+            ],
+            [
+              599.748779296875,
+              108.33053588867188
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 0.3475563370185731,
+          "p95_px": 1.2293310799982242,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.2516888674700317,
+            0.3653646249647761
+          ],
+          "signed_median_uv_px": [
+            0.0762281390066164,
+            0.3473204181533447
+          ],
+          "observation_bounds_xy": [
+            [
+              190.66014099121094,
+              28.769929885864258
+            ],
+            [
+              586.61572265625,
+              119.5526123046875
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 85,
+        "finite_count": 85,
+        "invalid_count": 0,
+        "median_px": 0.5130143846384665,
+        "p95_px": 0.9802219010089285,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        31,
+        32,
+        22,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r02-common_K_focal_robust.json",
+      "sha256": "12b7b5616febb948788fb966dbe6431b4d91587a679e651ca3afeeed6a7e23e6"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r02",
+      "variant": "common_K_focal_trimmed",
+      "plan_sha256": "3db963b51aec6e1f1f3616b728861894554933b2828ceb0da345e55d779561ce",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 181,
+        "finite_count": 181,
+        "invalid_count": 0,
+        "median_px": 0.268589793148283,
+        "p95_px": 1.055066867890368,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          0.0028821593829206314,
+          0.011950145246255973
+        ],
+        "signed_median_uv_px": [
+          0.02569792028543816,
+          0.002138685213477487
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.3325667748248233,
+          "p95_px": 1.0813695446172449,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.045334445839044765,
+            -0.1499176228414963
+          ],
+          "signed_median_uv_px": [
+            0.04926603509039751,
+            -0.2096541362736417
+          ],
+          "observation_bounds_xy": [
+            [
+              52.43206787109375,
+              26.57779312133789
+            ],
+            [
+              489.0834655761719,
+              127.02153015136719
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 39,
+          "finite_count": 39,
+          "invalid_count": 0,
+          "median_px": 0.2163148664034491,
+          "p95_px": 0.8741654312477535,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.007141927690602264,
+            -0.14300729930854006
+          ],
+          "signed_median_uv_px": [
+            0.02643820143953235,
+            -0.09213106202680876
+          ],
+          "observation_bounds_xy": [
+            [
+              26.954133987426758,
+              13.402324676513672
+            ],
+            [
+              548.4879150390625,
+              112.30015563964844
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 42,
+          "finite_count": 42,
+          "invalid_count": 0,
+          "median_px": 0.26596470236339875,
+          "p95_px": 0.839205937673299,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.030352640831707453,
+            0.03965785388729083
+          ],
+          "signed_median_uv_px": [
+            0.022959025109443587,
+            0.034193094762912324
+          ],
+          "observation_bounds_xy": [
+            [
+              50.214019775390625,
+              20.301687240600586
+            ],
+            [
+              565.0281982421875,
+              127.92259979248047
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 38,
+          "finite_count": 38,
+          "invalid_count": 0,
+          "median_px": 0.25468870569956037,
+          "p95_px": 1.0644307319467499,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.1316316336013058,
+            0.1733428447111404
+          ],
+          "signed_median_uv_px": [
+            -0.10785200879772106,
+            0.1331337419144738
+          ],
+          "observation_bounds_xy": [
+            [
+              112.02537536621094,
+              24.119876861572266
+            ],
+            [
+              599.748779296875,
+              108.33053588867188
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 25,
+          "finite_count": 25,
+          "invalid_count": 0,
+          "median_px": 0.2928991067506673,
+          "p95_px": 0.8777434960441823,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.19370296656447294,
+            0.20138220181804825
+          ],
+          "signed_median_uv_px": [
+            0.08229267295629938,
+            0.21684129756803117
+          ],
+          "observation_bounds_xy": [
+            [
+              190.66014099121094,
+              28.769929885864258
+            ],
+            [
+              586.61572265625,
+              119.5526123046875
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 85,
+        "finite_count": 85,
+        "invalid_count": 0,
+        "median_px": 0.22533310166081338,
+        "p95_px": 0.8414431690303724,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        31,
+        32,
+        22,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r02-common_K_focal_trimmed.json",
+      "sha256": "0d6d051aaf5d2f8522b38ab0dc86c7894efc4c70277ca400bf72ef9ccdd5d7f4"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r03",
+      "variant": "initial",
+      "plan_sha256": "f38804cd30bab0c6fe653a02d5453ce9b124c177ca19110fe60b8ff11aa8e67a",
+      "camera_decision": null,
+      "state": "complete",
+      "summary": {
+        "sample_count": 153,
+        "finite_count": 153,
+        "invalid_count": 0,
+        "median_px": 3.1436451723749945,
+        "p95_px": 8.106672448754315,
+        "fraction_within_2px": 0.17647058823529413,
+        "fraction_within_5px": 0.803921568627451,
+        "signed_mean_uv_px": [
+          0.03140023211708716,
+          -0.07226176198609574
+        ],
+        "signed_median_uv_px": [
+          -0.5943758573603191,
+          -0.15830575116763157
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 24,
+          "finite_count": 24,
+          "invalid_count": 0,
+          "median_px": 4.329315281941927,
+          "p95_px": 7.299940488118101,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.9166666666666666,
+          "signed_mean_uv_px": [
+            3.973860043715352,
+            1.3209571334703465
+          ],
+          "signed_median_uv_px": [
+            4.207438517487915,
+            1.3328025875019378
+          ],
+          "observation_bounds_xy": [
+            [
+              28.40403938293457,
+              9.86614990234375
+            ],
+            [
+              490.0564270019531,
+              121.29054260253906
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 32,
+          "finite_count": 32,
+          "invalid_count": 0,
+          "median_px": 2.9138472736919674,
+          "p95_px": 5.778027452161019,
+          "fraction_within_2px": 0.125,
+          "fraction_within_5px": 0.9375,
+          "signed_mean_uv_px": [
+            -2.085748242193171,
+            -0.03716055427189058
+          ],
+          "signed_median_uv_px": [
+            -2.796095651915536,
+            -0.3549143833684383
+          ],
+          "observation_bounds_xy": [
+            [
+              16.892074584960938,
+              9.574126243591309
+            ],
+            [
+              541.1451416015625,
+              111.12118530273438
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 3.0807532137552074,
+          "p95_px": 7.2626596374779675,
+          "fraction_within_2px": 0.24324324324324326,
+          "fraction_within_5px": 0.6486486486486487,
+          "signed_mean_uv_px": [
+            -3.0116448460803538,
+            -0.07863333155444693
+          ],
+          "signed_median_uv_px": [
+            -3.076080131198239,
+            -0.3504920632109645
+          ],
+          "observation_bounds_xy": [
+            [
+              40.36321258544922,
+              40.3460807800293
+            ],
+            [
+              564.9775390625,
+              127.38004302978516
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 2.915512566120259,
+          "p95_px": 9.737240579674209,
+          "fraction_within_2px": 0.3783783783783784,
+          "fraction_within_5px": 0.7567567567567568,
+          "signed_mean_uv_px": [
+            2.908050502929751,
+            0.7166570258350007
+          ],
+          "signed_median_uv_px": [
+            2.0143110145550054,
+            0.6253662591317379
+          ],
+          "observation_bounds_xy": [
+            [
+              104.26821899414062,
+              11.777862548828125
+            ],
+            [
+              589.6212158203125,
+              108.79525756835938
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 23,
+          "finite_count": 23,
+          "invalid_count": 0,
+          "median_px": 3.93625567872206,
+          "p95_px": 9.677694763033164,
+          "fraction_within_2px": 0.0,
+          "fraction_within_5px": 0.8260869565217391,
+          "signed_mean_uv_px": [
+            -0.8691943951521884,
+            -2.8337721625583026
+          ],
+          "signed_median_uv_px": [
+            -2.2788144699572115,
+            -2.7537634720719097
+          ],
+          "observation_bounds_xy": [
+            [
+              184.45303344726562,
+              21.13768768310547
+            ],
+            [
+              534.6596069335938,
+              114.98258209228516
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 67,
+        "finite_count": 67,
+        "invalid_count": 0,
+        "median_px": 2.869948853702668,
+        "p95_px": 5.700361786933396,
+        "fraction_within_2px": 0.2537313432835821,
+        "fraction_within_5px": 0.835820895522388
+      },
+      "original_scoring_counts": [
+        0,
+        22,
+        25,
+        20,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r03-initial.json",
+      "sha256": "4a543afc1bc01010870fdeef3dfce1960d39029dfe7549c78193b9bab40d1beb"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r03",
+      "variant": "common_K_focal_linear",
+      "plan_sha256": "f38804cd30bab0c6fe653a02d5453ce9b124c177ca19110fe60b8ff11aa8e67a",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 153,
+        "finite_count": 153,
+        "invalid_count": 0,
+        "median_px": 0.7726325155323688,
+        "p95_px": 1.571762469481206,
+        "fraction_within_2px": 0.9869281045751634,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          -0.02908772306144855,
+          -0.07965827610207993
+        ],
+        "signed_median_uv_px": [
+          -0.030490845918450304,
+          -0.008293329726015486
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 24,
+          "finite_count": 24,
+          "invalid_count": 0,
+          "median_px": 0.7810591797668467,
+          "p95_px": 1.2956493106886267,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.11066586275083952,
+            0.6567499111227131
+          ],
+          "signed_median_uv_px": [
+            -0.06867933380766544,
+            0.6810372126891693
+          ],
+          "observation_bounds_xy": [
+            [
+              28.40403938293457,
+              9.86614990234375
+            ],
+            [
+              490.0564270019531,
+              121.29054260253906
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 32,
+          "finite_count": 32,
+          "invalid_count": 0,
+          "median_px": 0.3925058590236459,
+          "p95_px": 1.0289828597076764,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.10560982568143318,
+            0.18161385564826937
+          ],
+          "signed_median_uv_px": [
+            0.07532745342004432,
+            0.022682934420693357
+          ],
+          "observation_bounds_xy": [
+            [
+              16.892074584960938,
+              9.574126243591309
+            ],
+            [
+              541.1451416015625,
+              111.12118530273438
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 1.1449419743902591,
+          "p95_px": 1.9662124089722002,
+          "fraction_within_2px": 0.9459459459459459,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.5141943256373401,
+            -0.843237919801864
+          ],
+          "signed_median_uv_px": [
+            -0.5334248953251972,
+            -0.9889939769012983
+          ],
+          "observation_bounds_xy": [
+            [
+              40.36321258544922,
+              40.3460807800293
+            ],
+            [
+              564.9775390625,
+              127.38004302978516
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.7062933849271162,
+          "p95_px": 1.3094383699523184,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.40081196199555985,
+            0.16603497111933077
+          ],
+          "signed_median_uv_px": [
+            0.24798577929550447,
+            0.11985916035258981
+          ],
+          "observation_bounds_xy": [
+            [
+              104.26821899414062,
+              11.777862548828125
+            ],
+            [
+              589.6212158203125,
+              108.79525756835938
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 23,
+          "finite_count": 23,
+          "invalid_count": 0,
+          "median_px": 0.5507280670529608,
+          "p95_px": 1.335727159201239,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.042556864758324764,
+            -0.3784716691327928
+          ],
+          "signed_median_uv_px": [
+            -0.02138620172641481,
+            -0.43505842163278885
+          ],
+          "observation_bounds_xy": [
+            [
+              184.45303344726562,
+              21.13768768310547
+            ],
+            [
+              534.6596069335938,
+              114.98258209228516
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 67,
+        "finite_count": 67,
+        "invalid_count": 0,
+        "median_px": 0.5589534181116834,
+        "p95_px": 1.5216262340535092,
+        "fraction_within_2px": 0.9701492537313433,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        22,
+        25,
+        20,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r03-common_K_focal_linear.json",
+      "sha256": "4d7811e08c9dc6b67747cc042381ca1c32d17e93a233deb0dc9d73d330a56b49"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r03",
+      "variant": "common_K_focal_robust",
+      "plan_sha256": "f38804cd30bab0c6fe653a02d5453ce9b124c177ca19110fe60b8ff11aa8e67a",
+      "camera_decision": {
+        "state": "withhold_correction",
+        "reasons": [
+          "optimizer_not_converged"
+        ],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 153,
+        "finite_count": 153,
+        "invalid_count": 0,
+        "median_px": 0.6108053810276942,
+        "p95_px": 1.3373430754035163,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          0.017353521000321354,
+          -0.11702661224781952
+        ],
+        "signed_median_uv_px": [
+          0.028874744081292647,
+          -0.22474259800905827
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 24,
+          "finite_count": 24,
+          "invalid_count": 0,
+          "median_px": 0.9685821792204157,
+          "p95_px": 1.5384432687513723,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.22613585417525042,
+            0.8861618064667023
+          ],
+          "signed_median_uv_px": [
+            0.28292357800400225,
+            0.8349523714466258
+          ],
+          "observation_bounds_xy": [
+            [
+              28.40403938293457,
+              9.86614990234375
+            ],
+            [
+              490.0564270019531,
+              121.29054260253906
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 32,
+          "finite_count": 32,
+          "invalid_count": 0,
+          "median_px": 0.661036793178633,
+          "p95_px": 1.1804963441769165,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.13866399220019732,
+            -0.5232714000280201
+          ],
+          "signed_median_uv_px": [
+            -0.20323774946351136,
+            -0.6019010549374215
+          ],
+          "observation_bounds_xy": [
+            [
+              16.892074584960938,
+              9.574126243591309
+            ],
+            [
+              541.1451416015625,
+              111.12118530273438
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.723660592025582,
+          "p95_px": 1.0555808038580463,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.1051620198532565,
+            -0.5994054176546639
+          ],
+          "signed_median_uv_px": [
+            -0.0971849647250167,
+            -0.5845727487372869
+          ],
+          "observation_bounds_xy": [
+            [
+              40.36321258544922,
+              40.3460807800293
+            ],
+            [
+              564.9775390625,
+              127.38004302978516
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.4027273199351979,
+          "p95_px": 0.9738807671343349,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.25530825385193046,
+            -0.17639926026589514
+          ],
+          "signed_median_uv_px": [
+            0.21751911868662432,
+            -0.19771999548548536
+          ],
+          "observation_bounds_xy": [
+            [
+              104.26821899414062,
+              11.777862548828125
+            ],
+            [
+              589.6212158203125,
+              108.79525756835938
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 23,
+          "finite_count": 23,
+          "invalid_count": 0,
+          "median_px": 0.5047704254145433,
+          "p95_px": 1.0703746429457925,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.16914498672615066,
+            0.2728914284713082
+          ],
+          "signed_median_uv_px": [
+            -0.07469494054510051,
+            0.35002965353460525
+          ],
+          "observation_bounds_xy": [
+            [
+              184.45303344726562,
+              21.13768768310547
+            ],
+            [
+              534.6596069335938,
+              114.98258209228516
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 67,
+        "finite_count": 67,
+        "invalid_count": 0,
+        "median_px": 0.661036793178633,
+        "p95_px": 1.076657436152313,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        22,
+        25,
+        20,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r03-common_K_focal_robust.json",
+      "sha256": "bf1c502baa8005caf86ff53742de1e4751bf2fb602004eaed9dcd73d69afa901"
+    },
+    {
+      "parent_run_id": "rod-height-bundle-v1-20260923",
+      "case_id": "r03",
+      "variant": "common_K_focal_trimmed",
+      "plan_sha256": "f38804cd30bab0c6fe653a02d5453ce9b124c177ca19110fe60b8ff11aa8e67a",
+      "camera_decision": {
+        "state": "candidate_camera_correction",
+        "reasons": [],
+        "scope": "RGB-only development gate; no dense snapshot or rod patch is automatically changed"
+      },
+      "state": "complete",
+      "summary": {
+        "sample_count": 153,
+        "finite_count": 153,
+        "invalid_count": 0,
+        "median_px": 0.30798250306988234,
+        "p95_px": 0.6769897710516329,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0,
+        "signed_mean_uv_px": [
+          0.016453477074288448,
+          -0.034068114242005655
+        ],
+        "signed_median_uv_px": [
+          0.004418493039679561,
+          -0.05425385168155117
+        ]
+      },
+      "per_view": [
+        {
+          "view": 0,
+          "sample_count": 24,
+          "finite_count": 24,
+          "invalid_count": 0,
+          "median_px": 0.38602406529572575,
+          "p95_px": 0.6426352125558114,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.10250116056596974,
+            0.24066797886374758
+          ],
+          "signed_median_uv_px": [
+            0.15002945515472277,
+            0.2620971526805427
+          ],
+          "observation_bounds_xy": [
+            [
+              28.40403938293457,
+              9.86614990234375
+            ],
+            [
+              490.0564270019531,
+              121.29054260253906
+            ]
+          ]
+        },
+        {
+          "view": 1,
+          "sample_count": 32,
+          "finite_count": 32,
+          "invalid_count": 0,
+          "median_px": 0.3355897878530508,
+          "p95_px": 0.5518806368811736,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.031952371667306356,
+            -0.14673871627825336
+          ],
+          "signed_median_uv_px": [
+            -0.056061985025309014,
+            -0.18465844320339464
+          ],
+          "observation_bounds_xy": [
+            [
+              16.892074584960938,
+              9.574126243591309
+            ],
+            [
+              541.1451416015625,
+              111.12118530273438
+            ]
+          ]
+        },
+        {
+          "view": 2,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.3138181000562547,
+          "p95_px": 0.7126690557099972,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            -0.049416754021822495,
+            -0.1444681971417592
+          ],
+          "signed_median_uv_px": [
+            -0.057092281956954594,
+            -0.22534085190851272
+          ],
+          "observation_bounds_xy": [
+            [
+              40.36321258544922,
+              40.3460807800293
+            ],
+            [
+              564.9775390625,
+              127.38004302978516
+            ]
+          ]
+        },
+        {
+          "view": 3,
+          "sample_count": 37,
+          "finite_count": 37,
+          "invalid_count": 0,
+          "median_px": 0.2531891657577432,
+          "p95_px": 0.6399892759719453,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.07471118157690708,
+            -0.07284457767400526
+          ],
+          "signed_median_uv_px": [
+            0.01677108412516759,
+            -0.05450278020134647
+          ],
+          "observation_bounds_xy": [
+            [
+              104.26821899414062,
+              11.777862548828125
+            ],
+            [
+              589.6212158203125,
+              108.79525756835938
+            ]
+          ]
+        },
+        {
+          "view": 4,
+          "sample_count": 23,
+          "finite_count": 23,
+          "invalid_count": 0,
+          "median_px": 0.2885104032308885,
+          "p95_px": 0.7924042999017747,
+          "fraction_within_2px": 1.0,
+          "fraction_within_5px": 1.0,
+          "signed_mean_uv_px": [
+            0.006258096199936201,
+            0.07598950510132982
+          ],
+          "signed_median_uv_px": [
+            0.0739487038867992,
+            0.16452243500478403
+          ],
+          "observation_bounds_xy": [
+            [
+              184.45303344726562,
+              21.13768768310547
+            ],
+            [
+              534.6596069335938,
+              114.98258209228516
+            ]
+          ]
+        }
+      ],
+      "original_summary": {
+        "sample_count": 67,
+        "finite_count": 67,
+        "invalid_count": 0,
+        "median_px": 0.30798250306988234,
+        "p95_px": 0.5296259373660036,
+        "fraction_within_2px": 1.0,
+        "fraction_within_5px": 1.0
+      },
+      "original_scoring_counts": [
+        0,
+        22,
+        25,
+        20,
+        0
+      ],
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "path": ".runtime/experiments/camera-all-view-validation-v1-20260923r2/rod-height-bundle-v1-20260923-r03-common_K_focal_trimmed.json",
+      "sha256": "6fc1b1031a268d69134067cffd681cce7fb9e9450bcf8527b882811a1164afdf"
+    }
+  ],
+  "gt_read_during_inference": false,
+  "old_inputs_and_results_unchanged": true,
+  "scope": "Post-hoc RGB-only coverage audit, not a preregistered new independent test or replacement gate. Reuses validation tracks; within-track rows correlated."
+}
