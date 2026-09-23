@@ -43,6 +43,7 @@ jobs:
           python -m unittest discover -s tests -p test_rod_evidence*.py -v
           python -m unittest discover -s tests -p test_camera_background.py -v
           python -m unittest discover -s tests -p "test_camera_bundle*.py" -v
+          python -m unittest discover -s tests -p test_camera_point_snapshot.py -v
           python -m unittest discover -s tests -p test_heldout_metrics.py -v
       - name: Photometric and correspondence controls
         # Headless OpenCV also enables correspondence checks in the clean CI environment.
@@ -53,6 +54,7 @@ jobs:
           python -m unittest discover -s tests -p test_rod_multiview*.py -v
           python -m unittest discover -s tests -p test_rod_identity*.py -v
           python -m unittest discover -s tests -p test_rod_reference*.py -v
+          python -m unittest discover -s tests -p test_rod_height*.py -v
           python -m unittest discover -s tests -p test_rod_candidate*.py -v
           python -m unittest discover -s tests -p test_background_correspondences.py -v
           python -m unittest discover -s tests -p "test_correspondence*.py" -v

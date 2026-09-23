@@ -1,0 +1,98 @@
+{
+  "annotation_origin": "RGB-only grid inspection before prediction on new height-varied renders; coordinates independently inspected, identical values to paired baseline. Not GT projected or a user study.",
+  "ground_truth_used_for_coordinates": false,
+  "predicted_geometry_used_for_coordinates": false,
+  "rgb_inspection_artifact_sha256": "664cf8cb2c57779e12efc95cef8a4b81ef51bb61cddc1c6aeb846648389c58b7",
+  "queries": [
+    {
+      "query_id": "r01_target",
+      "case_id": "r01",
+      "anchors": [
+        {
+          "view_id": "view_-32",
+          "xy": [
+            316,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "c807f3f2b93e1fb39cf75c920254506adfbf6f76d5edb3515791ac2a4621e08f"
+        },
+        {
+          "view_id": "view_+19",
+          "xy": [
+            316,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "690e9cc2bbf64229c64d9823e32413732db8d62d9dab4a5306c961fb6002a645"
+        }
+      ]
+    },
+    {
+      "query_id": "r02_target",
+      "case_id": "r02",
+      "anchors": [
+        {
+          "view_id": "view_-32",
+          "xy": [
+            324,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "f62482d830614cef2e7100d399bb2b87d85c205b3c3e229b5aea1ceaa4997de4"
+        },
+        {
+          "view_id": "view_+19",
+          "xy": [
+            325,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "7d5c31c0c81420e7d8acdab7917ae0f07543bcced3f4f42b604daa5d21b404d6"
+        }
+      ]
+    },
+    {
+      "query_id": "r03_target",
+      "case_id": "r03",
+      "anchors": [
+        {
+          "view_id": "view_-32",
+          "xy": [
+            317.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "59487414a96492fb84a89425da45ff569cb79f3f2eb4be27fd5ea211f2337bf7"
+        },
+        {
+          "view_id": "view_+19",
+          "xy": [
+            317.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5383026f32e64d7a859ccfdd431c9076058e116d960de0e1e33d31b8dc0108a0"
+        }
+      ]
+    }
+  ]
+}

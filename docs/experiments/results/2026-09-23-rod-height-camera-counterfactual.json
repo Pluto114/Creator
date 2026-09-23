@@ -1,0 +1,1184 @@
+{
+  "state": "complete",
+  "run_id": "rod-height-camera-counterfactual-v1-20260923",
+  "source_run_id": "rod-height-bundle-v1-20260923",
+  "tasks": [
+    [
+      "r01",
+      "true_K"
+    ],
+    [
+      "r01",
+      "true_pose"
+    ],
+    [
+      "r01",
+      "true_K_and_pose"
+    ],
+    [
+      "r02",
+      "true_K"
+    ],
+    [
+      "r02",
+      "true_pose"
+    ],
+    [
+      "r02",
+      "true_K_and_pose"
+    ],
+    [
+      "r03",
+      "true_K"
+    ],
+    [
+      "r03",
+      "true_pose"
+    ],
+    [
+      "r03",
+      "true_K_and_pose"
+    ]
+  ],
+  "source_sha256": {
+    "configs/models.lock.json": "07e328e7520c775b93bd94976866a28dbb55b50e4b40491aad64ca7eaa48416c",
+    "experiments/src/creator_eval/__init__.py": "3398391fbbc26f2ca592319dcba4a4dfb87a37c23b7376f79c4802b0c31a4536",
+    "experiments/src/creator_eval/__main__.py": "fd131538acffaae55fd7c1952a0e7b8e00fe9a08d2cdea028563cfc1778d01db",
+    "experiments/src/creator_eval/background_correspondences.py": "05e5f592f3673954c15a61cf705205d223b0589ab370607e5a66fc58097243b5",
+    "experiments/src/creator_eval/camera_bundle.py": "1bf58087ee6e521e381f37c28423940b43226f330402461c2855e13002719131",
+    "experiments/src/creator_eval/camera_bundle_shared.py": "5baf9fa90f353b3a6ca9793b05de49155d772268a2cf3a52aa5e87a080bc6a5f",
+    "experiments/src/creator_eval/camera_diagnostics.py": "17101a6c1dd47eb88c0bb041a536c7976056d13a9546588c5789b1848774d49c",
+    "experiments/src/creator_eval/common_readout.py": "4d43871ed269a9e8d9d4911c73c439dd843e709e0b69251d6fe28729cd2b32aa",
+    "experiments/src/creator_eval/common_readout_components.py": "83af8cc36fedd59f49ecbeaef42abf60545e0712e0c1ba01cb1a969c1e509080",
+    "experiments/src/creator_eval/common_readout_split.py": "57106331554d4ff5acb2f91d511da8afcb180aad3dd7178d49513dbd793c31fa",
+    "experiments/src/creator_eval/correspondence_band_split.py": "705d24b800953213194121b8a3b40c093318aa0b8ac63cfee707be91f5389368",
+    "experiments/src/creator_eval/correspondence_tracks.py": "a884b4587324ac1d8c48c3bff5ab422b856e6f553dd31efbe2db65d9f4d422b9",
+    "experiments/src/creator_eval/heldout_metrics.py": "25715bcab74a25fde30f61435ae7f7ba2a123abb25177d0d38633c93e4f6ae7a",
+    "experiments/src/creator_eval/line_controls.py": "7702c987899685a8647f7cecadabb5a0b854ce86b975e85b5d7e5e5abf9c89b3",
+    "experiments/src/creator_eval/native_diagnostics.py": "fcc7b782016c2227a54999f9a3a8bcaac7bfcf04ed53a13f38f048739518ce59",
+    "experiments/src/creator_eval/rod_candidate_association.py": "433eed9364379284cc9069ef76e63baa2a4d436820a309187a213a662bedf7b7",
+    "experiments/src/creator_eval/rod_candidate_audit.py": "779a2f683bf9afa55f6acfc342a65de269e87c9ff5754f1c1840558995f9e615",
+    "experiments/src/creator_eval/rod_candidate_extent.py": "65927b89a968eea59fcaa46bce29e560b9cc0180eb6db2349a30631bab087ad1",
+    "experiments/src/creator_eval/rod_candidate_pool.py": "403855670196cb2cd3938431759eed6bc80a50bed72305113130d783dad12fa6",
+    "experiments/src/creator_eval/rod_cylinder_gate.py": "026a71ba41a3aee56b3b51f291aee2cc402f7f80bcfc530df2058336adf5566e",
+    "experiments/src/creator_eval/rod_cylinder_support.py": "68834905abf6cb0e4993b0a156373968706936cbe6a2356b6b8505d402400f4f",
+    "experiments/src/creator_eval/rod_evidence.py": "67d9d57fbd5ea20fab518ba8aa43353204fcea0980c022ed9c3fffb8d443016e",
+    "experiments/src/creator_eval/rod_foreground_identity.py": "c99c7bfadff2af9671f9b7eab01cf7e12cc44450734ca8fcd912a55cc884c255",
+    "experiments/src/creator_eval/rod_multiview_candidates.py": "eeb737078405fa98dd11d9061aa0a254369c2c571a9f00225b00ac4c935b9a98",
+    "experiments/src/creator_eval/rod_observations.py": "ee7e4856e02e791e70fb066863efaf87e8360ff1938e75bf1a4b5c3ef3ce384b",
+    "experiments/src/creator_eval/rod_profile_controls.py": "fd4720f2dd6274e8d7b1db208025f740041fd362a5ae8ab02f9c25b4ace2f428",
+    "experiments/src/creator_eval/rod_radius_consistency.py": "d2bc78388008a532242b511365b3248df94ea6963f8e6b4c9b3c040cf7cc9147",
+    "experiments/src/creator_eval/runner.py": "fb542263d8bc8a71ae1c5f116a9446c7128e17cbcb32e421f1a4db8619254e66",
+    "experiments/src/creator_eval/track_image_controls.py": "c1e41f835a1d415ee8881191e62006f224051b85db2d84f5fbd258ae619f1752",
+    "reconstruction/src/creator_recon/domain/point_patch.py": "130f07fb8e16ec33fbf9f64b3a9a869432de3ad96e721e3a605e7748397e4bb6",
+    "scripts/blender_export_thin_pack.py": "199c8107c673b4e1a2bf1d77dd640d243335788548acb8fa8d0fe12e58467b4d",
+    "scripts/blender_rod_height_pack.py": "c135d076c825a5644d2f0c77772b937f44ed0cec4c42a317164158aa42856c7d",
+    "scripts/blender_rod_identity_pack.py": "d16b9cb303ce923b1445205d389bce6811dd8c4763af38682ce9ab190aa15378",
+    "scripts/blender_rod_reference_pack.py": "d10de472bf1aff8b322387c42f5c13fe2f3d7fc425695dda7d9c97e30b83dff8",
+    "scripts/diagnose_rod_height_cameras.py": "c3fd9cb776aa429ec7a749284290d043a733061226fecd5fc9e8840a1602872b",
+    "scripts/environment_paths.py": "50049eaee129a4c7de1d1316b4a37242562e5751217d8105dd4eff914da3541f",
+    "scripts/prepare_rod_height.py": "6ea8569ac37bdf4994a09baf2c7ac74c9cf328c78df84b31ebffca481d38e465",
+    "scripts/prepare_rod_reference.py": "5dea91a16a5b5548e4b955c131047290d108c0b0406c2c599338d8d5816bf540",
+    "scripts/run_background_correspondences.py": "a751f2e830f6e7d64b2074211f848917f626b5737042dc4f6217de8b6cb88568",
+    "scripts/run_camera_bundle_pilot.py": "8f87c963b8769de14d6b5c905d5b62e7ee2ec603dba0e802bbe0ea391eded458",
+    "scripts/run_camera_bundle_shared.py": "ace420a5da675b64f94b0b09e7bf141c140b2239d0724ee0a2724847efdf903a",
+    "scripts/run_foreground_estimated_pilot.py": "d52e2cc16f6d6337413db4fe153bc88726270455048f5220b385666c61de29cb",
+    "scripts/run_foreground_track_bands.py": "f2d9e826baad4b4f19ff80505737be3e5a63b1ea13cc4f683522c8e6e9c9f139",
+    "scripts/run_foreground_tracks.py": "1abfb529cc5f9e26fd7443125b30a5e70575243a72781bdad4a7f68f5d093bf6",
+    "scripts/run_rod_candidate_ablation.py": "50fb399e6d0427496335cbb67f7a90f40018bb07dd3a561cdffbec269339ba5a",
+    "scripts/run_rod_cylinder_validation.py": "a9f2f8870926f14f48db8c274b8d3013d7e0fdab166bf20fc1f724ba0d8f996b",
+    "scripts/run_rod_evidence.py": "302b62f3f3e1f8bc24e569c2d9779004e78ffba836af39efa057e9b81e4e5d71",
+    "scripts/run_rod_foreground_identity.py": "b899657b1306408ec8f2cf2c7ee1f2743b4ebcf92d58a0166a2eee01cd478732",
+    "scripts/run_rod_identity_blender.py": "3599170eea58faacc95b5ab3d0f2100494b3256506d6208a6a2f320ad1c816c8",
+    "scripts/run_rod_identity_stress.py": "f3cb734a1a02cf70f66caacf7ad355d0f8734d1f017980b21a623181adf56946",
+    "scripts/run_rod_reference.py": "e36ad57c34d7eebd00731aef1147bdac2d5650ce52fd810c5d13393425767dcb",
+    "scripts/run_rod_support_recheck.py": "0f3273f523777d58875286736baf24f4e7f818d40021ee7d17e09188b51e9ed8",
+    "scripts/run_thin_line_controls.py": "75d02972c63a4ec3ee679a347adbd2e2b303eec48f96d4da2e56d4a6fe055a30",
+    "scripts/run_track_image_controls.py": "c2ed5a9958293420aee7f301893ed97528717a9dedb2c22ad8e7a6736d4c2e41",
+    "scripts/smoke_da3.py": "487ec7e079558c1f00d87264f291542bd0ac951a2be4ae7f3ce8039889c6fb5a",
+    "scripts/thin_pack_gt.py": "349934533b6402a81cbbdf8d0865f78649c2ff20d6b608ef0adace8388eee7ca"
+  },
+  "parent_rod_sha256": "c620d7dfe7c6f583e3245def5ad944ed3cb427d8d4142686cea40686c45bd283",
+  "scope": "GT-only diagnostic of frozen two-stage candidates; not model performance",
+  "records": [
+    {
+      "case_id": "r01",
+      "intervention": "true_K",
+      "path": "r01-true_K.json",
+      "sha256": "12228235e9b61969fb26e6dce155ccbc887af64c737c550a255c2355e94395a6"
+    },
+    {
+      "case_id": "r01",
+      "intervention": "true_pose",
+      "path": "r01-true_pose.json",
+      "sha256": "4670c69411356894ffff75fbc34c304509407ee174a5e867f8d56b8ba873a2a3"
+    },
+    {
+      "case_id": "r02",
+      "intervention": "true_K",
+      "path": "r02-true_K.json",
+      "sha256": "e3b449dff176e95e7cec292201b3bb7782058ec5014e0590cca7a171b081df0b"
+    },
+    {
+      "case_id": "r01",
+      "intervention": "true_K_and_pose",
+      "path": "r01-true_K_and_pose.json",
+      "sha256": "36055fa50db8bdf2fd017e1b6692846ff127d833b5bb1b4266e498a3212a144b"
+    },
+    {
+      "case_id": "r02",
+      "intervention": "true_pose",
+      "path": "r02-true_pose.json",
+      "sha256": "a91b3364eb7ab1e321cd3765a3e4b85cdab2f2f960e53109a4af23800a59dac3"
+    },
+    {
+      "case_id": "r02",
+      "intervention": "true_K_and_pose",
+      "path": "r02-true_K_and_pose.json",
+      "sha256": "4f2da9b6aad0988a8a980d6f85cc12b5bbea8ea979af140001f470f8a2a2822d"
+    },
+    {
+      "case_id": "r03",
+      "intervention": "true_K",
+      "path": "r03-true_K.json",
+      "sha256": "f3e8e9123c6638aa447b2a7b65edc7e741fe7e22e13e7a1c94ba3ec1e9394e3d"
+    },
+    {
+      "case_id": "r03",
+      "intervention": "true_pose",
+      "path": "r03-true_pose.json",
+      "sha256": "635bd5f6b7786db8d37d2105027dc19c822f75d80acc23c39949085711290889"
+    },
+    {
+      "case_id": "r03",
+      "intervention": "true_K_and_pose",
+      "path": "r03-true_K_and_pose.json",
+      "sha256": "fdd5ad0a3adc1c060b5b2a6af10593e909696df89e32c0603200b6bb37628173"
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "r01",
+      "intervention": "true_K",
+      "method": "baseline",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.02149796529978021,
+            0.005993361178817658,
+            1.0341005899543214
+          ],
+          [
+            -0.0191721828042426,
+            0.00983240184270695,
+            -0.9608220914441593
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 2.000000000000001,
+          "covered_fraction": 1.0,
+          "distance_median": 0.00917576469162603,
+          "distance_p95": 0.011196149233697184,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.994927731085901,
+          "sample_count": 998,
+          "covered_length": 1.994927731085901,
+          "covered_fraction": 1.0,
+          "distance_median": 0.00918335030713019,
+          "distance_p95": 0.011207147022501423,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r01",
+      "intervention": "true_K",
+      "method": "cylinder_support",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r01",
+      "intervention": "true_K_and_pose",
+      "method": "baseline",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.0258851668755356,
+            0.001181734185227666,
+            -0.949820555024014
+          ],
+          [
+            -0.027289994030129938,
+            -0.0057369195590314176,
+            1.0460315011881058
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 2.000000000000001,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0027791892792177805,
+          "distance_p95": 0.005839653409882672,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9958645423963812,
+          "sample_count": 998,
+          "covered_length": 1.9958645423963812,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0027730539937518887,
+          "distance_p95": 0.005832876440830661,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r01",
+      "intervention": "true_K_and_pose",
+      "method": "cylinder_support",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.02692232183297717,
+            -0.0032148139905262053,
+            -0.9433849190852334
+          ],
+          [
+            -0.026937781017805508,
+            -0.004244950523946735,
+            1.0460617856726149
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 2.000000000000001,
+          "covered_fraction": 1.0,
+          "distance_median": 0.004200426767707971,
+          "distance_p95": 0.004622229850304411,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9894469715205094,
+          "sample_count": 995,
+          "covered_length": 1.9894469715205094,
+          "covered_fraction": 1.0,
+          "distance_median": 0.004199657147613666,
+          "distance_p95": 0.0046194324477457,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r01",
+      "intervention": "true_pose",
+      "method": "baseline",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.030365007288374397,
+            0.0010460342433420656,
+            -0.9369883038160038
+          ],
+          [
+            -0.03171288164308452,
+            -0.00591433164413707,
+            1.0460284233858772
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 2.000000000000001,
+          "covered_fraction": 1.0,
+          "distance_median": 0.006519766470447444,
+          "distance_p95": 0.008691224196767483,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9830294006446358,
+          "sample_count": 992,
+          "covered_length": 1.9830294006446358,
+          "covered_fraction": 1.0,
+          "distance_median": 0.006509121165300998,
+          "distance_p95": 0.008669254390858415,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r01",
+      "intervention": "true_pose",
+      "method": "cylinder_support",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.03125781921834591,
+            -0.002747916315748783,
+            -0.9369660678559756
+          ],
+          [
+            -0.031206499436720946,
+            -0.0037625256551651275,
+            1.046063072564102
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 2.000000000000001,
+          "covered_fraction": 1.0,
+          "distance_median": 0.007032474056733194,
+          "distance_p95": 0.007236848908551306,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9830294006446358,
+          "sample_count": 992,
+          "covered_length": 1.9830294006446358,
+          "covered_fraction": 1.0,
+          "distance_median": 0.007030879518918922,
+          "distance_p95": 0.007233990048831955,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r02",
+      "intervention": "true_K",
+      "method": "baseline",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            0.03385723634701865,
+            0.001505878301364838,
+            1.0556002553504567
+          ],
+          [
+            0.03584298778559436,
+            0.007244033718672327,
+            0.18258210270531722
+          ]
+        ],
+        [
+          [
+            0.03664604902913693,
+            0.009564611277141921,
+            -0.17047670902617293
+          ],
+          [
+            0.03838358153789079,
+            0.014585497267286307,
+            -0.9343675925906698
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6500000000000006,
+          "sample_count": 825,
+          "covered_length": 1.6500000000000006,
+          "covered_fraction": 1.0,
+          "distance_median": 0.007004958796597742,
+          "distance_p95": 0.014506591404034461,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.636948628589217,
+          "sample_count": 819,
+          "covered_length": 1.636948628589217,
+          "covered_fraction": 1.0,
+          "distance_median": 0.006920287803217134,
+          "distance_p95": 0.014412763957956275,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.3500000000000001,
+          "sample_count": 175,
+          "covered_length": 0.04400000000000001,
+          "covered_fraction": 0.12571428571428572,
+          "distance_median": 0.08987847227245199,
+          "distance_p95": 0.1677576803980269,
+          "reason": null
+        },
+        "guarded_interior": {
+          "source_length": 0.30000000000000004,
+          "sample_count": 151,
+          "covered_length": 0.00794701986754967,
+          "covered_fraction": 0.026490066225165566,
+          "distance_median": 0.10236167922651919,
+          "distance_p95": 0.16972792337109235,
+          "reason": null
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      }
+    },
+    {
+      "case_id": "r02",
+      "intervention": "true_K",
+      "method": "cylinder_support",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6500000000000006,
+          "sample_count": 825,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.3500000000000001,
+          "sample_count": 175,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.30000000000000004,
+          "sample_count": 151,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      }
+    },
+    {
+      "case_id": "r02",
+      "intervention": "true_K_and_pose",
+      "method": "baseline",
+      "state": "unresolved",
+      "reason": "competing_or_partially_supported_identity",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6500000000000006,
+          "sample_count": 825,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.3500000000000001,
+          "sample_count": 175,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.30000000000000004,
+          "sample_count": 151,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      }
+    },
+    {
+      "case_id": "r02",
+      "intervention": "true_K_and_pose",
+      "method": "cylinder_support",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6500000000000006,
+          "sample_count": 825,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.3500000000000001,
+          "sample_count": 175,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.30000000000000004,
+          "sample_count": 151,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      }
+    },
+    {
+      "case_id": "r02",
+      "intervention": "true_pose",
+      "method": "baseline",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            0.03500030386453112,
+            -0.03667214789836918,
+            -0.9299507181416639
+          ],
+          [
+            0.033983901890109545,
+            -0.021525707884729312,
+            -0.1792483980584327
+          ]
+        ],
+        [
+          [
+            0.033497418893805204,
+            -0.01427612975854271,
+            0.18006211411815662
+          ],
+          [
+            0.03231596018849466,
+            0.003329988547910465,
+            1.0526733579755878
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.6375757575757577,
+        "precision_fraction": 0.6433226810192582,
+        "false_predicted_length": 0.5791174995169086,
+        "truth_to_prediction": {
+          "source_length": 1.6500000000000006,
+          "sample_count": 825,
+          "covered_length": 1.0520000000000005,
+          "covered_fraction": 0.6375757575757577,
+          "distance_median": 0.013457890113493187,
+          "distance_p95": 0.035394932161210674,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.6236454315957698,
+          "sample_count": 813,
+          "covered_length": 1.0445279320788612,
+          "covered_fraction": 0.6433226810192582,
+          "distance_median": 0.01314325321539097,
+          "distance_p95": 0.035040853027876226,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.3500000000000001,
+          "sample_count": 175,
+          "covered_length": 0.024000000000000007,
+          "covered_fraction": 0.06857142857142857,
+          "distance_median": 0.09416274589775005,
+          "distance_p95": 0.17166336976022775,
+          "reason": null
+        },
+        "guarded_interior": {
+          "source_length": 0.30000000000000004,
+          "sample_count": 151,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.10656321240331149,
+          "distance_p95": 0.1736043266624037,
+          "reason": null
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      }
+    },
+    {
+      "case_id": "r02",
+      "intervention": "true_pose",
+      "method": "cylinder_support",
+      "state": "rejected",
+      "reason": "no_finite_candidate_supports_foreground_claims",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6500000000000006,
+          "sample_count": 825,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.3500000000000001,
+          "sample_count": 175,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "guarded_interior": {
+          "source_length": 0.30000000000000004,
+          "sample_count": 151,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      }
+    },
+    {
+      "case_id": "r03",
+      "intervention": "true_K",
+      "method": "baseline",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.00892075444965923,
+            0.009349446990010613,
+            1.089258893213625
+          ],
+          [
+            -0.005187747525730924,
+            0.03098541564335555,
+            -0.9070286965430832
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.6329999999999998,
+        "precision_fraction": 0.6466466466466466,
+        "false_predicted_length": 0.7054375755373576,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 1.2660000000000002,
+          "covered_fraction": 0.6329999999999998,
+          "distance_median": 0.022107162432605527,
+          "distance_p95": 0.03186783403742496,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9964083228380178,
+          "sample_count": 999,
+          "covered_length": 1.2909707473006602,
+          "covered_fraction": 0.6466466466466466,
+          "distance_median": 0.02189150322015964,
+          "distance_p95": 0.031533224255202504,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r03",
+      "intervention": "true_K",
+      "method": "cylinder_support",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.00892075444965923,
+            0.009349446990010613,
+            1.089258893213625
+          ],
+          [
+            -0.005187747525730924,
+            0.03098541564335555,
+            -0.9070286965430832
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.6329999999999998,
+        "precision_fraction": 0.6466466466466466,
+        "false_predicted_length": 0.7054375755373576,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 1.2660000000000002,
+          "covered_fraction": 0.6329999999999998,
+          "distance_median": 0.022107162432605527,
+          "distance_p95": 0.03186783403742496,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9964083228380178,
+          "sample_count": 999,
+          "covered_length": 1.2909707473006602,
+          "covered_fraction": 0.6466466466466466,
+          "distance_median": 0.02189150322015964,
+          "distance_p95": 0.031533224255202504,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r03",
+      "intervention": "true_K_and_pose",
+      "method": "baseline",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.014759124433635577,
+            0.0003572051418627237,
+            -0.9498025669376017
+          ],
+          [
+            -0.015024065549638147,
+            -0.001611566559302612,
+            1.0460609868504096
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 2.000000000000001,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0006373068877952207,
+          "distance_p95": 0.0015158635767559827,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9958645423963817,
+          "sample_count": 998,
+          "covered_length": 1.9958645423963817,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0006355311212840266,
+          "distance_p95": 0.00151395647776825,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r03",
+      "intervention": "true_K_and_pose",
+      "method": "cylinder_support",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.014759124433635577,
+            0.0003572051418627237,
+            -0.9498025669376017
+          ],
+          [
+            -0.015024065549638147,
+            -0.001611566559302612,
+            1.0460609868504096
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 2.000000000000001,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0006373068877952207,
+          "distance_p95": 0.0015158635767559827,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9958645423963817,
+          "sample_count": 998,
+          "covered_length": 1.9958645423963817,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0006355311212840266,
+          "distance_p95": 0.00151395647776825,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r03",
+      "intervention": "true_pose",
+      "method": "baseline",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.019556784420111186,
+            0.0002388013565429304,
+            -0.9433848509639544
+          ],
+          [
+            -0.01972773196043102,
+            -0.0018148719143990014,
+            1.0524786275330467
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 2.000000000000001,
+          "covered_fraction": 1.0,
+          "distance_median": 0.004708784833792659,
+          "distance_p95": 0.005020323670452884,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9958645423963812,
+          "sample_count": 998,
+          "covered_length": 1.9958645423963812,
+          "covered_fraction": 1.0,
+          "distance_median": 0.004708412151538856,
+          "distance_p95": 0.005020533612892112,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    },
+    {
+      "case_id": "r03",
+      "intervention": "true_pose",
+      "method": "cylinder_support",
+      "state": "accepted",
+      "reason": "unique_candidate_supported_by_explicit_foreground_anchors",
+      "segments": [
+        [
+          [
+            -0.019556784420111186,
+            0.0002388013565429304,
+            -0.9433848509639544
+          ],
+          [
+            -0.01972773196043102,
+            -0.0018148719143990014,
+            1.0524786275330467
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.000000000000001,
+          "sample_count": 1000,
+          "covered_length": 2.000000000000001,
+          "covered_fraction": 1.0,
+          "distance_median": 0.004708784833792659,
+          "distance_p95": 0.005020323670452884,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.9958645423963812,
+          "sample_count": 998,
+          "covered_length": 1.9958645423963812,
+          "covered_fraction": 1.0,
+          "distance_median": 0.004708412151538856,
+          "distance_p95": 0.005020533612892112,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.002,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null
+    }
+  ],
+  "elapsed_seconds": 21.73102789999939,
+  "parent_unchanged": true
+}

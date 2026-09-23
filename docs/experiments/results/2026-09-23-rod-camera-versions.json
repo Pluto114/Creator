@@ -1,0 +1,278 @@
+{
+  "state": "complete",
+  "run_id": "rod-height-camera-versions-v1-20260923",
+  "parent": "rod-height-bundle-v1-20260923",
+  "camera_variants": [
+    "initial",
+    "common_K_focal_trimmed"
+  ],
+  "depth_policy": "unchanged DA3 samples; new camera reprojection is an integration version, not depth repair",
+  "source_sha256": {
+    "configs/models.lock.json": "07e328e7520c775b93bd94976866a28dbb55b50e4b40491aad64ca7eaa48416c",
+    "experiments/src/creator_eval/__init__.py": "3398391fbbc26f2ca592319dcba4a4dfb87a37c23b7376f79c4802b0c31a4536",
+    "experiments/src/creator_eval/__main__.py": "fd131538acffaae55fd7c1952a0e7b8e00fe9a08d2cdea028563cfc1778d01db",
+    "experiments/src/creator_eval/background_correspondences.py": "05e5f592f3673954c15a61cf705205d223b0589ab370607e5a66fc58097243b5",
+    "experiments/src/creator_eval/camera_bundle.py": "1bf58087ee6e521e381f37c28423940b43226f330402461c2855e13002719131",
+    "experiments/src/creator_eval/camera_bundle_shared.py": "5baf9fa90f353b3a6ca9793b05de49155d772268a2cf3a52aa5e87a080bc6a5f",
+    "experiments/src/creator_eval/camera_diagnostics.py": "17101a6c1dd47eb88c0bb041a536c7976056d13a9546588c5789b1848774d49c",
+    "experiments/src/creator_eval/common_readout.py": "4d43871ed269a9e8d9d4911c73c439dd843e709e0b69251d6fe28729cd2b32aa",
+    "experiments/src/creator_eval/common_readout_components.py": "83af8cc36fedd59f49ecbeaef42abf60545e0712e0c1ba01cb1a969c1e509080",
+    "experiments/src/creator_eval/common_readout_split.py": "57106331554d4ff5acb2f91d511da8afcb180aad3dd7178d49513dbd793c31fa",
+    "experiments/src/creator_eval/correspondence_band_split.py": "705d24b800953213194121b8a3b40c093318aa0b8ac63cfee707be91f5389368",
+    "experiments/src/creator_eval/correspondence_tracks.py": "a884b4587324ac1d8c48c3bff5ab422b856e6f553dd31efbe2db65d9f4d422b9",
+    "experiments/src/creator_eval/heldout_metrics.py": "25715bcab74a25fde30f61435ae7f7ba2a123abb25177d0d38633c93e4f6ae7a",
+    "experiments/src/creator_eval/line_controls.py": "7702c987899685a8647f7cecadabb5a0b854ce86b975e85b5d7e5e5abf9c89b3",
+    "experiments/src/creator_eval/native_diagnostics.py": "fcc7b782016c2227a54999f9a3a8bcaac7bfcf04ed53a13f38f048739518ce59",
+    "experiments/src/creator_eval/rod_candidate_association.py": "433eed9364379284cc9069ef76e63baa2a4d436820a309187a213a662bedf7b7",
+    "experiments/src/creator_eval/rod_candidate_audit.py": "779a2f683bf9afa55f6acfc342a65de269e87c9ff5754f1c1840558995f9e615",
+    "experiments/src/creator_eval/rod_candidate_extent.py": "65927b89a968eea59fcaa46bce29e560b9cc0180eb6db2349a30631bab087ad1",
+    "experiments/src/creator_eval/rod_candidate_pool.py": "403855670196cb2cd3938431759eed6bc80a50bed72305113130d783dad12fa6",
+    "experiments/src/creator_eval/rod_cylinder_gate.py": "026a71ba41a3aee56b3b51f291aee2cc402f7f80bcfc530df2058336adf5566e",
+    "experiments/src/creator_eval/rod_cylinder_support.py": "68834905abf6cb0e4993b0a156373968706936cbe6a2356b6b8505d402400f4f",
+    "experiments/src/creator_eval/rod_evidence.py": "67d9d57fbd5ea20fab518ba8aa43353204fcea0980c022ed9c3fffb8d443016e",
+    "experiments/src/creator_eval/rod_foreground_identity.py": "c99c7bfadff2af9671f9b7eab01cf7e12cc44450734ca8fcd912a55cc884c255",
+    "experiments/src/creator_eval/rod_multiview_candidates.py": "eeb737078405fa98dd11d9061aa0a254369c2c571a9f00225b00ac4c935b9a98",
+    "experiments/src/creator_eval/rod_observations.py": "ee7e4856e02e791e70fb066863efaf87e8360ff1938e75bf1a4b5c3ef3ce384b",
+    "experiments/src/creator_eval/rod_profile_controls.py": "fd4720f2dd6274e8d7b1db208025f740041fd362a5ae8ab02f9c25b4ace2f428",
+    "experiments/src/creator_eval/rod_radius_consistency.py": "d2bc78388008a532242b511365b3248df94ea6963f8e6b4c9b3c040cf7cc9147",
+    "experiments/src/creator_eval/runner.py": "fb542263d8bc8a71ae1c5f116a9446c7128e17cbcb32e421f1a4db8619254e66",
+    "experiments/src/creator_eval/track_image_controls.py": "c1e41f835a1d415ee8881191e62006f224051b85db2d84f5fbd258ae619f1752",
+    "reconstruction/src/creator_recon/domain/camera_point_snapshot.py": "87ca8998b9d2d0b23af822e9ace84e8de60f7259bf92de1b569d2a1b3c8ff211",
+    "reconstruction/src/creator_recon/domain/point_patch.py": "130f07fb8e16ec33fbf9f64b3a9a869432de3ad96e721e3a605e7748397e4bb6",
+    "scripts/blender_export_thin_pack.py": "199c8107c673b4e1a2bf1d77dd640d243335788548acb8fa8d0fe12e58467b4d",
+    "scripts/blender_rod_height_pack.py": "c135d076c825a5644d2f0c77772b937f44ed0cec4c42a317164158aa42856c7d",
+    "scripts/blender_rod_identity_pack.py": "d16b9cb303ce923b1445205d389bce6811dd8c4763af38682ce9ab190aa15378",
+    "scripts/blender_rod_reference_pack.py": "d10de472bf1aff8b322387c42f5c13fe2f3d7fc425695dda7d9c97e30b83dff8",
+    "scripts/environment_paths.py": "50049eaee129a4c7de1d1316b4a37242562e5751217d8105dd4eff914da3541f",
+    "scripts/materialize_rod_camera_versions.py": "d42db6e5334453c515f0bb0b5ff070ac0df8cbcc70f57d28b819f43eaedb641d",
+    "scripts/prepare_rod_height.py": "6ea8569ac37bdf4994a09baf2c7ac74c9cf328c78df84b31ebffca481d38e465",
+    "scripts/prepare_rod_reference.py": "5dea91a16a5b5548e4b955c131047290d108c0b0406c2c599338d8d5816bf540",
+    "scripts/run_background_correspondences.py": "a751f2e830f6e7d64b2074211f848917f626b5737042dc4f6217de8b6cb88568",
+    "scripts/run_camera_bundle_pilot.py": "8f87c963b8769de14d6b5c905d5b62e7ee2ec603dba0e802bbe0ea391eded458",
+    "scripts/run_camera_bundle_shared.py": "ace420a5da675b64f94b0b09e7bf141c140b2239d0724ee0a2724847efdf903a",
+    "scripts/run_foreground_estimated_pilot.py": "d52e2cc16f6d6337413db4fe153bc88726270455048f5220b385666c61de29cb",
+    "scripts/run_foreground_track_bands.py": "f2d9e826baad4b4f19ff80505737be3e5a63b1ea13cc4f683522c8e6e9c9f139",
+    "scripts/run_foreground_tracks.py": "1abfb529cc5f9e26fd7443125b30a5e70575243a72781bdad4a7f68f5d093bf6",
+    "scripts/run_rod_candidate_ablation.py": "50fb399e6d0427496335cbb67f7a90f40018bb07dd3a561cdffbec269339ba5a",
+    "scripts/run_rod_cylinder_validation.py": "a9f2f8870926f14f48db8c274b8d3013d7e0fdab166bf20fc1f724ba0d8f996b",
+    "scripts/run_rod_evidence.py": "302b62f3f3e1f8bc24e569c2d9779004e78ffba836af39efa057e9b81e4e5d71",
+    "scripts/run_rod_foreground_identity.py": "b899657b1306408ec8f2cf2c7ee1f2743b4ebcf92d58a0166a2eee01cd478732",
+    "scripts/run_rod_identity_blender.py": "3599170eea58faacc95b5ab3d0f2100494b3256506d6208a6a2f320ad1c816c8",
+    "scripts/run_rod_identity_stress.py": "f3cb734a1a02cf70f66caacf7ad355d0f8734d1f017980b21a623181adf56946",
+    "scripts/run_rod_reference.py": "e36ad57c34d7eebd00731aef1147bdac2d5650ce52fd810c5d13393425767dcb",
+    "scripts/run_rod_support_recheck.py": "0f3273f523777d58875286736baf24f4e7f818d40021ee7d17e09188b51e9ed8",
+    "scripts/run_thin_line_controls.py": "75d02972c63a4ec3ee679a347adbd2e2b303eec48f96d4da2e56d4a6fe055a30",
+    "scripts/run_track_image_controls.py": "c2ed5a9958293420aee7f301893ed97528717a9dedb2c22ad8e7a6736d4c2e41",
+    "scripts/smoke_da3.py": "487ec7e079558c1f00d87264f291542bd0ac951a2be4ae7f3ce8039889c6fb5a",
+    "scripts/thin_pack_gt.py": "349934533b6402a81cbbdf8d0865f78649c2ff20d6b608ef0adace8388eee7ca"
+  },
+  "parent_rod_sha256": "c620d7dfe7c6f583e3245def5ad944ed3cb427d8d4142686cea40686c45bd283",
+  "parent_predictions_sha256": "a0c1f87137db1af1b3677f79d5ac5d5e5a49034842d81874a849963d42df6f17",
+  "skip_withheld_camera": true,
+  "tasks": [
+    {
+      "case_id": "r01",
+      "camera_variant": "common_K_focal_trimmed",
+      "path": "rod-results/r01-common_K_focal_trimmed.json",
+      "sha256": "35645c01068de7e191bd349abac99431d377661fc15c45d8b6938ddbf9ed8c57"
+    },
+    {
+      "case_id": "r01",
+      "camera_variant": "initial",
+      "path": "rod-results/r01-initial.json",
+      "sha256": "8a3058a02a9e965342e888c24df3cfe270e903b2d007682c0c95a9790b64ad26"
+    },
+    {
+      "case_id": "r02",
+      "camera_variant": "common_K_focal_trimmed",
+      "path": "rod-results/r02-common_K_focal_trimmed.json",
+      "sha256": "7d54d26d904dccbc407ac9a7b49888638d61aeada01045aa4c08217a267b68fd"
+    },
+    {
+      "case_id": "r02",
+      "camera_variant": "initial",
+      "path": "rod-results/r02-initial.json",
+      "sha256": "bb02fe960796040a257d5561f09d5ff75e940c7ab9f9e11c1b59e4624b819e7c"
+    },
+    {
+      "case_id": "r03",
+      "camera_variant": "common_K_focal_trimmed",
+      "path": "rod-results/r03-common_K_focal_trimmed.json",
+      "sha256": "073f5b43e448d730a9bd96894207e37068284f568868483b0d0c6e7f49f1ad34"
+    },
+    {
+      "case_id": "r03",
+      "camera_variant": "initial",
+      "path": "rod-results/r03-initial.json",
+      "sha256": "51f8fe499ecaeaae1394b3c6bacd60e877e4e0367ac13671fddf9b1249c637d0"
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "r01",
+      "camera_variant": "common_K_focal_trimmed",
+      "state": "materialized_research_version",
+      "snapshot_id": "475652d3cfe728a658c39b8caf56d3d6069ac3df7f0d9a94cae2dae56064a683",
+      "geometry_source_id": "20afed696f3aa4e75b7ab78eed1886843123caa5f7555c65985db22746a514ea",
+      "point_count": 952560,
+      "depth_content_sha256": "38550931ae40bf55f66309b0bbdac99a021316551a966bacbd5ef9b2c56ea56a",
+      "pixel_checks": 5120,
+      "maximum_pixel_roundtrip_error": 3.410605131648481e-13,
+      "maximum_depth_roundtrip_error": 4.440892098500626e-16,
+      "source_identity_verified": true,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "patches": [
+        {
+          "method": "baseline",
+          "patch_id": "ab2492a5316fb6380d72a2b27558cc40789374f4c1f89b69bebf8cd3087e393f",
+          "segment_count": 1
+        },
+        {
+          "method": "cylinder_support",
+          "patch_id": "b31f66c8e5bd90d3015c728fceb2e496439e1d487a0d4b553dee8ed3ca4f13ec",
+          "segment_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "r01",
+      "camera_variant": "initial",
+      "state": "materialized_research_version",
+      "snapshot_id": "cf1c2fcbf395f5959e72d0227f944f27635ad44598bdb45882db846edbb9034b",
+      "geometry_source_id": "06519f4b2f644fc7119e8068fc1ef013c7b383ddbf6538f454bfffe1c46cc7bd",
+      "point_count": 952560,
+      "depth_content_sha256": "38550931ae40bf55f66309b0bbdac99a021316551a966bacbd5ef9b2c56ea56a",
+      "pixel_checks": 5120,
+      "maximum_pixel_roundtrip_error": 3.623767952376511e-13,
+      "maximum_depth_roundtrip_error": 2.220446049250313e-16,
+      "source_identity_verified": true,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "patches": [
+        {
+          "method": "baseline",
+          "patch_id": "48e4dee4e518ab2da1fc497d2c747d4145ca10e341894a37bbd333b8dbae4906",
+          "segment_count": 0
+        },
+        {
+          "method": "cylinder_support",
+          "patch_id": "f48ffb27f0580d848f5cac8020450bc621446ec51faaaa14485d9ae550b8fb2e",
+          "segment_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "r02",
+      "camera_variant": "common_K_focal_trimmed",
+      "state": "materialized_research_version",
+      "snapshot_id": "ac184e0675aa61d138c01c111c7bb088b983b22ebfbd3503e8be24e03d4c6ce3",
+      "geometry_source_id": "ea23d7d48136c9fb7c13b7f39d2157bfa5e60cb764029aed2f171d6251e9960c",
+      "point_count": 952560,
+      "depth_content_sha256": "e22c894d7d01d2b48bd774707b7b1bc5b309704dc4d5b694c01bc2181d308097",
+      "pixel_checks": 5120,
+      "maximum_pixel_roundtrip_error": 4.707345624410664e-13,
+      "maximum_depth_roundtrip_error": 4.440892098500626e-16,
+      "source_identity_verified": true,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "patches": [
+        {
+          "method": "baseline",
+          "patch_id": "9e11f7717e7bcb1b6816624c3a2703d5ca2d8ef7c063e3b7cd55bef293600cab",
+          "segment_count": 2
+        },
+        {
+          "method": "cylinder_support",
+          "patch_id": "628b45b5580c498c85fe9e1504fefdeac53b75e802bd022b1c3f475fecbe80d0",
+          "segment_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "r02",
+      "camera_variant": "initial",
+      "state": "materialized_research_version",
+      "snapshot_id": "55e59b95d2b8629652488719a0aabe410848381627f63328bfef61c31b3194e0",
+      "geometry_source_id": "4cff26f73b990545ff250561327631c98a187e0a30c878997d2c0cc719b98562",
+      "point_count": 952560,
+      "depth_content_sha256": "e22c894d7d01d2b48bd774707b7b1bc5b309704dc4d5b694c01bc2181d308097",
+      "pixel_checks": 5120,
+      "maximum_pixel_roundtrip_error": 3.907985046680551e-13,
+      "maximum_depth_roundtrip_error": 4.440892098500626e-16,
+      "source_identity_verified": true,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "patches": [
+        {
+          "method": "baseline",
+          "patch_id": "aab2b7dcbdffe3239b348c2f9d452aa3a3d5acd6486e793ca22f6d8d8216bfc4",
+          "segment_count": 0
+        },
+        {
+          "method": "cylinder_support",
+          "patch_id": "e5ed32ff4164cf262b67d0275a16d8643dbc491c37ffa0f77d862e688a36272e",
+          "segment_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "r03",
+      "camera_variant": "common_K_focal_trimmed",
+      "state": "materialized_research_version",
+      "snapshot_id": "c80f81b924427134a85d2467ac8184059a545d3b33bf3e45efa67372780f621e",
+      "geometry_source_id": "62ab642c6cf71518365387acbf2b6bd976724ad20e505183f821406f1f2da9e2",
+      "point_count": 952560,
+      "depth_content_sha256": "f262d48e9d539bf9c08bd8a8701af1dc36d27e4703de6a519cb188cd4883729e",
+      "pixel_checks": 5120,
+      "maximum_pixel_roundtrip_error": 5.115907697472721e-13,
+      "maximum_depth_roundtrip_error": 4.440892098500626e-16,
+      "source_identity_verified": true,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "patches": [
+        {
+          "method": "baseline",
+          "patch_id": "3ee594b2b3b400db9cc0b224a2f03cc6dc4a46e6c953380e2564177b3eccc92e",
+          "segment_count": 1
+        },
+        {
+          "method": "cylinder_support",
+          "patch_id": "858eee90e70d3e2de63ff1d5e804ff2787a667d0253b72fe9b631a7d9175be85",
+          "segment_count": 1
+        }
+      ]
+    },
+    {
+      "case_id": "r03",
+      "camera_variant": "initial",
+      "state": "materialized_research_version",
+      "snapshot_id": "f62427020b974064703e550e98408febeeed5438ff839c33150ac12ab68209b2",
+      "geometry_source_id": "ad72e73f35979f26a8ae22652c1cb6f1a99d6da0e20adb0b73429013cc8a2fc5",
+      "point_count": 952560,
+      "depth_content_sha256": "f262d48e9d539bf9c08bd8a8701af1dc36d27e4703de6a519cb188cd4883729e",
+      "pixel_checks": 5120,
+      "maximum_pixel_roundtrip_error": 3.979039320256561e-13,
+      "maximum_depth_roundtrip_error": 2.220446049250313e-16,
+      "source_identity_verified": true,
+      "rollback_bytes_equal": true,
+      "saved_views_reopened": true,
+      "patches": [
+        {
+          "method": "baseline",
+          "patch_id": "bdc4d932d9fd05a1c7d515bcf545632c292bf193ff48e41ca7590d0e42ed0de3",
+          "segment_count": 0
+        },
+        {
+          "method": "cylinder_support",
+          "patch_id": "a022ba0c5d5bc476f6f54b50e50f7b4217e0f965757e6498e0c0f2100965836f",
+          "segment_count": 0
+        }
+      ]
+    }
+  ],
+  "gt_read": false,
+  "original_predictions_unchanged": true,
+  "no_dense_accuracy_or_common_reader_claim": true,
+  "no_suppression_applied": true
+}

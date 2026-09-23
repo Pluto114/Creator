@@ -1,0 +1,10 @@
+{
+  "state": "complete",
+  "run_id": "rod-height-camera-versions-v1-20260923",
+  "summary_sha256": "3eb66edc46c97a468fbfe1453e81579a99edb76beb836d3a6887f10ca1d2b5e8",
+  "audit_source_sha256": "fd3d3a479514638fc16e18d3c83d4d37fd4a79b8e9cbd1c8ab284e4c4a9a869a",
+  "schema_count": 18,
+  "independent_source_pixel_checks": 3840,
+  "actual_stale_patches_rejected": 3,
+  "gt_read": false
+}
