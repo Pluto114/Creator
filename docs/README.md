@@ -1,5 +1,7 @@
 # 文档索引
 
+最新续接（9月23日）：20张参考纹理辅助的新Blender杆图，4份实际DA3预测、16相机/32曲线条件。主两阶段完整杆R/P100%、p95约8–10mm；断杆82%/84%、细杆68%/68%，残余偏移仍不合格。变焦3项均扣留。追加24条评价侧相机替换支持优先处理残余位姿：断杆/细杆只换真实位姿即R/P100%、缺口保护区覆盖0%。289测试、187源码、20,600射线核验通过。参考板是新增采集条件，无独立对象/共同读取器收益，G1未通过。见[报告](experiments/2026-09-23-reference-assisted-rods.md)、[日志](journal/2026-09-23.md)、[ADR0014](decisions/0014-residual-pose-before-rod-extent-changes.md)。下方为历史。
+
 最新（9月23日）：相机联合优化已实现，实际DA3初始化，未用GT拟合。`camera-bundle-pilot-v1-20260923`8项全扣留；`camera-bundle-shared-v1-20260923`10项比较固定镜头/共享焦距及训练错配处理。唯一已知解析正例的两阶段方法将保留点三维中位497→29mm、相机中心47.8→约2mm，注入47条错配后接近。6组入口不足保留原样；4组杆图未校正。像素候选门存在三维不准的通过反例，因此不自动应用，G1未通过。285测试/9项双环境/18候选隔离与尺度审计通过。见[报告](experiments/2026-09-23-camera-bundle-and-fixed-lens.md)、[日志](journal/2026-09-23.md)、[ADR0013](decisions/0013-shared-calibration-and-training-outlier-control.md)。以下为历史。
 
 最新续接（9月22日）：同图ray pose对照普通0正确/3误收，未解决约21cm偏位。完成80对RGB轨迹审计，当前砖墙SIFT虽56/60轨迹正确但侧视覆盖不足；ORB闭环仍常错。15张解析RGB控制发现密集划分缺陷，新固定区域/隔离带回放已修，独特双深度SIFT通过前置检查，平面/重复控制和当前杆图不通过；相机优化器尚未实现。276项全量诊断、58协议、36保存视图、5120像素抽查通过。G1仍未通过。见[报告](experiments/2026-09-22-camera-heads-and-track-availability.md)、[日志](journal/2026-09-22.md)、[ADR0012](decisions/0012-correspondence-availability-before-camera-optimization.md)。以下为历史。

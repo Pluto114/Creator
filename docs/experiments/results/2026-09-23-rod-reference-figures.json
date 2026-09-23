@@ -1,0 +1,8 @@
+{
+  "summary_sha256": "e7c6635ed092168b4e8d458ff704f27b6471988a3e03a1e125a9126a50cafbe8",
+  "plotting_source_sha256": "7067938677d9e02aa4dbe7fd1ea62b85f460cff499a735ae279eaad165f34949",
+  "figures": {
+    "2026-09-23-rod-reference.png": "1ffe23f8b0b02e8a5dfebbda441bbee838073d87f748323c3d9463f923c086a9",
+    "2026-09-23-rod-reference-rgb.png": "6aef5cb466095dd7cfcbdb8a2818eabd4aee472a194686b86d8093b03787bc04"
+  }
+}

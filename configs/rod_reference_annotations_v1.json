@@ -1,0 +1,128 @@
+{
+  "annotation_origin": "Assistant inspected RGB-only coordinate-grid crops before DA3 predictions. No GT projection or automatic centerline lookup. Not a human-user study.",
+  "ground_truth_used_for_coordinates": false,
+  "predicted_geometry_used_for_coordinates": false,
+  "rgb_inspection_artifact_sha256": "4cae8c16edef4e67116f670fc033915c5d496d954a48472d822acdf0f8cc013e",
+  "queries": [
+    {
+      "query_id": "r01_target",
+      "case_id": "r01",
+      "anchors": [
+        {
+          "view_id": "view_-32",
+          "xy": [
+            316,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "4f78233770792c0239c2ec38f31e8eb6e3ed40cabd84caadaea3a78f704ba97a"
+        },
+        {
+          "view_id": "view_+19",
+          "xy": [
+            316,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "aa91ceb0481cec8dec1df7ccb42cfffbafcd6b158bb40ae6c7631f4976008da6"
+        }
+      ]
+    },
+    {
+      "query_id": "r02_target",
+      "case_id": "r02",
+      "anchors": [
+        {
+          "view_id": "view_-32",
+          "xy": [
+            324,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "460da698ec26f7d1c2b0f023c4a6e7fbb8a0d2d2dc6df2f271e6682e89bbc880"
+        },
+        {
+          "view_id": "view_+19",
+          "xy": [
+            325,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "a7ef1a2df81ee7a1c6027c9f2cfda6c3c870ad1ee7153bf22aefe069f755e062"
+        }
+      ]
+    },
+    {
+      "query_id": "r03_target",
+      "case_id": "r03",
+      "anchors": [
+        {
+          "view_id": "view_-32",
+          "xy": [
+            317.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "7e8dbb22040100218b28197ce19c24acc4d55928e4a3a99ff3bed9c50436bc9a"
+        },
+        {
+          "view_id": "view_+19",
+          "xy": [
+            317.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5555858a4422baeb95d25ef0b2b8b65aaea3de8d8e3fb8d39f8b44852aaca55a"
+        }
+      ]
+    },
+    {
+      "query_id": "r04_target",
+      "case_id": "r04",
+      "anchors": [
+        {
+          "view_id": "view_-32",
+          "xy": [
+            323.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "1945386b40584556a70c0d0302b93603a11326215bc7d65011ec8c6db644619d"
+        },
+        {
+          "view_id": "view_+19",
+          "xy": [
+            325,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "03d086f742d5842f5c61efbf7c7861e36f86e2e188e58c2123edf4c383f2f379"
+        }
+      ]
+    }
+  ]
+}
