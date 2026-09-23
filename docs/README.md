@@ -1,5 +1,7 @@
 # 文档索引
 
+最新（9月23日）：相机联合优化已实现，实际DA3初始化，未用GT拟合。`camera-bundle-pilot-v1-20260923`8项全扣留；`camera-bundle-shared-v1-20260923`10项比较固定镜头/共享焦距及训练错配处理。唯一已知解析正例的两阶段方法将保留点三维中位497→29mm、相机中心47.8→约2mm，注入47条错配后接近。6组入口不足保留原样；4组杆图未校正。像素候选门存在三维不准的通过反例，因此不自动应用，G1未通过。285测试/9项双环境/18候选隔离与尺度审计通过。见[报告](experiments/2026-09-23-camera-bundle-and-fixed-lens.md)、[日志](journal/2026-09-23.md)、[ADR0013](decisions/0013-shared-calibration-and-training-outlier-control.md)。以下为历史。
+
 最新续接（9月22日）：同图ray pose对照普通0正确/3误收，未解决约21cm偏位。完成80对RGB轨迹审计，当前砖墙SIFT虽56/60轨迹正确但侧视覆盖不足；ORB闭环仍常错。15张解析RGB控制发现密集划分缺陷，新固定区域/隔离带回放已修，独特双深度SIFT通过前置检查，平面/重复控制和当前杆图不通过；相机优化器尚未实现。276项全量诊断、58协议、36保存视图、5120像素抽查通过。G1仍未通过。见[报告](experiments/2026-09-22-camera-heads-and-track-availability.md)、[日志](journal/2026-09-22.md)、[ADR0012](decisions/0012-correspondence-availability-before-camera-optimization.md)。以下为历史。
 
 最新追加（9月22日）：第三版读取器旧128条件达标，新64条件58达标，仍未合格；已接4份新DA3估计相机快照、381万点及18个身份补丁。两个正常接受结果偏轴19–24cm，72项特权相机替换支持优先处理位姿，真实相机不回写正常输入。G1未通过，9月27日为冲刺验收日。见[追加报告](experiments/2026-09-22-readout-split-and-estimated-cameras.md)、[日志](journal/2026-09-22.md)、[ADR0011](decisions/0011-estimated-camera-error-before-more-rod-gates.md)。以下保留之前状态。

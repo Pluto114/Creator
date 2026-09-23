@@ -1,0 +1,102 @@
+{
+  "run_id": "camera-bundle-shared-v1-20260923",
+  "scope": "Development continuation after pilot v1: explicit same fixed-lens/square-pixel prior, training-only trimming, and longer-budget varying-K control; identical initial DA3 cameras, tracks and holdout; no independent data or rod efficacy claim",
+  "sources": [
+    "track-image-control-bands-v1-20260922",
+    "foreground-track-bands-v1-20260922"
+  ],
+  "reuse_prediction_run_id": "foreground-estimated-pilot-v1-20260922",
+  "model": "large",
+  "process_res": 504,
+  "use_ray_pose": false,
+  "detector": "SIFT",
+  "conditions": [
+    {
+      "id": "original_tracks",
+      "corrupt_fraction": 0.0
+    },
+    {
+      "id": "corrupt_10pct_tracks",
+      "corrupt_fraction": 0.1
+    }
+  ],
+  "variants": [
+    {
+      "id": "varying_K_robust_long",
+      "common_intrinsics": false,
+      "focal": true,
+      "loss": "soft_l1",
+      "trim": false
+    },
+    {
+      "id": "common_K_fixed_linear",
+      "common_intrinsics": true,
+      "focal": false,
+      "loss": "linear",
+      "trim": false
+    },
+    {
+      "id": "common_K_focal_linear",
+      "common_intrinsics": true,
+      "focal": true,
+      "loss": "linear",
+      "trim": false
+    },
+    {
+      "id": "common_K_focal_robust",
+      "common_intrinsics": true,
+      "focal": true,
+      "loss": "soft_l1",
+      "trim": false
+    },
+    {
+      "id": "common_K_focal_trimmed",
+      "common_intrinsics": true,
+      "focal": true,
+      "loss": "soft_l1",
+      "trim": true
+    }
+  ],
+  "optimizer": {
+    "minimum_initial_tracks": 24,
+    "rotation_bound_rad": 0.26,
+    "center_bound_baseline_fraction": 0.3,
+    "focal_scale_bounds": [
+      0.7,
+      1.3
+    ],
+    "robust_scale_px": 1.5,
+    "max_nfev": 1200,
+    "tolerance": 1e-06,
+    "warm_max_nfev": 250,
+    "trim_maximum_error_px": 4.0,
+    "minimum_trimmed_tracks_per_view": 16
+  },
+  "decision": {
+    "minimum_scored_observations": 24,
+    "maximum_median_ratio": 0.8,
+    "maximum_p95_px": 3.0,
+    "minimum_fraction_within_2px": 0.8
+  },
+  "seed": 23092026,
+  "parallel_workers": 2,
+  "evaluation": {
+    "alignment": {
+      "minimum_second_to_first_singular_ratio": 0.001,
+      "poor_fit_rmse_over_camera_span": 0.05,
+      "leave_one_camera_out_diagnostic": true
+    }
+  },
+  "limits": [
+    "One known analytic positive layout, not an independent rod asset",
+    "Shared focal multiplier cannot model arbitrary per-view calibration error or distortion",
+    "The first pose and first-last baseline fix gauge only, not metric calibration",
+    "Heldout matches diagnose projection generalization, not physical identity",
+    "Injected corruption is training-only and does not replace naturally wrong matches",
+    "No privileged cameras initialize the optimizer",
+    "Fixed-lens/square-pixel prior is an explicit assumption; it must not silently apply to mixed cameras, zoom or changing crops",
+    "Common-K-only heldout baseline is retained",
+    "All 10 planned variants are kept; longer solver budget is shared with a varying-K control"
+  ],
+  "parent_run_id": "camera-bundle-pilot-v1-20260923"
+}
