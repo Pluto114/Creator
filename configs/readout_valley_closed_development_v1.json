@@ -1,0 +1,39 @@
+{
+  "run_id": "readout-valley-closed-development-v1-20260924",
+  "scope": "All 198 prior controls plus all 36 now-known background challenges are development replay; no held-out or independent-object claim. Frozen v4 baseline and v5 persistent-valley gate compared without case-specific retuning. Independent numerical boundary-correction run; prior v5 remains preserved. All thresholds are identical, only exact band-edge inclusion and floating-point tolerance differ.",
+  "reader_reference_run_id": "common-readout-sections-controls-v1-20260923r2",
+  "readers": [
+    "robust_sections",
+    "persistent_valley_closed"
+  ],
+  "readout": {},
+  "expected_case_count": 234,
+  "tolerance_m": 0.025,
+  "spacing_m": 0.005,
+  "qualification": {
+    "positive_minimum_recovery": 0.9,
+    "positive_minimum_precision": 0.9,
+    "negative_maximum_predicted_length_m": 0.0
+  },
+  "datasets": [
+    {
+      "name": "prior198",
+      "run_id": "common-readout-sections-controls-v1-20260923r2",
+      "expected_cases": 198,
+      "source_results_file": "docs/experiments/results/2026-09-23-readout-sections-controls-r2.json"
+    },
+    {
+      "name": "background36",
+      "run_id": "readout-background-challenges-v1-20260924",
+      "expected_cases": 36,
+      "source_results_file": "docs/experiments/results/2026-09-24-readout-background-challenges.json"
+    }
+  ],
+  "interpretation_limits": {
+    "development": "The new 36 conditions informed this gate and are no longer unseen. Preserve every old condition including the branch-negative task definition.",
+    "unidentifiable": "Same-input semantic collisions are not included in pass/fail denominators; v5 cannot infer missing physical identity.",
+    "gap": "Original gap proximity is reported without relaxed guards or success claims.",
+    "resolution": "A one-voxel valley observed in 4/6 axial slices is supporting evidence, not proof that unresolved close rods are one member. Whole-component fallback can still be wrong."
+  },
+  "freeze_note": "Only a fixed persistent transverse density-valley test is added to old split proposals. All other v4 policies remain frozen. Copy exactly all old anonymous point files; labels remain in eval_gt. No changes after prepared state."
+}

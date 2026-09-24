@@ -43,6 +43,9 @@ jobs:
           python -m unittest discover -s tests -p test_rod_evidence*.py -v
           python -m unittest discover -s tests -p test_camera_background.py -v
           python -m unittest discover -s tests -p test_camera_all_view_validation.py -v
+          python -m unittest discover -s tests -p test_camera_training_groups.py -v
+          python -m unittest discover -s tests -p test_camera_training_audit.py -v
+          python -m unittest discover -s tests -p test_camera_native_sensitivity.py -v
           python -m unittest discover -s tests -p "test_camera_bundle*.py" -v
           python -m unittest discover -s tests -p test_camera_point_snapshot.py -v
           python -m unittest discover -s tests -p test_heldout_metrics.py -v

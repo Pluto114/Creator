@@ -1,5 +1,7 @@
 # 文档索引
 
+最新（9月24日）：35相机/70杆留组实验确认相同杆像素下仍有显著三维漂移；40个可比身份对均相同，90文件评价前后不变。新增36背景挑战；持续分隔门及独立边界修复提升新负例4/8→7/8，却使旧198控制197→194并产生双杆假中轴，未推广。340全量+7追加回归、离线构建通过，G1未过。见[相机报告](experiments/2026-09-24-camera-training-sensitivity.md)、[背景挑战](experiments/2026-09-24-readout-background-challenges.md)、[读取器修复](experiments/2026-09-24-readout-valley.md)、[日志](journal/2026-09-24.md)、[ADR0017](decisions/0017-camera-sensitivity-and-supported-splitting.md)。下方为历史。
+
 最新冲刺（9月23日）：三个独立任务完成。候选重拟合14相机任务、112正常/48评价行，没有新的细杆收益，保留像素赋值揭示旧候选唯一性不足；默认不变。全视图相机审计28条件、5,408相关残差，补齐端视角但仍不能识别30mm细杆误差。共同读取器旧198条件189→197达标，7份实际DA3基础/候选84行仍误读背景，未获验收资格。312诊断、204源码、离线构建通过；旧输入与结果完整保留，G1未通过。见[候选报告](experiments/2026-09-23-candidate-refit-sprint.md)、[相机审计](experiments/2026-09-23-camera-all-view-validation.md)、[读取器报告](experiments/2026-09-23-readout-sections.md)、[日志](journal/2026-09-23.md)、[ADR0016](decisions/0016-candidate-completeness-and-real-readout-negatives.md)。下方为历史。
 
 最新续接（9月23日）：新增15张高度配对图、3份新DA3预测及24行杆结果。两阶段普通断杆R/P100%、p95 14.08mm，缺口覆盖仍2.65%；细杆69%/70%、p95 30.35mm，完整/断杆圆柱法拒绝。18行评价侧相机替换发现新断杆全真实相机也有身份候选歧义，不能只归因位姿。完成6份新相机/深度身份点云、5,715,360点、12补丁、24保存视图与精确撤回；深度未修复，共同评分未过。295诊断、194源码、15,400射线、30,720往返、3,840独立来源像素及18协议检查通过。G1未通过，下一步候选稳定性、共同读取器和独立对象。见[报告](experiments/2026-09-23-height-and-camera-versions.md)、[日志](journal/2026-09-23.md)、[ADR0015](decisions/0015-height-is-partial-and-camera-versions-are-explicit.md)。下方为历史。

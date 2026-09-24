@@ -1,0 +1,4934 @@
+{
+  "run_id": "readout-background-challenges-v1-20260924",
+  "state": "complete",
+  "scope": "36 predeclared geometric conditions, 30 unique point arrays, on two fixed transforms/resolutions; new to the frozen v3/v4 reader design but not independent physical objects or real-photo efficacy evidence",
+  "qualification": {
+    "positive_minimum_recovery": 0.9,
+    "positive_minimum_precision": 0.9,
+    "negative_maximum_predicted_length_m": 0.0
+  },
+  "source_sha256": {
+    "scripts/run_readout_background_challenges.py": "a20d4db13ba10241bea6b6c790dd9cd42867da05a6cfa86da0b9e07b56eb3b01",
+    "experiments/src/creator_eval/readout_background_controls.py": "d7314fa2fb43713326eaf1a5698c6f7255f949e5ac38f59d5bccdcaaeea9952c",
+    "tests/test_common_readout_background.py": "2ea3751d42c200ae74546013a7fbba40e33fb8b84328eaa80ad0dfec53d3ed02",
+    "experiments/src/creator_eval/common_readout.py": "4d43871ed269a9e8d9d4911c73c439dd843e709e0b69251d6fe28729cd2b32aa",
+    "experiments/src/creator_eval/common_readout_components.py": "83af8cc36fedd59f49ecbeaef42abf60545e0712e0c1ba01cb1a969c1e509080",
+    "experiments/src/creator_eval/common_readout_split.py": "57106331554d4ff5acb2f91d511da8afcb180aad3dd7178d49513dbd793c31fa",
+    "experiments/src/creator_eval/common_readout_sections.py": "0ebcac91270be46dd9453df8ddd63eb8a55dcf5aad9616fa3f9135224487e39a",
+    "experiments/src/creator_eval/line_controls.py": "7702c987899685a8647f7cecadabb5a0b854ce86b975e85b5d7e5e5abf9c89b3"
+  },
+  "source_lf_sha256": {
+    "scripts/run_readout_background_challenges.py": "a20d4db13ba10241bea6b6c790dd9cd42867da05a6cfa86da0b9e07b56eb3b01",
+    "experiments/src/creator_eval/readout_background_controls.py": "d7314fa2fb43713326eaf1a5698c6f7255f949e5ac38f59d5bccdcaaeea9952c",
+    "tests/test_common_readout_background.py": "2ea3751d42c200ae74546013a7fbba40e33fb8b84328eaa80ad0dfec53d3ed02",
+    "experiments/src/creator_eval/common_readout.py": "4d43871ed269a9e8d9d4911c73c439dd843e709e0b69251d6fe28729cd2b32aa",
+    "experiments/src/creator_eval/common_readout_components.py": "83af8cc36fedd59f49ecbeaef42abf60545e0712e0c1ba01cb1a969c1e509080",
+    "experiments/src/creator_eval/common_readout_split.py": "57106331554d4ff5acb2f91d511da8afcb180aad3dd7178d49513dbd793c31fa",
+    "experiments/src/creator_eval/common_readout_sections.py": "0ebcac91270be46dd9453df8ddd63eb8a55dcf5aad9616fa3f9135224487e39a",
+    "experiments/src/creator_eval/line_controls.py": "63fc2963efeb5c6df0acf338130f4debc3b4ef3986c49b6a894bb0ded7defd61"
+  },
+  "input_sha256": "059f2c7b3f94a651d2aa1010ac0d4362e8d055039c84b860b227c334467d3de6",
+  "gt_sha256": "3580106290dd87dd919b7a41b8524b6ef7c6d196adcd7460c05eddf3bbc137b0",
+  "protocol_sha256": "9f67ab2884d42c1470cf5df6ca66c83f585e62ec6aaf1f59c025b17de47e6cb9",
+  "inference_sha256": "c428cce3d3504e72dfa90ac67080d07d900157445eee313a65197863513a9999",
+  "gt_read_during_inference": false,
+  "reader_parameters_unchanged": true,
+  "new_git_filter_bytes_unchanged": true,
+  "elapsed_seconds": 12.019009700000424,
+  "condition_count": 36,
+  "unique_point_arrays": 30,
+  "ambiguity_pairs": [
+    {
+      "pair": "line_identity-placement-0",
+      "case_ids": [
+        "background-0012",
+        "background-0013"
+      ],
+      "input_arrays_identical": true,
+      "both_reader_outputs_identical": true,
+      "interpretations": [
+        "member",
+        "background"
+      ],
+      "qualified": null
+    },
+    {
+      "pair": "line_identity-placement-1",
+      "case_ids": [
+        "background-0030",
+        "background-0031"
+      ],
+      "input_arrays_identical": true,
+      "both_reader_outputs_identical": true,
+      "interpretations": [
+        "member",
+        "background"
+      ],
+      "qualified": null
+    },
+    {
+      "pair": "linear_clutter_identity-placement-0",
+      "case_ids": [
+        "background-0016",
+        "background-0017"
+      ],
+      "input_arrays_identical": true,
+      "both_reader_outputs_identical": true,
+      "interpretations": [
+        "clutter",
+        "members"
+      ],
+      "qualified": null
+    },
+    {
+      "pair": "linear_clutter_identity-placement-1",
+      "case_ids": [
+        "background-0034",
+        "background-0035"
+      ],
+      "input_arrays_identical": true,
+      "both_reader_outputs_identical": true,
+      "interpretations": [
+        "clutter",
+        "members"
+      ],
+      "qualified": null
+    },
+    {
+      "pair": "open_arc_identity-placement-0",
+      "case_ids": [
+        "background-0014",
+        "background-0015"
+      ],
+      "input_arrays_identical": true,
+      "both_reader_outputs_identical": true,
+      "interpretations": [
+        "member",
+        "background"
+      ],
+      "qualified": null
+    },
+    {
+      "pair": "open_arc_identity-placement-1",
+      "case_ids": [
+        "background-0032",
+        "background-0033"
+      ],
+      "input_arrays_identical": true,
+      "both_reader_outputs_identical": true,
+      "interpretations": [
+        "member",
+        "background"
+      ],
+      "qualified": null
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "background-0000",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "full_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.04794222162414721,
+            -0.029454564220223217,
+            0.0071848384419185285
+          ],
+          [
+            -0.0006024062994792849,
+            -0.3225765527967739,
+            1.2876572494015477
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0007221021672171555,
+          "distance_p95": 0.0011904126597761455,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3144910331820754,
+          "sample_count": 263,
+          "covered_length": 1.3144910331820754,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0007296112642060904,
+          "distance_p95": 0.0012135661458701102,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3144910331820754,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0000",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "full_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.04800421375495896,
+            -0.030295435458566305,
+            0.009724326773001502
+          ],
+          [
+            -0.00044221685796237004,
+            -0.32282448940531505,
+            1.287606565502117
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0005396728356097043,
+          "distance_p95": 0.001051494942998818,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3118320472154383,
+          "sample_count": 263,
+          "covered_length": 1.3118320472154383,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0005489747858653629,
+          "distance_p95": 0.001076881719114459,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3118320472154383,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0001",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "half_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.03646422043809579,
+            -0.006183512941883934,
+            0.01528912676489469
+          ],
+          [
+            -0.00742289688432589,
+            -0.29436561144578344,
+            1.286408758960781
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.304116605338184,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.02797448465476053,
+          "distance_p95": 0.028421046591779388,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.304116605338184,
+          "sample_count": 261,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.02797828653191659,
+          "distance_p95": 0.028421018771218266,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.304116605338184,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0001",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "half_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.04400109586759744,
+            -0.026730763476629532,
+            0.010890974223019878
+          ],
+          [
+            0.00011397854517576633,
+            -0.31491286198052904,
+            1.2820106064189063
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.005653354105258663,
+          "distance_p95": 0.00618351307980015,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.304116605338184,
+          "sample_count": 261,
+          "covered_length": 1.304116605338184,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0056601368480784855,
+          "distance_p95": 0.006189193080828507,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.304116605338184,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0002",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "gapped_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.048438989751052694,
+            -0.03112707998438305,
+            0.006145773003366717
+          ],
+          [
+            0.027004226917243423,
+            -0.15718305548500225,
+            0.5681215228707075
+          ]
+        ],
+        [
+          [
+            0.01781260704464864,
+            -0.2131219070585004,
+            0.8151017948825192
+          ],
+          [
+            -0.0004290837143086715,
+            -0.3226944301554659,
+            1.2834302802956086
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.0190999999999997,
+          "sample_count": 204,
+          "covered_length": 1.0190999999999997,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0008711824861868202,
+          "distance_p95": 0.0014180679187982682,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.0576602878932464,
+          "sample_count": 213,
+          "covered_length": 1.0576602878932464,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0008850954035984326,
+          "distance_p95": 0.0015356052204007124,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.27090000000000014,
+          "sample_count": 55,
+          "covered_length": 0.06895636363636366,
+          "covered_fraction": 0.2545454545454545,
+          "distance_median": 0.05786235190733654,
+          "distance_p95": 0.12167888324881115,
+          "reason": null
+        },
+        "guarded_interior": {
+          "source_length": 0.2209,
+          "sample_count": 45,
+          "covered_length": 0.019635555555555562,
+          "covered_fraction": 0.08888888888888892,
+          "distance_median": 0.0726132569515097,
+          "distance_p95": 0.12169544755650817,
+          "reason": null
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "predicted_length": 1.0576602878932464,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 2
+      }
+    },
+    {
+      "case_id": "background-0002",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "gapped_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.04792102680570377,
+            -0.03129805810657216,
+            0.006087665110135088
+          ],
+          [
+            0.02648626397189451,
+            -0.15735403360719136,
+            0.5680634149774759
+          ]
+        ],
+        [
+          [
+            0.01809547704362568,
+            -0.21310436134982788,
+            0.815116917931481
+          ],
+          [
+            -0.00014621371533162994,
+            -0.3226768844467934,
+            1.2834454033445701
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.0190999999999997,
+          "sample_count": 204,
+          "covered_length": 1.0190999999999997,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0006903089178491596,
+          "distance_p95": 0.0013163117907318222,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.0576602878932464,
+          "sample_count": 213,
+          "covered_length": 1.0576602878932464,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0007210957191186807,
+          "distance_p95": 0.001448782798218843,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.27090000000000014,
+          "sample_count": 55,
+          "covered_length": 0.06895636363636366,
+          "covered_fraction": 0.2545454545454545,
+          "distance_median": 0.05786127959631385,
+          "distance_p95": 0.1216799214990597,
+          "reason": null
+        },
+        "guarded_interior": {
+          "source_length": 0.2209,
+          "sample_count": 45,
+          "covered_length": 0.019635555555555562,
+          "covered_fraction": 0.08888888888888892,
+          "distance_median": 0.07261447481626658,
+          "distance_p95": 0.12169648577056981,
+          "reason": null
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "predicted_length": 1.0576602878932464,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 2
+      }
+    },
+    {
+      "case_id": "background-0003",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "member_local_clutter",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0003",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "member_local_clutter",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.04747931550867883,
+            -0.02943707123756506,
+            0.007208833250548774
+          ],
+          [
+            0.0004169629770490596,
+            -0.32317461282232457,
+            1.2876153533717634
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.00038750072052127235,
+          "distance_p95": 0.0007676075772281387,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3145103518538712,
+          "sample_count": 263,
+          "covered_length": 1.3145103518538712,
+          "covered_fraction": 1.0,
+          "distance_median": 0.00039521810516228743,
+          "distance_p95": 0.0007868489576208355,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3145103518538712,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0004",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "member_near_plane",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.04794222162414721,
+            -0.029454564220223217,
+            0.0071848384419185285
+          ],
+          [
+            -0.0006024062994792849,
+            -0.3225765527967739,
+            1.2876572494015477
+          ]
+        ],
+        [
+          [
+            0.2631914181721074,
+            0.16756512807737683,
+            0.062295514195760404
+          ],
+          [
+            0.21723103751906672,
+            -0.12352169795990844,
+            1.3385846133244539
+          ]
+        ],
+        [
+          [
+            0.1275919192233039,
+            0.1090523765369974,
+            0.047658514383638884
+          ],
+          [
+            0.08300592737170909,
+            -0.18037413816769765,
+            1.3196755290734248
+          ]
+        ],
+        [
+          [
+            0.0602205655519895,
+            0.08047943014421181,
+            0.04002398308195898
+          ],
+          [
+            0.014342098205566433,
+            -0.209114460130714,
+            1.3094675126134032
+          ]
+        ],
+        [
+          [
+            0.19651322153305856,
+            0.13765447811645495,
+            0.058423907586724444
+          ],
+          [
+            0.1487091933893269,
+            -0.15118589943800614,
+            1.3246109883724135
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.20123531548376103,
+        "false_predicted_length": 5.217618055235609,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0007221021672171555,
+          "distance_p95": 0.0011904126597761455,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 6.532109088417684,
+          "sample_count": 1308,
+          "covered_length": 1.3144910331820754,
+          "covered_fraction": 0.20123531548376103,
+          "distance_median": 0.16651905120038443,
+          "distance_p95": 0.2983409128520606,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 6.532109088417684,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "split_supported": 3,
+        "single_circle_explains_cross_section": 4,
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0004",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "member_near_plane",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.04800421375495896,
+            -0.030295435458566305,
+            0.009724326773001502
+          ],
+          [
+            -0.00044221685796237004,
+            -0.32282448940531505,
+            1.287606565502117
+          ]
+        ],
+        [
+          [
+            0.2629419699018566,
+            0.16640305586085347,
+            0.06612680463099296
+          ],
+          [
+            0.21712194257217665,
+            -0.12379485231195018,
+            1.3385183856345848
+          ]
+        ],
+        [
+          [
+            0.1277258909818637,
+            0.10893747908313398,
+            0.04763706726023598
+          ],
+          [
+            0.08313989913026887,
+            -0.18048903562156107,
+            1.3196540819500218
+          ]
+        ],
+        [
+          [
+            0.05854220600003569,
+            0.08420825563020169,
+            0.04081397057759373
+          ],
+          [
+            0.012663738653612627,
+            -0.2053856346447241,
+            1.310257500109038
+          ]
+        ],
+        [
+          [
+            0.19745362415509904,
+            0.13604363260518976,
+            0.05809194859059852
+          ],
+          [
+            0.14964959601136738,
+            -0.15279674494927134,
+            1.3242790293762878
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.20103319153861365,
+        "false_predicted_length": 5.2136179900410555,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0005396728356097043,
+          "distance_p95": 0.001051494942998818,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 6.525450037256494,
+          "sample_count": 1308,
+          "covered_length": 1.3118320472154383,
+          "covered_fraction": 0.20103319153861365,
+          "distance_median": 0.1664826985610256,
+          "distance_p95": 0.2980687804203343,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 6.525450037256494,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "split_supported": 3,
+        "single_circle_explains_cross_section": 4,
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0005",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "crossing_members",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.301040671783287,
+          "sample_count": 461,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "short_axial_overlap": 1
+      }
+    },
+    {
+      "case_id": "background-0005",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "crossing_members",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.301040671783287,
+          "sample_count": 461,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 1,
+      "split_decisions": {
+        "short_axial_overlap": 1
+      }
+    },
+    {
+      "case_id": "background-0006",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "side_branch_members",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6199999999999999,
+          "sample_count": 324,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "minority_too_small": 1
+      }
+    },
+    {
+      "case_id": "background-0006",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "side_branch_members",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6199999999999999,
+          "sample_count": 324,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 1,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "minority_too_small": 1
+      }
+    },
+    {
+      "case_id": "background-0007",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "elliptic_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.03249881871898882,
+            0.0028375449576078238,
+            0.01666391872867179
+          ],
+          [
+            -0.014574810287242302,
+            -0.2872409308445215,
+            1.2903470804411983
+          ]
+        ],
+        [
+          [
+            0.06239436303402632,
+            -0.06506271045019715,
+            0.00785277552299568
+          ],
+          [
+            0.016312168189056578,
+            -0.3554651011316655,
+            1.277355530297403
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.610255336417403,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.03736323217320125,
+          "distance_p95": 0.03766780301258592,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.610255336417403,
+          "sample_count": 523,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.03760746798792478,
+          "distance_p95": 0.03821312297930219,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 2.610255336417403,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "split_supported": 1,
+        "cross_section_not_elongated": 2
+      }
+    },
+    {
+      "case_id": "background-0007",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "elliptic_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.03507828901862255,
+            -0.0025050630392661755,
+            0.015542485550028351
+          ],
+          [
+            -0.011995339987608572,
+            -0.2925835388413955,
+            1.2892256472625547
+          ]
+        ],
+        [
+          [
+            0.0597373712893519,
+            -0.05939471210395719,
+            0.009052899156534289
+          ],
+          [
+            0.013655176444382168,
+            -0.3497971027854256,
+            1.2785556539309413
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.610255336417403,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.030989506190879337,
+          "distance_p95": 0.031294086481868495,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 2.610255336417403,
+          "sample_count": 523,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.03146576730799824,
+          "distance_p95": 0.032178035958667965,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 2.610255336417403,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "split_supported": 1,
+        "cross_section_not_elongated": 2
+      }
+    },
+    {
+      "case_id": "background-0008",
+      "reader": "transverse_split",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "long_planar_strip",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.04018074638698321,
+            -0.06992003541398065,
+            0.006265107588730001
+          ],
+          [
+            -0.08709758933989897,
+            -0.3589166279048502,
+            1.2724095532275475
+          ]
+        ],
+        [
+          [
+            0.019211794808879204,
+            -0.043786788069211685,
+            0.008295923820706097
+          ],
+          [
+            -0.02894844266763017,
+            -0.33312311446937604,
+            1.2736984883440168
+          ]
+        ],
+        [
+          [
+            0.1353516756516588,
+            0.0058152023424483945,
+            0.025617670510895696
+          ],
+          [
+            0.08844797068570574,
+            -0.2835098495140612,
+            1.2910276611025795
+          ]
+        ],
+        [
+          [
+            0.07768901650006173,
+            -0.019562609418744575,
+            0.0237635542571637
+          ],
+          [
+            0.029574087563442528,
+            -0.3099359667160415,
+            1.2882608270659048
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 5.195719866612528,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 5.195719866612528,
+          "sample_count": 1040,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 5.195719866612528,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "split_supported": 3,
+        "single_circle_explains_cross_section": 4
+      }
+    },
+    {
+      "case_id": "background-0008",
+      "reader": "robust_sections",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "long_planar_strip",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.04018074638698321,
+            -0.06992003541398065,
+            0.006265107588730001
+          ],
+          [
+            -0.08709758933989897,
+            -0.3589166279048502,
+            1.2724095532275475
+          ]
+        ],
+        [
+          [
+            0.019211794808879204,
+            -0.043786788069211685,
+            0.008295923820706097
+          ],
+          [
+            -0.02894844266763017,
+            -0.33312311446937604,
+            1.2736984883440168
+          ]
+        ],
+        [
+          [
+            0.1353516756516588,
+            0.0058152023424483945,
+            0.025617670510895696
+          ],
+          [
+            0.08844797068570574,
+            -0.2835098495140612,
+            1.2910276611025795
+          ]
+        ],
+        [
+          [
+            0.07768901650006173,
+            -0.019562609418744575,
+            0.0237635542571637
+          ],
+          [
+            0.029574087563442528,
+            -0.3099359667160415,
+            1.2882608270659048
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 5.195719866612528,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 5.195719866612528,
+          "sample_count": 1040,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 5.195719866612528,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "split_supported": 3,
+        "single_circle_explains_cross_section": 4
+      }
+    },
+    {
+      "case_id": "background-0009",
+      "reader": "transverse_split",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "bent_wide_ribbon",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0009",
+      "reader": "robust_sections",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "bent_wide_ribbon",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 1,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0010",
+      "reader": "transverse_split",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "corrugated_sheet",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.06381398512379816,
+            -0.09451864790859008,
+            -0.008005186083335225
+          ],
+          [
+            -0.11176308999221242,
+            -0.38589553497301066,
+            1.265331005692961
+          ]
+        ],
+        [
+          [
+            0.14875638999799756,
+            0.002481188518254712,
+            0.025361792560339658
+          ],
+          [
+            0.10295941750495495,
+            -0.286658143413689,
+            1.2945473895847563
+          ]
+        ],
+        [
+          [
+            0.021370215893782053,
+            -0.060226172229006364,
+            0.004631579526475416
+          ],
+          [
+            -0.026991997481650862,
+            -0.3492147726444762,
+            1.2735064272431313
+          ]
+        ],
+        [
+          [
+            0.07154004436869668,
+            -0.004023914855494831,
+            0.02367469335524197
+          ],
+          [
+            0.026725650522169766,
+            -0.29534164237923943,
+            1.292141005551283
+          ]
+        ],
+        [
+          [
+            -0.046670031554393414,
+            -0.04320664472724203,
+            0.005227258713530691
+          ],
+          [
+            -0.09346707574484742,
+            -0.3335552160999995,
+            1.2731988264717597
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 6.515795240355631,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 6.515795240355631,
+          "sample_count": 1306,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 6.515795240355631,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "split_supported": 4,
+        "cross_section_not_elongated": 2,
+        "single_circle_explains_cross_section": 1,
+        "depth_budget": 2
+      }
+    },
+    {
+      "case_id": "background-0010",
+      "reader": "robust_sections",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "corrugated_sheet",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.06381398512379816,
+            -0.09451864790859008,
+            -0.008005186083335225
+          ],
+          [
+            -0.11176308999221242,
+            -0.38589553497301066,
+            1.265331005692961
+          ]
+        ],
+        [
+          [
+            0.019869885858972775,
+            -0.04972648748173947,
+            0.0069657182510067805
+          ],
+          [
+            -0.02849232751646014,
+            -0.3387150878972093,
+            1.2758405659676628
+          ]
+        ],
+        [
+          [
+            0.0740945279277894,
+            -0.013813598537555705,
+            0.02151662991688119
+          ],
+          [
+            0.02928013408126248,
+            -0.30513132606130033,
+            1.289982942112922
+          ]
+        ],
+        [
+          [
+            -0.046670031554393414,
+            -0.04320664472724203,
+            0.005227258713530691
+          ],
+          [
+            -0.09346707574484742,
+            -0.3335552160999995,
+            1.2731988264717597
+          ]
+        ],
+        [
+          [
+            0.134326322352976,
+            0.00897768207799951,
+            0.030421766756851376
+          ],
+          [
+            0.08866984284778402,
+            -0.279274646926962,
+            1.2957138383590359
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 6.511799486023133,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 6.511799486023133,
+          "sample_count": 1305,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 6.511799486023133,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "split_supported": 4,
+        "cross_section_not_elongated": 2,
+        "single_circle_explains_cross_section": 1,
+        "depth_budget": 2
+      }
+    },
+    {
+      "case_id": "background-0011",
+      "reader": "transverse_split",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "isotropic_clutter",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 1,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {}
+    },
+    {
+      "case_id": "background-0011",
+      "reader": "robust_sections",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "isotropic_clutter",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 1,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {}
+    },
+    {
+      "case_id": "background-0012",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "member",
+      "ambiguity_pair": "line_identity-placement-0",
+      "family": "line_as_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.046497997210724465,
+            -0.03480966265082486,
+            0.025274519337918577
+          ],
+          [
+            0.0024500383056685025,
+            -0.31785462590348934,
+            1.2681177488025035
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0004257868647999587,
+          "distance_p95": 0.0010177050016643783,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.2754269743628455,
+          "sample_count": 256,
+          "covered_length": 1.2754269743628455,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0004244051868446288,
+          "distance_p95": 0.001003475147602518,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.2754269743628455,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0012",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "member",
+      "ambiguity_pair": "line_identity-placement-0",
+      "family": "line_as_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.046497997210724465,
+            -0.03480966265082486,
+            0.025274519337918577
+          ],
+          [
+            0.0024500383056685025,
+            -0.31785462590348934,
+            1.2681177488025035
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0004257868647999587,
+          "distance_p95": 0.0010177050016643783,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.2754269743628455,
+          "sample_count": 256,
+          "covered_length": 1.2754269743628455,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0004244051868446288,
+          "distance_p95": 0.001003475147602518,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.2754269743628455,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0013",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "background",
+      "ambiguity_pair": "line_identity-placement-0",
+      "family": "line_as_wall_seam",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.046497997210724465,
+            -0.03480966265082486,
+            0.025274519337918577
+          ],
+          [
+            0.0024500383056685025,
+            -0.31785462590348934,
+            1.2681177488025035
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.2754269743628455,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 1.2754269743628455,
+          "sample_count": 256,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.2754269743628455,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0013",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "background",
+      "ambiguity_pair": "line_identity-placement-0",
+      "family": "line_as_wall_seam",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.046497997210724465,
+            -0.03480966265082486,
+            0.025274519337918577
+          ],
+          [
+            0.0024500383056685025,
+            -0.31785462590348934,
+            1.2681177488025035
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.2754269743628455,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 1.2754269743628455,
+          "sample_count": 256,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.2754269743628455,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0014",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "member",
+      "ambiguity_pair": "open_arc_identity-placement-0",
+      "family": "arc_as_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.05263086753201118,
+            0.005948248654294774,
+            0.021825118700023793
+          ],
+          [
+            0.00968749260592943,
+            -0.28528227379309923,
+            1.292617182298391
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.3044431070612552,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.038691858794828386,
+          "distance_p95": 0.038944598182262875,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3044431070612552,
+          "sample_count": 261,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.03869425904874957,
+          "distance_p95": 0.038945159582475165,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3044431070612552,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0014",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "member",
+      "ambiguity_pair": "open_arc_identity-placement-0",
+      "family": "arc_as_member",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.04731236512641414,
+            -0.020471317244827203,
+            0.01559075617178296
+          ],
+          [
+            0.004368990200332389,
+            -0.3117018396922212,
+            1.2863828197701501
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.01103355023013992,
+          "distance_p95": 0.01139897579259223,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3044431070612552,
+          "sample_count": 261,
+          "covered_length": 1.3044431070612552,
+          "covered_fraction": 1.0,
+          "distance_median": 0.01103630967356896,
+          "distance_p95": 0.011403994683414546,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3044431070612552,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0015",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "background",
+      "ambiguity_pair": "open_arc_identity-placement-0",
+      "family": "arc_as_open_trough",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.05263086753201118,
+            0.005948248654294774,
+            0.021825118700023793
+          ],
+          [
+            0.00968749260592943,
+            -0.28528227379309923,
+            1.292617182298391
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.3044431070612552,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3044431070612552,
+          "sample_count": 261,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3044431070612552,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0015",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "background",
+      "ambiguity_pair": "open_arc_identity-placement-0",
+      "family": "arc_as_open_trough",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.04731236512641414,
+            -0.020471317244827203,
+            0.01559075617178296
+          ],
+          [
+            0.004368990200332389,
+            -0.3117018396922212,
+            1.2863828197701501
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.3044431070612552,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3044431070612552,
+          "sample_count": 261,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3044431070612552,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0016",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "clutter",
+      "ambiguity_pair": "linear_clutter_identity-placement-0",
+      "family": "linear_points_as_clutter",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0016",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "clutter",
+      "ambiguity_pair": "linear_clutter_identity-placement-0",
+      "family": "linear_points_as_clutter",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 1,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0017",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "members",
+      "ambiguity_pair": "linear_clutter_identity-placement-0",
+      "family": "linear_points_as_members",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.7699625876565497,
+          "sample_count": 355,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0017",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "members",
+      "ambiguity_pair": "linear_clutter_identity-placement-0",
+      "family": "linear_points_as_members",
+      "placement": 0,
+      "voxel_size": 0.018,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.7699625876565497,
+          "sample_count": 355,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 1,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0018",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "full_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.035373741975938205,
+            0.05734191455057358,
+            -0.058620436415522614
+          ],
+          [
+            0.40915723012795724,
+            0.24557668212978737,
+            1.173346251021337
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0008823408171491811,
+          "distance_p95": 0.0019539306870784375,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3231712027698397,
+          "sample_count": 265,
+          "covered_length": 1.3231712027698397,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0009098004889734118,
+          "distance_p95": 0.0020249678264868207,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3231712027698397,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0018",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "full_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.03546138448517064,
+            0.05736066292309694,
+            -0.05859167694122547
+          ],
+          [
+            0.4090695876187248,
+            0.24559543050231072,
+            1.1733750104956342
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0008986604592446025,
+          "distance_p95": 0.0019387337654380122,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3231712027698397,
+          "sample_count": 265,
+          "covered_length": 1.3231712027698397,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0009261626932679886,
+          "distance_p95": 0.0020095185737339974,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3231712027698397,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0019",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "half_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.023022012762887706,
+            0.08066025385062481,
+            -0.06868252811184772
+          ],
+          [
+            0.42307970134324735,
+            0.2647051074687391,
+            1.1672405508706554
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.3267950499731804,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.02657130564892125,
+          "distance_p95": 0.026699949083295704,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3267950499731804,
+          "sample_count": 266,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.026575250193599007,
+          "distance_p95": 0.026707338772340546,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3267950499731804,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0019",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "half_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.030748497524970025,
+            0.06733659836617775,
+            -0.06390961916630922
+          ],
+          [
+            0.41535321658116503,
+            0.251381451984292,
+            1.1720134598161938
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.010458188020341411,
+          "distance_p95": 0.010579017011698172,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3267950499731804,
+          "sample_count": 266,
+          "covered_length": 1.3267950499731804,
+          "covered_fraction": 1.0,
+          "distance_median": 0.010460902220623394,
+          "distance_p95": 0.010587458729108648,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3267950499731804,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0020",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "gapped_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.03650862259150785,
+            0.057775967420218795,
+            -0.058673057099369985
+          ],
+          [
+            0.1666709662801436,
+            0.1407398183943186,
+            0.4910844487558511
+          ]
+        ],
+        [
+          [
+            0.2392936441615944,
+            0.17403747359245275,
+            0.7092719189872918
+          ],
+          [
+            0.4107313091698229,
+            0.24559163257949582,
+            1.1747657962881604
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.0191,
+          "sample_count": 204,
+          "covered_length": 1.0191,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0013910274373472758,
+          "distance_p95": 0.002878886568123086,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.0931384695486321,
+          "sample_count": 220,
+          "covered_length": 1.0931384695486321,
+          "covered_fraction": 1.0,
+          "distance_median": 0.001448214922323114,
+          "distance_p95": 0.0054493733569799235,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.2709000000000001,
+          "sample_count": 55,
+          "covered_length": 0.08865818181818184,
+          "covered_fraction": 0.32727272727272727,
+          "distance_median": 0.04757707942669675,
+          "distance_p95": 0.11092835852343273,
+          "reason": null
+        },
+        "guarded_interior": {
+          "source_length": 0.22089999999999999,
+          "sample_count": 45,
+          "covered_length": 0.03927111111111112,
+          "covered_fraction": 0.1777777777777778,
+          "distance_median": 0.0618998145593938,
+          "distance_p95": 0.11094491593731061,
+          "reason": null
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "predicted_length": 1.0931384695486321,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 2
+      }
+    },
+    {
+      "case_id": "background-0020",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "gapped_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.03652873904740521,
+            0.05815183962860692,
+            -0.058722345289807854
+          ],
+          [
+            0.16665084982424624,
+            0.1411156906027067,
+            0.49103516056541324
+          ]
+        ],
+        [
+          [
+            0.239273237817807,
+            0.17355573934129914,
+            0.7093534850550283
+          ],
+          [
+            0.4107109028260355,
+            0.2451098983283422,
+            1.1748473623558968
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.0191,
+          "sample_count": 204,
+          "covered_length": 1.0191,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0011783642621757994,
+          "distance_p95": 0.0028228175813136288,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.0931384695486321,
+          "sample_count": 220,
+          "covered_length": 1.0931384695486321,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0012497557834298507,
+          "distance_p95": 0.005409549186715937,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": {
+        "whole_gap": {
+          "source_length": 0.2709000000000001,
+          "sample_count": 55,
+          "covered_length": 0.08865818181818184,
+          "covered_fraction": 0.32727272727272727,
+          "distance_median": 0.047580738532824525,
+          "distance_p95": 0.11092710273723788,
+          "reason": null
+        },
+        "guarded_interior": {
+          "source_length": 0.22089999999999999,
+          "sample_count": 45,
+          "covered_length": 0.03927111111111112,
+          "covered_fraction": 0.1777777777777778,
+          "distance_median": 0.0618974750849448,
+          "distance_p95": 0.11094366035529332,
+          "reason": null
+        },
+        "endpoint_guard": 0.025,
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "units": "input_coordinate_units",
+        "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+      },
+      "predicted_length": 1.0931384695486321,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 2
+      }
+    },
+    {
+      "case_id": "background-0021",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "member_local_clutter",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0021",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "member_local_clutter",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 1,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0022",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "member_near_plane",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.016275530469116672,
+            0.06976728096786217,
+            -0.0673822668689752
+          ],
+          [
+            0.42847489119996457,
+            0.2575734542182305,
+            1.1670314312136143
+          ]
+        ],
+        [
+          [
+            0.1383788713583377,
+            0.06914483622272492,
+            -0.11789672975474125
+          ],
+          [
+            0.5753072636634372,
+            0.2531401771276497,
+            1.1078079908861715
+          ]
+        ],
+        [
+          [
+            0.2348430318332907,
+            0.008782176292646118,
+            -0.1502640054770586
+          ],
+          [
+            0.6681958115040451,
+            0.19445840037944995,
+            1.0762269523435881
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.8953488372093021,
+        "precision_fraction": 0.293659767276971,
+        "false_predicted_length": 2.7926163554995056,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.1549999999999998,
+          "covered_fraction": 0.8953488372093021,
+          "distance_median": 0.024185672170307086,
+          "distance_p95": 0.025119612526838603,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 3.9536419222980177,
+          "sample_count": 792,
+          "covered_length": 1.161025566798512,
+          "covered_fraction": 0.293659767276971,
+          "distance_median": 0.18137197921918558,
+          "distance_p95": 0.2878403943215911,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 3.9536419222980177,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "split_supported": 2,
+        "cross_section_not_elongated": 1,
+        "single_circle_explains_cross_section": 2
+      }
+    },
+    {
+      "case_id": "background-0022",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "member_near_plane",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.03520431779182079,
+            0.05776780274620355,
+            -0.058736735597048395
+          ],
+          [
+            0.40876260739137754,
+            0.24524312644680293,
+            1.173502352305423
+          ]
+        ],
+        [
+          [
+            0.1383788713583377,
+            0.06914483622272492,
+            -0.11789672975474125
+          ],
+          [
+            0.5753072636634372,
+            0.2531401771276497,
+            1.1078079908861715
+          ]
+        ],
+        [
+          [
+            0.2348430318332907,
+            0.008782176292646118,
+            -0.1502640054770586
+          ],
+          [
+            0.6681958115040451,
+            0.19445840037944995,
+            1.0762269523435881
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.33485823440637974,
+        "false_predicted_length": 2.628179258055939,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0006788983849482341,
+          "distance_p95": 0.0015617945297659492,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 3.9513069153165614,
+          "sample_count": 791,
+          "covered_length": 1.3231276572606223,
+          "covered_fraction": 0.33485823440637974,
+          "distance_median": 0.18137197921918558,
+          "distance_p95": 0.2878403943215911,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 3.9513069153165614,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "split_supported": 2,
+        "cross_section_not_elongated": 1,
+        "single_circle_explains_cross_section": 2
+      }
+    },
+    {
+      "case_id": "background-0023",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "crossing_members",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.301040671783287,
+          "sample_count": 461,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "short_axial_overlap": 1
+      }
+    },
+    {
+      "case_id": "background-0023",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "crossing_members",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 2.301040671783287,
+          "sample_count": 461,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 1,
+      "split_decisions": {
+        "short_axial_overlap": 1
+      }
+    },
+    {
+      "case_id": "background-0024",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "side_branch_members",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6199999999999999,
+          "sample_count": 324,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "minority_too_small": 1
+      }
+    },
+    {
+      "case_id": "background-0024",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "side_branch_members",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.6199999999999999,
+          "sample_count": 324,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 1,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "minority_too_small": 1
+      }
+    },
+    {
+      "case_id": "background-0025",
+      "reader": "transverse_split",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "elliptic_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.035975941407299206,
+            0.060146982105005825,
+            -0.06339250894031534
+          ],
+          [
+            0.4081567786842295,
+            0.24233628896621104,
+            1.1755310503970908
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0009890961306010977,
+          "distance_p95": 0.001957233677055956,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3286754315752716,
+          "sample_count": 266,
+          "covered_length": 1.3286754315752716,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0010208923287258378,
+          "distance_p95": 0.00204600063771524,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3286754315752716,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0025",
+      "reader": "robust_sections",
+      "expectation": "positive",
+      "interpretation": "declared_member_axes",
+      "ambiguity_pair": null,
+      "family": "elliptic_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.03718262206549783,
+            0.059485998554059616,
+            -0.06286273412648247
+          ],
+          [
+            0.4069500980260309,
+            0.24167530541526483,
+            1.1760608252109237
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0016754568549549127,
+          "distance_p95": 0.00282439963727635,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3286754315752716,
+          "sample_count": 266,
+          "covered_length": 1.3286754315752716,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0016951327102073578,
+          "distance_p95": 0.0029049889938299635,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3286754315752716,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0026",
+      "reader": "transverse_split",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "long_planar_strip",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.09196841770983127,
+            0.0931531101297429,
+            -0.04361078823751019
+          ],
+          [
+            0.3514353043979643,
+            0.27586974106008344,
+            1.1869209315967202
+          ]
+        ],
+        [
+          [
+            0.022025884150543212,
+            0.026577379358045453,
+            -0.07032129805618836
+          ],
+          [
+            0.4656058491487883,
+            0.209204552795628,
+            1.1601514308225096
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.6413555413167566,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 2.6413555413167566,
+          "sample_count": 530,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 2.6413555413167566,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "split_supported": 1,
+        "single_circle_explains_cross_section": 2
+      }
+    },
+    {
+      "case_id": "background-0026",
+      "reader": "robust_sections",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "long_planar_strip",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.09337148874948992,
+            0.08782518849319673,
+            -0.04231409121870289
+          ],
+          [
+            0.35003223335830563,
+            0.2705418194235373,
+            1.1882176286155275
+          ]
+        ],
+        [
+          [
+            0.02352703114341942,
+            0.03105974555700336,
+            -0.07152772918216532
+          ],
+          [
+            0.4671069961416645,
+            0.21368691899458592,
+            1.1589449996965326
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.6413555413167575,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 2.6413555413167575,
+          "sample_count": 530,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 2.6413555413167575,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "split_supported": 1,
+        "single_circle_explains_cross_section": 2
+      }
+    },
+    {
+      "case_id": "background-0027",
+      "reader": "transverse_split",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "bent_wide_ribbon",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0027",
+      "reader": "robust_sections",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "bent_wide_ribbon",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 1,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0028",
+      "reader": "transverse_split",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "corrugated_sheet",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.028824607208756098,
+            0.023338703579190143,
+            -0.07690559098945593
+          ],
+          [
+            0.476844620237802,
+            0.20832931932456214,
+            1.158159836582966
+          ]
+        ],
+        [
+          [
+            -0.10088152251748395,
+            0.09374234788176816,
+            -0.03844901084385077
+          ],
+          [
+            0.34316275227766413,
+            0.279053885202975,
+            1.1894437003723137
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.6455753544314042,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 2.6455753544314042,
+          "sample_count": 530,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 2.6455753544314042,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "split_supported": 1,
+        "cross_section_not_elongated": 2
+      }
+    },
+    {
+      "case_id": "background-0028",
+      "reader": "robust_sections",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "corrugated_sheet",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.037440914635067574,
+            0.036006571988229485,
+            -0.0819285758484537
+          ],
+          [
+            0.4854609276641135,
+            0.2209971877336015,
+            1.1531368517239682
+          ]
+        ],
+        [
+          [
+            -0.10910214633957115,
+            0.08079697609744418,
+            -0.033522482952013544
+          ],
+          [
+            0.33494212845557697,
+            0.26610851341865105,
+            1.1943702282641508
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 2.6455753544314042,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 2.6455753544314042,
+          "sample_count": 530,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 2.6455753544314042,
+      "diagnostic_qualified": false,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "split_supported": 1,
+        "cross_section_not_elongated": 2
+      }
+    },
+    {
+      "case_id": "background-0029",
+      "reader": "transverse_split",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "isotropic_clutter",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 1,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {}
+    },
+    {
+      "case_id": "background-0029",
+      "reader": "robust_sections",
+      "expectation": "negative",
+      "interpretation": "complete_background_surface_or_volume",
+      "ambiguity_pair": null,
+      "family": "isotropic_clutter",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": true,
+      "rejected_nonlinear_components": 1,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {}
+    },
+    {
+      "case_id": "background-0030",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "member",
+      "ambiguity_pair": "line_identity-placement-1",
+      "family": "line_as_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.028981670708714852,
+            0.06363731998789124,
+            -0.04416077839124999
+          ],
+          [
+            0.40545532548613356,
+            0.24020908006506136,
+            1.16605793817888
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0012300529552394853,
+          "distance_p95": 0.002551178508127385,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.2978992380212748,
+          "sample_count": 260,
+          "covered_length": 1.2978992380212748,
+          "covered_fraction": 1.0,
+          "distance_median": 0.001239956436926948,
+          "distance_p95": 0.002554295523642629,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.2978992380212748,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0030",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "member",
+      "ambiguity_pair": "line_identity-placement-1",
+      "family": "line_as_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.028981670708714852,
+            0.06363731998789124,
+            -0.04416077839124999
+          ],
+          [
+            0.40545532548613356,
+            0.24020908006506136,
+            1.16605793817888
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.0012300529552394853,
+          "distance_p95": 0.002551178508127385,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.2978992380212748,
+          "sample_count": 260,
+          "covered_length": 1.2978992380212748,
+          "covered_fraction": 1.0,
+          "distance_median": 0.001239956436926948,
+          "distance_p95": 0.002554295523642629,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.2978992380212748,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0031",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "background",
+      "ambiguity_pair": "line_identity-placement-1",
+      "family": "line_as_wall_seam",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.028981670708714852,
+            0.06363731998789124,
+            -0.04416077839124999
+          ],
+          [
+            0.40545532548613356,
+            0.24020908006506136,
+            1.16605793817888
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.2978992380212748,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 1.2978992380212748,
+          "sample_count": 260,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.2978992380212748,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0031",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "background",
+      "ambiguity_pair": "line_identity-placement-1",
+      "family": "line_as_wall_seam",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.028981670708714852,
+            0.06363731998789124,
+            -0.04416077839124999
+          ],
+          [
+            0.40545532548613356,
+            0.24020908006506136,
+            1.16605793817888
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.2978992380212748,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 1.2978992380212748,
+          "sample_count": 260,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.2978992380212748,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0032",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "member",
+      "ambiguity_pair": "open_arc_identity-placement-1",
+      "family": "arc_as_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.003973358036672481,
+            0.07249231687389555,
+            -0.06972733805254772
+          ],
+          [
+            0.44010241611756173,
+            0.25761500943378973,
+            1.1621134899725316
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.3224619200872367,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.03593456838099431,
+          "distance_p95": 0.03644627521290244,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3224619200872367,
+          "sample_count": 265,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": 0.035946647282975794,
+          "distance_p95": 0.036461747353112854,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3224619200872367,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0032",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "member",
+      "ambiguity_pair": "open_arc_identity-placement-1",
+      "family": "arc_as_member",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.02062858765505654,
+            0.064856999501,
+            -0.06257572049231142
+          ],
+          [
+            0.4234471864991777,
+            0.2499796920608942,
+            1.1692651075327678
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 1.29,
+          "covered_fraction": 1.0,
+          "distance_median": 0.016267744954586206,
+          "distance_p95": 0.0167806149531736,
+          "reason": null
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3224619200872367,
+          "sample_count": 265,
+          "covered_length": 1.3224619200872367,
+          "covered_fraction": 1.0,
+          "distance_median": 0.01627985541586761,
+          "distance_p95": 0.01680051196546377,
+          "reason": null
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3224619200872367,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0033",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "background",
+      "ambiguity_pair": "open_arc_identity-placement-1",
+      "family": "arc_as_open_trough",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.003973358036672481,
+            0.07249231687389555,
+            -0.06972733805254772
+          ],
+          [
+            0.44010241611756173,
+            0.25761500943378973,
+            1.1621134899725316
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.3224619200872367,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3224619200872367,
+          "sample_count": 265,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3224619200872367,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0033",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "background",
+      "ambiguity_pair": "open_arc_identity-placement-1",
+      "family": "arc_as_open_trough",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.02062858765505654,
+            0.064856999501,
+            -0.06257572049231142
+          ],
+          [
+            0.4234471864991777,
+            0.2499796920608942,
+            1.1692651075327678
+          ]
+        ]
+      ],
+      "metrics": {
+        "recovery_fraction": null,
+        "precision_fraction": 0.0,
+        "false_predicted_length": 1.3224619200872367,
+        "truth_to_prediction": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "prediction_to_truth": {
+          "source_length": 1.3224619200872367,
+          "sample_count": 265,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_truth"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 1.3224619200872367,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 0,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "single_circle_explains_cross_section": 1
+      }
+    },
+    {
+      "case_id": "background-0034",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "clutter",
+      "ambiguity_pair": "linear_clutter_identity-placement-1",
+      "family": "linear_points_as_clutter",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0034",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "clutter",
+      "ambiguity_pair": "linear_clutter_identity-placement-1",
+      "family": "linear_points_as_clutter",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.29,
+          "sample_count": 258,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 1,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0035",
+      "reader": "transverse_split",
+      "expectation": "unidentifiable",
+      "interpretation": "members",
+      "ambiguity_pair": "linear_clutter_identity-placement-1",
+      "family": "linear_points_as_members",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.7699625876565497,
+          "sample_count": 355,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": null,
+      "rejected_unsupported_sections": null,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    },
+    {
+      "case_id": "background-0035",
+      "reader": "robust_sections",
+      "expectation": "unidentifiable",
+      "interpretation": "members",
+      "ambiguity_pair": "linear_clutter_identity-placement-1",
+      "family": "linear_points_as_members",
+      "placement": 1,
+      "voxel_size": 0.031,
+      "semantics_scope": "construction-conditioned geometry targets; not observable physical identity",
+      "state": "complete",
+      "segments": [],
+      "metrics": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "false_predicted_length": 0.0,
+        "truth_to_prediction": {
+          "source_length": 1.7699625876565497,
+          "sample_count": 355,
+          "covered_length": 0.0,
+          "covered_fraction": 0.0,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "prediction_to_truth": {
+          "source_length": 0.0,
+          "sample_count": 0,
+          "covered_length": 0.0,
+          "covered_fraction": null,
+          "distance_median": null,
+          "distance_p95": null,
+          "reason": "empty_prediction"
+        },
+        "tolerance": 0.025,
+        "sampling_max_spacing": 0.005,
+        "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+        "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+        "units": "input_coordinate_units",
+        "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+      },
+      "gap": null,
+      "predicted_length": 0.0,
+      "diagnostic_qualified": null,
+      "rejected_nonlinear_components": 0,
+      "rejected_side_branches": 1,
+      "rejected_unsupported_sections": 0,
+      "split_decisions": {
+        "cross_section_not_elongated": 1
+      }
+    }
+  ],
+  "interpretation_limits": {
+    "positive": "Known construction axes are conditional geometric targets. Half surfaces, elliptic members and junctions do not prove physical target identity or graph topology.",
+    "negative": "The supplied complete plane/ribbon/sheet/cloud construction contains no declared member axis. This is a declared geometric-family abstention test, not proof that similar partial views can never be real bars or objects.",
+    "unidentifiable": "Exact same input arrays have contradictory semantic interpretations; not included in pass/fail denominators. Report outputs and conditional geometry only. RGB, identity or acquisition context is required to resolve the story.",
+    "gap": "Use existing full and guarded gap proximity metrics unchanged; do not call centerline R/P success zero gap contamination.",
+    "scope": "All new conditions are synthetic controls. Their count is not an independent-object count. No retuning after frozen inference."
+  }
+}

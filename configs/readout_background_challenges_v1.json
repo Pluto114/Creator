@@ -1,0 +1,60 @@
+{
+  "run_id": "readout-background-challenges-v1-20260924",
+  "scope": "36 predeclared geometric conditions, 30 unique point arrays, on two fixed transforms/resolutions; new to the frozen v3/v4 reader design but not independent physical objects or real-photo efficacy evidence",
+  "reader_reference_run_id": "common-readout-sections-controls-v1-20260923r2",
+  "readers": [
+    "transverse_split",
+    "robust_sections"
+  ],
+  "readout": {},
+  "expected_case_count": 36,
+  "tolerance_m": 0.025,
+  "spacing_m": 0.005,
+  "qualification": {
+    "positive_minimum_recovery": 0.9,
+    "positive_minimum_precision": 0.9,
+    "negative_maximum_predicted_length_m": 0.0
+  },
+  "generation": {
+    "length_m": 1.29,
+    "radius_m": 0.047,
+    "noise_sigma_m": 0.0024,
+    "seed": 24092026,
+    "placements": [
+      {
+        "origin": [
+          0.047,
+          -0.033,
+          0.019
+        ],
+        "euler_degrees": [
+          11.0,
+          -7.0,
+          23.0
+        ],
+        "voxel_m": 0.018
+      },
+      {
+        "origin": [
+          -0.029,
+          0.061,
+          -0.043
+        ],
+        "euler_degrees": [
+          -17.0,
+          13.0,
+          -31.0
+        ],
+        "voxel_m": 0.031
+      }
+    ]
+  },
+  "interpretation_limits": {
+    "positive": "Known construction axes are conditional geometric targets. Half surfaces, elliptic members and junctions do not prove physical target identity or graph topology.",
+    "negative": "The supplied complete plane/ribbon/sheet/cloud construction contains no declared member axis. This is a declared geometric-family abstention test, not proof that similar partial views can never be real bars or objects.",
+    "unidentifiable": "Exact same input arrays have contradictory semantic interpretations; not included in pass/fail denominators. Report outputs and conditional geometry only. RGB, identity or acquisition context is required to resolve the story.",
+    "gap": "Use existing full and guarded gap proximity metrics unchanged; do not call centerline R/P success zero gap contamination.",
+    "scope": "All new conditions are synthetic controls. Their count is not an independent-object count. No retuning after frozen inference."
+  },
+  "freeze_note": "Generator protocol and anonymous input arrays frozen before any v3/v4 replay. Old reader algorithms, defaults, scoring tolerances and positive/negative qualification remain unchanged. Preserve all outcomes and original legacy source bytes; LF mappings are identity metadata only."
+}

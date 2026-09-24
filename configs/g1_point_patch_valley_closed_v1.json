@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "g1-point-patch-valley-closed-v1-20260924",
+  "source_run_id": "rod-evidence-dense-v1-20260916",
+  "scope": "All seven unchanged historical complete base/candidate pairs with the v5 persistent-valley reader; developmental applicability test, not blind qualification or method efficacy. Numerical boundary-correction replay; preserve original v5.",
+  "variant": "paired_full",
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "region_minimum_views": 3,
+  "parallel_workers": 3,
+  "readout": {},
+  "evaluation": {
+    "gt_bundle": "thin-pack-v2-20260914r1",
+    "target_rod_ids": [
+      5,
+      6
+    ],
+    "tolerances_m": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "spacing_m": 0.005
+  },
+  "freeze_note": "Keep every original valid depth pixel in the materialized base. No confidence pruning, no new fitting, no GT choice of accepted targets. Both complete base and base plus all historically accepted segments use the same pre-existing RGB guide union and fixed readout scales derived from base camera span. Suppression empty in this replay; deletion verified separately with analytic source-ID tests.",
+  "engineering_revision": "Only persistent low-density transverse separation gates old split proposals. Geometry, ROI, readout scales, source depth, patches and evaluation tolerances unchanged. Closed band includes exact edge centers with machine-precision tolerance; no policy threshold changed."
+}

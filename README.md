@@ -6,7 +6,7 @@
 
 ## 当前进度
 
-**G1：方法可行性开发中，尚未通过。** 本轮并行完成候选重拟合/保留对照、全视图相机审计和第四版共同读取器。读取器在198个旧解析控制上189→197项达标，但真实DA3点云仍有精确率退步；候选重排未改善细杆，并暴露旧唯一性解释不完整。28相机条件补齐两端视角评分后，亚像素误差仍不能保证物理精度。312项诊断、204源码检查通过，默认杆算法和验收口径未替换。下一步集中相机/候选不确定性、独立背景反例与真实点云评价，不扩UI；9月27日仍为检查点。
+**G1：方法可行性开发中，尚未通过。** 9月24日完成35次固定训练留组拟合与70条杆评价：细杆支持像素完全不变，三维恢复率仍随K/E变化大幅波动，下一步处理相机不确定性传播。另做36个新背景挑战，并实现持续分隔证据的读取器候选；新负例4/8→7/8，但旧控制197/198→194/198，真双杆出现假中轴，未推广。旧输入、结果、失败和真值隔离保留。340项全量及7项追加回归、离线构建通过；9月27日为检查点，G1按约1–2周集中推进作条件规划，不承诺本周过关。
 
 | 已可用 | 尚未实现 |
 | --- | --- |
@@ -25,7 +25,9 @@
 | 候选重拟合/赋值保留对照、全视图验证、第四版读取器及实际点云回放 | 候选不确定性、独立背景负例与真实读取资格 |
 | Blender配置侧栏、骨架检查、插件打包和CI | 完整导入、增强、比较与撤回流程 |
 
-最新[候选冲刺对照](docs/experiments/2026-09-23-candidate-refit-sprint.md)完成112正常/48评价行，未推广新方法；[全视图相机审计](docs/experiments/2026-09-23-camera-all-view-validation.md)补齐端视角覆盖；[第四版读取器](docs/experiments/2026-09-23-readout-sections.md)旧控制197/198达标，实际模型84行仍未合格。312诊断通过，见[今日日志](docs/journal/2026-09-23.md)、[ADR0016](docs/decisions/0016-candidate-completeness-and-real-readout-negatives.md)。
+最新[相机训练敏感性](docs/experiments/2026-09-24-camera-training-sensitivity.md)、[背景挑战](docs/experiments/2026-09-24-readout-background-challenges.md)和[读取器修复回放](docs/experiments/2026-09-24-readout-valley.md)保留全部改善与退步；两条细杆在相同像素赋值下漂移，新二分门也不能保证真双杆不被合并。见[今日日志](docs/journal/2026-09-24.md)、[ADR0017](docs/decisions/0017-camera-sensitivity-and-supported-splitting.md)。
+
+此前[候选冲刺对照](docs/experiments/2026-09-23-candidate-refit-sprint.md)完成112正常/48评价行，未推广新方法；[全视图相机审计](docs/experiments/2026-09-23-camera-all-view-validation.md)补齐端视角覆盖；[第四版读取器](docs/experiments/2026-09-23-readout-sections.md)旧控制197/198达标，实际模型84行仍未合格。312诊断通过，见[今日日志](docs/journal/2026-09-23.md)、[ADR0016](docs/decisions/0016-candidate-completeness-and-real-readout-negatives.md)。
 
 此前[高度配对与相机点云版本](docs/experiments/2026-09-23-height-and-camera-versions.md)：断杆曲线p95降至14.08mm，细杆30.35mm仍差；圆柱法在新完整杆/断杆上拒绝，高度变化不是通用解法。6基础、12补丁、24保存视图通过撤回/重开，旧补丁跨版本被拒绝；未改原深度。295项诊断、15,400条独立射线、30,720次往返及3,840次独立来源像素核验通过。见[今日日志](docs/journal/2026-09-23.md)、[ADR0015](docs/decisions/0015-height-is-partial-and-camera-versions-are-explicit.md)。
 

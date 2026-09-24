@@ -1,0 +1,28 @@
+{
+  "state": "passed",
+  "counts": {
+    "frozen_runs": 5,
+    "frozen_source_records": 53,
+    "hashed_inference_records": 1022,
+    "exact_public_summaries": 5,
+    "identical_v4_development_rows": 468,
+    "identical_historical_snapshots": 14,
+    "identical_historical_patches": 14,
+    "reopened_exact_views": 28,
+    "verified_model_reader_outputs": 56,
+    "preserved_semantic_ambiguity_pairs": 18
+  },
+  "runs": {
+    "readout-background-challenges-v1-20260924": "2026-09-24-readout-background-challenges.json",
+    "readout-valley-development-v1-20260924": "2026-09-24-readout-valley-development.json",
+    "readout-valley-closed-development-v1-20260924": "2026-09-24-readout-valley-closed-development.json",
+    "g1-point-patch-valley-v1-20260924": "2026-09-24-point-patch-valley.json",
+    "g1-point-patch-valley-closed-v1-20260924": "2026-09-24-point-patch-valley-closed.json"
+  },
+  "git_safe_new_source_count": 12,
+  "policy_thresholds_identical_between_v5_revisions": true,
+  "exact_grid_original_false_lines": 2,
+  "exact_grid_corrected_false_lines": 0,
+  "audit_source_sha256": "a57974442aee1fec83e8da3082fe7376d8f502a4a93059372f979c44960594fc",
+  "qualification": "not_established; all v5 comparisons are development"
+}
