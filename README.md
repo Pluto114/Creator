@@ -6,7 +6,7 @@
 
 ## 当前进度
 
-**G1：方法可行性开发中，尚未通过。** 9月24日完成35次固定训练留组拟合与70条杆评价：细杆支持像素完全不变，三维恢复率仍随K/E变化大幅波动，下一步处理相机不确定性传播。另做36个新背景挑战，并实现持续分隔证据的读取器候选；新负例4/8→7/8，但旧控制197/198→194/198，真双杆出现假中轴，未推广。旧输入、结果、失败和真值隔离保留。340项全量及7项追加回归、离线构建通过；9月27日为检查点，G1按约1–2周集中推进作条件规划，不承诺本周过关。
+**G1：方法可行性开发中，尚未通过。** 9月24日续接已把固定相机删组传到有限杆端点、方向和缺口：14组旧杆中10组可完整比较、4组不可用。另冻结16个解析像素挑战、80条件；“稳定却错”反例只有5.6/9.0mm经验盒对角，物理偏差却118/996mm，范围不能当准确性门槛。新读取器保留未决，去掉假中轴，但新正例10/16→9/16，仍未推广。378项回归与31项新增双环境专项通过；旧输入、失败与真值隔离全部保留。9月27日为检查点，G1仍按约1–2周集中推进作条件规划。
 
 | 已可用 | 尚未实现 |
 | --- | --- |
@@ -23,9 +23,12 @@
 | 20张新参考纹理杆图、16相机/32曲线条件、24条特权诊断；完整杆取得曲线收益 | 断杆/细杆的残余误差、跨采集路径稳定性与独立对象验证 |
 | 15张高度配对图、24曲线/18特权诊断；6份新几何版本、约572万点和12补丁 | 候选/身份稳定性、深度准确性、合格共同评分与独立对象 |
 | 候选重拟合/赋值保留对照、全视图验证、第四版读取器及实际点云回放 | 候选不确定性、独立背景负例与真实读取资格 |
+| 五条件有限段经验范围、16案解析盲区测试、组件未决读取器 | 经验证的不确定性/偏差控制、可靠目标身份与共同读取资格 |
 | Blender配置侧栏、骨架检查、插件打包和CI | 完整导入、增强、比较与撤回流程 |
 
-最新[相机训练敏感性](docs/experiments/2026-09-24-camera-training-sensitivity.md)、[背景挑战](docs/experiments/2026-09-24-readout-background-challenges.md)和[读取器修复回放](docs/experiments/2026-09-24-readout-valley.md)保留全部改善与退步；两条细杆在相同像素赋值下漂移，新二分门也不能保证真双杆不被合并。见[今日日志](docs/journal/2026-09-24.md)、[ADR0017](docs/decisions/0017-camera-sensitivity-and-supported-splitting.md)。
+最新[有限杆相机范围](docs/experiments/2026-09-24-rod-camera-envelope.md)保留14组旧杆与16案解析反例，完整范围仍不能代表物理正确；[未决读取器](docs/experiments/2026-09-24-readout-abstention.md)减少假轴，也保留真实恢复损失。见[今日日志](docs/journal/2026-09-24.md)、[ADR0018](docs/decisions/0018-empirical-envelopes-and-explicit-abstention.md)。
+
+此前[相机训练敏感性](docs/experiments/2026-09-24-camera-training-sensitivity.md)、[背景挑战](docs/experiments/2026-09-24-readout-background-challenges.md)和[读取器修复回放](docs/experiments/2026-09-24-readout-valley.md)保留全部改善与退步；两条细杆在相同像素赋值下漂移，新二分门也不能保证真双杆不被合并。见[今日日志](docs/journal/2026-09-24.md)、[ADR0017](docs/decisions/0017-camera-sensitivity-and-supported-splitting.md)。
 
 此前[候选冲刺对照](docs/experiments/2026-09-23-candidate-refit-sprint.md)完成112正常/48评价行，未推广新方法；[全视图相机审计](docs/experiments/2026-09-23-camera-all-view-validation.md)补齐端视角覆盖；[第四版读取器](docs/experiments/2026-09-23-readout-sections.md)旧控制197/198达标，实际模型84行仍未合格。312诊断通过，见[今日日志](docs/journal/2026-09-23.md)、[ADR0016](docs/decisions/0016-candidate-completeness-and-real-readout-negatives.md)。
 

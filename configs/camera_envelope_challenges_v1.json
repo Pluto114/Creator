@@ -1,0 +1,299 @@
+{
+  "schema_version": "analytic-camera-envelope-protocol-v1",
+  "dataset_id": "analytic-camera-envelope-v1-20260924",
+  "expected_case_count": 16,
+  "anonymization_seed": 24092416,
+  "scope": "New analytic projected pixel measurements, not RGB-rendered detector outputs, not DA3 predictions, not independent real objects. No scores observed when this design was written.",
+  "generation": {
+    "size_wh": [
+      640,
+      480
+    ],
+    "focal_px": 650.0,
+    "camera_layout_unit": [
+      [
+        -0.5,
+        0.0,
+        0.0
+      ],
+      [
+        -0.25,
+        0.05,
+        0.0125
+      ],
+      [
+        0.0,
+        -0.04,
+        -0.01
+      ],
+      [
+        0.25,
+        0.045,
+        0.018
+      ],
+      [
+        0.5,
+        -0.025,
+        -0.008
+      ]
+    ],
+    "look_at_world": [
+      0.0,
+      0.0,
+      6.0
+    ],
+    "volumetric_depth_world_z_m": [
+      3.5,
+      9.0
+    ],
+    "training_count": 160,
+    "validation_count": 64,
+    "training_sampling_y_px": [
+      205.0,
+      438.0
+    ],
+    "validation_sampling_y_px": [
+      24.0,
+      110.0
+    ],
+    "sampling_x_px": [
+      32.0,
+      608.0
+    ],
+    "central_exclusion_half_width_px": 80.0,
+    "accepted_image_margin_px": 12.0,
+    "maximum_proposals_per_split": 100000,
+    "rod_y_endpoints_m": [
+      -0.8,
+      0.8
+    ],
+    "gap_y_m": [
+      -0.15,
+      0.15
+    ],
+    "coherent_lateral_offset_m": 0.12,
+    "coherent_depth_factor": 1.25,
+    "frame_bias_uv_px": [
+      [
+        -0.8,
+        0.2
+      ],
+      [
+        0.4,
+        -0.3
+      ],
+      [
+        0.8,
+        0.0
+      ],
+      [
+        -0.4,
+        0.3
+      ],
+      [
+        0.0,
+        -0.2
+      ]
+    ],
+    "swap_view_index": 2,
+    "single_observed_view_index": 0,
+    "initialization": {
+      "position_std_m": 0.008,
+      "rotation_std_degrees": 0.25,
+      "focal_relative_bias": 0.03,
+      "focal_log_noise_std": 0.004
+    }
+  },
+  "assumptions": {
+    "measurements": "Sparse background pixel tracks plus rod endpoint observations are synthesized from latent geometry and stated noise/mismatch processes; no image detector or matching quality is claimed.",
+    "known_cross_view_endpoint_correspondence": "Each declared segment supplies two endpoint tracks. Shared endpoint identity across images is an explicit analytic assumption, except the declared wrong-association cases.",
+    "initialization": "Initial K/E are preregistered synthetic perturbations of latent cameras. The initial values are not exact cameras and are not actual DA3 predictions. Principal point is the assumed image center.",
+    "split": "Training requires every noisy observation y>=192; validation requires every noisy observation y<128. Neither split nor leave-groups use GT residuals.",
+    "identity": "Anonymous ids do not prove physical target identity. Coherent wrong-rod cases deliberately expose this limit.",
+    "evaluation": "Keep rod_segments in the same declared order as rod_tracks. Reuse a single full-control camera-only Sim3 for all folds; no per-fold GT alignment to shrink the envelope. Degenerate alignment must be explicit missing.",
+    "acceptance": "No universal pass/fail threshold is fit on this new suite. Informative, stress, missing and unidentifiable roles are declared before running algorithms."
+  },
+  "cases": [
+    {
+      "family": "volume_near_low_noise",
+      "intended_role": "identifiable_control",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "ordinary",
+      "expected_limit": "Informative background and wide baseline; reference control, no promise of a particular numerical score.",
+      "scene_seed": 240924100
+    },
+    {
+      "family": "volume_far_low_noise",
+      "intended_role": "depth_stress",
+      "background": "volumetric",
+      "rod_depth_m": 10.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "ordinary",
+      "expected_limit": "Farther rod amplifies angular error; envelope is an empirical sensitivity diagnostic.",
+      "scene_seed": 240924101
+    },
+    {
+      "family": "volume_near_high_noise",
+      "intended_role": "noise_stress",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.5,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "ordinary",
+      "expected_limit": "Larger independent measurement noise; do not require every random instance to rank monotonically.",
+      "scene_seed": 240924102
+    },
+    {
+      "family": "volume_far_high_noise",
+      "intended_role": "noise_depth_stress",
+      "background": "volumetric",
+      "rod_depth_m": 10.0,
+      "pixel_noise_std": 0.5,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "ordinary",
+      "expected_limit": "Combined depth and pixel-noise stress; no post-hoc threshold fitting.",
+      "scene_seed": 240924103
+    },
+    {
+      "family": "single_depth_near",
+      "intended_role": "background_degeneracy_stress",
+      "background": "plane_8m",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "ordinary",
+      "expected_limit": "Single-depth background weakens calibration evidence; not guaranteed to produce a failure.",
+      "scene_seed": 240924104
+    },
+    {
+      "family": "far_plane_near",
+      "intended_role": "background_degeneracy_stress",
+      "background": "plane_24m",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "ordinary",
+      "expected_limit": "Distant planar background and nearer target probe calibration transfer; a small envelope is not a certificate.",
+      "scene_seed": 240924105
+    },
+    {
+      "family": "single_depth_far",
+      "intended_role": "background_depth_stress",
+      "background": "plane_8m",
+      "rod_depth_m": 10.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "ordinary",
+      "expected_limit": "Single-depth background with a farther target; report geometry error separately from spread.",
+      "scene_seed": 240924106
+    },
+    {
+      "family": "narrow_near",
+      "intended_role": "baseline_stress",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 0.24,
+      "measurement_mode": "ordinary",
+      "expected_limit": "Whole camera layout scaled down tenfold while noncollinearity ratio is preserved.",
+      "scene_seed": 240924107
+    },
+    {
+      "family": "narrow_far_noisy",
+      "intended_role": "baseline_depth_noise_stress",
+      "background": "volumetric",
+      "rod_depth_m": 10.0,
+      "pixel_noise_std": 0.5,
+      "camera_baseline_m": 0.24,
+      "measurement_mode": "ordinary",
+      "expected_limit": "Combined narrow baseline, distant rod and noise; uncertainty may be large or deceptively small.",
+      "scene_seed": 240924108
+    },
+    {
+      "family": "gapped_volume",
+      "intended_role": "finite_segment_control",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.25,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "gap",
+      "expected_limit": "Two declared finite segments; known endpoint correspondence and segment order are analytic assumptions.",
+      "scene_seed": 240924109
+    },
+    {
+      "family": "coherent_wrong_rod_lateral",
+      "intended_role": "unidentifiable_boundary",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "coherent_lateral",
+      "expected_limit": "All views consistently measure a parallel wrong rod displaced by 0.12m. Stability may remain high while target accuracy is wrong.",
+      "scene_seed": 240924110
+    },
+    {
+      "family": "coherent_wrong_rod_depth",
+      "intended_role": "unidentifiable_boundary",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "coherent_depth",
+      "expected_limit": "All views consistently measure a rod at 1.25x target depth. Fixed wrong correspondences may be stable; the envelope need not detect this.",
+      "scene_seed": 240924111
+    },
+    {
+      "family": "shared_frame_pixel_bias",
+      "intended_role": "systematic_measurement_stress",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "frame_bias",
+      "expected_limit": "One fixed per-frame pixel shift affects background and rod alike. Training resampling cannot guarantee detection of shared systematic bias.",
+      "scene_seed": 240924112
+    },
+    {
+      "family": "one_view_endpoint_swap",
+      "intended_role": "correspondence_failure",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "endpoint_swap",
+      "expected_limit": "Endpoint identities are exchanged in view 2. Wrong pixels remain fixed in every fold; spread is not a correspondence validator.",
+      "scene_seed": 240924113
+    },
+    {
+      "family": "single_view_rod",
+      "intended_role": "missing_geometry",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "single_view",
+      "expected_limit": "Each rod endpoint has only one view; no triangulated rod output is admissible.",
+      "scene_seed": 240924114
+    },
+    {
+      "family": "no_observations",
+      "intended_role": "missing_evidence",
+      "background": "volumetric",
+      "rod_depth_m": 4.0,
+      "pixel_noise_std": 0.1,
+      "camera_baseline_m": 2.4,
+      "measurement_mode": "no_observations",
+      "expected_limit": "No training, validation or rod observations. Group fitting must explicitly skip and rod geometry must remain absent.",
+      "scene_seed": 240924115
+    }
+  ],
+  "source_files": [
+    "experiments/src/creator_eval/camera_envelope_challenges.py",
+    "configs/camera_envelope_challenges_v1.json",
+    "tests/test_camera_envelope_challenges.py"
+  ]
+}

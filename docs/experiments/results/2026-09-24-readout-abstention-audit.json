@@ -1,0 +1,87 @@
+{
+  "state": "passed",
+  "counts": {
+    "frozen_source_records": 25,
+    "anonymous_input_files": 234,
+    "hashed_inference_records": 475,
+    "exact_public_summaries": 2,
+    "identical_closed_full_outputs": 234,
+    "verified_development_resolution_outputs": 234,
+    "semantic_ambiguity_pairs": 6,
+    "frozen_runs": 2,
+    "identical_historical_base_patch_pairs": 7,
+    "exact_reopened_views": 14,
+    "verified_model_resolution_outputs": 28
+  },
+  "runs": {
+    "readout-abstention-development-v1-20260924": "2026-09-24-readout-abstention-development.json",
+    "g1-point-patch-abstention-v1-20260924": "2026-09-24-point-patch-abstention.json"
+  },
+  "defaults_unchanged": true,
+  "development_status_groups": [
+    {
+      "dataset": "prior198",
+      "expectation": "positive",
+      "total": 196,
+      "old_geometry_metric_pass": 192,
+      "resolution_states": {
+        "resolved": 192,
+        "unresolved": 3,
+        "no_supported_curve": 1
+      },
+      "abstaining_rows": 3,
+      "metric_pass_with_abstention": 0
+    },
+    {
+      "dataset": "prior198",
+      "expectation": "negative",
+      "total": 2,
+      "old_geometry_metric_pass": 2,
+      "resolution_states": {
+        "no_supported_curve": 2
+      },
+      "abstaining_rows": 0,
+      "metric_pass_with_abstention": 0
+    },
+    {
+      "dataset": "background36",
+      "expectation": "positive",
+      "total": 16,
+      "old_geometry_metric_pass": 9,
+      "resolution_states": {
+        "resolved": 8,
+        "partial": 1,
+        "no_supported_curve": 5,
+        "unresolved": 2
+      },
+      "abstaining_rows": 3,
+      "metric_pass_with_abstention": 1
+    },
+    {
+      "dataset": "background36",
+      "expectation": "negative",
+      "total": 8,
+      "old_geometry_metric_pass": 8,
+      "resolution_states": {
+        "unresolved": 4,
+        "no_supported_curve": 4
+      },
+      "abstaining_rows": 4,
+      "metric_pass_with_abstention": 4
+    },
+    {
+      "dataset": "background36",
+      "expectation": "unidentifiable",
+      "total": 12,
+      "old_geometry_metric_pass": 0,
+      "resolution_states": {
+        "resolved": 8,
+        "no_supported_curve": 4
+      },
+      "abstaining_rows": 0,
+      "metric_pass_with_abstention": 0
+    }
+  ],
+  "audit_source_sha256": "2470329077d00d531d8317291280a3ecabe69284f322f71d2bfc08d73a2ca11d",
+  "interpretation": "Unresolved/partial are not correct background classifications. Legacy no-false-curve metrics are retained separately. No qualification established."
+}

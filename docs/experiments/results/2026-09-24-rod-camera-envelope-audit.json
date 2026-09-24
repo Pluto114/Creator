@@ -1,0 +1,452 @@
+{
+  "audit_id": "rod-camera-envelope-independent-audit-v1-20260924",
+  "state": "passed",
+  "pre_captured_at_utc": "2026-09-24T11:31:36.355615+00:00",
+  "post_captured_at_utc": "2026-09-24T11:34:52.312287+00:00",
+  "before_sha256": "34a28ff750af4c5b939f4a881cc464c41bfdc5eafc781e2da16a85a521a6e1ae",
+  "audit_source_sha256": "09ac8329b3d2f4cfa618ce53d7fe59a244857f64fe14f4624e40d16a6dceea0a",
+  "before_receipt_count": 426,
+  "all_before_hashes_unchanged": true,
+  "pre_gt_read": false,
+  "pre_physical_scores_read": false,
+  "pre_counts": {
+    "source_pair_records": 128,
+    "replay_parent_packet_links": 70,
+    "replay_families": 14,
+    "replay_slots": 70,
+    "analytic_plans_checked": 16,
+    "analytic_records_validated": 80,
+    "analytic_family_packet_links": 80,
+    "analytic_families": 16,
+    "analytic_slots": 80
+  },
+  "post_counts": {
+    "replay_physical_rows": 70,
+    "replay_public_families": 14,
+    "replay_case_view_links": 14,
+    "analytic_case_view_links": 16,
+    "analytic_physical_rows": 80,
+    "analytic_public_families": 16
+  },
+  "runs": {
+    "replay": "rod-camera-envelope-v1-20260924",
+    "analytic": "camera-envelope-challenges-v1-20260924"
+  },
+  "summary_sha256": {
+    "replay": {
+      "public_sha256": "42a2f23dfd91d46b2a2ce94741b2f76e5a6f0e6ebe946b1dbdddcce878c44012",
+      "runtime_sha256": "42a2f23dfd91d46b2a2ce94741b2f76e5a6f0e6ebe946b1dbdddcce878c44012"
+    },
+    "analytic": {
+      "public_sha256": "7818dff853833588a88850dd72228de88bacce885ea148998cae0626116235ed",
+      "runtime_sha256": "7818dff853833588a88850dd72228de88bacce885ea148998cae0626116235ed"
+    }
+  },
+  "truth_identity_links": [
+    {
+      "mode": "replay",
+      "task_id": "rod-reference-bundle-v1-20260923-r01-baseline",
+      "case_id": "r01",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "3445abb86d7c003192045e2a70c5527593e38653318ddcb8e4a03afd05e7c88c",
+      "truth_sha256": "d79f8e2368178f2a9c518b3012c84621a5ce2447b90ebe76bfa3e5a30c3b6456"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-reference-bundle-v1-20260923-r01-cylinder_support",
+      "case_id": "r01",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "3445abb86d7c003192045e2a70c5527593e38653318ddcb8e4a03afd05e7c88c",
+      "truth_sha256": "d79f8e2368178f2a9c518b3012c84621a5ce2447b90ebe76bfa3e5a30c3b6456"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-reference-bundle-v1-20260923-r02-baseline",
+      "case_id": "r02",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "3445abb86d7c003192045e2a70c5527593e38653318ddcb8e4a03afd05e7c88c",
+      "truth_sha256": "d79f8e2368178f2a9c518b3012c84621a5ce2447b90ebe76bfa3e5a30c3b6456"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-reference-bundle-v1-20260923-r02-cylinder_support",
+      "case_id": "r02",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "3445abb86d7c003192045e2a70c5527593e38653318ddcb8e4a03afd05e7c88c",
+      "truth_sha256": "d79f8e2368178f2a9c518b3012c84621a5ce2447b90ebe76bfa3e5a30c3b6456"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-reference-bundle-v1-20260923-r03-baseline",
+      "case_id": "r03",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "3445abb86d7c003192045e2a70c5527593e38653318ddcb8e4a03afd05e7c88c",
+      "truth_sha256": "d79f8e2368178f2a9c518b3012c84621a5ce2447b90ebe76bfa3e5a30c3b6456"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-reference-bundle-v1-20260923-r03-cylinder_support",
+      "case_id": "r03",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "3445abb86d7c003192045e2a70c5527593e38653318ddcb8e4a03afd05e7c88c",
+      "truth_sha256": "d79f8e2368178f2a9c518b3012c84621a5ce2447b90ebe76bfa3e5a30c3b6456"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-reference-bundle-v1-20260923-r04-baseline",
+      "case_id": "r04",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "3445abb86d7c003192045e2a70c5527593e38653318ddcb8e4a03afd05e7c88c",
+      "truth_sha256": "d79f8e2368178f2a9c518b3012c84621a5ce2447b90ebe76bfa3e5a30c3b6456"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-reference-bundle-v1-20260923-r04-cylinder_support",
+      "case_id": "r04",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "3445abb86d7c003192045e2a70c5527593e38653318ddcb8e4a03afd05e7c88c",
+      "truth_sha256": "d79f8e2368178f2a9c518b3012c84621a5ce2447b90ebe76bfa3e5a30c3b6456"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-height-bundle-v1-20260923-r01-baseline",
+      "case_id": "r01",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "e4bc3b56d224f3821bcb244decbb4a4ed9c14680cac2eae468355c7c06fb195e",
+      "truth_sha256": "1765cbd0f803f5a9b05a5ba7b654c2efa3a7ce2ed6dc2977aec704891b6465e3"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-height-bundle-v1-20260923-r01-cylinder_support",
+      "case_id": "r01",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "e4bc3b56d224f3821bcb244decbb4a4ed9c14680cac2eae468355c7c06fb195e",
+      "truth_sha256": "1765cbd0f803f5a9b05a5ba7b654c2efa3a7ce2ed6dc2977aec704891b6465e3"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-height-bundle-v1-20260923-r02-baseline",
+      "case_id": "r02",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "e4bc3b56d224f3821bcb244decbb4a4ed9c14680cac2eae468355c7c06fb195e",
+      "truth_sha256": "1765cbd0f803f5a9b05a5ba7b654c2efa3a7ce2ed6dc2977aec704891b6465e3"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-height-bundle-v1-20260923-r02-cylinder_support",
+      "case_id": "r02",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "e4bc3b56d224f3821bcb244decbb4a4ed9c14680cac2eae468355c7c06fb195e",
+      "truth_sha256": "1765cbd0f803f5a9b05a5ba7b654c2efa3a7ce2ed6dc2977aec704891b6465e3"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-height-bundle-v1-20260923-r03-baseline",
+      "case_id": "r03",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "e4bc3b56d224f3821bcb244decbb4a4ed9c14680cac2eae468355c7c06fb195e",
+      "truth_sha256": "1765cbd0f803f5a9b05a5ba7b654c2efa3a7ce2ed6dc2977aec704891b6465e3"
+    },
+    {
+      "mode": "replay",
+      "task_id": "rod-height-bundle-v1-20260923-r03-cylinder_support",
+      "case_id": "r03",
+      "view_ids": [
+        "view_-32",
+        "view_-14",
+        "view_+03",
+        "view_+19",
+        "view_+35"
+      ],
+      "input_sha256": "e4bc3b56d224f3821bcb244decbb4a4ed9c14680cac2eae468355c7c06fb195e",
+      "truth_sha256": "1765cbd0f803f5a9b05a5ba7b654c2efa3a7ce2ed6dc2977aec704891b6465e3"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c001",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c002",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c003",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c004",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c005",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c006",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c007",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c008",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c009",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c010",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c011",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c012",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c013",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c014",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c015",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    },
+    {
+      "mode": "analytic",
+      "case_id": "c016",
+      "view_ids": [
+        "v00",
+        "v01",
+        "v02",
+        "v03",
+        "v04"
+      ],
+      "input_sha256": "93ec9d6308d823766624e02fa883c3f22eab699d81070c2fa4e288d33634db72",
+      "truth_sha256": "858def0ee05c6a50335fd3401f914ee22472602df8c7b66a6df9022cd42d0ae9"
+    }
+  ],
+  "scope": "Independent pre/post provenance and table-completeness audit. No physical score recomputation, confidence-interval claim or accuracy qualification."
+}

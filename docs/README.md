@@ -1,5 +1,7 @@
 # 文档索引
 
+最新续接（9月24日）：有限杆相机经验范围完成14组旧数据重放及16新解析案/80条件。14组中10完整/4不可用；新16案13完整/3不可用。固定控制相机Sim3用于整组，未按fold重对齐；窄范围仍可整体错118mm或996mm，不能作准确性门。未决读取器去掉假中轴，旧198仍194通过、新正例10→9/16，负例8/8零假线其中4未决；实际84行保留100mm容差下三项损失。378回归、31新增双环境专项与离线包通过；G1未过。见[相机范围](experiments/2026-09-24-rod-camera-envelope.md)、[未决读取器](experiments/2026-09-24-readout-abstention.md)、[日志](journal/2026-09-24.md)、[ADR0018](decisions/0018-empirical-envelopes-and-explicit-abstention.md)。下方为历史。
+
 最新（9月24日）：35相机/70杆留组实验确认相同杆像素下仍有显著三维漂移；40个可比身份对均相同，90文件评价前后不变。新增36背景挑战；持续分隔门及独立边界修复提升新负例4/8→7/8，却使旧198控制197→194并产生双杆假中轴，未推广。340全量+7追加回归、离线构建通过，G1未过。见[相机报告](experiments/2026-09-24-camera-training-sensitivity.md)、[背景挑战](experiments/2026-09-24-readout-background-challenges.md)、[读取器修复](experiments/2026-09-24-readout-valley.md)、[日志](journal/2026-09-24.md)、[ADR0017](decisions/0017-camera-sensitivity-and-supported-splitting.md)。下方为历史。
 
 最新冲刺（9月23日）：三个独立任务完成。候选重拟合14相机任务、112正常/48评价行，没有新的细杆收益，保留像素赋值揭示旧候选唯一性不足；默认不变。全视图相机审计28条件、5,408相关残差，补齐端视角但仍不能识别30mm细杆误差。共同读取器旧198条件189→197达标，7份实际DA3基础/候选84行仍误读背景，未获验收资格。312诊断、204源码、离线构建通过；旧输入与结果完整保留，G1未通过。见[候选报告](experiments/2026-09-23-candidate-refit-sprint.md)、[相机审计](experiments/2026-09-23-camera-all-view-validation.md)、[读取器报告](experiments/2026-09-23-readout-sections.md)、[日志](journal/2026-09-23.md)、[ADR0016](decisions/0016-candidate-completeness-and-real-readout-negatives.md)。下方为历史。
