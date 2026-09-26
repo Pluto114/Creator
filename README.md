@@ -6,7 +6,7 @@
 
 ## 当前进度
 
-**G1：方法可行性开发中，尚未通过。** 9月24日续接已把固定相机删组传到有限杆端点、方向和缺口：14组旧杆中10组可完整比较、4组不可用。另冻结16个解析像素挑战、80条件；“稳定却错”反例只有5.6/9.0mm经验盒对角，物理偏差却118/996mm，范围不能当准确性门槛。新读取器保留未决，去掉假中轴，但新正例10/16→9/16，仍未推广。378项回归与31项新增双环境专项通过；旧输入、失败与真值隔离全部保留。9月27日为检查点，G1仍按约1–2周集中推进作条件规划。
+**G1：方法可行性开发中，尚未通过。** 9月26日完成20种子成对目标证据实验：100次共享相机拟合、400条几何条件、4800个相关决策。端点检查能挡单图错配，却挡不住全图一致认错；额外正确目标点有用，但正常对应三维p95仍可达42mm。旧7组RGB/DA3的70行回放新增拦截为0。64个截面控制提供了保留格内位置的依据，也留下半面/薄片反例，没有直接发布新读取门。420项诊断及核心边界测试通过；旧数据、失败和真值隔离保留。9月27日是检查点，G1仍按约1–2周集中推进作条件规划。
 
 | 已可用 | 尚未实现 |
 | --- | --- |
@@ -24,9 +24,12 @@
 | 15张高度配对图、24曲线/18特权诊断；6份新几何版本、约572万点和12补丁 | 候选/身份稳定性、深度准确性、合格共同评分与独立对象 |
 | 候选重拟合/赋值保留对照、全视图验证、第四版读取器及实际点云回放 | 候选不确定性、独立背景负例与真实读取资格 |
 | 五条件有限段经验范围、16案解析盲区测试、组件未决读取器 | 经验证的不确定性/偏差控制、可靠目标身份与共同读取资格 |
+| 20种子配对目标证据、70行同源点击回放、64条件截面模型诊断 | 独立目标证据、相机共享偏差控制与可信截面判断 |
 | Blender配置侧栏、骨架检查、插件打包和CI | 完整导入、增强、比较与撤回流程 |
 
-最新[有限杆相机范围](docs/experiments/2026-09-24-rod-camera-envelope.md)保留14组旧杆与16案解析反例，完整范围仍不能代表物理正确；[未决读取器](docs/experiments/2026-09-24-readout-abstention.md)减少假轴，也保留真实恢复损失。见[今日日志](docs/journal/2026-09-24.md)、[ADR0018](docs/decisions/0018-empirical-envelopes-and-explicit-abstention.md)。
+最新[成对目标证据](docs/experiments/2026-09-26-paired-target-evidence.md)、[旧点击回放](docs/experiments/2026-09-26-target-projection-replay.md)和[截面模型诊断](docs/experiments/2026-09-26-section-model-diagnostic.md)把对应、目标身份、相机偏差和读取资格分开；这次没有新增细杆修复收益。见[今日日志](docs/journal/2026-09-26.md)、[ADR0019](docs/decisions/0019-evidence-roles-and-section-model-diagnostics.md)。
+
+此前[有限杆相机范围](docs/experiments/2026-09-24-rod-camera-envelope.md)保留14组旧杆与16案解析反例，完整范围仍不能代表物理正确；[未决读取器](docs/experiments/2026-09-24-readout-abstention.md)减少假轴，也保留真实恢复损失。见[今日日志](docs/journal/2026-09-24.md)、[ADR0018](docs/decisions/0018-empirical-envelopes-and-explicit-abstention.md)。
 
 此前[相机训练敏感性](docs/experiments/2026-09-24-camera-training-sensitivity.md)、[背景挑战](docs/experiments/2026-09-24-readout-background-challenges.md)和[读取器修复回放](docs/experiments/2026-09-24-readout-valley.md)保留全部改善与退步；两条细杆在相同像素赋值下漂移，新二分门也不能保证真双杆不被合并。见[今日日志](docs/journal/2026-09-24.md)、[ADR0017](docs/decisions/0017-camera-sensitivity-and-supported-splitting.md)。
 

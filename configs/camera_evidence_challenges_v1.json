@@ -1,0 +1,181 @@
+{
+  "schema_version": "paired-camera-evidence-protocol-v1",
+  "dataset_id": "paired-camera-evidence-v1-20260926",
+  "expected_seed_count": 20,
+  "seeds": [
+    260926100,
+    260926101,
+    260926102,
+    260926103,
+    260926104,
+    260926105,
+    260926106,
+    260926107,
+    260926108,
+    260926109,
+    260926110,
+    260926111,
+    260926112,
+    260926113,
+    260926114,
+    260926115,
+    260926116,
+    260926117,
+    260926118,
+    260926119
+  ],
+  "anonymization_seed": 260926,
+  "modes": [
+    "ordinary",
+    "endpoint_swap",
+    "coherent_lateral",
+    "coherent_depth"
+  ],
+  "generation": {
+    "size_wh": [
+      640,
+      480
+    ],
+    "focal_px": 650.0,
+    "camera_layout_unit": [
+      [
+        -0.5,
+        0.0,
+        0.0
+      ],
+      [
+        -0.25,
+        0.05,
+        0.0125
+      ],
+      [
+        0.0,
+        -0.04,
+        -0.01
+      ],
+      [
+        0.25,
+        0.045,
+        0.018
+      ],
+      [
+        0.5,
+        -0.025,
+        -0.008
+      ]
+    ],
+    "look_at_world": [
+      0.0,
+      0.0,
+      6.0
+    ],
+    "volumetric_depth_world_z_m": [
+      3.5,
+      9.0
+    ],
+    "training_count": 160,
+    "validation_count": 64,
+    "training_sampling_y_px": [
+      205.0,
+      438.0
+    ],
+    "validation_sampling_y_px": [
+      24.0,
+      110.0
+    ],
+    "sampling_x_px": [
+      32.0,
+      608.0
+    ],
+    "central_exclusion_half_width_px": 80.0,
+    "accepted_image_margin_px": 12.0,
+    "maximum_proposals_per_split": 100000,
+    "rod_y_endpoints_m": [
+      -0.8,
+      0.8
+    ],
+    "gap_y_m": [
+      -0.15,
+      0.15
+    ],
+    "coherent_lateral_offset_m": 0.12,
+    "coherent_depth_factor": 1.25,
+    "frame_bias_uv_px": [
+      [
+        -0.8,
+        0.2
+      ],
+      [
+        0.4,
+        -0.3
+      ],
+      [
+        0.8,
+        0.0
+      ],
+      [
+        -0.4,
+        0.3
+      ],
+      [
+        0.0,
+        -0.2
+      ]
+    ],
+    "swap_view_index": 2,
+    "single_observed_view_index": 0,
+    "initialization": {
+      "position_std_m": 0.008,
+      "rotation_std_degrees": 0.25,
+      "focal_relative_bias": 0.03,
+      "focal_log_noise_std": 0.004
+    }
+  },
+  "scene": {
+    "background": "volumetric",
+    "rod_depth_m": 4.0,
+    "pixel_noise_std": 0.25,
+    "camera_baseline_m": 2.4
+  },
+  "anchors": {
+    "views": [
+      0,
+      4
+    ],
+    "fractions": [
+      0.35,
+      0.65
+    ],
+    "noise_std_px": 0.25,
+    "uncertainty_xy_px": [
+      0.5,
+      0.5
+    ]
+  },
+  "policy": {
+    "endpoint": {
+      "threshold_px": 2.0,
+      "minimum_views": 4,
+      "triangulation": "All other observations for each held-out endpoint view"
+    },
+    "target": {
+      "threshold_px": 2.0,
+      "minimum_views": 2
+    },
+    "threshold_scope": "Preregistered pixel budgets, not calibrated accuracy guarantees. Endpoint distance and target-to-finite-segment distance are new diagnostic semantics."
+  },
+  "declarations": {
+    "pairing": "One background training/validation and perturbed initial-camera draw per seed, reused by all four rod modes and all target-evidence sets. Full+4 fixed leave-groups require only 100 camera fits.",
+    "endpoint_noise": "Identical endpoint/view Gaussian draws in all four modes. Swap endpoints only in view 2 after adding their noise.",
+    "target_claim_noise": "Independent RNG stream from endpoint/background measurements; the same two noise vectors are shared across corresponding evidence conditions. Independence refers to noise draws, not independence from latent simulated geometry.",
+    "target_claims": "Two points on the requested target; two points on the candidate-consistent target; only the first requested-target point. Clean and endpoint-swap modes have identical requested/candidate target points.",
+    "source_identity": "Every view hashes an anonymous measurement bank containing its background tracks, all four rod cases and every raw target-claim set. The bank contains no SHA fields. This is a measurement-bank identity, never an RGB image hash.",
+    "inference": "No GT cameras, world points, mode/claim labels, seeds, or physical errors in estimator inputs. Claims cannot refit cameras or rods or choose thresholds.",
+    "initialization": "Preregistered synthetic perturbations of latent cameras; not DA3 predictions and not exact-camera initialization.",
+    "annotation": "All claims are generated 2D synthetic measurements. No real image, human click study, RGB detection/matching success, or automatic identity recognition is implied.",
+    "evaluation": "One full-control camera-only Sim3 per seed reused for all modes/folds. Keep missing conditions; do not promote a fold using physical truth.",
+    "sample_unit": "Twenty paired seed replicates of one declared scene family. Eighty rod families and four hundred conditions are correlated, not four hundred independent samples or unseen real objects.",
+    "boundaries": "Coherent wrong rods can have small leave-out residuals; candidate-consistent wrong claims can also agree. Missing single-view claims remain unresolved. A passing diagnostic does not certify physical identity.",
+    "freeze": "Freeze this protocol, new generator and imported camera_envelope_challenges.py before producing input/truth files. Do not select seeds by outcomes or reroll failures."
+  }
+}

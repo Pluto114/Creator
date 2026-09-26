@@ -1,0 +1,22 @@
+{
+  "run_id": "section-model-diagnostic-v1-20260926",
+  "state": "passed",
+  "frozen_sources": 5,
+  "regenerated_identical_inputs": 64,
+  "verified_inference_records": 64,
+  "verified_model_fold_rows": 768,
+  "representations": 128,
+  "unselected_comparisons": 256,
+  "public_runtime_bytes_identical": true,
+  "gt_read_during_inference": false,
+  "source_sha256": {
+    "scripts/run_section_model_diagnostic.py": "100934f2198535dede9880c7462f0c7a3b63c46b2e89b0d659a4efd857cd3d96",
+    "experiments/src/creator_eval/section_model_diagnostic.py": "651f47e1dce756f40ce1db6e388117604ffda2244096a98a6deb2979fc53c9a7",
+    "experiments/src/creator_eval/section_model_controls.py": "e24e60c39e05f7a81c0c8a60b490241ae69d60a30c0bfbe3b571921a3c7b8bfd",
+    "configs/section_model_diagnostic_v1.json": "1d62ad63317362bd1ed0033129c8f26b4a64e8836e6a74e7f1c287cbed25115a",
+    "tests/test_section_model_diagnostic.py": "763aa28fca4cb2e5d07cdac475c1c4568a4f6d3f8f94c51553edb597eaea1814"
+  },
+  "audit_source_sha256": "f12b34101295dfa2a708c406452006930ec151a3606c644d6915beb1fa7eee17",
+  "summary_sha256": "0e2ccb1056a3c95caa3f7648e152931b79b356f716a399aaa0ee035833f90d6d",
+  "scope": "Provenance, paired generation and complete score preservation; no physical classification or model-accuracy qualification"
+}

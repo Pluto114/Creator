@@ -1,0 +1,2816 @@
+{
+  "schema_version": "section-model-postrun-review-v1",
+  "reviewed_at_utc": "2026-09-26T11:10:54.906318+00:00",
+  "run_id": "section-model-diagnostic-v1-20260926",
+  "state": "passed_with_scope_clarification",
+  "timing": "Post-run read-only independent derivation; not a pre-registration, before-result receipt, new observation, or re-fit",
+  "standalone_review_script": null,
+  "sources": {
+    "docs/experiments/results/2026-09-26-section-model-diagnostic.json": "0e2ccb1056a3c95caa3f7648e152931b79b356f716a399aaa0ee035833f90d6d",
+    ".runtime/experiments/section-model-diagnostic-v1-20260926/inference.json": "18394fc7423b32d155a28779602ce54e69ace7118ce4ac6f2dc8934fc4d7689d",
+    ".runtime/experiments/section-model-diagnostic-v1-20260926/prepared.json": "ae4d2f95afefab62eaca88e6f2f13a586e7313499df4f1409228d0d86c8902f2",
+    ".runtime/experiments/section-model-diagnostic-v1-20260926/source_freeze.json": "22d2e26b12d7d25eef8abfb7c242061e81a540eae1b861b284865de2d480005b",
+    "data/inputs/section-model-diagnostic-v1-20260926/manifest.json": "e3a0661a7974a54298b488f055939a8973ac6bd501e2c58635d9936a9b29944a",
+    "data/eval_gt/section-model-diagnostic-v1-20260926/manifest.json": "4d9a35c9377e5b89cf62c7dbe7111ece582ea565417f3965bd7eb6932155e38e",
+    "docs/experiments/results/2026-09-26-section-model-diagnostic-audit.json": "083ab769184ca76a31a17908b366f7841337dc67020a8399cc2bbef15123da9e",
+    "scripts/run_section_model_diagnostic.py": "100934f2198535dede9880c7462f0c7a3b63c46b2e89b0d659a4efd857cd3d96",
+    "experiments/src/creator_eval/section_model_diagnostic.py": "651f47e1dce756f40ce1db6e388117604ffda2244096a98a6deb2979fc53c9a7",
+    "experiments/src/creator_eval/section_model_controls.py": "e24e60c39e05f7a81c0c8a60b490241ae69d60a30c0bfbe3b571921a3c7b8bfd",
+    "configs/section_model_diagnostic_v1.json": "1d62ad63317362bd1ed0033129c8f26b4a64e8836e6a74e7f1c287cbed25115a",
+    "tests/test_section_model_diagnostic.py": "763aa28fca4cb2e5d07cdac475c1c4568a4f6d3f8f94c51553edb597eaea1814"
+  },
+  "checks": {
+    "model_fold_rows_verified": 768,
+    "comparisons_verified": 256,
+    "all_semantic_labels_match_separate_truth_manifest": true,
+    "pooled_heldout_rmse_max_absolute_difference": 0.0,
+    "comparison_differences_convergence_boundaries_exact": true,
+    "accepted_models": 0,
+    "selected_models": 0,
+    "fit_counts": {
+      "ellipse": {
+        "row_count": 256,
+        "fit_states": {
+          "fitted": 256
+        },
+        "nonconverged": 0,
+        "at_parameter_boundary": 69
+      },
+      "two_circles": {
+        "row_count": 256,
+        "fit_states": {
+          "fitted": 256
+        },
+        "nonconverged": 14,
+        "at_parameter_boundary": 27
+      },
+      "line": {
+        "row_count": 256,
+        "fit_states": {
+          "fitted": 256
+        },
+        "nonconverged": 0,
+        "at_parameter_boundary": 0
+      }
+    },
+    "full_raw_representation_rmse_medians_voxels": {
+      "circle": {
+        "ellipse": 0.09115014646000857,
+        "two_circles": 0.06074990395285072,
+        "line": 1.941455905799653
+      },
+      "corrugated_sheet": {
+        "ellipse": 0.4343223087068946,
+        "two_circles": 0.45177567313300226,
+        "line": 0.9052713011692908
+      },
+      "ellipse_close_extent": {
+        "ellipse": 0.0908431776973187,
+        "two_circles": 0.23473039367708115,
+        "line": 1.1567864941510533
+      },
+      "ellipse_wide_extent": {
+        "ellipse": 0.09234099601549414,
+        "two_circles": 0.33380256088724414,
+        "line": 1.1698465975446342
+      },
+      "flat_strip": {
+        "ellipse": 0.0639197554158946,
+        "two_circles": 0.0970252366567667,
+        "line": 0.0858602868158978
+      },
+      "folded_sheet": {
+        "ellipse": 0.24470844012834705,
+        "two_circles": 0.10660524155359904,
+        "line": 0.4826454959966923
+      },
+      "two_circles_close": {
+        "ellipse": 0.4303413192585257,
+        "two_circles": 0.09738272253709362,
+        "line": 1.0974171557179462
+      },
+      "two_circles_wide": {
+        "ellipse": 0.4661507381035821,
+        "two_circles": 0.09067795128521755,
+        "line": 1.0734394972776173
+      }
+    }
+  },
+  "shared_preprocessing": [
+    "voxel grid occupancy and center coordinates",
+    "mean occupied-center origin",
+    "PCA frame from all occupied centers",
+    "5%-95% axial boundaries from all occupied centers",
+    "maximum radius = axial span * 0.25",
+    "raw-point inverse occupied-cell population weights from all deduplicated points"
+  ],
+  "procedures": {
+    "pooled_rmse": "sqrt(sum(slice_rmse**2 * occupied_weight) / sum(occupied_weight))",
+    "raw_fold_membership": "unique(input_points); occupied_cell=floor(point/voxel); values=(point-frozen_origin)@frozen_frame/voxel; searchsorted(frozen_axial_boundaries/voxel, values_z, side=right)-1; uppermost equality is slice 5",
+    "shared_cells": "intersection of occupied-cell IDs among slices 0/2/4 and 1/3/5, then swap; no models re-fit",
+    "heldout_points_in_shared_cells": "count heldout raw points whose occupied-cell ID also occurs in train"
+  },
+  "shared_cell_summary": {
+    "condition_count": 64,
+    "conditions_with_shared_cells": 64,
+    "minimum_shared_cells": 18,
+    "maximum_shared_cells": 82
+  },
+  "shared_cell_details": [
+    {
+      "case_id": "section-0000",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0000.npy",
+      "input_sha256": "67f9756dc5ee8674827ed35bf2ca726863b9b23916bdfd7d4bc66024c3526c13",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0000.json",
+      "record_sha256": "a9aa0f53e1f0828410994f8612a295ce90f9b57e9d6fffe5ef14a2b71fbe8534",
+      "occupied_cell_count": 1339,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 58,
+          "train_points": 3776,
+          "heldout_points": 3648,
+          "heldout_points_in_shared_cells": 200
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 58,
+          "train_points": 3648,
+          "heldout_points": 3776,
+          "heldout_points_in_shared_cells": 230
+        }
+      ]
+    },
+    {
+      "case_id": "section-0001",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0001.npy",
+      "input_sha256": "84196e6d106b5452e0f7c46157b3152ba5158ff1dfed4bb6971b4457e46a23ff",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0001.json",
+      "record_sha256": "1d3ac3d7745cf1c30119f6d4d86201d38e1e177db8edb6b1231966543102bc9c",
+      "occupied_cell_count": 1344,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 57,
+          "train_points": 3648,
+          "heldout_points": 3776,
+          "heldout_points_in_shared_cells": 235
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 57,
+          "train_points": 3776,
+          "heldout_points": 3648,
+          "heldout_points_in_shared_cells": 214
+        }
+      ]
+    },
+    {
+      "case_id": "section-0002",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0002.npy",
+      "input_sha256": "dc09186ef021be730cbb6b104b042a03f4e567f998aa2695f9d600018893b950",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0002.json",
+      "record_sha256": "2100c2bc96d42037169f7cdbaec0159ad33c121ca905defc6d34f4676902a638",
+      "occupied_cell_count": 736,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 31,
+          "train_points": 1914,
+          "heldout_points": 1895,
+          "heldout_points_in_shared_cells": 119
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 31,
+          "train_points": 1895,
+          "heldout_points": 1914,
+          "heldout_points_in_shared_cells": 106
+        }
+      ]
+    },
+    {
+      "case_id": "section-0003",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0003.npy",
+      "input_sha256": "476b3cfca39af4bbce9d185a42104067a33b39e35d8c84f9935a07ae7b43c6e2",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0003.json",
+      "record_sha256": "baf8a5c90fa5f95a381630c880db11ee0e323ea7f2355e771c116a079a10e271",
+      "occupied_cell_count": 747,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 30,
+          "train_points": 1980,
+          "heldout_points": 1881,
+          "heldout_points_in_shared_cells": 123
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 30,
+          "train_points": 1881,
+          "heldout_points": 1980,
+          "heldout_points_in_shared_cells": 120
+        }
+      ]
+    },
+    {
+      "case_id": "section-0004",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0004.npy",
+      "input_sha256": "57a67ba728c0962a5eaceade8691314a1e1ce71fc9a3315a388a0691f249af61",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0004.json",
+      "record_sha256": "1240e8b178db8ef215762b5d30ad3aaaa2800bdb656b0472e11a875b26fd70fe",
+      "occupied_cell_count": 1553,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 72,
+          "train_points": 3736,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 255
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 72,
+          "train_points": 3712,
+          "heldout_points": 3736,
+          "heldout_points_in_shared_cells": 257
+        }
+      ]
+    },
+    {
+      "case_id": "section-0005",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0005.npy",
+      "input_sha256": "2dbae64c49952056d2ce9591c4f49edb6e816bfd5b47b358531b799bb8acfc60",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0005.json",
+      "record_sha256": "fcb7987c90defa78d2cc7e40a02ef0f066b2bac8c29e122b2a66a8dd3c2e858e",
+      "occupied_cell_count": 1557,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 82,
+          "train_points": 3750,
+          "heldout_points": 3741,
+          "heldout_points_in_shared_cells": 286
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 82,
+          "train_points": 3741,
+          "heldout_points": 3750,
+          "heldout_points_in_shared_cells": 292
+        }
+      ]
+    },
+    {
+      "case_id": "section-0006",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0006.npy",
+      "input_sha256": "99d27398a98ba8dfd0b3dceda03f86e8aa72ea5c17c281d6139d433851d18336",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0006.json",
+      "record_sha256": "e9e406f59b28625199f3e4051d7cc72ed447aa8d615b641ba1db61605a127ca3",
+      "occupied_cell_count": 849,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 37,
+          "train_points": 1906,
+          "heldout_points": 1897,
+          "heldout_points_in_shared_cells": 150
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 37,
+          "train_points": 1897,
+          "heldout_points": 1906,
+          "heldout_points_in_shared_cells": 124
+        }
+      ]
+    },
+    {
+      "case_id": "section-0007",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0007.npy",
+      "input_sha256": "55d8c691dad593f5a1964cfc5d1aceee459f23c1e42610b83c721673bbf2f2dc",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0007.json",
+      "record_sha256": "ec1178522c1d1d2e4e2ee3a07b37c95600c91a6829d4d4256ec3505f7cb2a596",
+      "occupied_cell_count": 858,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 42,
+          "train_points": 1950,
+          "heldout_points": 1943,
+          "heldout_points_in_shared_cells": 141
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 42,
+          "train_points": 1943,
+          "heldout_points": 1950,
+          "heldout_points_in_shared_cells": 133
+        }
+      ]
+    },
+    {
+      "case_id": "section-0008",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0008.npy",
+      "input_sha256": "057f924d6a6a2f05d11ab27c4a90dd19845f48a49e069b205b9bf6b69c31ec3b",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0008.json",
+      "record_sha256": "b75a7090047e9ce14749c9f8bb06cced0e9876911b8da12a83979c87906546ce",
+      "occupied_cell_count": 1226,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 50,
+          "train_points": 3648,
+          "heldout_points": 3840,
+          "heldout_points_in_shared_cells": 200
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 50,
+          "train_points": 3840,
+          "heldout_points": 3648,
+          "heldout_points_in_shared_cells": 197
+        }
+      ]
+    },
+    {
+      "case_id": "section-0009",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0009.npy",
+      "input_sha256": "745d2daf0c1c67528b2f7e2f49a5fb75731aff4eed3d87670af3d1d022b20716",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0009.json",
+      "record_sha256": "3c8b9e00fdcb0dde0cd60b2f76ce503419a2553bd386511dd4bc21f9566ff92f",
+      "occupied_cell_count": 1221,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 54,
+          "train_points": 3776,
+          "heldout_points": 3648,
+          "heldout_points_in_shared_cells": 228
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 54,
+          "train_points": 3648,
+          "heldout_points": 3776,
+          "heldout_points_in_shared_cells": 249
+        }
+      ]
+    },
+    {
+      "case_id": "section-0010",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0010.npy",
+      "input_sha256": "fbb99ccb5a03b630f211732b4b63f00f16285837884cea6bad592bae6b20ddee",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0010.json",
+      "record_sha256": "cbf24538ed8494c9e936e5bd8ea9ee1fc6ed642d4dc1fc26dd8e250d0d3fd428",
+      "occupied_cell_count": 680,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 35,
+          "train_points": 1914,
+          "heldout_points": 1914,
+          "heldout_points_in_shared_cells": 126
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 35,
+          "train_points": 1914,
+          "heldout_points": 1914,
+          "heldout_points_in_shared_cells": 118
+        }
+      ]
+    },
+    {
+      "case_id": "section-0011",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0011.npy",
+      "input_sha256": "69ce538162ff4b1d03456275cd0accbfcfdb269fbfb06316bb22d7864b8b55d8",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0011.json",
+      "record_sha256": "fecd12e5ca87e2217a70e8fcfe9ed6158cb032e4bd63598f52a3e2d81a094d37",
+      "occupied_cell_count": 682,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 28,
+          "train_points": 1947,
+          "heldout_points": 1881,
+          "heldout_points_in_shared_cells": 97
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 28,
+          "train_points": 1881,
+          "heldout_points": 1947,
+          "heldout_points_in_shared_cells": 122
+        }
+      ]
+    },
+    {
+      "case_id": "section-0012",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0012.npy",
+      "input_sha256": "c0e966a9cf610e0f4c5061f7839680d2404940585420a8b82ada1848dd2b5e25",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0012.json",
+      "record_sha256": "9303283fca8b746b5a657d1751b69604f1ee75d992fde10a685a4561b1e37286",
+      "occupied_cell_count": 1415,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 75,
+          "train_points": 3721,
+          "heldout_points": 3715,
+          "heldout_points_in_shared_cells": 295
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 75,
+          "train_points": 3715,
+          "heldout_points": 3721,
+          "heldout_points_in_shared_cells": 255
+        }
+      ]
+    },
+    {
+      "case_id": "section-0013",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0013.npy",
+      "input_sha256": "cd6bc9646cdd1e3fa5cc9bf5b4d99c4aa9b052b4a94e49c4b3a713da0babb6d2",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0013.json",
+      "record_sha256": "ee6a390142397ea2f197130488276ae6cc5e550664b2a62dae032c5a38d9962d",
+      "occupied_cell_count": 1395,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 65,
+          "train_points": 3713,
+          "heldout_points": 3715,
+          "heldout_points_in_shared_cells": 230
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 65,
+          "train_points": 3715,
+          "heldout_points": 3713,
+          "heldout_points_in_shared_cells": 284
+        }
+      ]
+    },
+    {
+      "case_id": "section-0014",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0014.npy",
+      "input_sha256": "8732902699af8e128313ac2685829ccf267439e5224c3176b9e476ec99d012e1",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0014.json",
+      "record_sha256": "6e7f509c4458451d2ddec876b044f8648b4ffcd6c70f243c3256f2a48bd666dd",
+      "occupied_cell_count": 798,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 45,
+          "train_points": 1913,
+          "heldout_points": 1908,
+          "heldout_points_in_shared_cells": 177
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 45,
+          "train_points": 1908,
+          "heldout_points": 1913,
+          "heldout_points_in_shared_cells": 123
+        }
+      ]
+    },
+    {
+      "case_id": "section-0015",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0015.npy",
+      "input_sha256": "9f4ca56f0472c4e6284dbf482e74e75c13f73d1b4368737792e3dfe98200db56",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0015.json",
+      "record_sha256": "8980770093e9c7997ed3e14209f5b96f3c8408cef3d653dffa0aaf3205c266a2",
+      "occupied_cell_count": 799,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 32,
+          "train_points": 1943,
+          "heldout_points": 1913,
+          "heldout_points_in_shared_cells": 99
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 32,
+          "train_points": 1913,
+          "heldout_points": 1943,
+          "heldout_points_in_shared_cells": 111
+        }
+      ]
+    },
+    {
+      "case_id": "section-0016",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0016.npy",
+      "input_sha256": "3ce73f8deb03fd76e436364297bddfb902bc8718bbeee569fae70d49a7b139e7",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0016.json",
+      "record_sha256": "b7de0b06f5c4836404639b15a99ed6fc335caf00e5ab958226f556a7e9ac0b79",
+      "occupied_cell_count": 1421,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 64,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 215
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 64,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 217
+        }
+      ]
+    },
+    {
+      "case_id": "section-0017",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0017.npy",
+      "input_sha256": "1fa6592091f244a940a96719da66b1c4a43078bd0eb123535996020847196a07",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0017.json",
+      "record_sha256": "20028b12d169950067117ed7ce6b299da8737dd41b705f24a103061de477b78b",
+      "occupied_cell_count": 1423,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 58,
+          "train_points": 3776,
+          "heldout_points": 3648,
+          "heldout_points_in_shared_cells": 218
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 58,
+          "train_points": 3648,
+          "heldout_points": 3776,
+          "heldout_points_in_shared_cells": 234
+        }
+      ]
+    },
+    {
+      "case_id": "section-0018",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0018.npy",
+      "input_sha256": "32596045328a125d7e28f5016ea714e01de7d154705e9117fd8482102d0da61e",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0018.json",
+      "record_sha256": "ac114bbb9d9cdc9f7d9715483d444cb4a845d77dff2574036e9db70a8ddb0241",
+      "occupied_cell_count": 781,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 36,
+          "train_points": 1914,
+          "heldout_points": 1947,
+          "heldout_points_in_shared_cells": 120
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 36,
+          "train_points": 1947,
+          "heldout_points": 1914,
+          "heldout_points_in_shared_cells": 118
+        }
+      ]
+    },
+    {
+      "case_id": "section-0019",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0019.npy",
+      "input_sha256": "32b24fe1e507bd98dabb30490f6cd6340ae7d117617f47d459709563737d1270",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0019.json",
+      "record_sha256": "6d4748b8eaa52454179aee11c73950a3761410a543f79e88640d8f72b2a8a869",
+      "occupied_cell_count": 787,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 33,
+          "train_points": 1944,
+          "heldout_points": 1884,
+          "heldout_points_in_shared_cells": 102
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 33,
+          "train_points": 1884,
+          "heldout_points": 1944,
+          "heldout_points_in_shared_cells": 113
+        }
+      ]
+    },
+    {
+      "case_id": "section-0020",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0020.npy",
+      "input_sha256": "407a7fa4855b6f3f3de5c006fad5346c9f298cff7429257581f298fe131bde06",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0020.json",
+      "record_sha256": "5be2af89bc24eada28d4ba9769b6cdca5fa7a66fd6ab5c3bbf5b2c8cbbb1bbe9",
+      "occupied_cell_count": 1616,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 69,
+          "train_points": 3704,
+          "heldout_points": 3715,
+          "heldout_points_in_shared_cells": 230
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 69,
+          "train_points": 3715,
+          "heldout_points": 3704,
+          "heldout_points_in_shared_cells": 238
+        }
+      ]
+    },
+    {
+      "case_id": "section-0021",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0021.npy",
+      "input_sha256": "3f6cf8716a391d4babdcd603000236b2e88ded8af3fb3c3ac3ae35691f0dd7e8",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0021.json",
+      "record_sha256": "e1f1f978477e817c39fb4551967ab6b8c6f3679e22cc0ad99029471eba87b84f",
+      "occupied_cell_count": 1615,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 79,
+          "train_points": 3718,
+          "heldout_points": 3713,
+          "heldout_points_in_shared_cells": 245
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 79,
+          "train_points": 3713,
+          "heldout_points": 3718,
+          "heldout_points_in_shared_cells": 282
+        }
+      ]
+    },
+    {
+      "case_id": "section-0022",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0022.npy",
+      "input_sha256": "ade5649e756e75184a935c585e168030d9dae4cc843d20323db25ffc554f58a9",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0022.json",
+      "record_sha256": "f3004a3f721d4f4f063f84f4b0f5d59a3f6ae3646fcdb55d9b83985e40bc5e03",
+      "occupied_cell_count": 904,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 37,
+          "train_points": 1918,
+          "heldout_points": 1908,
+          "heldout_points_in_shared_cells": 123
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 37,
+          "train_points": 1908,
+          "heldout_points": 1918,
+          "heldout_points_in_shared_cells": 120
+        }
+      ]
+    },
+    {
+      "case_id": "section-0023",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0023.npy",
+      "input_sha256": "76763a312fef021dffba6663ccb3b4fc8293d83883084562eb5f111828ae05a4",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0023.json",
+      "record_sha256": "22c1727b36f1827cd2b6909ba65210960c8ded0c2b4e69fd5379698c18e88010",
+      "occupied_cell_count": 904,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 41,
+          "train_points": 1914,
+          "heldout_points": 1915,
+          "heldout_points_in_shared_cells": 93
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 41,
+          "train_points": 1915,
+          "heldout_points": 1914,
+          "heldout_points_in_shared_cells": 145
+        }
+      ]
+    },
+    {
+      "case_id": "section-0024",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0024.npy",
+      "input_sha256": "85a2a5515eec4649958fa553a5430cc7de09246b9b81e9b4026d52f2508ea68d",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0024.json",
+      "record_sha256": "8eb87b766795a84f7ce96ff7cabba904374cc8e03140060122b17761923d6a52",
+      "occupied_cell_count": 1385,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 60,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 213
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 60,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 233
+        }
+      ]
+    },
+    {
+      "case_id": "section-0025",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0025.npy",
+      "input_sha256": "3cf44b5eadf59a19bcaebec5289adcb4a75adea8018a432cf446810330bc480d",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0025.json",
+      "record_sha256": "8f880f88930977c386f710482883ac7cda624fe35906f5a3b520d3a2f3f703bd",
+      "occupied_cell_count": 1371,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 60,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 217
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 60,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 216
+        }
+      ]
+    },
+    {
+      "case_id": "section-0026",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0026.npy",
+      "input_sha256": "fb134f355e751303c87390d8db6b1dfe434e9b20e70fd6679bda62033e86d26b",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0026.json",
+      "record_sha256": "71cc8539663cd323a3a8bab19510f9311ee63ed26667e0328b001b9d0c121252",
+      "occupied_cell_count": 810,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 39,
+          "train_points": 1938,
+          "heldout_points": 1972,
+          "heldout_points_in_shared_cells": 117
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 39,
+          "train_points": 1972,
+          "heldout_points": 1938,
+          "heldout_points_in_shared_cells": 135
+        }
+      ]
+    },
+    {
+      "case_id": "section-0027",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0027.npy",
+      "input_sha256": "75935f051966c692a4a4410db29aa64d7899b140810b13923fac8fefb53faecb",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0027.json",
+      "record_sha256": "9cd2ede6d52ee0a667c9b13204ab892ba5ffd88bf5b228ecdeee853d415f8f47",
+      "occupied_cell_count": 811,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 31,
+          "train_points": 1985,
+          "heldout_points": 1959,
+          "heldout_points_in_shared_cells": 93
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 31,
+          "train_points": 1959,
+          "heldout_points": 1985,
+          "heldout_points_in_shared_cells": 112
+        }
+      ]
+    },
+    {
+      "case_id": "section-0028",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0028.npy",
+      "input_sha256": "347749eb5d4798682af1b86d360ed7b351c376ff33d0cd4030b531f7fc684d4c",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0028.json",
+      "record_sha256": "b8c8a66d5d5e96edc106af78feb4418f7d08a24427a02d0b97f20dfeec71ce7f",
+      "occupied_cell_count": 1533,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 73,
+          "train_points": 3733,
+          "heldout_points": 3702,
+          "heldout_points_in_shared_cells": 238
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 73,
+          "train_points": 3702,
+          "heldout_points": 3733,
+          "heldout_points_in_shared_cells": 255
+        }
+      ]
+    },
+    {
+      "case_id": "section-0029",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0029.npy",
+      "input_sha256": "5cc160e0ba04049a2adee74f8c962b8f2b39119c0e7f37a8d5fb62adaa31e5ff",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0029.json",
+      "record_sha256": "dd10d8102a5948817e6e717f037458f612d877f299622b93a41b207636bee52e",
+      "occupied_cell_count": 1551,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 75,
+          "train_points": 3749,
+          "heldout_points": 3694,
+          "heldout_points_in_shared_cells": 228
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 75,
+          "train_points": 3694,
+          "heldout_points": 3749,
+          "heldout_points_in_shared_cells": 276
+        }
+      ]
+    },
+    {
+      "case_id": "section-0030",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0030.npy",
+      "input_sha256": "23353a804e5a410a86ecae6da2093bdb5bd3700b916b7a24c937f24b0621996c",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0030.json",
+      "record_sha256": "f7c7c458ae89f564475e3cbfe533f38a5b7b26c5436f08f9c4b735ac227e3771",
+      "occupied_cell_count": 912,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 43,
+          "train_points": 1977,
+          "heldout_points": 1967,
+          "heldout_points_in_shared_cells": 132
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 43,
+          "train_points": 1967,
+          "heldout_points": 1977,
+          "heldout_points_in_shared_cells": 144
+        }
+      ]
+    },
+    {
+      "case_id": "section-0031",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0031.npy",
+      "input_sha256": "29261447059c947eeb3f937db0b41c8ac75c040355d7139ff5877ea9abf71e81",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0031.json",
+      "record_sha256": "df925af4a4e459ab988a8eaf80982e0f8bdfe1966788510296c15321d0eb652b",
+      "occupied_cell_count": 930,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 44,
+          "train_points": 1977,
+          "heldout_points": 1966,
+          "heldout_points_in_shared_cells": 114
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 44,
+          "train_points": 1966,
+          "heldout_points": 1977,
+          "heldout_points_in_shared_cells": 150
+        }
+      ]
+    },
+    {
+      "case_id": "section-0032",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0032.npy",
+      "input_sha256": "8c735293133e854c0f80f94712939e9636b104035bbd7d36085451cd70028911",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0032.json",
+      "record_sha256": "75f8e8b7d059230aadc70d0f0ce7ef5180740ce700538468eebe10a3bbf6cb93",
+      "occupied_cell_count": 1450,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 65,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 234
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 65,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 198
+        }
+      ]
+    },
+    {
+      "case_id": "section-0033",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0033.npy",
+      "input_sha256": "b6c94019b1345a61570a6a7c0bc065bf2aee432568a6190aba0b28a9fe0e9145",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0033.json",
+      "record_sha256": "5602a6e52ea9e49e6ed78155c31286b4f359a137f43ed723647858e4f47f66f7",
+      "occupied_cell_count": 1447,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 67,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 213
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 67,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 232
+        }
+      ]
+    },
+    {
+      "case_id": "section-0034",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0034.npy",
+      "input_sha256": "66870979cbc6714ad23b445395e3a587cde72c278f5aa06658efa8b1c0d1b561",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0034.json",
+      "record_sha256": "ad650328211a17822770089a26fac819a4ce24d11a13aea81de191f0606aba40",
+      "occupied_cell_count": 866,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 36,
+          "train_points": 1938,
+          "heldout_points": 2006,
+          "heldout_points_in_shared_cells": 133
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 36,
+          "train_points": 2006,
+          "heldout_points": 1938,
+          "heldout_points_in_shared_cells": 103
+        }
+      ]
+    },
+    {
+      "case_id": "section-0035",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0035.npy",
+      "input_sha256": "630ca398f30f4c245f181fe45c31c792e759d582f895f480cd18b964113b7be0",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0035.json",
+      "record_sha256": "73d54928a897795f1fbf214900b6296a8c40ebf3385a09b7ee2389bde4437d8c",
+      "occupied_cell_count": 861,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 33,
+          "train_points": 2006,
+          "heldout_points": 1938,
+          "heldout_points_in_shared_cells": 93
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 33,
+          "train_points": 1938,
+          "heldout_points": 2006,
+          "heldout_points_in_shared_cells": 108
+        }
+      ]
+    },
+    {
+      "case_id": "section-0036",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0036.npy",
+      "input_sha256": "625fd2fffef4664166af62ba19a861f32da14c4f1dee559f08c440bb4e58ac03",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0036.json",
+      "record_sha256": "90b4353a4e4e4e0151d747a5d7512f7bdf717f671431916178ec872c44d5952c",
+      "occupied_cell_count": 1644,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 78,
+          "train_points": 3740,
+          "heldout_points": 3721,
+          "heldout_points_in_shared_cells": 261
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 78,
+          "train_points": 3721,
+          "heldout_points": 3740,
+          "heldout_points_in_shared_cells": 223
+        }
+      ]
+    },
+    {
+      "case_id": "section-0037",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0037.npy",
+      "input_sha256": "436e9e1b6f65106db4efd3eff5cd8116ab89f280797161d170746e7f70d4bf00",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0037.json",
+      "record_sha256": "44f2dd1f840eabfc97f207c2fda8b133ccc57d627c8462de3aa1fe633b39a421",
+      "occupied_cell_count": 1682,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 78,
+          "train_points": 3747,
+          "heldout_points": 3748,
+          "heldout_points_in_shared_cells": 243
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 78,
+          "train_points": 3748,
+          "heldout_points": 3747,
+          "heldout_points_in_shared_cells": 231
+        }
+      ]
+    },
+    {
+      "case_id": "section-0038",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0038.npy",
+      "input_sha256": "7721b24b7a055b4f12b96e960cfb3386482af3bca7c4430437a49f0da073a8c4",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0038.json",
+      "record_sha256": "155913bebf176c7db6118b03ff5beec332cb4dbaa7b3a50f47977f69010eed96",
+      "occupied_cell_count": 991,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 43,
+          "train_points": 1985,
+          "heldout_points": 1994,
+          "heldout_points_in_shared_cells": 139
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 43,
+          "train_points": 1994,
+          "heldout_points": 1985,
+          "heldout_points_in_shared_cells": 137
+        }
+      ]
+    },
+    {
+      "case_id": "section-0039",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0039.npy",
+      "input_sha256": "8f670d3912b1a383cccada2c2c58f186d43895411c19e49a521a5cbda1a28852",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0039.json",
+      "record_sha256": "0b130d8e8ef6ce928b0731dce122c76f78327d03e1d1567049129d3109a4ecc4",
+      "occupied_cell_count": 990,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 44,
+          "train_points": 1994,
+          "heldout_points": 1974,
+          "heldout_points_in_shared_cells": 110
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 44,
+          "train_points": 1974,
+          "heldout_points": 1994,
+          "heldout_points_in_shared_cells": 136
+        }
+      ]
+    },
+    {
+      "case_id": "section-0040",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0040.npy",
+      "input_sha256": "9848af2ae33b051b89b550b8a430cf4d0828b54ae5de1d0af753269673aa89f9",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0040.json",
+      "record_sha256": "19f20605f7826b66264479219a8be2c50ea1298df40acf690e1066008c3ef4e6",
+      "occupied_cell_count": 767,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 31,
+          "train_points": 3648,
+          "heldout_points": 3820,
+          "heldout_points_in_shared_cells": 235
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 31,
+          "train_points": 3820,
+          "heldout_points": 3648,
+          "heldout_points_in_shared_cells": 220
+        }
+      ]
+    },
+    {
+      "case_id": "section-0041",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0041.npy",
+      "input_sha256": "9a973a1d1d63ab578b96409193882c346addc791dfbb875504cefac01ccf8105",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0041.json",
+      "record_sha256": "dc6fb3fcb2c11722f6e1dcb79d73f9e4ed0cbcc87e3f2a5c0c081824f67a1821",
+      "occupied_cell_count": 766,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 31,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 200
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 31,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 238
+        }
+      ]
+    },
+    {
+      "case_id": "section-0042",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0042.npy",
+      "input_sha256": "fea3d224ccda497c715cad9a8f1f2c8e7d92964d190a2a26d30b158c11eeedc4",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0042.json",
+      "record_sha256": "e47cae700269a0ce778aced2a9b320826ba84cf2f691e0e8ecce279fa7d6cb55",
+      "occupied_cell_count": 416,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 19,
+          "train_points": 1888,
+          "heldout_points": 1824,
+          "heldout_points_in_shared_cells": 130
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 19,
+          "train_points": 1824,
+          "heldout_points": 1888,
+          "heldout_points_in_shared_cells": 138
+        }
+      ]
+    },
+    {
+      "case_id": "section-0043",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0043.npy",
+      "input_sha256": "c5e67dd02d35f4245ed962a397c7b6cd9b42d0f7921299660aec15a65116efe0",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0043.json",
+      "record_sha256": "83a61eb53d13283b75ff888426253679ecd76aa21139b36ba15a87368afed5f5",
+      "occupied_cell_count": 416,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 18,
+          "train_points": 1920,
+          "heldout_points": 1824,
+          "heldout_points_in_shared_cells": 106
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 18,
+          "train_points": 1824,
+          "heldout_points": 1920,
+          "heldout_points_in_shared_cells": 121
+        }
+      ]
+    },
+    {
+      "case_id": "section-0044",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0044.npy",
+      "input_sha256": "b4f30a5af999d1facf131128f13a234e443de524dc37b9f6c5e94ac50ff64b03",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0044.json",
+      "record_sha256": "405fb7e69b6b0782c1e556cbe18d180a6c89139b9bee362f7ef592d2d013cda9",
+      "occupied_cell_count": 889,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 43,
+          "train_points": 3729,
+          "heldout_points": 3732,
+          "heldout_points_in_shared_cells": 289
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 43,
+          "train_points": 3732,
+          "heldout_points": 3729,
+          "heldout_points_in_shared_cells": 286
+        }
+      ]
+    },
+    {
+      "case_id": "section-0045",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0045.npy",
+      "input_sha256": "c5020c2694e42670dd7b528c345eb0ac782426f7acae8a94eda5f9361beabdea",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0045.json",
+      "record_sha256": "5070fd105d4fd74449f8e7b893059e9ee45b0b66c38dbe05d4c1c8aad05c5d6b",
+      "occupied_cell_count": 894,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 48,
+          "train_points": 3725,
+          "heldout_points": 3726,
+          "heldout_points_in_shared_cells": 263
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 48,
+          "train_points": 3726,
+          "heldout_points": 3725,
+          "heldout_points_in_shared_cells": 340
+        }
+      ]
+    },
+    {
+      "case_id": "section-0046",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0046.npy",
+      "input_sha256": "33af2c390877671a773c8c807f00c1d264f7b24be7d6f5abfb71562479131f02",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0046.json",
+      "record_sha256": "21e1736bb96a0627cb486731f9de4aea3d682273fc06422a8691994f43a54908",
+      "occupied_cell_count": 484,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 24,
+          "train_points": 1856,
+          "heldout_points": 1853,
+          "heldout_points_in_shared_cells": 124
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 24,
+          "train_points": 1853,
+          "heldout_points": 1856,
+          "heldout_points_in_shared_cells": 164
+        }
+      ]
+    },
+    {
+      "case_id": "section-0047",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0047.npy",
+      "input_sha256": "05d86f65ed3d4be98007a2ba74dc311cd899eaec177ef36af09a4fa39e18cb3d",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0047.json",
+      "record_sha256": "27c1ddfbc34be2e95ad249319798bcfc291d85e3fd0f794c02ce85ade7ae439b",
+      "occupied_cell_count": 483,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 27,
+          "train_points": 1859,
+          "heldout_points": 1864,
+          "heldout_points_in_shared_cells": 170
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 27,
+          "train_points": 1864,
+          "heldout_points": 1859,
+          "heldout_points_in_shared_cells": 173
+        }
+      ]
+    },
+    {
+      "case_id": "section-0048",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0048.npy",
+      "input_sha256": "8d1a8dd04592ca4463566bf213658d44222030291a7652618cca88febdf8479f",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0048.json",
+      "record_sha256": "f87003a54f09da6db3f04a27b9164a59950aa2acc72e0a72b6a39d4dcb783c1a",
+      "occupied_cell_count": 769,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 35,
+          "train_points": 3732,
+          "heldout_points": 3692,
+          "heldout_points_in_shared_cells": 216
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 35,
+          "train_points": 3692,
+          "heldout_points": 3732,
+          "heldout_points_in_shared_cells": 235
+        }
+      ]
+    },
+    {
+      "case_id": "section-0049",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0049.npy",
+      "input_sha256": "38d1292905becf92bf0267aa5cac8ada90fc4aefefce31905ec5c8096ff243e6",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0049.json",
+      "record_sha256": "697065722a7d8a106289057eb61b64e936a9ad312961b34f8331f307c561e01d",
+      "occupied_cell_count": 773,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 35,
+          "train_points": 3840,
+          "heldout_points": 3648,
+          "heldout_points_in_shared_cells": 212
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 35,
+          "train_points": 3648,
+          "heldout_points": 3840,
+          "heldout_points_in_shared_cells": 205
+        }
+      ]
+    },
+    {
+      "case_id": "section-0050",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0050.npy",
+      "input_sha256": "eb7621d0da9fd35f7b3e0f12a268f72001cc1ebf4ff47c9e066f9ecf921d9cc5",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0050.json",
+      "record_sha256": "ac04bedbd74c0bc8f2cd6171d82c7798fddf49889dd0d5e89410d8aedb54a771",
+      "occupied_cell_count": 433,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 22,
+          "train_points": 1824,
+          "heldout_points": 1888,
+          "heldout_points_in_shared_cells": 108
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 22,
+          "train_points": 1888,
+          "heldout_points": 1824,
+          "heldout_points_in_shared_cells": 120
+        }
+      ]
+    },
+    {
+      "case_id": "section-0051",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0051.npy",
+      "input_sha256": "a75ff0c5242af775a53d66b93a40deeb854e8c1a32eae56e9b8fd5dfdd99dbfb",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0051.json",
+      "record_sha256": "5357b3089104b7c2752e5989fcbe97abb793bbe2c234df7d7e4bf263fcd2dfc8",
+      "occupied_cell_count": 433,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 23,
+          "train_points": 1920,
+          "heldout_points": 1824,
+          "heldout_points_in_shared_cells": 130
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 23,
+          "train_points": 1824,
+          "heldout_points": 1920,
+          "heldout_points_in_shared_cells": 127
+        }
+      ]
+    },
+    {
+      "case_id": "section-0052",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0052.npy",
+      "input_sha256": "cc90c7defb401e491692023261dff2ba7c226fba02a90788cd82eba005bc8e66",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0052.json",
+      "record_sha256": "135fd63e6293276dd89a9bf778b195125af8e66e813b16cd9949fa26595163c5",
+      "occupied_cell_count": 935,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 48,
+          "train_points": 3708,
+          "heldout_points": 3723,
+          "heldout_points_in_shared_cells": 286
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 48,
+          "train_points": 3723,
+          "heldout_points": 3708,
+          "heldout_points_in_shared_cells": 298
+        }
+      ]
+    },
+    {
+      "case_id": "section-0053",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0053.npy",
+      "input_sha256": "86cea39ae81ac0d76ca01f779c81dbd4087f576e0d51f9f24c273f5c2a6ad183",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0053.json",
+      "record_sha256": "81dc4ba2ff86a775b3920d4b171276d2f125c207ac3a3f4ee56c87c4d8ad4c7c",
+      "occupied_cell_count": 956,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 53,
+          "train_points": 3720,
+          "heldout_points": 3708,
+          "heldout_points_in_shared_cells": 263
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 53,
+          "train_points": 3708,
+          "heldout_points": 3720,
+          "heldout_points_in_shared_cells": 349
+        }
+      ]
+    },
+    {
+      "case_id": "section-0054",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0054.npy",
+      "input_sha256": "4befffe02069d188ff88293a335d6a67fd77c14113d76f54908e7dd09d91b6e1",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0054.json",
+      "record_sha256": "5a541845835dafc981155eb74c196b198d089c5bf606c8abe9afa226abb92434",
+      "occupied_cell_count": 511,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 27,
+          "train_points": 1824,
+          "heldout_points": 1826,
+          "heldout_points_in_shared_cells": 116
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 27,
+          "train_points": 1826,
+          "heldout_points": 1824,
+          "heldout_points_in_shared_cells": 148
+        }
+      ]
+    },
+    {
+      "case_id": "section-0055",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0055.npy",
+      "input_sha256": "d07ca3ad870687ccd1df7026541f88c14c9b2e50e03e37fa0fcb9c205d888a7e",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0055.json",
+      "record_sha256": "e1b1c0ba72e1fa0e9701fbf0584e5e60260eba9a542206906700751ca75a504c",
+      "occupied_cell_count": 521,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 30,
+          "train_points": 1850,
+          "heldout_points": 1848,
+          "heldout_points_in_shared_cells": 160
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 30,
+          "train_points": 1848,
+          "heldout_points": 1850,
+          "heldout_points_in_shared_cells": 147
+        }
+      ]
+    },
+    {
+      "case_id": "section-0056",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0056.npy",
+      "input_sha256": "4163dd815838d546aaebecfe4a3e930ac854ac4e264655f6be711feb4e3742a5",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0056.json",
+      "record_sha256": "dbbd01c4537a710a4955ccbcf5ae955b4080a71d1e23fdd462594113176a0be7",
+      "occupied_cell_count": 1174,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 57,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 240
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 57,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 236
+        }
+      ]
+    },
+    {
+      "case_id": "section-0057",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0057.npy",
+      "input_sha256": "0b4046074aa55b60c53c6f34bd30b5d56089364304ee26ecbd2927ef7fedcf8a",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0057.json",
+      "record_sha256": "faa0d51861435f1b0c2091764d4f0ccdb00b49c7c4e98d845addea1d044da45b",
+      "occupied_cell_count": 1174,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 56,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 200
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 56,
+          "train_points": 3712,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 217
+        }
+      ]
+    },
+    {
+      "case_id": "section-0058",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0058.npy",
+      "input_sha256": "5ff1b30447b302a91b91b738c80a0d0d440b4fe6280353351ab43bb73d503733",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0058.json",
+      "record_sha256": "9e67e852cafde72f2aa203fc38c92a4905f4eff2be9dcd8318280197226b3780",
+      "occupied_cell_count": 603,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 31,
+          "train_points": 1888,
+          "heldout_points": 1824,
+          "heldout_points_in_shared_cells": 134
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 31,
+          "train_points": 1824,
+          "heldout_points": 1888,
+          "heldout_points_in_shared_cells": 123
+        }
+      ]
+    },
+    {
+      "case_id": "section-0059",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0059.npy",
+      "input_sha256": "1ce3311c9396f7cde32fc9c480e681c223204ecaf55e95404a4d709035624aed",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0059.json",
+      "record_sha256": "29fe862430145de95cc89825786970553eaa0813dbe657a71283a3c19bd2b2e0",
+      "occupied_cell_count": 609,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 29,
+          "train_points": 1856,
+          "heldout_points": 1856,
+          "heldout_points_in_shared_cells": 102
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 29,
+          "train_points": 1856,
+          "heldout_points": 1856,
+          "heldout_points_in_shared_cells": 106
+        }
+      ]
+    },
+    {
+      "case_id": "section-0060",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0060.npy",
+      "input_sha256": "46f05c825c1d64e096c8032d68a51182be2601c594eca259cbfd8e3c0bae3574",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0060.json",
+      "record_sha256": "9869113b97effe840f8ab15ab5f40045f443b1db43f362a94cf94def59948fb4",
+      "occupied_cell_count": 1387,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 69,
+          "train_points": 3716,
+          "heldout_points": 3739,
+          "heldout_points_in_shared_cells": 271
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 69,
+          "train_points": 3739,
+          "heldout_points": 3716,
+          "heldout_points_in_shared_cells": 264
+        }
+      ]
+    },
+    {
+      "case_id": "section-0061",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0061.npy",
+      "input_sha256": "a6125c047f481a89e3fd1e86ca9abc21df0a8ca648a40bd9fb439fdf5743354b",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0061.json",
+      "record_sha256": "8129470ac140df20cffbd19a7314b489ceb2136bb0c1e6289c2beee8e9200916",
+      "occupied_cell_count": 1417,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 67,
+          "train_points": 3734,
+          "heldout_points": 3712,
+          "heldout_points_in_shared_cells": 280
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 67,
+          "train_points": 3712,
+          "heldout_points": 3734,
+          "heldout_points_in_shared_cells": 235
+        }
+      ]
+    },
+    {
+      "case_id": "section-0062",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0062.npy",
+      "input_sha256": "370c9fdd5a85ae2bf7f04a868d3a78c7acd7309e837cca6b5d7252af4766f719",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0062.json",
+      "record_sha256": "90c7aad9ef8c9816c55cd2f52d256fcaf3f569d791579a4d4b8cf9c04002f03f",
+      "occupied_cell_count": 732,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 32,
+          "train_points": 1861,
+          "heldout_points": 1874,
+          "heldout_points_in_shared_cells": 122
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 32,
+          "train_points": 1874,
+          "heldout_points": 1861,
+          "heldout_points_in_shared_cells": 139
+        }
+      ]
+    },
+    {
+      "case_id": "section-0063",
+      "input_path": "data/inputs/section-model-diagnostic-v1-20260926/section-0063.npy",
+      "input_sha256": "fb22f7f1c79e6f96aa76c7deae952a7a3ce15913bf6a75b59590d42d081ffd40",
+      "record_path": ".runtime/experiments/section-model-diagnostic-v1-20260926/records/section-0063.json",
+      "record_sha256": "2512ed3ac2fad9f1024a9ecaf558da784c7017ba73d873cae087161a41c97ecd",
+      "occupied_cell_count": 734,
+      "folds": [
+        {
+          "train_slices": [
+            0,
+            2,
+            4
+          ],
+          "heldout_slices": [
+            1,
+            3,
+            5
+          ],
+          "shared_cells": 36,
+          "train_points": 1848,
+          "heldout_points": 1846,
+          "heldout_points_in_shared_cells": 177
+        },
+        {
+          "train_slices": [
+            1,
+            3,
+            5
+          ],
+          "heldout_slices": [
+            0,
+            2,
+            4
+          ],
+          "shared_cells": 36,
+          "train_points": 1846,
+          "heldout_points": 1848,
+          "heldout_points_in_shared_cells": 89
+        }
+      ]
+    }
+  ],
+  "report_change": {
+    "path": "docs/experiments/2026-09-26-section-model-diagnostic.md",
+    "before_sha256": "788aafb1d134e64a5cf9ba8125a78452d3a8e994013abcddc85c1a95406ca79a",
+    "after_sha256": "f8bab14076b33fb214e1f1a68c796839eb9b31b590829fb2460aecf080124a41",
+    "scope": "Only heldout/preprocessing clarification and next-step paragraph"
+  },
+  "frozen_method_or_results_modified": false
+}

@@ -1,0 +1,67 @@
+{
+  "run_id": "section-model-diagnostic-v1-20260926",
+  "schema_version": "section-model-paired-controls-v1",
+  "scope": "64 new analytic paired conditions; supplied point-set grouping, no RGB/DA3/physical-identity claim. Both voxel-center and equal-voxel raw-point diagnostic representations. No automatic axis or acceptance rule.",
+  "generation": {
+    "voxel_m": 0.02,
+    "length_voxels": 60,
+    "angular_samples": 64,
+    "axial_samples": 128,
+    "noise_sigmas_voxels": [
+      0.0,
+      0.15
+    ],
+    "visibility": [
+      "full",
+      "half"
+    ],
+    "phases_voxels": [
+      [
+        0.23,
+        0.37,
+        0.41
+      ],
+      [
+        0.73,
+        0.87,
+        0.91
+      ]
+    ],
+    "rotation_degrees": [
+      17.0,
+      -11.0,
+      29.0
+    ],
+    "seed": 26092026,
+    "families": [
+      "circle",
+      "ellipse_close_extent",
+      "ellipse_wide_extent",
+      "two_circles_close",
+      "two_circles_wide",
+      "flat_strip",
+      "folded_sheet",
+      "corrugated_sheet"
+    ]
+  },
+  "method": {
+    "axial_slices": 6,
+    "axial_quantiles": [
+      0.05,
+      0.95
+    ],
+    "maximum_nfev": 80,
+    "ellipse_seed_angles": 64,
+    "ellipse_refine_steps": 12,
+    "minimum_radius_voxels": 0.25,
+    "maximum_radius_span_fraction": 0.25,
+    "minimum_fit_points": 12
+  },
+  "interpretation_limits": [
+    "Parameters estimated on alternate axial slices; global PCA frame uses all input, so this is conditional cross-section prediction, not fully held-out reconstruction.",
+    "Model fit rankings are not classifications, likelihood ratios or calibrated confidence. Nonconverged/boundary fits remain visible.",
+    "An empty point-space region is unobserved, not measured free space. No tube/background identity is inferred.",
+    "Noise, crop and phase variants are paired conditions, not independent objects. Old 16 positives never choose thresholds.",
+    "Raw points are weighted inversely by occupied-cell population after exact deduplication. Both representations use the same center-based PCA frame."
+  ]
+}
