@@ -1,0 +1,13 @@
+{
+  "state": "passed",
+  "run_id": "rod-heldout-view-oracle-v1-20260926",
+  "prepared_sha256": "4d586ba53ed28ef1bb1e443ac3ea0cace103348c14a39489c074efee14a1d174",
+  "evaluation_sha256": "a45cca717d4027722c9fdca122118e25c958218a6660b0c17d2987df90c32e4b",
+  "recomputed_rod_arm_rows": 240,
+  "recomputed_anchor_arm_rows": 480,
+  "normal_receipts_unchanged": true,
+  "estimated_arm_agrees_with_normal": true,
+  "old_exclusion_promotions": 0,
+  "audit_source_sha256": "446faa3f00c282f1089e077064617b9c34347d306e066703196b9a401107546d",
+  "scope": "Same frozen arithmetic replay and identity audit plus separate Sim3 projection invariance unit tests; not an independent implementation of the scorer"
+}

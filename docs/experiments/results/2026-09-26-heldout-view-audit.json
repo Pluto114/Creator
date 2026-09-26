@@ -1,0 +1,185 @@
+{
+  "state": "complete",
+  "audit_run_id": "rod-heldout-view-audit-v1-20260926",
+  "target_run_id": "rod-heldout-view-validation-v1-20260926",
+  "prepared_sha256": "0260b5f070c90fdd5370c83ec24b84c0e6a5fcec0efecaed37ae8690fee4179f",
+  "before_evaluation_sha256": "5bdaf92cf08de5cd096ce965de66276c80e7eb7fb9b45c4d3a5ff0873fc0251f",
+  "pre_recorded_at_utc": "2026-09-26T11:49:57.282853+00:00",
+  "post_recorded_at_utc": "2026-09-26T11:54:09.383475+00:00",
+  "inference_sha256": "06f7e479fe93e0be6fa324eaf2a04d80aeaa734155e6614e3ec78b86e5a638a9",
+  "evaluation_sha256": "d15555d356721f5e2d864edcc1186b749ac0370059277a5ee3cc3e9c9b463a8a",
+  "input_sha256": "4c89872c32a6114c38a167e2f4d883f3d58f4553a27214c424029fd5b466de1d",
+  "truth_sha256": "d32a20ac0622102f43a83927fac747fe6f44a6def3b48ce89aa0a9a8e740f212",
+  "physical_source_sha256": "42a2f23dfd91d46b2a2ce94741b2f76e5a6f0e6ebe946b1dbdddcce878c44012",
+  "source_and_inference_unchanged": true,
+  "unchanged_receipt_count": 421,
+  "task_count": 6,
+  "old_map_count": 30,
+  "pose_count": 60,
+  "joint_rod_count": 60,
+  "anchor_projection_slot_count": 120,
+  "unique_new_rgb_count": 6,
+  "nonemitted_R0_Pnull_count": 9,
+  "unchanged_geometry": true,
+  "no_old_rejection_promoted": true,
+  "matching_and_pose_inputs_replay_exact": true,
+  "sealed_pose_training_and_validation_recomputed": true,
+  "pnp_refitted_during_audit": false,
+  "old_physical_join_exact": true,
+  "new_truth_ID_and_RGB_chain_exact": true,
+  "old_world_frame_mesh_checks": [
+    {
+      "task_id": "rod-reference-bundle-v1-20260923-r01",
+      "parent_scene_id": "rod-reference-scenes-v1-20260923",
+      "old_mesh_sha256": "97bd845f0d46da5791d2f9e616d4b4993ad40cecc84ad396edd3891fe599694f",
+      "new_mesh_sha256": "97bd845f0d46da5791d2f9e616d4b4993ad40cecc84ad396edd3891fe599694f",
+      "arrays_equal": true
+    },
+    {
+      "task_id": "rod-reference-bundle-v1-20260923-r02",
+      "parent_scene_id": "rod-reference-scenes-v1-20260923",
+      "old_mesh_sha256": "cd45617cfc407be3cc9989ee41b8edcf7ec2effaec317ea3d18aeb1f2a00b637",
+      "new_mesh_sha256": "cd45617cfc407be3cc9989ee41b8edcf7ec2effaec317ea3d18aeb1f2a00b637",
+      "arrays_equal": true
+    },
+    {
+      "task_id": "rod-reference-bundle-v1-20260923-r03",
+      "parent_scene_id": "rod-reference-scenes-v1-20260923",
+      "old_mesh_sha256": "9621739fc3d0dd6e67a78ab20b5cbb748e48309fb51193b4ca1da894ecc6ed22",
+      "new_mesh_sha256": "9621739fc3d0dd6e67a78ab20b5cbb748e48309fb51193b4ca1da894ecc6ed22",
+      "arrays_equal": true
+    },
+    {
+      "task_id": "rod-height-bundle-v1-20260923-r01",
+      "parent_scene_id": "rod-height-scenes-v1-20260923",
+      "old_mesh_sha256": "97bd845f0d46da5791d2f9e616d4b4993ad40cecc84ad396edd3891fe599694f",
+      "new_mesh_sha256": "97bd845f0d46da5791d2f9e616d4b4993ad40cecc84ad396edd3891fe599694f",
+      "arrays_equal": true
+    },
+    {
+      "task_id": "rod-height-bundle-v1-20260923-r02",
+      "parent_scene_id": "rod-height-scenes-v1-20260923",
+      "old_mesh_sha256": "cd45617cfc407be3cc9989ee41b8edcf7ec2effaec317ea3d18aeb1f2a00b637",
+      "new_mesh_sha256": "cd45617cfc407be3cc9989ee41b8edcf7ec2effaec317ea3d18aeb1f2a00b637",
+      "arrays_equal": true
+    },
+    {
+      "task_id": "rod-height-bundle-v1-20260923-r03",
+      "parent_scene_id": "rod-height-scenes-v1-20260923",
+      "old_mesh_sha256": "9621739fc3d0dd6e67a78ab20b5cbb748e48309fb51193b4ca1da894ecc6ed22",
+      "new_mesh_sha256": "9621739fc3d0dd6e67a78ab20b5cbb748e48309fb51193b4ca1da894ecc6ed22",
+      "arrays_equal": true
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "rod-reference-bundle-v1-20260923-r01",
+      "case_id": "r01",
+      "parent": "rod-reference-bundle-v1-20260923",
+      "old_rgb_sha256": [
+        "4f78233770792c0239c2ec38f31e8eb6e3ed40cabd84caadaea3a78f704ba97a",
+        "a5f4be7d0a6b76e7515fa122e31f05437fc630561b83265c1a86d711eef73f72",
+        "8cd897b656d81a9b46711eeed5dd84a6a65cfa3e7940039f147c8535abdce340",
+        "aa91ceb0481cec8dec1df7ccb42cfffbafcd6b158bb40ae6c7631f4976008da6",
+        "603306a82f47c64ebb8ffceebf1d4b77a2d65612bec2e0d0ad5e99690a5b2754"
+      ],
+      "new_rgb_sha256": [
+        "84a08db43234f2dbf7374cc1c022b42f597890087ffa8900bb8a6e2e03f8b907",
+        "c34fdc7d555fa6128a1a2d956cd43286a71dfc13a799c67dad27fdb6212dbbc1"
+      ],
+      "matching_sha256": "40c165e4f8920061c5b53041eb266021108099e5021abb6ea39aaffcb03b71dd",
+      "query_sha256": "62a82d3a67dbe9a12a5aa3b19925ea4ef7d2170e5874d14ee17b508faf3e700a"
+    },
+    {
+      "task_id": "rod-reference-bundle-v1-20260923-r02",
+      "case_id": "r02",
+      "parent": "rod-reference-bundle-v1-20260923",
+      "old_rgb_sha256": [
+        "460da698ec26f7d1c2b0f023c4a6e7fbb8a0d2d2dc6df2f271e6682e89bbc880",
+        "418ae2afe22f6bfa65f90670ac5d7a0c3b8fc442ef3602a008e4293b52a10580",
+        "fc0df7a83a9788a16b8e87d4cabde98bdfa488a01c5e9d6c4d051ec7f46c902e",
+        "a7ef1a2df81ee7a1c6027c9f2cfda6c3c870ad1ee7153bf22aefe069f755e062",
+        "7cad05d961e35d55080e196511734d4cad2f140dc1c33bf388c02fa25c47e669"
+      ],
+      "new_rgb_sha256": [
+        "5eda1a62f4631c48514103ac1b0026950dd4fe9eb41308992295d8397b30dc34",
+        "3edfdc5f8e34317cb757356dc5ad29565e69e5841bbb366017e57b30f08dd7d2"
+      ],
+      "matching_sha256": "b917a1f3169a9dea17691b8af59446afdc27664279a62561fb46e8b0a5df0307",
+      "query_sha256": "4eb570f71950207892a3b8ed6f15bd59299e0c91b31027e88e4b4ed2e765c335"
+    },
+    {
+      "task_id": "rod-reference-bundle-v1-20260923-r03",
+      "case_id": "r03",
+      "parent": "rod-reference-bundle-v1-20260923",
+      "old_rgb_sha256": [
+        "7e8dbb22040100218b28197ce19c24acc4d55928e4a3a99ff3bed9c50436bc9a",
+        "d219053b0a9eec40d3db800a3f019c03177828859ef0d3b9823388a79c4f2d50",
+        "4b4b0c928dcfdf7d00dfb59fa2e90e29485f106e0980b7cf52c8e85276d465ef",
+        "5555858a4422baeb95d25ef0b2b8b65aaea3de8d8e3fb8d39f8b44852aaca55a",
+        "542c4dfc78f3aef0d9c38285b32d205d320b17718a44e0c7cfc238e6a3106f07"
+      ],
+      "new_rgb_sha256": [
+        "3336793d1c5b80aa429f93b3be084cdf55f52acd85670947ff9390c03cc389fd",
+        "8d2357dbaaf89bc68394855a2fbcf0afa3539be8c04e930ef235f2e951cc1f4c"
+      ],
+      "matching_sha256": "237a8cd75c9bb37feaea171ece235b65d38ec3ee39256f74b676278638a61719",
+      "query_sha256": "87a60b4905cdb7079e015f6c9c16f50f7fef3b3133bf37a77e9af92b589a2492"
+    },
+    {
+      "task_id": "rod-height-bundle-v1-20260923-r01",
+      "case_id": "r01",
+      "parent": "rod-height-bundle-v1-20260923",
+      "old_rgb_sha256": [
+        "c807f3f2b93e1fb39cf75c920254506adfbf6f76d5edb3515791ac2a4621e08f",
+        "43fde6d873dc074b46faccd37fa8d2575f45770aac4b4396b6547033d302988f",
+        "37396ab50295c9888c3d0c10d17f0a323aceec5f9e651df047f379e8e2c7cfbc",
+        "690e9cc2bbf64229c64d9823e32413732db8d62d9dab4a5306c961fb6002a645",
+        "902a96329d31410dba60d608852ee3176e4643c03d8217a6d2fe5c3766aa6dc1"
+      ],
+      "new_rgb_sha256": [
+        "84a08db43234f2dbf7374cc1c022b42f597890087ffa8900bb8a6e2e03f8b907",
+        "c34fdc7d555fa6128a1a2d956cd43286a71dfc13a799c67dad27fdb6212dbbc1"
+      ],
+      "matching_sha256": "0b240540bc3f34d3e5cfde329b33cc24233b3e66de33d8dab576dac2a751facd",
+      "query_sha256": "62a82d3a67dbe9a12a5aa3b19925ea4ef7d2170e5874d14ee17b508faf3e700a"
+    },
+    {
+      "task_id": "rod-height-bundle-v1-20260923-r02",
+      "case_id": "r02",
+      "parent": "rod-height-bundle-v1-20260923",
+      "old_rgb_sha256": [
+        "f62482d830614cef2e7100d399bb2b87d85c205b3c3e229b5aea1ceaa4997de4",
+        "97045bdbdb1e985523c76313fa10fd22bc4d635cf4057efd6db6cdd96a38d5fc",
+        "ee9d27fe100d251032710bd7c29e0d20facf6b7603aa2142783adb0d17d7e1c8",
+        "7d5c31c0c81420e7d8acdab7917ae0f07543bcced3f4f42b604daa5d21b404d6",
+        "50f2c07d7f1618cb7c413737c76a653b5214410f1b17b36aaa03ed0ca4b26a60"
+      ],
+      "new_rgb_sha256": [
+        "5eda1a62f4631c48514103ac1b0026950dd4fe9eb41308992295d8397b30dc34",
+        "3edfdc5f8e34317cb757356dc5ad29565e69e5841bbb366017e57b30f08dd7d2"
+      ],
+      "matching_sha256": "6dde433295cde5462b978a19870a68b6ec01cb278a0909f1aa61774197ecd565",
+      "query_sha256": "4eb570f71950207892a3b8ed6f15bd59299e0c91b31027e88e4b4ed2e765c335"
+    },
+    {
+      "task_id": "rod-height-bundle-v1-20260923-r03",
+      "case_id": "r03",
+      "parent": "rod-height-bundle-v1-20260923",
+      "old_rgb_sha256": [
+        "59487414a96492fb84a89425da45ff569cb79f3f2eb4be27fd5ea211f2337bf7",
+        "36103c267d22b30168782be22c5815d5fea3c0cb6fb5c99e1522b861f421183a",
+        "26d973465d99714a42014cf25ef011cc5864f142ea0c591157d601443d4edbc7",
+        "5383026f32e64d7a859ccfdd431c9076058e116d960de0e1e33d31b8dc0108a0",
+        "21551eabff327ae66dbeb60a5120780bd5dcadd8ed73c157a46a4ece88442080"
+      ],
+      "new_rgb_sha256": [
+        "3336793d1c5b80aa429f93b3be084cdf55f52acd85670947ff9390c03cc389fd",
+        "8d2357dbaaf89bc68394855a2fbcf0afa3539be8c04e930ef235f2e951cc1f4c"
+      ],
+      "matching_sha256": "2d00c6be8ed0a7f0b4cd35305aa21b9d11f457fa6ab3fc50667851acf8492536",
+      "query_sha256": "87a60b4905cdb7079e015f6c9c16f50f7fef3b3133bf37a77e9af92b589a2492"
+    }
+  ],
+  "scope": "New RGB evidence on three known Blender layouts, localized in old estimated maps. Correlated maps, views and methods; no independent metric-camera or real-object claim."
+}

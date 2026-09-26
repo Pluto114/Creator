@@ -1,0 +1,97 @@
+{
+  "source": "assistant_visual_rgb_only_before_new_pose_or_projection",
+  "ground_truth_used": false,
+  "predicted_geometry_used": false,
+  "source_input_sha256": "afc01cce87e9ebe1ad7f3950c83e86e738b09674b0925703dffb872a250aab20",
+  "selection": "Viewed all six native RGB images; chose visible central rod membership at image row 135. Inspected x=311..330 RGB row intensities to record pixel index positions. Not GT projection, model overlay, or human-user study.",
+  "uncertainty_scope": "Half-pixel coordinate cell, not a calibrated annotation error bound; visible-surface membership is not an axis-point correspondence.",
+  "queries": [
+    {
+      "case_id": "r01",
+      "anchors": [
+        {
+          "view_id": "view_h00",
+          "xy": [
+            316.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "source_sha256": "84a08db43234f2dbf7374cc1c022b42f597890087ffa8900bb8a6e2e03f8b907"
+        },
+        {
+          "view_id": "view_h01",
+          "xy": [
+            316.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "source_sha256": "c34fdc7d555fa6128a1a2d956cd43286a71dfc13a799c67dad27fdb6212dbbc1"
+        }
+      ]
+    },
+    {
+      "case_id": "r02",
+      "anchors": [
+        {
+          "view_id": "view_h00",
+          "xy": [
+            324.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "source_sha256": "5eda1a62f4631c48514103ac1b0026950dd4fe9eb41308992295d8397b30dc34"
+        },
+        {
+          "view_id": "view_h01",
+          "xy": [
+            324.0,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "source_sha256": "3edfdc5f8e34317cb757356dc5ad29565e69e5841bbb366017e57b30f08dd7d2"
+        }
+      ]
+    },
+    {
+      "case_id": "r03",
+      "anchors": [
+        {
+          "view_id": "view_h00",
+          "xy": [
+            317.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "source_sha256": "3336793d1c5b80aa429f93b3be084cdf55f52acd85670947ff9390c03cc389fd"
+        },
+        {
+          "view_id": "view_h01",
+          "xy": [
+            317.5,
+            135.0
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "source_sha256": "8d2357dbaaf89bc68394855a2fbcf0afa3539be8c04e930ef235f2e951cc1f4c"
+        }
+      ]
+    }
+  ]
+}

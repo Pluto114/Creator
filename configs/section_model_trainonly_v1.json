@@ -1,0 +1,50 @@
+{
+  "run_id": "section-model-trainonly-v1-20260926r1",
+  "schema_version": "section-model-trainonly-development-v1",
+  "parent_run_id": "section-model-diagnostic-v1-20260926",
+  "scope": "Same 64 previous inputs and labels, development replay; no new blind data, no axes or model selection.",
+  "method": {
+    "model": {
+      "axial_slices": 6,
+      "axial_quantiles": [
+        0.05,
+        0.95
+      ],
+      "maximum_nfev": 80,
+      "ellipse_seed_angles": 64,
+      "ellipse_refine_steps": 12,
+      "minimum_radius_voxels": 0.25,
+      "maximum_radius_span_fraction": 0.25,
+      "minimum_fit_points": 12
+    },
+    "split": {
+      "native_axis": 2,
+      "grid_origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "block_cells": 10,
+      "blocks": 6,
+      "guard_cells_each_edge": 2,
+      "first_cell": 0
+    }
+  },
+  "previous_shared_result": {
+    "path": "docs/experiments/results/2026-09-26-section-model-diagnostic.json",
+    "sha256": "0e2ccb1056a3c95caa3f7648e152931b79b356f716a399aaa0ee035833f90d6d"
+  },
+  "interpretation_limits": [
+    "Fixed native z window 0..60 voxels and direction use known old layout as development prior; not orientation-invariant or a blind test.",
+    "Whole native 3D cells are grouped before training. Block offsets 2..7 are retained; offsets 0,1,8,9 are guards. Outside cells are explicitly excluded.",
+    "Each fold independently estimates origin/PCA, training axial 5-95% quantiles and maximum radius from training voxel centers only. Both representations share that fold frame.",
+    "Raw training weights use only training occupied-cell counts. Heldout weights use only heldout counts and affect scores only.",
+    "Shared source inputs, voxel size, external grid, model forms and numerical settings remain common; folds and repeated conditions are correlated.",
+    "Old and new scores evaluate different point subsets and representations of training geometry: paired development comparison is not a causal one-variable ablation.",
+    "Model flexibility, circle overlap, open surfaces, active bounds and optimizer failures preclude physical selection; missing points are not measured free space."
+  ],
+  "engineering_revision": {
+    "previous_run_id": "section-model-trainonly-v1-20260926",
+    "reason": "One v1 test read an ignored local input manifest. r1 generates its fixture from tracked protocol; model, split and numerical settings unchanged."
+  }
+}

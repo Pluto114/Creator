@@ -6,7 +6,7 @@
 
 ## 当前进度
 
-**G1：方法可行性开发中，尚未通过。** 9月26日完成20种子成对目标证据实验：100次共享相机拟合、400条几何条件、4800个相关决策。端点检查能挡单图错配，却挡不住全图一致认错；额外正确目标点有用，但正常对应三维p95仍可达42mm。旧7组RGB/DA3的70行回放新增拦截为0。64个截面控制提供了保留格内位置的依据，也留下半面/薄片反例，没有直接发布新读取门。420项诊断及核心边界测试通过；旧数据、失败和真值隔离保留。9月27日是检查点，G1仍按约1–2周集中推进作条件规划。
+**G1：方法可行性开发中，尚未通过。** 9月26日晚新增6张未参与原重建的RGB，用背景定位60个新相机、检查60个杆条件；原51候选全部通过，24个超25mm者仍漏过。特权相机替换说明共同偏差有影响，但即使真K/位姿也有8个超差通过，局部点击不能验收整杆。截面验证已改为训练独立、128fold零共享格；半面/薄片仍不可靠，未新增自动出轴。462项回归通过，旧数据/失败/GT隔离全部保留。下一步独立采集标定与端点/缺口观测，G1约1–2周仍为条件规划。
 
 | 已可用 | 尚未实现 |
 | --- | --- |
@@ -25,9 +25,12 @@
 | 候选重拟合/赋值保留对照、全视图验证、第四版读取器及实际点云回放 | 候选不确定性、独立背景负例与真实读取资格 |
 | 五条件有限段经验范围、16案解析盲区测试、组件未决读取器 | 经验证的不确定性/偏差控制、可靠目标身份与共同读取资格 |
 | 20种子配对目标证据、70行同源点击回放、64条件截面模型诊断 | 独立目标证据、相机共享偏差控制与可信截面判断 |
+| 6张新RGB、60定位/60联合杆验证、四臂相机诊断及训练独立截面对照 | 独立标定、全杆端点/缺口证据与物理验收 |
 | Blender配置侧栏、骨架检查、插件打包和CI | 完整导入、增强、比较与撤回流程 |
 
-最新[成对目标证据](docs/experiments/2026-09-26-paired-target-evidence.md)、[旧点击回放](docs/experiments/2026-09-26-target-projection-replay.md)和[截面模型诊断](docs/experiments/2026-09-26-section-model-diagnostic.md)把对应、目标身份、相机偏差和读取资格分开；这次没有新增细杆修复收益。见[今日日志](docs/journal/2026-09-26.md)、[ADR0019](docs/decisions/0019-evidence-roles-and-section-model-diagnostics.md)。
+最新[新RGB留出验证](docs/experiments/2026-09-26-heldout-rgb-views.md)、[评价侧相机替换](docs/experiments/2026-09-26-heldout-view-oracle.md)和[训练独立截面](docs/experiments/2026-09-26-section-model-trainonly.md)已完成，确认新增视图仍会继承旧地图偏差。见[日志](docs/journal/2026-09-26.md)、[ADR0020](docs/decisions/0020-heldout-views-inherit-map-bias.md)。
+
+此前[成对目标证据](docs/experiments/2026-09-26-paired-target-evidence.md)、[旧点击回放](docs/experiments/2026-09-26-target-projection-replay.md)和[截面模型诊断](docs/experiments/2026-09-26-section-model-diagnostic.md)把对应、目标身份、相机偏差和读取资格分开；这次没有新增细杆修复收益。见[今日日志](docs/journal/2026-09-26.md)、[ADR0019](docs/decisions/0019-evidence-roles-and-section-model-diagnostics.md)。
 
 此前[有限杆相机范围](docs/experiments/2026-09-24-rod-camera-envelope.md)保留14组旧杆与16案解析反例，完整范围仍不能代表物理正确；[未决读取器](docs/experiments/2026-09-24-readout-abstention.md)减少假轴，也保留真实恢复损失。见[今日日志](docs/journal/2026-09-24.md)、[ADR0018](docs/decisions/0018-empirical-envelopes-and-explicit-abstention.md)。
 

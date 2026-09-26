@@ -1,0 +1,262 @@
+{
+  "source_sha256": "d15555d356721f5e2d864edcc1186b749ac0370059277a5ee3cc3e9c9b463a8a",
+  "report_source_sha256": "2de51fcb12fe52946f7518da82f30a5b1e448d2751f0136fad9c1dce951940c7",
+  "strata": [
+    {
+      "control_only": false,
+      "physical_stratum": "within_25mm_both_p95",
+      "total": 27,
+      "states": {
+        "retained_candidate": 27,
+        "rejected_new_target": 0,
+        "unresolved_new_target": 0,
+        "unresolved_new_pose": 0
+      }
+    },
+    {
+      "control_only": false,
+      "physical_stratum": "exceeds_25mm_any_p95",
+      "total": 24,
+      "states": {
+        "retained_candidate": 24,
+        "rejected_new_target": 0,
+        "unresolved_new_target": 0,
+        "unresolved_new_pose": 0
+      }
+    },
+    {
+      "control_only": false,
+      "physical_stratum": "unscored",
+      "total": 0,
+      "states": {
+        "retained_candidate": 0,
+        "rejected_new_target": 0,
+        "unresolved_new_target": 0,
+        "unresolved_new_pose": 0
+      }
+    },
+    {
+      "control_only": true,
+      "physical_stratum": "within_25mm_both_p95",
+      "total": 4,
+      "states": {
+        "retained_candidate": 4,
+        "rejected_new_target": 0,
+        "unresolved_new_target": 0,
+        "unresolved_new_pose": 0
+      }
+    },
+    {
+      "control_only": true,
+      "physical_stratum": "exceeds_25mm_any_p95",
+      "total": 6,
+      "states": {
+        "retained_candidate": 6,
+        "rejected_new_target": 0,
+        "unresolved_new_target": 0,
+        "unresolved_new_pose": 0
+      }
+    },
+    {
+      "control_only": true,
+      "physical_stratum": "unscored",
+      "total": 0,
+      "states": {
+        "retained_candidate": 0,
+        "rejected_new_target": 0,
+        "unresolved_new_target": 0,
+        "unresolved_new_pose": 0
+      }
+    }
+  ],
+  "groups": [
+    {
+      "parent": "rod-height-bundle-v1-20260923",
+      "case_id": "r01",
+      "count": 10,
+      "eligible": 6,
+      "states": {
+        "retained_candidate": 6,
+        "original_identity_not_accepted": 4
+      },
+      "maximum_target_distance_px": {
+        "total": 10,
+        "count": 6,
+        "minimum": 0.8005823666204214,
+        "median": 0.8610332253810782,
+        "maximum": 0.9680151526957776
+      },
+      "physical_p95_m": {
+        "total": 10,
+        "count": 6,
+        "minimum": 0.0036129670671275742,
+        "median": 0.007393851324554253,
+        "maximum": 0.01895362108034875
+      }
+    },
+    {
+      "parent": "rod-height-bundle-v1-20260923",
+      "case_id": "r02",
+      "count": 10,
+      "eligible": 5,
+      "states": {
+        "retained_candidate": 5,
+        "original_identity_not_accepted": 5
+      },
+      "maximum_target_distance_px": {
+        "total": 10,
+        "count": 5,
+        "minimum": 0.2551778382785318,
+        "median": 0.2776582202672305,
+        "maximum": 0.35100094386993363
+      },
+      "physical_p95_m": {
+        "total": 10,
+        "count": 5,
+        "minimum": 0.011253356664685776,
+        "median": 0.01422058810179071,
+        "maximum": 0.020214794120932775
+      }
+    },
+    {
+      "parent": "rod-height-bundle-v1-20260923",
+      "case_id": "r03",
+      "count": 10,
+      "eligible": 10,
+      "states": {
+        "retained_candidate": 10
+      },
+      "maximum_target_distance_px": {
+        "total": 10,
+        "count": 10,
+        "minimum": 0.02777010840312841,
+        "median": 0.11361041137639104,
+        "maximum": 0.23861311721104572
+      },
+      "physical_p95_m": {
+        "total": 10,
+        "count": 10,
+        "minimum": 0.019301520861283,
+        "median": 0.03064314435657785,
+        "maximum": 0.04672417202547715
+      }
+    },
+    {
+      "parent": "rod-reference-bundle-v1-20260923",
+      "case_id": "r01",
+      "count": 10,
+      "eligible": 10,
+      "states": {
+        "retained_candidate": 10
+      },
+      "maximum_target_distance_px": {
+        "total": 10,
+        "count": 10,
+        "minimum": 0.7261513810859864,
+        "median": 0.7810715931592911,
+        "maximum": 0.8446843350673255
+      },
+      "physical_p95_m": {
+        "total": 10,
+        "count": 10,
+        "minimum": 0.0071045371598840185,
+        "median": 0.00908174743174673,
+        "maximum": 0.018105286587134613
+      }
+    },
+    {
+      "parent": "rod-reference-bundle-v1-20260923",
+      "case_id": "r02",
+      "count": 10,
+      "eligible": 10,
+      "states": {
+        "retained_candidate": 10
+      },
+      "maximum_target_distance_px": {
+        "total": 10,
+        "count": 10,
+        "minimum": 0.2843043267298846,
+        "median": 0.3128270536040526,
+        "maximum": 0.37904083194878185
+      },
+      "physical_p95_m": {
+        "total": 10,
+        "count": 10,
+        "minimum": 0.03320858675902547,
+        "median": 0.03680351169502842,
+        "maximum": 0.03766174049871837
+      }
+    },
+    {
+      "parent": "rod-reference-bundle-v1-20260923",
+      "case_id": "r03",
+      "count": 10,
+      "eligible": 10,
+      "states": {
+        "retained_candidate": 10
+      },
+      "maximum_target_distance_px": {
+        "total": 10,
+        "count": 10,
+        "minimum": 0.014770321015236263,
+        "median": 0.07753515950985519,
+        "maximum": 0.2895315606348328
+      },
+      "physical_p95_m": {
+        "total": 10,
+        "count": 10,
+        "minimum": 0.018627106314356212,
+        "median": 0.03209665438144548,
+        "maximum": 0.03855421860011484
+      }
+    }
+  ],
+  "states": {
+    "retained_candidate": 51,
+    "original_identity_not_accepted": 9
+  },
+  "pose_states": {
+    "validated": 60
+  },
+  "pose_validation_p95_px": {
+    "total": 60,
+    "count": 60,
+    "minimum": 0.44291912425057806,
+    "median": 0.6030742430118603,
+    "maximum": 1.1096795567065552
+  },
+  "pose_center_error_m": {
+    "total": 60,
+    "count": 60,
+    "minimum": 0.0018027867379657343,
+    "median": 0.010828885357486929,
+    "maximum": 0.019721442930134715
+  },
+  "pose_rotation_error_degrees": {
+    "total": 60,
+    "count": 60,
+    "minimum": 0.06484423170268867,
+    "median": 0.30868887336682416,
+    "maximum": 0.8270012599416926
+  },
+  "pose_train_count": {
+    "total": 60,
+    "count": 60,
+    "minimum": 69,
+    "median": 89.0,
+    "maximum": 127
+  },
+  "pose_validation_count": {
+    "total": 60,
+    "count": 60,
+    "minimum": 19,
+    "median": 29.0,
+    "maximum": 41
+  },
+  "empty_outputs": 9,
+  "elapsed_seconds": 8.04208490000019,
+  "scope": "Three known Blender layouts; six new RGB, six old camera tasks, 30 correlated maps, 60 joint decisions. New-view PnP inherits old map/K; no independent absolute camera or real-photo claim.",
+  "generation_prepared_sha256": "6b7ecaf1824af51162558bf89bb547b3c7e1ba13cd512c55955d02b30ee615a6",
+  "independent_ray_samples": 6160,
+  "surface_id_mismatches": 0
+}

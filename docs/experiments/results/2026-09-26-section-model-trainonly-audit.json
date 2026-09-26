@@ -1,0 +1,2459 @@
+{
+  "state": "passed",
+  "run_id": "section-model-trainonly-v1-20260926",
+  "frozen_sources": 6,
+  "identical_parent_inputs": 64,
+  "identical_parent_labels": 64,
+  "verified_inference_records": 64,
+  "independently_verified_native_folds": 128,
+  "shared_training_heldout_voxels": 0,
+  "recomputed_saved_model_score_rows": 768,
+  "paired_previous_rows": 768,
+  "public_runtime_bytes_identical": true,
+  "gt_read_during_inference": false,
+  "fold_records": [
+    {
+      "case_id": "section-0000",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08004248225518787,
+      "role_points": {
+        "train": 2619,
+        "heldout": 2427,
+        "guard": 3114,
+        "outside_window": 32
+      },
+      "role_cells": {
+        "train": 421,
+        "heldout": 396,
+        "guard": 513,
+        "outside_window": 9
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0000",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08004248225518787,
+      "role_points": {
+        "train": 2427,
+        "heldout": 2619,
+        "guard": 3114,
+        "outside_window": 32
+      },
+      "role_cells": {
+        "train": 396,
+        "heldout": 421,
+        "guard": 513,
+        "outside_window": 9
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0001",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006811650131429,
+      "role_points": {
+        "train": 2602,
+        "heldout": 2494,
+        "guard": 3091,
+        "outside_window": 5
+      },
+      "role_cells": {
+        "train": 423,
+        "heldout": 413,
+        "guard": 506,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0001",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006811650131429,
+      "role_points": {
+        "train": 2494,
+        "heldout": 2602,
+        "guard": 3091,
+        "outside_window": 5
+      },
+      "role_cells": {
+        "train": 413,
+        "heldout": 423,
+        "guard": 506,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0002",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08018508027481513,
+      "role_points": {
+        "train": 1351,
+        "heldout": 1287,
+        "guard": 1584,
+        "outside_window": 2
+      },
+      "role_cells": {
+        "train": 234,
+        "heldout": 220,
+        "guard": 281,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0002",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08018508027481513,
+      "role_points": {
+        "train": 1287,
+        "heldout": 1351,
+        "guard": 1584,
+        "outside_window": 2
+      },
+      "role_cells": {
+        "train": 220,
+        "heldout": 234,
+        "guard": 281,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0003",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08009549440696062,
+      "role_points": {
+        "train": 1340,
+        "heldout": 1316,
+        "guard": 1568,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 235,
+        "heldout": 237,
+        "guard": 275,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0003",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08009549440696062,
+      "role_points": {
+        "train": 1316,
+        "heldout": 1340,
+        "guard": 1568,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 237,
+        "heldout": 235,
+        "guard": 275,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0004",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800787840817957,
+      "role_points": {
+        "train": 2595,
+        "heldout": 2447,
+        "guard": 3120,
+        "outside_window": 30
+      },
+      "role_cells": {
+        "train": 480,
+        "heldout": 466,
+        "guard": 596,
+        "outside_window": 11
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0004",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800787840817957,
+      "role_points": {
+        "train": 2447,
+        "heldout": 2595,
+        "guard": 3120,
+        "outside_window": 30
+      },
+      "role_cells": {
+        "train": 466,
+        "heldout": 480,
+        "guard": 596,
+        "outside_window": 11
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0005",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005679627774798,
+      "role_points": {
+        "train": 2591,
+        "heldout": 2499,
+        "guard": 3095,
+        "outside_window": 7
+      },
+      "role_cells": {
+        "train": 489,
+        "heldout": 478,
+        "guard": 586,
+        "outside_window": 4
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0005",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005679627774798,
+      "role_points": {
+        "train": 2499,
+        "heldout": 2591,
+        "guard": 3095,
+        "outside_window": 7
+      },
+      "role_cells": {
+        "train": 478,
+        "heldout": 489,
+        "guard": 586,
+        "outside_window": 4
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0006",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800787840817957,
+      "role_points": {
+        "train": 1337,
+        "heldout": 1301,
+        "guard": 1585,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 261,
+        "heldout": 264,
+        "guard": 323,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0006",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800787840817957,
+      "role_points": {
+        "train": 1301,
+        "heldout": 1337,
+        "guard": 1585,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 264,
+        "heldout": 261,
+        "guard": 323,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0007",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08012970340094627,
+      "role_points": {
+        "train": 1339,
+        "heldout": 1322,
+        "guard": 1563,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 265,
+        "heldout": 270,
+        "guard": 323,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0007",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08012970340094627,
+      "role_points": {
+        "train": 1322,
+        "heldout": 1339,
+        "guard": 1563,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 270,
+        "heldout": 265,
+        "guard": 323,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0008",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0801085985475195,
+      "role_points": {
+        "train": 2575,
+        "heldout": 2463,
+        "guard": 3134,
+        "outside_window": 20
+      },
+      "role_cells": {
+        "train": 389,
+        "heldout": 370,
+        "guard": 461,
+        "outside_window": 6
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0008",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0801085985475195,
+      "role_points": {
+        "train": 2463,
+        "heldout": 2575,
+        "guard": 3134,
+        "outside_window": 20
+      },
+      "role_cells": {
+        "train": 370,
+        "heldout": 389,
+        "guard": 461,
+        "outside_window": 6
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0009",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08003733855272077,
+      "role_points": {
+        "train": 2591,
+        "heldout": 2528,
+        "guard": 3073,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 390,
+        "heldout": 374,
+        "guard": 457,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0009",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08003733855272077,
+      "role_points": {
+        "train": 2528,
+        "heldout": 2591,
+        "guard": 3073,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 374,
+        "heldout": 390,
+        "guard": 457,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0010",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08030250383292592,
+      "role_points": {
+        "train": 1331,
+        "heldout": 1289,
+        "guard": 1600,
+        "outside_window": 4
+      },
+      "role_cells": {
+        "train": 213,
+        "heldout": 206,
+        "guard": 259,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0010",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08030250383292592,
+      "role_points": {
+        "train": 1289,
+        "heldout": 1331,
+        "guard": 1600,
+        "outside_window": 4
+      },
+      "role_cells": {
+        "train": 206,
+        "heldout": 213,
+        "guard": 259,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0011",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08003733855272077,
+      "role_points": {
+        "train": 1345,
+        "heldout": 1316,
+        "guard": 1563,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 220,
+        "heldout": 212,
+        "guard": 250,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0011",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08003733855272077,
+      "role_points": {
+        "train": 1316,
+        "heldout": 1345,
+        "guard": 1563,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 212,
+        "heldout": 220,
+        "guard": 250,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0012",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08012909943257485,
+      "role_points": {
+        "train": 2602,
+        "heldout": 2460,
+        "guard": 3107,
+        "outside_window": 23
+      },
+      "role_cells": {
+        "train": 444,
+        "heldout": 426,
+        "guard": 538,
+        "outside_window": 7
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0012",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08012909943257485,
+      "role_points": {
+        "train": 2460,
+        "heldout": 2602,
+        "guard": 3107,
+        "outside_window": 23
+      },
+      "role_cells": {
+        "train": 426,
+        "heldout": 444,
+        "guard": 538,
+        "outside_window": 7
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0013",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08008720378824075,
+      "role_points": {
+        "train": 2590,
+        "heldout": 2513,
+        "guard": 3088,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 437,
+        "heldout": 430,
+        "guard": 527,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0013",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08008720378824075,
+      "role_points": {
+        "train": 2513,
+        "heldout": 2590,
+        "guard": 3088,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 430,
+        "heldout": 437,
+        "guard": 527,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0014",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0804479135384012,
+      "role_points": {
+        "train": 1331,
+        "heldout": 1286,
+        "guard": 1602,
+        "outside_window": 5
+      },
+      "role_cells": {
+        "train": 255,
+        "heldout": 241,
+        "guard": 300,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0014",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0804479135384012,
+      "role_points": {
+        "train": 1286,
+        "heldout": 1331,
+        "guard": 1602,
+        "outside_window": 5
+      },
+      "role_cells": {
+        "train": 241,
+        "heldout": 255,
+        "guard": 300,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0015",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08012870007153178,
+      "role_points": {
+        "train": 1335,
+        "heldout": 1310,
+        "guard": 1579,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 252,
+        "heldout": 248,
+        "guard": 299,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0015",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08012870007153178,
+      "role_points": {
+        "train": 1310,
+        "heldout": 1335,
+        "guard": 1579,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 248,
+        "heldout": 252,
+        "guard": 299,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0016",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006297777134308,
+      "role_points": {
+        "train": 2610,
+        "heldout": 2436,
+        "guard": 3119,
+        "outside_window": 27
+      },
+      "role_cells": {
+        "train": 446,
+        "heldout": 428,
+        "guard": 538,
+        "outside_window": 9
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0016",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006297777134308,
+      "role_points": {
+        "train": 2436,
+        "heldout": 2610,
+        "guard": 3119,
+        "outside_window": 27
+      },
+      "role_cells": {
+        "train": 428,
+        "heldout": 446,
+        "guard": 538,
+        "outside_window": 9
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0017",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005003805750577,
+      "role_points": {
+        "train": 2606,
+        "heldout": 2503,
+        "guard": 3083,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 449,
+        "heldout": 437,
+        "guard": 537,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0017",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005003805750577,
+      "role_points": {
+        "train": 2503,
+        "heldout": 2606,
+        "guard": 3083,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 437,
+        "heldout": 449,
+        "guard": 537,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0018",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006297777134308,
+      "role_points": {
+        "train": 1349,
+        "heldout": 1275,
+        "guard": 1594,
+        "outside_window": 6
+      },
+      "role_cells": {
+        "train": 246,
+        "heldout": 242,
+        "guard": 291,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0018",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006297777134308,
+      "role_points": {
+        "train": 1275,
+        "heldout": 1349,
+        "guard": 1594,
+        "outside_window": 6
+      },
+      "role_cells": {
+        "train": 242,
+        "heldout": 246,
+        "guard": 291,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0019",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0802045680086153,
+      "role_points": {
+        "train": 1353,
+        "heldout": 1298,
+        "guard": 1573,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 249,
+        "heldout": 244,
+        "guard": 294,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0019",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0802045680086153,
+      "role_points": {
+        "train": 1298,
+        "heldout": 1353,
+        "guard": 1573,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 244,
+        "heldout": 249,
+        "guard": 294,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0020",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08013548128340675,
+      "role_points": {
+        "train": 2605,
+        "heldout": 2450,
+        "guard": 3113,
+        "outside_window": 24
+      },
+      "role_cells": {
+        "train": 508,
+        "heldout": 493,
+        "guard": 606,
+        "outside_window": 9
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0020",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08013548128340675,
+      "role_points": {
+        "train": 2450,
+        "heldout": 2605,
+        "guard": 3113,
+        "outside_window": 24
+      },
+      "role_cells": {
+        "train": 493,
+        "heldout": 508,
+        "guard": 606,
+        "outside_window": 9
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0021",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08004322842341594,
+      "role_points": {
+        "train": 2576,
+        "heldout": 2511,
+        "guard": 3102,
+        "outside_window": 3
+      },
+      "role_cells": {
+        "train": 506,
+        "heldout": 494,
+        "guard": 613,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0021",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08004322842341594,
+      "role_points": {
+        "train": 2511,
+        "heldout": 2576,
+        "guard": 3102,
+        "outside_window": 3
+      },
+      "role_cells": {
+        "train": 494,
+        "heldout": 506,
+        "guard": 613,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0022",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08040267767243359,
+      "role_points": {
+        "train": 1341,
+        "heldout": 1281,
+        "guard": 1599,
+        "outside_window": 3
+      },
+      "role_cells": {
+        "train": 275,
+        "heldout": 285,
+        "guard": 342,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0022",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08040267767243359,
+      "role_points": {
+        "train": 1281,
+        "heldout": 1341,
+        "guard": 1599,
+        "outside_window": 3
+      },
+      "role_cells": {
+        "train": 285,
+        "heldout": 275,
+        "guard": 342,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0023",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800566006108514,
+      "role_points": {
+        "train": 1331,
+        "heldout": 1313,
+        "guard": 1580,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 285,
+        "heldout": 276,
+        "guard": 343,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0023",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800566006108514,
+      "role_points": {
+        "train": 1313,
+        "heldout": 1331,
+        "guard": 1580,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 276,
+        "heldout": 285,
+        "guard": 343,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0024",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006544202856447,
+      "role_points": {
+        "train": 2602,
+        "heldout": 2443,
+        "guard": 3132,
+        "outside_window": 15
+      },
+      "role_cells": {
+        "train": 436,
+        "heldout": 417,
+        "guard": 526,
+        "outside_window": 6
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0024",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006544202856447,
+      "role_points": {
+        "train": 2443,
+        "heldout": 2602,
+        "guard": 3132,
+        "outside_window": 15
+      },
+      "role_cells": {
+        "train": 417,
+        "heldout": 436,
+        "guard": 526,
+        "outside_window": 6
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0025",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800213395366075,
+      "role_points": {
+        "train": 2599,
+        "heldout": 2517,
+        "guard": 3076,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 425,
+        "heldout": 423,
+        "guard": 523,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0025",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800213395366075,
+      "role_points": {
+        "train": 2517,
+        "heldout": 2599,
+        "guard": 3076,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 423,
+        "heldout": 425,
+        "guard": 523,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0026",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08025419546084478,
+      "role_points": {
+        "train": 1379,
+        "heldout": 1318,
+        "guard": 1652,
+        "outside_window": 3
+      },
+      "role_cells": {
+        "train": 252,
+        "heldout": 253,
+        "guard": 303,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0026",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08025419546084478,
+      "role_points": {
+        "train": 1318,
+        "heldout": 1379,
+        "guard": 1652,
+        "outside_window": 3
+      },
+      "role_cells": {
+        "train": 253,
+        "heldout": 252,
+        "guard": 303,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0027",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0801339591284913,
+      "role_points": {
+        "train": 1380,
+        "heldout": 1355,
+        "guard": 1617,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 259,
+        "heldout": 246,
+        "guard": 306,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0027",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0801339591284913,
+      "role_points": {
+        "train": 1355,
+        "heldout": 1380,
+        "guard": 1617,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 246,
+        "heldout": 259,
+        "guard": 306,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0028",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006544390361128,
+      "role_points": {
+        "train": 2610,
+        "heldout": 2452,
+        "guard": 3111,
+        "outside_window": 19
+      },
+      "role_cells": {
+        "train": 485,
+        "heldout": 461,
+        "guard": 580,
+        "outside_window": 7
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0028",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08006544390361128,
+      "role_points": {
+        "train": 2452,
+        "heldout": 2610,
+        "guard": 3111,
+        "outside_window": 19
+      },
+      "role_cells": {
+        "train": 461,
+        "heldout": 485,
+        "guard": 580,
+        "outside_window": 7
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0029",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08013425887146264,
+      "role_points": {
+        "train": 2608,
+        "heldout": 2502,
+        "guard": 3081,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 482,
+        "heldout": 478,
+        "guard": 590,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0029",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08013425887146264,
+      "role_points": {
+        "train": 2502,
+        "heldout": 2608,
+        "guard": 3081,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 478,
+        "heldout": 482,
+        "guard": 590,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0030",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800888914246215,
+      "role_points": {
+        "train": 1390,
+        "heldout": 1328,
+        "guard": 1631,
+        "outside_window": 3
+      },
+      "role_cells": {
+        "train": 294,
+        "heldout": 274,
+        "guard": 342,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0030",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0800888914246215,
+      "role_points": {
+        "train": 1328,
+        "heldout": 1390,
+        "guard": 1631,
+        "outside_window": 3
+      },
+      "role_cells": {
+        "train": 274,
+        "heldout": 294,
+        "guard": 342,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0031",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08017373210353018,
+      "role_points": {
+        "train": 1392,
+        "heldout": 1353,
+        "guard": 1607,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 291,
+        "heldout": 284,
+        "guard": 355,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0031",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08017373210353018,
+      "role_points": {
+        "train": 1353,
+        "heldout": 1392,
+        "guard": 1607,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 284,
+        "heldout": 291,
+        "guard": 355,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0032",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08009628211924691,
+      "role_points": {
+        "train": 2625,
+        "heldout": 2424,
+        "guard": 3119,
+        "outside_window": 24
+      },
+      "role_cells": {
+        "train": 456,
+        "heldout": 435,
+        "guard": 552,
+        "outside_window": 7
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0032",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08009628211924691,
+      "role_points": {
+        "train": 2424,
+        "heldout": 2625,
+        "guard": 3119,
+        "outside_window": 24
+      },
+      "role_cells": {
+        "train": 435,
+        "heldout": 456,
+        "guard": 552,
+        "outside_window": 7
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0033",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08004040469199636,
+      "role_points": {
+        "train": 2609,
+        "heldout": 2497,
+        "guard": 3081,
+        "outside_window": 5
+      },
+      "role_cells": {
+        "train": 451,
+        "heldout": 447,
+        "guard": 546,
+        "outside_window": 3
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0033",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08004040469199636,
+      "role_points": {
+        "train": 2497,
+        "heldout": 2609,
+        "guard": 3081,
+        "outside_window": 5
+      },
+      "role_cells": {
+        "train": 447,
+        "heldout": 451,
+        "guard": 546,
+        "outside_window": 3
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0034",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08037427040613404,
+      "role_points": {
+        "train": 1390,
+        "heldout": 1311,
+        "guard": 1647,
+        "outside_window": 4
+      },
+      "role_cells": {
+        "train": 266,
+        "heldout": 272,
+        "guard": 326,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0034",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08037427040613404,
+      "role_points": {
+        "train": 1311,
+        "heldout": 1390,
+        "guard": 1647,
+        "outside_window": 4
+      },
+      "role_cells": {
+        "train": 272,
+        "heldout": 266,
+        "guard": 326,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0035",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08023393106803084,
+      "role_points": {
+        "train": 1385,
+        "heldout": 1343,
+        "guard": 1624,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 276,
+        "heldout": 265,
+        "guard": 320,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0035",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08023393106803084,
+      "role_points": {
+        "train": 1343,
+        "heldout": 1385,
+        "guard": 1624,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 265,
+        "heldout": 276,
+        "guard": 320,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0036",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08003895190014895,
+      "role_points": {
+        "train": 2599,
+        "heldout": 2462,
+        "guard": 3108,
+        "outside_window": 23
+      },
+      "role_cells": {
+        "train": 516,
+        "heldout": 488,
+        "guard": 631,
+        "outside_window": 9
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0036",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08003895190014895,
+      "role_points": {
+        "train": 2462,
+        "heldout": 2599,
+        "guard": 3108,
+        "outside_window": 23
+      },
+      "role_cells": {
+        "train": 488,
+        "heldout": 516,
+        "guard": 631,
+        "outside_window": 9
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0037",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0801007730697213,
+      "role_points": {
+        "train": 2616,
+        "heldout": 2517,
+        "guard": 3050,
+        "outside_window": 9
+      },
+      "role_cells": {
+        "train": 526,
+        "heldout": 527,
+        "guard": 625,
+        "outside_window": 4
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0037",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.0801007730697213,
+      "role_points": {
+        "train": 2517,
+        "heldout": 2616,
+        "guard": 3050,
+        "outside_window": 9
+      },
+      "role_cells": {
+        "train": 527,
+        "heldout": 526,
+        "guard": 625,
+        "outside_window": 4
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0038",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08038006914096263,
+      "role_points": {
+        "train": 1383,
+        "heldout": 1328,
+        "guard": 1637,
+        "outside_window": 4
+      },
+      "role_cells": {
+        "train": 313,
+        "heldout": 296,
+        "guard": 380,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0038",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08038006914096263,
+      "role_points": {
+        "train": 1328,
+        "heldout": 1383,
+        "guard": 1637,
+        "outside_window": 4
+      },
+      "role_cells": {
+        "train": 296,
+        "heldout": 313,
+        "guard": 380,
+        "outside_window": 2
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0039",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08016903487811111,
+      "role_points": {
+        "train": 1393,
+        "heldout": 1361,
+        "guard": 1597,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 312,
+        "heldout": 312,
+        "guard": 365,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0039",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08016903487811111,
+      "role_points": {
+        "train": 1361,
+        "heldout": 1393,
+        "guard": 1597,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 312,
+        "heldout": 312,
+        "guard": 365,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0040",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08001953026731884,
+      "role_points": {
+        "train": 2589,
+        "heldout": 2456,
+        "guard": 3132,
+        "outside_window": 15
+      },
+      "role_cells": {
+        "train": 239,
+        "heldout": 233,
+        "guard": 291,
+        "outside_window": 4
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0040",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08001953026731884,
+      "role_points": {
+        "train": 2456,
+        "heldout": 2589,
+        "guard": 3132,
+        "outside_window": 15
+      },
+      "role_cells": {
+        "train": 233,
+        "heldout": 239,
+        "guard": 291,
+        "outside_window": 4
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0041",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08012388662754899,
+      "role_points": {
+        "train": 2594,
+        "heldout": 2523,
+        "guard": 3075,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 247,
+        "heldout": 235,
+        "guard": 284,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0041",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08012388662754899,
+      "role_points": {
+        "train": 2523,
+        "heldout": 2594,
+        "guard": 3075,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 235,
+        "heldout": 247,
+        "guard": 284,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0042",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08016676792586941,
+      "role_points": {
+        "train": 1293,
+        "heldout": 1256,
+        "guard": 1547,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 129,
+        "heldout": 128,
+        "guard": 159,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0042",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08016676792586941,
+      "role_points": {
+        "train": 1256,
+        "heldout": 1293,
+        "guard": 1547,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 128,
+        "heldout": 129,
+        "guard": 159,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0043",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08016676792586946,
+      "role_points": {
+        "train": 1294,
+        "heldout": 1294,
+        "guard": 1508,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 138,
+        "heldout": 128,
+        "guard": 150,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0043",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08016676792586946,
+      "role_points": {
+        "train": 1294,
+        "heldout": 1294,
+        "guard": 1508,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 128,
+        "heldout": 138,
+        "guard": 150,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0044",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08011244860046496,
+      "role_points": {
+        "train": 2608,
+        "heldout": 2444,
+        "guard": 3125,
+        "outside_window": 15
+      },
+      "role_cells": {
+        "train": 268,
+        "heldout": 274,
+        "guard": 342,
+        "outside_window": 5
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0044",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08011244860046496,
+      "role_points": {
+        "train": 2444,
+        "heldout": 2608,
+        "guard": 3125,
+        "outside_window": 15
+      },
+      "role_cells": {
+        "train": 274,
+        "heldout": 268,
+        "guard": 342,
+        "outside_window": 5
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0045",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08007689457611572,
+      "role_points": {
+        "train": 2610,
+        "heldout": 2528,
+        "guard": 3053,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 281,
+        "heldout": 284,
+        "guard": 328,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0045",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08007689457611572,
+      "role_points": {
+        "train": 2528,
+        "heldout": 2610,
+        "guard": 3053,
+        "outside_window": 1
+      },
+      "role_cells": {
+        "train": 284,
+        "heldout": 281,
+        "guard": 328,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0046",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08017786026185025,
+      "role_points": {
+        "train": 1302,
+        "heldout": 1252,
+        "guard": 1542,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 146,
+        "heldout": 156,
+        "guard": 182,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0046",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08017786026185025,
+      "role_points": {
+        "train": 1252,
+        "heldout": 1302,
+        "guard": 1542,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 156,
+        "heldout": 146,
+        "guard": 182,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0047",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08017673218612026,
+      "role_points": {
+        "train": 1307,
+        "heldout": 1299,
+        "guard": 1490,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 154,
+        "heldout": 153,
+        "guard": 176,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0047",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08017673218612026,
+      "role_points": {
+        "train": 1299,
+        "heldout": 1307,
+        "guard": 1490,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 153,
+        "heldout": 154,
+        "guard": 176,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0048",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08015761102059499,
+      "role_points": {
+        "train": 2584,
+        "heldout": 2490,
+        "guard": 3118,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 248,
+        "heldout": 234,
+        "guard": 287,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0048",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08015761102059499,
+      "role_points": {
+        "train": 2490,
+        "heldout": 2584,
+        "guard": 3118,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 234,
+        "heldout": 248,
+        "guard": 287,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0049",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08004067223868039,
+      "role_points": {
+        "train": 2599,
+        "heldout": 2540,
+        "guard": 3053,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 241,
+        "heldout": 241,
+        "guard": 291,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0049",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08004067223868039,
+      "role_points": {
+        "train": 2540,
+        "heldout": 2599,
+        "guard": 3053,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 241,
+        "heldout": 241,
+        "guard": 291,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0050",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08027980500343534,
+      "role_points": {
+        "train": 1294,
+        "heldout": 1270,
+        "guard": 1532,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 139,
+        "heldout": 135,
+        "guard": 159,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0050",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08027980500343534,
+      "role_points": {
+        "train": 1270,
+        "heldout": 1294,
+        "guard": 1532,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 135,
+        "heldout": 139,
+        "guard": 159,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0051",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005460815694163,
+      "role_points": {
+        "train": 1295,
+        "heldout": 1295,
+        "guard": 1506,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 140,
+        "heldout": 135,
+        "guard": 158,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0051",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005460815694163,
+      "role_points": {
+        "train": 1295,
+        "heldout": 1295,
+        "guard": 1506,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 135,
+        "heldout": 140,
+        "guard": 158,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0052",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005996262543225,
+      "role_points": {
+        "train": 2587,
+        "heldout": 2473,
+        "guard": 3130,
+        "outside_window": 2
+      },
+      "role_cells": {
+        "train": 298,
+        "heldout": 282,
+        "guard": 354,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0052",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005996262543225,
+      "role_points": {
+        "train": 2473,
+        "heldout": 2587,
+        "guard": 3130,
+        "outside_window": 2
+      },
+      "role_cells": {
+        "train": 282,
+        "heldout": 298,
+        "guard": 354,
+        "outside_window": 1
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0053",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005056765304863,
+      "role_points": {
+        "train": 2591,
+        "heldout": 2544,
+        "guard": 3057,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 301,
+        "heldout": 294,
+        "guard": 361,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0053",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005056765304863,
+      "role_points": {
+        "train": 2544,
+        "heldout": 2591,
+        "guard": 3057,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 294,
+        "heldout": 301,
+        "guard": 361,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0054",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005996262543225,
+      "role_points": {
+        "train": 1292,
+        "heldout": 1253,
+        "guard": 1551,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 155,
+        "heldout": 161,
+        "guard": 195,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0054",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08005996262543225,
+      "role_points": {
+        "train": 1253,
+        "heldout": 1292,
+        "guard": 1551,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 161,
+        "heldout": 155,
+        "guard": 195,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0055",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08013065015409976,
+      "role_points": {
+        "train": 1302,
+        "heldout": 1294,
+        "guard": 1500,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 165,
+        "heldout": 161,
+        "guard": 195,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0055",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08013065015409976,
+      "role_points": {
+        "train": 1294,
+        "heldout": 1302,
+        "guard": 1500,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 161,
+        "heldout": 165,
+        "guard": 195,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0056",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08020209623457697,
+      "role_points": {
+        "train": 2578,
+        "heldout": 2469,
+        "guard": 3130,
+        "outside_window": 15
+      },
+      "role_cells": {
+        "train": 358,
+        "heldout": 360,
+        "guard": 449,
+        "outside_window": 7
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0056",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08020209623457697,
+      "role_points": {
+        "train": 2469,
+        "heldout": 2578,
+        "guard": 3130,
+        "outside_window": 15
+      },
+      "role_cells": {
+        "train": 360,
+        "heldout": 358,
+        "guard": 449,
+        "outside_window": 7
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0057",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08013819787252868,
+      "role_points": {
+        "train": 2586,
+        "heldout": 2529,
+        "guard": 3077,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 366,
+        "heldout": 372,
+        "guard": 436,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0057",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08013819787252868,
+      "role_points": {
+        "train": 2529,
+        "heldout": 2586,
+        "guard": 3077,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 372,
+        "heldout": 366,
+        "guard": 436,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0058",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08020209623457697,
+      "role_points": {
+        "train": 1284,
+        "heldout": 1265,
+        "guard": 1547,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 184,
+        "heldout": 184,
+        "guard": 235,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0058",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08020209623457697,
+      "role_points": {
+        "train": 1265,
+        "heldout": 1284,
+        "guard": 1547,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 184,
+        "heldout": 184,
+        "guard": 235,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0059",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08045345351642208,
+      "role_points": {
+        "train": 1281,
+        "heldout": 1303,
+        "guard": 1512,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 191,
+        "heldout": 198,
+        "guard": 220,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0059",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08045345351642208,
+      "role_points": {
+        "train": 1303,
+        "heldout": 1281,
+        "guard": 1512,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 198,
+        "heldout": 191,
+        "guard": 220,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0060",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08021846816376188,
+      "role_points": {
+        "train": 2595,
+        "heldout": 2446,
+        "guard": 3131,
+        "outside_window": 20
+      },
+      "role_cells": {
+        "train": 430,
+        "heldout": 423,
+        "guard": 528,
+        "outside_window": 6
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0060",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08021846816376188,
+      "role_points": {
+        "train": 2446,
+        "heldout": 2595,
+        "guard": 3131,
+        "outside_window": 20
+      },
+      "role_cells": {
+        "train": 423,
+        "heldout": 430,
+        "guard": 528,
+        "outside_window": 6
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0061",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08014707312237102,
+      "role_points": {
+        "train": 2594,
+        "heldout": 2530,
+        "guard": 3068,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 441,
+        "heldout": 435,
+        "guard": 541,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0061",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08014707312237102,
+      "role_points": {
+        "train": 2530,
+        "heldout": 2594,
+        "guard": 3068,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 435,
+        "heldout": 441,
+        "guard": 541,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0062",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08023126893330598,
+      "role_points": {
+        "train": 1303,
+        "heldout": 1254,
+        "guard": 1539,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 224,
+        "heldout": 229,
+        "guard": 279,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0062",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08023126893330598,
+      "role_points": {
+        "train": 1254,
+        "heldout": 1303,
+        "guard": 1539,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 229,
+        "heldout": 224,
+        "guard": 279,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0063",
+      "fold": 0,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08014707312237102,
+      "role_points": {
+        "train": 1302,
+        "heldout": 1302,
+        "guard": 1492,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 226,
+        "heldout": 233,
+        "guard": 275,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    },
+    {
+      "case_id": "section-0063",
+      "fold": 1,
+      "shared_voxels": 0,
+      "actual_minimum_z_gap_m": 0.08014707312237102,
+      "role_points": {
+        "train": 1302,
+        "heldout": 1302,
+        "guard": 1492,
+        "outside_window": 0
+      },
+      "role_cells": {
+        "train": 233,
+        "heldout": 226,
+        "guard": 275,
+        "outside_window": 0
+      },
+      "frame_state": "available"
+    }
+  ],
+  "summary_sha256": "faa82d9abc7727718391462fd3701fa3a574b31b2252c9ef80c92cafd092f655",
+  "audit_source_sha256": "4f5a4cd988b8f9e6e05815f2b19a88094971ffa7222eb481f94c60faffc79d65",
+  "source_sha256": {
+    "scripts/run_section_model_trainonly.py": "48a7dc3da70f150aa2f5d2668ab00d5dbfc595a98f3eac63fa0dc166e5939320",
+    "experiments/src/creator_eval/section_model_trainonly.py": "fbbc83eea9cb0b77d3980f5d5ec4b5226aeb8cb9ae3443124a7456ed2691be25",
+    "experiments/src/creator_eval/section_model_diagnostic.py": "651f47e1dce756f40ce1db6e388117604ffda2244096a98a6deb2979fc53c9a7",
+    "configs/section_model_trainonly_v1.json": "f0943b86d1277a91b33695275889b05add413260dac6e6b3b673bcbf3344cac6",
+    "tests/test_section_model_trainonly.py": "c5af3510a4a9557c4efc9041c349853caab9ce2dee64988209a92b39fc00095d",
+    "scripts/check_section_model_trainonly.py": "4f5a4cd988b8f9e6e05815f2b19a88094971ffa7222eb481f94c60faffc79d65"
+  },
+  "scope": "Checks fixed native grouping, training-only frames, saved predictions and provenance; no optimizer refit, classification or blind validation claim"
+}
