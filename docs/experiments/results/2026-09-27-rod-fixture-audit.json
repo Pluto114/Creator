@@ -1,0 +1,30 @@
+{
+  "state": "passed",
+  "audit_run_id": "rod-fixture-audit-v1-20260927",
+  "created_at_utc": "2026-09-27T03:36:51.725982+00:00",
+  "pre_sha256": "5a03b02540d08c330a669f0cb6c2ee9f1fc8228c160ab9b3ef85060aac3407f7",
+  "prepared_sha256": "bf2994a5d3443e10ba4a1094a5f9c139f40e7aaa0f0c1d9391b90d04ad8e58a2",
+  "normal_receipts_unchanged": 409,
+  "truth_receipts_checked": 87,
+  "camera_rows": 15,
+  "rod_method_rows": 6,
+  "rgb_gt_pairs": 15,
+  "normal_replay_counts": {
+    "camera_frames": 15,
+    "rod_method_rows": 6,
+    "rgb_detection_replays": 15,
+    "rgb_rod_evidence_replays": 15
+  },
+  "physical_sha256": "8ce67f026afb2850f8fb3f71ebc5f7227c5a5f8964e444734d5066af7ee7cbc1",
+  "public_evaluation_bytes_equal": true,
+  "physical_rows_recomputed": true,
+  "coordinate_alignment_performed": false,
+  "limitations": [
+    "Known CAD drawing and ideal rendering; not a physical manufactured fixture",
+    "Read guards and source receipts are application evidence, not OS isolation",
+    "RGB detector/extractor replay uses frozen implementations; reprojection arithmetic is separate",
+    "Physical recomputation uses the same frozen, known-answer-tested metric implementation",
+    "Shared camera K fits train markers in all five views; held-out IDs test location, not held-out camera poses",
+    "Candidate search is complete only inside retained cap8 pools; the strip declares one target"
+  ]
+}

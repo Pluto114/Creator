@@ -1,5 +1,8 @@
 # Creator Newage
 
+最新（2026-09-27）：已知尺寸标定物下新增15张配对RGB，正常估计相机，旧两法共6行曲线全部输出。完整杆与断杆达到毫米级轴线读数，真实缺口保护区零误填；0.01细杆仍有19.219mm假断口、总长少39.631mm，25mm R/P=100%不能替代结构完整性。493项全量+7新增审计专项通过，G1仍未通过。见[本轮报告](docs/experiments/2026-09-27-metric-fixture-finite-rods.md)、[日志](docs/journal/2026-09-27.md)、[ADR0021](docs/decisions/0021-metric-fixture-and-finite-completeness.md)。**新聊天从[9月27日交接](docs/HANDOFF-2026-09-27.md)开始。** 下方历次状态保留。
+
+
 **Multi-view thin-structure reconstruction research, with a Blender interface.**
 
 利用同一静态物体的多张照片，研究如何改善基础重建中细杆的遗漏、断裂和错误连接。基础深度与相机估计采用独立的 DA3 后端；自研部分是局部多视图几何恢复及其独立评测。

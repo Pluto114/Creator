@@ -1,0 +1,28 @@
+{
+  "run_id": "rod-fixture-calibration-v1-20260927",
+  "scene_run_id": "rod-fixture-scenes-v1-20260927",
+  "policy": {
+    "dictionary": "DICT_5X5_100",
+    "marker_border_bits": 1,
+    "corner_refinement": "SUBPIX",
+    "refinement_window": 3,
+    "minimum_training_markers": 8,
+    "minimum_training_markers_per_plane": 2,
+    "minimum_validation_markers": 4,
+    "minimum_validation_markers_per_plane": 1,
+    "minimum_rank_ratio": 0.001,
+    "maximum_training_p95_px": 2.0,
+    "maximum_validation_p95_px": 2.0,
+    "initial_focal_image_max_fraction": 1.2,
+    "shared_intrinsics": true,
+    "square_pixels": true,
+    "zero_skew": true,
+    "zero_distortion": true,
+    "principal_point_fitted": true,
+    "maximum_iterations": 300,
+    "epsilon": 1e-10
+  },
+  "calibration_unit": "Three separate 5-view fits; each estimates shared focal,cx,cy and five poses; no case pooling",
+  "initialization": "Focal=1.2*max(image dimensions), principal=(size-1)/2, distortion zero; no camera truth or old map",
+  "scope": "Train marker IDs only; validation IDs do not reach calibrateCamera. Ideal zero-distortion, square-pixel model is a declared acquisition assumption."
+}

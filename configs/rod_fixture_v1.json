@@ -1,0 +1,247 @@
+{
+  "run_id": "rod-fixture-scenes-v1-20260927",
+  "blender": "D:/CloudMusic/steam/steamapps/common/Blender/blender.exe",
+  "scope": "Known manufactured metric dual-depth marker fixture; same old height rods/cameras/light, changed acquisition condition, not independent objects",
+  "generator": {
+    "size_wh": [
+      640,
+      480
+    ],
+    "angles_degrees": [
+      -32,
+      -14,
+      3,
+      19,
+      35
+    ],
+    "camera_radius_m": 5.8,
+    "camera_height_m": 0.12,
+    "camera_lens_mm": 49,
+    "render_samples": 48,
+    "brick_axes": "XZ",
+    "exposure": -2.0,
+    "independent_probes": true,
+    "guide_xyxy": [
+      [
+        319.5,
+        20
+      ],
+      [
+        319.5,
+        459
+      ]
+    ],
+    "guide_source": "fixed_screen_coordinates_independent_of_target_geometry",
+    "render_case_isolation": true,
+    "camera_heights_m": [
+      0.12,
+      0.75,
+      -0.45,
+      0.62,
+      -0.32
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "r01",
+      "split": "frozen_new_layout",
+      "label": "complete_fixed_lens",
+      "object_group_id": "procedural-cylinder-reference-v1",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            -0.025,
+            0,
+            -0.95
+          ],
+          [
+            -0.025,
+            0,
+            1.05
+          ]
+        ],
+        "radius": 0.022,
+        "material": "matte"
+      },
+      "distractors": [],
+      "occluder": false,
+      "reference_seed": 230923,
+      "lens_by_view_mm": [
+        49,
+        49,
+        49,
+        49,
+        49
+      ]
+    },
+    {
+      "case_id": "r02",
+      "split": "frozen_new_layout",
+      "label": "gap_fixed_lens",
+      "object_group_id": "procedural-cylinder-reference-v1",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            0.035,
+            0,
+            -0.95
+          ],
+          [
+            0.035,
+            0,
+            1.05
+          ]
+        ],
+        "radius": 0.018,
+        "material": "matte",
+        "segments": [
+          [
+            [
+              0.035,
+              0,
+              -0.95
+            ],
+            [
+              0.035,
+              0,
+              -0.18
+            ]
+          ],
+          [
+            [
+              0.035,
+              0,
+              0.17
+            ],
+            [
+              0.035,
+              0,
+              1.05
+            ]
+          ]
+        ]
+      },
+      "distractors": [],
+      "occluder": false,
+      "reference_seed": 230924,
+      "lens_by_view_mm": [
+        49,
+        49,
+        49,
+        49,
+        49
+      ],
+      "gap_segment": [
+        [
+          0.035,
+          0,
+          -0.18
+        ],
+        [
+          0.035,
+          0,
+          0.17
+        ]
+      ]
+    },
+    {
+      "case_id": "r03",
+      "split": "frozen_new_layout",
+      "label": "thin_fixed_lens",
+      "object_group_id": "procedural-cylinder-reference-v1",
+      "target": {
+        "present": true,
+        "endpoints": [
+          [
+            -0.015,
+            0,
+            -0.95
+          ],
+          [
+            -0.015,
+            0,
+            1.05
+          ]
+        ],
+        "radius": 0.005,
+        "material": "matte"
+      },
+      "distractors": [],
+      "occluder": false,
+      "reference_seed": 230925,
+      "lens_by_view_mm": [
+        49,
+        49,
+        49,
+        49,
+        49
+      ]
+    }
+  ],
+  "declared_cad_sha256": "98e4a41d83758e171aa72984258df7ade444570226a7234f0cc01d9c3d38bebd",
+  "sources": [
+    "configs/models.lock.json",
+    "configs/rod_fixture_cad_v1.json",
+    "configs/rod_fixture_v1.json",
+    "configs/rod_heldout_views_v1.json",
+    "experiments/src/creator_eval/__init__.py",
+    "experiments/src/creator_eval/__main__.py",
+    "experiments/src/creator_eval/background_correspondences.py",
+    "experiments/src/creator_eval/camera_bundle.py",
+    "experiments/src/creator_eval/camera_bundle_shared.py",
+    "experiments/src/creator_eval/camera_diagnostics.py",
+    "experiments/src/creator_eval/common_readout.py",
+    "experiments/src/creator_eval/common_readout_components.py",
+    "experiments/src/creator_eval/common_readout_split.py",
+    "experiments/src/creator_eval/correspondence_band_split.py",
+    "experiments/src/creator_eval/correspondence_tracks.py",
+    "experiments/src/creator_eval/heldout_metrics.py",
+    "experiments/src/creator_eval/line_controls.py",
+    "experiments/src/creator_eval/native_diagnostics.py",
+    "experiments/src/creator_eval/rod_candidate_association.py",
+    "experiments/src/creator_eval/rod_candidate_audit.py",
+    "experiments/src/creator_eval/rod_candidate_extent.py",
+    "experiments/src/creator_eval/rod_candidate_pool.py",
+    "experiments/src/creator_eval/rod_cylinder_gate.py",
+    "experiments/src/creator_eval/rod_cylinder_support.py",
+    "experiments/src/creator_eval/rod_evidence.py",
+    "experiments/src/creator_eval/rod_foreground_identity.py",
+    "experiments/src/creator_eval/rod_multiview_candidates.py",
+    "experiments/src/creator_eval/rod_observations.py",
+    "experiments/src/creator_eval/rod_profile_controls.py",
+    "experiments/src/creator_eval/rod_radius_consistency.py",
+    "experiments/src/creator_eval/runner.py",
+    "experiments/src/creator_eval/track_image_controls.py",
+    "reconstruction/src/creator_recon/domain/point_patch.py",
+    "scripts/blender_export_thin_pack.py",
+    "scripts/blender_rod_fixture_pack.py",
+    "scripts/blender_rod_height_pack.py",
+    "scripts/blender_rod_identity_pack.py",
+    "scripts/blender_rod_reference_pack.py",
+    "scripts/environment_paths.py",
+    "scripts/prepare_rod_fixture.py",
+    "scripts/prepare_rod_height.py",
+    "scripts/prepare_rod_heldout_views.py",
+    "scripts/prepare_rod_reference.py",
+    "scripts/run_background_correspondences.py",
+    "scripts/run_camera_bundle_pilot.py",
+    "scripts/run_camera_bundle_shared.py",
+    "scripts/run_foreground_estimated_pilot.py",
+    "scripts/run_foreground_track_bands.py",
+    "scripts/run_foreground_tracks.py",
+    "scripts/run_rod_candidate_ablation.py",
+    "scripts/run_rod_cylinder_validation.py",
+    "scripts/run_rod_evidence.py",
+    "scripts/run_rod_foreground_identity.py",
+    "scripts/run_rod_identity_blender.py",
+    "scripts/run_rod_identity_stress.py",
+    "scripts/run_rod_reference.py",
+    "scripts/run_rod_support_recheck.py",
+    "scripts/run_thin_line_controls.py",
+    "scripts/run_track_image_controls.py",
+    "scripts/smoke_da3.py",
+    "scripts/thin_pack_gt.py"
+  ]
+}

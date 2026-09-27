@@ -1,5 +1,8 @@
 # 文档索引
 
+最新（2026-09-27）：已知尺寸标定物与RGB独立相机试行完成15图、6条有限曲线。细杆能输出，但仍有19.219mm假断口、总长少39.631mm，G1未过。409前后收据、25run源码审计与493全量+7追加专项通过。新聊天优先读[新的交接文档](HANDOFF-2026-09-27.md)，再读[报告](experiments/2026-09-27-metric-fixture-finite-rods.md)、[日志](journal/2026-09-27.md)、[ADR0021](decisions/0021-metric-fixture-and-finite-completeness.md)。下方历次状态保留。
+
+
 最新续接（9月26日晚）：新增6RGB/6冻结点击，30旧地图定位60相机，60联合杆决策51保留/9旧拒；24超25mm者仍漏过。评价侧固定旧control对齐做4臂240杆/480投影槽，真K+位姿仍8超差支持，4达标未决；不回写正常方法。截面128fold零共享格，768模型保留全部失败；r1仅修CI夹具，v1快照保留。462回归、421前后收据、21run/883源码引用通过，G1未过。见[新视图](experiments/2026-09-26-heldout-rgb-views.md)、[特权诊断](experiments/2026-09-26-heldout-view-oracle.md)、[截面隔离](experiments/2026-09-26-section-model-trainonly.md)、[日志](journal/2026-09-26.md)、[ADR0020](decisions/0020-heldout-views-inherit-map-bias.md)。下方历史保留。
 
 最新（9月26日）：20种子同背景/同噪声配对完成100相机、400几何、4800相关决策；端点矛盾可查，一致错目标还需额外证据，正常对应通过也存在42mm三维误差。旧7组DA3的70行追加检查保留全部51候选，24个超出25mm者一个没拦。新64截面条件/768拟合发现原始格内位置有帮助，但半面和薄片仍不能可靠辨识；未新增gate/轴。420诊断与核心边界通过，G1未过，约1–2周为条件预算。见[成对证据](experiments/2026-09-26-paired-target-evidence.md)、[旧点击](experiments/2026-09-26-target-projection-replay.md)、[截面诊断](experiments/2026-09-26-section-model-diagnostic.md)、[日志](journal/2026-09-26.md)、[ADR0019](decisions/0019-evidence-roles-and-section-model-diagnostics.md)。下方历史保留。

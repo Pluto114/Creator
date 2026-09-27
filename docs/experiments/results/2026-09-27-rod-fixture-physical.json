@@ -1,0 +1,1960 @@
+{
+  "audit_run_id": "rod-fixture-audit-v1-20260927",
+  "state": "evaluated",
+  "pre_sha256": "5a03b02540d08c330a669f0cb6c2ee9f1fc8228c160ab9b3ef85060aac3407f7",
+  "evaluation_definition_sha256": "b2cfc90ac5cded4fca54643382dc43a7e49925885267f524cda7f655a68634db",
+  "prepared_sha256": "bf2994a5d3443e10ba4a1094a5f9c139f40e7aaa0f0c1d9391b90d04ad8e58a2",
+  "normal_receipt_count": 409,
+  "truth_hashes": {
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/manifest.json": "1f87c73e8d2d4398370d7f4fe25d053b4fd72944e7ddf39c3fafc938ec3540e1",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/geometry.json": "9ec10e8ccb54b54e5ed3fcfe1ae5f57f295176c733f255aca047e8dc2e224cff",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/mesh.npz": "d0487719c831136f579c7f7a73c299f18b1a86a55492852ee49e9495fdfbbae8",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_+03-camera.json": "cb56d9c3e97c5bb27c2450537bbde5cedb709f509138cb00f9b69b804c700ffb",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_+19-camera.json": "09ae5550484ded95a113ec3d3efcd2b7e52cdfcef8a32aa461f89fd2c8d2fd59",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_+35-camera.json": "1fefd826e1e85f2505f4dd92ad40318fe529dad3f51d477553969f5693af2e95",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_-14-camera.json": "c523369a2f22972d1147e4b0cbdbbe5a05e1466c72db5e6ee5cc8134c4bc856a",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_-32-camera.json": "b3530f973a2fb67d35d9a945d0517313a6276585542cf7f119a5b7ed3447d1a4",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_00/depth_z.npy": "961a957e9ff36869e6bddf37dacb810a999fc756c020bed948ae0251840c1a3a",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_00/ray_distance.npy": "f02dd1b54638aa28b4ed47ed8cdd0a4b691574620ef03499c149cd94c602b4d6",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_00/surface_id.npy": "bb283924730afc753aec8e7bcc98589b0b78e8b00d513145918ee780ddf9624d",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_00/target_visible.npy": "216ba89c5b713e690f7f6e2a8770d8fa1f4bfbe6e6823f8bb28c6bfad59ab2c2",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_01/depth_z.npy": "5d9e224f645596803786a20f40fe3be7e0bf46a09213a289a81d9a8aea01eb14",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_01/ray_distance.npy": "4a8a749169731f7282fa775e767d32c17296fefd4c1839b48c5c85064cccfbd8",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_01/surface_id.npy": "a43c11c48edfe574948a7e8d5c07c3269b3d0a97fb1058b740b4ceca9efdfdf6",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_01/target_visible.npy": "09409e3be7b78efef6c3e43fe08ec829ac60a8a1e3b9cd56aa4ee5453ab45f3c",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_02/depth_z.npy": "7b2113c584b5afcaa0efe1bb29beb04ce783472666a30f06ccf402a9b9e8731a",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_02/ray_distance.npy": "fa1056210057fb52e59cb785658d6da6607e220b4e425463445f5f2488066389",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_02/surface_id.npy": "eff030a93744af4fbbf59596e492f924c9ce7913316a92fe61015901815564ee",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_02/target_visible.npy": "eda04fa44d95bd4a2cc8907c524558b285d169d9c932d60b747fc5e8c6e82ec2",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_03/depth_z.npy": "25ef423e9434fc8c946492e8b48e468c6bf95af5e1547087b9557b6b091b5939",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_03/ray_distance.npy": "eabe4b14b223fedc7f530c0e96092c60749ad4242bddf9de820b6f60f0e7c6d4",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_03/surface_id.npy": "b09288b37f16554b16a15264e7c984702023fb4ddee9cfc21e5360b88e3d6bd9",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_03/target_visible.npy": "c11cd72a219bfaef2a491a4f26a1d85795cdffae5885fdb6afb082209be90053",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_04/depth_z.npy": "fac18cf9f669f13361c4cc4f29914ba6f431de02c8f13bebd9ded9c5fa780177",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_04/ray_distance.npy": "026b57608fc35f5b0bec5b323e63f97124905b266644d68c0c04dec68acefdeb",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_04/surface_id.npy": "051cf63dbccd075dafe902ca6fbf7a4b7ae1bc4abf0f5342a730d28ff09df098",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r01/view_04/target_visible.npy": "008f7ee86a61f1cd217efa4c92dc3b77c614ce4e187aea09a854a1cdc2dbbffe",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/geometry.json": "d10c6b806d8a4d7a0559bb537e21a7c4e0970f0bcc9fd1fee509adc8ab176d6f",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/mesh.npz": "e855326839a2f581843d57584f863c9de7fd195b6fc09909402607bce2cfdbd3",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_+03-camera.json": "cb56d9c3e97c5bb27c2450537bbde5cedb709f509138cb00f9b69b804c700ffb",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_+19-camera.json": "09ae5550484ded95a113ec3d3efcd2b7e52cdfcef8a32aa461f89fd2c8d2fd59",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_+35-camera.json": "1fefd826e1e85f2505f4dd92ad40318fe529dad3f51d477553969f5693af2e95",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_-14-camera.json": "c523369a2f22972d1147e4b0cbdbbe5a05e1466c72db5e6ee5cc8134c4bc856a",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_-32-camera.json": "b3530f973a2fb67d35d9a945d0517313a6276585542cf7f119a5b7ed3447d1a4",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_00/depth_z.npy": "e23295e502b91087b657272e85229f415ea51b0009aa8dcb9b90c7ec388fe948",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_00/ray_distance.npy": "948e26fac953ebf516df312f5cf88c568a3b55f59d260eec602cc51575f918e4",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_00/surface_id.npy": "88bb98398841821b6feb0e884a74944a0b2c91cea2c1ae9c7d527ff90659770d",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_00/target_visible.npy": "d1e3070b06bc1d6ee0034f1e0ec8c4d6a7bd962cd09f69ba31cb312d7d530c97",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_01/depth_z.npy": "d1438dd58896cb48e8336628f1b8b4aa6723fcf52c7eecf988681f3ff2802a65",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_01/ray_distance.npy": "a92b6d0ceca7456f7b59afc434c2333a02e42df12d385884a4906e27d2f9c02e",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_01/surface_id.npy": "a8f56c47111df2f0ac7a3cb73726459323e745443da027b58edf6d92c4dcf9ae",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_01/target_visible.npy": "5152f2906a8c22688140c47170e8cca9614292463eb760c72bab0246e40ed210",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_02/depth_z.npy": "531fa9e2c717e02e036cd4978b7439a3c60c34a90cd16bc11e0909a049574773",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_02/ray_distance.npy": "8e1028e23baaf48f71976a5b821a3461f8d14219e2ae9141c271510ded36b5a5",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_02/surface_id.npy": "8b4f5e1852f2b7fc133a660ce46685d231fd50239f6f60c1d7bd09b7151fe66f",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_02/target_visible.npy": "79f5d94faa7a0236910d3e530068be878ee7f315809f99218c20deeb62f230d0",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_03/depth_z.npy": "5d7b064e9e98457e3f0b78d5b8c645da1e8404ee6f94f248298ff0137534290f",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_03/ray_distance.npy": "401b0fe6f4be7f2385da836854050dafd109e5de23a37e50541d9c337e35164f",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_03/surface_id.npy": "44d6603ef3ea0dcb82c0552a2bc41f5951068ebb525c50f13b7d5464339a4864",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_03/target_visible.npy": "666949b2cd5fb463de0f0ec00632aebd138525f53c6ddb74fcdddaa2d1e965d0",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_04/depth_z.npy": "ca9d6e2dd303649d1185bb9d1e59bf5d227ce826ab63a806aed0eae15e3ec010",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_04/ray_distance.npy": "8664b370c55d6b2585cf5adffbf9808e7bbcc0cefda6a3eb3b04708e9f7f96cf",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_04/surface_id.npy": "42733b947e44831941a9421df7f3bec00f8a28e0780e23ea21494f157a541ffa",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r02/view_04/target_visible.npy": "41e1d4920535b487adc5ad1a63ab96999b86dcaa0b8fd54ccbae706ee22a182b",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/geometry.json": "cc902759e01c644e5926f99181a5c38718e974884494b5773d7bd4a539d2ec0f",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/mesh.npz": "26003247902c466cb87b9289ce34b956d88d67dd3ec525694c9f0757a49bba02",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_+03-camera.json": "cb56d9c3e97c5bb27c2450537bbde5cedb709f509138cb00f9b69b804c700ffb",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_+19-camera.json": "09ae5550484ded95a113ec3d3efcd2b7e52cdfcef8a32aa461f89fd2c8d2fd59",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_+35-camera.json": "1fefd826e1e85f2505f4dd92ad40318fe529dad3f51d477553969f5693af2e95",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_-14-camera.json": "c523369a2f22972d1147e4b0cbdbbe5a05e1466c72db5e6ee5cc8134c4bc856a",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_-32-camera.json": "b3530f973a2fb67d35d9a945d0517313a6276585542cf7f119a5b7ed3447d1a4",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_00/depth_z.npy": "cca6ca8dc160ff58801842f5286714061bffdd72041b0a87c957f7f05dd6a1cd",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_00/ray_distance.npy": "22820332686c49820b3d1c26ed21ea17864e3b2721f04229a4f82c77ac24def2",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_00/surface_id.npy": "31d7874a9f6b2e6516a7bf8ae722befeff8e48610c7aab1dcda8e9ca8f634a27",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_00/target_visible.npy": "1917cffc2e41e78482d4c9488b04c13b525fa4e689374d26c911bd2555cfc60a",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_01/depth_z.npy": "d8125434fa5e9f63c9dc108f4179268648855d888fb5c6369a26fce1b1073b36",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_01/ray_distance.npy": "0f7b950a3fcdd7a4e7bef84b4e051d5bcca1474fee3c2fc70ac421d02c7a6471",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_01/surface_id.npy": "3b931ddadfbba8c34f2faaff9c0e4cc49d73fe4c6136f13fa39e6ec2dad6b8b4",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_01/target_visible.npy": "cefb25d1fb9536b9e451aae95ff408e24cd0856c9411c9b896ad81e9a7a54f20",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_02/depth_z.npy": "814d82b37da0e9f821aea0cdd705421846d28d67f5441e8ea9396e63a5db9f6f",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_02/ray_distance.npy": "69cc4a3224f2e784188bc9acf6f77142dd3df44f58a6c248ba0451ca1e55e767",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_02/surface_id.npy": "6c5bb2fe3f51ec4e2b8ed7ef16ad5e61c16d97e831e0b3720e00292c883f8152",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_02/target_visible.npy": "58d3df61438f5eefec27dcc37f4b7af9cd2f2f88861b26ebaf22a6b6a111edf6",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_03/depth_z.npy": "6b50845f75b9af1418e8e34ec8de37b8fbf1a4fd1cbffd678fcc6f698338b7aa",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_03/ray_distance.npy": "b2c5c4ca5b950f32fe8a15473f335968a474ec68c3cc6ab9a6692a2c4bb4ebf0",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_03/surface_id.npy": "8085b626b2d966edf3a967939d056745effada300b13e385c5d8b3f057e75c86",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_03/target_visible.npy": "69c80f0ef138ff057d36152c4e6e1663194602b86a2328bf5d22d0d5d9588e97",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_04/depth_z.npy": "587c527d27a1eccbc465c569634aad66b13092386b8f3794859f50dcaf5e2abd",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_04/ray_distance.npy": "3fe303114c669f1ef8978c0a12fa1b8fe3dd23bf4fe4313567f5072f9a312031",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_04/surface_id.npy": "0e01a9858cc2bdfe59247035b8ca54b3b9824981612b4e3553129c2c1aebb335",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/r03/view_04/target_visible.npy": "df3cd4b1490f057b0b2538285470e86db36f4cf4344bce744420301171830f14",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/render-00.json": "bd2999e92f7d7f8027e889c3cfcc517e4f8982e98c92c09fc96e0e0cd4256af1",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/render-01.json": "646694edb931116c25cae0ab0ea1e67f4a2d604b8eec4a7312a3877c69bd070a",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/render-02.json": "67ebd959e4667005f1cb9b61ec5a416725e7de47cb03635e9d7841d7de6fa39c",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/render_manifest.json": "f8cd153d88bfa5f55d937c091ea99aac1756a64e1cf304903961efe7eea2f290",
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/artifact_hashes.json": "7ff1cf681f16764e1bb09aff86c8bed3c8c0eca64ce8c49dd48e0572cacf3b09"
+  },
+  "policy": {
+    "curve_tolerance_m": 0.025,
+    "curve_spacing_m": 0.002,
+    "gap_endpoint_guard_m": 0.025,
+    "endpoint_numeric_relative_tolerance": 1e-10,
+    "coordinate_policy": "declared_fixture_world_m_no_alignment"
+  },
+  "camera_rows": [
+    {
+      "case_id": "r01",
+      "view_id": "view_00",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.012278672543040875,
+      "rotation_error_deg": 0.030891465418087634,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        -3.0687034511457796,
+        -4.907843519738266,
+        0.12316866668084658
+      ],
+      "truth_center_world": [
+        -3.073531709871327,
+        -4.918679261352814,
+        0.12000000438246898
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r01",
+      "view_id": "view_01",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.011508219074238464,
+      "rotation_error_deg": 0.0,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        -1.4033606051487255,
+        -5.616251689328094,
+        0.749017781814867
+      ],
+      "truth_center_world": [
+        -1.4031471419120742,
+        -5.627715921963025,
+        0.7500000800381409
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r01",
+      "view_id": "view_02",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.010298160136655798,
+      "rotation_error_deg": 0.012071122069688864,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        0.29963139839435854,
+        -5.782537147002827,
+        -0.44957266429712556
+      ],
+      "truth_center_world": [
+        0.3035485761980582,
+        -5.792051619904876,
+        -0.4500000115219854
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r01",
+      "view_id": "view_03",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.010242893022387766,
+      "rotation_error_deg": 0.04229692486393302,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        1.8807462814382763,
+        -5.477732613996325,
+        0.6170759152622748
+      ],
+      "truth_center_world": [
+        1.8882953731445618,
+        -5.484007790157983,
+        0.6199999939237235
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r01",
+      "view_id": "view_04",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.008205172321852942,
+      "rotation_error_deg": 0.0,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        3.3204254160471813,
+        -4.746006476296144,
+        -0.3187197119618168
+      ],
+      "truth_center_world": [
+        3.326743783260536,
+        -4.751082289844885,
+        -0.3200000265352416
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_00",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.012278672543040875,
+      "rotation_error_deg": 0.030891465418087634,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        -3.0687034511457796,
+        -4.907843519738266,
+        0.12316866668084658
+      ],
+      "truth_center_world": [
+        -3.073531709871327,
+        -4.918679261352814,
+        0.12000000438246898
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_01",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.011508219074238464,
+      "rotation_error_deg": 0.0,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        -1.4033606051487255,
+        -5.616251689328094,
+        0.749017781814867
+      ],
+      "truth_center_world": [
+        -1.4031471419120742,
+        -5.627715921963025,
+        0.7500000800381409
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_02",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.010298160136655798,
+      "rotation_error_deg": 0.012071122069688864,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        0.29963139839435854,
+        -5.782537147002827,
+        -0.44957266429712556
+      ],
+      "truth_center_world": [
+        0.3035485761980582,
+        -5.792051619904876,
+        -0.4500000115219854
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_03",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.010242893022387766,
+      "rotation_error_deg": 0.04229692486393302,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        1.8807462814382763,
+        -5.477732613996325,
+        0.6170759152622748
+      ],
+      "truth_center_world": [
+        1.8882953731445618,
+        -5.484007790157983,
+        0.6199999939237235
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_04",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.008205172321852942,
+      "rotation_error_deg": 0.0,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        3.3204254160471813,
+        -4.746006476296144,
+        -0.3187197119618168
+      ],
+      "truth_center_world": [
+        3.326743783260536,
+        -4.751082289844885,
+        -0.3200000265352416
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_00",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.012278672543040875,
+      "rotation_error_deg": 0.030891465418087634,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        -3.0687034511457796,
+        -4.907843519738266,
+        0.12316866668084658
+      ],
+      "truth_center_world": [
+        -3.073531709871327,
+        -4.918679261352814,
+        0.12000000438246898
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_01",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.011508219074238464,
+      "rotation_error_deg": 0.0,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        -1.4033606051487255,
+        -5.616251689328094,
+        0.749017781814867
+      ],
+      "truth_center_world": [
+        -1.4031471419120742,
+        -5.627715921963025,
+        0.7500000800381409
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_02",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.010298160136655798,
+      "rotation_error_deg": 0.012071122069688864,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        0.29963139839435854,
+        -5.782537147002827,
+        -0.44957266429712556
+      ],
+      "truth_center_world": [
+        0.3035485761980582,
+        -5.792051619904876,
+        -0.4500000115219854
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_03",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.010242893022387766,
+      "rotation_error_deg": 0.04229692486393302,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        1.8807462814382763,
+        -5.477732613996325,
+        0.6170759152622748
+      ],
+      "truth_center_world": [
+        1.8882953731445618,
+        -5.484007790157983,
+        0.6199999939237235
+      ],
+      "alignment_performed": false
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_04",
+      "state": "scored",
+      "normal_state": "validated",
+      "center_error_m": 0.008205172321852942,
+      "rotation_error_deg": 0.0,
+      "focal_relative_error": -0.0018692115923797446,
+      "principal_error_px": 0.3121978109326937,
+      "predicted_center_world": [
+        3.3204254160471813,
+        -4.746006476296144,
+        -0.3187197119618168
+      ],
+      "truth_center_world": [
+        3.326743783260536,
+        -4.751082289844885,
+        -0.3200000265352416
+      ],
+      "alignment_performed": false
+    }
+  ],
+  "rod_rows": [
+    {
+      "case_id": "r01",
+      "method": "baseline",
+      "normal_state": "accepted",
+      "normal_record_sha256": "69ed004b103d3136d9cb662bfb5c2622e8b6547c6c039d70f478997a50fbcfb3",
+      "prediction_segments": [
+        [
+          [
+            -0.026500993358713854,
+            -0.000524912634000132,
+            -0.9417447870921439
+          ],
+          [
+            -0.02639908241800354,
+            -0.0006348024298153592,
+            1.044250416302491
+          ]
+        ]
+      ],
+      "truth_segments": [
+        [
+          [
+            -0.025,
+            0,
+            -0.95
+          ],
+          [
+            -0.025,
+            0,
+            1.05
+          ]
+        ]
+      ],
+      "declared_gap_segments": [],
+      "rejection_reasons": [],
+      "physical": {
+        "state": "scored",
+        "policy": {
+          "curve_tolerance_m": 0.025,
+          "curve_spacing_m": 0.002,
+          "gap_endpoint_guard_m": 0.025,
+          "endpoint_numeric_relative_tolerance": 1e-10,
+          "coordinate_policy": "declared_fixture_world_m_no_alignment"
+        },
+        "alignment_performed": false,
+        "geometry_modified": false,
+        "empty_prediction": false,
+        "prediction_segment_count": 1,
+        "truth_segment_count": 1,
+        "curves": {
+          "recovery_fraction": 1.0,
+          "precision_fraction": 1.0,
+          "false_predicted_length": 0.0,
+          "truth_to_prediction": {
+            "source_length": 2.000000000000001,
+            "sample_count": 1000,
+            "covered_length": 2.000000000000001,
+            "covered_fraction": 1.0,
+            "distance_median": 0.0015618495888030872,
+            "distance_p95": 0.0015875243033253495,
+            "reason": null
+          },
+          "prediction_to_truth": {
+            "source_length": 1.9859952090496358,
+            "sample_count": 993,
+            "covered_length": 1.9859952090496358,
+            "covered_fraction": 1.0,
+            "distance_median": 0.0015616800680631998,
+            "distance_p95": 0.0015871579720386033,
+            "reason": null
+          },
+          "tolerance": 0.025,
+          "sampling_max_spacing": 0.002,
+          "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+          "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+          "units": "input_coordinate_units",
+          "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+        },
+        "length": {
+          "prediction_union_m": 1.9859952090496351,
+          "truth_union_m": 2.0,
+          "signed_error_m": -0.014004790950364887,
+          "absolute_error_m": 0.014004790950364887,
+          "relative_error": -0.0070023954751824435,
+          "policy": "Positive-length collinear overlap rejected; native finite-segment arc sum, no endpoint-distance surrogate"
+        },
+        "predicted_endpoints": {
+          "native_endpoint_count": 2,
+          "boundary_endpoint_count": 2,
+          "boundary_points": [
+            [
+              -0.026500993358713854,
+              -0.000524912634000132,
+              -0.9417447870921439
+            ],
+            [
+              -0.02639908241800354,
+              -0.0006348024298153592,
+              1.044250416302491
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.044250416302491e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_endpoints": {
+          "native_endpoint_count": 2,
+          "boundary_endpoint_count": 2,
+          "boundary_points": [
+            [
+              -0.025,
+              0.0,
+              -0.95
+            ],
+            [
+              -0.025,
+              0.0,
+              1.05
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.0500000000000001e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_boundary_to_prediction_boundary": {
+          "count": 2,
+          "distances_m": [
+            0.00840696464190666,
+            0.005951312328547994
+          ],
+          "mean_m": 0.007179138485227327,
+          "max_m": 0.00840696464190666,
+          "p95_m": 0.008284182026238726,
+          "reason": null
+        },
+        "prediction_boundary_to_truth_boundary": {
+          "count": 2,
+          "distances_m": [
+            0.00840696464190666,
+            0.005951312328547994
+          ],
+          "mean_m": 0.007179138485227327,
+          "max_m": 0.00840696464190666,
+          "p95_m": 0.008284182026238726,
+          "reason": null
+        },
+        "raw_truth_endpoints_to_prediction_curve": {
+          "count": 2,
+          "distances_m": [
+            0.00840696464190666,
+            0.005951312328547994
+          ],
+          "mean_m": 0.007179138485227327,
+          "max_m": 0.00840696464190666,
+          "p95_m": 0.008284182026238726,
+          "reason": null
+        },
+        "boundary_bijection": {
+          "state": "scored",
+          "pairs": [
+            {
+              "prediction_boundary_index": 0,
+              "truth_boundary_index": 0,
+              "distance_m": 0.00840696464190666
+            },
+            {
+              "prediction_boundary_index": 1,
+              "truth_boundary_index": 1,
+              "distance_m": 0.005951312328547994
+            }
+          ],
+          "maximum_error_m": 0.00840696464190666,
+          "matching": "Evaluation-only endpoint-distance bijection; no geometry movement"
+        },
+        "gaps": [],
+        "guarded_gap": {
+          "interior_length_m": 0,
+          "false_proximity_length_m": 0,
+          "false_proximity_fraction": null,
+          "scope": "Length within tolerance of predicted finite curves inside guarded GT gap; not proof of topological connectivity"
+        },
+        "scope": "Declared CAD-world finite-structure diagnostics. Empty output has zero positive-truth recovery and undefined precision; no qualification gate"
+      }
+    },
+    {
+      "case_id": "r01",
+      "method": "cylinder_support",
+      "normal_state": "accepted",
+      "normal_record_sha256": "69ed004b103d3136d9cb662bfb5c2622e8b6547c6c039d70f478997a50fbcfb3",
+      "prediction_segments": [
+        [
+          [
+            -0.026500993358713854,
+            -0.000524912634000132,
+            -0.9417447870921439
+          ],
+          [
+            -0.02639908241800354,
+            -0.0006348024298153592,
+            1.044250416302491
+          ]
+        ]
+      ],
+      "truth_segments": [
+        [
+          [
+            -0.025,
+            0,
+            -0.95
+          ],
+          [
+            -0.025,
+            0,
+            1.05
+          ]
+        ]
+      ],
+      "declared_gap_segments": [],
+      "rejection_reasons": [],
+      "physical": {
+        "state": "scored",
+        "policy": {
+          "curve_tolerance_m": 0.025,
+          "curve_spacing_m": 0.002,
+          "gap_endpoint_guard_m": 0.025,
+          "endpoint_numeric_relative_tolerance": 1e-10,
+          "coordinate_policy": "declared_fixture_world_m_no_alignment"
+        },
+        "alignment_performed": false,
+        "geometry_modified": false,
+        "empty_prediction": false,
+        "prediction_segment_count": 1,
+        "truth_segment_count": 1,
+        "curves": {
+          "recovery_fraction": 1.0,
+          "precision_fraction": 1.0,
+          "false_predicted_length": 0.0,
+          "truth_to_prediction": {
+            "source_length": 2.000000000000001,
+            "sample_count": 1000,
+            "covered_length": 2.000000000000001,
+            "covered_fraction": 1.0,
+            "distance_median": 0.0015618495888030872,
+            "distance_p95": 0.0015875243033253495,
+            "reason": null
+          },
+          "prediction_to_truth": {
+            "source_length": 1.9859952090496358,
+            "sample_count": 993,
+            "covered_length": 1.9859952090496358,
+            "covered_fraction": 1.0,
+            "distance_median": 0.0015616800680631998,
+            "distance_p95": 0.0015871579720386033,
+            "reason": null
+          },
+          "tolerance": 0.025,
+          "sampling_max_spacing": 0.002,
+          "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+          "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+          "units": "input_coordinate_units",
+          "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+        },
+        "length": {
+          "prediction_union_m": 1.9859952090496351,
+          "truth_union_m": 2.0,
+          "signed_error_m": -0.014004790950364887,
+          "absolute_error_m": 0.014004790950364887,
+          "relative_error": -0.0070023954751824435,
+          "policy": "Positive-length collinear overlap rejected; native finite-segment arc sum, no endpoint-distance surrogate"
+        },
+        "predicted_endpoints": {
+          "native_endpoint_count": 2,
+          "boundary_endpoint_count": 2,
+          "boundary_points": [
+            [
+              -0.026500993358713854,
+              -0.000524912634000132,
+              -0.9417447870921439
+            ],
+            [
+              -0.02639908241800354,
+              -0.0006348024298153592,
+              1.044250416302491
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.044250416302491e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_endpoints": {
+          "native_endpoint_count": 2,
+          "boundary_endpoint_count": 2,
+          "boundary_points": [
+            [
+              -0.025,
+              0.0,
+              -0.95
+            ],
+            [
+              -0.025,
+              0.0,
+              1.05
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.0500000000000001e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_boundary_to_prediction_boundary": {
+          "count": 2,
+          "distances_m": [
+            0.00840696464190666,
+            0.005951312328547994
+          ],
+          "mean_m": 0.007179138485227327,
+          "max_m": 0.00840696464190666,
+          "p95_m": 0.008284182026238726,
+          "reason": null
+        },
+        "prediction_boundary_to_truth_boundary": {
+          "count": 2,
+          "distances_m": [
+            0.00840696464190666,
+            0.005951312328547994
+          ],
+          "mean_m": 0.007179138485227327,
+          "max_m": 0.00840696464190666,
+          "p95_m": 0.008284182026238726,
+          "reason": null
+        },
+        "raw_truth_endpoints_to_prediction_curve": {
+          "count": 2,
+          "distances_m": [
+            0.00840696464190666,
+            0.005951312328547994
+          ],
+          "mean_m": 0.007179138485227327,
+          "max_m": 0.00840696464190666,
+          "p95_m": 0.008284182026238726,
+          "reason": null
+        },
+        "boundary_bijection": {
+          "state": "scored",
+          "pairs": [
+            {
+              "prediction_boundary_index": 0,
+              "truth_boundary_index": 0,
+              "distance_m": 0.00840696464190666
+            },
+            {
+              "prediction_boundary_index": 1,
+              "truth_boundary_index": 1,
+              "distance_m": 0.005951312328547994
+            }
+          ],
+          "maximum_error_m": 0.00840696464190666,
+          "matching": "Evaluation-only endpoint-distance bijection; no geometry movement"
+        },
+        "gaps": [],
+        "guarded_gap": {
+          "interior_length_m": 0,
+          "false_proximity_length_m": 0,
+          "false_proximity_fraction": null,
+          "scope": "Length within tolerance of predicted finite curves inside guarded GT gap; not proof of topological connectivity"
+        },
+        "scope": "Declared CAD-world finite-structure diagnostics. Empty output has zero positive-truth recovery and undefined precision; no qualification gate"
+      }
+    },
+    {
+      "case_id": "r02",
+      "method": "baseline",
+      "normal_state": "accepted",
+      "normal_record_sha256": "4a5aae379f136163a140933aec82fe5b9befaca33fec0c56dd8df3dbac1c209c",
+      "prediction_segments": [
+        [
+          [
+            0.03758363118701185,
+            -0.0020899734984100088,
+            -0.9417162928941002
+          ],
+          [
+            0.03701971148660436,
+            -0.0009856291301218853,
+            -0.1857578431980577
+          ]
+        ],
+        [
+          [
+            0.036752088577936395,
+            -0.00046153349771396214,
+            0.17300209903057265
+          ],
+          [
+            0.036102147228314195,
+            0.0008112701809909941,
+            1.0442762444429607
+          ]
+        ]
+      ],
+      "truth_segments": [
+        [
+          [
+            0.035,
+            0,
+            -0.95
+          ],
+          [
+            0.035,
+            0,
+            -0.18
+          ]
+        ],
+        [
+          [
+            0.035,
+            0,
+            0.17
+          ],
+          [
+            0.035,
+            0,
+            1.05
+          ]
+        ]
+      ],
+      "declared_gap_segments": [
+        [
+          [
+            0.035,
+            0,
+            -0.18
+          ],
+          [
+            0.035,
+            0,
+            0.17
+          ]
+        ]
+      ],
+      "rejection_reasons": [],
+      "physical": {
+        "state": "scored",
+        "policy": {
+          "curve_tolerance_m": 0.025,
+          "curve_spacing_m": 0.002,
+          "gap_endpoint_guard_m": 0.025,
+          "endpoint_numeric_relative_tolerance": 1e-10,
+          "coordinate_policy": "declared_fixture_world_m_no_alignment"
+        },
+        "alignment_performed": false,
+        "geometry_modified": false,
+        "empty_prediction": false,
+        "prediction_segment_count": 2,
+        "truth_segment_count": 2,
+        "curves": {
+          "recovery_fraction": 1.0,
+          "precision_fraction": 1.0,
+          "false_predicted_length": 0.0,
+          "truth_to_prediction": {
+            "source_length": 1.6500000000000006,
+            "sample_count": 825,
+            "covered_length": 1.6500000000000006,
+            "covered_fraction": 1.0,
+            "distance_median": 0.0017603501524752678,
+            "distance_p95": 0.003220457305050801,
+            "reason": null
+          },
+          "prediction_to_truth": {
+            "source_length": 1.627234784189056,
+            "sample_count": 814,
+            "covered_length": 1.627234784189056,
+            "covered_fraction": 1.0,
+            "distance_median": 0.0017509660684763449,
+            "distance_p95": 0.003202187077376043,
+            "reason": null
+          },
+          "tolerance": 0.025,
+          "sampling_max_spacing": 0.002,
+          "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+          "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+          "units": "input_coordinate_units",
+          "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+        },
+        "length": {
+          "prediction_union_m": 1.627234784189056,
+          "truth_union_m": 1.65,
+          "signed_error_m": -0.02276521581094393,
+          "absolute_error_m": 0.02276521581094393,
+          "relative_error": -0.01379710049148117,
+          "policy": "Positive-length collinear overlap rejected; native finite-segment arc sum, no endpoint-distance surrogate"
+        },
+        "predicted_endpoints": {
+          "native_endpoint_count": 4,
+          "boundary_endpoint_count": 4,
+          "boundary_points": [
+            [
+              0.03758363118701185,
+              -0.0020899734984100088,
+              -0.9417162928941002
+            ],
+            [
+              0.03701971148660436,
+              -0.0009856291301218853,
+              -0.1857578431980577
+            ],
+            [
+              0.036752088577936395,
+              -0.00046153349771396214,
+              0.17300209903057265
+            ],
+            [
+              0.036102147228314195,
+              0.0008112701809909941,
+              1.0442762444429607
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.0442762444429608e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_endpoints": {
+          "native_endpoint_count": 4,
+          "boundary_endpoint_count": 4,
+          "boundary_points": [
+            [
+              0.035,
+              0.0,
+              -0.95
+            ],
+            [
+              0.035,
+              0.0,
+              -0.18
+            ],
+            [
+              0.035,
+              0.0,
+              0.17
+            ],
+            [
+              0.035,
+              0.0,
+              1.05
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.0500000000000001e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_boundary_to_prediction_boundary": {
+          "count": 4,
+          "distances_m": [
+            0.008925409948618082,
+            0.006180894560230392,
+            0.0035064834441092705,
+            0.005885088401730605
+          ],
+          "mean_m": 0.0061244690886720875,
+          "max_m": 0.008925409948618082,
+          "p95_m": 0.008513732640359928,
+          "reason": null
+        },
+        "prediction_boundary_to_truth_boundary": {
+          "count": 4,
+          "distances_m": [
+            0.008925409948618082,
+            0.006180894560230392,
+            0.0035064834441092705,
+            0.005885088401730605
+          ],
+          "mean_m": 0.0061244690886720875,
+          "max_m": 0.008925409948618082,
+          "p95_m": 0.008513732640359928,
+          "reason": null
+        },
+        "raw_truth_endpoints_to_prediction_curve": {
+          "count": 4,
+          "distances_m": [
+            0.008925409948618082,
+            0.006180894560230366,
+            0.0035064834441092705,
+            0.005885088401730605
+          ],
+          "mean_m": 0.0061244690886720805,
+          "max_m": 0.008925409948618082,
+          "p95_m": 0.008513732640359924,
+          "reason": null
+        },
+        "boundary_bijection": {
+          "state": "scored",
+          "pairs": [
+            {
+              "prediction_boundary_index": 0,
+              "truth_boundary_index": 0,
+              "distance_m": 0.008925409948618082
+            },
+            {
+              "prediction_boundary_index": 1,
+              "truth_boundary_index": 1,
+              "distance_m": 0.006180894560230392
+            },
+            {
+              "prediction_boundary_index": 2,
+              "truth_boundary_index": 2,
+              "distance_m": 0.0035064834441092705
+            },
+            {
+              "prediction_boundary_index": 3,
+              "truth_boundary_index": 3,
+              "distance_m": 0.005885088401730605
+            }
+          ],
+          "maximum_error_m": 0.008925409948618082,
+          "matching": "Evaluation-only endpoint-distance bijection; no geometry movement"
+        },
+        "gaps": [
+          {
+            "whole_gap": {
+              "source_length": 0.3500000000000001,
+              "sample_count": 175,
+              "covered_length": 0.04200000000000001,
+              "covered_fraction": 0.12,
+              "distance_median": 0.0920199383480871,
+              "distance_p95": 0.17077263162732986,
+              "reason": null
+            },
+            "guarded_interior": {
+              "source_length": 0.30000000000000004,
+              "sample_count": 151,
+              "covered_length": 0.0,
+              "covered_fraction": 0.0,
+              "distance_median": 0.10450787256176898,
+              "distance_p95": 0.17205137464820802,
+              "reason": null
+            },
+            "endpoint_guard": 0.025,
+            "tolerance": 0.025,
+            "sampling_max_spacing": 0.002,
+            "units": "input_coordinate_units",
+            "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+          }
+        ],
+        "guarded_gap": {
+          "interior_length_m": 0.30000000000000004,
+          "false_proximity_length_m": 0.0,
+          "false_proximity_fraction": 0.0,
+          "scope": "Length within tolerance of predicted finite curves inside guarded GT gap; not proof of topological connectivity"
+        },
+        "scope": "Declared CAD-world finite-structure diagnostics. Empty output has zero positive-truth recovery and undefined precision; no qualification gate"
+      }
+    },
+    {
+      "case_id": "r02",
+      "method": "cylinder_support",
+      "normal_state": "accepted",
+      "normal_record_sha256": "4a5aae379f136163a140933aec82fe5b9befaca33fec0c56dd8df3dbac1c209c",
+      "prediction_segments": [
+        [
+          [
+            0.03585289983399383,
+            0.0004998736533522062,
+            -0.9417456972764477
+          ],
+          [
+            0.03583877868567947,
+            0.000781501902170435,
+            -0.18578628319730608
+          ]
+        ],
+        [
+          [
+            0.035832077123767576,
+            0.0009151559863553572,
+            0.17297411670465943
+          ],
+          [
+            0.03581580190198153,
+            0.0012397444765187397,
+            1.044249373609433
+          ]
+        ]
+      ],
+      "truth_segments": [
+        [
+          [
+            0.035,
+            0,
+            -0.95
+          ],
+          [
+            0.035,
+            0,
+            -0.18
+          ]
+        ],
+        [
+          [
+            0.035,
+            0,
+            0.17
+          ],
+          [
+            0.035,
+            0,
+            1.05
+          ]
+        ]
+      ],
+      "declared_gap_segments": [
+        [
+          [
+            0.035,
+            0,
+            -0.18
+          ],
+          [
+            0.035,
+            0,
+            0.17
+          ]
+        ]
+      ],
+      "rejection_reasons": [],
+      "physical": {
+        "state": "scored",
+        "policy": {
+          "curve_tolerance_m": 0.025,
+          "curve_spacing_m": 0.002,
+          "gap_endpoint_guard_m": 0.025,
+          "endpoint_numeric_relative_tolerance": 1e-10,
+          "coordinate_policy": "declared_fixture_world_m_no_alignment"
+        },
+        "alignment_performed": false,
+        "geometry_modified": false,
+        "empty_prediction": false,
+        "prediction_segment_count": 2,
+        "truth_segment_count": 2,
+        "curves": {
+          "recovery_fraction": 1.0,
+          "precision_fraction": 1.0,
+          "false_predicted_length": 0.0,
+          "truth_to_prediction": {
+            "source_length": 1.6500000000000006,
+            "sample_count": 825,
+            "covered_length": 1.6500000000000006,
+            "covered_fraction": 1.0,
+            "distance_median": 0.0012549011365189894,
+            "distance_p95": 0.0014651138517594719,
+            "reason": null
+          },
+          "prediction_to_truth": {
+            "source_length": 1.6272347841890564,
+            "sample_count": 814,
+            "covered_length": 1.6272347841890564,
+            "covered_fraction": 1.0,
+            "distance_median": 0.001251949718626095,
+            "distance_p95": 0.0014598349509829065,
+            "reason": null
+          },
+          "tolerance": 0.025,
+          "sampling_max_spacing": 0.002,
+          "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+          "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+          "units": "input_coordinate_units",
+          "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+        },
+        "length": {
+          "prediction_union_m": 1.6272347841890564,
+          "truth_union_m": 1.65,
+          "signed_error_m": -0.022765215810943484,
+          "absolute_error_m": 0.022765215810943484,
+          "relative_error": -0.0137971004914809,
+          "policy": "Positive-length collinear overlap rejected; native finite-segment arc sum, no endpoint-distance surrogate"
+        },
+        "predicted_endpoints": {
+          "native_endpoint_count": 4,
+          "boundary_endpoint_count": 4,
+          "boundary_points": [
+            [
+              0.03585289983399383,
+              0.0004998736533522062,
+              -0.9417456972764477
+            ],
+            [
+              0.03583877868567947,
+              0.000781501902170435,
+              -0.18578628319730608
+            ],
+            [
+              0.035832077123767576,
+              0.0009151559863553572,
+              0.17297411670465943
+            ],
+            [
+              0.03581580190198153,
+              0.0012397444765187397,
+              1.044249373609433
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.044249373609433e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_endpoints": {
+          "native_endpoint_count": 4,
+          "boundary_endpoint_count": 4,
+          "boundary_points": [
+            [
+              0.035,
+              0.0,
+              -0.95
+            ],
+            [
+              0.035,
+              0.0,
+              -0.18
+            ],
+            [
+              0.035,
+              0.0,
+              0.17
+            ],
+            [
+              0.035,
+              0.0,
+              1.05
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.0500000000000001e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_boundary_to_prediction_boundary": {
+          "count": 4,
+          "distances_m": [
+            0.008313292082453485,
+            0.0058987598820491914,
+            0.0032210608488809286,
+            0.005939040578597048
+          ],
+          "mean_m": 0.005843038347995163,
+          "max_m": 0.008313292082453485,
+          "p95_m": 0.007957154356875018,
+          "reason": null
+        },
+        "prediction_boundary_to_truth_boundary": {
+          "count": 4,
+          "distances_m": [
+            0.008313292082453485,
+            0.0058987598820491914,
+            0.0032210608488809286,
+            0.005939040578597048
+          ],
+          "mean_m": 0.005843038347995163,
+          "max_m": 0.008313292082453485,
+          "p95_m": 0.007957154356875018,
+          "reason": null
+        },
+        "raw_truth_endpoints_to_prediction_curve": {
+          "count": 4,
+          "distances_m": [
+            0.008313292082453485,
+            0.0058987598820491646,
+            0.0032210608488809286,
+            0.005939040578597048
+          ],
+          "mean_m": 0.005843038347995156,
+          "max_m": 0.008313292082453485,
+          "p95_m": 0.007957154356875018,
+          "reason": null
+        },
+        "boundary_bijection": {
+          "state": "scored",
+          "pairs": [
+            {
+              "prediction_boundary_index": 0,
+              "truth_boundary_index": 0,
+              "distance_m": 0.008313292082453485
+            },
+            {
+              "prediction_boundary_index": 1,
+              "truth_boundary_index": 1,
+              "distance_m": 0.0058987598820491914
+            },
+            {
+              "prediction_boundary_index": 2,
+              "truth_boundary_index": 2,
+              "distance_m": 0.0032210608488809286
+            },
+            {
+              "prediction_boundary_index": 3,
+              "truth_boundary_index": 3,
+              "distance_m": 0.005939040578597048
+            }
+          ],
+          "maximum_error_m": 0.008313292082453485,
+          "matching": "Evaluation-only endpoint-distance bijection; no geometry movement"
+        },
+        "gaps": [
+          {
+            "whole_gap": {
+              "source_length": 0.3500000000000001,
+              "sample_count": 175,
+              "covered_length": 0.04200000000000001,
+              "covered_fraction": 0.12,
+              "distance_median": 0.09198243314036424,
+              "distance_p95": 0.17079013093049922,
+              "reason": null
+            },
+            "guarded_interior": {
+              "source_length": 0.30000000000000004,
+              "sample_count": 151,
+              "covered_length": 0.0,
+              "covered_fraction": 0.0,
+              "distance_median": 0.10447150510074597,
+              "distance_p95": 0.17201829866402804,
+              "reason": null
+            },
+            "endpoint_guard": 0.025,
+            "tolerance": 0.025,
+            "sampling_max_spacing": 0.002,
+            "units": "input_coordinate_units",
+            "scope": "geometric_gap_proximity_not_topological_wrong_connection_rate"
+          }
+        ],
+        "guarded_gap": {
+          "interior_length_m": 0.30000000000000004,
+          "false_proximity_length_m": 0.0,
+          "false_proximity_fraction": 0.0,
+          "scope": "Length within tolerance of predicted finite curves inside guarded GT gap; not proof of topological connectivity"
+        },
+        "scope": "Declared CAD-world finite-structure diagnostics. Empty output has zero positive-truth recovery and undefined precision; no qualification gate"
+      }
+    },
+    {
+      "case_id": "r03",
+      "method": "baseline",
+      "normal_state": "accepted",
+      "normal_record_sha256": "1d43899d042dd527b5591130963e93d11e108700f4e0267b7cb9891b5516c8cd",
+      "prediction_segments": [
+        [
+          [
+            -0.01493548009521866,
+            -3.2347591530775765e-05,
+            -0.948152613702057
+          ],
+          [
+            -0.014943415469782131,
+            -6.193333896431491e-05,
+            0.9737782335212323
+          ]
+        ],
+        [
+          [
+            -0.014943494823527767,
+            -6.22291964386503e-05,
+            0.9929975419934652
+          ],
+          [
+            -0.014943653531019035,
+            -6.282091138732108e-05,
+            1.031436158937931
+          ]
+        ]
+      ],
+      "truth_segments": [
+        [
+          [
+            -0.015,
+            0,
+            -0.95
+          ],
+          [
+            -0.015,
+            0,
+            1.05
+          ]
+        ]
+      ],
+      "declared_gap_segments": [],
+      "rejection_reasons": [],
+      "physical": {
+        "state": "scored",
+        "policy": {
+          "curve_tolerance_m": 0.025,
+          "curve_spacing_m": 0.002,
+          "gap_endpoint_guard_m": 0.025,
+          "endpoint_numeric_relative_tolerance": 1e-10,
+          "coordinate_policy": "declared_fixture_world_m_no_alignment"
+        },
+        "alignment_performed": false,
+        "geometry_modified": false,
+        "empty_prediction": false,
+        "prediction_segment_count": 2,
+        "truth_segment_count": 1,
+        "curves": {
+          "recovery_fraction": 1.0,
+          "precision_fraction": 1.0,
+          "false_predicted_length": 0.0,
+          "truth_to_prediction": {
+            "source_length": 2.000000000000001,
+            "sample_count": 1000,
+            "covered_length": 2.000000000000001,
+            "covered_fraction": 1.0,
+            "distance_median": 7.697722388530109e-05,
+            "distance_p95": 8.369521914925273e-05,
+            "reason": null
+          },
+          "prediction_to_truth": {
+            "source_length": 1.960369464416737,
+            "sample_count": 981,
+            "covered_length": 1.960369464416737,
+            "covered_fraction": 1.0,
+            "distance_median": 7.686300627484643e-05,
+            "distance_p95": 8.33876689729652e-05,
+            "reason": null
+          },
+          "tolerance": 0.025,
+          "sampling_max_spacing": 0.002,
+          "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+          "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+          "units": "input_coordinate_units",
+          "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+        },
+        "length": {
+          "prediction_union_m": 1.960369464416737,
+          "truth_union_m": 2.0,
+          "signed_error_m": -0.039630535583262905,
+          "absolute_error_m": 0.039630535583262905,
+          "relative_error": -0.019815267791631452,
+          "policy": "Positive-length collinear overlap rejected; native finite-segment arc sum, no endpoint-distance surrogate"
+        },
+        "predicted_endpoints": {
+          "native_endpoint_count": 4,
+          "boundary_endpoint_count": 4,
+          "boundary_points": [
+            [
+              -0.01493548009521866,
+              -3.2347591530775765e-05,
+              -0.948152613702057
+            ],
+            [
+              -0.014943415469782131,
+              -6.193333896431491e-05,
+              0.9737782335212323
+            ],
+            [
+              -0.014943494823527767,
+              -6.22291964386503e-05,
+              0.9929975419934652
+            ],
+            [
+              -0.014943653531019035,
+              -6.282091138732108e-05,
+              1.031436158937931
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.0314361589379311e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_endpoints": {
+          "native_endpoint_count": 2,
+          "boundary_endpoint_count": 2,
+          "boundary_points": [
+            [
+              -0.015,
+              0.0,
+              -0.95
+            ],
+            [
+              -0.015,
+              0.0,
+              1.05
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.0500000000000001e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_boundary_to_prediction_boundary": {
+          "count": 2,
+          "distances_m": [
+            0.00184879564003662,
+            0.018564032869213324
+          ],
+          "mean_m": 0.010206414254624973,
+          "max_m": 0.018564032869213324,
+          "p95_m": 0.01772827100775449,
+          "reason": null
+        },
+        "prediction_boundary_to_truth_boundary": {
+          "count": 4,
+          "distances_m": [
+            0.00184879564003662,
+            0.07622181264370025,
+            0.05700251998021334,
+            0.018564032869213324
+          ],
+          "mean_m": 0.03840929028329088,
+          "max_m": 0.07622181264370025,
+          "p95_m": 0.07333891874417721,
+          "reason": null
+        },
+        "raw_truth_endpoints_to_prediction_curve": {
+          "count": 2,
+          "distances_m": [
+            0.00184879564003662,
+            0.018564032869213324
+          ],
+          "mean_m": 0.010206414254624973,
+          "max_m": 0.018564032869213324,
+          "p95_m": 0.01772827100775449,
+          "reason": null
+        },
+        "boundary_bijection": {
+          "state": "boundary_count_mismatch",
+          "pairs": [],
+          "maximum_error_m": null
+        },
+        "gaps": [],
+        "guarded_gap": {
+          "interior_length_m": 0,
+          "false_proximity_length_m": 0,
+          "false_proximity_fraction": null,
+          "scope": "Length within tolerance of predicted finite curves inside guarded GT gap; not proof of topological connectivity"
+        },
+        "scope": "Declared CAD-world finite-structure diagnostics. Empty output has zero positive-truth recovery and undefined precision; no qualification gate"
+      }
+    },
+    {
+      "case_id": "r03",
+      "method": "cylinder_support",
+      "normal_state": "accepted",
+      "normal_record_sha256": "1d43899d042dd527b5591130963e93d11e108700f4e0267b7cb9891b5516c8cd",
+      "prediction_segments": [
+        [
+          [
+            -0.01493548009521866,
+            -3.2347591530775765e-05,
+            -0.948152613702057
+          ],
+          [
+            -0.014943415469782131,
+            -6.193333896431491e-05,
+            0.9737782335212323
+          ]
+        ],
+        [
+          [
+            -0.014943494823527767,
+            -6.22291964386503e-05,
+            0.9929975419934652
+          ],
+          [
+            -0.014943653531019035,
+            -6.282091138732108e-05,
+            1.031436158937931
+          ]
+        ]
+      ],
+      "truth_segments": [
+        [
+          [
+            -0.015,
+            0,
+            -0.95
+          ],
+          [
+            -0.015,
+            0,
+            1.05
+          ]
+        ]
+      ],
+      "declared_gap_segments": [],
+      "rejection_reasons": [],
+      "physical": {
+        "state": "scored",
+        "policy": {
+          "curve_tolerance_m": 0.025,
+          "curve_spacing_m": 0.002,
+          "gap_endpoint_guard_m": 0.025,
+          "endpoint_numeric_relative_tolerance": 1e-10,
+          "coordinate_policy": "declared_fixture_world_m_no_alignment"
+        },
+        "alignment_performed": false,
+        "geometry_modified": false,
+        "empty_prediction": false,
+        "prediction_segment_count": 2,
+        "truth_segment_count": 1,
+        "curves": {
+          "recovery_fraction": 1.0,
+          "precision_fraction": 1.0,
+          "false_predicted_length": 0.0,
+          "truth_to_prediction": {
+            "source_length": 2.000000000000001,
+            "sample_count": 1000,
+            "covered_length": 2.000000000000001,
+            "covered_fraction": 1.0,
+            "distance_median": 7.697722388530109e-05,
+            "distance_p95": 8.369521914925273e-05,
+            "reason": null
+          },
+          "prediction_to_truth": {
+            "source_length": 1.960369464416737,
+            "sample_count": 981,
+            "covered_length": 1.960369464416737,
+            "covered_fraction": 1.0,
+            "distance_median": 7.686300627484643e-05,
+            "distance_p95": 8.33876689729652e-05,
+            "reason": null
+          },
+          "tolerance": 0.025,
+          "sampling_max_spacing": 0.002,
+          "sampling": "per_segment_equal_cells_midpoint_exact_arc_weights",
+          "overlap_policy": "reject_positive_length_collinear_overlap_within_each_collection",
+          "units": "input_coordinate_units",
+          "scope": "native_curve_geometry_diagnostic_not_graph_topology_or_pointcloud_recovery"
+        },
+        "length": {
+          "prediction_union_m": 1.960369464416737,
+          "truth_union_m": 2.0,
+          "signed_error_m": -0.039630535583262905,
+          "absolute_error_m": 0.039630535583262905,
+          "relative_error": -0.019815267791631452,
+          "policy": "Positive-length collinear overlap rejected; native finite-segment arc sum, no endpoint-distance surrogate"
+        },
+        "predicted_endpoints": {
+          "native_endpoint_count": 4,
+          "boundary_endpoint_count": 4,
+          "boundary_points": [
+            [
+              -0.01493548009521866,
+              -3.2347591530775765e-05,
+              -0.948152613702057
+            ],
+            [
+              -0.014943415469782131,
+              -6.193333896431491e-05,
+              0.9737782335212323
+            ],
+            [
+              -0.014943494823527767,
+              -6.22291964386503e-05,
+              0.9929975419934652
+            ],
+            [
+              -0.014943653531019035,
+              -6.282091138732108e-05,
+              1.031436158937931
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.0314361589379311e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_endpoints": {
+          "native_endpoint_count": 2,
+          "boundary_endpoint_count": 2,
+          "boundary_points": [
+            [
+              -0.015,
+              0.0,
+              -0.95
+            ],
+            [
+              -0.015,
+              0.0,
+              1.05
+            ]
+          ],
+          "shared_degree_two_points": [],
+          "junctions": [],
+          "numeric_merge_tolerance_m": 1.0500000000000001e-10,
+          "scope": "Endpoint-incidence boundary; degree-two joins are not physical endpoints; interior intersections are not split"
+        },
+        "truth_boundary_to_prediction_boundary": {
+          "count": 2,
+          "distances_m": [
+            0.00184879564003662,
+            0.018564032869213324
+          ],
+          "mean_m": 0.010206414254624973,
+          "max_m": 0.018564032869213324,
+          "p95_m": 0.01772827100775449,
+          "reason": null
+        },
+        "prediction_boundary_to_truth_boundary": {
+          "count": 4,
+          "distances_m": [
+            0.00184879564003662,
+            0.07622181264370025,
+            0.05700251998021334,
+            0.018564032869213324
+          ],
+          "mean_m": 0.03840929028329088,
+          "max_m": 0.07622181264370025,
+          "p95_m": 0.07333891874417721,
+          "reason": null
+        },
+        "raw_truth_endpoints_to_prediction_curve": {
+          "count": 2,
+          "distances_m": [
+            0.00184879564003662,
+            0.018564032869213324
+          ],
+          "mean_m": 0.010206414254624973,
+          "max_m": 0.018564032869213324,
+          "p95_m": 0.01772827100775449,
+          "reason": null
+        },
+        "boundary_bijection": {
+          "state": "boundary_count_mismatch",
+          "pairs": [],
+          "maximum_error_m": null
+        },
+        "gaps": [],
+        "guarded_gap": {
+          "interior_length_m": 0,
+          "false_proximity_length_m": 0,
+          "false_proximity_fraction": null,
+          "scope": "Length within tolerance of predicted finite curves inside guarded GT gap; not proof of topological connectivity"
+        },
+        "scope": "Declared CAD-world finite-structure diagnostics. Empty output has zero positive-truth recovery and undefined precision; no qualification gate"
+      }
+    }
+  ],
+  "pairing_checks": [
+    {
+      "case_id": "r01",
+      "view_id": "view_00",
+      "rgb_sha256": "5a458663002f7f8eb34736622b67adf3522457a100e245d65565a756afd5cb5c",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.0852103617130524e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 115
+      },
+      "projection_max_px": 1.7053025658242404e-13
+    },
+    {
+      "case_id": "r01",
+      "view_id": "view_01",
+      "rgb_sha256": "7cf5f3be20ceeee2a5a038a9c59863ba3b618b41faec3de62ea9bf9e9073f130",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.0271634095792024e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 11
+      },
+      "projection_max_px": 2.2737367544323206e-13
+    },
+    {
+      "case_id": "r01",
+      "view_id": "view_02",
+      "rgb_sha256": "909f6dba27a8815ac4538b2afedb7ae633c81b6f13b3f6b9671600abad7d0b6e",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.1828208955909645e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 0
+      },
+      "projection_max_px": 1.2434497875801753e-13
+    },
+    {
+      "case_id": "r01",
+      "view_id": "view_03",
+      "rgb_sha256": "e58ae7b9c3506101128a00aa311b26842ccaf3b3cf587507a2869172ca369191",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 1.9929956831532536e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 47
+      },
+      "projection_max_px": 1.7053025658242404e-13
+    },
+    {
+      "case_id": "r01",
+      "view_id": "view_04",
+      "rgb_sha256": "abf1178f01600542c7509587f8b7b58a3cf9ac92584696d7768ebff0cb12d18a",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.343881032373929e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 177
+      },
+      "projection_max_px": 2.2737367544323206e-13
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_00",
+      "rgb_sha256": "c15f4995ed465774f958c497c1e77368e9b993ea0d66f3d5763289c9c3ca07e8",
+      "ray_check": {
+        "samples": 1040,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.0852103617130524e-06,
+        "rod_samples": 40,
+        "no_hit_samples": 115
+      },
+      "projection_max_px": 1.7053025658242404e-13
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_01",
+      "rgb_sha256": "58a4a843e443941b5563f24a9cf1c4d63c539ef060f2b1ed0a2818827dccc53c",
+      "ray_check": {
+        "samples": 1040,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.0271634095792024e-06,
+        "rod_samples": 53,
+        "no_hit_samples": 11
+      },
+      "projection_max_px": 2.2737367544323206e-13
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_02",
+      "rgb_sha256": "403bbb08c3b9a3613c1d9e499c32d9ba987c3120e62c0b057059f47721d72a74",
+      "ray_check": {
+        "samples": 1040,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.1828208955909645e-06,
+        "rod_samples": 52,
+        "no_hit_samples": 0
+      },
+      "projection_max_px": 1.2434497875801753e-13
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_03",
+      "rgb_sha256": "11ff87dd934f65b663b0381d476901833a9feefac9dca4bfa39364343670e26a",
+      "ray_check": {
+        "samples": 1040,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 1.9929956831532536e-06,
+        "rod_samples": 53,
+        "no_hit_samples": 47
+      },
+      "projection_max_px": 1.7053025658242404e-13
+    },
+    {
+      "case_id": "r02",
+      "view_id": "view_04",
+      "rgb_sha256": "42d739f617ecde5957f2a62a9fad609c325e364bd1d84dfcb958bd97d11b2a94",
+      "ray_check": {
+        "samples": 1040,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.343881032373929e-06,
+        "rod_samples": 40,
+        "no_hit_samples": 177
+      },
+      "projection_max_px": 2.2737367544323206e-13
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_00",
+      "rgb_sha256": "c3b50587ea76e163aa5e84cb2bd558218401e28d194a8980f283ae649835e567",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.0852103617130524e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 115
+      },
+      "projection_max_px": 1.7053025658242404e-13
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_01",
+      "rgb_sha256": "740951dfc45a2a2239cba409b2dd37d87de31a781e456725150c962e8995ca17",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.0271634095792024e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 11
+      },
+      "projection_max_px": 2.2737367544323206e-13
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_02",
+      "rgb_sha256": "88a30126e181182c0328703dbc9acd960f31c84e9e11303f884cda0cb58e6909",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.1828208955909645e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 0
+      },
+      "projection_max_px": 1.2434497875801753e-13
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_03",
+      "rgb_sha256": "d40d8c9b95adbe58a407eba5bfdbadb322a951e9958a9f020002b13b58ea34c8",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 1.9929956831532536e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 47
+      },
+      "projection_max_px": 1.7053025658242404e-13
+    },
+    {
+      "case_id": "r03",
+      "view_id": "view_04",
+      "rgb_sha256": "efb40b7bb4989aae261cd347cf704321296bfb3db0dab720048ee6c15d42374a",
+      "ray_check": {
+        "samples": 1020,
+        "surface_id_mismatches": 0,
+        "max_z_error_m": 2.343881032373929e-06,
+        "rod_samples": 20,
+        "no_hit_samples": 177
+      },
+      "projection_max_px": 2.2737367544323206e-13
+    }
+  ],
+  "alignment_performed": false,
+  "scope": "Changed declared fixture acquisition on three old procedural objects; no generic calibration, automatic identity, dense point-cloud repair, or new qualification claim"
+}

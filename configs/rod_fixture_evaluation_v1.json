@@ -1,0 +1,14 @@
+{
+  "audit_run_id": "rod-fixture-audit-v1-20260927",
+  "physical_policy": {
+    "curve_tolerance_m": 0.025,
+    "curve_spacing_m": 0.002,
+    "gap_endpoint_guard_m": 0.025,
+    "endpoint_numeric_relative_tolerance": 1e-10,
+    "coordinate_policy": "declared_fixture_world_m_no_alignment"
+  },
+  "camera_policy": "Direct declared CAD/world comparison in metres; no Sim3, per-case registration, or target fitting",
+  "empty_policy": "All six method-case rows retained; positive-truth empty output R=0 and P/endpoint error undefined",
+  "endpoint_policy": "Native endpoints plus endpoint-incidence boundary; degree-two joins removed only at fixed numeric tolerance; interior segment intersections not split",
+  "timing": "Evaluation definition frozen before normal calibration/rod inference; GT numerical reads prohibited until independent pre completes"
+}

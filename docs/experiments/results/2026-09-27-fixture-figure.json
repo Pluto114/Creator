@@ -1,0 +1,79 @@
+{
+  "state": "complete",
+  "run_id": "rod-fixture-finite-v1-20260927",
+  "script_sha256": "c2dd8205288d2c1395bebd637c023ac5ba6c5450f7b69f16eb50e2d6bb707f49",
+  "inference_sha256": "4d3c9b234339bc0ae143265fc9dfc8f06a43b99c3343715ee6f0d4684751db4a",
+  "figure": "docs/experiments/figures/2026-09-27-fixture-finite-rgb.png",
+  "figure_sha256": "a7a58299f4dd9a1e15e09271e05444b2cda4af70b7573f5627bdda5357ef1561",
+  "selected_view_policy": "Fixed ordered third frame / view_02 for every case",
+  "crop_pixel_bounds": {
+    "x": [
+      295,
+      344
+    ],
+    "y": [
+      50,
+      430
+    ]
+  },
+  "ground_truth_read": false,
+  "records": [
+    {
+      "case_id": "r01",
+      "record_sha256": "69ed004b103d3136d9cb662bfb5c2622e8b6547c6c039d70f478997a50fbcfb3",
+      "view_id": "view_02",
+      "rgb_sha256": "909f6dba27a8815ac4538b2afedb7ae633c81b6f13b3f6b9671600abad7d0b6e",
+      "camera_state": "validated",
+      "methods": [
+        {
+          "method": "baseline",
+          "state": "accepted",
+          "segment_count": 1
+        },
+        {
+          "method": "cylinder_support",
+          "state": "accepted",
+          "segment_count": 1
+        }
+      ]
+    },
+    {
+      "case_id": "r02",
+      "record_sha256": "4a5aae379f136163a140933aec82fe5b9befaca33fec0c56dd8df3dbac1c209c",
+      "view_id": "view_02",
+      "rgb_sha256": "403bbb08c3b9a3613c1d9e499c32d9ba987c3120e62c0b057059f47721d72a74",
+      "camera_state": "validated",
+      "methods": [
+        {
+          "method": "baseline",
+          "state": "accepted",
+          "segment_count": 2
+        },
+        {
+          "method": "cylinder_support",
+          "state": "accepted",
+          "segment_count": 2
+        }
+      ]
+    },
+    {
+      "case_id": "r03",
+      "record_sha256": "1d43899d042dd527b5591130963e93d11e108700f4e0267b7cb9891b5516c8cd",
+      "view_id": "view_02",
+      "rgb_sha256": "88a30126e181182c0328703dbc9acd960f31c84e9e11303f884cda0cb58e6909",
+      "camera_state": "validated",
+      "methods": [
+        {
+          "method": "baseline",
+          "state": "accepted",
+          "segment_count": 2
+        },
+        {
+          "method": "cylinder_support",
+          "state": "accepted",
+          "segment_count": 2
+        }
+      ]
+    }
+  ]
+}
