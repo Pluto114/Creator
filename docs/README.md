@@ -1,6 +1,8 @@
 # 文档索引
 
-最新（2026-09-27）：已知尺寸标定物与RGB独立相机试行完成15图、6条有限曲线。细杆能输出，但仍有19.219mm假断口、总长少39.631mm，G1未过。409前后收据、25run源码审计与493全量+7追加专项通过。新聊天优先读[新的交接文档](HANDOFF-2026-09-27.md)，再读[报告](experiments/2026-09-27-metric-fixture-finite-rods.md)、[日志](journal/2026-09-27.md)、[ADR0021](decisions/0021-metric-fixture-and-finite-completeness.md)。下方历次状态保留。
+最新（2026-09-29）：三组新 DA3、286 万来源点、6 补丁及保存/撤回闭环已接通。最细杆统一 RGB 支持读取 R/P 两尺度均 100%，p95 约 8 mm；完整杆/断杆严重截短，G1 未过。新聊天读[9月29日交接](HANDOFF-2026-09-29.md)、[点云与读取报告](experiments/2026-09-29-fixture-points-and-rgb-readout.md)、[日志](journal/2026-09-29.md)。此前同日完成[1 px 假断口修复](experiments/2026-09-29-unresolved-narrow-rod-evidence.md)与[标定挑战](experiments/2026-09-29-fixture-calibration-challenges.md)。下方保留历史状态，不以旧“最新”覆盖当前结果。
+
+此前（2026-09-27）：已知尺寸标定物与RGB独立相机试行完成15图、6条有限曲线。细杆当时仍有19.219mm假断口、总长少39.631mm，G1未过。409前后收据、25run源码审计与493全量+7追加专项通过。见[旧交接](HANDOFF-2026-09-27.md)、[报告](experiments/2026-09-27-metric-fixture-finite-rods.md)、[日志](journal/2026-09-27.md)、[ADR0021](decisions/0021-metric-fixture-and-finite-completeness.md)。
 
 
 最新续接（9月26日晚）：新增6RGB/6冻结点击，30旧地图定位60相机，60联合杆决策51保留/9旧拒；24超25mm者仍漏过。评价侧固定旧control对齐做4臂240杆/480投影槽，真K+位姿仍8超差支持，4达标未决；不回写正常方法。截面128fold零共享格，768模型保留全部失败；r1仅修CI夹具，v1快照保留。462回归、421前后收据、21run/883源码引用通过，G1未过。见[新视图](experiments/2026-09-26-heldout-rgb-views.md)、[特权诊断](experiments/2026-09-26-heldout-view-oracle.md)、[截面隔离](experiments/2026-09-26-section-model-trainonly.md)、[日志](journal/2026-09-26.md)、[ADR0020](decisions/0020-heldout-views-inherit-map-bias.md)。下方历史保留。

@@ -1,0 +1,12 @@
+{
+  "run_id": "fixture-point-patch-v1-20260929",
+  "state": "passed",
+  "created_at_utc": "2026-09-29T10:39:55.024903+00:00",
+  "public_sha256": "a41fdd49e6f1fd036e709a168b613aacf908f0521d5c56c4989a49781c29adbb",
+  "unchanged_pre_receipts": 325,
+  "output_receipts": 75,
+  "exact_evaluation_replay": true,
+  "source_pixel_roundtrip_checked": true,
+  "saved_views_and_rollback_checked": true,
+  "reader_qualified": false
+}

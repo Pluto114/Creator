@@ -1,0 +1,11 @@
+{
+  "run_id": "fixture-rgb-readout-v1-20260929",
+  "state": "passed",
+  "created_at_utc": "2026-09-29T10:39:56.613069+00:00",
+  "public_sha256": "07ec4ba54bae8f6daa8a4fb4a7915061123b8b9e404b0b0587c95121aa4a02c6",
+  "unchanged_pre_receipts": 411,
+  "exact_evaluation_replay": true,
+  "parent_outputs_unchanged": true,
+  "same_region_for_base_and_candidate": true,
+  "reader_qualified": false
+}

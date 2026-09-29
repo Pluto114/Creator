@@ -1,0 +1,19 @@
+{
+  "run_id": "fixture-point-patch-v1-20260929",
+  "source_rod_run_id": "rod-fixture-narrow-v1-20260929",
+  "scene_run_id": "rod-fixture-scenes-v1-20260927",
+  "case_ids": ["r01", "r02", "r03"],
+  "model": "large",
+  "process_res": 504,
+  "align_to_input_ext_scale": true,
+  "voxel_camera_span_fractions": [0.0025, 0.005],
+  "region_minimum_views": 3,
+  "region_half_width_px": 48.0,
+  "readout": {},
+  "camera_policy": "RGB-only fixture estimates supplied to a NEW conditioned DA3 inference. Input K_index is converted once to K_edge for upstream resize, returned K_edge once to native K_index for backprojection. Reconstruct rods using the exact exported cameras lifted to original RGB coordinates.",
+  "upstream_policy": "Observe raw model cameras/depth before the documented API camera replacement and depth scale division. Returned input poses are not a learned pose accuracy result. The upstream encoder ignores principal point; retain and report the supplied off-center offset, without claiming the network encodes it.",
+  "point_policy": "All finite positive newly predicted depth pixels, no confidence pruning. Immutable full point snapshot, no suppression. Two separate finite-curve patches, saved enabled/withdrawn views and exact rollback checks.",
+  "readout_policy": "Existing abstaining reader unchanged, two previous camera-span scales. The same declared RGB strips, origin, thresholds and complete points+segments input apply to base and both candidates. No candidate-only curve scoring as a substitute for complete-candidate readout.",
+  "evaluation_policy": "18 paired readout rows: 3 cases x 2 scales x base/baseline/cylinder. Preserve empty/unmeasurable results, direct fixture-world physical metrics, no GT alignment or post-score tuning. Existing reader remains a development diagnostic, not newly qualified by this run.",
+  "scope": "New same-source depth/camera and reversible point+curve integration on three known synthetic development objects. No real photos, dense surface repair or G1 qualification."
+}

@@ -1,0 +1,12 @@
+{
+  "run_id": "fixture-rgb-readout-v1-20260929",
+  "parent_run_id": "fixture-point-patch-v1-20260929",
+  "case_ids": ["r01", "r02", "r03"],
+  "voxel_camera_span_fractions": [0.0025, 0.005],
+  "support_policy": {"minimum_views": 3, "horizontal_padding_px": 1.0},
+  "readout": {},
+  "intervention": "Only the common measurement region changes: project each point or sampled curve point into raw observed/unambiguous RGB edge pairs. Require three distinct views; horizontal 1px quantization allowance; nearest original row without vertical dilation. Unknown, absent and ambiguous rows contribute no support. No fitted 3D axis, candidate IDs, truth or inferred rod width enters this region.",
+  "paired_policy": "Use the exact same complete immutable base and saved patches as the parent, no point suppression, no candidate-specific mask. Cache the same base-point mask for every method. Readout, two old grid scales and physical metrics remain unchanged. Both broad-strip and supported results are retained.",
+  "freeze_policy": "Freeze sources and expected 18 readout rows before either new point-patch or supported-readout physical evaluation. Design may inspect normal outputs and RGB only. Known-answer controls cover off-axis, behind-camera, gaps, unknown/ambiguous rows, duplicate views and point/segment representation equivalence.",
+  "qualification": "Conditional measurement diagnostic on known synthetic development cases, not general reader qualification or automatic foreground identity. A painted line with identical multi-view support remains photometrically indistinguishable. Not a G1 pass."
+}
