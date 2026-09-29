@@ -1,0 +1,17 @@
+{
+  "run_id": "rod-fixture-calibration-challenges-v1-20260929",
+  "state": "passed",
+  "created_at_utc": "2026-09-29T08:57:17.349600+00:00",
+  "unchanged_pre_receipts": 180,
+  "public_sha256": "f4b3920aee1d77106b947040ae598f1ccd53827b90ecb6507279072148d3ae42",
+  "normal_inference_sha256": "8d5a0dbf532498f47522d0167fe1a928f5f946ee1d890b25fccaa460b6b50a37",
+  "exact_evaluation_replay": true,
+  "camera_case_count": 30,
+  "rod_row_count": 60,
+  "limitations": [
+    "Application read guards, not OS isolation",
+    "Same known-answer-tested metric implementation",
+    "Three old procedural objects; 10 interventions are not 30 independent objects",
+    "No real-lens, manufacturing, foreground-identity or dense-cloud qualification"
+  ]
+}

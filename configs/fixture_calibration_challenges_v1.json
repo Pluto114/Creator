@@ -1,0 +1,28 @@
+{
+  "run_id": "rod-fixture-calibration-challenges-v1-20260929",
+  "scene_run_id": "rod-fixture-scenes-v1-20260927",
+  "case_ids": ["r01", "r02", "r03"],
+  "view_ids": ["view_00", "view_01", "view_02", "view_03", "view_04"],
+  "rod_method_config": "configs/rod_fixture_narrow_v1.json",
+  "camera_method_config": "configs/fixture_calibration_v1.json",
+  "physical_evaluation_config": "configs/rod_fixture_evaluation_v1.json",
+  "scenarios": [
+    {"id": "c00_nominal", "kind": "identity"},
+    {"id": "c01_scale_plus_1pct", "kind": "cad_scale", "factor": 1.01},
+    {"id": "c02_scale_minus_1pct", "kind": "cad_scale", "factor": 0.99},
+    {"id": "c03_panel_depth_20mm", "kind": "cad_panel_shift", "plane_id": "plane_1", "offset_m": [0.0, 0.02, 0.0]},
+    {"id": "c04_origin_x_10mm", "kind": "cad_translation", "offset_m": [0.01, 0.0, 0.0]},
+    {"id": "c05_missing_train_plane", "kind": "missing_markers", "view_id": "view_00", "role": "training", "plane_id": "plane_1"},
+    {"id": "c06_missing_validation", "kind": "missing_markers", "view_id": "view_00", "role": "validation", "plane_id": null},
+    {"id": "c07_wrong_training_ids", "kind": "swap_observations", "marker_ids": [0, 12]},
+    {"id": "c08_radial_plus", "kind": "radial_rgb", "k": 0.08},
+    {"id": "c09_radial_minus", "kind": "radial_rgb", "k": -0.08}
+  ],
+  "intervention_policy": "One declared intervention per scenario, paired with c00. CAD transforms affect all roles; missing/wrong IDs are explicit detector-output fault injection, not a claim about decoder error frequency.",
+  "radial_policy": "Forward distorted coordinate q_d=q_u*(1+k*||q_u||^2), normalized by image half diagonal, centered at (size-1)/2. Invert numerically for whole-RGB bilinear remapping; fixed black border and unchanged screen search guide. Re-detect markers and rod evidence from the same distorted RGB. This is a synthetic image-domain stressor including resampling, not measured physical lens calibration.",
+  "inference_policy": "Use unchanged zero-distortion camera policy and narrow rod policy; all five cameras must validate. No GT, old physical results, refitting from target pixels, post-hoc alignment, or challenge-specific threshold tuning.",
+  "evaluation_policy": "Retain all 30 case/scenario and 60 case/scenario/method rows including unavailable/withheld/empty. Report camera reprojection and center errors, native length, boundary count/bijection, curve recovery/precision/p95 and guarded gap. Compare to newly inferred c00. No overall accuracy acceptance threshold or G1 claim.",
+  "integrity_policy": "Freeze sources, inputs, methods, interventions and evaluation before inference. Verify every receipt before/after inference and exactly replay evaluation in post. GT is opened only after all 30 normal records complete.",
+  "expected_invariants": ["identity_rgb_exact", "training_plane_loss_unavailable", "missing_validation_withheld_without_refit", "nonvalidated_camera_emits_no_rod", "all_rows_retained"],
+  "development_scope": "Same previously inspected three synthetic fixture objects; interventions frozen before this run. Not held-out objects, real photos, full-cloud repair, or independent method comparisons."
+}
