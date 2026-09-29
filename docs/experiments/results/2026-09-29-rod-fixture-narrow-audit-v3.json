@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "audit_run_id": "rod-fixture-narrow-audit-v3-20260929",
+  "created_at_utc": "2026-09-29T06:07:25.496781+00:00",
+  "pre_sha256": "7b62fe72061159e72d2fc1a6470c3a2b2bc200f3c86de7ba9b7850f0f9898b7b",
+  "normal_receipts_unchanged": 65,
+  "physical_sha256": "eee9a3f01311c64ee995029f7456d722188d89a5cb0731c4e0cdef9d3277762a",
+  "physical_rows_recomputed": true,
+  "coordinate_alignment_performed": false,
+  "limitations": [
+    "Application read guards and receipts are not OS isolation.",
+    "Physical replay uses the same frozen known-answer-tested metric implementation.",
+    "The old procedural objects, RGB, and calibrated cameras are development material, not new external validation."
+  ]
+}

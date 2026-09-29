@@ -21,6 +21,7 @@ from .rod_multiview_candidates import _validated_views
 from .rod_observations import extract_rod_observations
 
 FROZEN_METHOD_SHA256 = '25951e76d832313d74e961b98c3c930cad91270b1751862b0438488bf9cada58'
+NARROW_METHOD_SHA256 = 'b33ce471de3fbe6b7387d78494c7675108a68793fa9d68711a5eb6a1f4c3072e'
 METHODS = ('baseline', 'cylinder_support')
 
 
@@ -47,6 +48,12 @@ def method_policy(method):
     return copy.deepcopy(method)
 
 
+def narrow_method_policy(method):
+    if canonical_hash(method) != NARROW_METHOD_SHA256:
+        raise ValueError('Use the predeclared unresolved-narrow finite method')
+    return copy.deepcopy(method)
+
+
 def _frame_contract(frames):
     if len(frames) != 5 or len({f['view_id'] for f in frames}) != 5:
         raise ValueError('Exactly five distinct ordered views are required')
@@ -62,9 +69,9 @@ def _frame_contract(frames):
             raise ValueError('Exact RGB source SHA required')
 
 
-def extract_fixture_evidence(frames, images, method):
+def _extract_fixture_evidence(frames, images, method, policy, narrow):
     """Scan all guide rows before looking at cameras; keep the entire raw pool."""
-    method = method_policy(method)
+    method = policy(method)
     _frame_contract(frames)
     if len(images) != len(frames):
         raise ValueError('RGB images must follow the frozen view order')
@@ -73,7 +80,12 @@ def extract_fixture_evidence(frames, images, method):
         rgb = np.asarray(image)
         if rgb.ndim != 3 or rgb.shape[2] != 3 or list(rgb.shape[1::-1]) != frame['size_wh']:
             raise ValueError('RGB shape differs from its declared frame')
-        observations = extract_rod_observations(rgb, frame['guide_xyxy'], method['observation'])
+        observations = extract_rod_observations(
+            rgb,
+            frame['guide_xyxy'],
+            method['observation'],
+            narrow_config=method['narrow_observation'] if narrow else None,
+        )
         pool = enumerate_image_line_pool(observations, method['image_hypotheses'], require_refit_support=True)
         for candidate in pool['candidates']:
             matches = candidate['row_matches']
@@ -88,6 +100,14 @@ def extract_fixture_evidence(frames, images, method):
             raw_row_count=len(observations['rows']), full_pool_count=len(pool['candidates']),
             retained_pool_count=min(len(pool['candidates']), method['candidate_cap'])))
     return json_ready(output)
+
+
+def extract_fixture_evidence(frames, images, method):
+    return _extract_fixture_evidence(frames, images, method, method_policy, False)
+
+
+def extract_fixture_narrow_evidence(frames, images, method):
+    return _extract_fixture_evidence(frames, images, method, narrow_method_policy, True)
 
 
 def _export_diagnostics(result):
@@ -117,13 +137,13 @@ def _empty(method, reasons):
         total_length_m=0., endpoints=[], rejection_reasons=reasons, proposal=None, finite=None)
 
 
-def reconstruct_fixture_finite(evidence_frames, cameras, method):
+def _reconstruct_fixture_finite(evidence_frames, cameras, method, policy, schema_version):
     """Fixed cameras and original selected row assignments, with two old methods.
 
     Both outputs use the same pool and association search. A rejected/ambiguous
     association is not forced into a single winning axis for this easier scene.
     """
-    method = method_policy(method)
+    method = policy(method)
     _frame_contract(evidence_frames)
     if len(cameras) != 5 or [c['view_id'] for c in cameras] != [f['view_id'] for f in evidence_frames]:
         raise ValueError('Camera/frame view order differs')
@@ -135,7 +155,7 @@ def reconstruct_fixture_finite(evidence_frames, cameras, method):
         required_view_count=5, views=[dict(view_id=c['view_id'], state=c.get('state')) for c in cameras],
         reason='all_five_fixture_cameras_validated' if all(c.get('state') == 'validated' for c in cameras)
         else 'one_or_more_fixture_cameras_not_validated')
-    result = dict(schema_version='fixture-finite-rgb-v1', camera_gate=camera_gate,
+    result = dict(schema_version=schema_version, camera_gate=camera_gate,
         camera_input_sha256=canonical_hash(cameras), evidence_input_sha256=canonical_hash(evidence_frames),
         method_sha256=canonical_hash(method), camera_modified=False, target_geometry_used=False,
         pool_budget=dict(candidate_cap=method['candidate_cap'],
@@ -183,3 +203,19 @@ def reconstruct_fixture_finite(evidence_frames, cameras, method):
     result = _export_diagnostics(result)
     json.dumps(result, allow_nan=False)
     return result
+
+
+def reconstruct_fixture_finite(evidence_frames, cameras, method):
+    return _reconstruct_fixture_finite(
+        evidence_frames, cameras, method, method_policy, 'fixture-finite-rgb-v1'
+    )
+
+
+def reconstruct_fixture_narrow(evidence_frames, cameras, method):
+    return _reconstruct_fixture_finite(
+        evidence_frames,
+        cameras,
+        method,
+        narrow_method_policy,
+        'fixture-finite-narrow-rgb-v1',
+    )

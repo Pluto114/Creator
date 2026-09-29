@@ -34,6 +34,13 @@ DEFAULT_LINE_CONFIG = {
     "ambiguity_separation_px": 3.0,
 }
 
+DEFAULT_NARROW_CONFIG = {
+    "minimum_width": 0.75,
+    "maximum_width": 1.25,
+    "minimum_center_contrast": 12.0,
+    "minimum_edge_balance": 0.45,
+}
+
 
 def _configuration(defaults, supplied):
     supplied = {} if supplied is None else dict(supplied)
@@ -109,7 +116,7 @@ def _edge_evidence(edge, y, sign, guide_slope, gx, gy_edge, config):
     }
 
 
-def extract_rod_observations(rgb, guide_xyxy, config=None):
+def extract_rod_observations(rgb, guide_xyxy, config=None, *, narrow_config=None):
     """Keep all resolved double-edge candidates in a coarse two-endpoint strip.
 
     guide_xyxy has shape (2,2): [[x0,y0],[x1,y1]], measured in original RGB.
@@ -118,6 +125,17 @@ def extract_rod_observations(rgb, guide_xyxy, config=None):
     cannot be distinguished here. Failed pairing/low SNR/boundaries stay unknown.
     """
     config = _configuration(DEFAULT_OBSERVATION_CONFIG, config)
+    narrow = None
+    if narrow_config is not None:
+        narrow = _configuration(DEFAULT_NARROW_CONFIG, narrow_config)
+        if narrow["minimum_width"] <= 0 or narrow["maximum_width"] < narrow["minimum_width"]:
+            raise ValueError("Invalid unresolved narrow width interval")
+        if narrow["maximum_width"] >= config["min_width"]:
+            raise ValueError("Unresolved narrow and resolved width intervals must stay disjoint")
+        if narrow["minimum_center_contrast"] <= 0:
+            raise ValueError("Unresolved narrow center contrast must be positive")
+        if not 0 < narrow["minimum_edge_balance"] <= 1:
+            raise ValueError("Unresolved narrow edge balance must lie in (0,1]")
     for name in (
         "scan_half_width",
         "row_stride",
@@ -243,13 +261,28 @@ def extract_rod_observations(rgb, guide_xyxy, config=None):
                     reason = reason or "nonvertical_center_row_edge"
                 if continuity < config["edge_min_row_support"]:
                     reason = reason or "insufficient_persistent_vertical_edges"
-                if reason:
+                edge_balance = min(abs(left["gradient"]), abs(right["gradient"])) / max(
+                    abs(left["gradient"]), abs(right["gradient"])
+                )
+                narrow_candidate = bool(
+                    narrow is not None
+                    and narrow["minimum_width"] <= separation <= narrow["maximum_width"]
+                    and len(interior_x) == 1
+                    and contrast >= narrow["minimum_center_contrast"]
+                    and edge_balance >= narrow["minimum_edge_balance"]
+                    and min(
+                        left_evidence["center_row_horizontal_fraction"],
+                        right_evidence["center_row_horizontal_fraction"],
+                    )
+                    >= config["edge_min_horizontal_fraction"]
+                    and continuity >= config["edge_min_row_support"]
+                )
+                if reason and not narrow_candidate:
                     row["rejected_pair_counts"][reason] = (
                         row["rejected_pair_counts"].get(reason, 0) + 1
                     )
                     continue
-                row["candidates"].append(
-                    {
+                candidate = {
                         "center_x": center,
                         "width": separation,
                         "polarity": "bright" if sign > 0 else "dark",
@@ -270,16 +303,32 @@ def extract_rod_observations(rgb, guide_xyxy, config=None):
                         },
                         "quantization_half_width_px": 0.5,
                     }
-                )
+                if narrow_candidate:
+                    candidate.update(
+                        candidate_kind="unresolved_narrow_photometric_pair",
+                        physical_width_resolved=False,
+                        edge_balance=edge_balance,
+                        limitation=(
+                            "Centerline-like photometric evidence only; one-pixel support does not "
+                            "resolve silhouette width or foreground identity."
+                        ),
+                    )
+                row["candidates"].append(candidate)
         if len(row["candidates"]) == 1:
-            row.update(status="observed", reason="one_resolved_double_edge_candidate")
+            reason = (
+                "one_unresolved_narrow_photometric_pair"
+                if row["candidates"][0].get("candidate_kind")
+                == "unresolved_narrow_photometric_pair"
+                else "one_resolved_double_edge_candidate"
+            )
+            row.update(status="observed", reason=reason)
         elif len(row["candidates"]) > 1:
             row.update(status="ambiguous", reason="multiple_resolved_double_edge_candidates")
         elif flat and not edges:
             row.update(status="absent", reason="flat_background_like_not_occlusion_disambiguated")
         else:
             row["reason"] = "no_resolved_candidate_missing_edges_or_insufficient_evidence"
-    return {
+    result = {
         "schema_version": "1.0.0",
         "config": config,
         "guide_xyxy": guide.tolist(),
@@ -287,6 +336,16 @@ def extract_rod_observations(rgb, guide_xyxy, config=None):
         "pixel_convention": "original_RGB_integer_pixel_centers_edges_at_half_pixels",
         "scope": "Near-vertical resolved double-edge observations; no gap filling or occlusion inference.",
     }
+    if narrow is not None:
+        result.update(
+            schema_version="1.1.0",
+            narrow_config=narrow,
+            scope=(
+                "Near-vertical resolved double-edge plus explicitly unresolved narrow photometric "
+                "pairs; no width claim, gap filling, occlusion inference, or foreground identity proof."
+            ),
+        )
+    return result
 
 
 def _line_support(rows, slope, intercept, threshold):

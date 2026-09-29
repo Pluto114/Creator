@@ -1,0 +1,1110 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "rod-narrow-controls-v1-20260929",
+  "state": "passed",
+  "created_at_utc": "2026-09-29T05:57:51.352054+00:00",
+  "case_count": 9,
+  "method_case_count": 18,
+  "prepared_sha256": "a69902659dd156eba0cbdeff6357c44b2d592cc46a39625a4cb480e91cfba7d8",
+  "inference_sha256": "a0d67e9fe4839367059f88c2ef5fddbd3ec955b9a096e715264b79c4b0ba9523",
+  "protocol_sha256": "de6bdc058f31e8b5de753596f95632520a4ba15aa3b0c4376ea51b20c171a71c",
+  "acceptance_contract": {
+    "must_recover": [
+      "n01",
+      "n02",
+      "n08"
+    ],
+    "must_not_fill_gap": [
+      "n03"
+    ],
+    "must_abstain_or_remain_unselected": [
+      "n04",
+      "n05",
+      "n06"
+    ],
+    "known_indistinguishable_false_positive": [
+      "n07"
+    ],
+    "resolved_control_must_not_change": [
+      "n09"
+    ]
+  },
+  "acceptance_failures": [],
+  "rows": [
+    {
+      "case_id": "n01",
+      "label": "bright_width1_complete",
+      "target_identity": "unique",
+      "fit_state": "insufficient_support",
+      "fit_reason": "too_few_rows_with_candidates",
+      "usable": false,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "unknown": 137
+      },
+      "selected_rows": 0,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": 0.0,
+      "accurate_target_row_coverage": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "resolved_pairs"
+    },
+    {
+      "case_id": "n01",
+      "label": "bright_width1_complete",
+      "target_identity": "unique",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "observed": 137
+      },
+      "selected_rows": 137,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 137,
+      "target_row_coverage": 1.0,
+      "accurate_target_row_coverage": {
+        "0.5": 1.0,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "selected_center_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_width_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 137,
+      "method": "unresolved_narrow_pairs"
+    },
+    {
+      "case_id": "n02",
+      "label": "dark_width1_complete",
+      "target_identity": "unique",
+      "fit_state": "insufficient_support",
+      "fit_reason": "too_few_rows_with_candidates",
+      "usable": false,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "unknown": 137
+      },
+      "selected_rows": 0,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": 0.0,
+      "accurate_target_row_coverage": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "resolved_pairs"
+    },
+    {
+      "case_id": "n02",
+      "label": "dark_width1_complete",
+      "target_identity": "unique",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "observed": 137
+      },
+      "selected_rows": 137,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 137,
+      "target_row_coverage": 1.0,
+      "accurate_target_row_coverage": {
+        "0.5": 1.0,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "selected_center_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_width_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 137,
+      "method": "unresolved_narrow_pairs"
+    },
+    {
+      "case_id": "n03",
+      "label": "bright_width1_true_small_gap",
+      "target_identity": "unique",
+      "fit_state": "insufficient_support",
+      "fit_reason": "too_few_rows_with_candidates",
+      "usable": false,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "unknown": 135,
+        "absent": 2
+      },
+      "selected_rows": 0,
+      "physical_rod_rows": 129,
+      "unique_target_rows": 129,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": 0.0,
+      "accurate_target_row_coverage": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "empty_truth_rows": 8,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": 0.0,
+      "gap_rows": 8,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": 0.0,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "resolved_pairs"
+    },
+    {
+      "case_id": "n03",
+      "label": "bright_width1_true_small_gap",
+      "target_identity": "unique",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "observed": 129,
+        "unknown": 6,
+        "absent": 2
+      },
+      "selected_rows": 129,
+      "physical_rod_rows": 129,
+      "unique_target_rows": 129,
+      "selected_unique_target_rows": 129,
+      "target_row_coverage": 1.0,
+      "accurate_target_row_coverage": {
+        "0.5": 1.0,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "selected_center_error_px": {
+        "count": 129,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 129,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_width_error_px": {
+        "count": 129,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "empty_truth_rows": 8,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": 0.0,
+      "gap_rows": 8,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": 0.0,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 129,
+      "method": "unresolved_narrow_pairs"
+    },
+    {
+      "case_id": "n04",
+      "label": "low_contrast_width1",
+      "target_identity": "unique",
+      "fit_state": "insufficient_support",
+      "fit_reason": "too_few_rows_with_candidates",
+      "usable": false,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "absent": 137
+      },
+      "selected_rows": 0,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": 0.0,
+      "accurate_target_row_coverage": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 137,
+      "false_absence_fraction": 1.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "resolved_pairs"
+    },
+    {
+      "case_id": "n04",
+      "label": "low_contrast_width1",
+      "target_identity": "unique",
+      "fit_state": "insufficient_support",
+      "fit_reason": "too_few_rows_with_candidates",
+      "usable": false,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "absent": 137
+      },
+      "selected_rows": 0,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": 0.0,
+      "accurate_target_row_coverage": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 137,
+      "false_absence_fraction": 1.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "unresolved_narrow_pairs"
+    },
+    {
+      "case_id": "n05",
+      "label": "two_equal_neighbor_width1_lines",
+      "target_identity": "ambiguous",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "observed": 137
+      },
+      "selected_rows": 137,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 0,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": null,
+      "accurate_target_row_coverage": {
+        "0.5": null,
+        "1": null,
+        "2": null
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 137,
+      "unsupported_identity_choice_fraction": 1.0,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "resolved_pairs"
+    },
+    {
+      "case_id": "n05",
+      "label": "two_equal_neighbor_width1_lines",
+      "target_identity": "ambiguous",
+      "fit_state": "ambiguous",
+      "fit_reason": "competing_supported_image_lines",
+      "usable": false,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "ambiguous": 137
+      },
+      "selected_rows": 0,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 0,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": null,
+      "accurate_target_row_coverage": {
+        "0.5": null,
+        "1": null,
+        "2": null
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": 0.0,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "unresolved_narrow_pairs"
+    },
+    {
+      "case_id": "n06",
+      "label": "width1_horizontal_occlusion",
+      "target_identity": "unique",
+      "fit_state": "insufficient_support",
+      "fit_reason": "too_few_rows_with_candidates",
+      "usable": false,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "unknown": 127,
+        "absent": 10
+      },
+      "selected_rows": 0,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": 0.0,
+      "accurate_target_row_coverage": {
+        "0.5": 0.0,
+        "1": 0.0,
+        "2": 0.0
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_accepted_unique_target_rows"
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 10,
+      "false_absence_fraction": 0.072992700729927,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 16,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "resolved_pairs"
+    },
+    {
+      "case_id": "n06",
+      "label": "width1_horizontal_occlusion",
+      "target_identity": "unique",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "observed": 121,
+        "unknown": 6,
+        "absent": 10
+      },
+      "selected_rows": 121,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 121,
+      "target_row_coverage": 0.8832116788321168,
+      "accurate_target_row_coverage": {
+        "0.5": 0.8832116788321168,
+        "1": 0.8832116788321168,
+        "2": 0.8832116788321168
+      },
+      "selected_center_error_px": {
+        "count": 121,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 121,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_width_error_px": {
+        "count": 121,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 10,
+      "false_absence_fraction": 0.072992700729927,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 16,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 121,
+      "method": "unresolved_narrow_pairs"
+    },
+    {
+      "case_id": "n07",
+      "label": "painted_width1_texture_without_rod",
+      "target_identity": "none",
+      "fit_state": "insufficient_support",
+      "fit_reason": "too_few_rows_with_candidates",
+      "usable": false,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "unknown": 137
+      },
+      "selected_rows": 0,
+      "physical_rod_rows": 0,
+      "unique_target_rows": 0,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": null,
+      "accurate_target_row_coverage": {
+        "0.5": null,
+        "1": null,
+        "2": null
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "empty_truth_rows": 137,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": 0.0,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": null,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "resolved_pairs"
+    },
+    {
+      "case_id": "n07",
+      "label": "painted_width1_texture_without_rod",
+      "target_identity": "none",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "observed": 137
+      },
+      "selected_rows": 137,
+      "physical_rod_rows": 0,
+      "unique_target_rows": 0,
+      "selected_unique_target_rows": 0,
+      "target_row_coverage": null,
+      "accurate_target_row_coverage": {
+        "0.5": null,
+        "1": null,
+        "2": null
+      },
+      "selected_center_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "selected_width_error_px": {
+        "count": 0,
+        "median": null,
+        "p95": null,
+        "max": null,
+        "reason": "no_unique_target_identity"
+      },
+      "empty_truth_rows": 137,
+      "false_selected_empty_rows": 137,
+      "false_positive_empty_row_fraction": 1.0,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": null,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 137,
+      "method": "unresolved_narrow_pairs"
+    },
+    {
+      "case_id": "n08",
+      "label": "sloped_width1_complete",
+      "target_identity": "unique",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "unknown": 89,
+        "observed": 48
+      },
+      "selected_rows": 48,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 48,
+      "target_row_coverage": 0.35036496350364965,
+      "accurate_target_row_coverage": {
+        "0.5": 0.35036496350364965,
+        "1": 0.35036496350364965,
+        "2": 0.35036496350364965
+      },
+      "selected_center_error_px": {
+        "count": 48,
+        "median": 0.0799999999999983,
+        "p95": 0.14000000000000057,
+        "max": 0.14000000000000057,
+        "reason": null
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 48,
+        "median": 0.5799999999999983,
+        "p95": 0.6400000000000006,
+        "max": 0.6400000000000006,
+        "reason": null
+      },
+      "selected_width_error_px": {
+        "count": 48,
+        "median": 1.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "reason": null
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "resolved_pairs"
+    },
+    {
+      "case_id": "n08",
+      "label": "sloped_width1_complete",
+      "target_identity": "unique",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "observed": 137
+      },
+      "selected_rows": 137,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 137,
+      "target_row_coverage": 1.0,
+      "accurate_target_row_coverage": {
+        "0.5": 1.0,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "selected_center_error_px": {
+        "count": 137,
+        "median": 0.12000000000000455,
+        "p95": 0.3199999999999932,
+        "max": 0.3200000000000003,
+        "reason": null
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 137,
+        "median": 0.28000000000000114,
+        "p95": 0.6400000000000006,
+        "max": 0.6400000000000006,
+        "reason": null
+      },
+      "selected_width_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 1.0,
+        "max": 1.0,
+        "reason": null
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 89,
+      "method": "unresolved_narrow_pairs"
+    },
+    {
+      "case_id": "n09",
+      "label": "resolved_width2_control",
+      "target_identity": "unique",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "observed": 137
+      },
+      "selected_rows": 137,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 137,
+      "target_row_coverage": 1.0,
+      "accurate_target_row_coverage": {
+        "0.5": 1.0,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "selected_center_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_width_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "resolved_pairs"
+    },
+    {
+      "case_id": "n09",
+      "label": "resolved_width2_control",
+      "target_identity": "unique",
+      "fit_state": "fitted",
+      "fit_reason": "unique_supported_line_within_fixed_budget",
+      "usable": true,
+      "sampled_rows": 137,
+      "detector_row_states": {
+        "observed": 137
+      },
+      "selected_rows": 137,
+      "physical_rod_rows": 137,
+      "unique_target_rows": 137,
+      "selected_unique_target_rows": 137,
+      "target_row_coverage": 1.0,
+      "accurate_target_row_coverage": {
+        "0.5": 1.0,
+        "1": 1.0,
+        "2": 1.0
+      },
+      "selected_center_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_maximum_boundary_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "selected_width_error_px": {
+        "count": 137,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0,
+        "reason": null
+      },
+      "empty_truth_rows": 0,
+      "false_selected_empty_rows": 0,
+      "false_positive_empty_row_fraction": null,
+      "gap_rows": 0,
+      "false_selected_gap_rows": 0,
+      "gap_false_acceptance_fraction": null,
+      "false_absent_physical_rows": 0,
+      "false_absence_fraction": 0.0,
+      "ambiguous_identity_accepted_rows": 0,
+      "unsupported_identity_choice_fraction": null,
+      "center_disagreement_rejected_rows": 0,
+      "scope": "single-image row diagnostics; not 3D recovery, physical-width estimation, or silhouette certification",
+      "occluded_rows": 0,
+      "selected_occluded_rows": 0,
+      "unresolved_narrow_selected_rows": 0,
+      "method": "unresolved_narrow_pairs"
+    }
+  ],
+  "limitations": [
+    "Analytic quantized RGB profiles, not a real lens or 3D reconstruction benchmark.",
+    "One-pixel bilateral evidence does not resolve physical width.",
+    "A painted one-pixel texture is intentionally indistinguishable in one view and remains a measured false positive.",
+    "Uniform occlusion and low contrast remain unknown; neither is certified absence."
+  ]
+}

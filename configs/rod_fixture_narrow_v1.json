@@ -1,0 +1,87 @@
+{
+  "run_id": "rod-fixture-narrow-v1-20260929",
+  "schema_version": "fixture-finite-narrow-rgb-v1",
+  "scene_run_id": "rod-fixture-scenes-v1-20260927",
+  "camera_run_id": "rod-fixture-calibration-v1-20260927",
+  "control_run_id": "rod-narrow-controls-v1-20260929",
+  "case_ids": ["r01", "r02", "r03"],
+  "view_ids": ["view_00", "view_01", "view_02", "view_03", "view_04"],
+  "methods": ["baseline", "cylinder_support"],
+  "method": {
+    "observation": {
+      "scan_half_width": 48,
+      "row_stride": 1,
+      "y_window_radius": 2,
+      "edge_min_contrast": 8.0,
+      "center_min_contrast": 8.0,
+      "min_width": 2.0,
+      "max_width": 42.0,
+      "background_samples": 2,
+      "edge_min_horizontal_fraction": 0.7,
+      "edge_min_row_support": 0.6,
+      "edge_match_tolerance": 1.5,
+      "min_resolved_center_pixels": 2,
+      "flat_max_std": 3.0,
+      "flat_max_gradient": 6.0
+    },
+    "narrow_observation": {
+      "minimum_width": 0.75,
+      "maximum_width": 1.25,
+      "minimum_center_contrast": 12.0,
+      "minimum_edge_balance": 0.5
+    },
+    "image_hypotheses": {
+      "minimum_rows": 52,
+      "minimum_y_span": 150.0,
+      "inlier_distance_px": 1.2,
+      "trials": 1024,
+      "seed": 19092027,
+      "deduplicate_separation_px": 1.0,
+      "maximum_models": 8
+    },
+    "association_common": {
+      "fit_view_count": 3,
+      "reprojection_threshold_px": 1.5,
+      "deduplicate_separation_px": 0.8,
+      "ambiguity_support_fraction": 0.9,
+      "ambiguity_separation_px": 3.0,
+      "maximum_hypotheses": 50000,
+      "maximum_fit_attempts": 50000,
+      "minimum_support_views": 4
+    },
+    "extent": {
+      "minimum_fit_views": 4,
+      "minimum_positive_views": 3,
+      "minimum_absent_views": 2,
+      "row_tolerance_px": 1.0,
+      "match_base_px": 2.0,
+      "maximum_half_width_px": 4.0,
+      "step_camera_span_fraction": 0.001,
+      "minimum_run_samples": 3,
+      "maximum_reprojection_error_px": 2.0,
+      "maximum_leave_one_out_angle_degrees": 1.0,
+      "maximum_leave_one_out_offset_camera_span_fraction": 0.002,
+      "minimum_second_to_first_plane_ratio": 0.00001,
+      "minimum_direction_gap_ratio": 1e-8,
+      "maximum_sample_count": 100000
+    },
+    "cylinder_screen": {
+      "edge_tolerance_px": 1.0,
+      "minimum_side_fraction": 0.9,
+      "minimum_views": 4
+    },
+    "candidate_cap": 8
+  },
+  "method_sha256": "b33ce471de3fbe6b7387d78494c7675108a68793fa9d68711a5eb6a1f4c3072e",
+  "parent_method": {
+    "path": "configs/rod_fixture_finite_v1.json",
+    "unchanged_components": ["observation", "image_hypotheses", "association_common", "extent", "cylinder_screen", "candidate_cap"]
+  },
+  "change_scope": "Add an opt-in unresolved one-pixel photometric-pair branch. The resolved >=2px branch, cameras, association, extent grid, view vote threshold, and no-gap-fill policy remain unchanged.",
+  "camera_policy": "Reuse the same five previously validated RGB-only fixture cameras byte-for-byte; no camera or focal refinement by rod pixels.",
+  "identity_policy": "Declared single-target near-vertical strip. One-pixel evidence is photometric centerline-like support, not resolved width or foreground identity.",
+  "output_policy": "Finite curve only in declared metric fixture coordinates. No DA3 point cloud, mesh, physical radius, or automatic identity repair.",
+  "evidence_policy": "Every integer RGB row in the guide; selected measured pairs only. Unresolved narrow pairs require bilateral persistent edges, center contrast, and edge balance. Unknown rows stay unknown.",
+  "extent_policy": "Unchanged finite grid and three-view positive rule. No dilation, interpolation, or short-gap merging.",
+  "evaluation_owner": "Independent pre receipt before separate GT evaluation; compare every case/method with the frozen v1 output and preserve false bridges, endpoints, and length."
+}
