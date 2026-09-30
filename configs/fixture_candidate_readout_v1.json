@@ -1,0 +1,12 @@
+{
+  "run_id": "fixture-candidate-readout-v1-20260930",
+  "parent_run_id": "fixture-point-patch-v1-20260929",
+  "comparison_run_id": "fixture-rgb-readout-v1-20260929",
+  "case_ids": ["r01", "r02", "r03"],
+  "voxel_camera_span_fractions": [0.0025, 0.005],
+  "support_policy": {"minimum_views": 3, "horizontal_padding_px": 1.0},
+  "intervention": "Retain the union of every already accepted raw edge-pair interval on observed and ambiguous rows. One vote per distinct view, never an interval envelope or candidate count. Keep the existing three-view threshold, 1px horizontal allowance, nearest original row, no vertical dilation. Unknown, absent and missing rows still contribute zero.",
+  "paired_policy": "Reuse immutable complete fresh fixture points, exact export cameras and saved finite patches. No new DA3, geometry fitting, point suppression, target identity, method-dependent selection, grid or downstream readout changes. Every base and candidate uses the same possible-support volume.",
+  "freeze_policy": "This is development on already-scored objects, not a blind holdout. Freeze new source, analytic controls and all 18 rows before new inference and scoring. Retain old unique-row graphs for paired scoring; no post-score tuning or overwriting runs.",
+  "qualification": "Photometric possible support, not unique correspondence or foreground certification. Candidate unions may retain clutter or painted lines; downstream PCA may still synthesize unsupported axes. Report all cases/scales, empty results and regressions. No general reader qualification, independent object claim or G1 pass."
+}

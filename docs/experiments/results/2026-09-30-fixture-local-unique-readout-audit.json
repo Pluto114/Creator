@@ -1,0 +1,12 @@
+{
+  "run_id": "fixture-local-unique-readout-v1-20260930",
+  "state": "passed",
+  "created_at_utc": "2026-09-30T08:12:44.823246+00:00",
+  "public_sha256": "b94996ebd45fbe86c82542d67d963aa440063f5042aeb8ba1d4827cd206ffed7",
+  "unchanged_pre_receipts": 471,
+  "exact_evaluation_replay": true,
+  "parent_outputs_unchanged": true,
+  "same_region_for_base_and_candidate": true,
+  "development_prior_scores_seen": true,
+  "reader_qualified": false
+}

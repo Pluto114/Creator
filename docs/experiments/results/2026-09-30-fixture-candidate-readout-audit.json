@@ -1,0 +1,12 @@
+{
+  "run_id": "fixture-candidate-readout-v1-20260930",
+  "state": "passed",
+  "created_at_utc": "2026-09-30T08:05:03.436200+00:00",
+  "public_sha256": "dd7f851096d8562b13453bb6603ab2e3e8f506e02e0102f55b8700872e17e080",
+  "unchanged_pre_receipts": 441,
+  "exact_evaluation_replay": true,
+  "parent_outputs_unchanged": true,
+  "same_region_for_base_and_candidate": true,
+  "development_prior_scores_seen": true,
+  "reader_qualified": false
+}

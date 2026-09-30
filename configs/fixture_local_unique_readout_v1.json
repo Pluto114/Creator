@@ -1,0 +1,12 @@
+{
+  "run_id": "fixture-local-unique-readout-v1-20260930",
+  "parent_run_id": "fixture-point-patch-v1-20260929",
+  "comparison_run_id": "fixture-candidate-readout-v1-20260930",
+  "case_ids": ["r01", "r02", "r03"],
+  "voxel_camera_span_fractions": [0.0025, 0.005],
+  "support_policy": {"minimum_views": 3, "horizontal_padding_px": 1.0},
+  "intervention": "Apply uniqueness at each projected point rather than the entire RGB row. Compile observed/ambiguous candidate intervals, deduplicate exactly identical raw pairs, then count hits under the unchanged 1px padding. Exactly one hit gives one view vote; zero or multiple hits give zero. Require three distinct views. Nearest original row, no vertical dilation, no selecting a candidate or filling holes.",
+  "paired_policy": "Same immutable full points, exported cameras, finite patches and downstream reader as the union arm. Both original whole-row unique and candidate-union arms remain frozen and reported. No geometry edits, point suppression or label-aware readout.",
+  "freeze_policy": "Sequential development: prior whole-row and union physical scores have been seen. Local uniqueness was proposed in source-only diagnosis, but this run is not pre-registered with the union arm and not an independent holdout. Freeze analytic controls and all 18 outputs before this arm inference/scoring. No threshold sweep or post-score tuning.",
+  "qualification": "Local interval uniqueness is only a photometric condition, not unique cross-view correspondence or foreground identity. Overlapping intervals abstain, including true rods; clutter and downstream false axes can remain. Preserve every rejection/regression. Not a general reader or G1 pass."
+}

@@ -1,5 +1,7 @@
 # 文档索引
 
+最新（2026-09-30）：完成候选并集/点局部唯一两分支、36 行完整输入回放，确认原始支持丢票与混合点线读取未决/偏轴是不同失败层。两个新分支均不推广，G1 未过。入口：[9月30日交接](HANDOFF-2026-09-30.md)、[完整报告](experiments/2026-09-30-rgb-support-and-mixed-readout.md)、[开发日志](journal/2026-09-30.md)。下方保留历史结果。
+
 最新（2026-09-29）：三组新 DA3、286 万来源点、6 补丁及保存/撤回闭环已接通。最细杆统一 RGB 支持读取 R/P 两尺度均 100%，p95 约 8 mm；完整杆/断杆严重截短，G1 未过。新聊天读[9月29日交接](HANDOFF-2026-09-29.md)、[点云与读取报告](experiments/2026-09-29-fixture-points-and-rgb-readout.md)、[日志](journal/2026-09-29.md)。此前同日完成[1 px 假断口修复](experiments/2026-09-29-unresolved-narrow-rod-evidence.md)与[标定挑战](experiments/2026-09-29-fixture-calibration-challenges.md)。下方保留历史状态，不以旧“最新”覆盖当前结果。
 
 此前（2026-09-27）：已知尺寸标定物与RGB独立相机试行完成15图、6条有限曲线。细杆当时仍有19.219mm假断口、总长少39.631mm，G1未过。409前后收据、25run源码审计与493全量+7追加专项通过。见[旧交接](HANDOFF-2026-09-27.md)、[报告](experiments/2026-09-27-metric-fixture-finite-rods.md)、[日志](journal/2026-09-27.md)、[ADR0021](decisions/0021-metric-fixture-and-finite-completeness.md)。

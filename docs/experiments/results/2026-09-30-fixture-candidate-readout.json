@@ -1,0 +1,1851 @@
+{
+  "run_id": "fixture-candidate-readout-v1-20260930",
+  "state": "evaluated",
+  "pre_sha256": "44ee3954b2130c7f277e9e12a38c131307628068b8473dae0486ca34ce81fcb3",
+  "inference_sha256": "6d67b5e0430d231bd963a33624fd88e3bd11b39cd8742587287f1c1172f2eb5a",
+  "truth_sha256": "1f87c73e8d2d4398370d7f4fe25d053b4fd72944e7ddf39c3fafc938ec3540e1",
+  "unchanged_pre_receipts": 441,
+  "elapsed_seconds": 24.207650499999545,
+  "rows": [
+    {
+      "case_id": "r01",
+      "fraction": 0.0025,
+      "variant": "base",
+      "path": "records/r01-0.0025-base.json",
+      "sha256": "5f8cce60c4352865d222e51ae74998f69c2339f6eb9bbdaedaa6894066280820",
+      "previous_path": "records/r01-0.0025-base.json",
+      "previous_sha256": "0d835ac0bc00484788348bd9ef2dc695d776f739e420a244668b78f67f9d45c9",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 28,
+          "ambiguous": 274,
+          "unknown": 51,
+          "absent": 87
+        },
+        {
+          "view_id": "view_01",
+          "observed": 25,
+          "ambiguous": 272,
+          "unknown": 36,
+          "absent": 107
+        },
+        {
+          "view_id": "view_02",
+          "observed": 288,
+          "ambiguous": 10,
+          "unknown": 62,
+          "absent": 80
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 74
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 275,
+          "unknown": 112,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 0,
+      "previous_supported_base_point_count": 14,
+      "state": "complete",
+      "physical": {
+        "segment_count": 5,
+        "total_length_m": 0.6204780182877397,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -1.3795219817122604,
+        "boundary_count": 10,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.09699999999999999,
+        "precision_fraction": 0.2712352514913239,
+        "truth_to_prediction_p95_m": 0.2186079803625778,
+        "prediction_to_truth_p95_m": 0.09268958126385146,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -2.0,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "partial",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 569,
+      "full_curve_sample_count": 0,
+      "supported_curve_sample_count": 0,
+      "base_vote_histogram": [
+        902757,
+        48295,
+        939,
+        269,
+        125,
+        175
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "r01",
+      "fraction": 0.0025,
+      "variant": "baseline",
+      "path": "records/r01-0.0025-baseline.json",
+      "sha256": "da9cb6287ee7f08322dea09cf187df704207052ef0c17aac3fbbbacb7078ea29",
+      "previous_path": "records/r01-0.0025-baseline.json",
+      "previous_sha256": "6c9ed4c84477d7de6c9c2ab4c3305711207d8252f8dd2d1a8277d140b8498297",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 28,
+          "ambiguous": 274,
+          "unknown": 51,
+          "absent": 87
+        },
+        {
+          "view_id": "view_01",
+          "observed": 25,
+          "ambiguous": 272,
+          "unknown": 36,
+          "absent": 107
+        },
+        {
+          "view_id": "view_02",
+          "observed": 288,
+          "ambiguous": 10,
+          "unknown": 62,
+          "absent": 80
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 74
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 275,
+          "unknown": 112,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 26,
+      "previous_supported_base_point_count": 14,
+      "state": "complete",
+      "physical": {
+        "segment_count": 3,
+        "total_length_m": 0.29770584445468373,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -1.7022941555453164,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "truth_to_prediction_p95_m": 1.2487392413962197,
+        "prediction_to_truth_p95_m": 0.09468960321300858,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.16007181142702093,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -1.839928188572979,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.8389390937667986,
+        "recovery_fraction": 0.09199999999999998,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.7379399912752065,
+        "prediction_to_truth_p95_m": 0.011095638522690791,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "partial",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 569,
+      "full_curve_sample_count": 249,
+      "supported_curve_sample_count": 249,
+      "base_vote_histogram": [
+        902757,
+        48295,
+        939,
+        269,
+        125,
+        175
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        249
+      ]
+    },
+    {
+      "case_id": "r01",
+      "fraction": 0.0025,
+      "variant": "cylinder_support",
+      "path": "records/r01-0.0025-cylinder_support.json",
+      "sha256": "da9cb6287ee7f08322dea09cf187df704207052ef0c17aac3fbbbacb7078ea29",
+      "previous_path": "records/r01-0.0025-cylinder_support.json",
+      "previous_sha256": "6c9ed4c84477d7de6c9c2ab4c3305711207d8252f8dd2d1a8277d140b8498297",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 28,
+          "ambiguous": 274,
+          "unknown": 51,
+          "absent": 87
+        },
+        {
+          "view_id": "view_01",
+          "observed": 25,
+          "ambiguous": 272,
+          "unknown": 36,
+          "absent": 107
+        },
+        {
+          "view_id": "view_02",
+          "observed": 288,
+          "ambiguous": 10,
+          "unknown": 62,
+          "absent": 80
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 74
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 275,
+          "unknown": 112,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 26,
+      "previous_supported_base_point_count": 14,
+      "state": "complete",
+      "physical": {
+        "segment_count": 3,
+        "total_length_m": 0.29770584445468373,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -1.7022941555453164,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "truth_to_prediction_p95_m": 1.2487392413962197,
+        "prediction_to_truth_p95_m": 0.09468960321300858,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.16007181142702093,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -1.839928188572979,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.8389390937667986,
+        "recovery_fraction": 0.09199999999999998,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.7379399912752065,
+        "prediction_to_truth_p95_m": 0.011095638522690791,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "partial",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 569,
+      "full_curve_sample_count": 249,
+      "supported_curve_sample_count": 249,
+      "base_vote_histogram": [
+        902757,
+        48295,
+        939,
+        269,
+        125,
+        175
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        249
+      ]
+    },
+    {
+      "case_id": "r01",
+      "fraction": 0.005,
+      "variant": "base",
+      "path": "records/r01-0.005-base.json",
+      "sha256": "2f4ae490d92ddd6923f62084ec5675a29506e9fa19270af085d22092d626b317",
+      "previous_path": "records/r01-0.005-base.json",
+      "previous_sha256": "523f85534c82a00b02680048925a17da2ff6ab120b43cd1bc1f919fc1709d7cf",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 28,
+          "ambiguous": 274,
+          "unknown": 51,
+          "absent": 87
+        },
+        {
+          "view_id": "view_01",
+          "observed": 25,
+          "ambiguous": 272,
+          "unknown": 36,
+          "absent": 107
+        },
+        {
+          "view_id": "view_02",
+          "observed": 288,
+          "ambiguous": 10,
+          "unknown": 62,
+          "absent": 80
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 74
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 275,
+          "unknown": 112,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 0,
+      "previous_supported_base_point_count": 14,
+      "state": "complete",
+      "physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -2.0,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -2.0,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "no_supported_curve",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 569,
+      "full_curve_sample_count": 0,
+      "supported_curve_sample_count": 0,
+      "base_vote_histogram": [
+        902757,
+        48295,
+        939,
+        269,
+        125,
+        175
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "r01",
+      "fraction": 0.005,
+      "variant": "baseline",
+      "path": "records/r01-0.005-baseline.json",
+      "sha256": "3a13fcb5f6c3103f2989df86dd54b6d1b0c5c4b289cf113dbe5352846cda3a43",
+      "previous_path": "records/r01-0.005-baseline.json",
+      "previous_sha256": "0ac90f151907c1ae84f72574d0498c7ab0f60406175a49fa2b712ee7a5131977",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 28,
+          "ambiguous": 274,
+          "unknown": 51,
+          "absent": 87
+        },
+        {
+          "view_id": "view_01",
+          "observed": 25,
+          "ambiguous": 272,
+          "unknown": 36,
+          "absent": 107
+        },
+        {
+          "view_id": "view_02",
+          "observed": 288,
+          "ambiguous": 10,
+          "unknown": 62,
+          "absent": 80
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 74
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 275,
+          "unknown": 112,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 14,
+      "previous_supported_base_point_count": 14,
+      "state": "complete",
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9870637768637798,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.012936223136220226,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.06082560288910749,
+        "recovery_fraction": 0.05999999999999998,
+        "precision_fraction": 0.0563380281690141,
+        "truth_to_prediction_p95_m": 0.058686163511129895,
+        "prediction_to_truth_p95_m": 0.05864809237422843,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.2551870332636133,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -1.7448129667363868,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.7358445301253806,
+        "recovery_fraction": 0.14099999999999996,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.634849702516436,
+        "prediction_to_truth_p95_m": 0.019100969931413733,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 569,
+      "full_curve_sample_count": 125,
+      "supported_curve_sample_count": 125,
+      "base_vote_histogram": [
+        902757,
+        48295,
+        939,
+        269,
+        125,
+        175
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        125
+      ]
+    },
+    {
+      "case_id": "r01",
+      "fraction": 0.005,
+      "variant": "cylinder_support",
+      "path": "records/r01-0.005-cylinder_support.json",
+      "sha256": "3a13fcb5f6c3103f2989df86dd54b6d1b0c5c4b289cf113dbe5352846cda3a43",
+      "previous_path": "records/r01-0.005-cylinder_support.json",
+      "previous_sha256": "0ac90f151907c1ae84f72574d0498c7ab0f60406175a49fa2b712ee7a5131977",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 28,
+          "ambiguous": 274,
+          "unknown": 51,
+          "absent": 87
+        },
+        {
+          "view_id": "view_01",
+          "observed": 25,
+          "ambiguous": 272,
+          "unknown": 36,
+          "absent": 107
+        },
+        {
+          "view_id": "view_02",
+          "observed": 288,
+          "ambiguous": 10,
+          "unknown": 62,
+          "absent": 80
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 74
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 275,
+          "unknown": 112,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 14,
+      "previous_supported_base_point_count": 14,
+      "state": "complete",
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9870637768637798,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.012936223136220226,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.06082560288910749,
+        "recovery_fraction": 0.05999999999999998,
+        "precision_fraction": 0.0563380281690141,
+        "truth_to_prediction_p95_m": 0.058686163511129895,
+        "prediction_to_truth_p95_m": 0.05864809237422843,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.2551870332636133,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -1.7448129667363868,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.7358445301253806,
+        "recovery_fraction": 0.14099999999999996,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.634849702516436,
+        "prediction_to_truth_p95_m": 0.019100969931413733,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 569,
+      "full_curve_sample_count": 125,
+      "supported_curve_sample_count": 125,
+      "base_vote_histogram": [
+        902757,
+        48295,
+        939,
+        269,
+        125,
+        175
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        125
+      ]
+    },
+    {
+      "case_id": "r02",
+      "fraction": 0.0025,
+      "variant": "base",
+      "path": "records/r02-0.0025-base.json",
+      "sha256": "c2ae3afdf6c5963ffef328a191365088d221b76f8dee33d654375e4613b8d7a8",
+      "previous_path": "records/r02-0.0025-base.json",
+      "previous_sha256": "a68d87e43449eaea80cbadade80533efd6f06a8d7256081aec6aa2eb122c3b12",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 11,
+          "ambiguous": 236,
+          "unknown": 60,
+          "absent": 133
+        },
+        {
+          "view_id": "view_01",
+          "observed": 89,
+          "ambiguous": 156,
+          "unknown": 38,
+          "absent": 157
+        },
+        {
+          "view_id": "view_02",
+          "observed": 247,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 125
+        },
+        {
+          "view_id": "view_03",
+          "observed": 246,
+          "ambiguous": 0,
+          "unknown": 118,
+          "absent": 76
+        },
+        {
+          "view_id": "view_04",
+          "observed": 47,
+          "ambiguous": 240,
+          "unknown": 125,
+          "absent": 28
+        }
+      ],
+      "previous_supported_curve_sample_count": 0,
+      "previous_supported_base_point_count": 59,
+      "state": "complete",
+      "physical": {
+        "segment_count": 4,
+        "total_length_m": 0.4702298371525572,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -1.1797701628474426,
+        "boundary_count": 8,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0824242424242424,
+        "precision_fraction": 0.20123392534055026,
+        "truth_to_prediction_p95_m": 0.41205631186304426,
+        "prediction_to_truth_p95_m": 0.12078772982370645,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "previous_physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -1.65,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 555,
+      "full_curve_sample_count": 0,
+      "supported_curve_sample_count": 0,
+      "base_vote_histogram": [
+        910996,
+        40054,
+        955,
+        299,
+        74,
+        182
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "r02",
+      "fraction": 0.0025,
+      "variant": "baseline",
+      "path": "records/r02-0.0025-baseline.json",
+      "sha256": "1c30c5c5c7ec40d73cedf929673803c24265400dc828f9df7ccc44a460477405",
+      "previous_path": "records/r02-0.0025-baseline.json",
+      "previous_sha256": "201366e7df49cbb2e9305d7e5913bb59354fe62cd594863456c2234d446dd4f3",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 11,
+          "ambiguous": 236,
+          "unknown": 60,
+          "absent": 133
+        },
+        {
+          "view_id": "view_01",
+          "observed": 89,
+          "ambiguous": 156,
+          "unknown": 38,
+          "absent": 157
+        },
+        {
+          "view_id": "view_02",
+          "observed": 247,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 125
+        },
+        {
+          "view_id": "view_03",
+          "observed": 246,
+          "ambiguous": 0,
+          "unknown": 118,
+          "absent": 76
+        },
+        {
+          "view_id": "view_04",
+          "observed": 47,
+          "ambiguous": 240,
+          "unknown": 125,
+          "absent": 28
+        }
+      ],
+      "previous_supported_curve_sample_count": 75,
+      "previous_supported_base_point_count": 59,
+      "state": "complete",
+      "physical": {
+        "segment_count": 3,
+        "total_length_m": 1.0906863394051567,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.5593136605948432,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.5333333333333333,
+        "precision_fraction": 0.8131535043940045,
+        "truth_to_prediction_p95_m": 1.0353901998364092,
+        "prediction_to_truth_p95_m": 0.09914592658575418,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5445197683599401,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -1.1054802316400598,
+        "boundary_count": 2,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.34545454545454535,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.3715061551092043,
+        "prediction_to_truth_p95_m": 0.005635232941444089,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "partial",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 555,
+      "full_curve_sample_count": 206,
+      "supported_curve_sample_count": 206,
+      "base_vote_histogram": [
+        910996,
+        40054,
+        955,
+        299,
+        74,
+        182
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        205
+      ]
+    },
+    {
+      "case_id": "r02",
+      "fraction": 0.0025,
+      "variant": "cylinder_support",
+      "path": "records/r02-0.0025-cylinder_support.json",
+      "sha256": "0013866b203552e922333bd9b965ad5a2cf78d113765cdedca60e426db9a802a",
+      "previous_path": "records/r02-0.0025-cylinder_support.json",
+      "previous_sha256": "5395ba56b7be79e1d0c3e4af2f669528e41fb9990fcc2c45135a038c5ea29dfa",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 11,
+          "ambiguous": 236,
+          "unknown": 60,
+          "absent": 133
+        },
+        {
+          "view_id": "view_01",
+          "observed": 89,
+          "ambiguous": 156,
+          "unknown": 38,
+          "absent": 157
+        },
+        {
+          "view_id": "view_02",
+          "observed": 247,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 125
+        },
+        {
+          "view_id": "view_03",
+          "observed": 246,
+          "ambiguous": 0,
+          "unknown": 118,
+          "absent": 76
+        },
+        {
+          "view_id": "view_04",
+          "observed": 47,
+          "ambiguous": 240,
+          "unknown": 125,
+          "absent": 28
+        }
+      ],
+      "previous_supported_curve_sample_count": 73,
+      "previous_supported_base_point_count": 59,
+      "state": "complete",
+      "physical": {
+        "segment_count": 3,
+        "total_length_m": 1.0912454652247106,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.5587545347752894,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.32606060606060605,
+        "precision_fraction": 0.5000247133732825,
+        "truth_to_prediction_p95_m": 1.034397359213425,
+        "prediction_to_truth_p95_m": 0.09914592658575418,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5445197683599401,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -1.1054802316400598,
+        "boundary_count": 2,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.34545454545454535,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.3715061551092043,
+        "prediction_to_truth_p95_m": 0.005635232941444089,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "partial",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 555,
+      "full_curve_sample_count": 206,
+      "supported_curve_sample_count": 206,
+      "base_vote_histogram": [
+        910996,
+        40054,
+        955,
+        299,
+        74,
+        182
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        205
+      ]
+    },
+    {
+      "case_id": "r02",
+      "fraction": 0.005,
+      "variant": "base",
+      "path": "records/r02-0.005-base.json",
+      "sha256": "11a6651b9cda64f7db5049d78a5454db36c56db15e5561c8cef411205d0bed4c",
+      "previous_path": "records/r02-0.005-base.json",
+      "previous_sha256": "a7155b0219f7a012d2637df35d8f01656e6bb3acad6271cc40487abdcb085930",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 11,
+          "ambiguous": 236,
+          "unknown": 60,
+          "absent": 133
+        },
+        {
+          "view_id": "view_01",
+          "observed": 89,
+          "ambiguous": 156,
+          "unknown": 38,
+          "absent": 157
+        },
+        {
+          "view_id": "view_02",
+          "observed": 247,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 125
+        },
+        {
+          "view_id": "view_03",
+          "observed": 246,
+          "ambiguous": 0,
+          "unknown": 118,
+          "absent": 76
+        },
+        {
+          "view_id": "view_04",
+          "observed": 47,
+          "ambiguous": 240,
+          "unknown": 125,
+          "absent": 28
+        }
+      ],
+      "previous_supported_curve_sample_count": 0,
+      "previous_supported_base_point_count": 59,
+      "state": "complete",
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 0.899147320264679,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.7508526797353209,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.38654870162866195,
+        "recovery_fraction": 0.14181818181818182,
+        "precision_fraction": 0.2612055048356796,
+        "truth_to_prediction_p95_m": 0.33582304640699534,
+        "prediction_to_truth_p95_m": 0.06263320148681227,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "previous_physical": {
+        "segment_count": 2,
+        "total_length_m": 0.45216705066758367,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -1.1978329493324162,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.7061436895165527,
+        "recovery_fraction": 0.2509090909090909,
+        "precision_fraction": 0.8201500554992671,
+        "truth_to_prediction_p95_m": 1.3000098959454167,
+        "prediction_to_truth_p95_m": 0.03071077395842113,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 555,
+      "full_curve_sample_count": 0,
+      "supported_curve_sample_count": 0,
+      "base_vote_histogram": [
+        910996,
+        40054,
+        955,
+        299,
+        74,
+        182
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "r02",
+      "fraction": 0.005,
+      "variant": "baseline",
+      "path": "records/r02-0.005-baseline.json",
+      "sha256": "0626f2eaf376822a30c0a0c2044d83abe325e05fe26b9fd04bafff8ab09704ff",
+      "previous_path": "records/r02-0.005-baseline.json",
+      "previous_sha256": "25b12f654b47e931279ab13772454149fa09782bebc1e98405c66ffe24150d7c",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 11,
+          "ambiguous": 236,
+          "unknown": 60,
+          "absent": 133
+        },
+        {
+          "view_id": "view_01",
+          "observed": 89,
+          "ambiguous": 156,
+          "unknown": 38,
+          "absent": 157
+        },
+        {
+          "view_id": "view_02",
+          "observed": 247,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 125
+        },
+        {
+          "view_id": "view_03",
+          "observed": 246,
+          "ambiguous": 0,
+          "unknown": 118,
+          "absent": 76
+        },
+        {
+          "view_id": "view_04",
+          "observed": 47,
+          "ambiguous": 240,
+          "unknown": 125,
+          "absent": 28
+        }
+      ],
+      "previous_supported_curve_sample_count": 36,
+      "previous_supported_base_point_count": 59,
+      "state": "complete",
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6390825483954934,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.010917451604506523,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.055630325869972436,
+        "recovery_fraction": 0.004848484848484847,
+        "precision_fraction": 0.006091169037303241,
+        "truth_to_prediction_p95_m": 0.05253023604061832,
+        "prediction_to_truth_p95_m": 0.05248260046909202,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.6745868456635062,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.9754131543364937,
+        "boundary_count": 2,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.423030303030303,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.2345379811984534,
+        "prediction_to_truth_p95_m": 0.018132089684586235,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 555,
+      "full_curve_sample_count": 105,
+      "supported_curve_sample_count": 105,
+      "base_vote_histogram": [
+        910996,
+        40054,
+        955,
+        299,
+        74,
+        182
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        104
+      ]
+    },
+    {
+      "case_id": "r02",
+      "fraction": 0.005,
+      "variant": "cylinder_support",
+      "path": "records/r02-0.005-cylinder_support.json",
+      "sha256": "49a6352681c029e91b2ab636ac93aa6c01033b91ac19f9e06d9d2c985b09d74e",
+      "previous_path": "records/r02-0.005-cylinder_support.json",
+      "previous_sha256": "7a2c90ff25b817490554feb85632a9f07092c532a04278e11aab0db00cf296aa",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 11,
+          "ambiguous": 236,
+          "unknown": 60,
+          "absent": 133
+        },
+        {
+          "view_id": "view_01",
+          "observed": 89,
+          "ambiguous": 156,
+          "unknown": 38,
+          "absent": 157
+        },
+        {
+          "view_id": "view_02",
+          "observed": 247,
+          "ambiguous": 0,
+          "unknown": 68,
+          "absent": 125
+        },
+        {
+          "view_id": "view_03",
+          "observed": 246,
+          "ambiguous": 0,
+          "unknown": 118,
+          "absent": 76
+        },
+        {
+          "view_id": "view_04",
+          "observed": 47,
+          "ambiguous": 240,
+          "unknown": 125,
+          "absent": 28
+        }
+      ],
+      "previous_supported_curve_sample_count": 35,
+      "previous_supported_base_point_count": 59,
+      "state": "complete",
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.639097836288586,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.010902163711413948,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.053380836538664066,
+        "recovery_fraction": 0.25333333333333335,
+        "precision_fraction": 0.2571393456555876,
+        "truth_to_prediction_p95_m": 0.050450630622394695,
+        "prediction_to_truth_p95_m": 0.05039748429280048,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.6408573906361327,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -1.0091426093638671,
+        "boundary_count": 2,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.40727272727272723,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.2676854554844859,
+        "prediction_to_truth_p95_m": 0.010258248272596275,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 555,
+      "full_curve_sample_count": 105,
+      "supported_curve_sample_count": 105,
+      "base_vote_histogram": [
+        910996,
+        40054,
+        955,
+        299,
+        74,
+        182
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        104
+      ]
+    },
+    {
+      "case_id": "r03",
+      "fraction": 0.0025,
+      "variant": "base",
+      "path": "records/r03-0.0025-base.json",
+      "sha256": "a5ba55768e23c7a696deb55da1e6aa737da14a1f9a909f0ae4283115f82588dc",
+      "previous_path": "records/r03-0.0025-base.json",
+      "previous_sha256": "1b62d1ca48cd045ee9080d4f28c748d77178fd2cc3b74327c34e11ae6391aa05",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 302,
+          "ambiguous": 0,
+          "unknown": 50,
+          "absent": 88
+        },
+        {
+          "view_id": "view_01",
+          "observed": 297,
+          "ambiguous": 0,
+          "unknown": 30,
+          "absent": 113
+        },
+        {
+          "view_id": "view_02",
+          "observed": 299,
+          "ambiguous": 0,
+          "unknown": 60,
+          "absent": 81
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 65,
+          "absent": 77
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 276,
+          "unknown": 111,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 0,
+      "previous_supported_base_point_count": 98,
+      "state": "complete",
+      "physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -2.0,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -2.0,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "no_supported_curve",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 120,
+      "full_curve_sample_count": 0,
+      "supported_curve_sample_count": 0,
+      "base_vote_histogram": [
+        917103,
+        35068,
+        269,
+        35,
+        23,
+        62
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "r03",
+      "fraction": 0.0025,
+      "variant": "baseline",
+      "path": "records/r03-0.0025-baseline.json",
+      "sha256": "528df719d91884897b0ac7a64e78d352bf9eea1d9780e4d106e066b2b68a3c40",
+      "previous_path": "records/r03-0.0025-baseline.json",
+      "previous_sha256": "4c3ef9bfe6d8695f6ca32b3cddb4d76cd6d2af8c4d6005e29733cf6367d3ce33",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 302,
+          "ambiguous": 0,
+          "unknown": 50,
+          "absent": 88
+        },
+        {
+          "view_id": "view_01",
+          "observed": 297,
+          "ambiguous": 0,
+          "unknown": 30,
+          "absent": 113
+        },
+        {
+          "view_id": "view_02",
+          "observed": 299,
+          "ambiguous": 0,
+          "unknown": 60,
+          "absent": 81
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 65,
+          "absent": 77
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 276,
+          "unknown": 111,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 250,
+      "previous_supported_base_point_count": 98,
+      "state": "complete",
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 2.0020723412351,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": 0.002072341235099806,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.0166866593504489,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.01630747909120426,
+        "prediction_to_truth_p95_m": 0.01630465733896211,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 2.002071593251007,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": 0.00207159325100692,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008929919097766222,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.008361012507512726,
+        "prediction_to_truth_p95_m": 0.008356796859646548,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 120,
+      "full_curve_sample_count": 250,
+      "supported_curve_sample_count": 250,
+      "base_vote_histogram": [
+        917103,
+        35068,
+        269,
+        35,
+        23,
+        62
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        250
+      ]
+    },
+    {
+      "case_id": "r03",
+      "fraction": 0.0025,
+      "variant": "cylinder_support",
+      "path": "records/r03-0.0025-cylinder_support.json",
+      "sha256": "528df719d91884897b0ac7a64e78d352bf9eea1d9780e4d106e066b2b68a3c40",
+      "previous_path": "records/r03-0.0025-cylinder_support.json",
+      "previous_sha256": "4c3ef9bfe6d8695f6ca32b3cddb4d76cd6d2af8c4d6005e29733cf6367d3ce33",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 302,
+          "ambiguous": 0,
+          "unknown": 50,
+          "absent": 88
+        },
+        {
+          "view_id": "view_01",
+          "observed": 297,
+          "ambiguous": 0,
+          "unknown": 30,
+          "absent": 113
+        },
+        {
+          "view_id": "view_02",
+          "observed": 299,
+          "ambiguous": 0,
+          "unknown": 60,
+          "absent": 81
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 65,
+          "absent": 77
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 276,
+          "unknown": 111,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 250,
+      "previous_supported_base_point_count": 98,
+      "state": "complete",
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 2.0020723412351,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": 0.002072341235099806,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.0166866593504489,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.01630747909120426,
+        "prediction_to_truth_p95_m": 0.01630465733896211,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 2.002071593251007,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": 0.00207159325100692,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008929919097766222,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.008361012507512726,
+        "prediction_to_truth_p95_m": 0.008356796859646548,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 120,
+      "full_curve_sample_count": 250,
+      "supported_curve_sample_count": 250,
+      "base_vote_histogram": [
+        917103,
+        35068,
+        269,
+        35,
+        23,
+        62
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        250
+      ]
+    },
+    {
+      "case_id": "r03",
+      "fraction": 0.005,
+      "variant": "base",
+      "path": "records/r03-0.005-base.json",
+      "sha256": "cd1e7c9fd4521abdb029b2bd76f8668a72dc3f238a4dca9fe845ec479893f866",
+      "previous_path": "records/r03-0.005-base.json",
+      "previous_sha256": "3c6d88fdb2c8cfa277afeed112596c5c83259288b3b618df7580f02e74646f08",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 302,
+          "ambiguous": 0,
+          "unknown": 50,
+          "absent": 88
+        },
+        {
+          "view_id": "view_01",
+          "observed": 297,
+          "ambiguous": 0,
+          "unknown": 30,
+          "absent": 113
+        },
+        {
+          "view_id": "view_02",
+          "observed": 299,
+          "ambiguous": 0,
+          "unknown": 60,
+          "absent": 81
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 65,
+          "absent": 77
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 276,
+          "unknown": 111,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 0,
+      "previous_supported_base_point_count": 98,
+      "state": "complete",
+      "physical": {
+        "segment_count": 3,
+        "total_length_m": 0.6148843367137409,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -1.3851156632862591,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.36299999999999993,
+        "precision_fraction": 0.9967674065825739,
+        "truth_to_prediction_p95_m": 0.48527322280491086,
+        "prediction_to_truth_p95_m": 0.022594967014887127,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 3,
+        "total_length_m": 0.5806610005244547,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -1.4193389994755452,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.3559999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.48774038355593125,
+        "prediction_to_truth_p95_m": 0.01686106790258913,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 120,
+      "full_curve_sample_count": 0,
+      "supported_curve_sample_count": 0,
+      "base_vote_histogram": [
+        917103,
+        35068,
+        269,
+        35,
+        23,
+        62
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case_id": "r03",
+      "fraction": 0.005,
+      "variant": "baseline",
+      "path": "records/r03-0.005-baseline.json",
+      "sha256": "4c28dbcad91c5e8a98292e9dcd8f94edbbbf98c5e0ad996fcd14af789e1d2662",
+      "previous_path": "records/r03-0.005-baseline.json",
+      "previous_sha256": "fcf7898306df968cb5e82f1a1708e28456f042208f72ebb5d56df92f523a8dec",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 302,
+          "ambiguous": 0,
+          "unknown": 50,
+          "absent": 88
+        },
+        {
+          "view_id": "view_01",
+          "observed": 297,
+          "ambiguous": 0,
+          "unknown": 30,
+          "absent": 113
+        },
+        {
+          "view_id": "view_02",
+          "observed": 299,
+          "ambiguous": 0,
+          "unknown": 60,
+          "absent": 81
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 65,
+          "absent": 77
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 276,
+          "unknown": 111,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 126,
+      "previous_supported_base_point_count": 98,
+      "state": "complete",
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.986130905233123,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.013869094766876922,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.01018776503301567,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005533307120298809,
+        "prediction_to_truth_p95_m": 0.005491658367395884,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9861534102887173,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.01384658971128272,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.012346867951791735,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.007992826750782361,
+        "prediction_to_truth_p95_m": 0.00795184260801486,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 120,
+      "full_curve_sample_count": 126,
+      "supported_curve_sample_count": 126,
+      "base_vote_histogram": [
+        917103,
+        35068,
+        269,
+        35,
+        23,
+        62
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        126
+      ]
+    },
+    {
+      "case_id": "r03",
+      "fraction": 0.005,
+      "variant": "cylinder_support",
+      "path": "records/r03-0.005-cylinder_support.json",
+      "sha256": "4c28dbcad91c5e8a98292e9dcd8f94edbbbf98c5e0ad996fcd14af789e1d2662",
+      "previous_path": "records/r03-0.005-cylinder_support.json",
+      "previous_sha256": "fcf7898306df968cb5e82f1a1708e28456f042208f72ebb5d56df92f523a8dec",
+      "raw_row_states": [
+        {
+          "view_id": "view_00",
+          "observed": 302,
+          "ambiguous": 0,
+          "unknown": 50,
+          "absent": 88
+        },
+        {
+          "view_id": "view_01",
+          "observed": 297,
+          "ambiguous": 0,
+          "unknown": 30,
+          "absent": 113
+        },
+        {
+          "view_id": "view_02",
+          "observed": 299,
+          "ambiguous": 0,
+          "unknown": 60,
+          "absent": 81
+        },
+        {
+          "view_id": "view_03",
+          "observed": 298,
+          "ambiguous": 0,
+          "unknown": 65,
+          "absent": 77
+        },
+        {
+          "view_id": "view_04",
+          "observed": 24,
+          "ambiguous": 276,
+          "unknown": 111,
+          "absent": 29
+        }
+      ],
+      "previous_supported_curve_sample_count": 126,
+      "previous_supported_base_point_count": 98,
+      "state": "complete",
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.986130905233123,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.013869094766876922,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.01018776503301567,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005533307120298809,
+        "prediction_to_truth_p95_m": 0.005491658367395884,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "previous_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9861534102887173,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.01384658971128272,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.012346867951791735,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.007992826750782361,
+        "prediction_to_truth_p95_m": 0.00795184260801486,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null,
+      "previous_scoring_error": null,
+      "resolution_state": "resolved",
+      "full_input_point_count": 952560,
+      "supported_base_point_count": 120,
+      "full_curve_sample_count": 126,
+      "supported_curve_sample_count": 126,
+      "base_vote_histogram": [
+        917103,
+        35068,
+        269,
+        35,
+        23,
+        62
+      ],
+      "curve_vote_histogram": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        126
+      ]
+    }
+  ],
+  "reader_qualified": false,
+  "g1_passed": false,
+  "alignment_performed": false,
+  "qualification": "Photometric possible support, not unique correspondence or foreground certification. Candidate unions may retain clutter or painted lines; downstream PCA may still synthesize unsupported axes. Report all cases/scales, empty results and regressions. No general reader qualification, independent object claim or G1 pass."
+}
