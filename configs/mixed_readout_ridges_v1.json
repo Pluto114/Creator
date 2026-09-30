@@ -1,0 +1,18 @@
+{
+  "run_id": "mixed-readout-ridges-v1-20260930",
+  "seed": 410731,
+  "condition_count": 44,
+  "construction_family_count": 11,
+  "grid_scales_m": [0.006, 0.010],
+  "phase_count": 2,
+  "readers": ["ridges", "abstention"],
+  "representations": ["native", "sampled_points"],
+  "expected_normal_rows": 176,
+  "reader_overrides": {},
+  "diagnostic_recovery_precision_threshold": 0.9,
+  "diagnostic_threshold_scope": "Reporting convenience only, not an acceptance, reader-qualification, or physical-object gate.",
+  "sampling": "Identical sample_segments at voxel_size/2; the sampled_points representation concatenates those samples with the unchanged original points and supplies no segments.",
+  "freeze_policy": "Freeze generated unlabelled normal inputs, separately stored construction truth, reader defaults, all local evaluation sources and related tests before any normal output. Complete all 176 rows before truth-file access. No fixture replay or post-score threshold selection.",
+  "development_context": "Prior fixture failures informed the design. These 44 conditions have not been scored before this freeze; authored analytic controls are not blind independent physical objects. Both phases and both scales repeat the same 11 construction families.",
+  "qualification": "Construction-conditioned analytic geometry only. Positive abstention is missing recovery, not success. Empty negative output is only construction-conditioned rejection, not foreground recognition. Preserve all errors, unresolved states and regressions. Not a general reader qualification or G1 pass."
+}

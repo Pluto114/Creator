@@ -1,0 +1,14 @@
+{
+  "run_id": "mixed-readout-ridges-v1-20260930",
+  "state": "passed",
+  "created_at_utc": "2026-09-30T09:27:35.518079+00:00",
+  "public_sha256": "e3fa139e31cb691d10722b22a70619986cba57cdae39a7f95b1ee4ef45435637",
+  "unchanged_pre_receipts": 224,
+  "exact_evaluation_replay": true,
+  "normal_row_count": 176,
+  "all_representation_pairs_identical": true,
+  "positive_abstentions_remain_failures": true,
+  "negative_rejections_are_construction_conditioned": true,
+  "reader_qualified": false,
+  "g1_passed": false
+}
