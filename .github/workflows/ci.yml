@@ -39,7 +39,9 @@ jobs:
         run: |
           python -c "from pathlib import Path; Path('.runtime').mkdir(exist_ok=True)"
           python -m unittest discover -s tests -p "test_common_readout*.py" -v
-          python -m unittest discover -s tests -p "test_mixed_readout*.py" -v
+          python -m unittest discover -s tests -p "test_mixed*.py" -v
+          python -m unittest discover -s tests -p test_section_evidence.py -v
+          python -m unittest discover -s tests -p test_evidence_integration.py -v
       - name: RGB observation and local evidence controls
         run: |
           python -m unittest discover -s tests -p test_rod_observations.py -v

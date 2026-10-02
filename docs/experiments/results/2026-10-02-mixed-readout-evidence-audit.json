@@ -1,0 +1,16 @@
+{
+  "run_id": "mixed-readout-evidence-v1-20261002",
+  "state": "passed",
+  "created_at_utc": "2026-10-02T03:36:04.121434+00:00",
+  "public_sha256": "7af4fc68b76c45e262cffffa848dffbaabd1aebedc5d18bb2e0db3832eae8225",
+  "unchanged_pre_receipts": 461,
+  "exact_evaluation_replay": true,
+  "normal_row_count": 320,
+  "all_representation_pairs_identical": true,
+  "no_combined_holdout_claim": true,
+  "development_replay_prior_outputs_and_scores_seen": true,
+  "positive_abstentions_remain_failures": true,
+  "negative_rejections_are_construction_conditioned": true,
+  "reader_qualified": false,
+  "g1_passed": false
+}
