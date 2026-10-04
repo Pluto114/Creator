@@ -1,0 +1,20 @@
+{
+  "run_id": "fixture-ridge-sampling-readout-v1-20261004",
+  "parent_run_id": "fixture-point-patch-v1-20260929",
+  "comparison_run_id": "fixture-context-readout-v1-20261004",
+  "analytic_prerequisite_run_id": "mixed-readout-ridge-sampling-v1-20261004",
+  "analytic_expected_normal_rows": 736,
+  "analytic_expected_fresh_rows": 368,
+  "analytic_expected_reference_rows": 368,
+  "case_ids": ["r01", "r02", "r03"],
+  "voxel_camera_span_fractions": [0.0025, 0.005],
+  "variants": ["base", "baseline", "cylinder_support"],
+  "expected_normal_rows": 18,
+  "support_policy": {"minimum_views": 3, "horizontal_padding_px": 1.0},
+  "reader_overrides": {},
+  "intervention": "Replace the previous context reader with common_readout_ridge_sampling. Direct readout-version comparison against the prior 18 context records. Preserve the existing RGB candidate-interval union, three distinct views, 1px horizontal padding, nearest original row and no vertical dilation. Transfer only voxel_size and origin from the old reader config; freeze the complete new reader defaults.",
+  "paired_policy": "Load each complete immutable base and enabled saved candidate before applying one identical existing local measurement mask. Sample native candidate curves at voxel_size/2. Reuse original exact export cameras, camera-span scales and meter-conditioned frame. No new ROI, DA3, candidate fitting, point suppression, camera substitution or GT alignment. Old 18 normal outputs are byte-bound references, never rerun.",
+  "prerequisite_policy": "Require the separate analytic run's frozen pre and all 736 complete normal/reference records, including 368 fresh and 368 parent-cache provenance checks. Never inspect its evaluation or use scores as a selection/promotion gate.",
+  "freeze_policy": "Already-scored development fixtures; not new blind objects. Freeze source, normal inputs, defaults and all 18 intended rows before inference. Keep prepare/infer/evaluate/post separate, verify all paired normal outputs before any truth access, and never overwrite an earlier attempt.",
+  "qualification": "Only local finite-axis readout within the unchanged possible-support volume, after loading complete base/candidate geometry. No whole-scene quality claim, semantic identity, independent reader qualification, holdout claim or G1 promotion. Keep empty, error, unresolved, wrong nonempty and regression rows visible."
+}

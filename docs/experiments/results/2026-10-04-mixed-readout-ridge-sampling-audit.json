@@ -1,0 +1,21 @@
+{
+  "run_id": "mixed-readout-ridge-sampling-v1-20261004",
+  "state": "passed",
+  "created_at_utc": "2026-10-04T13:21:39.831128+00:00",
+  "public_sha256": "84a136e45b8e3f951e0f7dcf7d59f291284a0c7c7345e26f71087624e4d13715",
+  "fresh_inference_row_count": 368,
+  "frozen_reference_row_count": 368,
+  "unchanged_pre_receipts": 1601,
+  "exact_evaluation_replay": true,
+  "normal_row_count": 736,
+  "all_representation_pairs_identical": true,
+  "no_combined_holdout_claim": true,
+  "development_replay_prior_outputs_and_scores_seen": true,
+  "all_inputs_prior_outputs_and_scores_seen": true,
+  "hypothesis_development_replay": true,
+  "new_conditions": 0,
+  "positive_abstentions_remain_failures": true,
+  "negative_rejections_are_construction_conditioned": true,
+  "reader_qualified": false,
+  "g1_passed": false
+}
