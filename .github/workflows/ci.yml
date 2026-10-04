@@ -47,6 +47,12 @@ jobs:
           python -m unittest discover -s tests -p test_section_supported_evidence.py -v
           python -m unittest discover -s tests -p test_section_support_controls.py -v
           python -m unittest discover -s tests -p test_supported_integration.py -v
+          python -m unittest discover -s tests -p test_section_local_evidence.py -v
+          python -m unittest discover -s tests -p test_ridge_local_evidence.py -v
+          python -m unittest discover -s tests -p test_local_evidence_controls.py -v
+          python -m unittest discover -s tests -p test_local_integration.py -v
+          python -m unittest discover -s tests -p test_section_context_evidence.py -v
+          python -m unittest discover -s tests -p test_context_integration.py -v
       - name: RGB observation and local evidence controls
         run: |
           python -m unittest discover -s tests -p test_rod_observations.py -v

@@ -1,0 +1,30 @@
+{
+  "run_id": "mixed-readout-context-v1-20261004",
+  "parent_run_id": "mixed-readout-local-v1-20261004",
+  "condition_count": 184,
+  "development_replay_conditions": 184,
+  "development_replay_family_count": 46,
+  "all_inputs_prior_outputs_and_scores_seen": true,
+  "new_conditions": 0,
+  "hypothesis_development_replay": true,
+  "readers": [
+    "context",
+    "local"
+  ],
+  "representations": [
+    "native",
+    "sampled_points"
+  ],
+  "expected_normal_rows": 736,
+  "expected_fresh_rows": 368,
+  "expected_reference_rows": 368,
+  "reuse_parent_baseline": true,
+  "reader_overrides": {},
+  "diagnostic_recovery_precision_threshold": 0.9,
+  "diagnostic_threshold_scope": "Reporting only, not reader qualification. Require finite boundaries, segment counts and guarded-gap integrity separately.",
+  "finite_structure_display_gate": "Positive R/P >= 90%, exact declared segment count, boundary bijection <= 25 mm, zero guarded gap false length; same-segmentation diagnostic only.",
+  "development_replay": "All 184 inputs and prior scores have already been seen: five separate cohorts of 44 mixed, 36 section, 40 sampling, 32 support and 32 local-evidence conditions. No new generator, object or holdout is introduced. This is hypothesis-development replay.",
+  "parent_reference": "Run context freshly on both representations of all 184 inputs (368 executions). Reuse exactly 368 same-input, same-policy local normal results from the frozen parent, not new executions. Cached elapsed_seconds=0 is not a speed benchmark.",
+  "freeze_policy": "Verify all 736 parent normal records and their cache provenance before privileged copying of old isolated truth. Freeze inherited source_files plus explicit context dependencies, inputs, policies and reference mapping. Verify all 736 new normal/reference rows and exact cached results before any evaluation truth access. No overwrites or post-score edits.",
+  "qualification": "Development-only comparison after prior results were observed; no blind validation, foreground recognition, arbitrary topology, whole-scene improvement or G1. Keep every positive abstention, error and nonempty negative/unresolved output visible. Point-only representation pairs are identical-input checks, not independent physical evidence."
+}

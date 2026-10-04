@@ -1,0 +1,18 @@
+{
+  "run_id": "mixed-readout-local-v1-20261004",
+  "state": "passed",
+  "created_at_utc": "2026-10-04T11:39:24.493346+00:00",
+  "public_sha256": "6ed5687189582e4927c8c141dba965f8052042e284c5ce568f5c1e99a392af75",
+  "fresh_inference_row_count": 432,
+  "frozen_reference_row_count": 304,
+  "unchanged_pre_receipts": 1064,
+  "exact_evaluation_replay": true,
+  "normal_row_count": 736,
+  "all_representation_pairs_identical": true,
+  "no_combined_holdout_claim": true,
+  "development_replay_prior_outputs_and_scores_seen": true,
+  "positive_abstentions_remain_failures": true,
+  "negative_rejections_are_construction_conditioned": true,
+  "reader_qualified": false,
+  "g1_passed": false
+}
