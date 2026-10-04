@@ -1,0 +1,14 @@
+{
+  "run_id": "fixture-supported-readout-v1-20261004",
+  "state": "passed",
+  "created_at_utc": "2026-10-04T10:57:33.699924+00:00",
+  "public_sha256": "ea18394ace477887f530c17446a895a792efaf675331e4cba67e2ec7bef33252",
+  "unchanged_pre_receipts": 2029,
+  "exact_evaluation_replay": true,
+  "parent_outputs_unchanged": true,
+  "same_region_for_base_and_candidate": true,
+  "development_prior_scores_seen": true,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "measurement_scope": "Complete immutable base/candidate geometry is loaded, then the same frozen raw RGB candidate-union measurement mask is applied. Local finite-axis readout only; not target identity, whole-scene quality improvement, independent qualification or G1."
+}

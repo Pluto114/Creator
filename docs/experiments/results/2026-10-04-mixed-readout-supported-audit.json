@@ -1,0 +1,18 @@
+{
+  "run_id": "mixed-readout-supported-v1-20261004",
+  "state": "passed",
+  "created_at_utc": "2026-10-04T10:56:33.732184+00:00",
+  "public_sha256": "7ba61acfb6d904ada45376cc2e48f7ab28afb23d97e7031b1563033b7ab17f89",
+  "fresh_inference_row_count": 368,
+  "frozen_reference_row_count": 240,
+  "unchanged_pre_receipts": 880,
+  "exact_evaluation_replay": true,
+  "normal_row_count": 608,
+  "all_representation_pairs_identical": true,
+  "no_combined_holdout_claim": true,
+  "development_replay_prior_outputs_and_scores_seen": true,
+  "positive_abstentions_remain_failures": true,
+  "negative_rejections_are_construction_conditioned": true,
+  "reader_qualified": false,
+  "g1_passed": false
+}
