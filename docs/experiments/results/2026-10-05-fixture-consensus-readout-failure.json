@@ -1,0 +1,19 @@
+{
+  "run_id": "fixture-consensus-readout-v1-20261005",
+  "state": "failed",
+  "phase": "infer",
+  "error_type": "FileNotFoundError",
+  "reason": "Runner migration renamed the immutable bundle/base and candidate storage directory to consensus. The original bundle storage was not changed.",
+  "pre_sha256": "738d20c391604570b98fb22fe265309665c647c19bd06958a6b3447b940b9cac",
+  "source_count": 205,
+  "pre_receipt_count": 7959,
+  "normal_rows_written": 0,
+  "inference_manifest_written": false,
+  "evaluation_executed": false,
+  "reader_executed_on_fixture": false,
+  "old_sources_and_attempt_preserved": true,
+  "repair_run_id": "fixture-consensus-readout-v2-20261005",
+  "repair_scope": "Runner storage paths only; unchanged reader, inputs, views, masks, sampling and scoring policy.",
+  "reported_by": "Codex, from actual failed process and on-disk state; not a DeepSeek execution claim",
+  "g1_passed": false
+}
