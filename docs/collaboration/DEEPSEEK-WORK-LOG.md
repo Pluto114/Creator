@@ -30,3 +30,11 @@ Codex实现圆周排/平面歧义证据、两个读取器对照臂、全部正�
 第二阶段：DeepSeek提供6条一致性测试及日志，Codex提供固定分折补检和3进程runner。73项新/复用契约双环境、1308项全量通过；736行正式解析有限门100→102/108，无新误输出。Codex的fixture runner出现路径迁移错误，v1失败原样保留，另建只修路径的v2，并增加15项双环境契约。详细过程和最终结果见[第二阶段报告](../experiments/2026-10-05-ridge-consensus.md)。
 
 v2已完成18行且物理结果全同上阶段；12候选通过、6纯base仍空。最终7967份pre收据SHA与16份新源码暂存字节通过。以上运行和修复由Codex执行，原助手6条断言未改（集成仅末尾空行）。
+
+## 10月6日：重复工作并行，Codex负责核心
+
+DeepSeek任务`section-metric-contracts-001`在独立会话交付6条真实训练距离分组测试与本人`work-log.json`，strict JSON、输入SHA、许可输出和日志字段通过。Codex修正集成副本一处`mapping[i]`误用（mapping实际为函数，应调用），原交付保留；6项测试双NumPy通过（0.015/0.011秒）。助手本人未执行测试，验收另记`runs/section-metric-contracts-001/review.json`。
+
+Codex子助手承担两组新runner机械迁移及35条双环境契约、全量测试/构建和纯base支持证据整理；不冒称这些是DeepSeek执行。主Codex实现训练距离分组、42项核心契约、正式冻结与主线决策。完整进度见[10月6日日志](../journal/2026-10-06.md)。
+
+最终验收：1406全量、83项新/复用双环境及另外9项base诊断双环境通过；解析102→103/108，fixture18/18保持旧物理，normal-only诊断7989收据通过。对应实际执行者是Codex及Codex子助手，不是DeepSeek；DeepSeek本轮负责6条测试与工作记录。

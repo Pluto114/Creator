@@ -1,0 +1,21 @@
+{
+  "run_id": "mixed-readout-metric-v1-20261006",
+  "state": "passed",
+  "created_at_utc": "2026-10-06T11:55:18.110653+00:00",
+  "public_sha256": "503365cfa7ce896c3872332e63bdd092b1afe2b173df7ce1a2ba8dc3379daf7e",
+  "fresh_inference_row_count": 368,
+  "frozen_reference_row_count": 368,
+  "unchanged_pre_receipts": 1667,
+  "exact_evaluation_replay": true,
+  "normal_row_count": 736,
+  "all_representation_pairs_identical": true,
+  "no_combined_holdout_claim": true,
+  "development_replay_prior_outputs_and_scores_seen": true,
+  "all_inputs_prior_outputs_and_scores_seen": true,
+  "hypothesis_development_replay": true,
+  "new_conditions": 0,
+  "positive_abstentions_remain_failures": true,
+  "negative_rejections_are_construction_conditioned": true,
+  "reader_qualified": false,
+  "g1_passed": false
+}
