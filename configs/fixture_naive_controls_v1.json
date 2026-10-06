@@ -1,0 +1,17 @@
+{
+  "run_id": "fixture-naive-controls-v1-20261006",
+  "parent_run_id": "fixture-point-patch-v1-20260929",
+  "comparison_run_id": "fixture-metric-readout-v1-20261006",
+  "case_ids": ["r01", "r02", "r03"],
+  "voxel_camera_span_fractions": [0.0025, 0.005],
+  "variants": ["base", "depth_tls_single_span", "depth_ransac_single_span", "baseline", "cylinder_support"],
+  "repeats": [0, 1],
+  "expected_normal_rows": 60,
+  "support_policy": {"minimum_views": 3, "horizontal_padding_px": 1},
+  "reader_overrides": {},
+  "naive_defaults": {"distance_camera_span_fraction": 0.005, "minimum_pair_extent_camera_span_fraction": 0.03, "minimum_inliers": 12, "minimum_views": 3, "trials": 256, "seed": 0},
+  "intervention": "Fit conventional depth TLS and deterministic RANSAC single spans on the exact original RGB-supported base points. No candidate endpoints, readout scale or truth may enter fitting. Persist each fit as a real reversible patch; retain unsupported outcomes.",
+  "paired_policy": "Each repeat is a fresh subprocess. Complete base and old candidates retain their identities. All five variants receive the unchanged metric reader, RGB volume, sampling, cameras and two scales. Native added segments are separately scored; base has no native added curves, not a claim that raw depth has no structure.",
+  "freeze_policy": "Close all 60 normal rows, dependencies and source bytes before inference. Verify every row and saved bundle before any truth. Exclusive writes preserve failures. Repeats are reproducibility checks on the same development objects, not independent objects.",
+  "qualification": "Old local fixture evidence only. No new blind objects, independent reader qualification, whole-scene improvement or G1 promotion. Report native and common-readout failures, protected-gap errors, elapsed time and added storage."
+}

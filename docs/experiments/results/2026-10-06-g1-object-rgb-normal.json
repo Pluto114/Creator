@@ -1,0 +1,371 @@
+{
+  "schema_version": "g1-object-rgb-normal-summary-v1",
+  "created_at_utc": "2026-10-06T13:20:56.783640+00:00",
+  "run_id": "g1-object-rgb-v1-20261006",
+  "scene_run_id": "g1-object-scenes-v1-20261006",
+  "state": "normal_inference_verified",
+  "normal_only": true,
+  "gt_read": false,
+  "method_physical_scoring_performed": false,
+  "da3_inference_performed": false,
+  "actual_point_patch_performed": false,
+  "independent_real_capture": false,
+  "blind_holdout": false,
+  "g1_passed": false,
+  "scope": "RGB-estimated known-fixture cameras and unchanged finite-line method normal output on two synthetic development assemblies. Acceptance is a method gate, not physical accuracy or G1 evidence of improvement.",
+  "prepared": {
+    "path": ".runtime/experiments/g1-object-rgb-v1-20261006/prepared.json",
+    "sha256": "9ee22dc740bf261bb0931a64984e42ad74daac8ac29c99f7d5d65653e3cc28cc"
+  },
+  "inference": {
+    "path": ".runtime/experiments/g1-object-rgb-v1-20261006/inference.json",
+    "sha256": "4fb1c2ceca56a32288fb83c577daa68aeef5d180aaa2d4eba1bc36c6f811327b"
+  },
+  "input_manifest": {
+    "path": "data/inputs/g1-object-rgb-v1-20261006/manifest.json",
+    "sha256": "bd56da4a289c78280d641d2893eb2e548b82e4758a46324a00b908a4dfaa722c"
+  },
+  "method_config": {
+    "path": ".runtime/experiments/g1-object-rgb-v1-20261006/method_config.json",
+    "sha256": "bdccbebae601a36a7fc3a5b63f801e5a4d83f5f03cd6c0df78e519cb77a03316",
+    "method_sha256": "b33ce471de3fbe6b7387d78494c7675108a68793fa9d68711a5eb6a1f4c3072e"
+  },
+  "source_sha256": {
+    "configs/g1_object_rgb_v1.json": "28ca2120fa900d9cfdcac27b477f4b0278edf57624eca61dc1cf79347e9cc799",
+    "configs/rod_fixture_narrow_v1.json": "41cac12f53eebb15eb760c14c46da530f6eac9f33106309cc9eef0075a399c75",
+    "experiments/src/creator_eval/__init__.py": "3398391fbbc26f2ca592319dcba4a4dfb87a37c23b7376f79c4802b0c31a4536",
+    "experiments/src/creator_eval/fixture_calibration.py": "ef6f9650994e539bc2bcc7f01b3182415c9b03f889c54e7daa8e6a46796791f0",
+    "experiments/src/creator_eval/line_controls.py": "7702c987899685a8647f7cecadabb5a0b854ce86b975e85b5d7e5e5abf9c89b3",
+    "experiments/src/creator_eval/native_diagnostics.py": "fcc7b782016c2227a54999f9a3a8bcaac7bfcf04ed53a13f38f048739518ce59",
+    "experiments/src/creator_eval/rod_candidate_association.py": "433eed9364379284cc9069ef76e63baa2a4d436820a309187a213a662bedf7b7",
+    "experiments/src/creator_eval/rod_candidate_extent.py": "65927b89a968eea59fcaa46bce29e560b9cc0180eb6db2349a30631bab087ad1",
+    "experiments/src/creator_eval/rod_candidate_pool.py": "403855670196cb2cd3938431759eed6bc80a50bed72305113130d783dad12fa6",
+    "experiments/src/creator_eval/rod_cylinder_gate.py": "026a71ba41a3aee56b3b51f291aee2cc402f7f80bcfc530df2058336adf5566e",
+    "experiments/src/creator_eval/rod_cylinder_support.py": "68834905abf6cb0e4993b0a156373968706936cbe6a2356b6b8505d402400f4f",
+    "experiments/src/creator_eval/rod_evidence.py": "67d9d57fbd5ea20fab518ba8aa43353204fcea0980c022ed9c3fffb8d443016e",
+    "experiments/src/creator_eval/rod_fixture_finite.py": "6a628724e584d563f3e2f4bc3ecc391b59d87efdd4192c8c3e1f1e741c5f18a9",
+    "experiments/src/creator_eval/rod_multiview_candidates.py": "eeb737078405fa98dd11d9061aa0a254369c2c571a9f00225b00ac4c935b9a98",
+    "experiments/src/creator_eval/rod_observations.py": "941b712f8a8abadc5ee8a6432ef9f69f7284c04085b173d8eec8c760e0840006",
+    "experiments/src/creator_eval/rod_radius_consistency.py": "d2bc78388008a532242b511365b3248df94ea6963f8e6b4c9b3c040cf7cc9147",
+    "scripts/environment_paths.py": "50049eaee129a4c7de1d1316b4a37242562e5751217d8105dd4eff914da3541f",
+    "scripts/run_g1_object_rgb.py": "607675c96e8fed2716e2122f5a31f4c25db153271239ebaf215ea7bacbb2260a",
+    "scripts/run_rod_fixture_narrow.py": "f12df7f85c5240bdf9c34998418ff350a14989044f63f9f72043b0ef404ec93b",
+    "tests/test_fixture_calibration.py": "483ae69b8cfb4d495c28e25dd80abfe04a1cc9457034556c05046d8e23e0f5f5",
+    "tests/test_g1_object_rgb.py": "7d83a2f84573fc42490e936765d248011c3dc1d3fb3e12c899c3465f30370054",
+    "tests/test_rod_fixture_narrow.py": "8cf5e16cb94a130d0451c2b590a9d4bbdefde55d462efc3d45fdb2564af28bfb"
+  },
+  "source_inventory_canonical_sha256": "6e17ac0127e9c4961588225e0439ec240c31e8ea36a51552b5ed71954626b964",
+  "receipt_inventory_canonical_sha256": "8947a15826cd697fbc36bb4089c31024b1fc146d003bae2a126da176acdabc8a",
+  "receipt_inventory_location": "prepared.json:receipts; complete mapping bound by prepared file SHA",
+  "verification": {
+    "audit_hook": "run_g1_object_rgb.block_truth enabled before checked/verified_inference",
+    "checked": "passed",
+    "verified_inference": "passed",
+    "source_count": 22,
+    "receipt_count": 229,
+    "case_count": 2,
+    "view_count": 10,
+    "method_rows": 4,
+    "error_object_count": 0
+  },
+  "runtime": {
+    "python": "3.11.4",
+    "numpy": "1.26.4",
+    "opencv": "4.11.0",
+    "pillow": "12.3.0",
+    "scipy": "1.17.1"
+  },
+  "elapsed_seconds": 99.29033730000083,
+  "elapsed_scope": "Original infer-stage monotonic time through all cases, normal record serialization and final checked(); excludes prepare and any later reconstruction/scoring",
+  "case_elapsed_seconds_sum": 90.46600789999502,
+  "cases": [
+    {
+      "case_id": "chair01",
+      "state": "complete",
+      "errors": [],
+      "record": {
+        "path": ".runtime/experiments/g1-object-rgb-v1-20261006/records/chair01.json",
+        "sha256": "858a4931c595432bfbe77ec60479503193c5a3b12ed11b1ef561b6782e4727b2"
+      },
+      "input_case_sha256": "ec49498187ef2e84b29aa832b55cc85010c514f322f1bc3e635e0757677c1924",
+      "camera_case_sha256": "e875b7eb828d7142f90ccc7e9cae7b91382c8b4b919bd78ab3b0a8f07d721a5b",
+      "camera_case_state": "validated",
+      "cameras": [
+        {
+          "view_id": "view_00",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 56,
+          "validation_point_count": 40,
+          "training_p95_px": 0.6320873076137876,
+          "validation_p95_px": 0.555523409871136,
+          "validation_maximum_px": 0.9921168661212718
+        },
+        {
+          "view_id": "view_01",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 80,
+          "validation_point_count": 40,
+          "training_p95_px": 0.14110336567583195,
+          "validation_p95_px": 0.1365501490003247,
+          "validation_maximum_px": 0.14766367696376623
+        },
+        {
+          "view_id": "view_02",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 76,
+          "validation_point_count": 40,
+          "training_p95_px": 0.14535854450190294,
+          "validation_p95_px": 0.14245113465071713,
+          "validation_maximum_px": 0.16264348812367907
+        },
+        {
+          "view_id": "view_03",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 44,
+          "validation_point_count": 40,
+          "training_p95_px": 0.6609827288133698,
+          "validation_p95_px": 0.6315949765386059,
+          "validation_maximum_px": 1.1315563602914631
+        },
+        {
+          "view_id": "view_04",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 64,
+          "validation_point_count": 36,
+          "training_p95_px": 1.385761827883555,
+          "validation_p95_px": 0.997019710623656,
+          "validation_maximum_px": 1.4396064844297878
+        }
+      ],
+      "maximum_training_p95_px": 1.385761827883555,
+      "maximum_validation_p95_px": 0.997019710623656,
+      "methods": [
+        {
+          "method": "baseline",
+          "state": "accepted",
+          "segment_count": 1,
+          "rejection_reasons": [],
+          "proposal_state": "accepted",
+          "proposal_reason": "unique_multiview_line",
+          "elapsed_seconds": null,
+          "elapsed_reason": "Original runner records shared case time, not separate method timings"
+        },
+        {
+          "method": "cylinder_support",
+          "state": "accepted",
+          "segment_count": 1,
+          "rejection_reasons": [],
+          "proposal_state": "accepted",
+          "proposal_reason": "one_stored_assignment_passes_cylinder_screen",
+          "elapsed_seconds": null,
+          "elapsed_reason": "Original runner records shared case time, not separate method timings"
+        }
+      ],
+      "elapsed_seconds": 16.57751029999781,
+      "elapsed_scope": "RGB load, detection/calibration and both finite methods in infer_case; excludes outer record serialization and final receipt verification"
+    },
+    {
+      "case_id": "aframe01",
+      "state": "complete",
+      "errors": [],
+      "record": {
+        "path": ".runtime/experiments/g1-object-rgb-v1-20261006/records/aframe01.json",
+        "sha256": "603398e4fb6ba74b2c1728ad73c1448a611820e4f56205ebcfb842a7e8c3988f"
+      },
+      "input_case_sha256": "57c5557ca8cf656372060a280d27c43795ad4464b9a6c496b74bf946ded54d19",
+      "camera_case_sha256": "558940a90d7d03fd1d9c033d6be0b628336862a389dc5faecf75086c44674bc5",
+      "camera_case_state": "validated",
+      "cameras": [
+        {
+          "view_id": "view_00",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 60,
+          "validation_point_count": 40,
+          "training_p95_px": 0.612897500476161,
+          "validation_p95_px": 0.5731644185157608,
+          "validation_maximum_px": 0.9632289608856189
+        },
+        {
+          "view_id": "view_01",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 80,
+          "validation_point_count": 40,
+          "training_p95_px": 0.14043934605463118,
+          "validation_p95_px": 0.13657202812424812,
+          "validation_maximum_px": 0.1438013665527137
+        },
+        {
+          "view_id": "view_02",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 76,
+          "validation_point_count": 40,
+          "training_p95_px": 0.1434971751674295,
+          "validation_p95_px": 0.14305622012137928,
+          "validation_maximum_px": 0.16280895967334902
+        },
+        {
+          "view_id": "view_03",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 60,
+          "validation_point_count": 40,
+          "training_p95_px": 0.6101971170019431,
+          "validation_p95_px": 0.6533914761970079,
+          "validation_maximum_px": 1.1183955308042934
+        },
+        {
+          "view_id": "view_04",
+          "state": "validated",
+          "reasons": [],
+          "training_point_count": 68,
+          "validation_point_count": 36,
+          "training_p95_px": 0.728986830041949,
+          "validation_p95_px": 0.7687325193719614,
+          "validation_maximum_px": 1.2153959239704657
+        }
+      ],
+      "maximum_training_p95_px": 0.728986830041949,
+      "maximum_validation_p95_px": 0.7687325193719614,
+      "methods": [
+        {
+          "method": "baseline",
+          "state": "accepted",
+          "segment_count": 1,
+          "rejection_reasons": [],
+          "proposal_state": "accepted",
+          "proposal_reason": "unique_multiview_line",
+          "elapsed_seconds": null,
+          "elapsed_reason": "Original runner records shared case time, not separate method timings"
+        },
+        {
+          "method": "cylinder_support",
+          "state": "rejected",
+          "segment_count": 0,
+          "rejection_reasons": [
+            "association_not_accepted"
+          ],
+          "proposal_state": "rejected",
+          "proposal_reason": "no_stored_assignment_passes_cylinder_screen",
+          "elapsed_seconds": null,
+          "elapsed_reason": "Original runner records shared case time, not separate method timings"
+        }
+      ],
+      "elapsed_seconds": 73.88849759999721,
+      "elapsed_scope": "RGB load, detection/calibration and both finite methods in infer_case; excludes outer record serialization and final receipt verification"
+    }
+  ],
+  "aframe_cylinder_normal_diagnosis": {
+    "evidence_record_sha256": "603398e4fb6ba74b2c1728ad73c1448a611820e4f56205ebcfb842a7e8c3988f",
+    "final_rejection_reasons": [
+      "association_not_accepted"
+    ],
+    "proposal_reason": "no_stored_assignment_passes_cylinder_screen",
+    "original_association_state": "accepted",
+    "original_association_reason": "unique_multiview_line",
+    "unique_hypothesis_count": 17,
+    "attempted_combination_count": 5120,
+    "total_combination_count": 5120,
+    "search_complete": true,
+    "screen_scope": "stored_best_and_support_competitors_only_not_all_unique_lines",
+    "stored_support_hypotheses_examined": 1,
+    "ordinal": 0,
+    "initial_screen_policy": {
+      "edge_tolerance_px": 1,
+      "minimum_side_fraction": 0.9,
+      "minimum_views": 4
+    },
+    "initial_screen_reasons": [
+      "edge_pixel_mismatch:view_02",
+      "edge_pixel_mismatch:view_03",
+      "edge_pixel_mismatch:view_04"
+    ],
+    "initial_view_evidence": [
+      {
+        "view_id": "view_00",
+        "passed": true,
+        "left_point_count": 241,
+        "right_point_count": 241,
+        "left_within_tolerance_fraction": 0.9294605809128631,
+        "right_within_tolerance_fraction": 0.9004149377593361,
+        "left_p90_residual_px": 0.8714316392560022,
+        "right_p90_residual_px": 0.9894258450482312
+      },
+      {
+        "view_id": "view_01",
+        "passed": true,
+        "left_point_count": 241,
+        "right_point_count": 241,
+        "left_within_tolerance_fraction": 0.9336099585062241,
+        "right_within_tolerance_fraction": 0.9294605809128631,
+        "left_p90_residual_px": 0.8180282640025212,
+        "right_p90_residual_px": 0.6635131673883166
+      },
+      {
+        "view_id": "view_02",
+        "passed": false,
+        "left_point_count": 253,
+        "right_point_count": 253,
+        "left_within_tolerance_fraction": 0.8142292490118577,
+        "right_within_tolerance_fraction": 0.8142292490118577,
+        "left_p90_residual_px": 10.813753827486273,
+        "right_p90_residual_px": 9.339074550108977
+      },
+      {
+        "view_id": "view_03",
+        "passed": false,
+        "left_point_count": 255,
+        "right_point_count": 255,
+        "left_within_tolerance_fraction": 0.8549019607843137,
+        "right_within_tolerance_fraction": 0.8549019607843137,
+        "left_p90_residual_px": 1.5464831598160909,
+        "right_p90_residual_px": 1.8620205646491823
+      },
+      {
+        "view_id": "view_04",
+        "passed": false,
+        "left_point_count": 253,
+        "right_point_count": 253,
+        "left_within_tolerance_fraction": 0.7114624505928854,
+        "right_within_tolerance_fraction": 0.7905138339920948,
+        "left_p90_residual_px": 5.419605643764771,
+        "right_p90_residual_px": 5.402082495525838
+      }
+    ],
+    "kept_views": [
+      0,
+      1
+    ],
+    "dropped_views": [
+      2,
+      3,
+      4
+    ],
+    "eligible": false,
+    "ineligibility_reason": "fewer_than_four_initially_consistent_views",
+    "subset_search_performed": false,
+    "eligible_original_ordinals": [],
+    "surviving_original_ordinals": [],
+    "direct_inference": "Only two views pass both-side 90 percent within-1px edge gate; fewer than required four views makes the stored candidate ineligible before finite reconstruction. This does not identify which physical member was selected, prove a false negative, or establish baseline correctness.",
+    "not_concluded": [
+      "physical target identity",
+      "physical accuracy or recall",
+      "missed true target",
+      "improvement over unchanged DA3",
+      "G1 qualification"
+    ]
+  },
+  "pending": [
+    "fresh same-source DA3 reconstruction",
+    "actual reversible point patch and saved-view rollback",
+    "common original-base/naive/candidate physical evaluation after normal freeze",
+    "independent-process repetition and complete failure/cost accounting"
+  ]
+}

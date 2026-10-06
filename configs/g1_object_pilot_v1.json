@@ -1,0 +1,77 @@
+{
+  "run_id": "g1-object-scenes-v1-20261006",
+  "source_parent_run_id": "rod-fixture-scenes-v1-20260927",
+  "source_parent_prepared_sha256": "2b28650aa31fe3b1de8c95ced14bc2d6d863ad96d82e9c8f8e37f53c31c7e0ae",
+  "source_parent_config_sha256": "434f7cbb04fca4f4d359438b9230952cec2c7dc0ef458ea90e06547cbd8420c4",
+  "source_migrations": [
+    {
+      "path": "experiments/src/creator_eval/rod_observations.py",
+      "old_sha256": "ee7e4856e02e791e70fb066863efaf87e8360ff1938e75bf1a4b5c3ef3ce384b",
+      "source_run_id": "rod-fixture-narrow-v1-20260929",
+      "prepared_sha256": "83d3b26133bb8705bf0af257de3d127336030c6c8238ab30076913d46a991df1",
+      "new_sha256": "941b712f8a8abadc5ee8a6432ef9f69f7284c04085b173d8eec8c760e0840006"
+    }
+  ],
+  "blender": "D:/CloudMusic/steam/steamapps/common/Blender/blender.exe",
+  "scope": "Two new synthetic development assemblies using shared renderer and known metric fixture; not external assets, real captures, independent acquisition or blind evaluation. Declared central rod task, not whole-object multi-member repair.",
+  "declared_cad_sha256": "98e4a41d83758e171aa72984258df7ade444570226a7234f0cc01d9c3d38bebd",
+  "generator": {
+    "size_wh": [640, 480],
+    "angles_degrees": [-32, -14, 3, 19, 35],
+    "camera_radius_m": 5.8,
+    "camera_height_m": 0.12,
+    "camera_lens_mm": 49,
+    "render_samples": 48,
+    "brick_axes": "XZ",
+    "exposure": -2.0,
+    "independent_probes": true,
+    "guide_xyxy": [[319.5, 20], [319.5, 459]],
+    "guide_source": "fixed_screen_coordinates_independent_of_target_geometry",
+    "render_case_isolation": true,
+    "camera_heights_m": [0.12, 0.75, -0.45, 0.62, -0.32]
+  },
+  "cases": [
+    {
+      "case_id": "chair01",
+      "object_group_id": "synthetic-chair-back-v1",
+      "source_asset_id": "procedural-chair-back-assembly-v1",
+      "acquisition_kind": "synthetic_development",
+      "independent_capture": false,
+      "label": "chair_back_central_spindle",
+      "target": {"present": true, "endpoints": [[0, 0, -0.75], [0, 0, 0.8]], "radius": 0.012, "material": "matte"},
+      "distractors": [
+        {"endpoints": [[-0.58, 0.04, -1.42], [-0.58, 0.04, 0.88]], "radius": 0.026, "role": "assembly_side_frame"},
+        {"endpoints": [[0.58, 0.04, -1.42], [0.58, 0.04, 0.88]], "radius": 0.026, "role": "assembly_side_frame"},
+        {"endpoints": [[-0.58, 0.04, 0.8], [0.58, 0.04, 0.8]], "radius": 0.025, "role": "assembly_top_rail"},
+        {"endpoints": [[-0.58, 0.04, -0.75], [0.58, 0.04, -0.75]], "radius": 0.025, "role": "assembly_lower_rail"},
+        {"endpoints": [[-0.58, -0.56, -1.42], [-0.58, -0.56, -0.82]], "radius": 0.026, "role": "assembly_front_leg"},
+        {"endpoints": [[0.58, -0.56, -1.42], [0.58, -0.56, -0.82]], "radius": 0.026, "role": "assembly_front_leg"}
+      ],
+      "occluder": {"location": [0, -0.24, -0.82], "scale": [0.62, 0.36, 0.04]},
+      "reference_seed": 26100601,
+      "lens_by_view_mm": [49, 49, 49, 49, 49]
+    },
+    {
+      "case_id": "aframe01",
+      "object_group_id": "synthetic-a-frame-support-v1",
+      "source_asset_id": "procedural-a-frame-support-assembly-v1",
+      "acquisition_kind": "synthetic_development",
+      "independent_capture": false,
+      "label": "a_frame_central_slightly_slanted_brace",
+      "target": {"present": true, "endpoints": [[-0.05, 0, -0.8], [0.05, 0, 0.85]], "radius": 0.009, "material": "matte"},
+      "distractors": [
+        {"endpoints": [[-0.7, 0.06, -0.95], [0, 0.06, 1.02]], "radius": 0.03, "role": "assembly_front_slanted_leg"},
+        {"endpoints": [[0.7, 0.06, -0.95], [0, 0.06, 1.02]], "radius": 0.03, "role": "assembly_front_slanted_leg"},
+        {"endpoints": [[-0.7, 0.55, -0.95], [0, 0.55, 1.02]], "radius": 0.03, "role": "assembly_back_slanted_leg"},
+        {"endpoints": [[0.7, 0.55, -0.95], [0, 0.55, 1.02]], "radius": 0.03, "role": "assembly_back_slanted_leg"},
+        {"endpoints": [[-0.56, 0.06, -0.8], [0.56, 0.06, -0.8]], "radius": 0.025, "role": "assembly_cross_brace"},
+        {"endpoints": [[0, 0.06, 1.02], [0, 0.55, 1.02]], "radius": 0.03, "role": "assembly_top_connection"},
+        {"endpoints": [[-0.7, 0.06, -0.95], [-0.7, 0.55, -0.95]], "radius": 0.025, "role": "assembly_base_rail"},
+        {"endpoints": [[0.7, 0.06, -0.95], [0.7, 0.55, -0.95]], "radius": 0.025, "role": "assembly_base_rail"}
+      ],
+      "occluder": false,
+      "reference_seed": 26100602,
+      "lens_by_view_mm": [49, 49, 49, 49, 49]
+    }
+  ]
+}

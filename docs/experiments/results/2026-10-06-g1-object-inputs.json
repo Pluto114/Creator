@@ -1,0 +1,158 @@
+{
+  "schema_version": "g1-object-input-generation-audit-v1",
+  "date": "2026-10-06",
+  "run_id": "g1-object-scenes-v1-20261006",
+  "state": "prepared",
+  "generation_only": true,
+  "reconstruction_run": false,
+  "method_scoring_run": false,
+  "g1_passed": false,
+  "acquisition_kind": "synthetic_development",
+  "independent_real_capture": false,
+  "external_assets": false,
+  "blind_holdout": false,
+  "scope": "Two different procedural chair-back and A-frame assemblies sharing renderer and known metric fixture; central declared rod task only. Generation checks are not reconstruction quality scores.",
+  "responsible_agent": "Codex subagent g1_objects",
+  "case_ids": [
+    "chair01",
+    "aframe01"
+  ],
+  "object_count": 2,
+  "frame_count": 10,
+  "source_count": 67,
+  "prepared": {
+    "sha256": "d437619e2fd66412343b7f92c92ef7d96714e7998df3b801d6e8f366f763b2ed",
+    "path": ".runtime/experiments/g1-object-scenes-v1-20261006/prepared.json"
+  },
+  "generation_checks": {
+    "path": ".runtime/experiments/g1-object-scenes-v1-20261006/generation-checks.json",
+    "maximum_z_to_range_error_m": 7.663731569351739e-7,
+    "maximum_projection_error_px": 0.00004402144315918122,
+    "surface_id_mismatches": 0,
+    "sha256": "79ccbb3aafa4d8ab9900ad9434e595048f49c2a218a7b5ffa99c23912457c038",
+    "state": "passed",
+    "independent_ray_samples": 11598
+  },
+  "generation_freeze_sha256": "a36c07fa20b28f5e174ea5a1b2b14b64e399a18817292a7133b16d278856c3d0",
+  "protocol_sha256": "1e04103ef8a23812ad7170ba51f21d4576ffb492dd23e83bcc9355f469b175f2",
+  "source_migrations": [
+    {
+      "path": "experiments/src/creator_eval/rod_observations.py",
+      "old_sha256": "ee7e4856e02e791e70fb066863efaf87e8360ff1938e75bf1a4b5c3ef3ce384b",
+      "source_run_id": "rod-fixture-narrow-v1-20260929",
+      "prepared_sha256": "83d3b26133bb8705bf0af257de3d127336030c6c8238ab30076913d46a991df1",
+      "new_sha256": "941b712f8a8abadc5ee8a6432ef9f69f7284c04085b173d8eec8c760e0840006"
+    }
+  ],
+  "normal_allowlist": {
+    "target_geometry_present": false,
+    "state": "passed",
+    "case_fields": [
+      "case_id",
+      "frames"
+    ],
+    "frame_fields": [
+      "guide_source",
+      "guide_xyxy",
+      "rgb",
+      "rgb_sha256",
+      "size_wh",
+      "view_id"
+    ],
+    "top_level_fields": [
+      "cases",
+      "declared_cad",
+      "fixture_artwork_sha256",
+      "run_id",
+      "scope"
+    ],
+    "fixed_screen_guides": true,
+    "assembly_labels_present": false,
+    "generated_cameras_present": false,
+    "source_asset_ids_present": false
+  },
+  "input_receipt_count": 42,
+  "input_sha256": {
+    "data/inputs/g1-object-scenes-v1-20261006/manifest.json": "bd56da4a289c78280d641d2893eb2e548b82e4758a46324a00b908a4dfaa722c",
+    "data/inputs/g1-object-scenes-v1-20261006/declared_cad.json": "98e4a41d83758e171aa72984258df7ade444570226a7234f0cc01d9c3d38bebd",
+    "data/inputs/g1-object-scenes-v1-20261006/chair01/view_00.png": "a08599ace5edbcd563e911f52d671bdea9bc441c74cc15470259158e75dd2bf8",
+    "data/inputs/g1-object-scenes-v1-20261006/chair01/view_01.png": "a0df2a5bc07d4f2d7419450cafdea1a5e9cd7c3d40235c05a464ff8a26d662c2",
+    "data/inputs/g1-object-scenes-v1-20261006/chair01/view_02.png": "1e139a58db33aa7c2050dd075520ff3df1be8af1cbae93f373e17f895a69ed36",
+    "data/inputs/g1-object-scenes-v1-20261006/chair01/view_03.png": "1a9a95d2cc13aed6c96572f35c00b8098bd5d5e58975562d4c1abf6ae9ed02ed",
+    "data/inputs/g1-object-scenes-v1-20261006/chair01/view_04.png": "7e355362116bf28f897daae15c35e8d57595e9863e8ff5b02c9b76eaa6da56df",
+    "data/inputs/g1-object-scenes-v1-20261006/aframe01/view_00.png": "10206362cb12f2fb84bccab36073563d4bc65db824973cfbb99486e26d685a4c",
+    "data/inputs/g1-object-scenes-v1-20261006/aframe01/view_01.png": "65193cd7a2f895d8eada6347c42a081972facb25c2e60c225a90c9199f00c27d",
+    "data/inputs/g1-object-scenes-v1-20261006/aframe01/view_02.png": "7d4e3b0a1968f085b62b9977b7eea94fa281f7269a608d65f9546fb28d10d562",
+    "data/inputs/g1-object-scenes-v1-20261006/aframe01/view_03.png": "5434ae48e653db5731c27ae1979e7c70a6d3c47c645fe924c9b0fb3216d44dba",
+    "data/inputs/g1-object-scenes-v1-20261006/aframe01/view_04.png": "3e823f35c23b2a0d4f4c1ac2491ca26c874bc01af741ed052cfe8bbada2b8d49",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/0.png": "47da4cf07171c77cb22f49c416096e07d65541c13084629266f1ad75859a5825",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/1.png": "203962f7f0117db06579cd7da49c127011c7e6bac1425f2effbfb3b80481cfe1",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/2.png": "555aad8d8c81e21a615e2281bcacac23afcdaa443e96001cc2668b33af8403a5",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/3.png": "039576c3c8ed1524f6b64d6526b366291af3a75cb57448c9e65623822c9e005b",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/4.png": "88a592fa33461ddac10b8c8e443e48d758106a65901bf31b60f4b3cc330f1567",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/5.png": "d5078919b4050cf6dcc06361578b36955fa3a5547896dde648de0e6a2c1becd8",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/6.png": "8dfd2c5f20a0fc86bc185170ec40a00df8b9c2f1878dac6f455a6c5a2508d6bd",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/7.png": "e1675e280c9f540ff8403784889c1f0f985aea74eb6ce95eb1f7f1b4f3dbd745",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/8.png": "35988c0b61236797d1247c8cdb2f1f2de7b4c6580e6418cb16447cd43d476877",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/9.png": "6e1c59ce59b510fa932e6716b2163b6548ac2cd0dbc7a3da5eba23360ee9e81c",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/10.png": "28a55aa87567fa6bd23e9868cc0f979570ebd9c8d36cd7b996363412f21b245d",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/11.png": "9aa7eb389aa816c30ca563781ab7ff7a89ec48e13c7b477bf7e278fd26a29252",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/12.png": "346657e421b9d22f4e5088600af6de6c465ec1f42c71f5c15ec7ba2ad8991a93",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/13.png": "04d40d87320c388c875a9103fd7df8612885ea8db632a0056e43ded8934527f7",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/14.png": "4e125a1fd306c8f1ced39cde807b371a378e23dbf252d2c85714647f7cd1ada9",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/15.png": "d1d9ef29ad1376a4c0d100b9fcdeeed0635862c401e75cf2674b1f08770efa16",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/16.png": "939d27528e88cd80182a762854c98f69da52d06b265f5bb03524275145e6a309",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/17.png": "2c2bae91a15fd9f9e42ce47d495b7996af4d6dd45d0ba311a211b511c05bf424",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/18.png": "465f0e804ef7009a79e8e8eaeea7869d29cc34b8904389cb726899e8c69052ed",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/19.png": "c3e731565c2334ae20a1e6804ca460423d131db173ac3076c47de12ed9bf7d83",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/20.png": "21cad8bc8775b416fa318f982727c3189907670de88fd3d980914418e3a9f5ed",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/21.png": "cb1be24a216280466d44a651d994c1a14956f9b4c56d70a2df5d7ecccb5bc4b5",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/22.png": "2c96ab9c4fb13620244991d0b386142bf3a9a584eaa917836987e291fcb5963c",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/23.png": "210f35e8bb909a806a86c3a7a6148fdc166c85ad41e7724d6685a56496daad33",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/24.png": "d0c37757f444fc2af2a73e70110d68f5a6f79b95514c82660589f7f10533b638",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/25.png": "a52ddfdd69619f06f2ff7fdb4d49bfa5508a294409e9cd7ee8833c4c1872e3b6",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/26.png": "701119c0f32ddb0decb20d4a54754c69e517f93be2795e7d1f01c8c715031230",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/27.png": "daf7674e547064e219da59b3c779e7cee8e41949a988712589706c781e10af80",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/28.png": "bed346230c402865c2f3f8e84a9b9d398c57f469a29d9431865e3a87a31f45fc",
+    "data/inputs/g1-object-scenes-v1-20261006/fixture-artwork/29.png": "ae0d080cde2de97fe8913e4f44bd3bcba4d27e68503e9ac34fa25760ff6fea48"
+  },
+  "source_final_check": {
+    "checked_live_and_snapshot_sources": 67,
+    "mismatch_count": 0,
+    "state": "passed"
+  },
+  "tests": {
+    "numpy_2": "passed",
+    "count": 13,
+    "numpy_1_26": "passed",
+    "seconds_numpy_1_26": 0.032,
+    "ruff": "passed",
+    "seconds_numpy_2": 0.031
+  },
+  "first_attempt": {
+    "resolution": "Parent approved one explicit historical migration; original snapshot still verified, successor prepared/snapshot/current SHA bound. No old source modified.",
+    "state": "blocked_before_run_creation",
+    "render_started": false,
+    "exit_code": 1,
+    "inputs_created": false,
+    "run_created": false,
+    "old_sha256": "ee7e4856e02e791e70fb066863efaf87e8360ff1938e75bf1a4b5c3ef3ce384b",
+    "live_sha256": "941b712f8a8abadc5ee8a6432ef9f69f7284c04085b173d8eec8c760e0840006",
+    "reason": "Frozen inherited source changed: experiments/src/creator_eval/rod_observations.py"
+  },
+  "visual_inspection": {
+    "guide_retuned": false,
+    "uninspected_views_not_removed": true,
+    "observed": "Distinct assemblies and central thin members visible with fixture boards",
+    "inspected_rgb": [
+      "data/inputs/g1-object-scenes-v1-20261006/chair01/view_02.png",
+      "data/inputs/g1-object-scenes-v1-20261006/aframe01/view_02.png"
+    ]
+  },
+  "pending": [
+    "RGB-only fixture camera estimation",
+    "Fresh conditioned DA3 and actual reversible patches",
+    "Common-reader original-base/naive/candidate comparison",
+    "Independent-process repetition and failure/cost analysis"
+  ]
+}

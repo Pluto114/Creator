@@ -1,0 +1,16 @@
+{
+  "run_id": "g1-object-rgb-v1-20261006",
+  "scene_run_id": "g1-object-scenes-v1-20261006",
+  "scene_prepared_sha256": "d437619e2fd66412343b7f92c92ef7d96714e7998df3b801d6e8f366f763b2ed",
+  "scene_input_sha256": "bd56da4a289c78280d641d2893eb2e548b82e4758a46324a00b908a4dfaa722c",
+  "method_source_run_id": "rod-fixture-narrow-v1-20260929",
+  "calibration_source_run_id": "rod-fixture-calibration-v1-20260927",
+  "method_sha256": "b33ce471de3fbe6b7387d78494c7675108a68793fa9d68711a5eb6a1f4c3072e",
+  "case_ids": ["chair01", "aframe01"],
+  "view_ids": ["view_00", "view_01", "view_02", "view_03", "view_04"],
+  "methods": ["baseline", "cylinder_support"],
+  "method_overrides": {},
+  "calibration_overrides": {},
+  "guide_policy": "Use the scene's fixed screen-coordinate guide, identical across both objects and all five views; never project target geometry.",
+  "scope": "Two different synthetic development assemblies with the original known metric fixture and frozen local finite-line methods. RGB-only camera calibration, no target identity or whole-object skeleton claim, no real-capture or G1 promotion."
+}

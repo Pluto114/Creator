@@ -1,0 +1,18 @@
+{
+  "run_id": "fixture-naive-controls-v1-20261006",
+  "state": "passed",
+  "created_at_utc": "2026-10-06T13:11:02.854480+00:00",
+  "public_sha256": "edf34ff70da9ae5b208dbd575397f1db68fb72c3b6f9bb176710379e1e5160cd",
+  "unchanged_pre_receipts": 9415,
+  "exact_evaluation_replay": true,
+  "parent_outputs_unchanged": true,
+  "same_region_for_all_variants": true,
+  "physical_repeat_pairs": 30,
+  "physical_repeat_equal": 30,
+  "fit_repeat_pairs": 6,
+  "fit_repeat_equal": 6,
+  "development_prior_scores_seen": true,
+  "independent_objects": false,
+  "reader_qualified": false,
+  "g1_passed": false
+}

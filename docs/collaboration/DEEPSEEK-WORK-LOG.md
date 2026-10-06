@@ -38,3 +38,9 @@ DeepSeek任务`section-metric-contracts-001`在独立会话交付6条真实训�
 Codex子助手承担两组新runner机械迁移及35条双环境契约、全量测试/构建和纯base支持证据整理；不冒称这些是DeepSeek执行。主Codex实现训练距离分组、42项核心契约、正式冻结与主线决策。完整进度见[10月6日日志](../journal/2026-10-06.md)。
 
 最终验收：1406全量、83项新/复用双环境及另外9项base诊断双环境通过；解析102→103/108，fixture18/18保持旧物理，normal-only诊断7989收据通过。对应实际执行者是Codex及Codex子助手，不是DeepSeek；DeepSeek本轮负责6条测试与工作记录。
+
+## 10月6日第二阶段：朴素控制进入共同评价
+
+DeepSeek任务`fixture-naive-fit-contracts-001`实际交付6条TLS/RANSAC单跨段契约及`work-log.json`，协议、输入SHA、许可输出和日志schema通过。Codex修正集成副本两处API假设（返回list、成功reason为null），保留原交付；6项测试双NumPy通过（0.191/0.393秒），相关Ruff通过。验收在`D:/deepseek/collaboration/runs/fixture-naive-fit-contracts-001/review.json`，固定总览同步更新。
+
+Codex负责核心拟合适配与6项独立契约；Codex子助手负责60行完整候选对照运行器和两个新合成对象的数据准备。DeepSeek没有执行这些运行或评分。正式实验结果以本轮开发日志与独立审计为准。
