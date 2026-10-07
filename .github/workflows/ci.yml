@@ -21,6 +21,9 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
+      - name: Canonical temporary directory
+        # Keep the same directory, but avoid Windows 8.3/long-path identity mismatch.
+        run: python scripts/configure_ci_temp.py
       - name: Install validation tools
         # Historical replay entry points import the OpenCV image/GT helpers.
         # Match the declared core dependency so fresh-process tests see a real environment.
@@ -50,6 +53,7 @@ jobs:
           test_g1_object_rgb.py test_g1_object_point_patch.py test_g1_object_readout.py test_g1_object_robust_readout.py
           "test_single_axis_readout*.py" "test_robust_axis_readout*.py"
           test_fixture_single_axis_readout.py test_fixture_robust_axis_readout.py test_ci_unittest_runner.py
+          test_ci_temp_setup.py
       - name: RGB observation and local evidence controls
         run: |
           python -m unittest discover -s tests -p test_rod_observations.py -v
