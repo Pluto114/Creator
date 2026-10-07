@@ -57,3 +57,15 @@ DA3/实际补丁沿用 camera_inputs → smoke_da3.run(large,504,align_to_input_
 A-frame 正常拒绝链直接来自记录：初始圆柱边缘门要求至少 4 视图、每侧至少 90% 边缘在 1 px 容差；仅 view_00/view_01 通过，view_02/03/04 双侧比例分别 .814/.814、.855/.855、.711/.791。因此仅留 2 视图，stored assignment 不 eligible，继而 no_stored_assignment_passes_cylinder_screen → association_not_accepted。该屏仅检查已存 best/support competitors，不代表逐一检查所有 17 个 unique hypotheses；未做 subset search。没有 GT，不能据此称目标漏检、baseline 正确或收益成立。
 
 完整正常摘要保存于 `docs/experiments/results/2026-10-06-g1-object-rgb-normal.json`，绑定 prepared/inference/input/method 配置文件 SHA、22 源 SHA、229 收据映射的 canonical SHA、两案各视图标定 p95 与拒绝门直接数据。该报告 normal_only=true、gt_read=false、method_physical_scoring_performed=false、g1_passed=false；未修改冻结源、未读取新 GT、未运行 DA3 或评分。
+
+## 旧 fixture 单轴共同读出对照（同日，完成）
+
+主代理实现单轴核心及 adapter，本助手仅新增 `run_fixture_single_axis_readout.py`、`fixture_single_axis_readout_v1.json`、`test_fixture_single_axis_readout.py`。以旧 naive 60 正常行逐一配对真实完整 bundles，五臂、三案、两尺度、两次 reader 重放；不重拟合、重建或修改补丁。原 mask/曲线采样等 7 个计数字段与 native/control/call 完全一致才允许发布。normal 全部验证后另进程评分；原生新增几何单列重算，不由读出 mask 隐藏假桥。
+
+12 项 runner 机制测试双环境通过（0.076/0.081 秒），Ruff 通过；显式 235 源包含主核/adapter 与 DeepSeek 6 项独立测试（SHA b599ab10d8875f59be5f8f21f336d76a2a634e2931067d4755a2d2753797b084），没有新增扫描 glob。主代理完整阅核后授权运行；`fixture-single-axis-readout-v1-20261006` prepare/infer/evaluate/post 全部 exit 0，9794 pre 收据、60 fresh rows、post 精确重放通过。冻结后未再修改源码。两次重复仅是 reader 独立进程重放，不能称端到端重建重复或新对象验证。
+
+结果完整保存在 `docs/experiments/results/2026-10-06-fixture-single-axis-readout.json` 及 audit：无 normal/scoring 错误，30/30 reader 物理投影重复一致，60/60 原生补丁几何及物理重算不变。正常 infer 墙钟 259.5276005 秒，其中 60 次 reader 调用合计 1.0595192 秒，其余含独立进程、来源校验与输入读取等；不是完整重建耗时。
+
+关键失败不隐藏：r03 纯 base 从空恢复 R=47.0%/68.9%、P=100%；但该全局轴拟合也使旧完整候选回退。r01 baseline/cylinder 原 R=P=100% 变为 R=59.4%/60.0%、P=59.68%/60.28%，边界误差 44.88/42.37 mm；r02 细尺度 baseline R/P=85.09%/85.58%、cylinder=87.64%/88.02%，粗尺度两者均 R=P=0%，仍输出两段而位置偏移。r03 两候选仍 R=P=100%，边界最大 6.74/9.75 mm；其 TLS/RANSAC 新读出约 R=98.3%、P=100%，边界约 59.8 mm。base 三案在两尺度分别 5/4、3/3、4/4 段；r01 base R=39.3%/44.4%，r02 base R=0%。所有 shared 保护缺口误长为 0，但不能据此宣称其他位置/错误增长无误，原 native 指标仍单列。
+
+结论：此版证明共享 reader 不应系统丢掉纯 base，但目前 reader 噪声偏轴与尺度敏感性使候选明显回退，不能直接作为合格共同读出取代旧主表，更不构成 G1 通过。全部失败版本与结果已保留。

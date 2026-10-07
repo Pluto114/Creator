@@ -1,0 +1,18 @@
+{
+  "run_id": "fixture-single-axis-readout-v1-20261006",
+  "state": "passed",
+  "created_at_utc": "2026-10-06T14:00:18.392154+00:00",
+  "public_sha256": "e7cc6bf6724dcbdedb253f10fae89f2e94131432423a0335fbf370bdc90e72f7",
+  "unchanged_pre_receipts": 9794,
+  "exact_evaluation_replay": true,
+  "reader_only_intervention": true,
+  "original_bundles_unchanged": true,
+  "measurement_counts_unchanged": true,
+  "native_unchanged_rows": 60,
+  "physical_repeat_pairs": 30,
+  "physical_repeat_equal": 30,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "independent_objects": false,
+  "measurement_scope": "predeclared_local_single_axis_readout_not_target_identity_surface_or_general_topology"
+}

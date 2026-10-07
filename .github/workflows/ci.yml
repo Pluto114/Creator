@@ -36,33 +36,20 @@ jobs:
       - name: Straight-line geometry controls
         run: python -m unittest discover -s tests -p test_line_controls.py -v
       - name: Common point and curve readout controls
-        run: |
-          python -c "from pathlib import Path; Path('.runtime').mkdir(exist_ok=True)"
-          python -m unittest discover -s tests -p "test_common_readout*.py" -v
-          python -m unittest discover -s tests -p "test_mixed*.py" -v
-          python -m unittest discover -s tests -p test_section_evidence.py -v
-          python -m unittest discover -s tests -p test_evidence_integration.py -v
-          python -m unittest discover -s tests -p test_section_sampling_evidence.py -v
-          python -m unittest discover -s tests -p "test_sampling*.py" -v
-          python -m unittest discover -s tests -p test_section_supported_evidence.py -v
-          python -m unittest discover -s tests -p test_section_support_controls.py -v
-          python -m unittest discover -s tests -p test_supported_integration.py -v
-          python -m unittest discover -s tests -p test_section_local_evidence.py -v
-          python -m unittest discover -s tests -p test_ridge_local_evidence.py -v
-          python -m unittest discover -s tests -p test_local_evidence_controls.py -v
-          python -m unittest discover -s tests -p test_local_integration.py -v
-          python -m unittest discover -s tests -p test_section_context_evidence.py -v
-          python -m unittest discover -s tests -p test_context_integration.py -v
-          python -m unittest discover -s tests -p "test_ridge*sampling*.py" -v
-          python -m unittest discover -s tests -p "test_bundle*.py" -v
-          python -m unittest discover -s tests -p test_ridge_bundle_evidence.py -v
-          python -m unittest discover -s tests -p test_ridge_plane_evidence.py -v
-          python -m unittest discover -s tests -p test_consensus_integration.py -v
-          python -m unittest discover -s tests -p test_ridge_fold_consensus.py -v
-          python -m unittest discover -s tests -p test_section_metric_grouping.py -v
-          python -m unittest discover -s tests -p test_g1_base_support.py -v
-          python -m unittest discover -s tests -p test_g1_object_pack.py -v
-          python -m unittest discover -s tests -p test_g1_object_rgb.py -v
+        # Diagnostic visibility only: preserve patterns/order, stop at first failure, never retry.
+        run: >-
+          python scripts/run_ci_unittests.py
+          "test_common_readout*.py" "test_mixed*.py" test_section_evidence.py
+          test_evidence_integration.py test_section_sampling_evidence.py "test_sampling*.py"
+          test_section_supported_evidence.py test_section_support_controls.py test_supported_integration.py
+          test_section_local_evidence.py test_ridge_local_evidence.py test_local_evidence_controls.py
+          test_local_integration.py test_section_context_evidence.py test_context_integration.py
+          "test_ridge*sampling*.py" "test_bundle*.py" test_ridge_bundle_evidence.py
+          test_ridge_plane_evidence.py test_consensus_integration.py test_ridge_fold_consensus.py
+          test_section_metric_grouping.py test_g1_base_support.py test_g1_object_pack.py
+          test_g1_object_rgb.py test_g1_object_point_patch.py test_g1_object_readout.py test_g1_object_robust_readout.py
+          "test_single_axis_readout*.py" "test_robust_axis_readout*.py"
+          test_fixture_single_axis_readout.py test_fixture_robust_axis_readout.py test_ci_unittest_runner.py
       - name: RGB observation and local evidence controls
         run: |
           python -m unittest discover -s tests -p test_rod_observations.py -v

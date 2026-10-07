@@ -1,0 +1,14 @@
+{
+  "run_id": "fixture-robust-axis-readout-v1-20261007",
+  "parent_run_id": "fixture-naive-controls-v1-20261006",
+  "case_ids": ["r01", "r02", "r03"],
+  "voxel_camera_span_fractions": [0.0025, 0.005],
+  "variants": ["base", "depth_tls_single_span", "depth_ransac_single_span", "baseline", "cylinder_support"],
+  "repeats": [0, 1],
+  "expected_normal_rows": 60,
+  "support_policy": {"minimum_views": 3, "horizontal_padding_px": 1},
+  "reader_overrides": {},
+  "intervention": "reader_only: reopen the same complete immutable base and saved candidate bundles from each original repeat; do not refit controls, regenerate patches, change masks, cameras, sampling or scales.",
+  "paired_policy": "Sixty fresh fixed-consensus robust-axis readouts individually paired with all sixty frozen metric readouts. Each new readout repeat runs in a fresh subprocess. Native added-curve geometry must be byte-value identical to the paired normal record and is separately rescored without readout clipping.",
+  "qualification": "Previously seen local fixture development evidence for a predeclared robust-axis task only. No general rod/plane/parallel-member/topology discrimination, independent object or G1 qualification. Within-voxel sampling can change representative means. Empty, unresolved, noisy and gap errors remain in the complete table."
+}

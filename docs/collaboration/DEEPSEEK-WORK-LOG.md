@@ -44,3 +44,15 @@ Codex子助手承担两组新runner机械迁移及35条双环境契约、全量�
 DeepSeek任务`fixture-naive-fit-contracts-001`实际交付6条TLS/RANSAC单跨段契约及`work-log.json`，协议、输入SHA、许可输出和日志schema通过。Codex修正集成副本两处API假设（返回list、成功reason为null），保留原交付；6项测试双NumPy通过（0.191/0.393秒），相关Ruff通过。验收在`D:/deepseek/collaboration/runs/fixture-naive-fit-contracts-001/review.json`，固定总览同步更新。
 
 Codex负责核心拟合适配与6项独立契约；Codex子助手负责60行完整候选对照运行器和两个新合成对象的数据准备。DeepSeek没有执行这些运行或评分。正式实验结果以本轮开发日志与独立审计为准。
+
+## 10月6日第三阶段：共同单轴读取与新对象实际补丁
+
+DeepSeek任务`single-axis-contracts-001`先保存本人`work-log.json`，再交付6条单轴读取机制测试；协议、输入SHA、许可输出及日志schema通过。Codex审查后原样集成，交付/集成SHA均为`b599ab10d8875f59be5f8f21f336d76a2a634e2931067d4755a2d2753797b084`，双NumPy实际6/6通过（0.127/0.326秒），Ruff通过。验收在`D:/deepseek/collaboration/runs/single-axis-contracts-001/review.json`。DeepSeek没有自行运行测试。
+
+主Codex负责固定体素平衡TLS单轴共同读取、几何占据与原RGB支持交集、12条核心/适配契约；Codex子助手负责60行原fixture成对重放、新对象DA3实际补丁和全量回归。新对象2次DA3、8补丁生命周期已实跑通过，未冒称端到端重复。正式读取/评分结果继续记当天开发日志，区别于助手单元测试交付。
+
+## 10月7日：稳健共识读取
+
+DeepSeek任务`robust-axis-contracts-001`先写本人日志，再交付6条测试；strict JSON、源SHA、输出允许清单及日志schema通过。Codex集成时修正一处未决状态假设：算法执行完成但竞争轴未决仍为state=complete，空segments与reason明确未决，不能混同运行错误。原交付SHA`8303136deb6ecc4018851226025b5422074cb50294d950e62a7241a0e903fe28`，集成SHA`f30489fb5f6eb82cb80c68e1da322d98a5013caea245e373419d51b94eb02863`。
+
+Codex实际运行主核心12条+DeepSeek6条共18项，双NumPy通过（0.354/0.443秒）及Ruff通过；不是DeepSeek本人执行。主Codex负责RANSAC共同读取与同域adapter，子助手负责旧60/新80正式对照及批量回归。独立验收在`D:/deepseek/collaboration/runs/robust-axis-contracts-001/review.json`，固定总览15任务。算法实验成绩以[当天日志](../journal/2026-10-07.md)为准。
