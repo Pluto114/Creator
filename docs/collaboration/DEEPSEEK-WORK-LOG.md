@@ -62,3 +62,9 @@ Codex实际运行主核心12条+DeepSeek6条共18项，双NumPy通过（0.354/0.
 DeepSeek任务`support-axis-contracts-001`交付6项读取契约与本人work-log.json；strict JSON、输入SHA、输出范围和日志schema均通过。原交付SHA`5ec1dc2244187a8e9e0c7abed17ecdcf883626cb854b5e41aaa4c4985ec6236e`，Codex将两处断口端点精确要求改为已有1voxel占据容差、保留两段与不得跨缺口断言，并添加lint注释。集成SHA`b484340fc682cdcb92bbf350fa27847bea855ed0e8ee0bc537535c1f4d1477b1`，原交付保留；独立review记录双NumPy真实执行与提交关联，固定MD/JSON总览现16任务。
 
 主Codex实现raw支持/覆盖长度排名、稀疏局部提议与内存预算，再实现对称独立支持竞争判据；Codex子助手负责两阶段runner/config/tests、140行完整对照/阶段、正常输入诊断和1624项全量。第二版`test_independent_axis_readout_reused_deepseek.py`是Codex从本轮DeepSeek交付的已审查版本适配复用，不是新增助手任务或助手执行。DeepSeek本人始终未运行命令/正式实验，具体实绩见[当天日志](../journal/2026-10-08.md)。
+
+## 10月8日续轮：guide分块与局部unknown
+
+DeepSeek任务`guided-block-contracts-001`交付6条机制测试及本人work-log.json，正常退出、strict JSON、输入SHA、许可输出和日志schema通过；固定总览现17任务。原测试SHA`4310f564c734d6f4267618eea011dfffd2778755568d13a69bc620df44d1d3fc`，Codex只修E402与等价lambda/def风格，集成SHA`11f72df29660d45890f45a9c06c466458e185ba5e841b4cab38a74a06e49c496`，原交付不覆盖。
+
+Codex实际执行12主+6DeepSeek共18测试，双NumPy通过（0.120/0.218秒）；新runner29项另由Codex子助手双环境执行。context版复用测试是Codex适配，不是新增DeepSeek工作。核心算法、正常诊断、完整实验与评价仍由Codex及其子助手执行，DeepSeek本人未运行命令；验收记录见`D:/deepseek/collaboration/runs/guided-block-contracts-001/review.json`。

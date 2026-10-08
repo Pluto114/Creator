@@ -1,0 +1,35 @@
+{
+  "run_id": "fixture-context-block-axis-readout-v1-20261008",
+  "parent_run_id": "fixture-naive-controls-v1-20261006",
+  "case_ids": [
+    "r01",
+    "r02",
+    "r03"
+  ],
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "variants": [
+    "base",
+    "depth_tls_single_span",
+    "depth_ransac_single_span",
+    "baseline",
+    "cylinder_support"
+  ],
+  "repeats": [
+    0,
+    1
+  ],
+  "expected_normal_rows": 60,
+  "support_policy": {
+    "minimum_views": 3,
+    "horizontal_padding_px": 1
+  },
+  "reader_overrides": {},
+  "intervention": "reader_only: reopen the same complete immutable base and saved candidate bundles from each original repeat; do not refit controls, regenerate patches, change masks, cameras, sampling or scales.",
+  "paired_policy": "Sixty fresh context-block-axis readouts paired with all sixty original frozen metric readouts. Every arm receives the same raw guide and exported-camera direction. Each repeat runs in a fresh subprocess; unchanged native added-curve geometry is scored separately without clipping.",
+  "qualification": "Previously seen synthetic development evidence, not blind or real-capture evidence and not G1 qualification. Original image guides and exported cameras define block direction, not rod position or target identity. Isolated nonpersistent local splits become unknown blocks; persistent tracks, surfaces and continuous broad support keep their strong rejection rules. Complete base, RGB volume, sampling, scales, native geometry and every failure remain unchanged. Reused DeepSeek contracts are adapted tests, not a new assistant delivery.",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}

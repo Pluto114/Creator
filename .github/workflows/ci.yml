@@ -56,6 +56,8 @@ jobs:
           test_ci_temp_setup.py
           "test_support_axis_readout*.py" test_fixture_support_axis_readout.py test_g1_object_support_readout.py
           "test_independent_axis_readout*.py" test_fixture_independent_axis_readout.py test_g1_object_independent_readout.py
+          "test_guided_block_axis_readout*.py" test_fixture_guided_block_axis_readout.py test_g1_object_guided_block_readout.py
+          "test_context_block_axis_readout*.py" test_fixture_context_block_axis_readout.py test_g1_object_context_block_readout.py
       - name: RGB observation and local evidence controls
         run: |
           python -m unittest discover -s tests -p test_rod_observations.py -v

@@ -1,0 +1,44 @@
+{
+  "run_id": "g1-object-context-block-readout-v1-20261008",
+  "parent_run_id": "g1-object-point-patch-v1-20261006",
+  "parent_pre_sha256": "807d7fadedc47f39e30db3cb78dfeb8934b8e706119c5e342afbccf5bd2a0af1",
+  "parent_inference_sha256": "74bc654b83ed830c9ab53f7c9e4c194c50d7b085152c95c010eb0c9d05eea7b3",
+  "parent_pre_receipts": 674,
+  "parent_output_receipts": 62,
+  "scene_run_id": "g1-object-scenes-v1-20261006",
+  "case_ids": [
+    "chair01",
+    "aframe01"
+  ],
+  "variants": [
+    "base",
+    "depth_tls_single_span",
+    "depth_ransac_single_span",
+    "baseline",
+    "cylinder_support"
+  ],
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "readers": [
+    "single_axis",
+    "context_block_axis"
+  ],
+  "repeats": [
+    0,
+    1
+  ],
+  "expected_normal_rows": 80,
+  "support_policy": {
+    "minimum_views": 3,
+    "horizontal_padding_px": 1
+  },
+  "reader_overrides": {},
+  "intervention": "Pair fixed global single-axis TLS and context-block readers on each complete immutable base and saved candidate within the identical original RGB mask. Only isolated nonpersistent local split blocks become unknown; strong ambiguity/surface rejection remains. No refit, patch rewrite, camera replacement, retuning or sampling policy change.",
+  "repeat_policy": "Two fresh reader-only subprocesses. The exact same original one-per-object DA3 predictions and eight patches are reused. This is not an independent end-to-end reconstruction repeat.",
+  "evaluation_policy": "All prior object development scores have been seen; this is not blind. Inference still forbids truth/score access. Require all 80 normal rows and every frozen point/patch receipt before this run accesses object truth. Score common outputs and ten unchanged native added-curve arms separately; preserve every rejection, empty output and error.",
+  "qualification": "Previously seen synthetic development evidence, not blind or real-capture evidence and not G1 qualification. Original image guides and exported cameras define block direction, not rod position or target identity. Isolated nonpersistent local splits become unknown blocks; persistent tracks, surfaces and continuous broad support keep their strong rejection rules. Complete base, RGB volume, sampling, scales, native geometry and every failure remain unchanged. Reused DeepSeek contracts are adapted tests, not a new assistant delivery.",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}

@@ -1,0 +1,20 @@
+{
+  "run_id": "fixture-context-block-axis-readout-v1-20261008",
+  "state": "passed",
+  "created_at_utc": "2026-10-08T08:00:18.604572+00:00",
+  "public_sha256": "08a00322e1c71bb3c50fe076611ba3f6da7290514998f13dc22748f18bb8f4a4",
+  "unchanged_pre_receipts": 9868,
+  "exact_evaluation_replay": true,
+  "reader_only_intervention": true,
+  "original_bundles_unchanged": true,
+  "measurement_counts_unchanged": true,
+  "native_unchanged_rows": 60,
+  "physical_repeat_pairs": 30,
+  "physical_repeat_equal": 30,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "independent_objects": false,
+  "measurement_scope": "guide_direction_local_unknown_axis_not_target_identity_or_general_topology",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}
