@@ -68,3 +68,11 @@ DeepSeek任务`support-axis-contracts-001`交付6项读取契约与本人work-lo
 DeepSeek任务`guided-block-contracts-001`交付6条机制测试及本人work-log.json，正常退出、strict JSON、输入SHA、许可输出和日志schema通过；固定总览现17任务。原测试SHA`4310f564c734d6f4267618eea011dfffd2778755568d13a69bc620df44d1d3fc`，Codex只修E402与等价lambda/def风格，集成SHA`11f72df29660d45890f45a9c06c466458e185ba5e841b4cab38a74a06e49c496`，原交付不覆盖。
 
 Codex实际执行12主+6DeepSeek共18测试，双NumPy通过（0.120/0.218秒）；新runner29项另由Codex子助手双环境执行。context版复用测试是Codex适配，不是新增DeepSeek工作。核心算法、正常诊断、完整实验与评价仍由Codex及其子助手执行，DeepSeek本人未运行命令；验收记录见`D:/deepseek/collaboration/runs/guided-block-contracts-001/review.json`。
+
+## 10月8日第五阶段：跨视图同链投票
+
+DeepSeek任务`chain-support-contracts-001`交付6条纯API已知答案测试及`work-log.json`，正常退出、严格JSON、唯一输入SHA、许可输出和日志schema通过。原交付SHA `a742964affe086cb8c99cc498a20c4ce463c9817337b79ba38cf980e3dbc1305`；Codex仅加E402 lint注释，集成SHA `30cb376ff4ca6850f5bc7dafb74b62642b04c47f86dd71475132dbb70889d1ce`。Codex实际双NumPy6/6通过（0.060/0.096s）与Ruff通过，原交付不覆盖。
+
+DeepSeek实际read4次、glob2次、write2次，先写日志再交测试，未执行shell或测试；工作日志中“交付前更新”的措辞不能替代第二次写入证据，验收明确记录。主Codex负责完整候选池pair-plane关联、同链位集合投票及内存优化；Codex子助手负责运行器、完整运行、回归与审计，不冒称由DeepSeek执行。
+
+固定可读总览为 `D:/deepseek/collaboration/WORK_LOG.md` 和 `work-log.json`，现18项任务。独立验收在 `runs/chain-support-contracts-001/review.json`，提交后另关联真实commit；详细研发动作见[当天日志](../journal/2026-10-08.md)。

@@ -1,0 +1,51 @@
+{
+  "run_id": "fixture-rgb-chain-readout-v1-20261008",
+  "parent_run_id": "fixture-naive-controls-v1-20261006",
+  "case_ids": [
+    "r01",
+    "r02",
+    "r03"
+  ],
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "variants": [
+    "base",
+    "depth_tls_single_span",
+    "depth_ransac_single_span",
+    "baseline",
+    "cylinder_support"
+  ],
+  "repeats": [
+    0,
+    1
+  ],
+  "expected_normal_rows": 120,
+  "support_policy": {
+    "minimum_views": 3,
+    "horizontal_padding_px": 1
+  },
+  "reader_overrides": {},
+  "intervention": "Input-support intervention: original raw RGB candidate-union mask versus fixed same-chain subset. Identical single-axis TLS algorithm/defaults, complete original base, original five candidate arms, sample spacing, scale, cameras and native added geometry; do not refit patches or tune per-case.",
+  "paired_policy": "120 rows: three original cases, two original scales, five original arms, raw-union and chain-subset readers, two fresh reader subprocesses. Pair both readers with all 60 original metric readouts and unchanged native geometry.",
+  "qualification": "Previously seen synthetic development, not blind, real-capture or G1 qualification. Fixed full sampled image pools and nondegenerate pair-plane seeds, not all noisy assignments. Multiple retained chains are hypotheses, not confirmed target identity. Unknown is not absence. Preserve all empty/rejected/error rows and the complete original GT domain.",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false,
+  "readers": [
+    "single_axis",
+    "chain_axis"
+  ],
+  "chain_policy": {
+    "reprojection_threshold_px": 1.5,
+    "row_inlier_distance_px": 1.2,
+    "minimum_chain_views": 4,
+    "minimum_plane_sine": 0.05,
+    "maximum_pairs": 500000,
+    "maximum_chains": 100000,
+    "batch_size": 512
+  },
+  "input_support_intervention": true,
+  "reader_algorithm_unchanged": true,
+  "reader_only_intervention": false
+}

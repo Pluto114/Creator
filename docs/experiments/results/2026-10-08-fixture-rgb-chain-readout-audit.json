@@ -1,0 +1,23 @@
+{
+  "run_id": "fixture-rgb-chain-readout-v1-20261008",
+  "state": "passed",
+  "created_at_utc": "2026-10-08T09:37:00.585756+00:00",
+  "public_sha256": "fc7ff9bdd5907e9d2b511e472973af5d2be0af7889055cea86539fa66b5ce002",
+  "unchanged_pre_receipts": 9888,
+  "exact_evaluation_replay": true,
+  "input_support_intervention": true,
+  "reader_algorithm_unchanged": true,
+  "reader_only_intervention": false,
+  "original_bundles_unchanged": true,
+  "full_measurement_counts_unchanged": true,
+  "chain_mask_subset_raw": true,
+  "native_unchanged_rows": 120,
+  "physical_repeat_pairs": 60,
+  "physical_repeat_equal": 60,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "independent_objects": false,
+  "measurement_scope": "Raw RGB union versus same-chain support; unchanged single-axis TLS; retained chains are hypotheses, not target identity",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}
