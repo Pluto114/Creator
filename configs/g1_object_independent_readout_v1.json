@@ -1,0 +1,44 @@
+{
+  "run_id": "g1-object-independent-readout-v1-20261008",
+  "parent_run_id": "g1-object-point-patch-v1-20261006",
+  "parent_pre_sha256": "807d7fadedc47f39e30db3cb78dfeb8934b8e706119c5e342afbccf5bd2a0af1",
+  "parent_inference_sha256": "74bc654b83ed830c9ab53f7c9e4c194c50d7b085152c95c010eb0c9d05eea7b3",
+  "parent_pre_receipts": 674,
+  "parent_output_receipts": 62,
+  "scene_run_id": "g1-object-scenes-v1-20261006",
+  "case_ids": [
+    "chair01",
+    "aframe01"
+  ],
+  "variants": [
+    "base",
+    "depth_tls_single_span",
+    "depth_ransac_single_span",
+    "baseline",
+    "cylinder_support"
+  ],
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "readers": [
+    "single_axis",
+    "independent_axis"
+  ],
+  "repeats": [
+    0,
+    1
+  ],
+  "expected_normal_rows": 80,
+  "support_policy": {
+    "minimum_views": 3,
+    "horizontal_padding_px": 1
+  },
+  "reader_overrides": {},
+  "intervention": "Pair fixed global single-axis TLS and independent-axis readers on each complete immutable base and original saved candidate inside the identical original RGB mask. No refit, patch rewrite, camera replacement, retuning or new sampling policy.",
+  "repeat_policy": "Two fresh reader-only subprocesses. The exact same original one-per-object DA3 predictions and eight patches are reused. This is not an independent end-to-end reconstruction repeat.",
+  "evaluation_policy": "All prior object development scores have been seen; this is not blind. Inference still forbids truth/score access. Require all 80 normal rows and every frozen point/patch receipt before this run accesses object truth. Score common outputs and ten unchanged native added-curve arms separately; preserve every rejection, empty output and error.",
+  "qualification": "Previously seen synthetic development evidence; not blind, real-capture or G1 qualification. Preserve the complete base, original RGB candidate-union volume, immutable native geometry and every empty/rejected/error row. This new reader tests independent competing-axis support ownership; do not treat reused DeepSeek contract tests as a new assistant delivery.",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}

@@ -1,0 +1,20 @@
+{
+  "run_id": "fixture-support-axis-readout-v1-20261008",
+  "state": "passed",
+  "created_at_utc": "2026-10-08T06:50:31.155753+00:00",
+  "public_sha256": "8d6c8eef725b23bf562c0d7433223ed192cad5a207d7dabb26e2bb64cb37ec42",
+  "unchanged_pre_receipts": 9814,
+  "exact_evaluation_replay": true,
+  "reader_only_intervention": true,
+  "original_bundles_unchanged": true,
+  "measurement_counts_unchanged": true,
+  "native_unchanged_rows": 60,
+  "physical_repeat_pairs": 30,
+  "physical_repeat_equal": 30,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "independent_objects": false,
+  "measurement_scope": "predeclared_local_single_axis_raw_support_coverage_not_semantic_identity_or_general_topology",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}

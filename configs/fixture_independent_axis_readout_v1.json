@@ -1,0 +1,35 @@
+{
+  "run_id": "fixture-independent-axis-readout-v1-20261008",
+  "parent_run_id": "fixture-naive-controls-v1-20261006",
+  "case_ids": [
+    "r01",
+    "r02",
+    "r03"
+  ],
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "variants": [
+    "base",
+    "depth_tls_single_span",
+    "depth_ransac_single_span",
+    "baseline",
+    "cylinder_support"
+  ],
+  "repeats": [
+    0,
+    1
+  ],
+  "expected_normal_rows": 60,
+  "support_policy": {
+    "minimum_views": 3,
+    "horizontal_padding_px": 1
+  },
+  "reader_overrides": {},
+  "intervention": "reader_only: reopen the same complete immutable base and saved candidate bundles from each original repeat; do not refit controls, regenerate patches, change masks, cameras, sampling or scales.",
+  "paired_policy": "Sixty fresh independent-axis readouts individually paired with all sixty frozen metric readouts. Each repeat runs in a fresh subprocess. Original native added-curve geometry is separately rescored without readout clipping.",
+  "qualification": "Previously seen synthetic development evidence; not blind, real-capture or G1 qualification. Preserve the complete base, original RGB candidate-union volume, immutable native geometry and every empty/rejected/error row. This new reader tests independent competing-axis support ownership; do not treat reused DeepSeek contract tests as a new assistant delivery.",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}

@@ -1,0 +1,20 @@
+{
+  "run_id": "fixture-independent-axis-readout-v1-20261008",
+  "state": "passed",
+  "created_at_utc": "2026-10-08T07:06:33.695368+00:00",
+  "public_sha256": "9b91373ab12eec011181dbeee082a23f773546ea8b32503c75efc026886c4e47",
+  "unchanged_pre_receipts": 9828,
+  "exact_evaluation_replay": true,
+  "reader_only_intervention": true,
+  "original_bundles_unchanged": true,
+  "measurement_counts_unchanged": true,
+  "native_unchanged_rows": 60,
+  "physical_repeat_pairs": 30,
+  "physical_repeat_equal": 30,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "independent_objects": false,
+  "measurement_scope": "predeclared_local_single_axis_independent_support_coverage_not_semantic_identity_or_general_topology",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}

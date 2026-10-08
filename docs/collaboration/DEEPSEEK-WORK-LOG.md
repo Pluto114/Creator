@@ -56,3 +56,9 @@ DeepSeek任务`single-axis-contracts-001`先保存本人`work-log.json`，再交
 DeepSeek任务`robust-axis-contracts-001`先写本人日志，再交付6条测试；strict JSON、源SHA、输出允许清单及日志schema通过。Codex集成时修正一处未决状态假设：算法执行完成但竞争轴未决仍为state=complete，空segments与reason明确未决，不能混同运行错误。原交付SHA`8303136deb6ecc4018851226025b5422074cb50294d950e62a7241a0e903fe28`，集成SHA`f30489fb5f6eb82cb80c68e1da322d98a5013caea245e373419d51b94eb02863`。
 
 Codex实际运行主核心12条+DeepSeek6条共18项，双NumPy通过（0.354/0.443秒）及Ruff通过；不是DeepSeek本人执行。主Codex负责RANSAC共同读取与同域adapter，子助手负责旧60/新80正式对照及批量回归。独立验收在`D:/deepseek/collaboration/runs/robust-axis-contracts-001/review.json`，固定总览15任务。算法实验成绩以[当天日志](../journal/2026-10-07.md)为准。
+
+## 10月8日：原始点支持保真与独立竞争支持
+
+DeepSeek任务`support-axis-contracts-001`交付6项读取契约与本人work-log.json；strict JSON、输入SHA、输出范围和日志schema均通过。原交付SHA`5ec1dc2244187a8e9e0c7abed17ecdcf883626cb854b5e41aaa4c4985ec6236e`，Codex将两处断口端点精确要求改为已有1voxel占据容差、保留两段与不得跨缺口断言，并添加lint注释。集成SHA`b484340fc682cdcb92bbf350fa27847bea855ed0e8ee0bc537535c1f4d1477b1`，原交付保留；独立review记录双NumPy真实执行与提交关联，固定MD/JSON总览现16任务。
+
+主Codex实现raw支持/覆盖长度排名、稀疏局部提议与内存预算，再实现对称独立支持竞争判据；Codex子助手负责两阶段runner/config/tests、140行完整对照/阶段、正常输入诊断和1624项全量。第二版`test_independent_axis_readout_reused_deepseek.py`是Codex从本轮DeepSeek交付的已审查版本适配复用，不是新增助手任务或助手执行。DeepSeek本人始终未运行命令/正式实验，具体实绩见[当天日志](../journal/2026-10-08.md)。

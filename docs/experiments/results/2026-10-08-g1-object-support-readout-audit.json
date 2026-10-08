@@ -1,0 +1,22 @@
+{
+  "run_id": "g1-object-support-readout-v1-20261008",
+  "state": "passed",
+  "created_at_utc": "2026-10-08T06:49:03.150552+00:00",
+  "public_sha256": "fd25f7eeb6dedfe6d436f0d635733ae3c3a6d7022115908ea7366dd33f9d69ae",
+  "unchanged_pre_receipts": 1266,
+  "exact_evaluation_replay": true,
+  "reader_repeat_pairs": 40,
+  "reader_repeat_equal": 40,
+  "same_complete_base_and_mask": true,
+  "same_sampling_counts": true,
+  "native_geometry_unchanged": true,
+  "point_inputs_unchanged": true,
+  "no_patch_refit": true,
+  "reader_only_repeats": true,
+  "end_to_end_repeat_performed": false,
+  "independent_real_capture": false,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}
