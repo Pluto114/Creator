@@ -1,0 +1,70 @@
+{
+  "run_id": "fixture-chain-partition-readout-v1-20261009",
+  "parent_run_id": "fixture-naive-controls-v1-20261006",
+  "case_ids": [
+    "r01",
+    "r02",
+    "r03"
+  ],
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "variants": [
+    "base",
+    "depth_tls_single_span",
+    "depth_ransac_single_span",
+    "baseline",
+    "cylinder_support"
+  ],
+  "repeats": [
+    0,
+    1
+  ],
+  "expected_normal_rows": 180,
+  "support_policy": {
+    "minimum_views": 3,
+    "horizontal_padding_px": 1
+  },
+  "reader_overrides": {},
+  "intervention": "Keep fixed 30 stroke marks and exact previous stroke/required controls; partition the same required-view unique support union by individual assignments and independently fit actual 3D TLS. Suppress only resolution-scale aliases certified by shared support and finite-geometry coverage, preserving audit and alternatives; then merge only machine-collinear overlapping/touching intervals. No global union fit, averaging, native/GT winner or new annotation.",
+  "paired_policy": "180 rows: three cases, two scales, five arms, three readers, two fresh processes. Previous stroke/required normal controls must be exact.",
+  "qualification": "Previously seen synthetic development, not blind/real/G1. All readers receive the same existing 30 Codex RGB marks from ten views; this run adds zero marks and zero annotation views. Historical annotation cost remains reported. Output is positive conditional support, unknown excluded only from positive mask, never negative evidence or unique identity. Preserve failures and entire GT domain.",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false,
+  "readers": [
+    "stroke_chain_axis",
+    "required_stroke_axis",
+    "chain_partition_axis"
+  ],
+  "chain_policy": {
+    "reprojection_threshold_px": 1.5,
+    "row_inlier_distance_px": 1.2,
+    "minimum_chain_views": 4,
+    "minimum_plane_sine": 0.05,
+    "maximum_pairs": 500000,
+    "maximum_chains": 100000,
+    "batch_size": 512
+  },
+  "input_support_intervention": true,
+  "reader_algorithm_unchanged": false,
+  "reader_only_intervention": false,
+  "anchor_manifest": "data/inputs/rgb-foreground-strokes-v1-20261009/manifest.json",
+  "anchor_policy": {
+    "minimum_anchor_views": 2
+  },
+  "stroke_policy": {
+    "minimum_anchor_views": 2,
+    "minimum_marks_per_view": 2
+  },
+  "partition_policy": {
+    "maximum_assignments": 4096,
+    "maximum_fit_groups": 256,
+    "maximum_membership_checks": 200000000,
+    "maximum_output_segments": 5000,
+    "minimum_shared_support_fraction": 0.5,
+    "alias_distance_voxels": 1.0,
+    "alias_sampling_step_voxels": 0.5,
+    "maximum_alias_distance_checks": 200000000
+  }
+}

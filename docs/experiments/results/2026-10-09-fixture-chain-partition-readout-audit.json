@@ -1,0 +1,23 @@
+{
+  "run_id": "fixture-chain-partition-readout-v1-20261009",
+  "state": "passed",
+  "created_at_utc": "2026-10-09T12:02:45.917958+00:00",
+  "public_sha256": "4f6c1142df813d153bd661581f4fa426c1acba63d5a59cd0b98fd80bc3c14ad3",
+  "unchanged_pre_receipts": 10952,
+  "exact_evaluation_replay": true,
+  "input_support_intervention": true,
+  "reader_algorithm_unchanged": false,
+  "reader_only_intervention": false,
+  "original_bundles_unchanged": true,
+  "full_measurement_counts_unchanged": true,
+  "chain_mask_subset_raw": true,
+  "native_unchanged_rows": 180,
+  "physical_repeat_pairs": 90,
+  "physical_repeat_equal": 90,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "independent_objects": false,
+  "measurement_scope": "Fixed stroke/required controls versus same-chain actual-geometry partition readout; complete original GT, no target-identity claim",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}
