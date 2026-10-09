@@ -1,0 +1,830 @@
+{
+  "schema_version": 1,
+  "run_id": "rgb-foreground-strokes-v1-20261009",
+  "base_commit": "dd97dbbdddb921c78dc1a4a91d4b408a4b805d19",
+  "previous_input": {
+    "manifest": {
+      "path": "data/inputs/rgb-foreground-anchors-v1-20261009/manifest.json",
+      "sha256": "b87cb3f91aba295648d59e9cdf807301e19c4c0a01b6af2ac565858073cc7c05"
+    },
+    "annotation_audit": {
+      "path": "data/inputs/rgb-foreground-anchors-v1-20261009/annotation-audit.json",
+      "sha256": "3365eb91d30c1e4fe40055f509af2bc8ff12449ef82e024f59fb25021800891e"
+    },
+    "retained_anchor_count": 10,
+    "all_previous_anchors_copied_exactly": true,
+    "all_previous_receipts_retained_by_sha256_reference": true,
+    "previous_files_modified": false
+  },
+  "selection_provenance": {
+    "annotation_kind": "assistant_visual_annotation_not_human_click",
+    "purpose": "Shared explicit foreground short-stroke membership claims for every arm; several same-view points must be supported by the same image candidate.",
+    "selection_timestamp": "2026-10-09T16:56:20+08:00",
+    "method": "Inspect the same ten original RGB images again, choose two visibly supported positions on each central thin member on opposite sides of the previous point, then inspect raw RGB pixels x=310..330 at those twenty preselected rows once. Freeze all twenty new coordinates before any new measured-band lookup.",
+    "stroke_semantics": "Three positive membership samples per view, not a dense interpolated mask, not endpoint constraints and not cross-view 3D correspondences.",
+    "coarse_guide_role": "Search hint only, never an exact coordinate or candidate choice.",
+    "uses_gt_coordinates": false,
+    "uses_native_lines": false,
+    "uses_3d_projections": false,
+    "uses_evaluation_to_choose_or_revise_points": false,
+    "blinded_annotation_study": false,
+    "blinding_note": "Historical aggregate development context exists; this is an explicitly disclosed assistant-assisted development-input intervention, not an independent human or blinded annotation study.",
+    "annotation_cost": {
+      "cases": 5,
+      "anchor_points_total": 30,
+      "retained_old_points": 10,
+      "new_points": 20,
+      "new_original_frame_visual_inspections": 10,
+      "new_rgb_pixel_row_inspections": 20,
+      "new_initial_selection_passes": 1,
+      "new_post_support_coordinate_revisions": 0,
+      "cumulative_original_frame_visual_inspections": 20,
+      "cumulative_rgb_pixel_row_inspections": 30,
+      "unidentifiable_frames": 0
+    },
+    "raw_support_check_state": "not_yet_checked_at_initial_coordinate_freeze",
+    "initial_coordinates_frozen": true
+  },
+  "sources": [
+    {
+      "path": "data/inputs/fixture-point-patch-v1-20260929/manifest.json",
+      "sha256": "cc25cdc07f33e744f9bbaa3d3cb37277347740b75d720d397ab0871d5fe1c27e"
+    },
+    {
+      "path": "data/inputs/g1-object-point-patch-v1-20261006/manifest.json",
+      "sha256": "3323c5f8eeba29b312f0321087f108d3a41fbed6123f890e16a774b6123a042e"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "r01",
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            316.5,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5a458663002f7f8eb34736622b67adf3522457a100e245d65565a756afd5cb5c"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            316.5,
+            110
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5a458663002f7f8eb34736622b67adf3522457a100e245d65565a756afd5cb5c"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            316.5,
+            190
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5a458663002f7f8eb34736622b67adf3522457a100e245d65565a756afd5cb5c"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            316,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "e58ae7b9c3506101128a00aa311b26842ccaf3b3cf587507a2869172ca369191"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            316,
+            110
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "e58ae7b9c3506101128a00aa311b26842ccaf3b3cf587507a2869172ca369191"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            316,
+            190
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "e58ae7b9c3506101128a00aa311b26842ccaf3b3cf587507a2869172ca369191"
+        }
+      ],
+      "annotation_provenance": {
+        "annotator": "Codex assistant /root/oct9_rgb_inputs",
+        "annotation_kind": "assistant_visual_annotation_not_human_click",
+        "selection_timestamp": "2026-10-09T16:56:20+08:00",
+        "selection_pass_count": 1,
+        "coordinate_revision_count_after_initial_freeze": 0,
+        "visual_identity_description": "Central isolated bright vertical rod, upper visible body.",
+        "anchor_order": "Grouped by view_id: [original anchor, new upper point, new lower point].",
+        "anchor_origins": [
+          {
+            "anchor_index": 0,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 0
+          },
+          {
+            "anchor_index": 1,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 2,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 3,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 1
+          },
+          {
+            "anchor_index": 4,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 5,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          }
+        ],
+        "visual_state": "identified",
+        "unable_to_identify_reason": null,
+        "original_frame_inspections": [
+          {
+            "view_id": "view_00",
+            "rgb": "data/inputs/rod-fixture-scenes-v1-20260927/r01/view_00.png",
+            "rgb_sha256": "5a458663002f7f8eb34736622b67adf3522457a100e245d65565a756afd5cb5c",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              110,
+              190
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          },
+          {
+            "view_id": "view_03",
+            "rgb": "data/inputs/rod-fixture-scenes-v1-20260927/r01/view_03.png",
+            "rgb_sha256": "e58ae7b9c3506101128a00aa311b26842ccaf3b3cf587507a2869172ca369191",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              110,
+              190
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "r02",
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            324.5,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "c15f4995ed465774f958c497c1e77368e9b993ea0d66f3d5763289c9c3ca07e8"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            324.5,
+            110
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "c15f4995ed465774f958c497c1e77368e9b993ea0d66f3d5763289c9c3ca07e8"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            324.5,
+            190
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "c15f4995ed465774f958c497c1e77368e9b993ea0d66f3d5763289c9c3ca07e8"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            325,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "11ff87dd934f65b663b0381d476901833a9feefac9dca4bfa39364343670e26a"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            325,
+            110
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "11ff87dd934f65b663b0381d476901833a9feefac9dca4bfa39364343670e26a"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            325,
+            190
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "11ff87dd934f65b663b0381d476901833a9feefac9dca4bfa39364343670e26a"
+        }
+      ],
+      "annotation_provenance": {
+        "annotator": "Codex assistant /root/oct9_rgb_inputs",
+        "annotation_kind": "assistant_visual_annotation_not_human_click",
+        "selection_timestamp": "2026-10-09T16:56:20+08:00",
+        "selection_pass_count": 1,
+        "coordinate_revision_count_after_initial_freeze": 0,
+        "visual_identity_description": "Central bright broken rod; selected upper visible component, not the intervening gap.",
+        "anchor_order": "Grouped by view_id: [original anchor, new upper point, new lower point].",
+        "anchor_origins": [
+          {
+            "anchor_index": 0,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 0
+          },
+          {
+            "anchor_index": 1,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 2,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 3,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 1
+          },
+          {
+            "anchor_index": 4,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 5,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          }
+        ],
+        "visual_state": "identified",
+        "unable_to_identify_reason": null,
+        "original_frame_inspections": [
+          {
+            "view_id": "view_00",
+            "rgb": "data/inputs/rod-fixture-scenes-v1-20260927/r02/view_00.png",
+            "rgb_sha256": "c15f4995ed465774f958c497c1e77368e9b993ea0d66f3d5763289c9c3ca07e8",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              110,
+              190
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          },
+          {
+            "view_id": "view_03",
+            "rgb": "data/inputs/rod-fixture-scenes-v1-20260927/r02/view_03.png",
+            "rgb_sha256": "11ff87dd934f65b663b0381d476901833a9feefac9dca4bfa39364343670e26a",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              110,
+              190
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "r03",
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            317.5,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "c3b50587ea76e163aa5e84cb2bd558218401e28d194a8980f283ae649835e567"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            317.5,
+            110
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "c3b50587ea76e163aa5e84cb2bd558218401e28d194a8980f283ae649835e567"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            317.5,
+            190
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "c3b50587ea76e163aa5e84cb2bd558218401e28d194a8980f283ae649835e567"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            317.5,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "d40d8c9b95adbe58a407eba5bfdbadb322a951e9958a9f020002b13b58ea34c8"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            317.5,
+            110
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "d40d8c9b95adbe58a407eba5bfdbadb322a951e9958a9f020002b13b58ea34c8"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            317.5,
+            190
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "d40d8c9b95adbe58a407eba5bfdbadb322a951e9958a9f020002b13b58ea34c8"
+        }
+      ],
+      "annotation_provenance": {
+        "annotator": "Codex assistant /root/oct9_rgb_inputs",
+        "annotation_kind": "assistant_visual_annotation_not_human_click",
+        "selection_timestamp": "2026-10-09T16:56:20+08:00",
+        "selection_pass_count": 1,
+        "coordinate_revision_count_after_initial_freeze": 0,
+        "visual_identity_description": "Central isolated approximately one-pixel-wide vertical rod; coordinate uncertainty is retained even if raw support cannot resolve it.",
+        "anchor_order": "Grouped by view_id: [original anchor, new upper point, new lower point].",
+        "anchor_origins": [
+          {
+            "anchor_index": 0,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 0
+          },
+          {
+            "anchor_index": 1,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 2,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 3,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 1
+          },
+          {
+            "anchor_index": 4,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 5,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          }
+        ],
+        "visual_state": "identified",
+        "unable_to_identify_reason": null,
+        "original_frame_inspections": [
+          {
+            "view_id": "view_00",
+            "rgb": "data/inputs/rod-fixture-scenes-v1-20260927/r03/view_00.png",
+            "rgb_sha256": "c3b50587ea76e163aa5e84cb2bd558218401e28d194a8980f283ae649835e567",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              110,
+              190
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          },
+          {
+            "view_id": "view_03",
+            "rgb": "data/inputs/rod-fixture-scenes-v1-20260927/r03/view_03.png",
+            "rgb_sha256": "d40d8c9b95adbe58a407eba5bfdbadb322a951e9958a9f020002b13b58ea34c8",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              110,
+              190
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "chair01",
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            319.5,
+            240
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "a08599ace5edbcd563e911f52d671bdea9bc441c74cc15470259158e75dd2bf8"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            319.5,
+            180
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "a08599ace5edbcd563e911f52d671bdea9bc441c74cc15470259158e75dd2bf8"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            319.5,
+            300
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "a08599ace5edbcd563e911f52d671bdea9bc441c74cc15470259158e75dd2bf8"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            319.5,
+            240
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "1a9a95d2cc13aed6c96572f35c00b8098bd5d5e58975562d4c1abf6ae9ed02ed"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            319.5,
+            180
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "1a9a95d2cc13aed6c96572f35c00b8098bd5d5e58975562d4c1abf6ae9ed02ed"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            319.5,
+            300
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "1a9a95d2cc13aed6c96572f35c00b8098bd5d5e58975562d4c1abf6ae9ed02ed"
+        }
+      ],
+      "annotation_provenance": {
+        "annotator": "Codex assistant /root/oct9_rgb_inputs",
+        "annotation_kind": "assistant_visual_annotation_not_human_click",
+        "selection_timestamp": "2026-10-09T16:56:20+08:00",
+        "selection_pass_count": 1,
+        "coordinate_revision_count_after_initial_freeze": 0,
+        "visual_identity_description": "Thin central chair-back spindle, away from the upper and lower transverse bars.",
+        "anchor_order": "Grouped by view_id: [original anchor, new upper point, new lower point].",
+        "anchor_origins": [
+          {
+            "anchor_index": 0,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 0
+          },
+          {
+            "anchor_index": 1,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 2,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 3,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 1
+          },
+          {
+            "anchor_index": 4,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 5,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          }
+        ],
+        "visual_state": "identified",
+        "unable_to_identify_reason": null,
+        "original_frame_inspections": [
+          {
+            "view_id": "view_00",
+            "rgb": "data/inputs/g1-object-scenes-v1-20261006/chair01/view_00.png",
+            "rgb_sha256": "a08599ace5edbcd563e911f52d671bdea9bc441c74cc15470259158e75dd2bf8",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              180,
+              300
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          },
+          {
+            "view_id": "view_03",
+            "rgb": "data/inputs/g1-object-scenes-v1-20261006/chair01/view_03.png",
+            "rgb_sha256": "1a9a95d2cc13aed6c96572f35c00b8098bd5d5e58975562d4c1abf6ae9ed02ed",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              180,
+              300
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "aframe01",
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            316.5,
+            300
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "10206362cb12f2fb84bccab36073563d4bc65db824973cfbb99486e26d685a4c"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            318.5,
+            260
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "10206362cb12f2fb84bccab36073563d4bc65db824973cfbb99486e26d685a4c"
+        },
+        {
+          "view_id": "view_00",
+          "xy": [
+            314.5,
+            330
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "10206362cb12f2fb84bccab36073563d4bc65db824973cfbb99486e26d685a4c"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            316,
+            300
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5434ae48e653db5731c27ae1979e7c70a6d3c47c645fe924c9b0fb3216d44dba"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            318,
+            260
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5434ae48e653db5731c27ae1979e7c70a6d3c47c645fe924c9b0fb3216d44dba"
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            314,
+            330
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha256": "5434ae48e653db5731c27ae1979e7c70a6d3c47c645fe924c9b0fb3216d44dba"
+        }
+      ],
+      "annotation_provenance": {
+        "annotator": "Codex assistant /root/oct9_rgb_inputs",
+        "annotation_kind": "assistant_visual_annotation_not_human_click",
+        "selection_timestamp": "2026-10-09T16:56:20+08:00",
+        "selection_pass_count": 1,
+        "coordinate_revision_count_after_initial_freeze": 0,
+        "visual_identity_description": "Thin central hanging member inside the A-frame, below the diagonal-member crossing and above the bottom crossbar.",
+        "anchor_order": "Grouped by view_id: [original anchor, new upper point, new lower point].",
+        "anchor_origins": [
+          {
+            "anchor_index": 0,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 0
+          },
+          {
+            "anchor_index": 1,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 2,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 3,
+            "origin": "previous_frozen_anchor",
+            "previous_case_anchor_index": 1
+          },
+          {
+            "anchor_index": 4,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          },
+          {
+            "anchor_index": 5,
+            "origin": "new_assistant_rgb_visual_selection",
+            "selection_timestamp": "2026-10-09T16:56:20+08:00"
+          }
+        ],
+        "visual_state": "identified",
+        "unable_to_identify_reason": null,
+        "original_frame_inspections": [
+          {
+            "view_id": "view_00",
+            "rgb": "data/inputs/g1-object-scenes-v1-20261006/aframe01/view_00.png",
+            "rgb_sha256": "10206362cb12f2fb84bccab36073563d4bc65db824973cfbb99486e26d685a4c",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              260,
+              330
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          },
+          {
+            "view_id": "view_03",
+            "rgb": "data/inputs/g1-object-scenes-v1-20261006/aframe01/view_03.png",
+            "rgb_sha256": "5434ae48e653db5731c27ae1979e7c70a6d3c47c645fe924c9b0fb3216d44dba",
+            "full_frame_visual_inspections": 1,
+            "rgb_pixel_row_inspections": 2,
+            "pixel_columns_inclusive": [
+              310,
+              330
+            ],
+            "pixel_rows_y": [
+              260,
+              330
+            ],
+            "visual_visibility": "Both added positions are visible on the same thin member; no point is placed in an occluded or broken interval."
+          }
+        ]
+      }
+    }
+  ]
+}

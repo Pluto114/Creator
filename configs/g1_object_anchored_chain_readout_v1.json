@@ -1,0 +1,61 @@
+{
+  "run_id": "g1-object-anchored-chain-readout-v1-20261009",
+  "parent_run_id": "g1-object-point-patch-v1-20261006",
+  "parent_pre_sha256": "807d7fadedc47f39e30db3cb78dfeb8934b8e706119c5e342afbccf5bd2a0af1",
+  "parent_inference_sha256": "74bc654b83ed830c9ab53f7c9e4c194c50d7b085152c95c010eb0c9d05eea7b3",
+  "parent_pre_receipts": 674,
+  "parent_output_receipts": 62,
+  "scene_run_id": "g1-object-scenes-v1-20261006",
+  "case_ids": [
+    "chair01",
+    "aframe01"
+  ],
+  "variants": [
+    "base",
+    "depth_tls_single_span",
+    "depth_ransac_single_span",
+    "baseline",
+    "cylinder_support"
+  ],
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "readers": [
+    "single_axis",
+    "chain_axis",
+    "anchored_chain_axis"
+  ],
+  "repeats": [
+    0,
+    1
+  ],
+  "expected_normal_rows": 120,
+  "support_policy": {
+    "minimum_views": 3,
+    "horizontal_padding_px": 1
+  },
+  "reader_overrides": {},
+  "intervention": "Three shared full-input strategies: unchanged raw RGB union, unchanged all-chain, and positive chain support conditional on fresh Codex visual RGB anchors. Same anchors across all five arms; no human/GT/native-label claim; unchanged single-axis TLS, native geometry, sampling and full GT domain.",
+  "repeat_policy": "Two fresh reader-only subprocesses. The exact same original one-per-object DA3 predictions and eight patches are reused. This is not an independent end-to-end reconstruction repeat.",
+  "evaluation_policy": "Require all 120 normal rows, both per-case association types, anchor provenance and parent inputs before original complete GT; ten native arms separate without clipping.",
+  "qualification": "Previously seen synthetic development, not blind/real/G1. New Codex RGB image annotation adds input cost; output is positive conditional support, unknown excluded only from positive mask, never negative evidence or unique identity. Preserve failures and entire GT domain.",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false,
+  "chain_policy": {
+    "reprojection_threshold_px": 1.5,
+    "row_inlier_distance_px": 1.2,
+    "minimum_chain_views": 4,
+    "minimum_plane_sine": 0.05,
+    "maximum_pairs": 500000,
+    "maximum_chains": 100000,
+    "batch_size": 512
+  },
+  "input_support_intervention": true,
+  "reader_algorithm_unchanged": true,
+  "reader_only_intervention": false,
+  "anchor_manifest": "data/inputs/rgb-foreground-anchors-v1-20261009/manifest.json",
+  "anchor_policy": {
+    "minimum_anchor_views": 2
+  }
+}

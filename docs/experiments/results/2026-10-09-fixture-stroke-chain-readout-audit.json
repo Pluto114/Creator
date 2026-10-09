@@ -1,0 +1,23 @@
+{
+  "run_id": "fixture-stroke-chain-readout-v1-20261009",
+  "state": "passed",
+  "created_at_utc": "2026-10-09T09:23:00.088137+00:00",
+  "public_sha256": "f0025292bbd643287f669c6ad48b47324791ddea9c6cc0018f4a5ee1492f5b23",
+  "unchanged_pre_receipts": 10357,
+  "exact_evaluation_replay": true,
+  "input_support_intervention": true,
+  "reader_algorithm_unchanged": true,
+  "reader_only_intervention": false,
+  "original_bundles_unchanged": true,
+  "full_measurement_counts_unchanged": true,
+  "chain_mask_subset_raw": true,
+  "native_unchanged_rows": 240,
+  "physical_repeat_pairs": 120,
+  "physical_repeat_equal": 120,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "independent_objects": false,
+  "measurement_scope": "Raw/all-chain controls versus explicit sparse RGB-stroke positive conditional support; unchanged TLS and full GT domain, not identity proof",
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}

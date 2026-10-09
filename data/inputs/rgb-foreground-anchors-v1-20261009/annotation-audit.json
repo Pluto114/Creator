@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "kind": "post_initial_freeze_raw_band_check",
+  "initial_manifest_path": "data/inputs/rgb-foreground-anchors-v1-20261009/manifest.json",
+  "initial_manifest_sha256": "b87cb3f91aba295648d59e9cdf807301e19c4c0a01b6af2ac565858073cc7c05",
+  "scope": "Raw measured-row compatibility only, not finite-chain identity acceptance or geometric reconstruction success.",
+  "coordinates_modified": false,
+  "full_frame_visual_inspections": 10,
+  "rgb_pixel_row_inspections": 10,
+  "raw_observation_check_passes": 2,
+  "raw_observation_check_description": "One post-freeze row-band inspection followed by one automated containment and anchor-contract verification; neither changed any coordinate.",
+  "fields_accessed_from_normal_records": [
+    "frames",
+    "cameras"
+  ],
+  "case_count": 5,
+  "anchor_count": 10,
+  "supported_anchor_count": 10,
+  "cases": [
+    {
+      "case_id": "r01",
+      "normal_evidence_source": ".runtime/experiments/rod-fixture-narrow-v1-20260929/records/r01.json",
+      "normal_evidence_sha256": "fdcca239ace436dfe1affb9d1d3f78f3c061eaf329d4acab84f5205c1284e846",
+      "validate_anchors_passed": true,
+      "independent_camera_view_count": 2,
+      "policy": {
+        "minimum_anchor_views": 2
+      },
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            316.5,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "434754ac0fa09c9360edcd70b477dbf2f7267514442edce4937bf0fba34f34ea",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 150,
+              "row_index": 130,
+              "row_status": "ambiguous",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 313.5,
+                  "right": 319.5
+                },
+                {
+                  "candidate_index": 1,
+                  "left": 317.5,
+                  "right": 319.5
+                }
+              ],
+              "supported_candidate_indices": [
+                0
+              ],
+              "state": "supported"
+            }
+          ]
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            316,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "31fba5ee65e41406bc19b16b4b000dae2ad3a0a862b2698dbad0d3fa32c87525",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 150,
+              "row_index": 130,
+              "row_status": "observed",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 312.5,
+                  "right": 318.5
+                }
+              ],
+              "supported_candidate_indices": [
+                0
+              ],
+              "state": "supported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "r02",
+      "normal_evidence_source": ".runtime/experiments/rod-fixture-narrow-v1-20260929/records/r02.json",
+      "normal_evidence_sha256": "e517dc2ea462c53583be43cc858ba914e6a0b850b80828453747e9f9f7b5fa79",
+      "validate_anchors_passed": true,
+      "independent_camera_view_count": 2,
+      "policy": {
+        "minimum_anchor_views": 2
+      },
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            324.5,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "0e1008cc748add9405cac59bb15c5ab9eecee33b4a41d9a75f738dbf97b894b2",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 150,
+              "row_index": 130,
+              "row_status": "ambiguous",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 321.5,
+                  "right": 326.5
+                },
+                {
+                  "candidate_index": 1,
+                  "left": 324.5,
+                  "right": 326.5
+                }
+              ],
+              "supported_candidate_indices": [
+                0
+              ],
+              "state": "supported"
+            }
+          ]
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            325,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "86fb2c01db7f2655dfc1c343c8c7208d16a78411b6a9e5a55c79765f2db0fe35",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 150,
+              "row_index": 130,
+              "row_status": "observed",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 322.5,
+                  "right": 326.5
+                }
+              ],
+              "supported_candidate_indices": [
+                0
+              ],
+              "state": "supported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "r03",
+      "normal_evidence_source": ".runtime/experiments/rod-fixture-narrow-v1-20260929/records/r03.json",
+      "normal_evidence_sha256": "96d0171179ac75271fbdc9aa6d04d784103a8050137d1ea1ff2783063935a1a4",
+      "validate_anchors_passed": true,
+      "independent_camera_view_count": 2,
+      "policy": {
+        "minimum_anchor_views": 2
+      },
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            317.5,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "f63179415c8348bd9f8d21266ed4edc921befae9ba56fe545682afd6702b1816",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 150,
+              "row_index": 130,
+              "row_status": "observed",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 316.5,
+                  "right": 318.5
+                }
+              ],
+              "supported_candidate_indices": [
+                0
+              ],
+              "state": "supported"
+            }
+          ]
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            317.5,
+            150
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "bd57d9688b4eb5d518ca41e884f1786c4457786f4a7e6d8857ef374ab197ea98",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 150,
+              "row_index": 130,
+              "row_status": "observed",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 316.5,
+                  "right": 318.5
+                }
+              ],
+              "supported_candidate_indices": [
+                0
+              ],
+              "state": "supported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "chair01",
+      "normal_evidence_source": ".runtime/experiments/g1-object-rgb-v1-20261006/records/chair01.json",
+      "normal_evidence_sha256": "858a4931c595432bfbe77ec60479503193c5a3b12ed11b1ef561b6782e4727b2",
+      "validate_anchors_passed": true,
+      "independent_camera_view_count": 2,
+      "policy": {
+        "minimum_anchor_views": 2
+      },
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            319.5,
+            240
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "71f2d5a44088c965fecf6e58f5b9690ed418ae16eb41460a45752c36ae0fccdf",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 240,
+              "row_index": 220,
+              "row_status": "observed",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 317.5,
+                  "right": 321.5
+                }
+              ],
+              "supported_candidate_indices": [
+                0
+              ],
+              "state": "supported"
+            }
+          ]
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            319.5,
+            240
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "f394704af5a9130117214d5f7d40d38138308db73064ee6ea39df12ad00bc229",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 240,
+              "row_index": 220,
+              "row_status": "observed",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 318.5,
+                  "right": 320.5
+                }
+              ],
+              "supported_candidate_indices": [
+                0
+              ],
+              "state": "supported"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "aframe01",
+      "normal_evidence_source": ".runtime/experiments/g1-object-rgb-v1-20261006/records/aframe01.json",
+      "normal_evidence_sha256": "603398e4fb6ba74b2c1728ad73c1448a611820e4f56205ebcfb842a7e8c3988f",
+      "validate_anchors_passed": true,
+      "independent_camera_view_count": 2,
+      "policy": {
+        "minimum_anchor_views": 2
+      },
+      "anchors": [
+        {
+          "view_id": "view_00",
+          "xy": [
+            316.5,
+            300
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "1044f87b8bedf3a330545cfca6e84aad45affefc4269fee498859c8c29fed745",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 300,
+              "row_index": 280,
+              "row_status": "ambiguous",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 315.5,
+                  "right": 317.5
+                },
+                {
+                  "candidate_index": 1,
+                  "left": 317.5,
+                  "right": 336.5
+                },
+                {
+                  "candidate_index": 2,
+                  "left": 336.5,
+                  "right": 344.5
+                }
+              ],
+              "supported_candidate_indices": [
+                0
+              ],
+              "state": "supported"
+            }
+          ]
+        },
+        {
+          "view_id": "view_03",
+          "xy": [
+            316,
+            300
+          ],
+          "uncertainty_xy_px": [
+            0.5,
+            0.5
+          ],
+          "rgb_sha_matches": true,
+          "observation_sha256": "b6414775fb24be2eb23bb33a0d964d11ef3510c849815aee3069fdef49fa46b5",
+          "state": "supported",
+          "rows": [
+            {
+              "y": 300,
+              "row_index": 280,
+              "row_status": "ambiguous",
+              "bands": [
+                {
+                  "candidate_index": 0,
+                  "left": 275.5,
+                  "right": 314.5
+                },
+                {
+                  "candidate_index": 1,
+                  "left": 278.5,
+                  "right": 314.5
+                },
+                {
+                  "candidate_index": 2,
+                  "left": 314.5,
+                  "right": 316.5
+                }
+              ],
+              "supported_candidate_indices": [
+                2
+              ],
+              "state": "supported"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "checked_at": "2026-10-09 08:50:31 UTC"
+}
