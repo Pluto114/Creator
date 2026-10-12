@@ -1,0 +1,15 @@
+{
+  "run_id": "fixture-foreground-consensus-readout-v1-20261012",
+  "state": "passed",
+  "public_sha256": "31babbef8788eb42c6bf1bff3c10970c46faa75595a578dfb7febf7e9c19e6d6",
+  "exact_evaluation_replay": true,
+  "physical_repeat_pairs": 90,
+  "native_geometry_unchanged": true,
+  "full_measurement_domain_preserved": true,
+  "g1_passed": false,
+  "input_support_intervention": true,
+  "reader_algorithm_unchanged": false,
+  "reader_only_intervention": false,
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}

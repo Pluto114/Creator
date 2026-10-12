@@ -1,0 +1,15 @@
+{
+  "run_id": "g1-object-foreground-consensus-readout-v1-20261012",
+  "state": "passed",
+  "public_sha256": "3da9132fa022636cee47c5d866586ee7f5f76d57abedf8dde039b760633c4edf",
+  "exact_evaluation_replay": true,
+  "physical_repeat_pairs": 60,
+  "native_geometry_unchanged": true,
+  "full_measurement_domain_preserved": true,
+  "g1_passed": false,
+  "input_support_intervention": true,
+  "reader_algorithm_unchanged": false,
+  "reader_only_intervention": false,
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false
+}

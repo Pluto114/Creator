@@ -1,0 +1,44 @@
+{
+  "run_id": "g1-object-foreground-consensus-readout-v1-20261012",
+  "parent_run_id": "g1-object-chain-partition-readout-v1-20261009",
+  "case_ids": [
+    "chair01",
+    "aframe01"
+  ],
+  "variants": [
+    "base",
+    "depth_tls_single_span",
+    "depth_ransac_single_span",
+    "baseline",
+    "cylinder_support"
+  ],
+  "readers": [
+    "stroke_chain_axis",
+    "chain_partition_axis",
+    "foreground_consensus_axis"
+  ],
+  "repeats": [
+    0,
+    1
+  ],
+  "voxel_camera_span_fractions": [
+    0.0025,
+    0.005
+  ],
+  "expected_normal_rows": 120,
+  "support_policy": {
+    "minimum_views": 3,
+    "horizontal_padding_px": 1
+  },
+  "reader_overrides": {},
+  "anchor_manifest": "data/inputs/rgb-foreground-strokes-v1-20261009/manifest.json",
+  "input_support_intervention": true,
+  "reader_algorithm_unchanged": false,
+  "reader_only_intervention": false,
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false,
+  "intervention": "Preserve full stroke-positive actual input support; mandatory-view points seed local actual-geometry consensus. Freshly recompute both frozen stroke and partition controls. No GT/native winner, image-axis snap, threshold overrides, new annotations or case selection.",
+  "evaluation_policy": "Complete both normal suites and full SHA/direct-input/control/repeat barriers, then independent cross-suite authorization before any complete original GT scoring. Preserve every native arm and failure.",
+  "repeat_policy": "Two fresh reader subprocesses reuse original point snapshots and patches; not end-to-end DA3 repeats.",
+  "qualification": "Previously seen synthetic development only; not blind, not real, not G1. Fixed 30 assistant RGB marks, no extra annotation this round."
+}
