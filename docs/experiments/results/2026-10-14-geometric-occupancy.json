@@ -1,0 +1,3925 @@
+{
+  "decision": "rejected",
+  "adopted_run_id": "bracketed-occupancy-sprint-20261014-001",
+  "run_id": "geometric-occupancy-sprint-20261014-001",
+  "control_run_id": "occupied-axis-sprint-20261012-001",
+  "adapter": "creator_eval.rgb_geometric_occupancy_readout:GeometricOccupancyReadout",
+  "normal_sha256": "b7e88576378af68fe1eac1517e2272855c19ebcc16f57b738377973c7f645b0b",
+  "evaluation_sha256": "e80f882450a327999d410e318f1a38df5e85609e36ec341dc49bc55c91cf10cf",
+  "control_evaluation_sha256": "6a77ab726c60ffa567462d302b8062fa78951302344f22794f7dd2f7cbd8a95d",
+  "normal_gt_read": false,
+  "evaluation_gt_read": true,
+  "captures": {
+    "normal": {
+      "command": [
+        "D:\\Creator-newage\\backends\\da3\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/run_readout_sprint.py",
+        "normal",
+        "--run-id",
+        "geometric-occupancy-sprint-20261014-001",
+        "--adapter",
+        "creator_eval.rgb_geometric_occupancy_readout:GeometricOccupancyReadout"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-14T07:56:17.098506+00:00",
+      "elapsed_seconds": 125.60811680000006,
+      "stdout_path": ".runtime/validation/foreground-consensus-runners-20261012-002/geometric-occupancy-sprint-20261014-001-normal.stdout.log",
+      "stdout_sha256": "86c1388da01e90c8ea25503981b80f136fb18b180e5d27be3371136e7bccd11f",
+      "stderr_path": ".runtime/validation/foreground-consensus-runners-20261012-002/geometric-occupancy-sprint-20261014-001-normal.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "launcher_sha256": "4a01891698cbdd7c24259225d8f7aa4dc06998230367c0b22a3ee943ea30bdcb"
+    },
+    "evaluate": {
+      "command": [
+        "D:\\Creator-newage\\backends\\da3\\.venv\\Scripts\\python.exe",
+        "-B",
+        "scripts/run_readout_sprint.py",
+        "evaluate",
+        "--run-id",
+        "geometric-occupancy-sprint-20261014-001"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-14T07:59:20.036787+00:00",
+      "elapsed_seconds": 2.7583645000004253,
+      "stdout_path": ".runtime/validation/foreground-consensus-runners-20261012-002/geometric-occupancy-sprint-20261014-001-evaluate.stdout.log",
+      "stdout_sha256": "e590f6dc06626bb0a979c742548e0f36e3ddd30c18a80fa7104177cb4bea1636",
+      "stderr_path": ".runtime/validation/foreground-consensus-runners-20261012-002/geometric-occupancy-sprint-20261014-001-evaluate.stderr.log",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "launcher_sha256": "4a01891698cbdd7c24259225d8f7aa4dc06998230367c0b22a3ee943ea30bdcb"
+    }
+  },
+  "summary": {
+    "recovery_fraction": {
+      "up": 0,
+      "down": 0,
+      "equal": 50,
+      "unavailable": 0
+    },
+    "precision_fraction": {
+      "up": 0,
+      "down": 7,
+      "equal": 43,
+      "unavailable": 0
+    },
+    "segment_count": {
+      "up": 0,
+      "down": 12,
+      "equal": 38,
+      "unavailable": 0
+    },
+    "row_count": 50,
+    "native_unchanged": 50,
+    "selected_axis_unchanged": 50,
+    "selected_candidate_unchanged": 50,
+    "normal_errors": 0,
+    "scoring_errors": 0,
+    "native_scoring_errors": 0,
+    "old_boundary_scored": 26,
+    "new_boundary_scored": 36
+  },
+  "rows": [
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "base",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 10,
+        "total_length_m": 1.6161525791861526,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.3838474208138474,
+        "boundary_count": 20,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.959,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.02316052611288057,
+        "prediction_to_truth_p95_m": 0.018826631290573183,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 10,
+        "total_length_m": 1.6242563139680997,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.37574368603190034,
+        "boundary_count": 20,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.959,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.02316052611288057,
+        "prediction_to_truth_p95_m": 0.018936191393122432,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.008103734781947036,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.008103734781947036
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "base",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 6,
+        "total_length_m": 1.8237040304319583,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.17629596956804172,
+        "boundary_count": 12,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.988,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.01434477865373183,
+        "prediction_to_truth_p95_m": 0.013575767159919172,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 6,
+        "total_length_m": 1.831057249178681,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.16894275082131904,
+        "boundary_count": 12,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.988,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.01434477865373183,
+        "prediction_to_truth_p95_m": 0.013665522144085819,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.007353218746722678,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.007353218746722678
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9654854436381668,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.034514556361833204,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.03199798287698086,
+        "recovery_fraction": 0.996,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.022830254445186684,
+        "prediction_to_truth_p95_m": 0.02272640475683605,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.974059484895186,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.025940515104813988,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.03199798287698086,
+        "recovery_fraction": 0.996,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.022830254445186684,
+        "prediction_to_truth_p95_m": 0.022805073841170063,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.008574041257019216,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.008574041257019216
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9660045445785366,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.03399545542146343,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.031546729020015464,
+        "recovery_fraction": 0.9969999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.016399719749214364,
+        "prediction_to_truth_p95_m": 0.016212841589785622,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9739419553457782,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.02605804465422179,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.031546729020015464,
+        "recovery_fraction": 0.9969999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.016399719749214364,
+        "prediction_to_truth_p95_m": 0.016300382230955764,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.007937410767241637,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.007937410767241637
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.9238762120385995,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.07612378796140051,
+        "boundary_count": 4,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.9769999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.02326453519890823,
+        "prediction_to_truth_p95_m": 0.023102806783270976,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.932632929573442,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.0673670704265581,
+        "boundary_count": 4,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.9769999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.023264535198908226,
+        "prediction_to_truth_p95_m": 0.02310291530840594,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.008756717534842418,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.008756717534842418
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.9561670873057164,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.04383291269428358,
+        "boundary_count": 4,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.9969999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0165054485330871,
+        "prediction_to_truth_p95_m": 0.016366672825306152,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.9641666413467906,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.03583335865320936,
+        "boundary_count": 4,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.9969999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.016505448533087105,
+        "prediction_to_truth_p95_m": 0.01642278651381105,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.00799955404107422,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.00799955404107422
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "baseline",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9939883259908784,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.006011674009121615,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.007639918228419217,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.007056665980495065,
+        "prediction_to_truth_p95_m": 0.007066727791095511,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9995396674479604,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.00046033255203958845,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.009310206523840129,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.007056665980495065,
+        "prediction_to_truth_p95_m": 0.007087242662229668,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.005551341457082026,
+        "boundary_max_error_m": 0.0016702882954209124,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.005551341457082026
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "baseline",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9925940135488698,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.00740598645113022,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.012335010379375155,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.011151934765314661,
+        "prediction_to_truth_p95_m": 0.011157022835181971,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.999329810033543,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.0006701899664569577,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.013300202637303934,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.011151934765314661,
+        "prediction_to_truth_p95_m": 0.011229141054430377,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.006735796484673262,
+        "boundary_max_error_m": 0.0009651922579287792,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.006735796484673262
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "cylinder_support",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9939883259908784,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.006011674009121615,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.007639918228419217,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.007056665980495065,
+        "prediction_to_truth_p95_m": 0.007066727791095511,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9995396674479604,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.00046033255203958845,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.009310206523840129,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.007056665980495065,
+        "prediction_to_truth_p95_m": 0.007087242662229668,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.005551341457082026,
+        "boundary_max_error_m": 0.0016702882954209124,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.005551341457082026
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r01",
+      "variant": "cylinder_support",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9925940135488698,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.00740598645113022,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.012335010379375155,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.011151934765314661,
+        "prediction_to_truth_p95_m": 0.011157022835181971,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.999329810033543,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.0006701899664569577,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.013300202637303934,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.011151934765314661,
+        "prediction_to_truth_p95_m": 0.011229141054430377,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.006735796484673262,
+        "boundary_max_error_m": 0.0009651922579287792,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.006735796484673262
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "base",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 9,
+        "total_length_m": 1.5430521428097377,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.10694785719026223,
+        "boundary_count": 18,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.009596376905899252,
+        "prediction_to_truth_p95_m": 0.009525210771905848,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 9,
+        "total_length_m": 1.5627371225915438,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.08726287740845606,
+        "boundary_count": 18,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.009596376905899252,
+        "prediction_to_truth_p95_m": 0.009538934070763267,
+        "guarded_gap_false_length_m": 0.01788079470198676,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.019684979781806167,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0.01788079470198676
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.019684979781806167
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "base",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.6341481677431202,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.015851832256879694,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.008125145462172795,
+        "prediction_to_truth_p95_m": 0.00811249914004206,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 3,
+        "total_length_m": 1.6859079284509626,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.03590792845096269,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.9976321480657653,
+        "truth_to_prediction_p95_m": 0.008125145462172795,
+        "prediction_to_truth_p95_m": 0.008217814679230233,
+        "guarded_gap_false_length_m": 0.05165562913907286,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": -0.0023678519342347215,
+        "segment_count": 0,
+        "total_length_m": 0.051759760707842384,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0.05165562913907286
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "down",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.051759760707842384
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6424967281944025,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.0075032718055974,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.019401591533376613,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.018005217102197057,
+        "prediction_to_truth_p95_m": 0.017982290775842767,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6722034424353056,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.022203442435305698,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.021123801889676566,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.018005217102197057,
+        "prediction_to_truth_p95_m": 0.018017998548222648,
+        "guarded_gap_false_length_m": 0.021854304635761594,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.029706714240903098,
+        "boundary_max_error_m": 0.0017222103562999531,
+        "guarded_gap_false_length_m": 0.021854304635761594
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.029706714240903098
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6426572364225227,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.007342763577477207,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.020295768998466808,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.018738980147545544,
+        "prediction_to_truth_p95_m": 0.01869937308379858,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6990940955101723,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.04909409551017241,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.031650271007389826,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.9917643381802709,
+        "truth_to_prediction_p95_m": 0.018738980147545544,
+        "prediction_to_truth_p95_m": 0.018870185857343683,
+        "guarded_gap_false_length_m": 0.04966887417218544,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": -0.008235661819729123,
+        "segment_count": 0,
+        "total_length_m": 0.056436859087649616,
+        "boundary_max_error_m": 0.011354502008923018,
+        "guarded_gap_false_length_m": 0.04966887417218544
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "down",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.056436859087649616
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6426529901675997,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.00734700983240022,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.01347979007745569,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.013048984540218127,
+        "prediction_to_truth_p95_m": 0.013047890599193951,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6654651725432883,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.015465172543288386,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.017672682191025357,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.013048984540218123,
+        "prediction_to_truth_p95_m": 0.01305928066436095,
+        "guarded_gap_false_length_m": 0.01788079470198676,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.022812182375688606,
+        "boundary_max_error_m": 0.004192892113569668,
+        "guarded_gap_false_length_m": 0.01788079470198676
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.022812182375688606
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6427906448014753,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.007209355198524614,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.015309051624771218,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.013740691792534124,
+        "prediction_to_truth_p95_m": 0.013724151090201864,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6976905065370533,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.04769050653705342,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.030884881538253244,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.9941180610352973,
+        "truth_to_prediction_p95_m": 0.013740691792534123,
+        "prediction_to_truth_p95_m": 0.013826617667741741,
+        "guarded_gap_false_length_m": 0.04966887417218544,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": -0.005881938964702682,
+        "segment_count": 0,
+        "total_length_m": 0.05489986173557804,
+        "boundary_max_error_m": 0.015575829913482026,
+        "guarded_gap_false_length_m": 0.04966887417218544
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "down",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.05489986173557804
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "baseline",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6433081245025267,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.0066918754974731876,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008879455060479602,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.008503483295919911,
+        "prediction_to_truth_p95_m": 0.008499589493570001,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6659564965450169,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.015956496545016963,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.01416659286054138,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.008503483295919911,
+        "prediction_to_truth_p95_m": 0.008527443735999042,
+        "guarded_gap_false_length_m": 0.021854304635761594,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.02264837204249015,
+        "boundary_max_error_m": 0.005287137800061778,
+        "guarded_gap_false_length_m": 0.021854304635761594
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.02264837204249015
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "baseline",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6434396339723434,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.006560366027656528,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008200858230164284,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005703121030627872,
+        "prediction_to_truth_p95_m": 0.005691538495250783,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.698198298668248,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.048198298668248096,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.029326129587939197,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.9964702968362102,
+        "truth_to_prediction_p95_m": 0.005703121030627873,
+        "prediction_to_truth_p95_m": 0.005785661891585704,
+        "guarded_gap_false_length_m": 0.05364238410596028,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": -0.0035297031637897547,
+        "segment_count": 0,
+        "total_length_m": 0.054758664695904624,
+        "boundary_max_error_m": 0.021125271357774915,
+        "guarded_gap_false_length_m": 0.05364238410596028
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "down",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.054758664695904624
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "cylinder_support",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.643298305550012,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.006701694449987805,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008803048020265847,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.008413024311020588,
+        "prediction_to_truth_p95_m": 0.008408917430236548,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.665925302995848,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.015925302995848156,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.014096277780149028,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.008413024311020588,
+        "prediction_to_truth_p95_m": 0.00843817656569608,
+        "guarded_gap_false_length_m": 0.021854304635761594,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.02262699744583596,
+        "boundary_max_error_m": 0.005293229759883181,
+        "guarded_gap_false_length_m": 0.021854304635761594
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.02262699744583596
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r02",
+      "variant": "cylinder_support",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6434146074121223,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.006585392587877603,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008514738341658846,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.006235145927655182,
+        "prediction_to_truth_p95_m": 0.0062321305220294256,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6981008199505219,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.048100819950521956,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.029659150519263322,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.996470232246318,
+        "truth_to_prediction_p95_m": 0.006235145927655182,
+        "prediction_to_truth_p95_m": 0.00625911124810947,
+        "guarded_gap_false_length_m": 0.05364238410596028,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": -0.003529767753681967,
+        "segment_count": 0,
+        "total_length_m": 0.05468621253839956,
+        "boundary_max_error_m": 0.021144412177604474,
+        "guarded_gap_false_length_m": 0.05364238410596028
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "down",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.05468621253839956
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "base",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 14,
+        "total_length_m": 1.1953404073781395,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.8046595926218605,
+        "boundary_count": 28,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.827,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.09780927038003524,
+        "prediction_to_truth_p95_m": 0.0032392426100311153,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 14,
+        "total_length_m": 1.1953404073781395,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.8046595926218605,
+        "boundary_count": 28,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.827,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.09780927038003524,
+        "prediction_to_truth_p95_m": 0.0032392426100311153,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "base",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 9,
+        "total_length_m": 1.5062459683289047,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.49375403167109533,
+        "boundary_count": 18,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.874,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.08183048243931476,
+        "prediction_to_truth_p95_m": 0.004328643375767716,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 9,
+        "total_length_m": 1.5062459683289047,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.49375403167109533,
+        "boundary_count": 18,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.874,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.08183048243931476,
+        "prediction_to_truth_p95_m": 0.004328643375767716,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.919545437714753,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08045456228524706,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.05986137923300847,
+        "recovery_fraction": 0.9829999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.004856801172979944,
+        "prediction_to_truth_p95_m": 0.004603342638355292,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.919545437714753,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08045456228524706,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.05986137923300847,
+        "recovery_fraction": 0.9829999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.004856801172979944,
+        "prediction_to_truth_p95_m": 0.004603342638355292,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9195919036521236,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08040809634787638,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.060065090736089725,
+        "recovery_fraction": 0.982,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005575770008138154,
+        "prediction_to_truth_p95_m": 0.005235147324440252,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9195919036521236,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08040809634787638,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.060065090736089725,
+        "recovery_fraction": 0.982,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005575770008138154,
+        "prediction_to_truth_p95_m": 0.005235147324440252,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9195547657056162,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08044523429438377,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.05983993142843585,
+        "recovery_fraction": 0.9829999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005443040952914546,
+        "prediction_to_truth_p95_m": 0.00517929029088443,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9195547657056162,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08044523429438377,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.05983993142843585,
+        "recovery_fraction": 0.9829999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005443040952914546,
+        "prediction_to_truth_p95_m": 0.00517929029088443,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.919604976504132,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08039502349586791,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.060033075423839594,
+        "recovery_fraction": 0.982,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005341043237850778,
+        "prediction_to_truth_p95_m": 0.004973387545428965,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.919604976504132,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08039502349586791,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.060033075423839594,
+        "recovery_fraction": 0.982,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005341043237850778,
+        "prediction_to_truth_p95_m": 0.004973387545428965,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "baseline",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9924011812880764,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007598818711923583,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.005775302183786664,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0008190301642548544,
+        "prediction_to_truth_p95_m": 0.0008167964836451075,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9924011812880764,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007598818711923583,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.005775302183786443,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0008190301642548544,
+        "prediction_to_truth_p95_m": 0.0008167964836451075,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": -2.211772431870429e-16,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "baseline",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9923748972222497,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007625102777750303,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.00672613649736298,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005884236463491107,
+        "prediction_to_truth_p95_m": 0.0058754586843379345,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9923748972222497,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007625102777750303,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.0067261364973629795,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005884236463491107,
+        "prediction_to_truth_p95_m": 0.0058754586843379345,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": -8.673617379884035e-19,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "cylinder_support",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9924011812880764,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007598818711923583,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.005775302183786664,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0008190301642548544,
+        "prediction_to_truth_p95_m": 0.0008167964836451075,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9924011812880764,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007598818711923583,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.005775302183786443,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0008190301642548544,
+        "prediction_to_truth_p95_m": 0.0008167964836451075,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": -2.211772431870429e-16,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "fixture",
+      "case_id": "r03",
+      "variant": "cylinder_support",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9923748972222497,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007625102777750303,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.00672613649736298,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005884236463491107,
+        "prediction_to_truth_p95_m": 0.0058754586843379345,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9923748972222497,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007625102777750303,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.0067261364973629795,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005884236463491107,
+        "prediction_to_truth_p95_m": 0.0058754586843379345,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": -8.673617379884035e-19,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "base",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 11,
+        "total_length_m": 1.3400183878687482,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.20998161213125188,
+        "boundary_count": 22,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.9612903225806452,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.016361107485694252,
+        "prediction_to_truth_p95_m": 0.00346076911215653,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 9,
+        "total_length_m": 1.3551684591629662,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.1948315408370338,
+        "boundary_count": 18,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.9612903225806452,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.016361107485694252,
+        "prediction_to_truth_p95_m": 0.00346076911215653,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.015150071294218082,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.015150071294218082
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "base",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 4,
+        "total_length_m": 1.4437761962654339,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.10622380373456619,
+        "boundary_count": 8,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.9819354838709677,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.004546830970343998,
+        "prediction_to_truth_p95_m": 0.0023401781372249437,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.4589116773519473,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.09108832264805278,
+        "boundary_count": 4,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.9819354838709677,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.003839302326590507,
+        "prediction_to_truth_p95_m": 0.0023401781372249437,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.015135481086513414,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.015135481086513414
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.5212660906045687,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.0287339093954313,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.006023224400517608,
+        "prediction_to_truth_p95_m": 0.006011712302356975,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.535931522237142,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.014068477762858134,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.011719775674241331,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.006019933226969901,
+        "prediction_to_truth_p95_m": 0.006011698206843595,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.014665431632573167,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.014665431632573167
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.521552873389951,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.028447126610049,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0036002484109680863,
+        "prediction_to_truth_p95_m": 0.0035980749008336335,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.5359127338163978,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.014087266183602232,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.010654459492496503,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.003599238371417409,
+        "prediction_to_truth_p95_m": 0.0035980748705080855,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.014359860426446769,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.014359860426446769
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.5213938645338716,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.028606135466128446,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0076665641261086945,
+        "prediction_to_truth_p95_m": 0.00764376294426286,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.5359681228701658,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.014031877129834225,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.012710810270192082,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.007666564126108694,
+        "prediction_to_truth_p95_m": 0.007643732594740205,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.014574258336294221,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.014574258336294221
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.521934185355039,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.02806581464496105,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005408917526837301,
+        "prediction_to_truth_p95_m": 0.005382950335271091,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.5359659998404032,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.014034000159596882,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.011455829278469755,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.005404562004395749,
+        "prediction_to_truth_p95_m": 0.0053827551953943694,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.014031814485364169,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.014031814485364169
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "baseline",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.5208229140256428,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.029177085974357198,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0027844074776987564,
+        "prediction_to_truth_p95_m": 0.0027715229878380737,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.5359296422302244,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.01407035776977561,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.010413766917804287,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0027792330082456124,
+        "prediction_to_truth_p95_m": 0.002771467291626314,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.015106728204581588,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.015106728204581588
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "baseline",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.5207578789843623,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.029242121015637723,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0017119098148853382,
+        "prediction_to_truth_p95_m": 0.0017013671016811586,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.5359017221768325,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.014098277823167527,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.010092885365908048,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0017119098148853382,
+        "prediction_to_truth_p95_m": 0.0017069513923887373,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.015143843192470197,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.015143843192470197
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "cylinder_support",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.5208229140256428,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.029177085974357198,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0027844074776987564,
+        "prediction_to_truth_p95_m": 0.0027715229878380737,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.5359296422302244,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.01407035776977561,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.010413766917804287,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0027792330082456124,
+        "prediction_to_truth_p95_m": 0.002771467291626314,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.015106728204581588,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.015106728204581588
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "chair01",
+      "variant": "cylinder_support",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.5207578789843623,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.029242121015637723,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0017119098148853382,
+        "prediction_to_truth_p95_m": 0.0017013671016811586,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.5359017221768325,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.014098277823167527,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.010092885365908048,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0017119098148853382,
+        "prediction_to_truth_p95_m": 0.0017069513923887373,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "full_stroke",
+      "selected_source": "full_stroke",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": -2,
+        "total_length_m": 0.015143843192470197,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.015143843192470197
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "base",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 5,
+        "total_length_m": 0.4446390518221465,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.2083884736595072,
+        "boundary_count": 10,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.33131801692865787,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.044373716566357,
+        "prediction_to_truth_p95_m": 0.009159567214063238,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 5,
+        "total_length_m": 0.4446390518221465,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.2083884736595072,
+        "boundary_count": 10,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.33131801692865787,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.044373716566357,
+        "prediction_to_truth_p95_m": 0.009159567214063238,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "base",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5230602805774143,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.1299672449042395,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.1191423839857364,
+        "recovery_fraction": 0.33736396614268443,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.0361947742511413,
+        "prediction_to_truth_p95_m": 0.009145538553708785,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5230602805774143,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.1299672449042395,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.1191423839857364,
+        "recovery_fraction": 0.33736396614268443,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.0361947742511413,
+        "prediction_to_truth_p95_m": 0.009145538553708785,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 5,
+        "total_length_m": 0.4446390518221465,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.2083884736595072,
+        "boundary_count": 10,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.33131801692865787,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.044373716566357,
+        "prediction_to_truth_p95_m": 0.009159567214063238,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 5,
+        "total_length_m": 0.4446390518221465,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.2083884736595072,
+        "boundary_count": 10,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.33131801692865787,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.044373716566357,
+        "prediction_to_truth_p95_m": 0.009159567214063238,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "depth_tls_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5230602805774143,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.1299672449042395,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.1191423839857364,
+        "recovery_fraction": 0.33736396614268443,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.0361947742511413,
+        "prediction_to_truth_p95_m": 0.009145538553708785,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5230602805774143,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.1299672449042395,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.1191423839857364,
+        "recovery_fraction": 0.33736396614268443,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.0361947742511413,
+        "prediction_to_truth_p95_m": 0.009145538553708785,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 5,
+        "total_length_m": 0.4446390518221465,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.2083884736595072,
+        "boundary_count": 10,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.33131801692865787,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.044373716566357,
+        "prediction_to_truth_p95_m": 0.009159567214063238,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 5,
+        "total_length_m": 0.4446390518221465,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.2083884736595072,
+        "boundary_count": 10,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.33131801692865787,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.044373716566357,
+        "prediction_to_truth_p95_m": 0.009159567214063238,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "depth_ransac_single_span",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5230602805774143,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.1299672449042395,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.1191423839857364,
+        "recovery_fraction": 0.33736396614268443,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.0361947742511413,
+        "prediction_to_truth_p95_m": 0.009145538553708785,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5230602805774143,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.1299672449042395,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.1191423839857364,
+        "recovery_fraction": 0.33736396614268443,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.0361947742511413,
+        "prediction_to_truth_p95_m": 0.009145538553708785,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "baseline",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.692081192440353,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": 0.03905366695869916,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.9839877912707844,
+        "truth_to_prediction_p95_m": 0.006395143799931631,
+        "prediction_to_truth_p95_m": 0.006602389798962205,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.6999922557313485,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": 0.04696473024969472,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.05853164572688046,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.9800000000000001,
+        "truth_to_prediction_p95_m": 0.006395143799931623,
+        "prediction_to_truth_p95_m": 0.006628149298336992,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": -0.003987791270784302,
+        "segment_count": -2,
+        "total_length_m": 0.007911063290995557,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "down",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.007911063290995557
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "baseline",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 3,
+        "total_length_m": 1.6919453395458963,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": 0.03891781406424255,
+        "boundary_count": 6,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.9841852336070438,
+        "truth_to_prediction_p95_m": 0.006496230403837402,
+        "prediction_to_truth_p95_m": 0.006711148471720785,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.6999941278336863,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": 0.04696660235203254,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.05853971989630561,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.9800000000000001,
+        "truth_to_prediction_p95_m": 0.006496230403837408,
+        "prediction_to_truth_p95_m": 0.0067470100820534945,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": -0.0041852336070437035,
+        "segment_count": -2,
+        "total_length_m": 0.008048788287789987,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "down",
+        "segment_count": "down"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.008048788287789987
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "cylinder_support",
+      "fraction": 0.0025,
+      "old_physical": {
+        "segment_count": 5,
+        "total_length_m": 0.4446390518221465,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.2083884736595072,
+        "boundary_count": 10,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.33131801692865787,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.044373716566357,
+        "prediction_to_truth_p95_m": 0.009159567214063238,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 5,
+        "total_length_m": 0.4446390518221465,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.2083884736595072,
+        "boundary_count": 10,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.33131801692865787,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.044373716566357,
+        "prediction_to_truth_p95_m": 0.009159567214063238,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": null,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    },
+    {
+      "kind": "g1_object",
+      "case_id": "aframe01",
+      "variant": "cylinder_support",
+      "fraction": 0.005,
+      "old_physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5230602805774143,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.1299672449042395,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.1191423839857364,
+        "recovery_fraction": 0.33736396614268443,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.0361947742511413,
+        "prediction_to_truth_p95_m": 0.009145538553708785,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 0.5230602805774143,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.1299672449042395,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 1.1191423839857364,
+        "recovery_fraction": 0.33736396614268443,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 1.0361947742511413,
+        "prediction_to_truth_p95_m": 0.009145538553708785,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "normal_error": null,
+      "scoring_error": null,
+      "native_scoring_error": null,
+      "graph_state": "complete",
+      "native_state": "complete",
+      "native_unchanged": true,
+      "selected_axis_unchanged": true,
+      "selected_candidate_unchanged": true,
+      "old_selected_source": "fixed_seed_expansion",
+      "selected_source": "fixed_seed_expansion",
+      "delta": {
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "boundary_max_error_m": 0.0,
+        "guarded_gap_false_length_m": 0
+      },
+      "changes": {
+        "recovery_fraction": "equal",
+        "precision_fraction": "equal",
+        "segment_count": "equal"
+      },
+      "retained_geometry_previously_rgb_clipped_m": 0.0
+    }
+  ],
+  "native_rows": [
+    {
+      "case_id": "r01",
+      "variant": "base",
+      "state": "complete",
+      "segments": [],
+      "physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -2.0,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r01",
+      "variant": "depth_tls_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.033494166238558616,
+            -0.05028366846781113,
+            -0.9536976662654195
+          ],
+          [
+            -0.017922930716280608,
+            -0.0054995075136800575,
+            1.0184949339130496
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9727624633104632,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.027237536689536768,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.05112994142847646,
+        "recovery_fraction": 0.44099999999999995,
+        "precision_fraction": 0.4356636271529889,
+        "truth_to_prediction_p95_m": 0.04850235550014795,
+        "prediction_to_truth_p95_m": 0.04865295749378623,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r01",
+      "variant": "depth_ransac_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.03883338769363321,
+            -0.04780461254578496,
+            -0.9389778598720002
+          ],
+          [
+            -0.006385395684887309,
+            -0.03637307879486909,
+            0.9369220648949262
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.8762153607434993,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.12378463925650074,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.12023362159751011,
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "truth_to_prediction_p95_m": 0.049699422973803094,
+        "prediction_to_truth_p95_m": 0.0487951377098659,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r01",
+      "variant": "baseline",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.02650104607440146,
+            -0.000524913750644998,
+            -0.9417448112870307
+          ],
+          [
+            -0.02639913461911168,
+            -0.0006348045894179997,
+            1.044250443150068
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9859952600921833,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.014004739907816699,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008406950365609836,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0015875743638705585,
+        "prediction_to_truth_p95_m": 0.0015872080235721543,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r01",
+      "variant": "cylinder_support",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.02650104607440146,
+            -0.000524913750644998,
+            -0.9417448112870307
+          ],
+          [
+            -0.02639913461911168,
+            -0.0006348045894179997,
+            1.044250443150068
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9859952600921833,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.014004739907816699,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008406950365609836,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0015875743638705585,
+        "prediction_to_truth_p95_m": 0.0015872080235721543,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r02",
+      "variant": "base",
+      "state": "complete",
+      "segments": [],
+      "physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -1.65,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r02",
+      "variant": "depth_tls_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.03659269338220475,
+            -0.02650603544715004,
+            -0.9489214089980075
+          ],
+          [
+            0.033453333652254294,
+            -0.03806172996809651,
+            1.0433350236783077
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9922924190980429,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.342292419098043,
+        "boundary_count": 2,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "truth_to_prediction_p95_m": 0.0376453500568037,
+        "prediction_to_truth_p95_m": 0.12924222273718264,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r02",
+      "variant": "depth_ransac_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.03746692690841672,
+            -0.03906481975285084,
+            -0.9356326656954175
+          ],
+          [
+            0.02857276041610551,
+            -0.014944949528605343,
+            1.043701192522951
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9795007948032857,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": 0.32950079480328576,
+        "boundary_count": 2,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.49575757575757573,
+        "precision_fraction": 0.41010101010101013,
+        "truth_to_prediction_p95_m": 0.03828641028669746,
+        "prediction_to_truth_p95_m": 0.1282485947823001,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r02",
+      "variant": "baseline",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.03758357670743796,
+            -0.0020899744263055157,
+            -0.9417163171464229
+          ],
+          [
+            0.0370196571682323,
+            -0.0009856304393697259,
+            -0.18575784802057804
+          ]
+        ],
+        [
+          [
+            0.0367520343360669,
+            -0.0004615349879425712,
+            0.17300210342897548
+          ],
+          [
+            0.03610209317223665,
+            0.0008112682512376613,
+            1.0442762712350342
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6272348260110148,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.022765173988985143,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008925371887180587,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.003220415038587786,
+        "prediction_to_truth_p95_m": 0.0032021447596554857,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r02",
+      "variant": "cylinder_support",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.035852844966152916,
+            0.0004998732240129454,
+            -0.9417457214811207
+          ],
+          [
+            0.03583872381518253,
+            0.0007815013628737065,
+            -0.18578628797283792
+          ]
+        ],
+        [
+          [
+            0.03583202225201014,
+            0.0009151553948754238,
+            0.17297412114973695
+          ],
+          [
+            0.03581574702716292,
+            0.0012397437583081656,
+            1.044249400447419
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 2,
+        "total_length_m": 1.6272348260110148,
+        "truth_length_m": 1.65,
+        "signed_length_error_m": -0.022765173988985143,
+        "boundary_count": 4,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.008313262394728637,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.0014650826569560886,
+        "prediction_to_truth_p95_m": 0.00145980364388437,
+        "guarded_gap_false_length_m": 0.0,
+        "guarded_gap_length_m": 0.30000000000000004
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r03",
+      "variant": "base",
+      "state": "complete",
+      "segments": [],
+      "physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -2.0,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r03",
+      "variant": "depth_tls_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.015234819947999812,
+            -0.0016161833710447782,
+            -0.8901440904275237
+          ],
+          [
+            -0.01762332044236521,
+            -0.006264929895237114,
+            1.0293492816242198
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9195004874001547,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08049951259984534,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.05987818550895869,
+        "recovery_fraction": 0.9829999999999999,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.006720443666309118,
+        "prediction_to_truth_p95_m": 0.0065342105890650115,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r03",
+      "variant": "depth_ransac_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.015249442615008565,
+            -0.0024805827186669405,
+            -0.8858999407035699
+          ],
+          [
+            -0.016999142775212917,
+            -0.007193205450916654,
+            1.0293491805102017
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.9152557183242638,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.08474428167573622,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.06414852386491975,
+        "recovery_fraction": 0.98,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.007407366004544067,
+        "prediction_to_truth_p95_m": 0.007217510240250604,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r03",
+      "variant": "baseline",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.015362610456897253,
+            -0.0002519673447769942,
+            -0.9481527979089414
+          ],
+          [
+            -0.015395742446001908,
+            0.0002717076208763615,
+            1.0442488294103136
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.992401696415061,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007598303584938959,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.005771169748541809,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.000465289424442106,
+        "prediction_to_truth_p95_m": 0.00046441910038466975,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "r03",
+      "variant": "cylinder_support",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.015362610456897253,
+            -0.0002519673447769942,
+            -0.9481527979089414
+          ],
+          [
+            -0.015395742446001908,
+            0.0002717076208763615,
+            1.0442488294103136
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.992401696415061,
+        "truth_length_m": 2.0,
+        "signed_length_error_m": -0.007598303584938959,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.005771169748541809,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.000465289424442106,
+        "prediction_to_truth_p95_m": 0.00046441910038466975,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "chair01",
+      "variant": "base",
+      "state": "complete",
+      "segments": [],
+      "physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -1.55,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "chair01",
+      "variant": "depth_tls_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.00018187907494679814,
+            -0.009062344326654283,
+            -0.7460132869127273
+          ],
+          [
+            0.0005270119573613543,
+            -0.01302912071715907,
+            0.7899572663891062
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.5359758391497467,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.014024160850253375,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.01645880392509983,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.012865723021568387,
+        "prediction_to_truth_p95_m": 0.012839675142363042,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "chair01",
+      "variant": "depth_ransac_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            0.0003069018905077066,
+            -0.00640134109865364,
+            -0.7461521437243173
+          ],
+          [
+            0.00011966860595166507,
+            -0.020404293357856797,
+            0.7898799369331712
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.5360959184039418,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.013904081596058271,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.02277641728818041,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.01979418514962128,
+        "prediction_to_truth_p95_m": 0.019703657844316193,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "chair01",
+      "variant": "baseline",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.0005880622366573775,
+            5.778079286165318e-05,
+            -0.7139348078617024
+          ],
+          [
+            0.0022493214940309766,
+            -0.003022585015837556,
+            0.7846759868119416
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.4986166465485165,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.05138335345148359,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.03607003243395451,
+        "recovery_fraction": 0.9922580645161291,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.003685204204581866,
+        "prediction_to_truth_p95_m": 0.0035594986004294955,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "chair01",
+      "variant": "cylinder_support",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.0005880622366573775,
+            5.778079286165318e-05,
+            -0.7139348078617024
+          ],
+          [
+            0.0022493214940309766,
+            -0.003022585015837556,
+            0.7846759868119416
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.4986166465485165,
+        "truth_length_m": 1.55,
+        "signed_length_error_m": -0.05138335345148359,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.03607003243395451,
+        "recovery_fraction": 0.9922580645161291,
+        "precision_fraction": 1.0,
+        "truth_to_prediction_p95_m": 0.003685204204581866,
+        "prediction_to_truth_p95_m": 0.0035594986004294955,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "aframe01",
+      "variant": "base",
+      "state": "complete",
+      "segments": [],
+      "physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.6530275254816538,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "aframe01",
+      "variant": "depth_tls_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.24451350280892936,
+            0.41276423685615765,
+            -0.7220488736663278
+          ],
+          [
+            0.06479525036100042,
+            0.26697083542314676,
+            1.0354141300543844
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.7904200150065268,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": 0.13739248952487304,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.46291057030395594,
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "truth_to_prediction_p95_m": 0.4526642389875066,
+        "prediction_to_truth_p95_m": 0.44732762360209044,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "aframe01",
+      "variant": "depth_ransac_single_span",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.3526184753000195,
+            0.06744486571741574,
+            0.01583066363397978
+          ],
+          [
+            0.01978310644731776,
+            0.10203098922403009,
+            1.0289301250307505
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.0799303943817677,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -0.573097131099886,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.8727579408003164,
+        "recovery_fraction": 0.0,
+        "precision_fraction": 0.0,
+        "truth_to_prediction_p95_m": 0.7978246130175998,
+        "prediction_to_truth_p95_m": 0.34267016520818605,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "aframe01",
+      "variant": "baseline",
+      "state": "complete",
+      "segments": [
+        [
+          [
+            -0.04851992259203583,
+            0.004087619208053334,
+            -0.7864364433543448
+          ],
+          [
+            0.05221713074430362,
+            -0.012067887234310095,
+            0.9080742034905429
+          ]
+        ]
+      ],
+      "physical": {
+        "segment_count": 1,
+        "total_length_m": 1.6975792430911663,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": 0.04455171760951249,
+        "boundary_count": 2,
+        "boundary_bijection_state": "scored",
+        "boundary_max_error_m": 0.059356235410429704,
+        "recovery_fraction": 1.0,
+        "precision_fraction": 0.9787985865724382,
+        "truth_to_prediction_p95_m": 0.010823427981110183,
+        "prediction_to_truth_p95_m": 0.01132315785411384,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    },
+    {
+      "case_id": "aframe01",
+      "variant": "cylinder_support",
+      "state": "complete",
+      "segments": [],
+      "physical": {
+        "segment_count": 0,
+        "total_length_m": 0.0,
+        "truth_length_m": 1.6530275254816538,
+        "signed_length_error_m": -1.6530275254816538,
+        "boundary_count": 0,
+        "boundary_bijection_state": "boundary_count_mismatch",
+        "boundary_max_error_m": null,
+        "recovery_fraction": 0.0,
+        "precision_fraction": null,
+        "truth_to_prediction_p95_m": null,
+        "prediction_to_truth_p95_m": null,
+        "guarded_gap_false_length_m": 0,
+        "guarded_gap_length_m": 0
+      },
+      "scoring_error": null
+    }
+  ],
+  "truth_hashes": {
+    "data/eval_gt/rod-fixture-scenes-v1-20260927/manifest.json": "1f87c73e8d2d4398370d7f4fe25d053b4fd72944e7ddf39c3fafc938ec3540e1",
+    "data/eval_gt/g1-object-scenes-v1-20261006/manifest.json": "af483f8bda8d8b95df88d0d921b6d90d9f2680515aac04a501b0337b2413ea89"
+  },
+  "comparison_tolerance": 1e-12,
+  "source_hashes": {
+    "experiments/src/creator_eval/geometric_occupancy_readout.py": "e650637dd25fd64b1c099712fa4e65193f138f70bdff09be5801df8f72b95b04",
+    "experiments/src/creator_eval/rgb_geometric_occupancy_readout.py": "a2745114e226bd1cb7b350fad41a32d99846f1ee4e9bb213028b19a86c3f1727",
+    "scripts/run_readout_sprint.py": "8c715c42b5ea3e07b7f39274f3d5b5b4b3b7970bb420745d95b4e6fca6435131"
+  },
+  "interpretation": "2v is adjacent actual-point projected spacing connection threshold; not a claimed real gap resolution",
+  "development_only": true,
+  "development_prior_scores_seen": true,
+  "blind_evaluation": false,
+  "reader_qualified": false,
+  "g1_passed": false,
+  "fresh_da3_calls": 0,
+  "fresh_repeats": 0,
+  "end_to_end_repeat_performed": false
+}
