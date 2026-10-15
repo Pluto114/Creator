@@ -64,6 +64,8 @@ jobs:
           python -m unittest discover -s tests -p test_rod_evidence*.py -v
           python -m unittest discover -s tests -p test_rod_selected_boundary_patch.py -v
           python -m unittest discover -s tests -p test_rod_foreground_axis_patch.py -v
+          python -m unittest discover -s tests -p test_rod_width_boundary_patch.py -v
+          python -m unittest discover -s tests -p test_rod_width_finite_patch.py -v
           python -m unittest discover -s tests -p test_camera_background.py -v
           python -m unittest discover -s tests -p test_camera_all_view_validation.py -v
           python -m unittest discover -s tests -p test_camera_training_groups.py -v
